@@ -258,7 +258,7 @@ html, body {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 16px;
+  gap: 14px;
   padding: 16px 24px 80px;
   overflow-y: auto;
   max-width: 900px;
@@ -269,12 +269,15 @@ html, body {
   background: var(--stone-dark);
   border: 2px solid var(--stone-mid);
   border-radius: 16px;
-  padding: 20px 16px;
+  padding: 20px 14px;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  min-height: 120px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
 }
 .world-island::before {
   content: '';
@@ -298,18 +301,20 @@ html, body {
   50% { box-shadow: 0 0 30px rgba(0, 212, 170, 0.5); }
 }
 .world-island.completed { border-color: var(--zonai-cyan); }
-.island-icon { font-size: 2rem; margin-bottom: 8px; }
+.island-icon { font-size: 2.2rem; margin-bottom: 6px; }
 .island-name-label {
   font-family: var(--font-heading);
   font-size: 0.85rem;
   color: var(--ancient-gold);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+  word-wrap: break-word;
+  line-height: 1.2;
 }
 .island-shrines-count { font-size: 0.75rem; color: var(--stone-light); }
-.island-stars { font-size: 0.7rem; color: var(--ancient-amber); margin-top: 4px; }
-.island-tear { margin-top: 6px; font-size: 1.2rem; opacity: 0.3; }
+.island-stars { font-size: 0.75rem; color: var(--ancient-amber); margin-top: 3px; }
+.island-tear { margin-top: 4px; font-size: 1.2rem; opacity: 0.3; }
 .island-tear.collected { opacity: 1; filter: drop-shadow(0 0 8px rgba(96,192,255,0.6)); }
-.island-lock { font-size: 1.5rem; margin-top: 8px; }
+.island-lock { font-size: 1.5rem; margin-top: 6px; }
 
 .btn-inventory {
   position: fixed; bottom: 16px; right: 16px;
@@ -672,23 +677,27 @@ html, body {
   transition: width 0.5s ease;
 }
 
+/* ═══ BOSS VISUAL — Base & Sub-Element Defaults ═══ */
 .boss-visual {
-  width: 160px; height: 160px;
+  width: 180px; height: 200px;
   display: flex; align-items: center; justify-content: center;
-  margin: 16px 0;
+  margin: 12px 0;
   position: relative;
 }
 .boss-body {
-  width: 120px; height: 120px;
+  width: 100px; height: 100px;
   border-radius: 20% 30% 25% 35%;
   background: linear-gradient(135deg, var(--void-purple), #2a0845);
   box-shadow: 0 0 40px rgba(128, 64, 192, 0.4), 0 0 80px rgba(128, 64, 192, 0.15);
   animation: bossPulse 2s ease-in-out infinite;
   position: relative;
+  z-index: 3;
+  transition: width 0.3s, height 0.3s;
 }
+/* Eyes */
 .boss-body::before, .boss-body::after {
   content: ''; position: absolute;
-  width: 16px; height: 16px;
+  width: 14px; height: 14px;
   background: var(--void-red);
   border-radius: 50%;
   box-shadow: 0 0 12px rgba(255, 64, 96, 0.6);
@@ -696,9 +705,89 @@ html, body {
 }
 .boss-body::before { left: 25%; }
 .boss-body::after { right: 25%; }
+
+/* Sub-elements — hidden by default, revealed per boss */
+.boss-aura, .boss-horns, .boss-wings, .boss-crown {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+}
+.boss-aura { z-index: 1; }
+.boss-wings { z-index: 2; }
+.boss-horns { z-index: 4; }
+.boss-crown { z-index: 5; }
+
+/* Horns use ::before/::after for left/right */
+.boss-horns::before, .boss-horns::after {
+  content: ''; position: absolute;
+  display: block;
+}
+/* Wings use ::before/::after for left/right */
+.boss-wings::before, .boss-wings::after {
+  content: ''; position: absolute;
+  display: block;
+}
+/* Crown uses ::before for center decoration */
+.boss-crown::before {
+  content: ''; position: absolute;
+  display: block;
+}
+
+/* ═══ BOSS ANIMATIONS ═══ */
 @keyframes bossPulse {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.05); }
+}
+@keyframes bossPulseSlow {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+@keyframes bossPulseMenacing {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.06) rotate(-1deg); }
+  75% { transform: scale(1.04) rotate(1deg); }
+}
+@keyframes bossPulseVoid {
+  0%, 100% { transform: scale(1) rotate(0deg); filter: brightness(1); }
+  25% { transform: scale(1.08) rotate(-2deg); filter: brightness(1.1); }
+  50% { transform: scale(1.04) rotate(0deg); filter: brightness(0.9); }
+  75% { transform: scale(1.06) rotate(2deg); filter: brightness(1.05); }
+}
+@keyframes auraRotate {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+@keyframes auraBreath {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.4; }
+  50% { transform: translate(-50%, -50%) scale(1.15); opacity: 0.7; }
+}
+@keyframes auraPulseIntense {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+  50% { transform: translate(-50%, -50%) scale(1.25); opacity: 0.9; }
+}
+@keyframes wingFlap {
+  0%, 100% { transform: scaleX(1) rotate(0deg); }
+  50% { transform: scaleX(0.85) rotate(-3deg); }
+}
+@keyframes wingFlapR {
+  0%, 100% { transform: scaleX(1) rotate(0deg); }
+  50% { transform: scaleX(0.85) rotate(3deg); }
+}
+@keyframes hornPulse {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.4); }
+}
+@keyframes crownFloat {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-4px); }
+}
+@keyframes crownGlow {
+  0%, 100% { filter: brightness(1) drop-shadow(0 0 6px currentColor); }
+  50% { filter: brightness(1.3) drop-shadow(0 0 14px currentColor); }
+}
+@keyframes orbitalSpin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 .boss-hit { animation: bossHit 0.4s ease; }
@@ -1090,139 +1179,785 @@ html, body {
 }
 .explanation-step:last-child { border: none; }
 
-/* ===== 15 UNIQUE BOSS DESIGNS ===== */
-/* Each boss has a data-boss attribute set by JS */
+/* ═══════════════════════════════════════════════════════════
+   15 UNIQUE BOSS DESIGNS — Progressive Formidability
+   Tier 1 (0-2): Body only, simple, small
+   Tier 2 (3-5): +Horns, medium
+   Tier 3 (6-8): +Wings, +Aura ring, larger
+   Tier 4 (9-11): +Crown, menacing animations, large
+   Tier 5 (12-14): All elements, massive, elaborate, FINAL BOSS
+   ═══════════════════════════════════════════════════════════ */
+
+/* ────── BOSS 0: Calculon (Arithmetic) ────── */
+/* Tier 1 — compact teal golem, gentle pulse */
 .boss-visual[data-boss="0"] .boss-body {
-  /* Ch1 Arithmetic — Geometric calculator shape */
+  width: 90px; height: 90px;
   border-radius: 15% 15% 40% 40%;
   background: linear-gradient(135deg, #20b2aa, #0a4a46) !important;
+  box-shadow: 0 0 25px rgba(32, 178, 170, 0.3);
+  animation: bossPulseSlow 2.5s ease-in-out infinite;
 }
 .boss-visual[data-boss="0"] .boss-body::before,
-.boss-visual[data-boss="0"] .boss-body::after { background: #40e0d0; }
+.boss-visual[data-boss="0"] .boss-body::after {
+  background: #40e0d0; width: 12px; height: 12px;
+  box-shadow: 0 0 8px rgba(64, 224, 208, 0.6);
+}
 
+/* ────── BOSS 1: Crystal Fury (Exponents) ────── */
+/* Tier 1 — spiky orange crystal, angular */
 .boss-visual[data-boss="1"] .boss-body {
-  /* Ch2 Exponents — Spiky crystal */
+  width: 95px; height: 95px;
   border-radius: 10% 50% 10% 50%;
   background: linear-gradient(135deg, #ff6b35, #8b2500) !important;
+  box-shadow: 0 0 30px rgba(255, 107, 53, 0.35);
+  animation: bossPulseSlow 2.2s ease-in-out infinite;
 }
 .boss-visual[data-boss="1"] .boss-body::before,
-.boss-visual[data-boss="1"] .boss-body::after { background: #ff9060; }
+.boss-visual[data-boss="1"] .boss-body::after {
+  background: #ff9060; width: 13px; height: 13px;
+  box-shadow: 0 0 10px rgba(255, 144, 96, 0.7);
+}
 
+/* ────── BOSS 2: Prime Sentinel (Primes) ────── */
+/* Tier 1 — green pentagonal, subtle glow ring */
 .boss-visual[data-boss="2"] .boss-body {
-  /* Ch3 Primes — Pentagon shape */
+  width: 100px; height: 100px;
   border-radius: 50% 20% 50% 20%;
   background: linear-gradient(135deg, #2ecc71, #0a4f2a) !important;
+  box-shadow: 0 0 35px rgba(46, 204, 113, 0.3), inset 0 0 20px rgba(46, 204, 113, 0.1);
+  animation: bossPulse 2s ease-in-out infinite;
 }
 .boss-visual[data-boss="2"] .boss-body::before,
-.boss-visual[data-boss="2"] .boss-body::after { background: #60ff90; }
+.boss-visual[data-boss="2"] .boss-body::after {
+  background: #60ff90; width: 14px; height: 14px;
+  box-shadow: 0 0 10px rgba(96, 255, 144, 0.7);
+}
 
+/* ────── BOSS 3: Fraction Phantom (Fractions) ────── */
+/* Tier 2 — split orb + HORNS appear */
 .boss-visual[data-boss="3"] .boss-body {
-  /* Ch4 Fractions — Split orb */
+  width: 105px; height: 105px;
   border-radius: 50%;
   background: linear-gradient(90deg, #3498db 50%, #1a4a6e 50%) !important;
+  box-shadow: 0 0 35px rgba(52, 152, 219, 0.4);
+  animation: bossPulse 2s ease-in-out infinite;
 }
-.boss-visual[data-boss="3"] .boss-body::before { background: #60b0ff; }
-.boss-visual[data-boss="3"] .boss-body::after { background: #2070a0; }
+.boss-visual[data-boss="3"] .boss-body::before {
+  background: #60b0ff; width: 14px; height: 14px;
+  box-shadow: 0 0 10px rgba(96, 176, 255, 0.7);
+}
+.boss-visual[data-boss="3"] .boss-body::after {
+  background: #2070a0; width: 14px; height: 14px;
+  box-shadow: 0 0 10px rgba(32, 112, 160, 0.7);
+}
+/* Horns — small curved spikes */
+.boss-visual[data-boss="3"] .boss-horns {
+  display: block; width: 100px; height: 30px;
+  top: 22%; left: 50%; transform: translateX(-50%);
+}
+.boss-visual[data-boss="3"] .boss-horns::before,
+.boss-visual[data-boss="3"] .boss-horns::after {
+  width: 8px; height: 28px; border-radius: 4px 4px 0 0;
+  background: linear-gradient(180deg, #60b0ff, #3498db);
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+  bottom: 0;
+}
+.boss-visual[data-boss="3"] .boss-horns::before { left: 10px; transform: rotate(-15deg); }
+.boss-visual[data-boss="3"] .boss-horns::after { right: 10px; transform: rotate(15deg); }
 
+/* ────── BOSS 4: Balance Wraith (Equations) ────── */
+/* Tier 2 — purple scale, wider body + pronounced horns */
 .boss-visual[data-boss="4"] .boss-body {
-  /* Ch5 Equations — Balanced scale shape */
+  width: 115px; height: 95px;
   border-radius: 5% 5% 45% 45%;
   background: linear-gradient(135deg, #9b59b6, #3d1560) !important;
-  width: 130px; height: 100px;
+  box-shadow: 0 0 40px rgba(155, 89, 182, 0.4), 0 0 80px rgba(155, 89, 182, 0.15);
+  animation: bossPulse 1.8s ease-in-out infinite;
 }
 .boss-visual[data-boss="4"] .boss-body::before,
-.boss-visual[data-boss="4"] .boss-body::after { background: #c080ff; }
+.boss-visual[data-boss="4"] .boss-body::after {
+  background: #c080ff; width: 15px; height: 15px;
+  box-shadow: 0 0 12px rgba(192, 128, 255, 0.8);
+}
+/* Horns — tall curved */
+.boss-visual[data-boss="4"] .boss-horns {
+  display: block; width: 120px; height: 38px;
+  top: 16%; left: 50%; transform: translateX(-50%);
+}
+.boss-visual[data-boss="4"] .boss-horns::before,
+.boss-visual[data-boss="4"] .boss-horns::after {
+  width: 10px; height: 35px; border-radius: 5px 5px 2px 2px;
+  background: linear-gradient(180deg, #c080ff, #9b59b6);
+  box-shadow: 0 0 10px rgba(155, 89, 182, 0.6);
+  bottom: 0;
+  animation: hornPulse 2s ease-in-out infinite;
+}
+.boss-visual[data-boss="4"] .boss-horns::before { left: 8px; transform: rotate(-20deg); }
+.boss-visual[data-boss="4"] .boss-horns::after { right: 8px; transform: rotate(20deg); }
 
+/* ────── BOSS 5: Decimal Serpent (Decimals) ────── */
+/* Tier 2 — golden serpent + horns + faint aura shimmer */
 .boss-visual[data-boss="5"] .boss-body {
-  /* Ch6 Decimals — Dotted serpent-like shape */
+  width: 110px; height: 110px;
   border-radius: 60% 20% 60% 20%;
   background: linear-gradient(135deg, #f39c12, #7a4e09) !important;
+  box-shadow: 0 0 40px rgba(243, 156, 18, 0.4), 0 0 80px rgba(243, 156, 18, 0.15);
+  animation: bossPulse 1.8s ease-in-out infinite;
 }
 .boss-visual[data-boss="5"] .boss-body::before,
-.boss-visual[data-boss="5"] .boss-body::after { background: #ffc040; top: 25%; }
+.boss-visual[data-boss="5"] .boss-body::after {
+  background: #ffc040; top: 25%; width: 15px; height: 15px;
+  box-shadow: 0 0 12px rgba(255, 192, 64, 0.8);
+}
+/* Horns — serpent fangs */
+.boss-visual[data-boss="5"] .boss-horns {
+  display: block; width: 110px; height: 32px;
+  top: 20%; left: 50%; transform: translateX(-50%);
+}
+.boss-visual[data-boss="5"] .boss-horns::before,
+.boss-visual[data-boss="5"] .boss-horns::after {
+  width: 7px; height: 30px;
+  border-radius: 3px 3px 1px 1px;
+  background: linear-gradient(180deg, #ffe080, #f39c12);
+  box-shadow: 0 0 8px rgba(243, 156, 18, 0.6);
+  bottom: 0;
+  animation: hornPulse 1.8s ease-in-out infinite;
+}
+.boss-visual[data-boss="5"] .boss-horns::before { left: 14px; transform: rotate(-25deg); }
+.boss-visual[data-boss="5"] .boss-horns::after { right: 14px; transform: rotate(25deg); }
+/* Aura — faint golden shimmer */
+.boss-visual[data-boss="5"] .boss-aura {
+  display: block;
+  width: 140px; height: 140px;
+  top: 50%; left: 50%;
+  border-radius: 50%;
+  border: 2px solid rgba(243, 156, 18, 0.15);
+  animation: auraBreath 3s ease-in-out infinite;
+}
 
+/* ────── BOSS 6: Ratio Hydra (Ratios) ────── */
+/* Tier 3 — cyan dual-head + horns + WINGS + aura ring */
 .boss-visual[data-boss="6"] .boss-body {
-  /* Ch7 Ratios — Double-headed shape */
+  width: 110px; height: 110px;
   border-radius: 50% 10% 50% 10%;
   background: linear-gradient(180deg, #00bcd4, #004d56) !important;
+  box-shadow: 0 0 45px rgba(0, 188, 212, 0.4), 0 0 90px rgba(0, 188, 212, 0.15);
+  animation: bossPulse 1.6s ease-in-out infinite;
 }
 .boss-visual[data-boss="6"] .boss-body::before,
-.boss-visual[data-boss="6"] .boss-body::after { background: #40e0f0; top: 20%; }
+.boss-visual[data-boss="6"] .boss-body::after {
+  background: #40e0f0; top: 20%; width: 16px; height: 16px;
+  box-shadow: 0 0 14px rgba(64, 224, 240, 0.8);
+}
+/* Horns */
+.boss-visual[data-boss="6"] .boss-horns {
+  display: block; width: 120px; height: 35px;
+  top: 14%; left: 50%; transform: translateX(-50%);
+}
+.boss-visual[data-boss="6"] .boss-horns::before,
+.boss-visual[data-boss="6"] .boss-horns::after {
+  width: 8px; height: 32px; border-radius: 4px 4px 1px 1px;
+  background: linear-gradient(180deg, #40e0f0, #00bcd4);
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
+  bottom: 0; animation: hornPulse 1.6s ease-in-out infinite;
+}
+.boss-visual[data-boss="6"] .boss-horns::before { left: 6px; transform: rotate(-22deg); }
+.boss-visual[data-boss="6"] .boss-horns::after { right: 6px; transform: rotate(22deg); }
+/* Wings — fin-like side appendages */
+.boss-visual[data-boss="6"] .boss-wings {
+  display: block; width: 180px; height: 80px;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+.boss-visual[data-boss="6"] .boss-wings::before,
+.boss-visual[data-boss="6"] .boss-wings::after {
+  width: 30px; height: 60px; top: 10px;
+  background: linear-gradient(135deg, rgba(0, 188, 212, 0.6), rgba(0, 188, 212, 0.1));
+  border-radius: 50% 0 50% 0;
+}
+.boss-visual[data-boss="6"] .boss-wings::before {
+  left: 0; transform-origin: right center;
+  animation: wingFlap 2.5s ease-in-out infinite;
+}
+.boss-visual[data-boss="6"] .boss-wings::after {
+  right: 0; border-radius: 0 50% 0 50%;
+  transform-origin: left center;
+  animation: wingFlapR 2.5s ease-in-out infinite;
+}
+/* Aura ring */
+.boss-visual[data-boss="6"] .boss-aura {
+  display: block; width: 150px; height: 150px;
+  top: 50%; left: 50%;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 188, 212, 0.2);
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.1);
+  animation: auraBreath 2.5s ease-in-out infinite;
+}
 
+/* ────── BOSS 7: Percent Phantom (Percents) ────── */
+/* Tier 3 — pink pie-chart ghost + horns + spectral wings + aura */
 .boss-visual[data-boss="7"] .boss-body {
-  /* Ch8 Percents — Pie-chart ghost */
+  width: 115px; height: 115px;
   border-radius: 50% 50% 30% 30%;
   background: conic-gradient(#e91e63 0% 65%, #5a0a27 65% 100%) !important;
+  box-shadow: 0 0 45px rgba(233, 30, 99, 0.4), 0 0 90px rgba(233, 30, 99, 0.15);
+  animation: bossPulse 1.6s ease-in-out infinite;
 }
 .boss-visual[data-boss="7"] .boss-body::before,
-.boss-visual[data-boss="7"] .boss-body::after { background: #ff6090; }
+.boss-visual[data-boss="7"] .boss-body::after {
+  background: #ff6090; width: 16px; height: 16px;
+  box-shadow: 0 0 14px rgba(255, 96, 144, 0.8);
+}
+/* Horns — ghostly wisps */
+.boss-visual[data-boss="7"] .boss-horns {
+  display: block; width: 110px; height: 34px;
+  top: 14%; left: 50%; transform: translateX(-50%);
+}
+.boss-visual[data-boss="7"] .boss-horns::before,
+.boss-visual[data-boss="7"] .boss-horns::after {
+  width: 6px; height: 30px; border-radius: 3px;
+  background: linear-gradient(180deg, #ff6090, transparent);
+  bottom: 0;
+}
+.boss-visual[data-boss="7"] .boss-horns::before { left: 16px; transform: rotate(-12deg); }
+.boss-visual[data-boss="7"] .boss-horns::after { right: 16px; transform: rotate(12deg); }
+/* Wings — ghostly spectral */
+.boss-visual[data-boss="7"] .boss-wings {
+  display: block; width: 185px; height: 90px;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+.boss-visual[data-boss="7"] .boss-wings::before,
+.boss-visual[data-boss="7"] .boss-wings::after {
+  width: 35px; height: 70px; top: 10px;
+  background: linear-gradient(135deg, rgba(233, 30, 99, 0.5), rgba(233, 30, 99, 0.05));
+  border-radius: 60% 0 60% 0;
+}
+.boss-visual[data-boss="7"] .boss-wings::before {
+  left: 0; transform-origin: right center;
+  animation: wingFlap 2.2s ease-in-out infinite;
+}
+.boss-visual[data-boss="7"] .boss-wings::after {
+  right: 0; border-radius: 0 60% 0 60%;
+  transform-origin: left center;
+  animation: wingFlapR 2.2s ease-in-out infinite;
+}
+/* Aura */
+.boss-visual[data-boss="7"] .boss-aura {
+  display: block; width: 155px; height: 155px;
+  top: 50%; left: 50%; border-radius: 50%;
+  border: 2px solid rgba(233, 30, 99, 0.2);
+  box-shadow: 0 0 25px rgba(233, 30, 99, 0.12);
+  animation: auraBreath 2.2s ease-in-out infinite;
+}
 
+/* ────── BOSS 8: Root Horror (Square Roots) ────── */
+/* Tier 3 — brown tendril creature + horns + tendril-wings + dark aura */
 .boss-visual[data-boss="8"] .boss-body {
-  /* Ch9 Square Roots — Root-tendril creature */
+  width: 115px; height: 115px;
   border-radius: 30% 70% 30% 70%;
   background: linear-gradient(135deg, #8d6e63, #3e2723) !important;
+  box-shadow: 0 0 40px rgba(141, 110, 99, 0.4), 0 0 80px rgba(62, 39, 35, 0.3);
+  animation: bossPulseMenacing 2s ease-in-out infinite;
 }
 .boss-visual[data-boss="8"] .boss-body::before,
-.boss-visual[data-boss="8"] .boss-body::after { background: #a08070; }
+.boss-visual[data-boss="8"] .boss-body::after {
+  background: #c0a090; width: 16px; height: 10px;
+  border-radius: 50% 50% 30% 30%;
+  box-shadow: 0 0 12px rgba(192, 160, 144, 0.7);
+}
+/* Horns — root-like protrusions */
+.boss-visual[data-boss="8"] .boss-horns {
+  display: block; width: 130px; height: 40px;
+  top: 10%; left: 50%; transform: translateX(-50%);
+}
+.boss-visual[data-boss="8"] .boss-horns::before,
+.boss-visual[data-boss="8"] .boss-horns::after {
+  width: 10px; height: 38px; border-radius: 5px 5px 2px 2px;
+  background: linear-gradient(180deg, #8d6e63, #5d4037);
+  box-shadow: 0 0 8px rgba(93, 64, 55, 0.5);
+  bottom: 0;
+}
+.boss-visual[data-boss="8"] .boss-horns::before { left: 12px; transform: rotate(-30deg); }
+.boss-visual[data-boss="8"] .boss-horns::after { right: 12px; transform: rotate(30deg); }
+/* Wings — gnarled tendril-like */
+.boss-visual[data-boss="8"] .boss-wings {
+  display: block; width: 190px; height: 100px;
+  top: 48%; left: 50%; transform: translate(-50%, -50%);
+}
+.boss-visual[data-boss="8"] .boss-wings::before,
+.boss-visual[data-boss="8"] .boss-wings::after {
+  width: 35px; height: 80px; top: 10px;
+  background: linear-gradient(180deg, rgba(93, 64, 55, 0.6), rgba(62, 39, 35, 0.1));
+  border-radius: 40% 10% 40% 10%;
+}
+.boss-visual[data-boss="8"] .boss-wings::before {
+  left: 0; transform-origin: right center;
+  animation: wingFlap 3s ease-in-out infinite;
+}
+.boss-visual[data-boss="8"] .boss-wings::after {
+  right: 0; border-radius: 10% 40% 10% 40%;
+  transform-origin: left center;
+  animation: wingFlapR 3s ease-in-out infinite;
+}
+/* Dark aura */
+.boss-visual[data-boss="8"] .boss-aura {
+  display: block; width: 160px; height: 160px;
+  top: 50%; left: 50%; border-radius: 40% 60% 40% 60%;
+  background: radial-gradient(circle, rgba(62, 39, 35, 0.2), transparent 70%);
+  animation: auraBreath 2.5s ease-in-out infinite;
+}
 
+/* ────── BOSS 9: Angle Colossus (Angles) ────── */
+/* Tier 4 — red angular golem + horns + blade-wings + CROWN + menacing aura */
 .boss-visual[data-boss="9"] .boss-body {
-  /* Ch10 Angles — Sharp angular golem */
+  width: 105px; height: 105px;
   border-radius: 5%;
   background: linear-gradient(45deg, #e74c3c, #5a1a14) !important;
+  box-shadow: 0 0 50px rgba(231, 76, 60, 0.45), 0 0 100px rgba(231, 76, 60, 0.2);
   transform: rotate(45deg);
+  animation: bossPulseMenacing 1.8s ease-in-out infinite;
 }
 .boss-visual[data-boss="9"] .boss-body::before,
 .boss-visual[data-boss="9"] .boss-body::after {
-  background: #ff7060;
+  background: #ff7060; width: 16px; height: 16px;
   transform: rotate(-45deg);
+  box-shadow: 0 0 14px rgba(255, 112, 96, 0.9);
+}
+/* Horns — angular blades */
+.boss-visual[data-boss="9"] .boss-horns {
+  display: block; width: 140px; height: 45px;
+  top: 6%; left: 50%; transform: translateX(-50%);
+}
+.boss-visual[data-boss="9"] .boss-horns::before,
+.boss-visual[data-boss="9"] .boss-horns::after {
+  width: 12px; height: 42px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background: linear-gradient(180deg, #ff7060, #e74c3c);
+  box-shadow: 0 0 10px rgba(231, 76, 60, 0.6);
+  bottom: 0; animation: hornPulse 1.5s ease-in-out infinite;
+}
+.boss-visual[data-boss="9"] .boss-horns::before { left: 14px; transform: rotate(-18deg); }
+.boss-visual[data-boss="9"] .boss-horns::after { right: 14px; transform: rotate(18deg); }
+/* Wings — angular blade fins */
+.boss-visual[data-boss="9"] .boss-wings {
+  display: block; width: 200px; height: 100px;
+  top: 45%; left: 50%; transform: translate(-50%, -50%);
+}
+.boss-visual[data-boss="9"] .boss-wings::before,
+.boss-visual[data-boss="9"] .boss-wings::after {
+  width: 40px; height: 70px; top: 15px;
+  clip-path: polygon(100% 0%, 0% 50%, 100% 100%);
+  background: linear-gradient(180deg, rgba(231, 76, 60, 0.7), rgba(90, 26, 20, 0.2));
+}
+.boss-visual[data-boss="9"] .boss-wings::before {
+  left: 0; transform-origin: right center;
+  animation: wingFlap 2s ease-in-out infinite;
+}
+.boss-visual[data-boss="9"] .boss-wings::after {
+  right: 0; clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  transform-origin: left center;
+  animation: wingFlapR 2s ease-in-out infinite;
+}
+/* Crown — angular crest */
+.boss-visual[data-boss="9"] .boss-crown {
+  display: block; width: 60px; height: 18px;
+  top: 4%; left: 50%; transform: translateX(-50%);
+  clip-path: polygon(0% 100%, 15% 0%, 30% 60%, 50% 0%, 70% 60%, 85% 0%, 100% 100%);
+  background: linear-gradient(180deg, #ff7060, #e74c3c);
+  animation: crownFloat 2s ease-in-out infinite;
+}
+/* Aura */
+.boss-visual[data-boss="9"] .boss-aura {
+  display: block; width: 170px; height: 170px;
+  top: 50%; left: 50%; border-radius: 50%;
+  border: 2px solid rgba(231, 76, 60, 0.2);
+  box-shadow: 0 0 30px rgba(231, 76, 60, 0.15);
+  animation: auraPulseIntense 2s ease-in-out infinite;
 }
 
+/* ────── BOSS 10: Fortress Guardian (Perimeter/Area) ────── */
+/* Tier 4 — lime boxy fortress + horns + wall-wings + crown + aura */
 .boss-visual[data-boss="10"] .boss-body {
-  /* Ch11 Perimeter/Area — Boxy fortress */
+  width: 120px; height: 120px;
   border-radius: 8%;
   background: linear-gradient(180deg, #8bc34a, #3a5218) !important;
-  width: 110px; height: 110px;
+  box-shadow: 0 0 50px rgba(139, 195, 74, 0.4), 0 0 100px rgba(139, 195, 74, 0.15);
+  animation: bossPulseMenacing 1.8s ease-in-out infinite;
 }
 .boss-visual[data-boss="10"] .boss-body::before,
-.boss-visual[data-boss="10"] .boss-body::after { background: #a0e060; }
+.boss-visual[data-boss="10"] .boss-body::after {
+  background: #a0e060; width: 18px; height: 12px;
+  border-radius: 50% 50% 20% 20%;
+  box-shadow: 0 0 14px rgba(160, 224, 96, 0.8);
+}
+/* Horns — battlement towers */
+.boss-visual[data-boss="10"] .boss-horns {
+  display: block; width: 130px; height: 40px;
+  top: 6%; left: 50%; transform: translateX(-50%);
+}
+.boss-visual[data-boss="10"] .boss-horns::before,
+.boss-visual[data-boss="10"] .boss-horns::after {
+  width: 14px; height: 36px;
+  border-radius: 3px 3px 0 0;
+  background: linear-gradient(180deg, #a0e060, #6d9b30);
+  box-shadow: 0 0 8px rgba(139, 195, 74, 0.5);
+  bottom: 0; animation: hornPulse 2s ease-in-out infinite;
+}
+.boss-visual[data-boss="10"] .boss-horns::before { left: 10px; }
+.boss-visual[data-boss="10"] .boss-horns::after { right: 10px; }
+/* Wings — fortress walls */
+.boss-visual[data-boss="10"] .boss-wings {
+  display: block; width: 210px; height: 90px;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+.boss-visual[data-boss="10"] .boss-wings::before,
+.boss-visual[data-boss="10"] .boss-wings::after {
+  width: 38px; height: 75px; top: 8px;
+  background: linear-gradient(180deg, rgba(139, 195, 74, 0.5), rgba(58, 82, 24, 0.15));
+  border-radius: 6px;
+  border: 1px solid rgba(139, 195, 74, 0.2);
+}
+.boss-visual[data-boss="10"] .boss-wings::before {
+  left: 0; transform-origin: right center;
+  animation: wingFlap 2.8s ease-in-out infinite;
+}
+.boss-visual[data-boss="10"] .boss-wings::after {
+  right: 0; transform-origin: left center;
+  animation: wingFlapR 2.8s ease-in-out infinite;
+}
+/* Crown — battlement parapet */
+.boss-visual[data-boss="10"] .boss-crown {
+  display: block; width: 70px; height: 14px;
+  top: 4%; left: 50%; transform: translateX(-50%);
+  background: repeating-linear-gradient(90deg, #8bc34a 0px, #8bc34a 10px, transparent 10px, transparent 14px);
+  animation: crownFloat 2.5s ease-in-out infinite;
+}
+/* Aura */
+.boss-visual[data-boss="10"] .boss-aura {
+  display: block; width: 175px; height: 175px;
+  top: 50%; left: 50%; border-radius: 12%;
+  border: 2px solid rgba(139, 195, 74, 0.15);
+  box-shadow: 0 0 30px rgba(139, 195, 74, 0.1);
+  animation: auraBreath 2.5s ease-in-out infinite;
+}
 
+/* ────── BOSS 11: Triangle Titan (Right Triangles) ────── */
+/* Tier 4 — indigo triangle + horns + blade-wings + crown + aura */
 .boss-visual[data-boss="11"] .boss-body {
-  /* Ch12 Right Triangles — Triangular shape via clipping */
+  width: 120px; height: 120px;
   border-radius: 0;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   background: linear-gradient(180deg, #3f51b5, #1a2260) !important;
+  box-shadow: none;
+  filter: drop-shadow(0 0 25px rgba(63, 81, 181, 0.5)) drop-shadow(0 0 50px rgba(63, 81, 181, 0.2));
+  animation: bossPulseMenacing 1.6s ease-in-out infinite;
 }
 .boss-visual[data-boss="11"] .boss-body::before,
-.boss-visual[data-boss="11"] .boss-body::after { background: #6070dd; clip-path: circle(50%); }
+.boss-visual[data-boss="11"] .boss-body::after {
+  background: #8090ff; clip-path: circle(50%);
+  width: 16px; height: 16px; top: 45%;
+  box-shadow: 0 0 14px rgba(128, 144, 255, 0.8);
+}
+/* Horns — geometric spires */
+.boss-visual[data-boss="11"] .boss-horns {
+  display: block; width: 100px; height: 44px;
+  top: 4%; left: 50%; transform: translateX(-50%);
+}
+.boss-visual[data-boss="11"] .boss-horns::before,
+.boss-visual[data-boss="11"] .boss-horns::after {
+  width: 10px; height: 40px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background: linear-gradient(180deg, #8090ff, #3f51b5);
+  bottom: 0; animation: hornPulse 1.4s ease-in-out infinite;
+}
+.boss-visual[data-boss="11"] .boss-horns::before { left: 10px; transform: rotate(-10deg); }
+.boss-visual[data-boss="11"] .boss-horns::after { right: 10px; transform: rotate(10deg); }
+/* Wings — sharp triangular */
+.boss-visual[data-boss="11"] .boss-wings {
+  display: block; width: 210px; height: 100px;
+  top: 48%; left: 50%; transform: translate(-50%, -50%);
+}
+.boss-visual[data-boss="11"] .boss-wings::before,
+.boss-visual[data-boss="11"] .boss-wings::after {
+  width: 42px; height: 80px; top: 10px;
+  clip-path: polygon(100% 20%, 0% 50%, 100% 80%);
+  background: linear-gradient(180deg, rgba(63, 81, 181, 0.6), rgba(26, 34, 96, 0.15));
+}
+.boss-visual[data-boss="11"] .boss-wings::before {
+  left: 0; transform-origin: right center;
+  animation: wingFlap 1.8s ease-in-out infinite;
+}
+.boss-visual[data-boss="11"] .boss-wings::after {
+  right: 0; clip-path: polygon(0% 20%, 100% 50%, 0% 80%);
+  transform-origin: left center;
+  animation: wingFlapR 1.8s ease-in-out infinite;
+}
+/* Crown — geometric halo */
+.boss-visual[data-boss="11"] .boss-crown {
+  display: block; width: 50px; height: 16px;
+  top: 1%; left: 50%; transform: translateX(-50%);
+  clip-path: polygon(0% 100%, 25% 0%, 50% 70%, 75% 0%, 100% 100%);
+  background: linear-gradient(180deg, #8090ff, #3f51b5);
+  animation: crownGlow 2s ease-in-out infinite;
+  color: #8090ff;
+}
+/* Aura */
+.boss-visual[data-boss="11"] .boss-aura {
+  display: block; width: 170px; height: 170px;
+  top: 50%; left: 50%;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background: radial-gradient(circle at 50% 60%, rgba(63, 81, 181, 0.15), transparent 70%);
+  animation: auraBreath 2s ease-in-out infinite;
+}
 
+/* ────── BOSS 12: Data Sentinel (Data/Stats) ────── */
+/* Tier 5 — towering blue-grey monolith + all elements + orbital particles */
 .boss-visual[data-boss="12"] .boss-body {
-  /* Ch13 Data/Stats — Bar-chart sentinel */
+  width: 120px; height: 130px;
   border-radius: 10% 10% 5% 5%;
   background: repeating-linear-gradient(
     90deg, #607d8b 0px, #607d8b 18px,
     #37474f 18px, #37474f 24px
   ) !important;
+  box-shadow: 0 0 50px rgba(96, 125, 139, 0.5), 0 0 100px rgba(96, 125, 139, 0.2);
+  animation: bossPulseMenacing 1.5s ease-in-out infinite;
 }
 .boss-visual[data-boss="12"] .boss-body::before,
-.boss-visual[data-boss="12"] .boss-body::after { background: #90a4ae; }
+.boss-visual[data-boss="12"] .boss-body::after {
+  background: #b0bec5; width: 18px; height: 12px;
+  border-radius: 50% 50% 20% 20%;
+  box-shadow: 0 0 16px rgba(176, 190, 197, 0.9);
+}
+/* Horns — data antenna towers */
+.boss-visual[data-boss="12"] .boss-horns {
+  display: block; width: 140px; height: 48px;
+  top: 2%; left: 50%; transform: translateX(-50%);
+}
+.boss-visual[data-boss="12"] .boss-horns::before,
+.boss-visual[data-boss="12"] .boss-horns::after {
+  width: 6px; height: 45px; border-radius: 3px;
+  background: linear-gradient(180deg, #b0bec5, #607d8b);
+  box-shadow: 0 0 6px rgba(96, 125, 139, 0.6);
+  bottom: 0; animation: hornPulse 1.2s ease-in-out infinite;
+}
+.boss-visual[data-boss="12"] .boss-horns::before { left: 20px; transform: rotate(-8deg); }
+.boss-visual[data-boss="12"] .boss-horns::after { right: 20px; transform: rotate(8deg); }
+/* Wings — data panels */
+.boss-visual[data-boss="12"] .boss-wings {
+  display: block; width: 220px; height: 110px;
+  top: 46%; left: 50%; transform: translate(-50%, -50%);
+}
+.boss-visual[data-boss="12"] .boss-wings::before,
+.boss-visual[data-boss="12"] .boss-wings::after {
+  width: 44px; height: 90px; top: 10px;
+  background: linear-gradient(180deg, rgba(96, 125, 139, 0.5), rgba(55, 71, 79, 0.1));
+  border: 1px solid rgba(176, 190, 197, 0.2);
+  border-radius: 4px;
+}
+.boss-visual[data-boss="12"] .boss-wings::before {
+  left: 0; transform-origin: right center;
+  animation: wingFlap 2s ease-in-out infinite;
+}
+.boss-visual[data-boss="12"] .boss-wings::after {
+  right: 0; transform-origin: left center;
+  animation: wingFlapR 2s ease-in-out infinite;
+}
+/* Crown — bar chart crown */
+.boss-visual[data-boss="12"] .boss-crown {
+  display: block; width: 80px; height: 22px;
+  top: 0; left: 50%; transform: translateX(-50%);
+  background: repeating-linear-gradient(90deg, #90a4ae 0px, #90a4ae 8px, transparent 8px, transparent 12px);
+  border-bottom: 2px solid #607d8b;
+  animation: crownGlow 1.5s ease-in-out infinite;
+  color: #90a4ae;
+}
+/* Aura — orbital data ring */
+.boss-visual[data-boss="12"] .boss-aura {
+  display: block; width: 185px; height: 185px;
+  top: 50%; left: 50%; border-radius: 50%;
+  border: 2px dashed rgba(96, 125, 139, 0.25);
+  animation: auraRotate 12s linear infinite;
+}
+.boss-visual[data-boss="12"] .boss-aura::before {
+  content: ''; position: absolute;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #90a4ae; box-shadow: 0 0 8px rgba(144, 164, 174, 0.8);
+  top: -4px; left: 50%; transform: translateX(-50%);
+}
 
+/* ────── BOSS 13: Probability Phantom (Counting/Probability) ────── */
+/* Tier 5 — deep purple dice phantom + all elements + multiple orbital dots */
 .boss-visual[data-boss="13"] .boss-body {
-  /* Ch14 Counting/Probability — Dice phantom */
+  width: 125px; height: 125px;
   border-radius: 20%;
   background: linear-gradient(135deg, #7c4dff, #2a1070) !important;
+  box-shadow: 0 0 55px rgba(124, 77, 255, 0.5), 0 0 110px rgba(124, 77, 255, 0.2);
+  animation: bossPulseVoid 2s ease-in-out infinite;
 }
-.boss-visual[data-boss="13"] .boss-body::before { background: #fff; width: 10px; height: 10px; top: 30%; left: 30%; }
-.boss-visual[data-boss="13"] .boss-body::after { background: #fff; width: 10px; height: 10px; top: 30%; right: 30%; }
+/* Dice dots for eyes */
+.boss-visual[data-boss="13"] .boss-body::before {
+  background: #fff; width: 14px; height: 14px;
+  top: 30%; left: 28%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+.boss-visual[data-boss="13"] .boss-body::after {
+  background: #fff; width: 14px; height: 14px;
+  top: 30%; right: 28%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+/* Horns — crystalline spires */
+.boss-visual[data-boss="13"] .boss-horns {
+  display: block; width: 130px; height: 50px;
+  top: 2%; left: 50%; transform: translateX(-50%);
+}
+.boss-visual[data-boss="13"] .boss-horns::before,
+.boss-visual[data-boss="13"] .boss-horns::after {
+  width: 10px; height: 46px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background: linear-gradient(180deg, #b388ff, #7c4dff);
+  box-shadow: 0 0 10px rgba(124, 77, 255, 0.6);
+  bottom: 0; animation: hornPulse 1.2s ease-in-out infinite;
+}
+.boss-visual[data-boss="13"] .boss-horns::before { left: 10px; transform: rotate(-15deg); }
+.boss-visual[data-boss="13"] .boss-horns::after { right: 10px; transform: rotate(15deg); }
+/* Wings — spectral probability clouds */
+.boss-visual[data-boss="13"] .boss-wings {
+  display: block; width: 225px; height: 110px;
+  top: 44%; left: 50%; transform: translate(-50%, -50%);
+}
+.boss-visual[data-boss="13"] .boss-wings::before,
+.boss-visual[data-boss="13"] .boss-wings::after {
+  width: 45px; height: 90px; top: 10px;
+  background: linear-gradient(135deg, rgba(124, 77, 255, 0.5), rgba(42, 16, 112, 0.08));
+  border-radius: 50% 10% 50% 10%;
+}
+.boss-visual[data-boss="13"] .boss-wings::before {
+  left: 0; transform-origin: right center;
+  animation: wingFlap 1.8s ease-in-out infinite;
+}
+.boss-visual[data-boss="13"] .boss-wings::after {
+  right: 0; border-radius: 10% 50% 10% 50%;
+  transform-origin: left center;
+  animation: wingFlapR 1.8s ease-in-out infinite;
+}
+/* Crown — probability halo with dice pips */
+.boss-visual[data-boss="13"] .boss-crown {
+  display: block; width: 70px; height: 18px;
+  top: 0; left: 50%; transform: translateX(-50%);
+  clip-path: polygon(0% 100%, 10% 20%, 25% 80%, 40% 0%, 60% 80%, 75% 0%, 90% 80%, 100% 100%);
+  background: linear-gradient(180deg, #b388ff, #7c4dff);
+  animation: crownGlow 1.5s ease-in-out infinite;
+  color: #b388ff;
+}
+/* Aura — double orbital rings */
+.boss-visual[data-boss="13"] .boss-aura {
+  display: block; width: 190px; height: 190px;
+  top: 50%; left: 50%; border-radius: 50%;
+  border: 2px solid rgba(124, 77, 255, 0.2);
+  box-shadow: 0 0 35px rgba(124, 77, 255, 0.15), inset 0 0 30px rgba(124, 77, 255, 0.05);
+  animation: auraRotate 10s linear infinite;
+}
+.boss-visual[data-boss="13"] .boss-aura::before {
+  content: ''; position: absolute;
+  width: 10px; height: 10px; border-radius: 50%;
+  background: #b388ff; box-shadow: 0 0 10px rgba(179, 136, 255, 0.9);
+  top: -5px; left: 50%; transform: translateX(-50%);
+}
 
+/* ────── BOSS 14: THE VOID LORD (Problem-Solving) — FINAL BOSS ────── */
+/* Tier 5 MAX — massive golden void entity, all elements, intense multi-layer glow */
 .boss-visual[data-boss="14"] .boss-body {
-  /* Ch15 Problem-Solving — Final boss: void crown shape */
-  border-radius: 10% 10% 50% 50%;
-  background: linear-gradient(180deg, #ffd700, #8b6914) !important;
-  box-shadow: 0 0 60px rgba(255, 215, 0, 0.5), 0 0 120px rgba(255, 215, 0, 0.2) !important;
-  width: 130px; height: 130px;
+  width: 140px; height: 140px;
+  border-radius: 15% 15% 45% 45%;
+  background: linear-gradient(180deg, #ffd700, #b8860b, #8b6914) !important;
+  box-shadow:
+    0 0 60px rgba(255, 215, 0, 0.6),
+    0 0 120px rgba(255, 215, 0, 0.3),
+    0 0 200px rgba(255, 215, 0, 0.1),
+    inset 0 0 30px rgba(255, 215, 0, 0.2) !important;
+  animation: bossPulseVoid 1.5s ease-in-out infinite;
 }
 .boss-visual[data-boss="14"] .boss-body::before,
-.boss-visual[data-boss="14"] .boss-body::after { background: #ff4060; width: 14px; height: 14px; }
+.boss-visual[data-boss="14"] .boss-body::after {
+  background: #ff4060; width: 18px; height: 18px;
+  box-shadow: 0 0 20px rgba(255, 64, 96, 1), 0 0 40px rgba(255, 64, 96, 0.5);
+}
+/* Horns — void lord crown spikes */
+.boss-visual[data-boss="14"] .boss-horns {
+  display: block; width: 150px; height: 58px;
+  top: -2%; left: 50%; transform: translateX(-50%);
+}
+.boss-visual[data-boss="14"] .boss-horns::before,
+.boss-visual[data-boss="14"] .boss-horns::after {
+  width: 14px; height: 55px;
+  clip-path: polygon(50% 0%, 10% 100%, 90% 100%);
+  background: linear-gradient(180deg, #ffd700, #b8860b);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+  bottom: 0;
+  animation: hornPulse 1s ease-in-out infinite;
+}
+.boss-visual[data-boss="14"] .boss-horns::before { left: 8px; transform: rotate(-20deg); }
+.boss-visual[data-boss="14"] .boss-horns::after { right: 8px; transform: rotate(20deg); }
+/* Wings — sweeping void wings, largest in the game */
+.boss-visual[data-boss="14"] .boss-wings {
+  display: block; width: 260px; height: 140px;
+  top: 40%; left: 50%; transform: translate(-50%, -50%);
+}
+.boss-visual[data-boss="14"] .boss-wings::before,
+.boss-visual[data-boss="14"] .boss-wings::after {
+  width: 55px; height: 120px; top: 10px;
+  background: linear-gradient(180deg, rgba(255, 215, 0, 0.5), rgba(184, 134, 11, 0.15), transparent);
+  border-radius: 50% 0 50% 0;
+  border: 1px solid rgba(255, 215, 0, 0.15);
+}
+.boss-visual[data-boss="14"] .boss-wings::before {
+  left: 0; transform-origin: right center;
+  animation: wingFlap 1.5s ease-in-out infinite;
+}
+.boss-visual[data-boss="14"] .boss-wings::after {
+  right: 0; border-radius: 0 50% 0 50%;
+  transform-origin: left center;
+  animation: wingFlapR 1.5s ease-in-out infinite;
+}
+/* Crown — golden void crown, most elaborate */
+.boss-visual[data-boss="14"] .boss-crown {
+  display: block; width: 90px; height: 24px;
+  top: -4%; left: 50%; transform: translateX(-50%);
+  clip-path: polygon(0% 100%, 8% 0%, 20% 65%, 35% 10%, 50% 50%, 65% 10%, 80% 65%, 92% 0%, 100% 100%);
+  background: linear-gradient(180deg, #ffd700, #daa520);
+  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.8));
+  animation: crownGlow 1.2s ease-in-out infinite;
+  color: #ffd700;
+}
+.boss-visual[data-boss="14"] .boss-crown::before {
+  width: 12px; height: 12px; border-radius: 50%;
+  background: #ff4060;
+  box-shadow: 0 0 10px rgba(255, 64, 96, 0.8);
+  top: -8px; left: 50%; transform: translateX(-50%);
+}
+/* Aura — triple-layer void aura, most intense */
+.boss-visual[data-boss="14"] .boss-aura {
+  display: block; width: 210px; height: 210px;
+  top: 50%; left: 50%; border-radius: 50%;
+  border: 3px solid rgba(255, 215, 0, 0.2);
+  box-shadow:
+    0 0 40px rgba(255, 215, 0, 0.2),
+    0 0 80px rgba(255, 215, 0, 0.1),
+    inset 0 0 40px rgba(255, 64, 96, 0.05);
+  animation: auraPulseIntense 1.5s ease-in-out infinite;
+}
+.boss-visual[data-boss="14"] .boss-aura::before {
+  content: ''; position: absolute;
+  width: 100%; height: 100%; border-radius: 50%;
+  border: 1px dashed rgba(255, 215, 0, 0.15);
+  top: 0; left: 0;
+  animation: orbitalSpin 8s linear infinite;
+}
+.boss-visual[data-boss="14"] .boss-aura::after {
+  content: ''; position: absolute;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: #ffd700; box-shadow: 0 0 12px rgba(255, 215, 0, 0.9);
+  top: -6px; left: 50%; transform: translateX(-50%);
+}
 
 /* ===== BADGE NOTIFICATION TOAST ===== */
 .badge-toast {
@@ -2285,14 +3020,25 @@ html, body {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
   .hud-top { padding: 8px 12px; gap: 8px; }
-  .world-map-container { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; padding: 10px 12px 70px; }
+  .world-map-container { grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 10px 10px 70px; }
+  .world-island { padding: 14px 10px; border-radius: 12px; }
+  .island-icon { font-size: 1.8rem; margin-bottom: 4px; }
+  .island-name-label { font-size: 0.75rem; margin-bottom: 3px; }
+  .island-shrines-count { font-size: 0.7rem; }
+  .island-stars { font-size: 0.65rem; }
+  .island-tear { font-size: 1rem; margin-top: 3px; }
+  .island-lock { font-size: 1.2rem; margin-top: 4px; }
   .shrine-grid { grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); gap: 8px; padding: 12px; }
   .ancient-tablet { padding: 16px 18px; }
   .answer-area { grid-template-columns: 1fr; }
   .boss-answer-area { grid-template-columns: 1fr; }
   .title-main { letter-spacing: 2px; }
-  .boss-visual { width: 120px; height: 120px; }
-  .boss-body { width: 90px; height: 90px; }
+  .boss-visual { width: 150px; height: 160px; }
+  .boss-body { width: 80px; height: 80px; }
+  .boss-wings { transform: translate(-50%, -50%) scale(0.7) !important; }
+  .boss-horns { transform: translateX(-50%) scale(0.75) !important; }
+  .boss-aura { transform: translate(-50%, -50%) scale(0.7) !important; }
+  .boss-crown { transform: translateX(-50%) scale(0.75) !important; }
   .hero-scene { width: 140px; height: 180px; }
   .hero-figure { width: 50px; height: 120px; }
   .hero-head { width: 28px; height: 28px; }
@@ -2305,3 +3051,40 @@ html, body {
   .shop-tab { padding: 8px 12px; }
   .btn-exit-shrine { width: 38px; height: 38px; font-size: 1rem; }
 }
+
+/* Extra-small phones (iPhone SE, 320px) */
+@media (max-width: 374px) {
+  .world-map-container { grid-template-columns: repeat(2, 1fr); gap: 8px; padding: 8px 8px 70px; }
+  .world-island { padding: 12px 8px; }
+  .island-icon { font-size: 1.5rem; }
+  .island-name-label { font-size: 0.65rem; }
+  .island-shrines-count { font-size: 0.6rem; }
+  .island-stars { font-size: 0.6rem; }
+}
+
+/* ── Mute Toggle Button ── */
+.btn-mute {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1000;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid rgba(0,212,170,0.4);
+  background: rgba(10,15,30,0.85);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, background 0.2s, transform 0.15s;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+.btn-mute:hover { border-color: #00d4aa; background: rgba(0,212,170,0.15); transform: scale(1.1); }
+.btn-mute:active { transform: scale(0.95); }
+.btn-mute.muted { border-color: rgba(255,80,80,0.4); }
+.btn-mute.muted:hover { border-color: #ff5050; background: rgba(255,80,80,0.15); }
