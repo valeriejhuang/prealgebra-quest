@@ -1710,6 +1710,57 @@ WORLDS[5] = {
       }
     ],
 
+    // ── Extra Challenge: Decimal Place Value ──
+    extraChallenge: [
+      {
+        type: "mc", difficulty: 1,
+        question: 'In the number 3.572, what digit is in the hundredths place?',
+        choices: ["5", "7", "2", "3"],
+        answer: "7",
+        hints: [
+          "After the decimal point: tenths, hundredths, thousandths.",
+          "3.572 → 5 is tenths, 7 is hundredths",
+          "The hundredths digit is 7."
+        ],
+        explanation: [
+          "Decimal places: 3 . 5(tenths) 7(hundredths) 2(thousandths)",
+          "The hundredths digit is <strong>7</strong>.",
+          "Place value: 7 × 1/100 = 0.07"
+        ]
+      },
+      {
+        type: "mc", difficulty: 1,
+        question: 'What is <span class="math">0.04</span> written as a fraction?',
+        choices: ["4/10", "4/100", "4/1000", "40/100"],
+        answer: "4/100",
+        hints: [
+          "0.04 has the 4 in the hundredths place.",
+          "Hundredths means over 100.",
+          "0.04 = 4/100"
+        ],
+        explanation: [
+          "The digit 4 is in the hundredths place.",
+          "So 0.04 = 4/100 = <strong>4/100</strong> (or 1/25 simplified).",
+          "Each decimal place represents a power of 10."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 2,
+        question: 'How many thousandths are in <span class="math">0.250</span>?',
+        answer: "250",
+        hints: [
+          "Thousandths means the number × 1000.",
+          "0.250 × 1000 = ?",
+          "= 250"
+        ],
+        explanation: [
+          "0.250 = 250/1000 = 250 thousandths.",
+          "To convert: 0.250 × 1000 = <strong>250</strong>",
+          "Understanding place value helps convert between decimals and fractions."
+        ]
+      },
+    ],
+
     // ── Boss (10 problems, difficulty 3-4) ──
     boss: [
       {

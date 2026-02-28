@@ -486,6 +486,103 @@ const WORLDS = [
         }
       ],
 
+      // ── Extra Challenge: Order of Operations (PEMDAS) ──
+      // Topic 10: Order of Operations
+      extraChallenge: [
+        {
+          type: "numeric", difficulty: 2,
+          question: 'Evaluate: <span class="math">3 + 4 × 5</span>',
+          answer: "23",
+          hints: [
+            "Remember PEMDAS: Multiplication comes before Addition.",
+            "First compute 4 × 5 = 20",
+            "Then 3 + 20 = 23"
+          ],
+          explanation: [
+            "Order of operations (PEMDAS): Parentheses, Exponents, Multiplication/Division, Addition/Subtraction.",
+            "Multiplication first: 4 × 5 = 20",
+            "Then addition: 3 + 20 = <strong>23</strong>"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 2,
+          question: 'Evaluate: <span class="math">8 + 12 ÷ 4 − 2</span>',
+          answer: "9",
+          hints: [
+            "Do division before addition and subtraction.",
+            "12 ÷ 4 = 3",
+            "Then left to right: 8 + 3 − 2 = 9"
+          ],
+          explanation: [
+            "Division first: 12 ÷ 4 = 3",
+            "Then left to right: 8 + 3 − 2",
+            "= 11 − 2 = <strong>9</strong>"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 2,
+          question: 'Evaluate: <span class="math">(6 + 2) × (9 − 4)</span>',
+          answer: "40",
+          hints: [
+            "Parentheses first!",
+            "6 + 2 = 8 and 9 − 4 = 5",
+            "Then multiply: 8 × 5 = 40"
+          ],
+          explanation: [
+            "Parentheses first: (6 + 2) = 8 and (9 − 4) = 5",
+            "Then multiply: 8 × 5 = <strong>40</strong>"
+          ]
+        },
+        // Topic 11: Negative Numbers & Absolute Value
+        {
+          type: "mc", difficulty: 2,
+          question: 'What is <span class="math">−8 + 5</span>?',
+          choices: ["-13", "-3", "3", "13"],
+          answer: "-3",
+          hints: [
+            "Think of a number line: start at −8 and move 5 to the right.",
+            "−8 + 5 means you owe 8 and get 5 back.",
+            "You still owe 3, so the answer is −3."
+          ],
+          explanation: [
+            "Start at −8 on the number line.",
+            "Move 5 units to the right: −8 + 5 = <strong>−3</strong>",
+            "Adding a positive to a negative brings you closer to zero."
+          ]
+        },
+        {
+          type: "mc", difficulty: 2,
+          question: 'What is the absolute value <span class="math">|−12|</span>?',
+          choices: ["-12", "0", "12", "-1"],
+          answer: "12",
+          hints: [
+            "Absolute value measures the distance from zero on the number line.",
+            "Distance is always positive (or zero).",
+            "|−12| = 12"
+          ],
+          explanation: [
+            "Absolute value |x| gives the distance of x from 0.",
+            "|−12| = 12 because −12 is 12 units from zero.",
+            "Absolute value is always non-negative: <strong>12</strong>"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 2,
+          question: 'What is <span class="math">−4 × (−3)</span>?',
+          answer: "12",
+          hints: [
+            "A negative times a negative gives a positive.",
+            "Multiply the absolute values: 4 × 3 = 12",
+            "Negative × Negative = Positive → 12"
+          ],
+          explanation: [
+            "Rule: negative × negative = positive.",
+            "4 × 3 = 12, and (−) × (−) = (+)",
+            "So −4 × (−3) = <strong>12</strong>"
+          ]
+        },
+      ],
+
       // ── Boss (10 problems, difficulty 3-4) ──
       boss: [
         {
@@ -1126,6 +1223,56 @@ const WORLDS = [
             "When multiplying same bases, add ALL the exponents."
           ]
         }
+      ],
+
+      // ── Extra Challenge: Perfect Cubes ──
+      extraChallenge: [
+        {
+          type: "numeric", difficulty: 2,
+          question: 'What is <span class="math">4³</span> (4 cubed)?',
+          answer: "64",
+          hints: [
+            "4³ means 4 × 4 × 4.",
+            "4 × 4 = 16, then 16 × 4 = ?",
+            "16 × 4 = 64"
+          ],
+          explanation: [
+            "4³ = 4 × 4 × 4",
+            "= 16 × 4 = <strong>64</strong>",
+            "Notice: 4³ = 64 and also 2⁶ = 64 (since 4 = 2²)."
+          ]
+        },
+        {
+          type: "mc", difficulty: 2,
+          question: 'Which of these is a perfect cube?',
+          choices: ["12", "25", "27", "36"],
+          answer: "27",
+          hints: [
+            "A perfect cube is n³ for some integer n.",
+            "Try: 1³=1, 2³=8, 3³=?",
+            "3³ = 27"
+          ],
+          explanation: [
+            "The perfect cubes are: 1, 8, 27, 64, 125, 216, ...",
+            "3³ = 3 × 3 × 3 = <strong>27</strong>",
+            "12, 25, and 36 are not perfect cubes."
+          ]
+        },
+        {
+          type: "numeric", difficulty: 2,
+          question: 'What is <span class="math">5³</span>?',
+          answer: "125",
+          hints: [
+            "5³ = 5 × 5 × 5",
+            "5 × 5 = 25",
+            "25 × 5 = 125"
+          ],
+          explanation: [
+            "5³ = 5 × 5 × 5",
+            "= 25 × 5 = <strong>125</strong>",
+            "Memorize the first few cubes: 1, 8, 27, 64, 125."
+          ]
+        },
       ],
 
       // ── Boss (10 problems, difficulty 3-4) ──

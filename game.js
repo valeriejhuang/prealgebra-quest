@@ -9,9 +9,9 @@
   const PLAYABLE_WORLDS = 15;
   const SHRINE_HEARTS = 3;
   const BOSS_HEARTS = 5;
-  const SHRINES_PER_WORLD = 10;
+  const DEFAULT_SHRINES = 10;
   const BOSS_PROBLEMS = 5;
-  const SHRINE_REQ = 7;
+  const SHRINE_REQ_RATIO = 0.7; // must complete 70% of shrines to unlock boss
   const XP_CORRECT_FIRST = 50;
   const XP_CORRECT_RETRY = 25;
   const XP_BOSS_CORRECT = 100;
@@ -276,6 +276,164 @@
     { id: "world_mastery_15",  icon: "🌍", name: "World Conqueror",  desc: "Complete all shrines in all 15 worlds", cat: "World" },
   ];
 
+  // ══════════════ SOUND FX (Web Audio API) ══════════════
+
+  const SFX = (function () {
+    let ctx = null;
+    let muted = false;
+
+    function getCtx() {
+      if (!ctx) {
+        ctx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (ctx.state === "suspended") ctx.resume();
+      return ctx;
+    }
+
+    function tone(freq, dur, type, vol, delay) {
+      if (muted) return;
+      const c = getCtx();
+      const t = delay ? c.currentTime + delay : c.currentTime;
+      const o = c.createOscillator();
+      const g = c.createGain();
+      o.type = type || "sine";
+      o.frequency.setValueAtTime(freq, t);
+      g.gain.setValueAtTime(vol || 0.15, t);
+      g.gain.exponentialRampToValueAtTime(0.001, t + dur);
+      o.connect(g); g.connect(c.destination);
+      o.start(t); o.stop(t + dur);
+    }
+
+    function noise(dur, vol) {
+      if (muted) return;
+      const c = getCtx();
+      const buf = c.createBuffer(1, c.sampleRate * dur, c.sampleRate);
+      const data = buf.getChannelData(0);
+      for (let i = 0; i < data.length; i++) data[i] = (Math.random() * 2 - 1) * (1 - i / data.length);
+      const src = c.createBufferSource();
+      const g = c.createGain();
+      src.buffer = buf;
+      g.gain.setValueAtTime(vol || 0.08, c.currentTime);
+      g.gain.exponentialRampToValueAtTime(0.001, c.currentTime + dur);
+      src.connect(g); g.connect(c.destination);
+      src.start();
+    }
+
+    return {
+      setMuted: function (m) { muted = m; },
+      isMuted: function () { return muted; },
+
+      // UI click
+      click: function () { tone(800, 0.06, "square", 0.06); },
+
+      // Correct answer — rising two-note chime
+      correct: function () {
+        tone(523, 0.12, "sine", 0.15);
+        tone(784, 0.2, "sine", 0.18, 0.1);
+      },
+
+      // Wrong answer — low buzz
+      wrong: function () {
+        tone(180, 0.15, "sawtooth", 0.12);
+        tone(140, 0.25, "sawtooth", 0.10, 0.1);
+      },
+
+      // Perfect shrine (3 stars) — ascending triad
+      perfect: function () {
+        tone(523, 0.15, "sine", 0.14);
+        tone(659, 0.15, "sine", 0.16, 0.12);
+        tone(784, 0.3, "sine", 0.18, 0.24);
+      },
+
+      // Boss battle start — deep rumble
+      bossStart: function () {
+        tone(80, 0.5, "sawtooth", 0.12);
+        tone(60, 0.7, "sawtooth", 0.10, 0.2);
+        noise(0.3, 0.06);
+      },
+
+      // Boss hit (player correct in boss) — sharp impact
+      bossHit: function () {
+        noise(0.08, 0.12);
+        tone(400, 0.08, "square", 0.1);
+        tone(600, 0.12, "sine", 0.12, 0.05);
+      },
+
+      // Boss attacks player — damage thud
+      bossAttack: function () {
+        noise(0.15, 0.14);
+        tone(120, 0.3, "sawtooth", 0.12);
+        tone(80, 0.2, "sawtooth", 0.08, 0.15);
+      },
+
+      // Boss defeated — victory fanfare
+      victory: function () {
+        tone(523, 0.15, "sine", 0.15);
+        tone(659, 0.15, "sine", 0.15, 0.13);
+        tone(784, 0.15, "sine", 0.15, 0.26);
+        tone(1047, 0.4, "sine", 0.2, 0.39);
+      },
+
+      // Game over — descending somber
+      gameOver: function () {
+        tone(400, 0.25, "sine", 0.12);
+        tone(300, 0.25, "sine", 0.10, 0.2);
+        tone(200, 0.5, "sine", 0.08, 0.4);
+      },
+
+      // Buy item — coin register
+      buy: function () {
+        tone(1200, 0.06, "square", 0.08);
+        tone(1600, 0.08, "square", 0.10, 0.06);
+        tone(2000, 0.1, "sine", 0.08, 0.12);
+      },
+
+      // Equip item — metallic click
+      equip: function () {
+        noise(0.04, 0.08);
+        tone(600, 0.06, "square", 0.08);
+        tone(900, 0.1, "sine", 0.10, 0.04);
+      },
+
+      // Badge earned — achievement sparkle
+      badge: function () {
+        tone(880, 0.1, "sine", 0.12);
+        tone(1108, 0.1, "sine", 0.14, 0.08);
+        tone(1318, 0.2, "sine", 0.16, 0.16);
+      },
+
+      // Hint reveal — mystical whoosh
+      hint: function () {
+        if (muted) return;
+        const c = getCtx();
+        const o = c.createOscillator();
+        const g = c.createGain();
+        o.type = "sine";
+        o.frequency.setValueAtTime(300, c.currentTime);
+        o.frequency.exponentialRampToValueAtTime(1200, c.currentTime + 0.2);
+        g.gain.setValueAtTime(0.08, c.currentTime);
+        g.gain.exponentialRampToValueAtTime(0.001, c.currentTime + 0.3);
+        o.connect(g); g.connect(c.destination);
+        o.start(); o.stop(c.currentTime + 0.3);
+      },
+
+      // Countdown tick (last 5 seconds)
+      tick: function () { tone(1000, 0.04, "square", 0.06); },
+
+      // Heart lost
+      heartLost: function () {
+        tone(300, 0.12, "sawtooth", 0.10);
+        tone(200, 0.2, "sawtooth", 0.08, 0.08);
+      },
+
+      // Coin earned — light chime
+      coin: function () { tone(1400, 0.08, "sine", 0.06); },
+
+      // Navigate / screen transition
+      navigate: function () { tone(600, 0.05, "sine", 0.05); tone(800, 0.06, "sine", 0.05, 0.04); },
+    };
+  })();
+
   // ── Game State (persisted) ──
   let state = {
     xp: 0,
@@ -294,6 +452,7 @@
     totalBossRebattles: 0, // number of times player re-battled a defeated boss
     inventory: [],         // array of shop item IDs owned
     equipped: { weapon: null, armor: null, magic: null }, // currently equipped item IDs
+    soundMuted: false,
   };
 
   // ── Session State ──
@@ -391,6 +550,8 @@
       session.bossCountdownRemaining = 0;
       stopBossCountdown();
       bossTimerExpired();
+    } else if (session.bossCountdownRemaining <= 5) {
+      SFX.tick();
     }
     updateBossCountdownDisplay();
   }
@@ -562,6 +723,7 @@
   // ══════════════ VFX: BADGE TOAST ══════════════
 
   function showBadgeToast(badge) {
+    SFX.badge();
     const toast = document.createElement("div");
     toast.className = "badge-toast";
     toast.innerHTML = `<div class="badge-toast-icon">${badge.icon}</div><div class="badge-toast-text">Badge Unlocked: ${badge.name}</div>`;
@@ -571,17 +733,47 @@
 
   // ══════════════ POOL SELECTION ══════════════
 
+  // Per-world shrine count (set by topics.js, defaults to 10)
+  function getShrineCount(worldId) {
+    const w = WORLDS[worldId];
+    return (w && w.shrineCount) ? w.shrineCount : DEFAULT_SHRINES;
+  }
+
+  // Shrine requirement to unlock boss (70% of shrines, rounded up)
+  function getShrineReq(worldId) {
+    return Math.ceil(getShrineCount(worldId) * SHRINE_REQ_RATIO);
+  }
+
   function getWorldSelection(worldId) {
-    if (session.worldSelections[worldId]) return session.worldSelections[worldId];
     const world = WORLDS[worldId];
     const pool = world.pool;
     if (!pool) return { shrines: world.problems || [], boss: world.bossProblems || [] };
-    const tutorialPick = pickRandom(pool.tutorial, 5);
-    const challengePick = pickRandom(pool.challenge, 5);
+
+    // Pick 1 random question from each topic pool every time.
+    // This ensures each shrine entry gets a fresh random question from the pool.
+    // topicPools (built by topics.js) contains one array per topic with all available questions.
+    // Falls back to the legacy group-of-3 slicing if topicPools is missing.
+    const shrines = [];
+    if (pool.topicPools) {
+      for (let t = 0; t < pool.topicPools.length; t++) {
+        const tp = pool.topicPools[t];
+        shrines.push(tp[Math.floor(Math.random() * tp.length)]);
+      }
+    } else {
+      // Legacy fallback: groups of 3 in flat arrays
+      const tutorialTopics = Math.floor(pool.tutorial.length / 3);
+      for (let t = 0; t < tutorialTopics; t++) {
+        const group = pool.tutorial.slice(t * 3, t * 3 + 3);
+        shrines.push(group[Math.floor(Math.random() * group.length)]);
+      }
+      const challengeTopics = Math.floor(pool.challenge.length / 3);
+      for (let t = 0; t < challengeTopics; t++) {
+        const group = pool.challenge.slice(t * 3, t * 3 + 3);
+        shrines.push(group[Math.floor(Math.random() * group.length)]);
+      }
+    }
     const bossPick = pickRandom(pool.boss, BOSS_PROBLEMS);
-    const sel = { shrines: tutorialPick.concat(challengePick), boss: bossPick };
-    session.worldSelections[worldId] = sel;
-    return sel;
+    return { shrines: shrines, boss: bossPick };
   }
 
   // ── Player Level ──
@@ -601,11 +793,12 @@
 
   // ── World Progress ──
   function getWorldProgress(worldId) {
+    const sc = getShrineCount(worldId);
     if (!state.worldProgress[worldId]) {
-      state.worldProgress[worldId] = { shrineStars: new Array(SHRINES_PER_WORLD).fill(0), bossDefeated: false };
+      state.worldProgress[worldId] = { shrineStars: new Array(sc).fill(0), bossDefeated: false };
     }
     const wp = state.worldProgress[worldId];
-    while (wp.shrineStars.length < SHRINES_PER_WORLD) wp.shrineStars.push(0);
+    while (wp.shrineStars.length < sc) wp.shrineStars.push(0);
     return wp;
   }
 
@@ -646,6 +839,8 @@
         if (state.totalBossRebattles === undefined) state.totalBossRebattles = 0;
         if (!state.inventory) state.inventory = [];
         if (!state.equipped) state.equipped = { weapon: null, armor: null, magic: null };
+        if (state.soundMuted === undefined) state.soundMuted = false;
+        SFX.setMuted(state.soundMuted);
         return true;
       }
     } catch (e) {}
@@ -659,7 +854,9 @@
       totalSolved: 0, totalAttempts: 0, currentStreak: 0, bestStreak: 0,
       badges: [], character: null, solvedNoHints: 0, totalPerfectShrines: 0, bossTimes: {}, totalBossRebattles: 0,
       inventory: [], equipped: { weapon: null, armor: null, magic: null },
+      soundMuted: false,
     };
+    SFX.setMuted(false);
     session.worldSelections = {};
   }
 
@@ -690,8 +887,9 @@
     let count = 0;
     for (const wId in state.worldProgress) {
       const wp = state.worldProgress[wId];
-      if (wp.shrineStars && wp.shrineStars.length >= SHRINES_PER_WORLD) {
-        if (wp.shrineStars.every((s) => s > 0)) count++;
+      const sc = getShrineCount(parseInt(wId));
+      if (wp.shrineStars && wp.shrineStars.length >= sc) {
+        if (wp.shrineStars.slice(0, sc).every((s) => s > 0)) count++;
       }
     }
     return count;
@@ -796,6 +994,7 @@
 
   // ── Screen Management ──
   function showScreen(screenId) {
+    SFX.navigate();
     const current = document.querySelector(".screen.active");
     const next = $("screen-" + screenId);
     $$(".overlay").forEach((o) => (o.style.display = "none"));
@@ -903,7 +1102,7 @@
         <div class="island-icon">${world.icon}</div>
         <div class="island-name-label">${world.name}</div>
         ${available
-          ? `<div class="island-shrines-count">${completed}/${SHRINES_PER_WORLD} shrines</div>
+          ? `<div class="island-shrines-count">${completed}/${getShrineCount(idx)} shrines</div>
              <div class="island-stars">${"\u2B50".repeat(Math.min(completed, 5))}</div>
              <div class="island-tear ${bossBeaten ? "collected" : ""}">\uD83D\uDCA7</div>`
           : `<div class="island-lock">\uD83D\uDD12</div>
@@ -912,6 +1111,7 @@
 
       if (unlocked && available) {
         div.onclick = function () {
+          SFX.click();
           session.currentWorld = idx;
           showScreen("island");
           renderIslandView(idx);
@@ -931,28 +1131,34 @@
 
     $("island-name").textContent = world.name;
     $("island-name").style.color = world.color;
-    $("island-progress").textContent = countCompletedShrines(worldId) + " / " + SHRINES_PER_WORLD + " Shrines";
+    const sc = getShrineCount(worldId);
+    const shrineReq = getShrineReq(worldId);
+    $("island-progress").textContent = countCompletedShrines(worldId) + " / " + sc + " Shrines";
 
     const grid = $("shrine-grid");
     grid.innerHTML = "";
 
-    for (let idx = 0; idx < SHRINES_PER_WORLD; idx++) {
+    const topics = world.topics || [];
+    const tutorialCount = Math.floor((world.pool && world.pool.tutorial ? world.pool.tutorial.length : 15) / 3);
+    for (let idx = 0; idx < sc; idx++) {
       const stars = wp.shrineStars[idx];
       const done = stars > 0;
-      const type = idx < 5 ? "tutorial" : "challenge";
+      const type = idx < tutorialCount ? "tutorial" : "challenge";
+      const topicName = topics[idx] ? topics[idx].name : ("Shrine " + (idx + 1));
       const div = document.createElement("div");
       div.className = "shrine-marker" + (done ? " completed" : "");
       div.innerHTML = `
         <div class="shrine-number">${done ? "\u2713" : (idx + 1)}</div>
         <div class="shrine-type-label ${type}">${type}</div>
+        <div class="shrine-topic-label">${topicName}</div>
         ${done ? `<div class="shrine-stars-display">${"\u2B50".repeat(stars)}</div>` : ""}
       `;
-      div.onclick = function () { startShrine(worldId, idx); };
+      div.onclick = function () { SFX.click(); startShrine(worldId, idx); };
       grid.appendChild(div);
     }
 
     const shrinesDone = countCompletedShrines(worldId);
-    const bossUnlocked = shrinesDone >= SHRINE_REQ;
+    const bossUnlocked = shrinesDone >= shrineReq;
     $("temple-boss-name").textContent = world.bossName;
 
     // Best time display
@@ -970,7 +1176,7 @@
     } else if (bossUnlocked) {
       $("temple-req").textContent = "The temple doors are open!";
     } else {
-      $("temple-req").textContent = `Complete ${SHRINE_REQ - shrinesDone} more shrine${SHRINE_REQ - shrinesDone !== 1 ? "s" : ""} to enter`;
+      $("temple-req").textContent = `Complete ${shrineReq - shrinesDone} more shrine${shrineReq - shrinesDone !== 1 ? "s" : ""} to enter`;
     }
 
     const bossBtn = $("btn-enter-boss");
@@ -987,7 +1193,7 @@
       bossBtn.disabled = true;
       bossBtn.textContent = "Enter Temple";
     }
-    bossBtn.onclick = function () { startBoss(worldId); };
+    bossBtn.onclick = function () { SFX.click(); startBoss(worldId); };
   }
 
   // ══════════════ SHRINE ══════════════
@@ -1004,8 +1210,42 @@
     session.isBoss = false;
 
     showScreen("shrine");
-    startTimer();
-    renderShrineProblem();
+
+    // Show knowledge note intro if topic data exists
+    const world = WORLDS[worldId];
+    const topic = world.topics && world.topics[shrineIdx];
+    const noteEl = $("knowledge-note");
+    const tabletEl = $("ancient-tablet");
+    const answerEl = $("answer-area");
+    const hintEl = document.querySelector(".hint-section");
+
+    if (topic && topic.note) {
+      // Show note, hide puzzle elements
+      noteEl.style.display = "block";
+      tabletEl.style.display = "none";
+      answerEl.style.display = "none";
+      if (hintEl) hintEl.style.display = "none";
+      $("knowledge-note-title").textContent = topic.name;
+      $("knowledge-note-body").innerHTML = topic.note;
+
+      $("btn-knowledge-continue").onclick = function () {
+        SFX.click();
+        noteEl.style.display = "none";
+        tabletEl.style.display = "";
+        answerEl.style.display = "";
+        if (hintEl) hintEl.style.display = "";
+        startTimer();
+        renderShrineProblem();
+      };
+    } else {
+      // No topic data — go straight to problem
+      noteEl.style.display = "none";
+      tabletEl.style.display = "";
+      answerEl.style.display = "";
+      if (hintEl) hintEl.style.display = "";
+      startTimer();
+      renderShrineProblem();
+    }
   }
 
   function renderShrineProblem() {
@@ -1063,6 +1303,7 @@
         $("hint-text").textContent = "Not enough coins!"; return;
       }
       state.coins -= cost;
+      SFX.hint();
       $("shrine-coins").textContent = "\u{1FA99} " + state.coins;
       $("hint-text").style.display = "block";
       $("hint-text").textContent = prob.hints[session.hintsUsed];
@@ -1085,6 +1326,8 @@
 
     if (correct) {
       clearEncourageMsg();
+      SFX.correct();
+      SFX.coin();
       state.totalSolved++;
       state.currentStreak++;
       if (state.currentStreak > state.bestStreak) state.bestStreak = state.currentStreak;
@@ -1119,6 +1362,7 @@
           state.xp += bonusXP;
           if (prevStars < 3) state.totalPerfectShrines++;
           launchConfetti(2000);
+          SFX.perfect();
         }
 
         saveGame();
@@ -1126,6 +1370,7 @@
         setTimeout(() => showFeedback(true, xpGain + bonusXP, coinGain, stars, prob), 500);
       }
     } else {
+      SFX.wrong();
       session.wrongThisShrine++;
       state.currentStreak = 0;
       clickedEl.classList.add("wrong");
@@ -1152,6 +1397,7 @@
         }
       } else {
         session.hearts--;
+        SFX.heartLost();
         renderHearts($("shrine-hearts"), session.hearts, SHRINE_HEARTS);
         if (session.hearts <= 0) {
           disableAnswers(area);
@@ -1242,6 +1488,7 @@
       });
     }
     $("btn-feedback-continue").onclick = function () {
+      SFX.click();
       // Clean up any streak display we inserted
       const sd = overlay.querySelector(".streak-display");
       if (sd) sd.remove();
@@ -1254,6 +1501,7 @@
 
   function showGameOver() {
     stopTimer();
+    SFX.gameOver();
     $("overlay-gameover").style.display = "flex";
     $("btn-retry").onclick = function () {
       if (state.coins >= RETRY_COST) {
@@ -1281,8 +1529,6 @@
       saveGame();
       checkBadges();
     }
-    // Force fresh problems on re-battle so each attempt is different
-    delete session.worldSelections[worldId];
     const sel = getWorldSelection(worldId);
     session.currentWorld = worldId;
     session.isBoss = true;
@@ -1294,6 +1540,7 @@
     session.bossMaxHP = session.problems.length;
 
     showScreen("boss");
+    SFX.bossStart();
     startTimer();
     // Reset boss elapsed display
     const bossElText = $("boss-elapsed-text");
@@ -1315,6 +1562,9 @@
     const body = bossVisual.querySelector(".boss-body");
     body.style.background = "";
     body.style.boxShadow = "";
+
+    // Reset hit/attack animations on sub-elements
+    bossVisual.classList.remove("boss-hit", "boss-attack-anim");
   }
 
   function renderBossProblem() {
@@ -1351,6 +1601,7 @@
 
   function handleBossCorrect(prob) {
     stopBossCountdown();
+    SFX.bossHit();
     session.bossHP--;
     saveGame();
     checkBadges();
@@ -1367,6 +1618,8 @@
   }
 
   function handleBossWrong() {
+    SFX.bossAttack();
+    SFX.heartLost();
     session.hearts--;
     renderHearts($("boss-player-hearts"), session.hearts, BOSS_HEARTS);
     stopBossCountdown();
@@ -1388,6 +1641,7 @@
   function bossDefeated() {
     stopTimer();
     stopBossCountdown();
+    SFX.victory();
     const worldId = session.currentWorld;
     const world = WORLDS[worldId];
     const wp = getWorldProgress(worldId);
@@ -1461,7 +1715,6 @@
 
     $("btn-victory-continue").onclick = function () {
       $("overlay-boss-victory").style.display = "none";
-      delete session.worldSelections[worldId];
       showScreen("world-map"); renderWorldMap(); updateHUD();
     };
   }
@@ -1743,6 +1996,7 @@
 
     state.coins -= item.cost;
     state.inventory.push(itemId);
+    SFX.buy();
     // Auto-equip if slot is empty
     if (!state.equipped[item.cat]) {
       state.equipped[item.cat] = itemId;
@@ -1755,6 +2009,7 @@
   function equipItem(itemId) {
     const item = SHOP_ITEMS.find((i) => i.id === itemId);
     if (!item || !state.inventory.includes(itemId)) return;
+    SFX.equip();
     state.equipped[item.cat] = itemId;
     saveGame();
     renderHeroTab();
@@ -1878,6 +2133,19 @@
       showScreen("island");
       renderIslandView(session.currentWorld);
       updateHUD();
+    };
+    // Mute toggle
+    const muteBtn = $("btn-mute");
+    function updateMuteBtn() {
+      muteBtn.textContent = state.soundMuted ? "\uD83D\uDD07" : "\uD83D\uDD0A";
+      muteBtn.classList.toggle("muted", state.soundMuted);
+    }
+    updateMuteBtn();
+    muteBtn.onclick = function () {
+      state.soundMuted = !state.soundMuted;
+      SFX.setMuted(state.soundMuted);
+      updateMuteBtn();
+      saveGame();
     };
   }
 

@@ -63,6 +63,7 @@
     </div>
 
     <button id="btn-inventory" class="btn-ancient btn-small btn-inventory">📋 Progress</button>
+    <button id="btn-mute" class="btn-mute" aria-label="Toggle sound">🔊</button>
   </div>
 
   <!-- ============ ISLAND VIEW (Chapter Level Select) ============ -->
@@ -103,6 +104,18 @@
     <div class="shrine-chamber">
       <div class="rune-glow rune-left"></div>
       <div class="rune-glow rune-right"></div>
+
+      <!-- Knowledge Note (shown before problem, dismissed to reveal puzzle) -->
+      <div class="knowledge-note" id="knowledge-note" style="display:none;">
+        <div class="knowledge-note-header">
+          <span class="knowledge-note-icon">📜</span>
+          <span class="knowledge-note-title" id="knowledge-note-title">Topic Name</span>
+        </div>
+        <div class="knowledge-note-body" id="knowledge-note-body">
+          Knowledge introduction text...
+        </div>
+        <button class="btn-ancient btn-primary btn-knowledge-continue" id="btn-knowledge-continue">Begin Puzzle</button>
+      </div>
 
       <div class="ancient-tablet" id="ancient-tablet">
         <div class="tablet-difficulty" id="tablet-difficulty">⭐</div>
@@ -155,8 +168,12 @@
       </div>
 
       <div class="boss-visual" id="boss-visual">
-        <!-- CSS-animated boss -->
+        <!-- CSS-animated boss — sub-layers styled per data-boss -->
+        <div class="boss-aura"></div>
+        <div class="boss-wings"></div>
+        <div class="boss-horns"></div>
         <div class="boss-body"></div>
+        <div class="boss-crown"></div>
       </div>
 
       <div class="boss-tablet" id="boss-tablet">
@@ -354,6 +371,12 @@
   <script src="chapters7-9.js"></script>
   <script src="chapters10-12.js"></script>
   <script src="chapters13-15.js"></script>
+  <script src="extra-q-ch1-3.js"></script>
+  <script src="extra-q-ch4-6.js"></script>
+  <script src="extra-q-ch7-9.js"></script>
+  <script src="extra-q-ch10-12.js"></script>
+  <script src="extra-q-ch13-15.js"></script>
+  <script src="topics.js"></script>
   <script src="game.js"></script>
 </body>
 </html>

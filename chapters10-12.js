@@ -455,6 +455,56 @@ WORLDS[9] = {
       }
     ],
 
+    // ── Extra Challenge: Supplementary Angles ──
+    extraChallenge: [
+      {
+        type: "numeric", difficulty: 2,
+        question: 'Two angles are supplementary. One measures 65°. What is the other angle in degrees?',
+        answer: "115",
+        hints: [
+          "Supplementary angles add up to 180°.",
+          "180 − 65 = ?",
+          "= 115°"
+        ],
+        explanation: [
+          "Supplementary angles sum to 180°.",
+          "180 − 65 = <strong>115°</strong>",
+          "Together they form a straight line."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 2,
+        question: 'An angle and its supplement are in the ratio 2:7. What is the smaller angle in degrees?',
+        answer: "40",
+        hints: [
+          "The two angles add to 180° and are in ratio 2:7.",
+          "Total parts = 2 + 7 = 9.",
+          "Smaller angle = (2/9) × 180 = 40°"
+        ],
+        explanation: [
+          "2 + 7 = 9 parts total.",
+          "Each part = 180 ÷ 9 = 20°",
+          "Smaller angle = 2 × 20 = <strong>40°</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 2,
+        question: 'If two angles are supplementary and one is a right angle (90°), what type of angle is the other?',
+        choices: ["Acute (< 90°)", "Right (= 90°)", "Obtuse (> 90°)", "Straight (180°)"],
+        answer: "Right (= 90°)",
+        hints: [
+          "Supplementary means they add to 180°.",
+          "If one is 90°, then the other is 180 − 90 = ?",
+          "The other is also 90°."
+        ],
+        explanation: [
+          "180° − 90° = 90°",
+          "So the other angle is also a <strong>right angle (= 90°)</strong>.",
+          "Two right angles are supplementary!"
+        ]
+      },
+    ],
+
     // ── Boss (10 problems, difficulty 3-4) ──────────────
     boss: [
       {
@@ -1680,6 +1730,58 @@ WORLDS[11] = {
           "The diagonals of a <strong>rhombus</strong> always meet at right angles (90°)."
         ]
       }
+    ],
+
+    // ── Extra Challenge: Classifying Triangles (Converse of Pythagorean Theorem) ──
+    extraChallenge: [
+      {
+        type: "mc", difficulty: 3,
+        question: 'A triangle has sides 5, 7, and 9. Is it acute, right, or obtuse?',
+        choices: ["Acute", "Right", "Obtuse"],
+        answer: "Obtuse",
+        hints: [
+          "Compare a² + b² with c² using the two shorter sides as a, b and the longest as c.",
+          "5² + 7² = 25 + 49 = 74. Compare to 9² = 81.",
+          "Since 74 < 81 (a² + b² < c²), the triangle is obtuse."
+        ],
+        explanation: [
+          "Longest side c = 9: c² = 81",
+          "a² + b² = 5² + 7² = 25 + 49 = 74",
+          "Since 74 < 81 (a²+b² < c²), this is an <strong>obtuse</strong> triangle."
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'A triangle has sides 6, 8, and 10. What type of triangle is it?',
+        choices: ["Acute", "Right", "Obtuse", "Isosceles"],
+        answer: "Right",
+        hints: [
+          "Check: does a² + b² = c²?",
+          "6² + 8² = 36 + 64 = 100. And 10² = 100.",
+          "100 = 100, so it's a right triangle!"
+        ],
+        explanation: [
+          "6² + 8² = 36 + 64 = 100",
+          "10² = 100",
+          "Since a² + b² = c², this is a <strong>right</strong> triangle (scaled 3-4-5 triple)."
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'A triangle has sides 7, 8, and 5. Is it acute, right, or obtuse?',
+        choices: ["Acute", "Right", "Obtuse"],
+        answer: "Acute",
+        hints: [
+          "Longest side c = 8: c² = 64.",
+          "a² + b² = 5² + 7² = 25 + 49 = 74.",
+          "Since 74 > 64 (a²+b² > c²), the triangle is acute."
+        ],
+        explanation: [
+          "Longest side c = 8: c² = 64",
+          "a² + b² = 5² + 7² = 74",
+          "Since 74 > 64 (a²+b² > c²), this is an <strong>acute</strong> triangle."
+        ]
+      },
     ],
 
     // ── Boss (10 problems, difficulty 3-4) ──────────────

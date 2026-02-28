@@ -476,6 +476,56 @@ WORLDS[12] = {
       }
     ],
 
+    // ── Extra Challenge: Stem-and-Leaf Plots ──
+    extraChallenge: [
+      {
+        type: "numeric", difficulty: 2,
+        question: 'A stem-and-leaf plot has stem 2 with leaves 3, 7 and stem 3 with leaves 1, 4, 8. What is the median of the data set?',
+        answer: "31",
+        hints: [
+          "The data values are: 23, 27, 31, 34, 38.",
+          "There are 5 values. The median is the middle (3rd) value.",
+          "The 3rd value is 31."
+        ],
+        explanation: [
+          "Data: 23, 27, 31, 34, 38 (5 values, already sorted)",
+          "Median = middle value = 3rd value",
+          "Median = <strong>31</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 2,
+        question: 'In a stem-and-leaf plot, the stem "3" has leaves "2, 5, 5, 8". How many data values are in the 30s?',
+        choices: ["3", "4", "5", "8"],
+        answer: "4",
+        hints: [
+          "Each leaf represents one data value.",
+          "Leaves 2, 5, 5, 8 give: 32, 35, 35, 38.",
+          "That's 4 values."
+        ],
+        explanation: [
+          "Each leaf is one data point: 32, 35, 35, 38.",
+          "Count the leaves: <strong>4</strong> values in the 30s.",
+          "A stem-and-leaf plot preserves the original data while organizing it."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 2,
+        question: 'A stem-and-leaf plot shows: stem 2 → leaves 4, 6; stem 3 → leaves 1, 5, 9; stem 4 → leaf 2. What is the range of this data set?',
+        answer: "18",
+        hints: [
+          "The data is: 24, 26, 31, 35, 39, 42.",
+          "Range = maximum − minimum.",
+          "42 − 24 = 18."
+        ],
+        explanation: [
+          "Data: 24, 26, 31, 35, 39, 42",
+          "Range = max − min = 42 − 24 = <strong>18</strong>",
+          "Stem-and-leaf plots make it easy to find the range — the first and last values."
+        ]
+      },
+    ],
+
     // ── Boss (10 problems, difficulty 3-4) ──────────────────
     boss: [
       {
@@ -1077,6 +1127,104 @@ WORLDS[13] = {
       }
     ],
 
+    // ── Extra Challenge: Expected Value & Casework Counting ──
+    extraChallenge: [
+      // Topic: Expected Value
+      {
+        type: "numeric", difficulty: 3,
+        question: 'You roll a fair six-sided die and win the number of dollars shown. What is the expected value of your winnings? Give your answer as a decimal.',
+        answer: "3.5",
+        hints: [
+          "Expected value = (1 + 2 + 3 + 4 + 5 + 6) / 6",
+          "Sum = 21",
+          "21 / 6 = 3.5"
+        ],
+        explanation: [
+          "E = (1 + 2 + 3 + 4 + 5 + 6) / 6 = 21/6",
+          "= <strong>3.5</strong>",
+          "Expected value is the average outcome over many trials."
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'A game costs $1 to play. You flip a coin: heads wins $3, tails wins $0. What is the expected profit per game?',
+        choices: ["$1.50", "$0.50", "$0", "$1"],
+        answer: "$0.50",
+        hints: [
+          "Expected winnings: ½ × $3 + ½ × $0 = $1.50.",
+          "Subtract cost to play: $1.50 − $1.00.",
+          "Expected profit = $0.50."
+        ],
+        explanation: [
+          "Expected winnings = ½ × $3 + ½ × $0 = $1.50",
+          "Profit = winnings − cost = $1.50 − $1.00",
+          "Expected profit = <strong>$0.50</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'A spinner has 3 equal sections: $2, $5, and $8. What is the expected value?',
+        answer: "5",
+        hints: [
+          "Each section has probability 1/3.",
+          "E = (1/3)(2) + (1/3)(5) + (1/3)(8)",
+          "= (2 + 5 + 8)/3 = 15/3 = 5"
+        ],
+        explanation: [
+          "E = (2 + 5 + 8) / 3 = 15/3",
+          "= <strong>5</strong>",
+          "When all outcomes are equally likely, expected value = average of the outcomes."
+        ]
+      },
+      // Topic: Casework Counting
+      {
+        type: "numeric", difficulty: 3,
+        question: 'How many two-digit numbers have digits that add up to 5?',
+        answer: "5",
+        hints: [
+          "List by tens digit: 14, 23, 32, 41, 50.",
+          "The tens digit can be 1-5 (must be at least 1 for two-digit).",
+          "Tens 1→unit 4, tens 2→3, tens 3→2, tens 4→1, tens 5→0. That's 5."
+        ],
+        explanation: [
+          "Casework by tens digit: 14, 23, 32, 41, 50",
+          "Each has digit sum = 5",
+          "Total: <strong>5</strong> two-digit numbers."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'How many ways can you make 25 cents using only nickels (5¢) and dimes (10¢)?',
+        answer: "3",
+        hints: [
+          "Try casework on the number of dimes: 0, 1, or 2 dimes.",
+          "0 dimes → 5 nickels ✓. 1 dime → 15¢ in nickels = 3 ✓. 2 dimes → 5¢ in nickels = 1 ✓.",
+          "3 dimes = 30¢ > 25¢ ✗. So 3 ways."
+        ],
+        explanation: [
+          "Case 1: 0 dimes + 5 nickels = 25¢ ✓",
+          "Case 2: 1 dime + 3 nickels = 25¢ ✓",
+          "Case 3: 2 dimes + 1 nickel = 25¢ ✓",
+          "Total: <strong>3</strong> ways."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'How many three-digit numbers can be formed using the digits 1, 2, and 3 if repetition is allowed?',
+        answer: "27",
+        hints: [
+          "Each digit position has 3 choices: 1, 2, or 3.",
+          "Hundreds: 3 choices. Tens: 3 choices. Units: 3 choices.",
+          "Total = 3 × 3 × 3 = 27."
+        ],
+        explanation: [
+          "With repetition: 3 choices per position",
+          "3 × 3 × 3 = <strong>27</strong>",
+          "Casework: organize by hundreds digit → 9 numbers per case × 3 cases."
+        ]
+      },
+    ],
+
     // ── Boss (10 problems, difficulty 3-4) ───────────────────
     boss: [
       {
@@ -1670,6 +1818,55 @@ WORLDS[14] = {
           "Total = 16 + 9 + 4 + 1 = <strong>30</strong>"
         ]
       }
+    ],
+
+    // ── Extra Challenge: Pigeonhole Principle ──
+    extraChallenge: [
+      {
+        type: "numeric", difficulty: 3,
+        question: 'A drawer has red, blue, and green socks. What is the minimum number of socks you must grab (in the dark) to guarantee you have a matching pair?',
+        answer: "4",
+        hints: [
+          "The Pigeonhole Principle: if you have more items than categories, at least two must be in the same category.",
+          "There are 3 colors (pigeonholes). With 3 socks you might get one of each.",
+          "With 4 socks, at least two must match!"
+        ],
+        explanation: [
+          "3 colors = 3 pigeonholes.",
+          "3 socks could be all different. The 4th must repeat a color.",
+          "Minimum: <strong>4</strong> socks."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'In a class of 13 students, at least how many must share the same birth month?',
+        answer: "2",
+        hints: [
+          "There are 12 months (pigeonholes) and 13 students (pigeons).",
+          "If each month has at most 1 student, that's only 12.",
+          "With 13, at least one month must have 2."
+        ],
+        explanation: [
+          "12 months, 13 students.",
+          "By the Pigeonhole Principle: ⌈13/12⌉ = 2",
+          "At least <strong>2</strong> students must share a birth month."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'You pick 5 numbers from the set {1, 2, 3, 4, 5, 6, 7, 8}. At least one pair of your numbers must add up to 9. How many complementary pairs that sum to 9 exist in this set?',
+        answer: "4",
+        hints: [
+          "Pairs that sum to 9: (1,8), (2,7), (3,6), (4,5).",
+          "That's 4 pairs. Each number belongs to exactly one pair.",
+          "If you pick 5 numbers from 4 pairs, you must get both numbers from at least one pair."
+        ],
+        explanation: [
+          "Pairs summing to 9: (1,8), (2,7), (3,6), (4,5).",
+          "That's <strong>4</strong> complementary pairs.",
+          "By pigeonhole: picking 5 from 4 pairs guarantees a complete pair!"
+        ]
+      },
     ],
 
     // ── Boss (10 problems, difficulty 3-5) ───────────────────

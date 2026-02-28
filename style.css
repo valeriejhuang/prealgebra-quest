@@ -476,6 +476,65 @@ html, body {
   0%, 100% { opacity: 0.4; } 50% { opacity: 1; }
 }
 
+/* ── Knowledge Note (shrine topic intro) ── */
+.knowledge-note {
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 80, 60, 0.25), rgba(10, 20, 40, 0.5));
+  border: 2px solid rgba(0, 212, 170, 0.3);
+  border-radius: 16px;
+  padding: 20px 24px 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  animation: noteAppear 0.5s ease;
+}
+@keyframes noteAppear {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.knowledge-note-header {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  margin-bottom: 10px;
+}
+.knowledge-note-icon { font-size: 1.3rem; }
+.knowledge-note-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--zonai-green);
+  letter-spacing: 0.5px;
+}
+.knowledge-note-body {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: var(--parchment);
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+.knowledge-note-body .math {
+  font-family: var(--font-mono);
+  color: var(--ancient-gold);
+  font-weight: 600;
+}
+.btn-knowledge-continue {
+  font-size: 0.9rem;
+  padding: 10px 28px;
+}
+
+/* ── Shrine Topic Label on Island View ── */
+.shrine-topic-label {
+  font-size: 0.6rem;
+  color: var(--cream);
+  font-family: var(--font-body);
+  margin-top: 3px;
+  line-height: 1.2;
+  opacity: 0.85;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 .ancient-tablet {
   background: linear-gradient(180deg, var(--stone-mid), var(--stone-dark));
   border: 2px solid var(--stone-light);
