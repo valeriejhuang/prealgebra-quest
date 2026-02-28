@@ -5,7 +5,9 @@
   "use strict";
 
   // ── Constants ──
-  const SAVE_KEY = "mathquest_save";
+  const SAVE_KEY_PREFIX = "mathquest_save";
+  const SAVE_SLOTS = 3;
+  function getSaveKey(slot) { return SAVE_KEY_PREFIX + "_" + slot; }
   const PLAYABLE_WORLDS = 15;
   const SHRINE_HEARTS = 3;
   const BOSS_HEARTS = 5;
@@ -474,6 +476,7 @@
 
   // ── Session State ──
   let session = {
+    activeSlot: 1,
     currentScreen: "title",
     currentWorld: null,
     currentShrineIndex: null,
@@ -836,12 +839,14 @@
 
   // ── Save / Load ──
   function saveGame() {
-    try { localStorage.setItem(SAVE_KEY, JSON.stringify(state)); } catch (e) {}
+    try { localStorage.setItem(getSaveKey(session.activeSlot), JSON.stringify(state)); } catch (e) {}
   }
 
-  function loadGame() {
+  // Load save data from a specific slot (or active slot by default)
+  function loadGame(slot) {
+    var s = slot !== undefined ? slot : session.activeSlot;
     try {
-      const data = localStorage.getItem(SAVE_KEY);
+      const data = localStorage.getItem(getSaveKey(s));
       if (data) {
         const parsed = JSON.parse(data);
         state = { ...state, ...parsed };
@@ -864,8 +869,16 @@
     return false;
   }
 
-  function resetGame() {
-    localStorage.removeItem(SAVE_KEY);
+  // Peek at a slot's data without modifying state (for save slot preview)
+  function peekSlot(slot) {
+    try {
+      const data = localStorage.getItem(getSaveKey(slot));
+      if (data) return JSON.parse(data);
+    } catch (e) {}
+    return null;
+  }
+
+  function resetState() {
     state = {
       xp: 0, coins: 50, tearsCollected: [], worldProgress: {},
       totalSolved: 0, totalAttempts: 0, currentStreak: 0, bestStreak: 0,
@@ -875,6 +888,21 @@
     };
     SFX.setMuted(false);
     session.worldSelections = {};
+  }
+
+  function deleteSlot(slot) {
+    localStorage.removeItem(getSaveKey(slot));
+  }
+
+  // Migrate legacy single save (mathquest_save) to slot 1 on first visit
+  function migrateLegacySave() {
+    try {
+      var legacy = localStorage.getItem("mathquest_save");
+      if (legacy && !localStorage.getItem(getSaveKey(1))) {
+        localStorage.setItem(getSaveKey(1), legacy);
+        localStorage.removeItem("mathquest_save");
+      }
+    } catch (e) {}
   }
 
   // ══════════════ BADGE SYSTEM ══════════════
@@ -1077,21 +1105,99 @@
 
   // ── Title Screen ──
   function initTitleScreen() {
-    const hasSave = loadGame();
-    $("btn-continue").style.display = hasSave ? "inline-block" : "none";
+    migrateLegacySave();
+    // Hide the old continue button — save select screen replaces it
+    $("btn-continue").style.display = "none";
     // Spawn fireflies on title
     spawnFireflies("particles-title", 15);
 
     $("btn-new-game").onclick = function () {
-      resetGame();
-      showScreen("charselect");
-      renderCharSelect();
+      showScreen("saveselect");
+      renderSaveSelect();
     };
-    $("btn-continue").onclick = function () {
-      showScreen("world-map");
-      renderWorldMap();
-      updateHUD();
+
+    $("btn-save-back").onclick = function () {
+      showScreen("title");
     };
+  }
+
+  // ══════════════ SAVE SLOT SELECT ══════════════
+
+  function renderSaveSelect() {
+    var container = $("save-slot-container");
+    container.innerHTML = "";
+
+    for (var i = 1; i <= SAVE_SLOTS; i++) {
+      (function (slot) {
+        var data = peekSlot(slot);
+        var div = document.createElement("div");
+        div.className = "save-slot" + (data ? "" : " empty");
+
+        if (data) {
+          var ch = CHARACTERS.find(function (c) { return c.id === data.character; });
+          var charIcon = ch ? ch.icon : "🎮";
+          var charName = ch ? ch.name : "Hero";
+          var worldsDone = 0;
+          if (data.worldProgress) {
+            for (var w in data.worldProgress) {
+              if (data.worldProgress[w] && data.worldProgress[w].bossDefeated) worldsDone++;
+            }
+          }
+          var lvl = 1;
+          for (var li = LEVEL_TITLES.length - 1; li >= 0; li--) {
+            if ((data.xp || 0) >= LEVEL_TITLES[li].xp) { lvl = li + 1; break; }
+          }
+          div.innerHTML =
+            '<div class="save-slot-number">' + charIcon + '</div>' +
+            '<div class="save-slot-info">' +
+              '<div class="save-slot-char">File ' + slot + ': ' + charName + '</div>' +
+              '<div class="save-slot-details">' +
+                '<span>Lv.' + lvl + '</span>' +
+                '<span>XP: ' + (data.xp || 0) + '</span>' +
+                '<span>Worlds: ' + worldsDone + '/15</span>' +
+                '<span>Solved: ' + (data.totalSolved || 0) + '</span>' +
+              '</div>' +
+            '</div>';
+          // Delete button
+          var delBtn = document.createElement("button");
+          delBtn.className = "save-slot-delete";
+          delBtn.textContent = "Delete";
+          delBtn.onclick = function (e) {
+            e.stopPropagation();
+            if (confirm("Delete Save File " + slot + "? This cannot be undone.")) {
+              deleteSlot(slot);
+              renderSaveSelect();
+            }
+          };
+          div.appendChild(delBtn);
+
+          // Click to load and continue
+          div.onclick = function () {
+            session.activeSlot = slot;
+            resetState();
+            loadGame(slot);
+            showScreen("world-map");
+            renderWorldMap();
+            updateHUD();
+          };
+        } else {
+          div.innerHTML =
+            '<div class="save-slot-number">' + slot + '</div>' +
+            '<div class="save-slot-info">' +
+              '<div class="save-slot-empty-label">— Empty —</div>' +
+            '</div>';
+          // Click to start new game in this slot
+          div.onclick = function () {
+            session.activeSlot = slot;
+            resetState();
+            showScreen("charselect");
+            renderCharSelect();
+          };
+        }
+
+        container.appendChild(div);
+      })(i);
+    }
   }
 
   // ══════════════ WORLD MAP ══════════════

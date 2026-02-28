@@ -2159,6 +2159,95 @@ html, body {
   line-height: 1.2;
 }
 
+/* ===== SAVE SLOT SELECT ===== */
+.save-select-title {
+  font-family: var(--font-heading);
+  color: var(--ancient-gold);
+  margin-bottom: 6px;
+}
+.save-select-sub {
+  color: var(--stone-light);
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+.save-slot-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.save-slot {
+  background: linear-gradient(135deg, var(--stone-dark), rgba(30, 30, 42, 0.95));
+  border: 2px solid var(--stone-mid);
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+}
+.save-slot:hover {
+  border-color: var(--zonai-cyan);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 212, 170, 0.15);
+}
+.save-slot.empty { opacity: 0.7; }
+.save-slot.empty:hover { opacity: 1; }
+.save-slot-number {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--stone-light);
+  min-width: 36px;
+  text-align: center;
+}
+.save-slot:not(.empty) .save-slot-number {
+  color: var(--ancient-gold);
+}
+.save-slot-info {
+  flex: 1;
+  text-align: left;
+}
+.save-slot-char {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--parchment);
+  margin-bottom: 4px;
+}
+.save-slot-details {
+  font-size: 0.75rem;
+  color: var(--stone-light);
+  line-height: 1.5;
+}
+.save-slot-details span {
+  margin-right: 12px;
+}
+.save-slot-empty-label {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  color: var(--stone-light);
+  font-style: italic;
+}
+.save-slot-delete {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: var(--stone-mid);
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+.save-slot-delete:hover {
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+}
+
 /* ===== CHARACTER SELECT ===== */
 .char-select-grid {
   display: grid;
