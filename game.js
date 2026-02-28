@@ -23,6 +23,23 @@
   const RETRY_COST = 15;
   const BOSS_TIMER_SECONDS = 30; // countdown per boss question
 
+  // ── Lightweight LaTeX-to-HTML math renderer ──
+  // Converts \div, \times, \frac{a}{b}, \gcd, \text{...} inside any HTML string.
+  function renderMath(html) {
+    if (typeof html !== "string") return html;
+    return html
+      // \frac{a}{b} → HTML fraction using sup/sub style
+      .replace(/\\frac\{([^}]*)\}\{([^}]*)\}/g, '<span class="mfrac"><span class="mfrac-num">$1</span><span class="mfrac-bar"></span><span class="mfrac-den">$2</span></span>')
+      // \div → ÷
+      .replace(/\\div/g, '\u00F7')
+      // \times → ×
+      .replace(/\\times/g, '\u00D7')
+      // \gcd → gcd (roman text)
+      .replace(/\\gcd/g, 'gcd')
+      // \text{...} → plain text
+      .replace(/\\text\{([^}]*)\}/g, '$1');
+  }
+
   // ── Character Options ──
   const CHARACTERS = [
     { id: "warrior", icon: "⚔️", name: "Warrior", desc: "Brave blade of the frontier" },
@@ -1226,7 +1243,7 @@
       answerEl.style.display = "none";
       if (hintEl) hintEl.style.display = "none";
       $("knowledge-note-title").textContent = topic.name;
-      $("knowledge-note-body").innerHTML = topic.note;
+      $("knowledge-note-body").innerHTML = renderMath(topic.note);
 
       $("btn-knowledge-continue").onclick = function () {
         SFX.click();
@@ -1256,7 +1273,7 @@
     $("shrine-progress-text").textContent = "Puzzle " + (session.currentProblemIndex + 1) + " of " + session.problems.length;
     $("shrine-coins").textContent = "\u{1FA99} " + state.coins;
     $("tablet-difficulty").textContent = "\u2B50".repeat(prob.difficulty);
-    $("tablet-question").innerHTML = prob.question;
+    $("tablet-question").innerHTML = renderMath(prob.question);
 
     const area = $("answer-area");
     area.innerHTML = "";
@@ -1265,7 +1282,7 @@
       shuffle(prob.choices).forEach((choice) => {
         const btn = document.createElement("button");
         btn.className = "answer-btn";
-        btn.innerHTML = choice;
+        btn.innerHTML = renderMath(choice);
         btn.onclick = function () { handleAnswer(choice, prob, btn, area); };
         area.appendChild(btn);
       });
@@ -1306,7 +1323,7 @@
       SFX.hint();
       $("shrine-coins").textContent = "\u{1FA99} " + state.coins;
       $("hint-text").style.display = "block";
-      $("hint-text").textContent = prob.hints[session.hintsUsed];
+      $("hint-text").innerHTML = renderMath(prob.hints[session.hintsUsed]);
       session.hintsUsed++;
       updateHintButton(prob);
       saveGame();
@@ -1483,7 +1500,7 @@
         const div = document.createElement("div");
         div.className = "explanation-step";
         div.style.setProperty("--step-delay", (i * 0.2) + "s");
-        div.innerHTML = step;
+        div.innerHTML = renderMath(step);
         stepsEl.appendChild(div);
       });
     }
@@ -1570,14 +1587,14 @@
   function renderBossProblem() {
     if (session.currentProblemIndex >= session.problems.length) { bossDefeated(); return; }
     const prob = session.problems[session.currentProblemIndex];
-    $("boss-question").innerHTML = prob.question;
+    $("boss-question").innerHTML = renderMath(prob.question);
     const area = $("boss-answer-area");
     area.innerHTML = "";
 
     if (prob.type === "mc") {
       shuffle(prob.choices).forEach((choice) => {
         const btn = document.createElement("button");
-        btn.className = "answer-btn"; btn.innerHTML = choice;
+        btn.className = "answer-btn"; btn.innerHTML = renderMath(choice);
         btn.onclick = function () { handleAnswer(choice, prob, btn, area); };
         area.appendChild(btn);
       });

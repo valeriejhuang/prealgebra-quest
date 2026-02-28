@@ -562,6 +562,33 @@ html, body {
   font-size: 1.2em;
 }
 
+/* ── Fraction rendering (lightweight LaTeX replacement) ── */
+.mfrac {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  margin: 0 2px;
+  line-height: 1;
+}
+.mfrac-num, .mfrac-den {
+  display: block;
+  text-align: center;
+  padding: 0 3px;
+  font-size: 0.85em;
+}
+.mfrac-bar {
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background: currentColor;
+  margin: 1px 0;
+}
+/* Ensure fractions inside answer buttons don't break layout */
+.answer-btn .mfrac {
+  font-size: 0.95em;
+}
+
 .answer-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
