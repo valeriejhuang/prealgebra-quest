@@ -351,6 +351,237 @@ EXTRA_QUESTIONS[3] = [
         "9/32 ≠ 3/8, so 9/32 is NOT equivalent.",
         "9 and 32 share no common factor that yields 3/8."
       ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Which fraction is equivalent to <span class="math">\frac{3}{11}</span>?',
+      choices: ["6/22", "3/22", "9/22", "6/11"],
+      answer: "6/22",
+      hints: [
+        "Multiply both numerator and denominator by the same number.",
+        "Try multiplying both parts of 3/11 by 2.",
+        "3×2 = 6 and 11×2 = 22."
+      ],
+      explanation: [
+        "Multiply numerator and denominator by 2: 3×2 = 6, 11×2 = 22.",
+        "So 3/11 = 6/22."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Find the missing number: <span class="math">7/12 = ?/36</span>',
+      answer: "21",
+      hints: [
+        "What do you multiply 12 by to get 36?",
+        "12 × 3 = 36, so multiply the numerator by 3 too.",
+        "7 × 3 = ?"
+      ],
+      explanation: [
+        "Since 12 × 3 = 36, multiply the numerator by 3 as well.",
+        "7 × 3 = 21, so 7/12 = 21/36."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which fraction is <b>NOT</b> equivalent to <span class="math">5/6</span>?',
+      choices: ["15/21", "10/12", "20/24", "25/30"],
+      answer: "15/21",
+      hints: [
+        "Simplify 5/6 — it is already in lowest terms.",
+        "Check each choice by simplifying to see if it equals 5/6.",
+        "15/21 = 5/7, which is not 5/6."
+      ],
+      explanation: [
+        "5/6 is already simplified. 10/12 = 5/6 ✓, 20/24 = 5/6 ✓, 25/30 = 5/6 ✓.",
+        "15/21 = 5/7 ≠ 5/6, so 15/21 is NOT equivalent."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Find the missing number: <span class="math">8/13 = ?/39</span>',
+      answer: "24",
+      hints: [
+        "What do you multiply 13 by to get 39?",
+        "13 × 3 = 39, so multiply the numerator by 3 too.",
+        "8 × 3 = ?"
+      ],
+      explanation: [
+        "Since 13 × 3 = 39, multiply the numerator by 3 as well.",
+        "8 × 3 = 24, so 8/13 = 24/39.",
+        "The missing number is 24."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Which fraction is equivalent to <span class="math">5/9</span>?',
+      choices: ["10/18", "5/18", "10/27", "15/18"],
+      answer: "10/18",
+      hints: [
+        "Multiply both numerator and denominator by the same number.",
+        "Try multiplying both parts of 5/9 by 2.",
+        "5×2 = 10 and 9×2 = 18."
+      ],
+      explanation: [
+        "Multiply numerator and denominator by 2: 5×2 = 10, 9×2 = 18.",
+        "So 5/9 = 10/18.",
+        "The other choices do not simplify to 5/9."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which fraction is <b>NOT</b> equivalent to <span class="math">4/5</span>?',
+      choices: ["12/20", "8/10", "16/20", "20/25"],
+      answer: "12/20",
+      hints: [
+        "Simplify 4/5 — it is already in lowest terms.",
+        "Check each choice by simplifying to see if it equals 4/5.",
+        "12/20 = 3/5, which is not 4/5."
+      ],
+      explanation: [
+        "4/5 is already simplified. 8/10 = 4/5 ✓, 16/20 = 4/5 ✓, 20/25 = 4/5 ✓.",
+        "12/20 = 3/5 ≠ 4/5, so 12/20 is NOT equivalent.",
+        "Always simplify to lowest terms to compare."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which fraction is equivalent to <span class="math">7/12</span>?',
+      choices: ["14/24", "7/24", "21/48", "14/36"],
+      answer: "14/24",
+      hints: [
+        "Multiply both the numerator and denominator by the same number.",
+        "Try multiplying both parts of 7/12 by 2.",
+        "7×2 = 14 and 12×2 = 24."
+      ],
+      explanation: [
+        "Multiply numerator and denominator by 2: 7×2 = 14, 12×2 = 24.",
+        "So 7/12 = 14/24.",
+        "The other choices do not simplify to 7/12."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Find the missing number: <span class="math">4/11 = ?/44</span>',
+      answer: "16",
+      hints: [
+        "What do you multiply 11 by to get 44?",
+        "11 × 4 = 44, so multiply the numerator by 4 too.",
+        "4 × 4 = ?"
+      ],
+      explanation: [
+        "Since 11 × 4 = 44, multiply the numerator by 4 as well.",
+        "4 × 4 = 16, so 4/11 = 16/44.",
+        "The missing number is 16."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which fraction is <b>NOT</b> equivalent to <span class="math">7/10</span>?',
+      choices: ["21/40", "14/20", "21/30", "35/50"],
+      answer: "21/40",
+      hints: [
+        "Simplify 7/10 — it is already in lowest terms.",
+        "Check each choice by simplifying to see if it equals 7/10.",
+        "21/40 cannot be simplified to 7/10."
+      ],
+      explanation: [
+        "7/10 is already simplified. 14/20 = 7/10 ✓, 21/30 = 7/10 ✓, 35/50 = 7/10 ✓.",
+        "21/40 ≠ 7/10, so 21/40 is NOT equivalent.",
+        "21 and 40 share no common factor that yields 7/10."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Find the missing number: <span class="math">11/13 = ?/39</span>',
+      answer: "33",
+      hints: [
+        "What do you multiply 13 by to get 39?",
+        "13 × 3 = 39, so multiply the numerator by 3 too.",
+        "11 × 3 = ?"
+      ],
+      explanation: [
+        "Since 13 × 3 = 39, multiply the numerator by 3 as well.",
+        "11 × 3 = 33, so 11/13 = 33/39.",
+        "The missing number is 33."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Which fraction is equivalent to <span class="math">6/7</span>?',
+      choices: ["12/14","6/14","12/21","18/14"],
+      answer: "12/14",
+      hints: [
+        "Multiply both numerator and denominator by the same number.",
+        "Try multiplying both parts of 6/7 by 2.",
+        "6×2 = 12 and 7×2 = 14."
+      ],
+      explanation: [
+        "Multiply numerator and denominator by 2: 6×2 = 12, 7×2 = 14.",
+        "So 6/7 = 12/14.",
+        "The other choices do not simplify to 6/7."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which fraction is <b>NOT</b> equivalent to <span class="math">9/12</span>?',
+      choices: ["15/24","3/4","18/24","6/8"],
+      answer: "15/24",
+      hints: [
+        "Simplify 9/12 first — divide both by 3.",
+        "9/12 simplifies to 3/4. Check each choice.",
+        "15/24 = 5/8, which is not 3/4."
+      ],
+      explanation: [
+        "9/12 = 3/4. Check: 3/4 ✓, 18/24 = 3/4 ✓, 6/8 = 3/4 ✓.",
+        "15/24 = 5/8 ≠ 3/4, so 15/24 is NOT equivalent.",
+        "Always simplify to lowest terms to compare."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A pizza is cut into 8 equal slices. You eat 3 slices. What fraction of the pizza did you eat?',
+      choices: ["3/8", "5/8", "3/5", "8/3"],
+      answer: "3/8",
+      hints: [
+        "The total number of slices is the denominator.",
+        "The number you ate is the numerator.",
+        "You ate 3 out of 8 slices."
+      ],
+      explanation: [
+        "The fraction is <strong>parts eaten / total parts</strong> = 3/8.",
+        "So you ate 3/8 of the pizza."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Find a fraction equivalent to <span class="math">4/6</span> with denominator 18. What is the numerator?',
+      answer: "12",
+      hints: [
+        "What do you multiply 6 by to get 18?",
+        "6 × 3 = 18, so multiply the numerator by 3 too.",
+        "4 × 3 = ?"
+      ],
+      explanation: [
+        "Since 6 × 3 = 18, multiply the numerator by 3 as well.",
+        "4 × 3 = <strong>12</strong>, so 4/6 = 12/18."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A bag has 12 marbles. If 4 are red, what fraction of the marbles are red?',
+      choices: ["1/3", "4/12", "1/4", "3/4"],
+      answer: "1/3",
+      hints: [
+        "Write the fraction: 4 out of 12 = 4/12.",
+        "Simplify by dividing both by 4.",
+        "4 ÷ 4 = 1, 12 ÷ 4 = 3."
+      ],
+      explanation: [
+        "4/12 simplifies to <strong>1/3</strong> (divide both by 4).",
+        "So 1/3 of the marbles are red."
+      ]
     }
   ],
 
@@ -699,6 +930,235 @@ EXTRA_QUESTIONS[3] = [
         "The others: 6/10 = 3/5, 8/20 = 2/5, 12/18 = 2/3.",
         "Only 9/14 cannot be reduced further."
       ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Simplify <span class="math">\frac{14}{21}</span>. What is the numerator of the simplified fraction?',
+      answer: "2",
+      hints: [
+        "Find the GCD of 14 and 21.",
+        "Both 14 and 21 are divisible by 7.",
+        "14 ÷ 7 = 2 and 21 ÷ 7 = 3."
+      ],
+      explanation: [
+        "GCD(14, 21) = 7. Divide both by 7: 14÷7 = 2, 21÷7 = 3.",
+        "So 14/21 = 2/3. The numerator is 2."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which fraction is already in simplest form?',
+      choices: ["11/13", "8/12", "15/25", "14/21"],
+      answer: "11/13",
+      hints: [
+        "A fraction is in simplest form when the GCD of numerator and denominator is 1.",
+        "11 and 13 are both prime numbers.",
+        "Two different primes always have GCD = 1."
+      ],
+      explanation: [
+        "GCD(11, 13) = 1, so 11/13 is already in simplest form.",
+        "The others: 8/12 = 2/3, 15/25 = 3/5, 14/21 = 2/3."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Simplify <span class="math">\frac{18}{30}</span>. What is the denominator of the simplified fraction?',
+      answer: "5",
+      hints: [
+        "Find the GCD of 18 and 30.",
+        "Both 18 and 30 are divisible by 6.",
+        "18 ÷ 6 = 3 and 30 ÷ 6 = 5."
+      ],
+      explanation: [
+        "GCD(18, 30) = 6. Divide both by 6: 18÷6 = 3, 30÷6 = 5.",
+        "So 18/30 = 3/5. The denominator is 5."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify <span class="math">36/48</span> to lowest terms.',
+      choices: ["3/4", "9/12", "6/8", "12/16"],
+      answer: "3/4",
+      hints: [
+        "Find the GCD of 36 and 48.",
+        "GCD(36, 48) = 12.",
+        "Divide both by 12: 36 ÷ 12 = 3, 48 ÷ 12 = 4."
+      ],
+      explanation: [
+        "GCD(36, 48) = 12.",
+        "36 ÷ 12 = 3, 48 ÷ 12 = 4, so 36/48 = 3/4.",
+        "The fully simplified fraction is 3/4."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Simplify <span class="math">16/24</span>. Write your answer as a fraction.',
+      answer: "2/3",
+      hints: [
+        "Find a number that divides both 16 and 24.",
+        "GCD(16, 24) = 8.",
+        "16 ÷ 8 = 2, 24 ÷ 8 = 3."
+      ],
+      explanation: [
+        "GCD(16, 24) = 8.",
+        "16 ÷ 8 = 2, 24 ÷ 8 = 3, so 16/24 = 2/3.",
+        "The fraction in simplest form is 2/3."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which fraction is already in simplest form?',
+      choices: ["13/17", "6/15", "10/14", "12/20"],
+      answer: "13/17",
+      hints: [
+        "A fraction is in simplest form when GCD of numerator and denominator is 1.",
+        "13 and 17 are both prime numbers.",
+        "Two different primes always have GCD = 1."
+      ],
+      explanation: [
+        "GCD(13, 17) = 1, so 13/17 is already in simplest form.",
+        "The others: 6/15 = 2/5, 10/14 = 5/7, 12/20 = 3/5.",
+        "Only 13/17 cannot be reduced further."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Simplify <span class="math">24/40</span>. Write your answer as a fraction.',
+      answer: "3/5",
+      hints: [
+        "Find a number that divides both 24 and 40.",
+        "GCD(24, 40) = 8.",
+        "24 ÷ 8 = 3, 40 ÷ 8 = 5."
+      ],
+      explanation: [
+        "GCD(24, 40) = 8.",
+        "24 ÷ 8 = 3, 40 ÷ 8 = 5, so 24/40 = 3/5.",
+        "The fraction in simplest form is 3/5."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Simplify <span class="math">21/28</span> to lowest terms.',
+      choices: ["3/4", "7/14", "7/9", "21/7"],
+      answer: "3/4",
+      hints: [
+        "Find the GCD of 21 and 28.",
+        "Both are divisible by 7.",
+        "21 ÷ 7 = 3, 28 ÷ 7 = 4."
+      ],
+      explanation: [
+        "GCD(21, 28) = 7.",
+        "21 ÷ 7 = 3, 28 ÷ 7 = 4, so 21/28 = 3/4.",
+        "The simplified fraction is 3/4."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Simplify <span class="math">27/45</span>. What is the denominator of the simplified fraction?',
+      answer: "5",
+      hints: [
+        "Find the GCD of 27 and 45.",
+        "Both 27 and 45 are divisible by 9.",
+        "27 ÷ 9 = 3 and 45 ÷ 9 = 5."
+      ],
+      explanation: [
+        "GCD(27, 45) = 9. Divide both by 9: 27÷9 = 3, 45÷9 = 5.",
+        "So 27/45 = 3/5. The denominator is 5.",
+        "Always divide both parts by the GCD."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify <span class="math">42/56</span> to lowest terms.',
+      choices: ["3/4","7/8","6/8","21/28"],
+      answer: "3/4",
+      hints: [
+        "Find the GCD of 42 and 56.",
+        "GCD(42, 56) = 14.",
+        "Divide both by 14: 42 ÷ 14 = 3, 56 ÷ 14 = 4."
+      ],
+      explanation: [
+        "GCD(42, 56) = 14.",
+        "42 ÷ 14 = 3, 56 ÷ 14 = 4, so 42/56 = 3/4.",
+        "The fully simplified fraction is 3/4."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Simplify <span class="math">20/28</span>. Write your answer as a fraction.',
+      answer: "5/7",
+      hints: [
+        "Find a number that divides both 20 and 28.",
+        "GCD(20, 28) = 4.",
+        "20 ÷ 4 = 5, 28 ÷ 4 = 7."
+      ],
+      explanation: [
+        "GCD(20, 28) = 4.",
+        "20 ÷ 4 = 5, 28 ÷ 4 = 7, so 20/28 = 5/7.",
+        "The fraction in simplest form is 5/7."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which fraction is already in simplest form?',
+      choices: ["7/16","8/12","14/21","9/15"],
+      answer: "7/16",
+      hints: [
+        "A fraction is in simplest form when GCD of numerator and denominator is 1.",
+        "Check 7 and 16: factors of 7 are 1, 7. Factors of 16 are 1, 2, 4, 8, 16.",
+        "They share no common factor other than 1."
+      ],
+      explanation: [
+        "GCD(7, 16) = 1, so 7/16 is already in simplest form.",
+        "The others: 8/12 = 2/3, 14/21 = 2/3, 9/15 = 3/5.",
+        "Only 7/16 cannot be reduced further."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Simplify <span class="math">24/36</span> to lowest terms. Write your answer as a fraction.',
+      answer: "2/3",
+      hints: [
+        "Find the GCD of 24 and 36.",
+        "GCD(24, 36) = 12.",
+        "24 ÷ 12 = 2, 36 ÷ 12 = 3."
+      ],
+      explanation: [
+        "GCD(24, 36) = 12. Divide both by 12.",
+        "24 ÷ 12 = 2, 36 ÷ 12 = 3, so 24/36 = <strong>2/3</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A recipe uses 18 ounces of flour from a 30-ounce bag. What fraction of the bag was used, in simplest form?',
+      choices: ["3/5", "18/30", "6/10", "9/15"],
+      answer: "3/5",
+      hints: [
+        "Write the fraction: 18/30.",
+        "Find the GCD of 18 and 30, which is 6.",
+        "18 ÷ 6 = 3, 30 ÷ 6 = 5."
+      ],
+      explanation: [
+        "18/30 simplified: GCD(18, 30) = 6.",
+        "18 ÷ 6 = 3, 30 ÷ 6 = 5 → <strong>3/5</strong> of the bag was used."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which fraction is already in simplest form?',
+      choices: ["11/18", "9/12", "8/20", "15/27"],
+      answer: "11/18",
+      hints: [
+        "A fraction is in simplest form when the GCD of numerator and denominator is 1.",
+        "Factors of 11: 1, 11. Factors of 18: 1, 2, 3, 6, 9, 18.",
+        "They share no common factor other than 1."
+      ],
+      explanation: [
+        "GCD(11, 18) = 1, so <strong>11/18</strong> is already in simplest form.",
+        "The others: 9/12 = 3/4, 8/20 = 2/5, 15/27 = 5/9."
+      ]
     }
   ],
 
@@ -1046,6 +1506,237 @@ EXTRA_QUESTIONS[3] = [
         "LCD of 6 and 9 is 18. Rewrite: 5/6 = 15/18, 1/9 = 2/18.",
         "15/18 + 2/18 = 17/18.",
         "The answer is 17/18."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'What is <span class="math">\frac{2}{9} + \frac{4}{9}</span>?',
+      choices: ["6/9", "6/18", "2/3", "8/9"],
+      answer: "6/9",
+      hints: [
+        "When fractions have the same denominator, just add the numerators.",
+        "2 + 4 = 6, and the denominator stays 9.",
+        "The answer is 6/9 (which also equals 2/3, but 6/9 is the direct sum)."
+      ],
+      explanation: [
+        "Same denominator: add numerators. 2 + 4 = 6.",
+        "So 2/9 + 4/9 = 6/9."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">\frac{3}{8} + \frac{1}{4}</span>? Give your answer as a numerator (the denominator is 8).',
+      answer: "5",
+      hints: [
+        "First find a common denominator. The LCD of 8 and 4 is 8.",
+        "Rewrite 1/4 as 2/8.",
+        "Now add: 3/8 + 2/8 = ?/8."
+      ],
+      explanation: [
+        "LCD of 8 and 4 is 8. Rewrite: 1/4 = 2/8.",
+        "3/8 + 2/8 = 5/8. The numerator is 5."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\frac{1}{6} + \frac{3}{8}</span>?',
+      choices: ["13/24", "4/14", "4/24", "7/24"],
+      answer: "13/24",
+      hints: [
+        "Find the LCD of 6 and 8.",
+        "LCD(6, 8) = 24. Rewrite: 1/6 = 4/24, 3/8 = 9/24.",
+        "4/24 + 9/24 = 13/24."
+      ],
+      explanation: [
+        "LCD(6, 8) = 24. Rewrite: 1/6 = 4/24, 3/8 = 9/24.",
+        "4/24 + 9/24 = 13/24."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">2/7 + 3/14</span>?',
+      choices: ["1/2", "5/21", "5/14", "7/14"],
+      answer: "1/2",
+      hints: [
+        "Find the LCD of 7 and 14.",
+        "LCD = 14. Convert 2/7 = 4/14.",
+        "4/14 + 3/14 = 7/14 = 1/2."
+      ],
+      explanation: [
+        "LCD = 14. Rewrite 2/7 as 4/14.",
+        "4/14 + 3/14 = 7/14 = 1/2.",
+        "The answer is 1/2."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">5/11 + 3/11</span>? Write your answer as a fraction.',
+      answer: "8/11",
+      hints: [
+        "Same denominator — just add the numerators.",
+        "5 + 3 = 8.",
+        "The answer is 8 over 11."
+      ],
+      explanation: [
+        "Since the denominators are the same, add numerators: 5 + 3 = 8.",
+        "The answer is 8/11.",
+        "When denominators match, only add the numerators."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">2/5 + 1/4</span>?',
+      choices: ["13/20", "3/9", "3/20", "7/20"],
+      answer: "13/20",
+      hints: [
+        "Find a common denominator for 5 and 4.",
+        "LCD = 20. Convert: 2/5 = 8/20 and 1/4 = 5/20.",
+        "8/20 + 5/20 = 13/20."
+      ],
+      explanation: [
+        "LCD of 5 and 4 is 20. Rewrite: 2/5 = 8/20, 1/4 = 5/20.",
+        "8/20 + 5/20 = 13/20.",
+        "The answer is 13/20."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">3/7 + 1/3</span>?',
+      choices: ["16/21", "4/10", "4/21", "10/21"],
+      answer: "16/21",
+      hints: [
+        "Find a common denominator for 7 and 3.",
+        "LCD = 21. Convert: 3/7 = 9/21 and 1/3 = 7/21.",
+        "9/21 + 7/21 = 16/21."
+      ],
+      explanation: [
+        "LCD of 7 and 3 is 21. Rewrite: 3/7 = 9/21, 1/3 = 7/21.",
+        "9/21 + 7/21 = 16/21.",
+        "The answer is 16/21."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">3/13 + 7/13</span>? Write your answer as a fraction.',
+      answer: "10/13",
+      hints: [
+        "Same denominator — just add the numerators.",
+        "3 + 7 = 10.",
+        "The answer is 10 over 13."
+      ],
+      explanation: [
+        "Since the denominators are the same, add numerators: 3 + 7 = 10.",
+        "The answer is 10/13.",
+        "When denominators match, only add the numerators."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">4/9 + 5/12</span>?',
+      choices: ["31/36", "9/21", "9/36", "1/3"],
+      answer: "31/36",
+      hints: [
+        "Find a common denominator for 9 and 12.",
+        "LCD = 36. Convert: 4/9 = 16/36 and 5/12 = 15/36.",
+        "16/36 + 15/36 = 31/36."
+      ],
+      explanation: [
+        "LCD of 9 and 12 is 36. Rewrite: 4/9 = 16/36, 5/12 = 15/36.",
+        "16/36 + 15/36 = 31/36.",
+        "The answer is 31/36."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">3/5 + 2/7</span>? Write your answer as a fraction.',
+      answer: "31/35",
+      hints: [
+        "Find the LCD of 5 and 7.",
+        "LCD = 35. Convert: 3/5 = 21/35 and 2/7 = 10/35.",
+        "21/35 + 10/35 = 31/35."
+      ],
+      explanation: [
+        "LCD of 5 and 7 is 35. Rewrite: 3/5 = 21/35, 2/7 = 10/35.",
+        "21/35 + 10/35 = 31/35.",
+        "The answer is 31/35."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'What is <span class="math">4/11 + 6/11</span>?',
+      choices: ["10/11","10/22","2/11","24/11"],
+      answer: "10/11",
+      hints: [
+        "The denominators are the same, so just add the numerators.",
+        "4 + 6 = 10.",
+        "Keep the denominator 11."
+      ],
+      explanation: [
+        "Same denominator: add numerators 4 + 6 = 10.",
+        "Result is 10/11.",
+        "When denominators match, only add the numerators."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">5/9 + 1/6</span>?',
+      choices: ["13/18","6/15","7/18","1/3"],
+      answer: "13/18",
+      hints: [
+        "Find a common denominator for 9 and 6.",
+        "LCD = 18. Convert: 5/9 = 10/18 and 1/6 = 3/18.",
+        "10/18 + 3/18 = 13/18."
+      ],
+      explanation: [
+        "LCD of 9 and 6 is 18. Rewrite: 5/9 = 10/18, 1/6 = 3/18.",
+        "10/18 + 3/18 = 13/18.",
+        "The answer is 13/18."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'You drank <span class="math">2/5</span> of a bottle of juice in the morning and <span class="math">1/3</span> in the afternoon. How much did you drink in total?',
+      choices: ["11/15", "3/8", "3/15", "1/2"],
+      answer: "11/15",
+      hints: [
+        "Find the LCD of 5 and 3.",
+        "LCD = 15. Convert: 2/5 = 6/15 and 1/3 = 5/15.",
+        "6/15 + 5/15 = 11/15."
+      ],
+      explanation: [
+        "LCD = 15. Rewrite: 2/5 = 6/15, 1/3 = 5/15.",
+        "6/15 + 5/15 = <strong>11/15</strong> of the bottle."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">3/7 + 2/7</span>? Write your answer as a fraction.',
+      answer: "5/7",
+      hints: [
+        "The denominators are the same, so just add the numerators.",
+        "3 + 2 = 5.",
+        "Keep the denominator 7."
+      ],
+      explanation: [
+        "Same denominator: add numerators 3 + 2 = 5.",
+        "Result is <strong>5/7</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">5/8 + 3/10</span>?',
+      choices: ["37/40", "8/18", "4/9", "31/40"],
+      answer: "37/40",
+      hints: [
+        "Find the LCD of 8 and 10.",
+        "LCD = 40. Convert: 5/8 = 25/40 and 3/10 = 12/40.",
+        "25/40 + 12/40 = 37/40."
+      ],
+      explanation: [
+        "LCD of 8 and 10 is 40. Rewrite: 5/8 = 25/40, 3/10 = 12/40.",
+        "25/40 + 12/40 = <strong>37/40</strong>."
       ]
     }
   ],
@@ -1396,6 +2087,236 @@ EXTRA_QUESTIONS[3] = [
         "So 37/8 = 4 5/8.",
         "The whole number is 4 with remainder 5 over 8."
       ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Convert <span class="math">3\frac{2}{5}</span> to an improper fraction. What is the numerator?',
+      answer: "17",
+      hints: [
+        "Multiply the whole number by the denominator, then add the numerator.",
+        "3 × 5 = 15, then add 2.",
+        "15 + 2 = 17."
+      ],
+      explanation: [
+        "3 × 5 + 2 = 15 + 2 = 17.",
+        "So 3 2/5 = 17/5. The numerator is 17."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\frac{29}{6}</span> as a mixed number?',
+      choices: ["4 5/6", "5 1/6", "4 1/6", "3 5/6"],
+      answer: "4 5/6",
+      hints: [
+        "Divide 29 by 6 to find the whole number part.",
+        "29 ÷ 6 = 4 remainder 5.",
+        "The whole number is 4 and the fraction part is 5/6."
+      ],
+      explanation: [
+        "29 ÷ 6 = 4 R 5.",
+        "So 29/6 = 4 5/6."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Convert <span class="math">\frac{23}{4}</span> to a mixed number. What is the whole number part?',
+      answer: "5",
+      hints: [
+        "Divide 23 by 4.",
+        "23 ÷ 4 = 5 remainder 3.",
+        "The whole number part is 5."
+      ],
+      explanation: [
+        "23 ÷ 4 = 5 R 3.",
+        "So 23/4 = 5 3/4. The whole number is 5."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Convert <span class="math">21/8</span> to a mixed number.',
+      choices: ["2 5/8", "3 5/8", "2 3/8", "3 1/8"],
+      answer: "2 5/8",
+      hints: [
+        "Divide 21 by 8.",
+        "21 ÷ 8 = 2 remainder 5.",
+        "The mixed number is 2 and 5/8."
+      ],
+      explanation: [
+        "21 ÷ 8 = 2 R 5.",
+        "So 21/8 = 2 5/8.",
+        "The whole number is 2 with remainder 5 over 8."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert <span class="math">9 3/11</span> to an improper fraction. What is the numerator?',
+      answer: "102",
+      hints: [
+        "Multiply the whole number by the denominator: 9 × 11.",
+        "9 × 11 = 99, then add the numerator: 99 + 3 = 102.",
+        "The improper fraction is 102/11."
+      ],
+      explanation: [
+        "9 × 11 + 3 = 99 + 3 = 102.",
+        "So 9 3/11 = 102/11. The numerator is 102.",
+        "Always multiply whole number by denominator, then add numerator."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">41/9</span> to a mixed number.',
+      choices: ["4 5/9", "5 4/9", "4 1/9", "3 5/9"],
+      answer: "4 5/9",
+      hints: [
+        "Divide 41 by 9.",
+        "41 ÷ 9 = 4 remainder 5.",
+        "The mixed number is 4 and 5/9."
+      ],
+      explanation: [
+        "41 ÷ 9 = 4 R 5.",
+        "So 41/9 = 4 5/9.",
+        "The whole number is 4 with remainder 5 over 9."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert <span class="math">7 5/11</span> to an improper fraction. What is the numerator?',
+      answer: "82",
+      hints: [
+        "Multiply the whole number by the denominator: 7 × 11.",
+        "7 × 11 = 77, then add the numerator: 77 + 5 = 82.",
+        "The improper fraction is 82/11."
+      ],
+      explanation: [
+        "7 × 11 + 5 = 77 + 5 = 82.",
+        "So 7 5/11 = 82/11. The numerator is 82.",
+        "Always multiply whole number by denominator, then add numerator."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Convert <span class="math">25/7</span> to a mixed number.',
+      choices: ["3 4/7", "4 3/7", "3 3/7", "2 4/7"],
+      answer: "3 4/7",
+      hints: [
+        "Divide 25 by 7.",
+        "25 ÷ 7 = 3 remainder 4.",
+        "The mixed number is 3 and 4/7."
+      ],
+      explanation: [
+        "25 ÷ 7 = 3 R 4.",
+        "So 25/7 = 3 4/7.",
+        "The whole number is 3 with remainder 4 over 7."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">47/8</span> to a mixed number.',
+      choices: ["5 7/8", "6 1/8", "4 7/8", "5 3/8"],
+      answer: "5 7/8",
+      hints: [
+        "Divide 47 by 8.",
+        "47 ÷ 8 = 5 remainder 7.",
+        "The mixed number is 5 and 7/8."
+      ],
+      explanation: [
+        "47 ÷ 8 = 5 R 7.",
+        "So 47/8 = 5 7/8.",
+        "Write the quotient as the whole number and remainder over the divisor."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert <span class="math">6 4/7</span> to an improper fraction. What is the numerator?',
+      answer: "46",
+      hints: [
+        "Multiply the whole number by the denominator: 6 × 7.",
+        "6 × 7 = 42, then add the numerator: 42 + 4 = 46.",
+        "The improper fraction is 46/7."
+      ],
+      explanation: [
+        "6 × 7 + 4 = 42 + 4 = 46.",
+        "So 6 4/7 = 46/7. The numerator is 46.",
+        "Always multiply whole number by denominator, then add numerator."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Convert <span class="math">27/5</span> to a mixed number.',
+      choices: ["5 2/5","4 2/5","6 2/5","5 3/5"],
+      answer: "5 2/5",
+      hints: [
+        "Divide 27 by 5.",
+        "27 ÷ 5 = 5 remainder 2.",
+        "The mixed number is 5 and 2/5."
+      ],
+      explanation: [
+        "27 ÷ 5 = 5 R 2.",
+        "So 27/5 = 5 2/5.",
+        "Write the quotient as the whole number and remainder over the divisor."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">53/9</span> to a mixed number.',
+      choices: ["5 8/9","6 1/9","5 7/9","4 8/9"],
+      answer: "5 8/9",
+      hints: [
+        "Divide 53 by 9.",
+        "53 ÷ 9 = 5 remainder 8.",
+        "The mixed number is 5 and 8/9."
+      ],
+      explanation: [
+        "53 ÷ 9 = 5 R 8.",
+        "So 53/9 = 5 8/9.",
+        "The whole number is 5 with remainder 8 over 9."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">17/5</span> to a mixed number.',
+      choices: ["3 2/5", "2 3/5", "4 2/5", "3 1/5"],
+      answer: "3 2/5",
+      hints: [
+        "Divide 17 by 5.",
+        "17 ÷ 5 = 3 remainder 2.",
+        "The mixed number is 3 and 2/5."
+      ],
+      explanation: [
+        "17 ÷ 5 = 3 R 2.",
+        "So 17/5 = <strong>3 2/5</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A carpenter has <span class="math">4 3/4</span> feet of wood. Convert this to an improper fraction. What is the numerator?',
+      answer: "19",
+      hints: [
+        "Multiply the whole number by the denominator: 4 × 4 = 16.",
+        "Add the numerator: 16 + 3 = 19.",
+        "The improper fraction is 19/4."
+      ],
+      explanation: [
+        "4 × 4 + 3 = 16 + 3 = <strong>19</strong>.",
+        "So 4 3/4 = 19/4."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Convert <span class="math">43/6</span> to a mixed number.',
+      choices: ["7 1/6", "6 1/6", "8 1/6", "7 5/6"],
+      answer: "7 1/6",
+      hints: [
+        "Divide 43 by 6.",
+        "43 ÷ 6 = 7 remainder 1.",
+        "The mixed number is 7 and 1/6."
+      ],
+      explanation: [
+        "43 ÷ 6 = 7 R 1.",
+        "So 43/6 = <strong>7 1/6</strong>."
+      ]
     }
   ],
 
@@ -1743,6 +2664,237 @@ EXTRA_QUESTIONS[3] = [
         "15 × 4/5 = 60/5 = 12.",
         "The answer is 12.",
         "You can also simplify first: 15/5 = 3, then 3 × 4 = 12."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'What is <span class="math">5 \times \frac{2}{9}</span>?',
+      choices: ["10/9", "7/9", "10/45", "2/45"],
+      answer: "10/9",
+      hints: [
+        "Multiply the whole number by the numerator.",
+        "5 × 2 = 10, keep the denominator 9.",
+        "The answer is 10/9."
+      ],
+      explanation: [
+        "5 × 2/9 = (5 × 2)/9 = 10/9.",
+        "10/9 can also be written as 1 1/9."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">8 \times \frac{3}{4}</span>? Give your answer as a whole number.',
+      answer: "6",
+      hints: [
+        "Multiply 8 by the numerator 3.",
+        "8 × 3 = 24, then divide by 4.",
+        "24 ÷ 4 = 6."
+      ],
+      explanation: [
+        "8 × 3/4 = (8 × 3)/4 = 24/4 = 6.",
+        "The answer is 6."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\frac{1}{3}</span> of 27?',
+      choices: ["9", "3", "27", "18"],
+      answer: "9",
+      hints: [
+        "Of means multiply: 1/3 × 27.",
+        "27 × 1 = 27, then divide by 3.",
+        "27 ÷ 3 = 9."
+      ],
+      explanation: [
+        "1/3 of 27 = 27/3 = 9.",
+        "So 1/3 of 27 is 9."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">16 \times \frac{3}{8}</span>? Give your answer as a whole number.',
+      answer: "6",
+      hints: [
+        "Multiply 16 by the numerator 3.",
+        "16 × 3 = 48, keep the denominator 8.",
+        "48/8 = 6."
+      ],
+      explanation: [
+        "16 × 3/8 = 48/8 = 6.",
+        "The answer is 6.",
+        "You can also simplify first: 16/8 = 2, then 2 × 3 = 6."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'What is <span class="math">7 \times \frac{1}{7}</span>?',
+      choices: ["1", "7/7", "7/49", "1/49"],
+      answer: "1",
+      hints: [
+        "Multiply the whole number by the numerator.",
+        "7 × 1 = 7, keep the denominator 7.",
+        "7/7 = 1."
+      ],
+      explanation: [
+        "7 × 1/7 = 7/7 = 1.",
+        "The answer is 1.",
+        "Any number times its reciprocal equals 1."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">18 \times \frac{5}{9}</span>?',
+      choices: ["10", "90/9", "15", "18/9"],
+      answer: "10",
+      hints: [
+        "Multiply: 18 × 5 = 90, keep denominator 9.",
+        "90/9 = 10.",
+        "The answer is 10."
+      ],
+      explanation: [
+        "18 × 5/9 = 90/9 = 10.",
+        "The answer is 10.",
+        "You can also simplify first: 18/9 = 2, then 2 × 5 = 10."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">9 \times \frac{1}{3}</span>?',
+      answer: "3",
+      hints: [
+        "Multiply the whole number by the numerator.",
+        "9 × 1 = 9, keep the denominator 3.",
+        "9/3 = 3."
+      ],
+      explanation: [
+        "9 × 1/3 = 9/3 = 3.",
+        "The answer is 3.",
+        "Any number times 1/3 gives one-third of that number."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">15 \times \frac{2}{5}</span>?',
+      choices: ["6", "30/5", "10", "3"],
+      answer: "6",
+      hints: [
+        "Multiply: 15 × 2 = 30, keep denominator 5.",
+        "30/5 = 6.",
+        "Or simplify first: 15/5 = 3, then 3 × 2 = 6."
+      ],
+      explanation: [
+        "15 × 2/5 = 30/5 = 6.",
+        "The answer is 6.",
+        "You can also simplify first: 15 ÷ 5 = 3, then 3 × 2 = 6."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">24 \times \frac{3}{8}</span>?',
+      choices: ["9", "72/8", "12", "8"],
+      answer: "9",
+      hints: [
+        "Multiply: 24 × 3 = 72, keep denominator 8.",
+        "72/8 = 9.",
+        "Or simplify first: 24/8 = 3, then 3 × 3 = 9."
+      ],
+      explanation: [
+        "24 × 3/8 = 72/8 = 9.",
+        "The answer is 9.",
+        "Simplifying first: 24 ÷ 8 = 3, then 3 × 3 = 9."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">20 \times \frac{3}{10}</span>?',
+      choices: ["6","60/10","3","30"],
+      answer: "6",
+      hints: [
+        "Multiply: 20 × 3 = 60, keep denominator 10.",
+        "60/10 = 6.",
+        "Or simplify first: 20/10 = 2, then 2 × 3 = 6."
+      ],
+      explanation: [
+        "20 × 3/10 = 60/10 = 6.",
+        "The answer is 6.",
+        "Simplifying first: 20 ÷ 10 = 2, then 2 × 3 = 6."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">3 \times \frac{2}{3}</span>? Give your answer as a whole number.',
+      answer: "2",
+      hints: [
+        "Multiply 3 by the numerator 2.",
+        "3 × 2 = 6, keep the denominator 3.",
+        "6/3 = 2."
+      ],
+      explanation: [
+        "3 × 2/3 = 6/3 = 2.",
+        "The answer is 2.",
+        "The 3 in the whole number cancels with the denominator."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\frac{1}{4}</span> of 36?',
+      choices: ["9","4","36","12"],
+      answer: "9",
+      hints: [
+        "Of means multiply: 1/4 × 36.",
+        "36 × 1 = 36, then divide by 4.",
+        "36 ÷ 4 = 9."
+      ],
+      explanation: [
+        "1/4 of 36 = 36/4 = 9.",
+        "So 1/4 of 36 is 9.",
+        "Divide by the denominator when the numerator is 1."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A recipe calls for <span class="math">3/4</span> cup of sugar. If you make <span class="math">2/3</span> of the recipe, how much sugar do you need?',
+      choices: ["1/2 cup", "5/7 cup", "6/12 cup", "2/4 cup"],
+      answer: "1/2 cup",
+      hints: [
+        "Multiply: 3/4 × 2/3.",
+        "Numerators: 3 × 2 = 6. Denominators: 4 × 3 = 12.",
+        "6/12 simplifies to 1/2."
+      ],
+      explanation: [
+        "3/4 × 2/3 = 6/12 = <strong>1/2</strong> cup.",
+        "You can also cancel the 3s before multiplying: 1/4 × 2/1 = 2/4 = 1/2."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">6 × 5/12</span>? Write your answer as a fraction.',
+      answer: "5/2",
+      hints: [
+        "Multiply 6 by the numerator: 6 × 5 = 30.",
+        "Keep the denominator: 30/12.",
+        "Simplify: GCD(30, 12) = 6, so 30/12 = 5/2."
+      ],
+      explanation: [
+        "6 × 5/12 = 30/12.",
+        "Simplify: 30 ÷ 6 = 5, 12 ÷ 6 = 2 → <strong>5/2</strong> (or 2 1/2)."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A farmer plants <span class="math">2/5</span> of his 40-acre field with corn. How many acres is that?',
+      choices: ["16 acres", "8 acres", "20 acres", "10 acres"],
+      answer: "16 acres",
+      hints: [
+        "Multiply: 2/5 × 40.",
+        "40 × 2 = 80, then divide by 5.",
+        "80 ÷ 5 = 16."
+      ],
+      explanation: [
+        "2/5 × 40 = 80/5 = <strong>16 acres</strong>.",
+        "You can also simplify first: 40 ÷ 5 = 8, then 8 × 2 = 16."
       ]
     }
   ],
@@ -2092,6 +3244,235 @@ EXTRA_QUESTIONS[3] = [
         "22/24 − 15/24 = 7/24.",
         "The answer is 7/24."
       ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">\frac{7}{10} - \frac{2}{5}</span>? Give the numerator (denominator is 10).',
+      answer: "3",
+      hints: [
+        "Find a common denominator. LCD of 10 and 5 is 10.",
+        "Rewrite 2/5 as 4/10.",
+        "7/10 - 4/10 = ?/10."
+      ],
+      explanation: [
+        "LCD(10, 5) = 10. Rewrite: 2/5 = 4/10.",
+        "7/10 - 4/10 = 3/10. The numerator is 3."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\frac{5}{6} - \frac{3}{8}</span>?',
+      choices: ["11/24", "2/2", "1/12", "7/24"],
+      answer: "11/24",
+      hints: [
+        "Find the LCD of 6 and 8.",
+        "LCD(6, 8) = 24. Rewrite: 5/6 = 20/24, 3/8 = 9/24.",
+        "20/24 - 9/24 = 11/24."
+      ],
+      explanation: [
+        "LCD(6, 8) = 24. Rewrite: 5/6 = 20/24, 3/8 = 9/24.",
+        "20/24 - 9/24 = 11/24."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">\frac{11}{12} - \frac{1}{3}</span>? Give the numerator (denominator is 12).',
+      answer: "7",
+      hints: [
+        "Find a common denominator. LCD of 12 and 3 is 12.",
+        "Rewrite 1/3 as 4/12.",
+        "11/12 - 4/12 = ?/12."
+      ],
+      explanation: [
+        "LCD(12, 3) = 12. Rewrite: 1/3 = 4/12.",
+        "11/12 - 4/12 = 7/12. The numerator is 7."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">9/10 − 3/7</span>?',
+      choices: ["33/70", "6/3", "27/70", "1/2"],
+      answer: "33/70",
+      hints: [
+        "Find the LCD of 10 and 7.",
+        "LCD = 70. Convert: 9/10 = 63/70, 3/7 = 30/70.",
+        "63/70 − 30/70 = 33/70."
+      ],
+      explanation: [
+        "LCD = 70. Rewrite: 9/10 = 63/70, 3/7 = 30/70.",
+        "63/70 − 30/70 = 33/70.",
+        "The answer is 33/70."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">5/6 − 1/4</span>? Write your answer as a fraction.',
+      answer: "7/12",
+      hints: [
+        "Find the LCD of 6 and 4.",
+        "LCD = 12. Convert: 5/6 = 10/12, 1/4 = 3/12.",
+        "10/12 − 3/12 = 7/12."
+      ],
+      explanation: [
+        "LCD = 12. Rewrite: 5/6 = 10/12, 1/4 = 3/12.",
+        "10/12 − 3/12 = 7/12.",
+        "The answer is 7/12."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">13/15 − 2/5</span>?',
+      choices: ["7/15", "11/10", "1/3", "11/15"],
+      answer: "7/15",
+      hints: [
+        "Find the LCD of 15 and 5.",
+        "LCD = 15. Convert 2/5 = 6/15.",
+        "13/15 − 6/15 = 7/15."
+      ],
+      explanation: [
+        "LCD = 15. Rewrite 2/5 as 6/15.",
+        "13/15 − 6/15 = 7/15.",
+        "The answer is 7/15."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">7/8 − 1/3</span>? Write your answer as a fraction.',
+      answer: "13/24",
+      hints: [
+        "Find the LCD of 8 and 3.",
+        "LCD = 24. Convert: 7/8 = 21/24 and 1/3 = 8/24.",
+        "21/24 − 8/24 = 13/24."
+      ],
+      explanation: [
+        "LCD of 8 and 3 is 24. Rewrite: 7/8 = 21/24, 1/3 = 8/24.",
+        "21/24 − 8/24 = 13/24.",
+        "The answer is 13/24."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">11/12 − 3/8</span>?',
+      choices: ["13/24", "8/4", "7/24", "1/2"],
+      answer: "13/24",
+      hints: [
+        "Find the LCD of 12 and 8.",
+        "LCD = 24. Convert: 11/12 = 22/24 and 3/8 = 9/24.",
+        "22/24 − 9/24 = 13/24."
+      ],
+      explanation: [
+        "LCD of 12 and 8 is 24. Rewrite: 11/12 = 22/24, 3/8 = 9/24.",
+        "22/24 − 9/24 = 13/24.",
+        "The answer is 13/24."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">5/6 − 2/9</span>? Write your answer as a fraction.',
+      answer: "11/18",
+      hints: [
+        "Find the LCD of 6 and 9.",
+        "LCD = 18. Convert: 5/6 = 15/18 and 2/9 = 4/18.",
+        "15/18 − 4/18 = 11/18."
+      ],
+      explanation: [
+        "LCD of 6 and 9 is 18. Rewrite: 5/6 = 15/18, 2/9 = 4/18.",
+        "15/18 − 4/18 = 11/18.",
+        "The answer is 11/18."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">7/9 − 3/7</span>? Write your answer as a fraction.',
+      answer: "22/63",
+      hints: [
+        "Find the LCD of 9 and 7.",
+        "LCD = 63. Convert: 7/9 = 49/63, 3/7 = 27/63.",
+        "49/63 − 27/63 = 22/63."
+      ],
+      explanation: [
+        "LCD = 63. Rewrite: 7/9 = 49/63, 3/7 = 27/63.",
+        "49/63 − 27/63 = 22/63.",
+        "The answer is 22/63."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">9/10 − 1/5</span>?',
+      choices: ["7/10","8/5","4/5","1/2"],
+      answer: "7/10",
+      hints: [
+        "Find the LCD of 10 and 5.",
+        "LCD = 10. Convert 1/5 = 2/10.",
+        "9/10 − 2/10 = 7/10."
+      ],
+      explanation: [
+        "LCD = 10. Rewrite 1/5 as 2/10.",
+        "9/10 − 2/10 = 7/10.",
+        "The answer is 7/10."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">8/9 − 3/5</span>?',
+      choices: ["13/45","5/4","1/3","23/45"],
+      answer: "13/45",
+      hints: [
+        "Find the LCD of 9 and 5.",
+        "LCD = 45. Convert: 8/9 = 40/45, 3/5 = 27/45.",
+        "40/45 − 27/45 = 13/45."
+      ],
+      explanation: [
+        "LCD = 45. Rewrite: 8/9 = 40/45, 3/5 = 27/45.",
+        "40/45 − 27/45 = 13/45.",
+        "The answer is 13/45."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A board is <span class="math">5/6</span> foot long. You cut off <span class="math">1/4</span> foot. How much remains?',
+      choices: ["7/12", "4/2", "1/6", "11/12"],
+      answer: "7/12",
+      hints: [
+        "Find the LCD of 6 and 4.",
+        "LCD = 12. Convert: 5/6 = 10/12, 1/4 = 3/12.",
+        "10/12 − 3/12 = 7/12."
+      ],
+      explanation: [
+        "LCD = 12. Rewrite: 5/6 = 10/12, 1/4 = 3/12.",
+        "10/12 − 3/12 = <strong>7/12</strong> foot remains."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">7/8 − 5/14</span>? Write your answer as a fraction.',
+      answer: "29/56",
+      hints: [
+        "Find the LCD of 8 and 14.",
+        "LCD = 56. Convert: 7/8 = 49/56, 5/14 = 20/56.",
+        "49/56 − 20/56 = 29/56."
+      ],
+      explanation: [
+        "LCD = 56. Rewrite: 7/8 = 49/56, 5/14 = 20/56.",
+        "49/56 − 20/56 = <strong>29/56</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">11/15 − 1/3</span>?',
+      choices: ["2/5", "10/12", "8/15", "1/5"],
+      answer: "2/5",
+      hints: [
+        "Find the LCD of 15 and 3.",
+        "LCD = 15. Convert 1/3 = 5/15.",
+        "11/15 − 5/15 = 6/15 = 2/5."
+      ],
+      explanation: [
+        "LCD = 15. Rewrite 1/3 as 5/15.",
+        "11/15 − 5/15 = 6/15 = <strong>2/5</strong>."
+      ]
     }
   ],
 
@@ -2440,6 +3821,239 @@ EXTRA_QUESTIONS[3] = [
         "5/3 × 2/11 = 10/33.",
         "The answer is 10/33."
       ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\frac{3}{7} \times \frac{2}{5}</span>?',
+      choices: ["6/35", "5/12", "6/12", "5/35"],
+      answer: "6/35",
+      hints: [
+        "Multiply numerators together and denominators together.",
+        "3 × 2 = 6 and 7 × 5 = 35.",
+        "The answer is 6/35."
+      ],
+      explanation: [
+        "Multiply straight across: 3 × 2 = 6, 7 × 5 = 35.",
+        "So 3/7 × 2/5 = 6/35."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">\frac{4}{9} \times \frac{3}{8}</span>? Simplify and give the numerator.',
+      answer: "1",
+      hints: [
+        "Multiply: 4 × 3 = 12, 9 × 8 = 72.",
+        "Simplify 12/72 by finding the GCD.",
+        "GCD(12, 72) = 12. So 12/72 = 1/6."
+      ],
+      explanation: [
+        "4/9 × 3/8 = 12/72.",
+        "Simplify: GCD(12, 72) = 12. 12÷12 = 1, 72÷12 = 6.",
+        "The answer is 1/6. The numerator is 1."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\frac{5}{6} \times \frac{9}{10}</span> in simplest form?',
+      choices: ["3/4", "45/60", "15/20", "1/2"],
+      answer: "3/4",
+      hints: [
+        "Multiply: 5 × 9 = 45, 6 × 10 = 60.",
+        "Simplify 45/60. GCD(45, 60) = 15.",
+        "45 ÷ 15 = 3, 60 ÷ 15 = 4."
+      ],
+      explanation: [
+        "5/6 × 9/10 = 45/60.",
+        "GCD(45, 60) = 15. Simplify: 45÷15 = 3, 60÷15 = 4.",
+        "The answer is 3/4."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">\frac{7}{12} \times \frac{6}{5}</span>? Write your answer as a fraction.',
+      answer: "7/10",
+      hints: [
+        "Cancel before multiplying: 6 and 12 share factor 6.",
+        "After canceling: 7/2 × 1/5.",
+        "7/2 × 1/5 = 7/10."
+      ],
+      explanation: [
+        "Cancel: 6÷6=1, 12÷6=2.",
+        "7/2 × 1/5 = 7/10.",
+        "The answer is 7/10."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\frac{2}{9} \times \frac{3}{4}</span>?',
+      choices: ["1/6", "6/36", "2/12", "3/18"],
+      answer: "1/6",
+      hints: [
+        "Cancel before multiplying: 3 and 9 share factor 3; 2 and 4 share factor 2.",
+        "After canceling: 1/3 × 1/2.",
+        "1/3 × 1/2 = 1/6."
+      ],
+      explanation: [
+        "Cancel: 3÷3=1, 9÷3=3; 2÷2=1, 4÷2=2.",
+        "1/3 × 1/2 = 1/6.",
+        "The answer is 1/6."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\frac{8}{11} \times \frac{11}{12}</span>?',
+      choices: ["2/3", "88/132", "8/12", "4/6"],
+      answer: "2/3",
+      hints: [
+        "Cancel the 11s: 8/1 × 1/12 = 8/12.",
+        "Simplify: 8/12 = 2/3.",
+        "Or multiply directly: 88/132 = 2/3."
+      ],
+      explanation: [
+        "Cancel 11: 8/11 × 11/12 = 8/12.",
+        "Simplify: 8/12 = 2/3.",
+        "The answer is 2/3."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\frac{5}{9} \times \frac{3}{7}</span>?',
+      choices: ["5/21", "15/63", "8/16", "1/3"],
+      answer: "5/21",
+      hints: [
+        "Multiply numerators: 5 × 3 = 15. Multiply denominators: 9 × 7 = 63.",
+        "15/63 simplifies — cancel the 3: 5/21.",
+        "The answer is 5/21."
+      ],
+      explanation: [
+        "5/9 × 3/7 = 15/63.",
+        "Simplify: GCD(15, 63) = 3, so 15÷3 = 5, 63÷3 = 21.",
+        "The answer is 5/21."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">\frac{7}{10} \times \frac{5}{14}</span>? Write your answer as a fraction.',
+      answer: "1/4",
+      hints: [
+        "Cross-cancel before multiplying: 7 and 14 share factor 7; 5 and 10 share factor 5.",
+        "After canceling: 1/2 × 1/2.",
+        "1/2 × 1/2 = 1/4."
+      ],
+      explanation: [
+        "Cancel: 7÷7 = 1, 14÷7 = 2; 5÷5 = 1, 10÷5 = 2.",
+        "1/2 × 1/2 = 1/4.",
+        "The answer is 1/4."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\frac{9}{14} \times \frac{7}{12}</span>?',
+      choices: ["3/8", "63/168", "9/24", "1/2"],
+      answer: "3/8",
+      hints: [
+        "Cross-cancel: 9 and 12 share factor 3; 7 and 14 share factor 7.",
+        "After canceling: 3/2 × 1/4.",
+        "3/2 × 1/4 = 3/8."
+      ],
+      explanation: [
+        "Cancel: 9÷3=3, 12÷3=4; 7÷7=1, 14÷7=2.",
+        "3/2 × 1/4 = 3/8.",
+        "The answer is 3/8."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\frac{7}{10} \times \frac{5}{21}</span>?',
+      choices: ["1/6","35/210","7/42","5/30"],
+      answer: "1/6",
+      hints: [
+        "Cancel before multiplying: 7 and 21 share factor 7; 5 and 10 share factor 5.",
+        "After canceling: 1/2 × 1/3.",
+        "1/2 × 1/3 = 1/6."
+      ],
+      explanation: [
+        "Cancel: 7÷7=1, 21÷7=3; 5÷5=1, 10÷5=2.",
+        "1/2 × 1/3 = 1/6.",
+        "The answer is 1/6."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">\frac{4}{7} \times \frac{3}{8}</span>? Write your answer as a fraction.',
+      answer: "3/14",
+      hints: [
+        "Cancel before multiplying: 4 and 8 share factor 4.",
+        "After canceling: 1/7 × 3/2.",
+        "1/7 × 3/2 = 3/14."
+      ],
+      explanation: [
+        "Cancel: 4÷4=1, 8÷4=2.",
+        "1/7 × 3/2 = 3/14.",
+        "The answer is 3/14."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\frac{3}{8} \times \frac{4}{5}</span> in simplest form?',
+      choices: ["3/10","12/40","6/20","2/5"],
+      answer: "3/10",
+      hints: [
+        "Cancel before multiplying: 4 and 8 share factor 4.",
+        "After canceling: 3/2 × 1/5.",
+        "3/2 × 1/5 = 3/10."
+      ],
+      explanation: [
+        "Cancel: 4÷4=1, 8÷4=2.",
+        "3/2 × 1/5 = 3/10.",
+        "The answer is 3/10."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A runner completed <span class="math">3/4</span> of a <span class="math">2/3</span>-mile trail. How far did the runner go?',
+      choices: ["1/2 mile", "5/7 mile", "6/12 mile", "3/7 mile"],
+      answer: "1/2 mile",
+      hints: [
+        "Multiply: 3/4 × 2/3.",
+        "Numerators: 3 × 2 = 6. Denominators: 4 × 3 = 12.",
+        "6/12 = 1/2."
+      ],
+      explanation: [
+        "3/4 × 2/3 = 6/12 = <strong>1/2 mile</strong>.",
+        "Cancel the 3s first: 1/4 × 2/1 = 2/4 = 1/2."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">4/9 × 3/8</span>? Write your answer as a fraction.',
+      answer: "1/6",
+      hints: [
+        "Multiply numerators: 4 × 3 = 12.",
+        "Multiply denominators: 9 × 8 = 72.",
+        "Simplify 12/72 by dividing both by 12."
+      ],
+      explanation: [
+        "4/9 × 3/8 = 12/72.",
+        "Simplify: 12 ÷ 12 = 1, 72 ÷ 12 = 6 → <strong>1/6</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">7/10 × 5/14</span>?',
+      choices: ["1/4", "35/140", "7/28", "5/20"],
+      answer: "1/4",
+      hints: [
+        "Before multiplying, cancel common factors: 7 and 14 share 7; 5 and 10 share 5.",
+        "After canceling: 1/2 × 1/2 = 1/4.",
+        "Or multiply then simplify: 35/140 = 1/4."
+      ],
+      explanation: [
+        "Cancel: 7/14 = 1/2 and 5/10 = 1/2.",
+        "1/2 × 1/2 = <strong>1/4</strong>."
+      ]
     }
   ],
 
@@ -2787,6 +4401,239 @@ EXTRA_QUESTIONS[3] = [
         "10/11 ÷ 5/11 = 10/11 × 11/5 = 110/55.",
         "Simplify: 110/55 = 2.",
         "The answer is 2."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\frac{5}{8} \div \frac{1}{4}</span>?',
+      choices: ["5/2", "5/32", "4/8", "1/2"],
+      answer: "5/2",
+      hints: [
+        "To divide fractions, multiply by the reciprocal.",
+        "The reciprocal of 1/4 is 4/1.",
+        "5/8 × 4/1 = 20/8 = 5/2."
+      ],
+      explanation: [
+        "5/8 ÷ 1/4 = 5/8 × 4/1 = 20/8.",
+        "Simplify: 20/8 = 5/2 (or 2 1/2)."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">\frac{7}{10} \div \frac{2}{5}</span>? Simplify and give the numerator.',
+      answer: "7",
+      hints: [
+        "Multiply by the reciprocal: 7/10 × 5/2.",
+        "7 × 5 = 35, 10 × 2 = 20.",
+        "Simplify 35/20: GCD is 5, so 35/20 = 7/4."
+      ],
+      explanation: [
+        "7/10 ÷ 2/5 = 7/10 × 5/2 = 35/20.",
+        "Simplify: GCD(35, 20) = 5. 35÷5 = 7, 20÷5 = 4.",
+        "The answer is 7/4. The numerator is 7."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\frac{3}{4} \div \frac{9}{8}</span> in simplest form?',
+      choices: ["2/3", "27/32", "24/36", "3/2"],
+      answer: "2/3",
+      hints: [
+        "Multiply by the reciprocal: 3/4 × 8/9.",
+        "3 × 8 = 24, 4 × 9 = 36.",
+        "Simplify 24/36: GCD is 12, so 24/36 = 2/3."
+      ],
+      explanation: [
+        "3/4 ÷ 9/8 = 3/4 × 8/9 = 24/36.",
+        "GCD(24, 36) = 12. 24÷12 = 2, 36÷12 = 3.",
+        "The answer is 2/3."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">7/9 ÷ 7/3</span>?',
+      choices: ["1/3", "49/27", "7/3", "3/9"],
+      answer: "1/3",
+      hints: [
+        "Multiply by the reciprocal: 7/9 × 3/7.",
+        "Cancel the 7s: 1/9 × 3/1 = 3/9.",
+        "Simplify: 3/9 = 1/3."
+      ],
+      explanation: [
+        "7/9 ÷ 7/3 = 7/9 × 3/7 = 21/63.",
+        "Simplify: 21/63 = 1/3.",
+        "The answer is 1/3."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">5/6 ÷ 10/9</span>? Write your answer as a fraction.',
+      answer: "3/4",
+      hints: [
+        "Multiply by the reciprocal of 10/9, which is 9/10.",
+        "5/6 × 9/10 = 45/60.",
+        "Simplify: 45/60 = 3/4."
+      ],
+      explanation: [
+        "5/6 ÷ 10/9 = 5/6 × 9/10 = 45/60.",
+        "Simplify: 45/60 = 3/4.",
+        "The answer is 3/4."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">4/5 ÷ 8/15</span>?',
+      choices: ["3/2", "32/75", "4/3", "2/3"],
+      answer: "3/2",
+      hints: [
+        "Multiply by the reciprocal of 8/15, which is 15/8.",
+        "4/5 × 15/8 = 60/40.",
+        "Simplify: 60/40 = 3/2."
+      ],
+      explanation: [
+        "4/5 ÷ 8/15 = 4/5 × 15/8 = 60/40.",
+        "Simplify: 60/40 = 3/2 (or 1 1/2).",
+        "The answer is 3/2."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">3/5 ÷ 9/10</span>? Write your answer as a fraction.',
+      answer: "2/3",
+      hints: [
+        "Multiply by the reciprocal of 9/10, which is 10/9.",
+        "3/5 × 10/9 = 30/45.",
+        "Simplify: 30/45 = 2/3."
+      ],
+      explanation: [
+        "3/5 ÷ 9/10 = 3/5 × 10/9 = 30/45.",
+        "Simplify: GCD(30,45) = 15, so 30÷15 = 2, 45÷15 = 3.",
+        "The answer is 2/3."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">7/8 ÷ 21/16</span>?',
+      choices: ["2/3", "7/21", "112/168", "1/3"],
+      answer: "2/3",
+      hints: [
+        "Multiply by the reciprocal of 21/16, which is 16/21.",
+        "7/8 × 16/21 = 112/168.",
+        "Simplify: cancel 7 and 21 (share 7), cancel 16 and 8 (share 8). Result = 2/3."
+      ],
+      explanation: [
+        "7/8 ÷ 21/16 = 7/8 × 16/21 = 112/168.",
+        "Cancel: 7 and 21 share 7; 16 and 8 share 8. So 1/1 × 2/3 = 2/3.",
+        "The answer is 2/3."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">2/3 ÷ 4/9</span>?',
+      choices: ["3/2", "8/27", "2/4", "6/12"],
+      answer: "3/2",
+      hints: [
+        "Multiply by the reciprocal of 4/9, which is 9/4.",
+        "2/3 × 9/4 = 18/12.",
+        "Simplify: 18/12 = 3/2."
+      ],
+      explanation: [
+        "2/3 ÷ 4/9 = 2/3 × 9/4 = 18/12.",
+        "Simplify: 18/12 = 3/2 (or 1 1/2).",
+        "The answer is 3/2."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\frac{5}{9} \div \frac{10}{3}</span>?',
+      choices: ["1/6","50/27","5/30","3/10"],
+      answer: "1/6",
+      hints: [
+        "Multiply by the reciprocal of 10/3, which is 3/10.",
+        "5/9 × 3/10 = 15/90.",
+        "Simplify: 15/90 = 1/6."
+      ],
+      explanation: [
+        "5/9 ÷ 10/3 = 5/9 × 3/10 = 15/90.",
+        "Simplify: GCD(15, 90) = 15. 15÷15 = 1, 90÷15 = 6.",
+        "The answer is 1/6."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">\frac{6}{7} \div \frac{3}{7}</span>? Give your answer as a whole number.',
+      answer: "2",
+      hints: [
+        "Multiply by the reciprocal: 6/7 × 7/3.",
+        "Cancel the 7s: 6/1 × 1/3 = 6/3.",
+        "6/3 = 2."
+      ],
+      explanation: [
+        "6/7 ÷ 3/7 = 6/7 × 7/3 = 42/21.",
+        "Simplify: 42/21 = 2.",
+        "The answer is 2."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\frac{4}{9} \div \frac{8}{3}</span>?',
+      choices: ["1/6","32/27","4/24","2/9"],
+      answer: "1/6",
+      hints: [
+        "Multiply by the reciprocal of 8/3, which is 3/8.",
+        "4/9 × 3/8 = 12/72.",
+        "Simplify: 12/72 = 1/6."
+      ],
+      explanation: [
+        "4/9 ÷ 8/3 = 4/9 × 3/8 = 12/72.",
+        "Simplify: GCD(12, 72) = 12. 12÷12 = 1, 72÷12 = 6.",
+        "The answer is 1/6."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'How many <span class="math">1/3</span>-cup servings are in 4 cups of soup?',
+      choices: ["12", "4/3", "3/4", "1 1/3"],
+      answer: "12",
+      hints: [
+        "Divide: 4 ÷ 1/3.",
+        "Flip and multiply: 4 × 3/1 = 12.",
+        "There are 12 servings."
+      ],
+      explanation: [
+        "4 ÷ 1/3 = 4 × 3 = <strong>12</strong> servings.",
+        "Dividing by a fraction means multiplying by its reciprocal."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">5/6 ÷ 2/9</span>? Write your answer as a fraction.',
+      answer: "15/4",
+      hints: [
+        "Flip the second fraction and multiply: 5/6 × 9/2.",
+        "Numerators: 5 × 9 = 45. Denominators: 6 × 2 = 12.",
+        "Simplify 45/12: divide by 3 → 15/4."
+      ],
+      explanation: [
+        "5/6 ÷ 2/9 = 5/6 × 9/2 = 45/12.",
+        "Simplify: 45 ÷ 3 = 15, 12 ÷ 3 = 4 → <strong>15/4</strong> (or 3 3/4)."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A ribbon is <span class="math">7/8</span> yard long. How many <span class="math">1/4</span>-yard pieces can you cut?',
+      choices: ["3 1/2", "7/32", "2", "7/2"],
+      answer: "3 1/2",
+      hints: [
+        "Divide: 7/8 ÷ 1/4.",
+        "Flip and multiply: 7/8 × 4/1 = 28/8.",
+        "28/8 = 7/2 = 3 1/2."
+      ],
+      explanation: [
+        "7/8 ÷ 1/4 = 7/8 × 4/1 = 28/8 = 7/2 = <strong>3 1/2</strong> pieces.",
+        "You can cut 3 full pieces with 1/2 piece left over."
       ]
     }
   ],
@@ -3137,6 +4984,237 @@ EXTRA_QUESTIONS[3] = [
         "Order: 1/4 < 3/10 < 2/5.",
         "5/20 < 6/20 < 8/20."
       ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which is greater: <span class="math">\frac{5}{9}</span> or <span class="math">\frac{4}{7}</span>?',
+      choices: ["4/7", "5/9", "They are equal", "Cannot tell"],
+      answer: "4/7",
+      hints: [
+        "Cross multiply to compare: 5 × 7 vs 4 × 9.",
+        "5 × 7 = 35 and 4 × 9 = 36.",
+        "Since 36 > 35, the fraction on the right (4/7) is larger."
+      ],
+      explanation: [
+        "Cross multiply: 5 × 7 = 35, 4 × 9 = 36.",
+        "36 > 35, so 4/7 > 5/9."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Order these fractions from least to greatest: <span class="math">\frac{2}{3}, \frac{5}{8}, \frac{7}{12}</span>. Which fraction is the smallest? Give the numerator.',
+      answer: "7",
+      hints: [
+        "Find a common denominator. LCD of 3, 8, and 12 is 24.",
+        "2/3 = 16/24, 5/8 = 15/24, 7/12 = 14/24.",
+        "14/24 < 15/24 < 16/24."
+      ],
+      explanation: [
+        "LCD = 24. Rewrite: 2/3 = 16/24, 5/8 = 15/24, 7/12 = 14/24.",
+        "Order: 7/12 < 5/8 < 2/3. The smallest is 7/12."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which fraction is closest to <span class="math">\frac{1}{2}</span>?',
+      choices: ["7/15", "3/7", "4/9", "5/11"],
+      answer: "7/15",
+      hints: [
+        "Convert each to a decimal or compare to 1/2 = 0.5.",
+        "7/15 ≈ 0.4667, 5/11 ≈ 0.4545, 4/9 ≈ 0.4444, 3/7 ≈ 0.4286.",
+        "|0.5 - 0.4667| = 0.0333 is the smallest distance."
+      ],
+      explanation: [
+        "Distances from 0.5: 7/15 ≈ 0.0333, 5/11 ≈ 0.0455, 4/9 ≈ 0.0556, 3/7 ≈ 0.0714.",
+        "7/15 is closest to 1/2."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which is the largest: <span class="math">5/8, 7/11, 4/7</span>?',
+      choices: ["7/11", "5/8", "4/7", "They are all equal"],
+      answer: "5/8",
+      hints: [
+        "Convert to decimals: 5/8 = 0.625, 7/11 ≈ 0.636, 4/7 ≈ 0.571.",
+        "Wait — double check 7/11 ≈ 0.636 and 5/8 = 0.625.",
+        "Actually 7/11 ≈ 0.6364 > 0.625, so 7/11 is largest."
+      ],
+      explanation: [
+        "Convert: 5/8 = 0.625, 7/11 ≈ 0.636, 4/7 ≈ 0.571.",
+        "0.636 > 0.625 > 0.571, so 7/11 is the largest.",
+        "The answer is 7/11."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Which is greater: <span class="math">6/11</span> or <span class="math">5/9</span>? Cross multiply. What is the product on the left side (6 × 9)?',
+      answer: "54",
+      hints: [
+        "Cross multiply to compare: left product is 6 × 9.",
+        "6 × 9 = 54.",
+        "Right product is 11 × 5 = 55. Since 54 < 55, 6/11 < 5/9."
+      ],
+      explanation: [
+        "Cross multiply: 6 × 9 = 54, 11 × 5 = 55.",
+        "Since 54 < 55, we know 6/11 < 5/9. The left product is 54.",
+        "5/9 is the greater fraction."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which list is in order from least to greatest?',
+      choices: ["5/12, 3/7, 1/2", "3/7, 5/12, 1/2", "1/2, 3/7, 5/12", "5/12, 1/2, 3/7"],
+      answer: "5/12, 3/7, 1/2",
+      hints: [
+        "Convert to decimals: 5/12 ≈ 0.417, 3/7 ≈ 0.429, 1/2 = 0.5.",
+        "Compare: 0.417 < 0.429 < 0.5.",
+        "So 5/12 < 3/7 < 1/2."
+      ],
+      explanation: [
+        "Convert: 5/12 ≈ 0.417, 3/7 ≈ 0.429, 1/2 = 0.5.",
+        "Order: 5/12 < 3/7 < 1/2.",
+        "The correct order is 5/12, 3/7, 1/2."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which fraction is greater: <span class="math">5/8</span> or <span class="math">7/12</span>?',
+      choices: ["5/8", "7/12", "They are equal", "Cannot tell"],
+      answer: "5/8",
+      hints: [
+        "Find the LCD of 8 and 12, which is 24.",
+        "5/8 = 15/24 and 7/12 = 14/24.",
+        "Since 15 > 14, we have 5/8 > 7/12."
+      ],
+      explanation: [
+        "LCD = 24. Convert: 5/8 = 15/24, 7/12 = 14/24.",
+        "15/24 > 14/24, so 5/8 is greater.",
+        "Always convert to a common denominator to compare."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Which is greater: <span class="math">7/10</span> or <span class="math">5/7</span>? Cross multiply. What is the product on the left side (7 × 7)?',
+      answer: "49",
+      hints: [
+        "Cross multiply to compare: left product is 7 × 7.",
+        "7 × 7 = 49.",
+        "Right product is 10 × 5 = 50. Since 49 < 50, 7/10 < 5/7."
+      ],
+      explanation: [
+        "Cross multiply: 7 × 7 = 49, 10 × 5 = 50.",
+        "Since 49 < 50, we know 7/10 < 5/7. The left product is 49.",
+        "5/7 is the greater fraction."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which list is in order from least to greatest?',
+      choices: ["2/7, 1/3, 3/8", "1/3, 2/7, 3/8", "3/8, 1/3, 2/7", "2/7, 3/8, 1/3"],
+      answer: "2/7, 1/3, 3/8",
+      hints: [
+        "Convert to decimals: 2/7 ≈ 0.286, 1/3 ≈ 0.333, 3/8 = 0.375.",
+        "Compare: 0.286 < 0.333 < 0.375.",
+        "So 2/7 < 1/3 < 3/8."
+      ],
+      explanation: [
+        "Convert: 2/7 ≈ 0.286, 1/3 ≈ 0.333, 3/8 = 0.375.",
+        "Order: 2/7 < 1/3 < 3/8.",
+        "The correct order is 2/7, 1/3, 3/8."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which is the largest: <span class="math">5/9, 7/12, 3/5</span>?',
+      choices: ["3/5","7/12","5/9","They are all equal"],
+      answer: "3/5",
+      hints: [
+        "Convert to decimals: 5/9 ≈ 0.556, 7/12 ≈ 0.583, 3/5 = 0.6.",
+        "Compare: 0.6 > 0.583 > 0.556.",
+        "3/5 is the largest."
+      ],
+      explanation: [
+        "Convert: 5/9 ≈ 0.556, 7/12 ≈ 0.583, 3/5 = 0.6.",
+        "0.6 > 0.583 > 0.556, so 3/5 is the largest.",
+        "The answer is 3/5."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Which is greater: <span class="math">8/11</span> or <span class="math">5/7</span>? Cross multiply. What is the product on the left side (8 × 7)?',
+      answer: "56",
+      hints: [
+        "Cross multiply to compare: left product is 8 × 7.",
+        "8 × 7 = 56.",
+        "Right product is 11 × 5 = 55. Since 56 > 55, 8/11 > 5/7."
+      ],
+      explanation: [
+        "Cross multiply: 8 × 7 = 56, 11 × 5 = 55.",
+        "Since 56 > 55, we know 8/11 > 5/7. The left product is 56.",
+        "8/11 is the greater fraction."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which list is in order from least to greatest?',
+      choices: ["4/9, 1/2, 5/8","1/2, 4/9, 5/8","5/8, 1/2, 4/9","4/9, 5/8, 1/2"],
+      answer: "4/9, 1/2, 5/8",
+      hints: [
+        "Convert to decimals: 4/9 ≈ 0.444, 1/2 = 0.5, 5/8 = 0.625.",
+        "Compare: 0.444 < 0.5 < 0.625.",
+        "So 4/9 < 1/2 < 5/8."
+      ],
+      explanation: [
+        "Convert: 4/9 ≈ 0.444, 1/2 = 0.5, 5/8 = 0.625.",
+        "Order: 4/9 < 1/2 < 5/8.",
+        "The correct order is 4/9, 1/2, 5/8."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which is greater: <span class="math">5/8</span> or <span class="math">3/5</span>?',
+      choices: ["5/8", "3/5", "They are equal", "Cannot tell"],
+      answer: "5/8",
+      hints: [
+        "Cross-multiply to compare: 5 × 5 = 25 and 3 × 8 = 24.",
+        "Since 25 > 24, the first fraction is greater.",
+        "5/8 > 3/5."
+      ],
+      explanation: [
+        "Cross-multiply: 5 × 5 = 25 vs. 3 × 8 = 24.",
+        "Since 25 > 24, <strong>5/8</strong> is greater than 3/5."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Order from least to greatest: <span class="math">3/4, 2/3, 5/6</span>',
+      choices: ["2/3, 3/4, 5/6", "3/4, 2/3, 5/6", "5/6, 3/4, 2/3", "2/3, 5/6, 3/4"],
+      answer: "2/3, 3/4, 5/6",
+      hints: [
+        "Find the LCD of 4, 3, and 6. LCD = 12.",
+        "Convert: 3/4 = 9/12, 2/3 = 8/12, 5/6 = 10/12.",
+        "Order: 8/12 < 9/12 < 10/12."
+      ],
+      explanation: [
+        "LCD = 12. Convert: 2/3 = 8/12, 3/4 = 9/12, 5/6 = 10/12.",
+        "Least to greatest: <strong>2/3, 3/4, 5/6</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Compare <span class="math">7/12</span> and <span class="math">3/8</span> using a common denominator. What is the LCD?',
+      answer: "24",
+      hints: [
+        "Find the least common multiple of 12 and 8.",
+        "Multiples of 12: 12, 24, 36... Multiples of 8: 8, 16, 24...",
+        "The first common multiple is 24."
+      ],
+      explanation: [
+        "LCM(12, 8) = <strong>24</strong>.",
+        "7/12 = 14/24 and 3/8 = 9/24, so 7/12 > 3/8."
+      ]
     }
   ],
 
@@ -3484,6 +5562,237 @@ EXTRA_QUESTIONS[3] = [
         "LCD of 3 and 5 is 15. Rewrite: 2/3 = 10/15, 1/5 = 3/15.",
         "10/15 + 3/15 = 13/15.",
         "Emma has read 13/15 of the book."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A recipe calls for <span class="math">\frac{3}{4}</span> cup of sugar. If you want to make half the recipe, how many cups of sugar do you need? Give the numerator (denominator is 8).',
+      answer: "3",
+      hints: [
+        "Half of 3/4 means 1/2 × 3/4.",
+        "Multiply: 1 × 3 = 3, 2 × 4 = 8.",
+        "You need 3/8 cup."
+      ],
+      explanation: [
+        "Half of 3/4 = 1/2 × 3/4 = 3/8.",
+        "You need 3/8 cup of sugar."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A tank is <span class="math">\frac{5}{8}</span> full. After using <span class="math">\frac{1}{4}</span> of the tank, what fraction remains?',
+      choices: ["3/8", "4/8", "1/8", "5/12"],
+      answer: "3/8",
+      hints: [
+        "Subtract: 5/8 - 1/4.",
+        "Find LCD of 8 and 4: LCD = 8. Rewrite 1/4 = 2/8.",
+        "5/8 - 2/8 = 3/8."
+      ],
+      explanation: [
+        "Rewrite 1/4 = 2/8.",
+        "5/8 - 2/8 = 3/8.",
+        "3/8 of the tank remains."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Jake ran <span class="math">\frac{2}{3}</span> of a mile on Monday and <span class="math">\frac{5}{6}</span> of a mile on Tuesday. How many miles did he run in total? Give the numerator (denominator is 2).',
+      answer: "3",
+      hints: [
+        "Add: 2/3 + 5/6.",
+        "LCD of 3 and 6 is 6. Rewrite 2/3 = 4/6.",
+        "4/6 + 5/6 = 9/6 = 3/2."
+      ],
+      explanation: [
+        "LCD(3, 6) = 6. Rewrite: 2/3 = 4/6.",
+        "4/6 + 5/6 = 9/6 = 3/2 = 1 1/2 miles."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A roll of fabric is <span class="math">7/8</span> meter long. Each bow needs <span class="math">1/6</span> meter. How many full bows can be made?',
+      answer: "5",
+      hints: [
+        "Divide: 7/8 ÷ 1/6.",
+        "Multiply by the reciprocal: 7/8 × 6/1 = 42/8.",
+        "42/8 = 5.25, so 5 full bows can be made."
+      ],
+      explanation: [
+        "7/8 ÷ 1/6 = 7/8 × 6 = 42/8 = 5.25.",
+        "Only 5 full bows can be made.",
+        "There is not enough fabric for a 6th bow."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A jar has 56 gumballs. If <span class="math">3/7</span> are red and <span class="math">1/8</span> are green, how many are red and green combined?',
+      choices: ["31", "24", "28", "32"],
+      answer: "31",
+      hints: [
+        "Red: 3/7 × 56 = 24 gumballs.",
+        "Green: 1/8 × 56 = 7 gumballs.",
+        "Total: 24 + 7 = 31."
+      ],
+      explanation: [
+        "Red: 3/7 × 56 = 24. Green: 1/8 × 56 = 7.",
+        "Combined: 24 + 7 = 31 gumballs.",
+        "31 of the 56 gumballs are red or green."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A pool is <span class="math">5/6</span> full. After draining <span class="math">1/3</span>, what fraction remains?',
+      choices: ["1/2", "4/6", "2/3", "5/9"],
+      answer: "1/2",
+      hints: [
+        "Subtract: 5/6 − 1/3.",
+        "LCD = 6. Convert 1/3 = 2/6.",
+        "5/6 − 2/6 = 3/6 = 1/2."
+      ],
+      explanation: [
+        "LCD = 6. Rewrite 1/3 as 2/6.",
+        "5/6 − 2/6 = 3/6 = 1/2.",
+        "Half the pool remains full."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A tank is <span class="math">7/8</span> full. After using <span class="math">1/4</span>, what fraction remains? Write your answer as a fraction.',
+      answer: "5/8",
+      hints: [
+        "Subtract: 7/8 − 1/4.",
+        "LCD = 8. Convert 1/4 = 2/8.",
+        "7/8 − 2/8 = 5/8."
+      ],
+      explanation: [
+        "LCD = 8. Rewrite 1/4 as 2/8.",
+        "7/8 − 2/8 = 5/8.",
+        "5/8 of the tank remains."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A garden has 60 flowers. <span class="math">2/5</span> are roses and <span class="math">1/4</span> are tulips. How many flowers are roses or tulips?',
+      choices: ["39", "24", "15", "36"],
+      answer: "39",
+      hints: [
+        "Roses: 2/5 × 60 = 24.",
+        "Tulips: 1/4 × 60 = 15.",
+        "Total: 24 + 15 = 39."
+      ],
+      explanation: [
+        "Roses: 2/5 × 60 = 24. Tulips: 1/4 × 60 = 15.",
+        "Combined: 24 + 15 = 39 flowers.",
+        "39 of the 60 flowers are roses or tulips."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A rope is <span class="math">3/4</span> meter long. If you need pieces that are <span class="math">1/8</span> meter each, how many pieces can you cut?',
+      choices: ["6", "3", "8", "4"],
+      answer: "6",
+      hints: [
+        "Divide: 3/4 ÷ 1/8.",
+        "Multiply by the reciprocal: 3/4 × 8/1 = 24/4.",
+        "24/4 = 6."
+      ],
+      explanation: [
+        "3/4 ÷ 1/8 = 3/4 × 8 = 24/4 = 6.",
+        "You can cut 6 pieces.",
+        "Division tells us how many groups fit."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A tube of paint is <span class="math">\frac{5}{6}</span> full. If each painting uses <span class="math">\frac{1}{3}</span> of a tube, how many full paintings can be done?',
+      answer: "2",
+      hints: [
+        "Divide: 5/6 ÷ 1/3.",
+        "Multiply by the reciprocal: 5/6 × 3/1 = 15/6.",
+        "15/6 = 2.5, so 2 full paintings can be done."
+      ],
+      explanation: [
+        "5/6 ÷ 1/3 = 5/6 × 3 = 15/6 = 2 1/2.",
+        "Only 2 full paintings can be done.",
+        "There is not enough paint for a 3rd painting."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A box has 42 stickers. If <span class="math">\frac{3}{7}</span> are gold and <span class="math">\frac{1}{6}</span> are silver, how many are gold and silver combined?',
+      choices: ["25","18","24","21"],
+      answer: "25",
+      hints: [
+        "Gold: 3/7 × 42 = 18 stickers.",
+        "Silver: 1/6 × 42 = 7 stickers.",
+        "Total: 18 + 7 = 25."
+      ],
+      explanation: [
+        "Gold: 3/7 × 42 = 18. Silver: 1/6 × 42 = 7.",
+        "Combined: 18 + 7 = 25 stickers.",
+        "25 of the 42 stickers are gold or silver."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Ana walked <span class="math">\frac{7}{10}</span> mile in the morning and <span class="math">\frac{3}{8}</span> mile in the afternoon. How far did she walk in total?',
+      choices: ["43/40 miles","10/18 miles","1 mile","21/40 miles"],
+      answer: "43/40 miles",
+      hints: [
+        "Add: 7/10 + 3/8.",
+        "LCD = 40. Convert: 7/10 = 28/40, 3/8 = 15/40.",
+        "28/40 + 15/40 = 43/40."
+      ],
+      explanation: [
+        "LCD = 40. Rewrite: 7/10 = 28/40, 3/8 = 15/40.",
+        "28/40 + 15/40 = 43/40 miles (or 1 3/40 miles).",
+        "The answer is 43/40 miles."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Sarah ate <span class="math">2/5</span> of a pie and Tom ate <span class="math">1/4</span>. How much pie did they eat together?',
+      choices: ["13/20", "3/9", "3/20", "1/2"],
+      answer: "13/20",
+      hints: [
+        "Add the fractions: 2/5 + 1/4.",
+        "LCD = 20. Convert: 2/5 = 8/20, 1/4 = 5/20.",
+        "8/20 + 5/20 = 13/20."
+      ],
+      explanation: [
+        "LCD = 20. Rewrite: 2/5 = 8/20, 1/4 = 5/20.",
+        "8/20 + 5/20 = <strong>13/20</strong> of the pie."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A tank is <span class="math">7/8</span> full. After using <span class="math">1/3</span> of the tank, what fraction remains? Write your answer as a fraction.',
+      answer: "13/24",
+      hints: [
+        "Subtract: 7/8 − 1/3.",
+        "LCD = 24. Convert: 7/8 = 21/24, 1/3 = 8/24.",
+        "21/24 − 8/24 = 13/24."
+      ],
+      explanation: [
+        "LCD = 24. Rewrite: 7/8 = 21/24, 1/3 = 8/24.",
+        "21/24 − 8/24 = <strong>13/24</strong> of the tank remains."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A recipe needs <span class="math">5/6</span> cup of milk but you only have <span class="math">1/2</span> cup. How much more milk do you need?',
+      choices: ["1/3 cup", "4/6 cup", "1/2 cup", "2/6 cup"],
+      answer: "1/3 cup",
+      hints: [
+        "Subtract: 5/6 − 1/2.",
+        "LCD = 6. Convert 1/2 = 3/6.",
+        "5/6 − 3/6 = 2/6 = 1/3."
+      ],
+      explanation: [
+        "LCD = 6. Rewrite: 1/2 = 3/6.",
+        "5/6 − 3/6 = 2/6 = <strong>1/3 cup</strong> more milk needed."
       ]
     }
   ]
@@ -3841,6 +6150,236 @@ EXTRA_QUESTIONS[4] = [
         "6y + 3y − 4y = 5y.",
         "The simplified expression is 5y."
       ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Simplify: <span class="math">9x - 3x + 2</span>',
+      choices: ["6x + 2", "6x - 2", "12x + 2", "9x + 2"],
+      answer: "6x + 2",
+      hints: [
+        "Combine the terms with x: 9x - 3x.",
+        "9x - 3x = 6x.",
+        "The constant 2 stays. Result: 6x + 2."
+      ],
+      explanation: [
+        "Combine like terms: 9x - 3x = 6x.",
+        "So 9x - 3x + 2 = 6x + 2."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Simplify <span class="math">4y + 7 + 3y - 2</span>. What is the coefficient of y?',
+      answer: "7",
+      hints: [
+        "Combine the y-terms: 4y + 3y.",
+        "4y + 3y = 7y.",
+        "The coefficient of y is 7."
+      ],
+      explanation: [
+        "Combine like terms: 4y + 3y = 7y, 7 - 2 = 5.",
+        "Result: 7y + 5. The coefficient of y is 7."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which expression is equivalent to <span class="math">2(a + 4) + 3a</span>?',
+      choices: ["5a + 8", "5a + 4", "2a + 7", "6a + 4"],
+      answer: "5a + 8",
+      hints: [
+        "First distribute: 2(a + 4) = 2a + 8.",
+        "Then combine: 2a + 8 + 3a.",
+        "2a + 3a = 5a. Result: 5a + 8."
+      ],
+      explanation: [
+        "Distribute: 2(a + 4) = 2a + 8.",
+        "Combine: 2a + 8 + 3a = 5a + 8."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Simplify: <span class="math">3(4x + 2) − 7x</span>. What is the coefficient of x?',
+      answer: "5",
+      hints: [
+        "Distribute the 3: 3 × 4x = 12x and 3 × 2 = 6.",
+        "Now combine: 12x + 6 − 7x.",
+        "12x − 7x = 5x, so 5x + 6. The coefficient is 5."
+      ],
+      explanation: [
+        "Distribute: 3(4x + 2) = 12x + 6.",
+        "Combine: 12x − 7x + 6 = 5x + 6.",
+        "The coefficient of x is 5."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Simplify: <span class="math">11a − 5a + 2a</span>',
+      choices: ["8a", "18a", "6a", "4a"],
+      answer: "8a",
+      hints: [
+        "All terms have a. Combine: 11 − 5 + 2.",
+        "11 − 5 = 6, then 6 + 2 = 8.",
+        "The answer is 8a."
+      ],
+      explanation: [
+        "Combine like terms: 11 − 5 + 2 = 8.",
+        "11a − 5a + 2a = 8a.",
+        "The simplified expression is 8a."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify: <span class="math">5p + 3q − 2p + 6q</span>',
+      choices: ["3p + 9q", "7p + 9q", "3p + 3q", "12pq"],
+      answer: "3p + 9q",
+      hints: [
+        "Group like terms: p-terms and q-terms separately.",
+        "5p − 2p = 3p and 3q + 6q = 9q.",
+        "The simplified expression is 3p + 9q."
+      ],
+      explanation: [
+        "Combine p-terms: 5p − 2p = 3p. Combine q-terms: 3q + 6q = 9q.",
+        "Result: 3p + 9q.",
+        "Only combine terms with the same variable."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Simplify: <span class="math">6m + 3m − 4m</span>. What is the coefficient of m?',
+      answer: "5",
+      hints: [
+        "All terms have m, so combine the coefficients.",
+        "6 + 3 − 4 = ?",
+        "6 + 3 = 9, then 9 − 4 = 5."
+      ],
+      explanation: [
+        "Combine like terms: 6 + 3 − 4 = 5.",
+        "So 6m + 3m − 4m = 5m.",
+        "The coefficient is 5."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify: <span class="math">7x + 4y − 3x + 2y</span>',
+      choices: ["4x + 6y", "10x + 6y", "4x + 2y", "10xy"],
+      answer: "4x + 6y",
+      hints: [
+        "Group like terms: x-terms together and y-terms together.",
+        "7x − 3x = 4x and 4y + 2y = 6y.",
+        "The simplified expression is 4x + 6y."
+      ],
+      explanation: [
+        "Combine x-terms: 7x − 3x = 4x. Combine y-terms: 4y + 2y = 6y.",
+        "Result: 4x + 6y.",
+        "Only combine terms with the same variable."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Simplify: <span class="math">9k − 2k + 8 − 3</span>. What is the constant term?',
+      answer: "5",
+      hints: [
+        "Combine the k-terms: 9k − 2k = 7k.",
+        "Combine the constants: 8 − 3 = 5.",
+        "The expression becomes 7k + 5. The constant is 5."
+      ],
+      explanation: [
+        "k-terms: 9k − 2k = 7k. Constants: 8 − 3 = 5.",
+        "Simplified: 7k + 5.",
+        "The constant term is 5."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify: <span class="math">6(2x + 1) − 3x</span>',
+      choices: ["9x + 6","12x + 1","9x + 1","15x + 6"],
+      answer: "9x + 6",
+      hints: [
+        "Distribute the 6: 6 × 2x = 12x and 6 × 1 = 6.",
+        "Now combine: 12x + 6 − 3x.",
+        "12x − 3x = 9x, so 9x + 6."
+      ],
+      explanation: [
+        "Distribute: 6(2x + 1) = 12x + 6.",
+        "Combine: 12x − 3x + 6 = 9x + 6.",
+        "The simplified expression is 9x + 6."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Simplify: <span class="math">12a − 7a + 3a</span>. What is the coefficient of a?',
+      answer: "8",
+      hints: [
+        "All terms have a, so combine the coefficients.",
+        "12 − 7 + 3 = ?",
+        "12 − 7 = 5, then 5 + 3 = 8."
+      ],
+      explanation: [
+        "Combine like terms: 12 − 7 + 3 = 8.",
+        "So 12a − 7a + 3a = 8a.",
+        "The coefficient is 8."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify: <span class="math">8m + 5n − 3m − 2n</span>',
+      choices: ["5m + 3n","11m + 7n","5m − 3n","8mn"],
+      answer: "5m + 3n",
+      hints: [
+        "Group like terms: m-terms and n-terms separately.",
+        "8m − 3m = 5m and 5n − 2n = 3n.",
+        "The simplified expression is 5m + 3n."
+      ],
+      explanation: [
+        "Combine m-terms: 8m − 3m = 5m. Combine n-terms: 5n − 2n = 3n.",
+        "Result: 5m + 3n.",
+        "Only combine terms with the same variable."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify: <span class="math">5x + 3 − 2x + 9</span>',
+      choices: ["3x + 12", "7x + 12", "3x − 6", "7x − 6"],
+      answer: "3x + 12",
+      hints: [
+        "Group like terms: x-terms and constants separately.",
+        "5x − 2x = 3x.",
+        "3 + 9 = 12. So the answer is 3x + 12."
+      ],
+      explanation: [
+        "Combine x-terms: 5x − 2x = <strong>3x</strong>. Combine constants: 3 + 9 = <strong>12</strong>.",
+        "Result: 3x + 12."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Simplify: <span class="math">9p − 4p + 2p − 3p</span>. What is the coefficient of p?',
+      answer: "4",
+      hints: [
+        "All terms have p, so combine the coefficients.",
+        "9 − 4 + 2 − 3 = ?",
+        "9 − 4 = 5, then 5 + 2 = 7, then 7 − 3 = 4."
+      ],
+      explanation: [
+        "Combine like terms: 9 − 4 + 2 − 3 = <strong>4</strong>.",
+        "So 9p − 4p + 2p − 3p = 4p."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify: <span class="math">6a + 2b − 4a + 5b</span>',
+      choices: ["2a + 7b", "10a + 7b", "2a − 3b", "10a + 3b"],
+      answer: "2a + 7b",
+      hints: [
+        "Group like terms: a-terms and b-terms separately.",
+        "6a − 4a = 2a.",
+        "2b + 5b = 7b."
+      ],
+      explanation: [
+        "Combine a-terms: 6a − 4a = 2a. Combine b-terms: 2b + 5b = 7b.",
+        "Result: <strong>2a + 7b</strong>."
+      ]
     }
   ],
 
@@ -4187,6 +6726,235 @@ EXTRA_QUESTIONS[4] = [
         "Add 14: y = −6 + 14.",
         "y = 8.",
         "Check: 8 − 14 = −6 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Solve for x: <span class="math">x + 14 = 23</span>',
+      answer: "9",
+      hints: [
+        "To isolate x, subtract 14 from both sides.",
+        "x = 23 - 14.",
+        "23 - 14 = 9."
+      ],
+      explanation: [
+        "Subtract 14 from both sides: x = 23 - 14.",
+        "x = 9."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is the solution to <span class="math">y - 17 = 28</span>?',
+      choices: ["y = 45", "y = 11", "y = 35", "y = 46"],
+      answer: "y = 45",
+      hints: [
+        "To isolate y, add 17 to both sides.",
+        "y = 28 + 17.",
+        "28 + 17 = 45."
+      ],
+      explanation: [
+        "Add 17 to both sides: y = 28 + 17.",
+        "y = 45."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Solve for n: <span class="math">n - 9 = 16</span>',
+      answer: "25",
+      hints: [
+        "Add 9 to both sides to isolate n.",
+        "n = 16 + 9.",
+        "16 + 9 = 25."
+      ],
+      explanation: [
+        "Add 9 to both sides: n = 16 + 9.",
+        "n = 25."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">w + 23 = 10</span>',
+      choices: ["w = −13", "w = 33", "w = 13", "w = −33"],
+      answer: "w = −13",
+      hints: [
+        "Subtract 23 from both sides.",
+        "w = 10 − 23.",
+        "w = −13."
+      ],
+      explanation: [
+        "Subtract 23: w = 10 − 23 = −13.",
+        "w = −13.",
+        "Check: −13 + 23 = 10 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Solve: <span class="math">t + 16 = 42</span>. What is t?',
+      answer: "26",
+      hints: [
+        "Subtract 16 from both sides.",
+        "t = 42 − 16.",
+        "t = 26."
+      ],
+      explanation: [
+        "Subtract 16: t = 42 − 16.",
+        "t = 26.",
+        "Check: 26 + 16 = 42 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Solve: <span class="math">q − 15 = 22</span>',
+      choices: ["q = 37", "q = 7", "q = −7", "q = 330"],
+      answer: "q = 37",
+      hints: [
+        "Add 15 to both sides to isolate q.",
+        "q = 22 + 15.",
+        "q = 37."
+      ],
+      explanation: [
+        "Add 15 to both sides: q = 22 + 15.",
+        "q = 37.",
+        "Check: 37 − 15 = 22 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Solve: <span class="math">n + 19 = 34</span>',
+      choices: ["n = 15", "n = 53", "n = 25", "n = 34"],
+      answer: "n = 15",
+      hints: [
+        "Subtract 19 from both sides.",
+        "n = 34 − 19.",
+        "n = 15."
+      ],
+      explanation: [
+        "Subtract 19 from both sides: n = 34 − 19.",
+        "n = 15.",
+        "Check: 15 + 19 = 34 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">y − 27 = 48</span>. What is y?',
+      answer: "75",
+      hints: [
+        "Add 27 to both sides to isolate y.",
+        "y = 48 + 27.",
+        "y = 75."
+      ],
+      explanation: [
+        "Add 27 to both sides: y = 48 + 27.",
+        "y = 75.",
+        "Check: 75 − 27 = 48 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">x − 33 = 19</span>',
+      choices: ["x = 52", "x = 14", "x = −14", "x = 627"],
+      answer: "x = 52",
+      hints: [
+        "Add 33 to both sides to isolate x.",
+        "x = 19 + 33.",
+        "x = 52."
+      ],
+      explanation: [
+        "Add 33 to both sides: x = 19 + 33.",
+        "x = 52.",
+        "Check: 52 − 33 = 19 ✓."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">x + 32 = 19</span>. What is x?',
+      answer: "-13",
+      hints: [
+        "Subtract 32 from both sides.",
+        "x = 19 − 32.",
+        "x = −13."
+      ],
+      explanation: [
+        "Subtract 32: x = 19 − 32 = −13.",
+        "x = −13.",
+        "Check: −13 + 32 = 19 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Solve: <span class="math">y − 11 = 24</span>',
+      choices: ["y = 35","y = 13","y = −13","y = 264"],
+      answer: "y = 35",
+      hints: [
+        "Add 11 to both sides to isolate y.",
+        "y = 24 + 11.",
+        "y = 35."
+      ],
+      explanation: [
+        "Add 11 to both sides: y = 24 + 11.",
+        "y = 35.",
+        "Check: 35 − 11 = 24 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">m + 28 = 15</span>',
+      choices: ["m = −13","m = 43","m = 13","m = −43"],
+      answer: "m = −13",
+      hints: [
+        "Subtract 28 from both sides.",
+        "m = 15 − 28.",
+        "m = −13."
+      ],
+      explanation: [
+        "Subtract 28: m = 15 − 28 = −13.",
+        "m = −13.",
+        "Check: −13 + 28 = 15 ✓."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">x + 14 = 31</span>',
+      answer: "17",
+      hints: [
+        "To isolate x, subtract 14 from both sides.",
+        "x = 31 − 14.",
+        "31 − 14 = 17."
+      ],
+      explanation: [
+        "Subtract 14 from both sides: x = 31 − 14.",
+        "x = <strong>17</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">y − 23 = 18</span>',
+      choices: ["y = 41", "y = 5", "y = −5", "y = 42"],
+      answer: "y = 41",
+      hints: [
+        "To isolate y, add 23 to both sides.",
+        "y = 18 + 23.",
+        "18 + 23 = 41."
+      ],
+      explanation: [
+        "Add 23 to both sides: y = 18 + 23.",
+        "y = <strong>41</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">n + 37 = 52</span>',
+      answer: "15",
+      hints: [
+        "To isolate n, subtract 37 from both sides.",
+        "n = 52 − 37.",
+        "52 − 37 = 15."
+      ],
+      explanation: [
+        "Subtract 37 from both sides: n = 52 − 37.",
+        "n = <strong>15</strong>."
       ]
     }
   ],
@@ -4536,6 +7304,234 @@ EXTRA_QUESTIONS[4] = [
         "m = −30.",
         "Check: −30 ÷ 6 = −5 ✓."
       ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Solve for x: <span class="math">7x = 56</span>',
+      choices: ["x = 8", "x = 7", "x = 49", "x = 9"],
+      answer: "x = 8",
+      hints: [
+        "Divide both sides by 7.",
+        "x = 56 ÷ 7.",
+        "56 ÷ 7 = 8."
+      ],
+      explanation: [
+        "Divide both sides by 7: x = 56/7.",
+        "x = 8."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve for m: <span class="math">\frac{m}{9} = 7</span>',
+      answer: "63",
+      hints: [
+        "Multiply both sides by 9.",
+        "m = 7 × 9.",
+        "7 × 9 = 63."
+      ],
+      explanation: [
+        "Multiply both sides by 9: m = 7 × 9.",
+        "m = 63."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve for p: <span class="math">11p = 132</span>',
+      answer: "12",
+      hints: [
+        "Divide both sides by 11.",
+        "p = 132 ÷ 11.",
+        "132 ÷ 11 = 12."
+      ],
+      explanation: [
+        "Divide both sides by 11: p = 132/11.",
+        "p = 12."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">−10y = 80</span>',
+      choices: ["y = −8", "y = 8", "y = −70", "y = 800"],
+      answer: "y = −8",
+      hints: [
+        "Divide both sides by −10.",
+        "y = 80 ÷ (−10).",
+        "y = −8."
+      ],
+      explanation: [
+        "Divide both sides by −10: y = 80/(−10).",
+        "y = −8.",
+        "Check: −10 × (−8) = 80 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Solve: <span class="math">x/11 = 6</span>. What is x?',
+      answer: "66",
+      hints: [
+        "Multiply both sides by 11.",
+        "x = 6 × 11.",
+        "x = 66."
+      ],
+      explanation: [
+        "Multiply both sides by 11: x = 6 × 11.",
+        "x = 66.",
+        "Check: 66 ÷ 11 = 6 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">12w = 108</span>',
+      choices: ["w = 9", "w = 96", "w = 120", "w = 1296"],
+      answer: "w = 9",
+      hints: [
+        "Divide both sides by 12.",
+        "w = 108 ÷ 12.",
+        "w = 9."
+      ],
+      explanation: [
+        "Divide both sides by 12: w = 108/12.",
+        "w = 9.",
+        "Check: 12 × 9 = 108 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Solve: <span class="math">x/13 = 4</span>. What is x?',
+      answer: "52",
+      hints: [
+        "Multiply both sides by 13.",
+        "x = 4 × 13.",
+        "x = 52."
+      ],
+      explanation: [
+        "Multiply both sides by 13: x = 4 × 13.",
+        "x = 52.",
+        "Check: 52 ÷ 13 = 4 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">14p = 98</span>',
+      choices: ["p = 7", "p = 84", "p = 112", "p = 1372"],
+      answer: "p = 7",
+      hints: [
+        "Divide both sides by 14.",
+        "p = 98 ÷ 14.",
+        "p = 7."
+      ],
+      explanation: [
+        "Divide both sides by 14: p = 98/14.",
+        "p = 7.",
+        "Check: 14 × 7 = 98 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">9z = 117</span>. What is z?',
+      answer: "13",
+      hints: [
+        "Divide both sides by 9.",
+        "z = 117 ÷ 9.",
+        "z = 13."
+      ],
+      explanation: [
+        "Divide both sides by 9: z = 117/9.",
+        "z = 13.",
+        "Check: 9 × 13 = 117 ✓."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">−6x = 48</span>',
+      choices: ["x = −8","x = 8","x = −42","x = 288"],
+      answer: "x = −8",
+      hints: [
+        "Divide both sides by −6.",
+        "x = 48 ÷ (−6).",
+        "x = −8."
+      ],
+      explanation: [
+        "Divide both sides by −6: x = 48/(−6).",
+        "x = −8.",
+        "Check: −6 × (−8) = 48 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Solve: <span class="math">x/12 = 5</span>. What is x?',
+      answer: "60",
+      hints: [
+        "Multiply both sides by 12.",
+        "x = 5 × 12.",
+        "x = 60."
+      ],
+      explanation: [
+        "Multiply both sides by 12: x = 5 × 12.",
+        "x = 60.",
+        "Check: 60 ÷ 12 = 5 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">13p = 91</span>',
+      choices: ["p = 7","p = 78","p = 104","p = 1183"],
+      answer: "p = 7",
+      hints: [
+        "Divide both sides by 13.",
+        "p = 91 ÷ 13.",
+        "p = 7."
+      ],
+      explanation: [
+        "Divide both sides by 13: p = 91/13.",
+        "p = 7.",
+        "Check: 13 × 7 = 91 ✓."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">5n = 45</span>',
+      answer: "9",
+      hints: [
+        "To isolate n, divide both sides by 5.",
+        "n = 45 ÷ 5.",
+        "45 ÷ 5 = 9."
+      ],
+      explanation: [
+        "Divide both sides by 5: n = 45/5.",
+        "n = <strong>9</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">m/6 = 7</span>',
+      choices: ["m = 42", "m = 1", "m = 13", "m = 36"],
+      answer: "m = 42",
+      hints: [
+        "To isolate m, multiply both sides by 6.",
+        "m = 7 × 6.",
+        "7 × 6 = 42."
+      ],
+      explanation: [
+        "Multiply both sides by 6: m = 7 × 6.",
+        "m = <strong>42</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">8k = 72</span>',
+      answer: "9",
+      hints: [
+        "To isolate k, divide both sides by 8.",
+        "k = 72 ÷ 8.",
+        "72 ÷ 8 = 9."
+      ],
+      explanation: [
+        "Divide both sides by 8: k = 72/8.",
+        "k = <strong>9</strong>."
+      ]
     }
   ],
 
@@ -4883,6 +7879,235 @@ EXTRA_QUESTIONS[4] = [
         "Combine: 8m − 10 = 30.",
         "Add 10: 8m = 40. Divide by 8: m = 5.",
         "Check: 5(5) + 3(5) − 10 = 25 + 15 − 10 = 30 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve for x: <span class="math">3x + 2x = 35</span>',
+      answer: "7",
+      hints: [
+        "First combine like terms: 3x + 2x = 5x.",
+        "Now solve: 5x = 35.",
+        "x = 35 ÷ 5 = 7."
+      ],
+      explanation: [
+        "Combine: 3x + 2x = 5x. So 5x = 35.",
+        "Divide by 5: x = 7."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Solve for y: <span class="math">4y - y + 6 = 21</span>',
+      choices: ["y = 5", "y = 3", "y = 7", "y = 9"],
+      answer: "y = 5",
+      hints: [
+        "Combine like terms: 4y - y = 3y.",
+        "3y + 6 = 21. Subtract 6: 3y = 15.",
+        "Divide by 3: y = 5."
+      ],
+      explanation: [
+        "Combine: 4y - y = 3y. So 3y + 6 = 21.",
+        "Subtract 6: 3y = 15. Divide by 3: y = 5."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve for n: <span class="math">6n - 2n + 1 = 25</span>',
+      answer: "6",
+      hints: [
+        "Combine like terms: 6n - 2n = 4n.",
+        "4n + 1 = 25. Subtract 1: 4n = 24.",
+        "Divide by 4: n = 6."
+      ],
+      explanation: [
+        "Combine: 6n - 2n = 4n. So 4n + 1 = 25.",
+        "Subtract 1: 4n = 24. Divide by 4: n = 6."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">8k − 3k + 7 = 42</span>',
+      choices: ["k = 7", "k = 5", "k = 9", "k = 35"],
+      answer: "k = 7",
+      hints: [
+        "Combine like terms: 8k − 3k = 5k.",
+        "5k + 7 = 42 → 5k = 35.",
+        "k = 35 ÷ 5 = 7."
+      ],
+      explanation: [
+        "Combine: 5k + 7 = 42.",
+        "Subtract 7: 5k = 35. Divide by 5: k = 7.",
+        "Check: 8(7) − 3(7) + 7 = 56 − 21 + 7 = 42 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Solve: <span class="math">7n + 2n = 63</span>. What is n?',
+      answer: "7",
+      hints: [
+        "Combine like terms: 7n + 2n = 9n.",
+        "Now solve 9n = 63.",
+        "n = 63 ÷ 9 = 7."
+      ],
+      explanation: [
+        "Combine: 7n + 2n = 9n, so 9n = 63.",
+        "Divide by 9: n = 7.",
+        "Check: 7(7) + 2(7) = 49 + 14 = 63 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">10w − 6w − 11 = 25</span>',
+      choices: ["w = 9", "w = 4", "w = 6", "w = 36"],
+      answer: "w = 9",
+      hints: [
+        "Combine like terms: 10w − 6w = 4w.",
+        "4w − 11 = 25 → 4w = 36.",
+        "w = 36 ÷ 4 = 9."
+      ],
+      explanation: [
+        "Combine: 4w − 11 = 25.",
+        "Add 11: 4w = 36. Divide by 4: w = 9.",
+        "Check: 10(9) − 6(9) − 11 = 90 − 54 − 11 = 25 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Solve: <span class="math">4x + 6x = 70</span>',
+      choices: ["x = 7", "x = 10", "x = 70", "x = 17.5"],
+      answer: "x = 7",
+      hints: [
+        "Combine like terms: 4x + 6x = 10x.",
+        "Now solve 10x = 70.",
+        "x = 70 ÷ 10 = 7."
+      ],
+      explanation: [
+        "Combine: 4x + 6x = 10x, so 10x = 70.",
+        "Divide by 10: x = 7.",
+        "Check: 4(7) + 6(7) = 28 + 42 = 70 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">9y − 4y + 3 = 38</span>. What is y?',
+      answer: "7",
+      hints: [
+        "Combine like terms: 9y − 4y = 5y.",
+        "5y + 3 = 38 → 5y = 35.",
+        "y = 35 ÷ 5 = 7."
+      ],
+      explanation: [
+        "Combine: 5y + 3 = 38.",
+        "Subtract 3: 5y = 35. Divide by 5: y = 7.",
+        "Check: 9(7) − 4(7) + 3 = 63 − 28 + 3 = 38 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">12m − 5m − 8 = 27</span>',
+      choices: ["m = 5", "m = 7", "m = 3", "m = 35"],
+      answer: "m = 5",
+      hints: [
+        "Combine like terms: 12m − 5m = 7m.",
+        "7m − 8 = 27 → 7m = 35.",
+        "m = 35 ÷ 7 = 5."
+      ],
+      explanation: [
+        "Combine: 7m − 8 = 27.",
+        "Add 8: 7m = 35. Divide by 7: m = 5.",
+        "Check: 12(5) − 5(5) − 8 = 60 − 25 − 8 = 27 ✓."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">11y − 4y + 5 = 40</span>. What is y?',
+      answer: "5",
+      hints: [
+        "Combine like terms: 11y − 4y = 7y.",
+        "7y + 5 = 40 → 7y = 35.",
+        "y = 35 ÷ 7 = 5."
+      ],
+      explanation: [
+        "Combine: 7y + 5 = 40.",
+        "Subtract 5: 7y = 35. Divide by 7: y = 5.",
+        "Check: 11(5) − 4(5) + 5 = 55 − 20 + 5 = 40 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Solve: <span class="math">6n + 4n = 80</span>',
+      choices: ["n = 8","n = 10","n = 80","n = 4"],
+      answer: "n = 8",
+      hints: [
+        "Combine like terms: 6n + 4n = 10n.",
+        "Now solve 10n = 80.",
+        "n = 80 ÷ 10 = 8."
+      ],
+      explanation: [
+        "Combine: 6n + 4n = 10n, so 10n = 80.",
+        "Divide by 10: n = 8.",
+        "Check: 6(8) + 4(8) = 48 + 32 = 80 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">8w − 3w − 6 = 29</span>',
+      choices: ["w = 7","w = 5","w = 23","w = 35"],
+      answer: "w = 7",
+      hints: [
+        "Combine like terms: 8w − 3w = 5w.",
+        "5w − 6 = 29 → 5w = 35.",
+        "w = 35 ÷ 5 = 7."
+      ],
+      explanation: [
+        "Combine: 5w − 6 = 29.",
+        "Add 6: 5w = 35. Divide by 5: w = 7.",
+        "Check: 8(7) − 3(7) − 6 = 56 − 21 − 6 = 29 ✓."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">3x + 7 = 22</span>',
+      answer: "5",
+      hints: [
+        "First subtract 7 from both sides: 3x = 15.",
+        "Then divide both sides by 3.",
+        "x = 15 ÷ 3 = 5."
+      ],
+      explanation: [
+        "Subtract 7: 3x = 22 − 7 = 15.",
+        "Divide by 3: x = 15/3 = <strong>5</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">4x + 3 = 2x + 15</span>',
+      choices: ["x = 6", "x = 9", "x = 3", "x = 12"],
+      answer: "x = 6",
+      hints: [
+        "Subtract 2x from both sides: 2x + 3 = 15.",
+        "Subtract 3 from both sides: 2x = 12.",
+        "Divide by 2: x = 6."
+      ],
+      explanation: [
+        "Subtract 2x: 2x + 3 = 15. Subtract 3: 2x = 12.",
+        "Divide by 2: x = <strong>6</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve: <span class="math">5y − 8 = 2y + 13</span>',
+      answer: "7",
+      hints: [
+        "Subtract 2y from both sides: 3y − 8 = 13.",
+        "Add 8 to both sides: 3y = 21.",
+        "Divide by 3: y = 7."
+      ],
+      explanation: [
+        "Subtract 2y: 3y − 8 = 13. Add 8: 3y = 21.",
+        "Divide by 3: y = <strong>7</strong>."
       ]
     }
   ],
@@ -5233,6 +8458,236 @@ EXTRA_QUESTIONS[4] = [
         "5(3y − 4) = 15y − 20.",
         "Multiply both the variable and constant terms."
       ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Expand: <span class="math">4(x + 6)</span>',
+      choices: ["4x + 24", "4x + 6", "x + 24", "4x + 10"],
+      answer: "4x + 24",
+      hints: [
+        "Distribute 4 to each term inside the parentheses.",
+        "4 × x = 4x and 4 × 6 = 24.",
+        "The answer is 4x + 24."
+      ],
+      explanation: [
+        "4(x + 6) = 4·x + 4·6 = 4x + 24.",
+        "Use the distributive property: a(b + c) = ab + ac."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Expand and simplify: <span class="math">3(2x + 5) - 4x</span>. What is the coefficient of x?',
+      answer: "2",
+      hints: [
+        "First distribute: 3(2x + 5) = 6x + 15.",
+        "Then subtract 4x: 6x + 15 - 4x.",
+        "Combine: 6x - 4x = 2x."
+      ],
+      explanation: [
+        "Distribute: 3(2x + 5) = 6x + 15.",
+        "Combine: 6x + 15 - 4x = 2x + 15. Coefficient of x is 2."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which expression is equivalent to <span class="math">5(3y - 2)</span>?',
+      choices: ["15y - 10", "15y - 2", "8y - 2", "15y + 10"],
+      answer: "15y - 10",
+      hints: [
+        "Distribute 5 to each term inside the parentheses.",
+        "5 × 3y = 15y and 5 × (-2) = -10.",
+        "The answer is 15y - 10."
+      ],
+      explanation: [
+        "5(3y - 2) = 5·3y + 5·(-2) = 15y - 10.",
+        "Remember to distribute to BOTH terms, including the negative one."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Expand: <span class="math">7(x + 5)</span>',
+      choices: ["7x + 35", "7x + 5", "x + 35", "12x"],
+      answer: "7x + 35",
+      hints: [
+        "Distribute the 7 to each term inside the parentheses.",
+        "7 × x = 7x and 7 × 5 = 35.",
+        "7(x + 5) = 7x + 35."
+      ],
+      explanation: [
+        "Distribute: 7 × x = 7x, 7 × 5 = 35.",
+        "7(x + 5) = 7x + 35.",
+        "Both terms inside get multiplied by 7."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Expand <span class="math">−4(3x − 8)</span>. What is the constant term?',
+      answer: "32",
+      hints: [
+        "Distribute −4 to each term.",
+        "−4 × 3x = −12x and −4 × (−8) = +32.",
+        "The constant term is 32."
+      ],
+      explanation: [
+        "−4(3x − 8) = −12x + 32.",
+        "The constant term is 32.",
+        "A negative times a negative gives a positive."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Expand: <span class="math">9(2y − 1)</span>',
+      choices: ["18y − 9", "18y − 1", "11y − 9", "18y + 9"],
+      answer: "18y − 9",
+      hints: [
+        "Distribute 9 to each term.",
+        "9 × 2y = 18y and 9 × (−1) = −9.",
+        "9(2y − 1) = 18y − 9."
+      ],
+      explanation: [
+        "9 × 2y = 18y, 9 × (−1) = −9.",
+        "9(2y − 1) = 18y − 9.",
+        "Multiply both the variable and constant terms."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Expand: <span class="math">4(y + 6)</span>',
+      choices: ["4y + 24", "4y + 6", "y + 24", "10y"],
+      answer: "4y + 24",
+      hints: [
+        "Multiply 4 by each term inside the parentheses.",
+        "4 × y = 4y and 4 × 6 = 24.",
+        "4(y + 6) = 4y + 24."
+      ],
+      explanation: [
+        "Distribute 4: 4 × y = 4y and 4 × 6 = 24.",
+        "4(y + 6) = 4y + 24.",
+        "Each term inside gets multiplied by 4."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Expand <span class="math">−3(5x − 7)</span>. What is the constant term?',
+      answer: "21",
+      hints: [
+        "Distribute −3 to each term.",
+        "−3 × 5x = −15x and −3 × (−7) = +21.",
+        "The constant term is 21."
+      ],
+      explanation: [
+        "−3(5x − 7) = −15x + 21.",
+        "The constant term is 21.",
+        "A negative times a negative gives a positive."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Expand: <span class="math">6(3a − 4)</span>',
+      choices: ["18a − 24", "18a − 4", "9a − 24", "18a + 24"],
+      answer: "18a − 24",
+      hints: [
+        "Distribute 6 to each term.",
+        "6 × 3a = 18a and 6 × (−4) = −24.",
+        "6(3a − 4) = 18a − 24."
+      ],
+      explanation: [
+        "6 × 3a = 18a, 6 × (−4) = −24.",
+        "6(3a − 4) = 18a − 24.",
+        "Multiply both the variable and constant terms by 6."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Expand: <span class="math">−3(5x − 2)</span>',
+      choices: ["−15x + 6","−15x − 6","15x − 6","−15x − 2"],
+      answer: "−15x + 6",
+      hints: [
+        "Distribute −3 to each term.",
+        "−3 × 5x = −15x and −3 × (−2) = +6.",
+        "Result: −15x + 6."
+      ],
+      explanation: [
+        "−3 × 5x = −15x, −3 × (−2) = +6.",
+        "−3(5x − 2) = −15x + 6.",
+        "Remember: negative times negative is positive."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Expand <span class="math">4(3y + 5)</span>. What is the constant term?',
+      answer: "20",
+      hints: [
+        "Distribute 4 to each term inside.",
+        "4 × 3y = 12y and 4 × 5 = 20.",
+        "The constant term is 20."
+      ],
+      explanation: [
+        "4(3y + 5) = 12y + 20.",
+        "The constant term is 20.",
+        "Multiply each term inside by 4."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Expand: <span class="math">5(2a − 4) + 3a</span>',
+      choices: ["13a − 20","10a − 4","13a − 4","7a − 20"],
+      answer: "13a − 20",
+      hints: [
+        "Distribute the 5: 5 × 2a = 10a and 5 × (−4) = −20.",
+        "Now combine: 10a − 20 + 3a.",
+        "10a + 3a = 13a, so 13a − 20."
+      ],
+      explanation: [
+        "Distribute: 5(2a − 4) = 10a − 20.",
+        "Combine: 10a + 3a − 20 = 13a − 20.",
+        "The expanded expression is 13a − 20."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">2(g − 7) = 16</span>',
+      answer: "15",
+      hints: [
+        "Distribute: 2g − 14 = 16.",
+        "Add 14 to both sides: 2g = 30.",
+        "Divide by 2: g = 15."
+      ],
+      explanation: [
+        "Distribute: 2g − 14 = 16. Add 14: 2g = 30.",
+        "Divide by 2: g = <strong>15</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Expand and simplify: <span class="math">3(2x + 5) − 4x</span>',
+      choices: ["2x + 15", "6x + 15", "10x + 5", "2x + 5"],
+      answer: "2x + 15",
+      hints: [
+        "First distribute the 3: 6x + 15.",
+        "Then subtract 4x: 6x + 15 − 4x.",
+        "Combine: 6x − 4x = 2x. So 2x + 15."
+      ],
+      explanation: [
+        "Distribute: 3(2x + 5) = 6x + 15.",
+        "Then 6x + 15 − 4x = <strong>2x + 15</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve: <span class="math">4(x + 3) = 28</span>',
+      answer: "4",
+      hints: [
+        "Distribute: 4x + 12 = 28.",
+        "Subtract 12 from both sides: 4x = 16.",
+        "Divide by 4: x = 4."
+      ],
+      explanation: [
+        "Distribute: 4x + 12 = 28. Subtract 12: 4x = 16.",
+        "Divide by 4: x = <strong>4</strong>."
+      ]
     }
   ],
 
@@ -5580,6 +9035,236 @@ EXTRA_QUESTIONS[4] = [
         "Subtract 2: x/8 = 3.",
         "Multiply by 8: x = 24.",
         "Check: 24/8 + 2 = 3 + 2 = 5 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve for x: <span class="math">4x - 7 = 21</span>',
+      answer: "7",
+      hints: [
+        "First add 7 to both sides: 4x = 28.",
+        "Then divide by 4: x = 28 ÷ 4.",
+        "x = 7."
+      ],
+      explanation: [
+        "Add 7: 4x = 28.",
+        "Divide by 4: x = 7."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve for y: <span class="math">\frac{y}{3} + 5 = 11</span>',
+      choices: ["y = 18", "y = 2", "y = 33", "y = 8"],
+      answer: "y = 18",
+      hints: [
+        "Subtract 5 from both sides: y/3 = 6.",
+        "Multiply both sides by 3: y = 18.",
+        "Check: 18/3 + 5 = 6 + 5 = 11 ✓"
+      ],
+      explanation: [
+        "Subtract 5: y/3 = 6.",
+        "Multiply by 3: y = 18.",
+        "Check: 18/3 + 5 = 6 + 5 = 11 ✓"
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve for m: <span class="math">9m + 13 = 67</span>',
+      answer: "6",
+      hints: [
+        "Subtract 13 from both sides: 9m = 54.",
+        "Divide by 9: m = 54 ÷ 9.",
+        "m = 6."
+      ],
+      explanation: [
+        "Subtract 13: 9m = 54.",
+        "Divide by 9: m = 6."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">6x − 7 = 29</span>',
+      choices: ["x = 6", "x = 5", "x = 36", "x = 4"],
+      answer: "x = 6",
+      hints: [
+        "Add 7 to both sides: 6x = 36.",
+        "Divide by 6.",
+        "x = 36 ÷ 6 = 6."
+      ],
+      explanation: [
+        "Add 7: 6x = 36.",
+        "Divide by 6: x = 6.",
+        "Check: 6(6) − 7 = 36 − 7 = 29 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve: <span class="math">−4n + 11 = −13</span>. What is n?',
+      answer: "6",
+      hints: [
+        "Subtract 11 from both sides: −4n = −24.",
+        "Divide both sides by −4.",
+        "n = −24 ÷ (−4) = 6."
+      ],
+      explanation: [
+        "Subtract 11: −4n = −13 − 11 = −24.",
+        "Divide by −4: n = 6.",
+        "Check: −4(6) + 11 = −24 + 11 = −13 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">x/9 − 4 = 2</span>',
+      choices: ["x = 54", "x = 6", "x = 18", "x = 72"],
+      answer: "x = 54",
+      hints: [
+        "Add 4 to both sides: x/9 = 6.",
+        "Multiply both sides by 9.",
+        "x = 6 × 9 = 54."
+      ],
+      explanation: [
+        "Add 4: x/9 = 6.",
+        "Multiply by 9: x = 54.",
+        "Check: 54/9 − 4 = 6 − 4 = 2 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">4x − 9 = 19</span>',
+      choices: ["x = 7", "x = 10", "x = 2.5", "x = 28"],
+      answer: "x = 7",
+      hints: [
+        "Add 9 to both sides: 4x = 28.",
+        "Divide both sides by 4.",
+        "x = 28 ÷ 4 = 7."
+      ],
+      explanation: [
+        "Add 9: 4x = 19 + 9 = 28.",
+        "Divide by 4: x = 7.",
+        "Check: 4(7) − 9 = 28 − 9 = 19 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve: <span class="math">x/7 + 3 = 8</span>. What is x?',
+      answer: "35",
+      hints: [
+        "Subtract 3 from both sides: x/7 = 5.",
+        "Multiply both sides by 7.",
+        "x = 5 × 7 = 35."
+      ],
+      explanation: [
+        "Subtract 3: x/7 = 5.",
+        "Multiply by 7: x = 35.",
+        "Check: 35/7 + 3 = 5 + 3 = 8 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">−5m + 14 = −6</span>',
+      choices: ["m = 4", "m = −4", "m = 2", "m = −2"],
+      answer: "m = 4",
+      hints: [
+        "Subtract 14 from both sides: −5m = −20.",
+        "Divide both sides by −5.",
+        "m = −20 ÷ (−5) = 4."
+      ],
+      explanation: [
+        "Subtract 14: −5m = −6 − 14 = −20.",
+        "Divide by −5: m = 4.",
+        "Check: −5(4) + 14 = −20 + 14 = −6 ✓."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve: <span class="math">4x + 9 = 37</span>. What is x?',
+      answer: "7",
+      hints: [
+        "Subtract 9 from both sides: 4x = 28.",
+        "Divide both sides by 4.",
+        "x = 28 ÷ 4 = 7."
+      ],
+      explanation: [
+        "Subtract 9: 4x = 37 − 9 = 28.",
+        "Divide by 4: x = 28/4 = 7.",
+        "Check: 4(7) + 9 = 28 + 9 = 37 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">3y − 5 = 16</span>',
+      choices: ["y = 7","y = 11","y = 3","y = 21"],
+      answer: "y = 7",
+      hints: [
+        "Add 5 to both sides: 3y = 21.",
+        "Divide both sides by 3.",
+        "y = 21 ÷ 3 = 7."
+      ],
+      explanation: [
+        "Add 5: 3y = 16 + 5 = 21.",
+        "Divide by 3: y = 21/3 = 7.",
+        "Check: 3(7) − 5 = 21 − 5 = 16 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">\frac{x}{5} + 3 = 11</span>',
+      choices: ["x = 40","x = 8","x = 70","x = 14"],
+      answer: "x = 40",
+      hints: [
+        "Subtract 3 from both sides: x/5 = 8.",
+        "Multiply both sides by 5.",
+        "x = 8 × 5 = 40."
+      ],
+      explanation: [
+        "Subtract 3: x/5 = 11 − 3 = 8.",
+        "Multiply by 5: x = 8 × 5 = 40.",
+        "Check: 40/5 + 3 = 8 + 3 = 11 ✓."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Tickets cost $8 each plus a $5 booking fee. The total was $37. How many tickets were bought?',
+      choices: ["4 tickets", "5 tickets", "3 tickets", "6 tickets"],
+      answer: "4 tickets",
+      hints: [
+        "Write the equation: 8t + 5 = 37.",
+        "Subtract 5: 8t = 32.",
+        "Divide by 8: t = 4."
+      ],
+      explanation: [
+        "Equation: 8t + 5 = 37. Subtract 5: 8t = 32.",
+        "Divide by 8: t = <strong>4 tickets</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve: <span class="math">7x − 11 = 24</span>',
+      answer: "5",
+      hints: [
+        "Add 11 to both sides: 7x = 35.",
+        "Divide by 7: x = 5.",
+        "Check: 7(5) − 11 = 35 − 11 = 24. ✓"
+      ],
+      explanation: [
+        "Add 11: 7x = 35. Divide by 7: x = <strong>5</strong>.",
+        "Verify: 7(5) − 11 = 35 − 11 = 24. ✓"
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">4x + 9 = 33</span>',
+      answer: "6",
+      hints: [
+        "Subtract 9 from both sides: 4x = 24.",
+        "Divide by 4: x = 6.",
+        "Check: 4(6) + 9 = 24 + 9 = 33. ✓"
+      ],
+      explanation: [
+        "Subtract 9: 4x = 24. Divide by 4: x = <strong>6</strong>.",
+        "Verify: 4(6) + 9 = 33. ✓"
       ]
     }
   ],
@@ -5929,6 +9614,235 @@ EXTRA_QUESTIONS[4] = [
         "k = 4.",
         "Check: 9(2·4 − 1) = 9(7) = 63 ✓."
       ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve for x: <span class="math">3(x + 4) = 27</span>',
+      choices: ["x = 5", "x = 9", "x = 7", "x = 3"],
+      answer: "x = 5",
+      hints: [
+        "Distribute: 3x + 12 = 27.",
+        "Subtract 12: 3x = 15.",
+        "Divide by 3: x = 5."
+      ],
+      explanation: [
+        "Distribute: 3(x + 4) = 3x + 12 = 27.",
+        "Subtract 12: 3x = 15. Divide by 3: x = 5."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve for y: <span class="math">2(y - 3) + 4 = 16</span>',
+      answer: "9",
+      hints: [
+        "Distribute: 2y - 6 + 4 = 16.",
+        "Combine: 2y - 2 = 16.",
+        "Add 2: 2y = 18. Divide by 2: y = 9."
+      ],
+      explanation: [
+        "Distribute: 2(y - 3) = 2y - 6. So 2y - 6 + 4 = 16.",
+        "Simplify: 2y - 2 = 16. Add 2: 2y = 18. y = 9."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve for n: <span class="math">5(n + 2) - 3n = 22</span>',
+      answer: "6",
+      hints: [
+        "Distribute: 5n + 10 - 3n = 22.",
+        "Combine: 2n + 10 = 22.",
+        "Subtract 10: 2n = 12. Divide by 2: n = 6."
+      ],
+      explanation: [
+        "Distribute: 5n + 10 - 3n = 22. Combine: 2n + 10 = 22.",
+        "Subtract 10: 2n = 12. Divide by 2: n = 6."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">6(2x − 5) = 42</span>',
+      choices: ["x = 6", "x = 4", "x = 12", "x = 3"],
+      answer: "x = 6",
+      hints: [
+        "Distribute: 12x − 30 = 42.",
+        "Add 30: 12x = 72.",
+        "Divide by 12: x = 6."
+      ],
+      explanation: [
+        "12x − 30 = 42 → 12x = 72.",
+        "x = 6.",
+        "Check: 6(2·6 − 5) = 6(7) = 42 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">5(x + 3) = 45</span>. What is x?',
+      answer: "6",
+      hints: [
+        "Distribute: 5x + 15 = 45.",
+        "Subtract 15: 5x = 30.",
+        "Divide by 5: x = 6."
+      ],
+      explanation: [
+        "5x + 15 = 45 → 5x = 30.",
+        "x = 6.",
+        "Check: 5(6 + 3) = 5(9) = 45 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">−2(3n + 4) = −20</span>',
+      choices: ["n = 2", "n = −2", "n = 4", "n = 6"],
+      answer: "n = 2",
+      hints: [
+        "Distribute: −6n − 8 = −20.",
+        "Add 8: −6n = −12.",
+        "Divide by −6: n = 2."
+      ],
+      explanation: [
+        "−6n − 8 = −20 → −6n = −12.",
+        "n = 2.",
+        "Check: −2(3·2 + 4) = −2(10) = −20 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">4(x + 2) = 28</span>. What is x?',
+      answer: "5",
+      hints: [
+        "Distribute: 4x + 8 = 28.",
+        "Subtract 8: 4x = 20.",
+        "Divide by 4: x = 5."
+      ],
+      explanation: [
+        "4x + 8 = 28 → 4x = 20.",
+        "x = 5.",
+        "Check: 4(5 + 2) = 4(7) = 28 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">3(2n − 5) = 21</span>',
+      choices: ["n = 6", "n = 3", "n = 12", "n = 4"],
+      answer: "n = 6",
+      hints: [
+        "Distribute: 6n − 15 = 21.",
+        "Add 15: 6n = 36.",
+        "Divide by 6: n = 6."
+      ],
+      explanation: [
+        "6n − 15 = 21 → 6n = 36.",
+        "n = 6.",
+        "Check: 3(2·6 − 5) = 3(7) = 21 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">−3(x + 7) = −27</span>',
+      choices: ["x = 2", "x = −2", "x = 16", "x = −16"],
+      answer: "x = 2",
+      hints: [
+        "Distribute: −3x − 21 = −27.",
+        "Add 21: −3x = −6.",
+        "Divide by −3: x = 2."
+      ],
+      explanation: [
+        "−3x − 21 = −27 → −3x = −6.",
+        "x = 2.",
+        "Check: −3(2 + 7) = −3(9) = −27 ✓."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">5(x − 2) = 20</span>',
+      choices: ["x = 6","x = 4","x = 22","x = 2"],
+      answer: "x = 6",
+      hints: [
+        "Distribute: 5x − 10 = 20.",
+        "Add 10 to both sides: 5x = 30.",
+        "Divide by 5: x = 6."
+      ],
+      explanation: [
+        "Distribute: 5(x − 2) = 5x − 10 = 20.",
+        "Add 10: 5x = 30. Divide by 5: x = 6.",
+        "Check: 5(6 − 2) = 5(4) = 20 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">3(y + 4) = 27</span>. What is y?',
+      answer: "5",
+      hints: [
+        "Distribute: 3y + 12 = 27.",
+        "Subtract 12 from both sides: 3y = 15.",
+        "Divide by 3: y = 5."
+      ],
+      explanation: [
+        "Distribute: 3(y + 4) = 3y + 12 = 27.",
+        "Subtract 12: 3y = 15. Divide by 3: y = 5.",
+        "Check: 3(5 + 4) = 3(9) = 27 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">2(3x + 1) = 26</span>',
+      choices: ["x = 4","x = 8","x = 13","x = 3"],
+      answer: "x = 4",
+      hints: [
+        "Distribute: 6x + 2 = 26.",
+        "Subtract 2 from both sides: 6x = 24.",
+        "Divide by 6: x = 4."
+      ],
+      explanation: [
+        "Distribute: 2(3x + 1) = 6x + 2 = 26.",
+        "Subtract 2: 6x = 24. Divide by 6: x = 4.",
+        "Check: 2(3·4 + 1) = 2(13) = 26 ✓."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve: <span class="math">3(x − 4) = 2(x + 1)</span>',
+      answer: "14",
+      hints: [
+        "Distribute both sides: 3x − 12 = 2x + 2.",
+        "Subtract 2x: x − 12 = 2.",
+        "Add 12: x = 14."
+      ],
+      explanation: [
+        "Distribute: 3x − 12 = 2x + 2.",
+        "Subtract 2x: x − 12 = 2. Add 12: x = <strong>14</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">5(y + 2) = 35</span>',
+      choices: ["y = 5", "y = 7", "y = 3", "y = 9"],
+      answer: "y = 5",
+      hints: [
+        "Distribute: 5y + 10 = 35.",
+        "Subtract 10: 5y = 25.",
+        "Divide by 5: y = 5."
+      ],
+      explanation: [
+        "Distribute: 5y + 10 = 35. Subtract 10: 5y = 25.",
+        "Divide by 5: y = <strong>5</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve: <span class="math">2(3x + 1) = 20</span>',
+      answer: "3",
+      hints: [
+        "Distribute: 6x + 2 = 20.",
+        "Subtract 2: 6x = 18.",
+        "Divide by 6: x = 3."
+      ],
+      explanation: [
+        "Distribute: 6x + 2 = 20. Subtract 2: 6x = 18.",
+        "Divide by 6: x = <strong>3</strong>."
+      ]
     }
   ],
 
@@ -6276,6 +10190,235 @@ EXTRA_QUESTIONS[4] = [
         "5n − 2n + 9 = 30 → 3n + 9 = 30.",
         "3n = 21 → n = 7.",
         "Check: 5(7) + 9 = 44, 2(7) + 30 = 44 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve for x: <span class="math">7x + 3 = 4x + 18</span>',
+      answer: "5",
+      hints: [
+        "Move variables to one side: subtract 4x from both sides.",
+        "3x + 3 = 18.",
+        "Subtract 3: 3x = 15. Divide by 3: x = 5."
+      ],
+      explanation: [
+        "Subtract 4x: 3x + 3 = 18.",
+        "Subtract 3: 3x = 15. Divide by 3: x = 5."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve for y: <span class="math">5y - 8 = 2y + 13</span>',
+      choices: ["y = 7", "y = 5", "y = 3", "y = 21"],
+      answer: "y = 7",
+      hints: [
+        "Subtract 2y from both sides: 3y - 8 = 13.",
+        "Add 8 to both sides: 3y = 21.",
+        "Divide by 3: y = 7."
+      ],
+      explanation: [
+        "Subtract 2y: 3y - 8 = 13.",
+        "Add 8: 3y = 21. Divide by 3: y = 7."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve for n: <span class="math">8n - 5 = 3n + 30</span>',
+      answer: "7",
+      hints: [
+        "Subtract 3n from both sides: 5n - 5 = 30.",
+        "Add 5 to both sides: 5n = 35.",
+        "Divide by 5: n = 7."
+      ],
+      explanation: [
+        "Subtract 3n: 5n - 5 = 30.",
+        "Add 5: 5n = 35. Divide by 5: n = 7."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">9x − 4 = 5x + 20</span>',
+      choices: ["x = 6", "x = 4", "x = 8", "x = 24"],
+      answer: "x = 6",
+      hints: [
+        "Subtract 5x from both sides: 4x − 4 = 20.",
+        "Add 4: 4x = 24.",
+        "Divide by 4: x = 6."
+      ],
+      explanation: [
+        "9x − 5x − 4 = 20 → 4x − 4 = 20.",
+        "4x = 24 → x = 6.",
+        "Check: 9(6) − 4 = 50, 5(6) + 20 = 50 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">8m + 5 = 3m + 35</span>. What is m?',
+      answer: "6",
+      hints: [
+        "Subtract 3m from both sides: 5m + 5 = 35.",
+        "Subtract 5: 5m = 30.",
+        "Divide by 5: m = 6."
+      ],
+      explanation: [
+        "8m − 3m + 5 = 35 → 5m + 5 = 35.",
+        "5m = 30 → m = 6.",
+        "Check: 8(6) + 5 = 53, 3(6) + 35 = 53 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">12y − 10 = 7y + 25</span>',
+      choices: ["y = 7", "y = 3", "y = 5", "y = 35"],
+      answer: "y = 7",
+      hints: [
+        "Subtract 7y from both sides: 5y − 10 = 25.",
+        "Add 10: 5y = 35.",
+        "Divide by 5: y = 7."
+      ],
+      explanation: [
+        "12y − 7y − 10 = 25 → 5y − 10 = 25.",
+        "5y = 35 → y = 7.",
+        "Check: 12(7) − 10 = 74, 7(7) + 25 = 74 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">6x + 7 = 4x + 19</span>. What is x?',
+      answer: "6",
+      hints: [
+        "Subtract 4x from both sides: 2x + 7 = 19.",
+        "Subtract 7: 2x = 12.",
+        "Divide by 2: x = 6."
+      ],
+      explanation: [
+        "6x − 4x + 7 = 19 → 2x + 7 = 19.",
+        "2x = 12 → x = 6.",
+        "Check: 6(6) + 7 = 43, 4(6) + 19 = 43 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">10y − 8 = 4y + 22</span>',
+      choices: ["y = 5", "y = 3", "y = 7", "y = 30"],
+      answer: "y = 5",
+      hints: [
+        "Subtract 4y from both sides: 6y − 8 = 22.",
+        "Add 8: 6y = 30.",
+        "Divide by 6: y = 5."
+      ],
+      explanation: [
+        "10y − 4y − 8 = 22 → 6y − 8 = 22.",
+        "6y = 30 → y = 5.",
+        "Check: 10(5) − 8 = 42, 4(5) + 22 = 42 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">11n + 3 = 5n + 39</span>',
+      choices: ["n = 6", "n = 7", "n = 4", "n = 42"],
+      answer: "n = 6",
+      hints: [
+        "Subtract 5n from both sides: 6n + 3 = 39.",
+        "Subtract 3: 6n = 36.",
+        "Divide by 6: n = 6."
+      ],
+      explanation: [
+        "11n − 5n + 3 = 39 → 6n + 3 = 39.",
+        "6n = 36 → n = 6.",
+        "Check: 11(6) + 3 = 69, 5(6) + 39 = 69 ✓."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">7x + 3 = 4x + 18</span>',
+      choices: ["x = 5","x = 3","x = 7","x = 21"],
+      answer: "x = 5",
+      hints: [
+        "Subtract 4x from both sides: 3x + 3 = 18.",
+        "Subtract 3 from both sides: 3x = 15.",
+        "Divide by 3: x = 5."
+      ],
+      explanation: [
+        "Subtract 4x: 3x + 3 = 18.",
+        "Subtract 3: 3x = 15. Divide by 3: x = 5.",
+        "Check: 7(5) + 3 = 38, 4(5) + 18 = 38 ✓."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">9x − 5 = 6x + 10</span>. What is x?',
+      answer: "5",
+      hints: [
+        "Subtract 6x from both sides: 3x − 5 = 10.",
+        "Add 5 to both sides: 3x = 15.",
+        "Divide by 3: x = 5."
+      ],
+      explanation: [
+        "Subtract 6x: 3x − 5 = 10.",
+        "Add 5: 3x = 15. Divide by 3: x = 5.",
+        "Check: 9(5) − 5 = 40, 6(5) + 10 = 40 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">5x + 8 = 2x + 29</span>',
+      choices: ["x = 7","x = 3","x = 37","x = 21"],
+      answer: "x = 7",
+      hints: [
+        "Subtract 2x from both sides: 3x + 8 = 29.",
+        "Subtract 8 from both sides: 3x = 21.",
+        "Divide by 3: x = 7."
+      ],
+      explanation: [
+        "Subtract 2x: 3x + 8 = 29.",
+        "Subtract 8: 3x = 21. Divide by 3: x = 7.",
+        "Check: 5(7) + 8 = 43, 2(7) + 29 = 43 ✓."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve: <span class="math">6x − 5 = 3x + 13</span>',
+      answer: "6",
+      hints: [
+        "Subtract 3x from both sides: 3x − 5 = 13.",
+        "Add 5 to both sides: 3x = 18.",
+        "Divide by 3: x = 6."
+      ],
+      explanation: [
+        "Subtract 3x: 3x − 5 = 13. Add 5: 3x = 18.",
+        "Divide by 3: x = <strong>6</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">7x + 2 = 4x + 20</span>',
+      choices: ["x = 6", "x = 2", "x = 4", "x = 8"],
+      answer: "x = 6",
+      hints: [
+        "Subtract 4x from both sides: 3x + 2 = 20.",
+        "Subtract 2: 3x = 18.",
+        "Divide by 3: x = 6."
+      ],
+      explanation: [
+        "Subtract 4x: 3x + 2 = 20. Subtract 2: 3x = 18.",
+        "Divide by 3: x = <strong>6</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve: <span class="math">8x − 9 = 5x + 12</span>',
+      answer: "7",
+      hints: [
+        "Subtract 5x from both sides: 3x − 9 = 12.",
+        "Add 9 to both sides: 3x = 21.",
+        "Divide by 3: x = 7."
+      ],
+      explanation: [
+        "Subtract 5x: 3x − 9 = 12. Add 9: 3x = 21.",
+        "Divide by 3: x = <strong>7</strong>."
       ]
     }
   ],
@@ -6625,6 +10768,238 @@ EXTRA_QUESTIONS[4] = [
         "Equation: x/8 − 3 = 4.",
         "Solving: x/8 = 7, so x = 56."
       ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A number tripled and then decreased by 8 equals 25. Which equation represents this?',
+      choices: ["3x - 8 = 25", "3(x - 8) = 25", "x/3 - 8 = 25", "3x + 8 = 25"],
+      answer: "3x - 8 = 25",
+      hints: [
+        "A number tripled means 3x.",
+        "Decreased by 8 means subtract 8.",
+        "Equals 25 gives us 3x - 8 = 25."
+      ],
+      explanation: [
+        "Tripled: 3x. Decreased by 8: 3x - 8.",
+        "Equals 25: 3x - 8 = 25."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'The sum of two consecutive even numbers is 54. What is the smaller number?',
+      answer: "26",
+      hints: [
+        "Let the smaller even number be x. The next even number is x + 2.",
+        "x + (x + 2) = 54.",
+        "2x + 2 = 54. 2x = 52. x = 26."
+      ],
+      explanation: [
+        "Let x = smaller even number. Then x + (x + 2) = 54.",
+        "2x + 2 = 54. 2x = 52. x = 26.",
+        "The two numbers are 26 and 28."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Maria has 3 times as many stickers as Ben. Together they have 48 stickers. How many does Ben have?',
+      choices: ["12", "16", "36", "24"],
+      answer: "12",
+      hints: [
+        "Let Ben have x stickers. Maria has 3x stickers.",
+        "x + 3x = 48.",
+        "4x = 48. x = 12."
+      ],
+      explanation: [
+        "Let Ben = x, Maria = 3x. x + 3x = 48.",
+        "4x = 48. x = 12. Ben has 12 stickers."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which equation represents: "Six times a number minus 11 is 25"?',
+      choices: ["6x − 11 = 25", "6(x − 11) = 25", "6x + 11 = 25", "11 − 6x = 25"],
+      answer: "6x − 11 = 25",
+      hints: [
+        '"Six times a number" means 6x.',
+        '"Minus 11" means subtract 11.',
+        "So: 6x − 11 = 25."
+      ],
+      explanation: [
+        '"Six times a number" = 6x, "minus 11" = − 11.',
+        "Equation: 6x − 11 = 25.",
+        "Solving: 6x = 36, x = 6."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Translate and solve: "A number plus 14 equals 39." What is the number?',
+      answer: "25",
+      hints: [
+        "The equation is x + 14 = 39.",
+        "Subtract 14 from both sides.",
+        "x = 39 − 14 = 25."
+      ],
+      explanation: [
+        "Equation: x + 14 = 39.",
+        "x = 39 − 14 = 25.",
+        "The number is 25."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which equation matches: "A third of a number increased by 7 is 15"?',
+      choices: ["x/3 + 7 = 15", "3x + 7 = 15", "x/3 − 7 = 15", "7x + 3 = 15"],
+      answer: "x/3 + 7 = 15",
+      hints: [
+        '"A third of a number" means x/3 or x ÷ 3.',
+        '"Increased by 7" means add 7.',
+        "So: x/3 + 7 = 15."
+      ],
+      explanation: [
+        '"A third of a number" = x/3, "increased by 7" = + 7.',
+        "Equation: x/3 + 7 = 15.",
+        "Solving: x/3 = 8, x = 24."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which equation represents: "A number minus 12 equals 30"?',
+      choices: ["x − 12 = 30", "12 − x = 30", "x + 12 = 30", "x/12 = 30"],
+      answer: "x − 12 = 30",
+      hints: [
+        "\"Minus\" means subtraction.",
+        "\"A number\" is the unknown — call it x.",
+        "So x − 12 = 30."
+      ],
+      explanation: [
+        "\"A number minus 12\" translates to x − 12.",
+        "\"Equals 30\" gives x − 12 = 30.",
+        "Solving: x = 42."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Translate and solve: "Four times a number plus 7 is 31." What is the number?',
+      answer: "6",
+      hints: [
+        "\"Four times a number\" means 4x.",
+        "The equation is 4x + 7 = 31.",
+        "Subtract 7: 4x = 24. Divide by 4: x = 6."
+      ],
+      explanation: [
+        "Equation: 4x + 7 = 31.",
+        "4x = 24 → x = 6.",
+        "Check: 4(6) + 7 = 31 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which equation represents: "Half of a number decreased by 9 is 3"?',
+      choices: ["x/2 − 9 = 3", "2x − 9 = 3", "x/2 + 9 = 3", "9 − x/2 = 3"],
+      answer: "x/2 − 9 = 3",
+      hints: [
+        "\"Half of a number\" means x/2 or x ÷ 2.",
+        "\"Decreased by 9\" means subtract 9.",
+        "So: x/2 − 9 = 3."
+      ],
+      explanation: [
+        "\"Half of a number\" = x/2, \"decreased by 9\" = − 9.",
+        "Equation: x/2 − 9 = 3.",
+        "Solving: x/2 = 12, x = 24."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A number tripled then decreased by 7 equals 20. Which equation models this?',
+      choices: ["3x − 7 = 20","3(x − 7) = 20","x/3 − 7 = 20","7 − 3x = 20"],
+      answer: "3x − 7 = 20",
+      hints: [
+        "Tripled means multiplied by 3: 3x.",
+        "Decreased by 7 means subtract 7: 3x − 7.",
+        "Set equal to 20: 3x − 7 = 20."
+      ],
+      explanation: [
+        "Tripled: 3x. Decreased by 7: 3x − 7. Equals 20: 3x − 7 = 20.",
+        "Solving: 3x = 27, x = 9.",
+        "The equation is 3x − 7 = 20."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Five more than twice a number is 23. What is the number?',
+      answer: "9",
+      hints: [
+        "Write the equation: 2x + 5 = 23.",
+        "Subtract 5: 2x = 18.",
+        "Divide by 2: x = 9."
+      ],
+      explanation: [
+        "Equation: 2x + 5 = 23.",
+        "Subtract 5: 2x = 18. Divide by 2: x = 9.",
+        "Check: 2(9) + 5 = 23 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'The sum of three consecutive integers is 48. Which equation models this?',
+      choices: ["n + (n+1) + (n+2) = 48","3n = 48","n + n + n = 48","n × (n+1) × (n+2) = 48"],
+      answer: "n + (n+1) + (n+2) = 48",
+      hints: [
+        "Consecutive integers differ by 1: n, n+1, n+2.",
+        "Their sum: n + (n+1) + (n+2).",
+        "Set equal to 48."
+      ],
+      explanation: [
+        "Three consecutive integers: n, n+1, n+2.",
+        "Sum: n + (n+1) + (n+2) = 3n + 3 = 48.",
+        "Solving: 3n = 45, n = 15. The integers are 15, 16, 17."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'The sum of a number and 15 is 42. What is the number?',
+      choices: ["27", "57", "15", "42"],
+      answer: "27",
+      hints: [
+        "Write the equation: n + 15 = 42.",
+        "Subtract 15 from both sides.",
+        "n = 42 − 15 = 27."
+      ],
+      explanation: [
+        "Equation: n + 15 = 42.",
+        "n = 42 − 15 = <strong>27</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Three times a number decreased by 8 equals 19. What is the number?',
+      answer: "9",
+      hints: [
+        "Write the equation: 3n − 8 = 19.",
+        "Add 8: 3n = 27.",
+        "Divide by 3: n = 9."
+      ],
+      explanation: [
+        "Equation: 3n − 8 = 19. Add 8: 3n = 27.",
+        "Divide by 3: n = <strong>9</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A number doubled and then increased by 7 gives 31. Which equation represents this?',
+      choices: ["2n + 7 = 31", "n + 14 = 31", "7n + 2 = 31", "2(n + 7) = 31"],
+      answer: "2n + 7 = 31",
+      hints: [
+        "Doubled means multiply by 2: 2n.",
+        "Increased by 7 means add 7: 2n + 7.",
+        "Equals 31: 2n + 7 = 31."
+      ],
+      explanation: [
+        "'Doubled' → 2n. 'Increased by 7' → + 7. 'Gives 31' → = 31.",
+        "The equation is <strong>2n + 7 = 31</strong>."
+      ]
     }
   ],
 
@@ -6973,6 +11348,237 @@ EXTRA_QUESTIONS[4] = [
         "Dividing by −8 flips the inequality: n ≤ −3.",
         "When dividing by a negative, always reverse the sign.",
         "Check: −8(−3) = 24 ≥ 24 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">3x + 4 > 19</span>',
+      choices: ["x > 5", "x > 4", "x < 5", "x > 15"],
+      answer: "x > 5",
+      hints: [
+        "Subtract 4 from both sides: 3x > 15.",
+        "Divide by 3: x > 5.",
+        "Since we divided by a positive number, the inequality stays the same direction."
+      ],
+      explanation: [
+        "Subtract 4: 3x > 15.",
+        "Divide by 3: x > 5."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is the largest integer that satisfies <span class="math">2x - 1 < 13</span>?',
+      answer: "6",
+      hints: [
+        "Add 1 to both sides: 2x < 14.",
+        "Divide by 2: x < 7.",
+        "The largest integer less than 7 is 6."
+      ],
+      explanation: [
+        "2x - 1 < 13 → 2x < 14 → x < 7.",
+        "Largest integer satisfying x < 7 is 6."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which number is NOT a solution to <span class="math">4x - 3 \geq 9</span>?',
+      choices: ["2", "3", "4", "5"],
+      answer: "2",
+      hints: [
+        "Solve: add 3 to both sides: 4x ≥ 12.",
+        "Divide by 4: x ≥ 3.",
+        "x = 2 does not satisfy x ≥ 3."
+      ],
+      explanation: [
+        "4x - 3 ≥ 9 → 4x ≥ 12 → x ≥ 3.",
+        "x = 2 is not ≥ 3, so 2 is NOT a solution."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">x + 9 > 14</span>',
+      choices: ["x > 5", "x > 23", "x < 5", "x > 14"],
+      answer: "x > 5",
+      hints: [
+        "Subtract 9 from both sides.",
+        "x > 14 − 9.",
+        "x > 5."
+      ],
+      explanation: [
+        "Subtract 9 from both sides: x > 14 − 9.",
+        "x > 5.",
+        "Any number greater than 5 is a solution."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve: <span class="math">3x − 7 \leq 20</span>. What is the largest whole number x can be?',
+      answer: "9",
+      hints: [
+        "Add 7 to both sides: 3x ≤ 27.",
+        "Divide both sides by 3: x ≤ 9.",
+        "The largest whole number is 9."
+      ],
+      explanation: [
+        "Add 7: 3x ≤ 27.",
+        "Divide by 3: x ≤ 9.",
+        "The largest whole number x can be is 9."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">−2x + 5 > 11</span>',
+      choices: ["x < −3", "x > −3", "x < 3", "x > 3"],
+      answer: "x < −3",
+      hints: [
+        "Subtract 5 from both sides: −2x > 6.",
+        "Divide both sides by −2 and flip the inequality sign.",
+        "x < −3."
+      ],
+      explanation: [
+        "Subtract 5: −2x > 6.",
+        "Divide by −2 (flip sign): x < −3.",
+        "When dividing by a negative, reverse the inequality."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">5y \leq 45</span>. What is the largest whole number y can be?',
+      answer: "9",
+      hints: [
+        "Divide both sides by 5: y ≤ 9.",
+        "The largest whole number ≤ 9 is 9.",
+        "y can be at most 9."
+      ],
+      explanation: [
+        "Divide by 5: y ≤ 9.",
+        "The largest whole number value is 9.",
+        "Any whole number from 0 to 9 is a solution."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">−4x > 20</span>',
+      choices: ["x < −5", "x > −5", "x < 5", "x > 5"],
+      answer: "x < −5",
+      hints: [
+        "Divide both sides by −4. Remember to flip the inequality.",
+        "x < 20 ÷ (−4).",
+        "x < −5."
+      ],
+      explanation: [
+        "Dividing by −4 flips the sign: x < −5.",
+        "Remember: dividing by a negative reverses the inequality.",
+        "Any number less than −5 is a solution."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">6n − 10 \geq 26</span>',
+      choices: ["n ≥ 6", "n ≤ 6", "n ≥ 3", "n ≤ 36"],
+      answer: "n ≥ 6",
+      hints: [
+        "Add 10 to both sides: 6n ≥ 36.",
+        "Divide both sides by 6.",
+        "n ≥ 6."
+      ],
+      explanation: [
+        "Add 10: 6n ≥ 36.",
+        "Divide by 6: n ≥ 6.",
+        "The smallest whole number n can be is 6."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">4x − 3 > 13</span>',
+      choices: ["x > 4","x > 10","x < 4","x > 2.5"],
+      answer: "x > 4",
+      hints: [
+        "Add 3 to both sides: 4x > 16.",
+        "Divide both sides by 4.",
+        "x > 4."
+      ],
+      explanation: [
+        "Add 3: 4x > 13 + 3 = 16.",
+        "Divide by 4: x > 4.",
+        "The solution is x > 4."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">2x + 7 ≤ 19</span>. What is the largest whole number x can be?',
+      answer: "6",
+      hints: [
+        "Subtract 7 from both sides: 2x ≤ 12.",
+        "Divide both sides by 2: x ≤ 6.",
+        "The largest whole number is 6."
+      ],
+      explanation: [
+        "Subtract 7: 2x ≤ 12.",
+        "Divide by 2: x ≤ 6.",
+        "The largest whole number x can be is 6."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">−2x + 5 ≥ 11</span>',
+      choices: ["x ≤ −3","x ≥ −3","x ≤ 3","x ≥ 3"],
+      answer: "x ≤ −3",
+      hints: [
+        "Subtract 5 from both sides: −2x ≥ 6.",
+        "Divide by −2 and FLIP the inequality sign.",
+        "x ≤ −3."
+      ],
+      explanation: [
+        "Subtract 5: −2x ≥ 6.",
+        "Divide by −2 (flip the sign): x ≤ −3.",
+        "Remember: dividing by a negative flips the inequality."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Solve: <span class="math">x + 5 > 12</span>',
+      choices: ["x > 7", "x > 17", "x < 7", "x > 12"],
+      answer: "x > 7",
+      hints: [
+        "Subtract 5 from both sides.",
+        "x > 12 − 5.",
+        "x > 7."
+      ],
+      explanation: [
+        "Subtract 5 from both sides: x > 12 − 5.",
+        "x > <strong>7</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve: <span class="math">3x − 4 ≥ 11</span>. What is the smallest whole number x can be?',
+      answer: "5",
+      hints: [
+        "Add 4 to both sides: 3x ≥ 15.",
+        "Divide by 3: x ≥ 5.",
+        "The smallest whole number is 5."
+      ],
+      explanation: [
+        "Add 4: 3x ≥ 15. Divide by 3: x ≥ 5.",
+        "The smallest whole number x can be is <strong>5</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">−4x + 3 > 19</span>',
+      choices: ["x < −4", "x > −4", "x < 4", "x > 4"],
+      answer: "x < −4",
+      hints: [
+        "Subtract 3 from both sides: −4x > 16.",
+        "Divide by −4 and FLIP the inequality sign.",
+        "x < −4."
+      ],
+      explanation: [
+        "Subtract 3: −4x > 16. Divide by −4 (flip sign): x < −4.",
+        "Remember: dividing by a negative number <strong>flips</strong> the inequality."
       ]
     }
   ]
@@ -7329,6 +11935,235 @@ EXTRA_QUESTIONS[5] = [
         "Remember to borrow when subtracting.",
         "Add trailing zeros to align decimal places."
       ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">4.56 + 3.27</span>?',
+      answer: "7.83",
+      hints: [
+        "Line up the decimal points.",
+        "Add hundredths: 6 + 7 = 13, write 3 carry 1.",
+        "Add tenths: 5 + 2 + 1 = 8. Add ones: 4 + 3 = 7."
+      ],
+      explanation: [
+        "4.56 + 3.27: hundredths: 6+7=13, tenths: 5+2+1=8, ones: 4+3=7.",
+        "Answer: 7.83."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">10.05 - 3.78</span>?',
+      choices: ["6.27", "6.37", "7.27", "6.33"],
+      answer: "6.27",
+      hints: [
+        "Line up decimal points: 10.05 - 3.78.",
+        "You need to borrow since 5 < 8 and 0 < 7.",
+        "10.05 - 3.78 = 6.27."
+      ],
+      explanation: [
+        "10.05 - 3.78: borrow as needed.",
+        "Result: 6.27."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">8.9 + 1.15</span>?',
+      answer: "10.05",
+      hints: [
+        "Write 8.9 as 8.90 so both have two decimal places.",
+        "Add: 8.90 + 1.15.",
+        "0 + 5 = 5, 9 + 1 = 10 (write 0 carry 1), 8 + 1 + 1 = 10."
+      ],
+      explanation: [
+        "8.90 + 1.15 = 10.05.",
+        "Remember to line up the decimal points."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">4.7 + 3.8</span>?',
+      answer: "8.5",
+      hints: [
+        "Line up the decimal points and add.",
+        "7 + 8 = 15, carry the 1.",
+        "4 + 3 + 1 = 8, so 8.5."
+      ],
+      explanation: [
+        "4.7 + 3.8: ones = 7+8 = 15, write 5 carry 1.",
+        "4 + 3 + 1 = 8.",
+        "The answer is 8.5."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">12.04 − 7.56</span>?',
+      choices: ["4.48", "4.52", "5.48", "4.58"],
+      answer: "4.48",
+      hints: [
+        "Line up the decimal points and subtract.",
+        "12.04 − 7.56: borrow as needed.",
+        "The answer is 4.48."
+      ],
+      explanation: [
+        "12.04 − 7.56: subtract column by column with borrowing.",
+        "12.04 − 7.56 = 4.48.",
+        "The answer is 4.48."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'What is <span class="math">6.3 + 2.9</span>?',
+      choices: ["9.2", "8.2", "9.12", "8.12"],
+      answer: "9.2",
+      hints: [
+        "Add the tenths: 3 + 9 = 12, write 2 carry 1.",
+        "Add the ones: 6 + 2 + 1 = 9.",
+        "The answer is 9.2."
+      ],
+      explanation: [
+        "6.3 + 2.9 = 9.2.",
+        "Tenths: 3 + 9 = 12, write 2 carry 1.",
+        "Ones: 6 + 2 + 1 = 9. Answer: 9.2."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">9.3 + 4.8</span>?',
+      answer: "14.1",
+      hints: [
+        "Line up the decimal points.",
+        "Add tenths: 3 + 8 = 11 → write 1, carry 1.",
+        "Add ones: 9 + 4 + 1 = 14. Answer: 14.1."
+      ],
+      explanation: [
+        "Line up decimals: 9.3 + 4.8.",
+        "3 + 8 = 11, carry 1. 9 + 4 + 1 = 14. Answer: 14.1.",
+        "Remember to carry when the sum is 10 or more."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">15.03 − 7.6</span>?',
+      choices: ["7.43", "8.43", "7.97", "22.63"],
+      answer: "7.43",
+      hints: [
+        "Line up decimal points. Write 7.6 as 7.60.",
+        "Hundredths: 3 − 0 = 3. Tenths: 0 − 6 → borrow.",
+        "After borrowing: 10 − 6 = 4. Ones: 14 − 7 = 7. Answer: 7.43."
+      ],
+      explanation: [
+        "15.03 − 7.60: hundredths 3 − 0 = 3; tenths borrow 10 − 6 = 4; ones 14 − 7 = 7.",
+        "Answer: 7.43.",
+        "Always line up decimal points before subtracting."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">6.75 + 8.48</span>?',
+      choices: ["15.23", "14.23", "15.13", "14.13"],
+      answer: "15.23",
+      hints: [
+        "Add hundredths: 5 + 8 = 13 → write 3, carry 1.",
+        "Add tenths: 7 + 4 + 1 = 12 → write 2, carry 1.",
+        "Add ones: 6 + 8 + 1 = 15. Answer: 15.23."
+      ],
+      explanation: [
+        "6.75 + 8.48: hundredths 13 (carry 1), tenths 12 (carry 1), ones 15.",
+        "Answer: 15.23.",
+        "Carry over whenever a column sums to 10 or more."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">7.45 + 3.28</span>?',
+      answer: "10.73",
+      hints: [
+        "Line up the decimal points.",
+        "Add: 5 + 8 = 13, carry 1. 4 + 2 + 1 = 7. 7 + 3 = 10.",
+        "The answer is 10.73."
+      ],
+      explanation: [
+        "Line up decimals: 7.45 + 3.28.",
+        "Add hundredths: 5 + 8 = 13 (write 3, carry 1).",
+        "Add tenths: 4 + 2 + 1 = 7. Add ones: 7 + 3 = 10. Answer: 10.73."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'What is <span class="math">12.6 − 4.3</span>?',
+      choices: ["8.3","8.9","7.3","16.9"],
+      answer: "8.3",
+      hints: [
+        "Line up the decimal points.",
+        "Subtract: 6 − 3 = 3 and 12 − 4 = 8.",
+        "The answer is 8.3."
+      ],
+      explanation: [
+        "Line up decimals: 12.6 − 4.3.",
+        "Subtract tenths: 6 − 3 = 3. Subtract ones: 12 − 4 = 8.",
+        "The answer is 8.3."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">9.03 + 4.97</span>?',
+      choices: ["14","13.1","14.1","13"],
+      answer: "14",
+      hints: [
+        "Line up the decimal points.",
+        "Add hundredths: 3 + 7 = 10 (write 0, carry 1).",
+        "Add tenths: 0 + 9 + 1 = 10 (write 0, carry 1). Add ones: 9 + 4 + 1 = 14."
+      ],
+      explanation: [
+        "9.03 + 4.97 = 14.00 = 14.",
+        "The hundredths add to 10 (carry), tenths add to 10 (carry), ones sum to 14.",
+        "The answer is 14."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">4.35 + 2.678</span>?',
+      answer: "7.028",
+      hints: [
+        "Line up the decimal points. Write 4.35 as 4.350.",
+        "Add from right: 0 + 8 = 8, 5 + 7 = 12 (write 2 carry 1), 3 + 6 + 1 = 10 (write 0 carry 1).",
+        "4 + 2 + 1 = 7. Answer: 7.028."
+      ],
+      explanation: [
+        "4.350 + 2.678: thousandths: 0+8=8, hundredths: 5+7=12, tenths: 3+6+1=10, ones: 4+2+1=7.",
+        "Answer: <strong>7.028</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">10 − 3.247</span>?',
+      choices: ["6.753", "7.753", "6.853", "7.247"],
+      answer: "6.753",
+      hints: [
+        "Write 10 as 10.000.",
+        "Subtract from right, borrowing as needed.",
+        "10.000 − 3.247 = 6.753."
+      ],
+      explanation: [
+        "Write 10 as 10.000. Subtract: 10.000 − 3.247.",
+        "Answer: <strong>6.753</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A shirt costs $24.95 and tax is $1.87. What is the total?',
+      answer: "26.82",
+      hints: [
+        "Add: 24.95 + 1.87.",
+        "Hundredths: 5 + 7 = 12 (write 2, carry 1).",
+        "Tenths: 9 + 8 + 1 = 18 (write 8, carry 1). Ones: 4 + 1 + 1 = 6. Tens: 2."
+      ],
+      explanation: [
+        "24.95 + 1.87 = <strong>26.82</strong>.",
+        "Line up decimal points and add carefully."
+      ]
     }
   ],
 
@@ -7678,6 +12513,237 @@ EXTRA_QUESTIONS[5] = [
         "Answer: 0.85.",
         "Padding with trailing zeros makes comparison easier."
       ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Which is the largest? <span class="math">0.509, 0.59, 0.519, 0.5</span>',
+      choices: ["0.59", "0.519", "0.509", "0.5"],
+      answer: "0.59",
+      hints: [
+        "Write all numbers with three decimal places: 0.509, 0.590, 0.519, 0.500.",
+        "Compare: 500, 509, 519, 590.",
+        "590 is the largest, so 0.59 is the biggest."
+      ],
+      explanation: [
+        "Rewrite: 0.500, 0.509, 0.519, 0.590.",
+        "0.590 > 0.519 > 0.509 > 0.500. The largest is 0.59."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'How many of these decimals are greater than 0.75? <span class="math">0.8, 0.07, 0.705, 0.79, 0.750</span>',
+      answer: "2",
+      hints: [
+        "Compare each to 0.750.",
+        "0.800 > 0.750 ✓, 0.070 < 0.750 ✗, 0.705 < 0.750 ✗, 0.790 > 0.750 ✓, 0.750 = 0.750 ✗.",
+        "Two decimals are greater than 0.75."
+      ],
+      explanation: [
+        "0.8 = 0.800 > 0.750 ✓. 0.79 = 0.790 > 0.750 ✓.",
+        "The others are ≤ 0.750. So 2 decimals are greater."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which list is in order from least to greatest?',
+      choices: ["0.32, 0.302, 0.3", "0.3, 0.302, 0.32", "0.302, 0.3, 0.32", "0.32, 0.3, 0.302"],
+      answer: "0.3, 0.302, 0.32",
+      hints: [
+        "Write each with three decimal places: 0.320, 0.302, 0.300.",
+        "Order from least to greatest: 0.300, 0.302, 0.320.",
+        "That matches 0.3, 0.302, 0.32."
+      ],
+      explanation: [
+        "0.300 < 0.302 < 0.320.",
+        "So the correct order is 0.3, 0.302, 0.32."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Which decimal is greater: <span class="math">0.85</span> or <span class="math">0.8</span>?',
+      choices: ["0.85", "0.8", "They are equal", "Cannot tell"],
+      answer: "0.85",
+      hints: [
+        "Compare digit by digit from left to right.",
+        "Both have 0.8, but 0.85 has 5 in the hundredths place.",
+        "0.85 > 0.80, so 0.85 is greater."
+      ],
+      explanation: [
+        "Write 0.8 as 0.80 to compare: 0.85 vs 0.80.",
+        "85 hundredths > 80 hundredths.",
+        "So 0.85 is greater."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Order from least to greatest: <span class="math">0.45, 0.405, 0.5</span>. Which comes first? Write it as a decimal.',
+      answer: "0.405",
+      hints: [
+        "Write all with three decimal places: 0.450, 0.405, 0.500.",
+        "Compare: 405 < 450 < 500.",
+        "0.405 is the smallest."
+      ],
+      explanation: [
+        "Rewrite: 0.450, 0.405, 0.500.",
+        "Order: 0.405 < 0.450 < 0.500.",
+        "The smallest is 0.405."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which symbol makes this true? <span class="math">3.06 ☐ 3.1</span>',
+      choices: ["<", ">", "=", "Cannot tell"],
+      answer: "<",
+      hints: [
+        "Rewrite with the same decimal places: 3.06 vs 3.10.",
+        "Compare: 306 hundredths vs 310 hundredths.",
+        "306 < 310, so 3.06 < 3.10."
+      ],
+      explanation: [
+        "3.06 = 3.06, 3.1 = 3.10.",
+        "3.06 < 3.10.",
+        "So 3.06 < 3.1."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Which is greater: <span class="math">0.47</span> or <span class="math">0.409</span>?',
+      choices: ["0.47", "0.409", "They are equal", "Cannot tell"],
+      answer: "0.47",
+      hints: [
+        "Write both with the same number of decimal places: 0.470 and 0.409.",
+        "Compare: 470 thousandths vs 409 thousandths.",
+        "470 > 409, so 0.47 > 0.409."
+      ],
+      explanation: [
+        "0.47 = 0.470 and 0.409. Compare digit by digit: tenths are both 4.",
+        "Hundredths: 7 > 0, so 0.47 is greater.",
+        "0.47 > 0.409."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Order from least to greatest: <span class="math">2.35, 2.305, 2.4</span>. Which number is in the middle?',
+      answer: "2.35",
+      hints: [
+        "Write with equal decimal places: 2.350, 2.305, 2.400.",
+        "Order: 2.305 < 2.350 < 2.400.",
+        "The middle number is 2.35."
+      ],
+      explanation: [
+        "2.305 < 2.350 < 2.400.",
+        "The middle value is 2.35.",
+        "Compare digit by digit from left to right."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which list is in order from least to greatest?',
+      choices: ["0.08, 0.3, 0.71", "0.3, 0.08, 0.71", "0.71, 0.3, 0.08", "0.08, 0.71, 0.3"],
+      answer: "0.08, 0.3, 0.71",
+      hints: [
+        "Write with equal decimal places: 0.08, 0.30, 0.71.",
+        "Compare: 8 < 30 < 71 hundredths.",
+        "So 0.08 < 0.3 < 0.71."
+      ],
+      explanation: [
+        "0.08 = 8 hundredths, 0.3 = 30 hundredths, 0.71 = 71 hundredths.",
+        "Order: 0.08 < 0.3 < 0.71.",
+        "The correct ordering is 0.08, 0.3, 0.71."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which is greater: <span class="math">0.705</span> or <span class="math">0.75</span>?',
+      choices: ["0.75","0.705","They are equal","Cannot tell"],
+      answer: "0.75",
+      hints: [
+        "Write both with three decimal places: 0.705 and 0.750.",
+        "Compare: 750 > 705.",
+        "So 0.75 > 0.705."
+      ],
+      explanation: [
+        "0.705 vs 0.750.",
+        "Since 750 > 705, we have 0.75 > 0.705.",
+        "Adding trailing zeros helps compare."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Order from least to greatest: <span class="math">0.8, 0.08, 0.88</span>. What is the smallest value? Write it as a decimal.',
+      answer: "0.08",
+      hints: [
+        "Write them all with two decimal places: 0.80, 0.08, 0.88.",
+        "Compare: 08 < 80 < 88.",
+        "0.08 is the smallest."
+      ],
+      explanation: [
+        "0.08 < 0.80 < 0.88.",
+        "The smallest value is 0.08.",
+        "Compare digit by digit from left to right."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which list is in order from least to greatest?',
+      choices: ["0.302, 0.32, 0.4","0.32, 0.302, 0.4","0.4, 0.32, 0.302","0.302, 0.4, 0.32"],
+      answer: "0.302, 0.32, 0.4",
+      hints: [
+        "Write all with 3 decimals: 0.302, 0.320, 0.400.",
+        "Compare: 302 < 320 < 400.",
+        "So 0.302 < 0.32 < 0.4."
+      ],
+      explanation: [
+        "0.302 = 302/1000, 0.320 = 320/1000, 0.400 = 400/1000.",
+        "302 < 320 < 400, so 0.302 < 0.32 < 0.4.",
+        "The correct order is 0.302, 0.32, 0.4."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Order from least to greatest: <span class="math">0.45, 0.405, 0.5</span>',
+      choices: ["0.405, 0.45, 0.5", "0.45, 0.405, 0.5", "0.5, 0.45, 0.405", "0.405, 0.5, 0.45"],
+      answer: "0.405, 0.45, 0.5",
+      hints: [
+        "Write all with 3 decimal places: 0.450, 0.405, 0.500.",
+        "Compare: 405 < 450 < 500.",
+        "Least to greatest: 0.405, 0.45, 0.5."
+      ],
+      explanation: [
+        "Rewrite: 0.405, 0.450, 0.500.",
+        "Order: <strong>0.405, 0.45, 0.5</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which decimal is greatest: <span class="math">0.72, 0.7, 0.719</span>?',
+      choices: ["0.72", "0.7", "0.719", "They are equal"],
+      answer: "0.72",
+      hints: [
+        "Write with equal decimal places: 0.720, 0.700, 0.719.",
+        "Compare: 720 > 719 > 700.",
+        "0.72 is the greatest."
+      ],
+      explanation: [
+        "Rewrite: 0.720, 0.700, 0.719.",
+        "<strong>0.72</strong> (= 0.720) is the greatest."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'How many of these are greater than 0.6: <span class="math">0.59, 0.601, 0.6, 0.065, 0.61</span>?',
+      answer: "2",
+      hints: [
+        "Compare each to 0.600.",
+        "0.590 < 0.600, 0.601 > 0.600, 0.600 = 0.600, 0.065 < 0.600, 0.610 > 0.600.",
+        "Two values are greater: 0.601 and 0.61."
+      ],
+      explanation: [
+        "0.601 > 0.6 ✓ and 0.61 > 0.6 ✓.",
+        "<strong>2</strong> values are greater than 0.6."
+      ]
     }
   ],
 
@@ -8025,6 +13091,236 @@ EXTRA_QUESTIONS[5] = [
         "Thousandths 5 rounds hundredths 9 up to 10, causing carries.",
         "7.995 → 8.00.",
         "Multiple carries can happen when rounding."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Round <span class="math">6.847</span> to the nearest tenth.',
+      choices: ["6.8", "6.9", "6.85", "7.0"],
+      answer: "6.8",
+      hints: [
+        "Look at the hundredths digit (4) to decide.",
+        "Since 4 < 5, round down.",
+        "6.847 rounds to 6.8."
+      ],
+      explanation: [
+        "The tenths digit is 8. The hundredths digit is 4.",
+        "4 < 5, so round down: 6.8."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Estimate <span class="math">4.8 \times 3.2</span> by rounding each to the nearest whole number.',
+      answer: "15",
+      hints: [
+        "Round 4.8 to 5 and 3.2 to 3.",
+        "Multiply the rounded numbers: 5 × 3.",
+        "5 × 3 = 15."
+      ],
+      explanation: [
+        "4.8 ≈ 5, 3.2 ≈ 3.",
+        "5 × 3 = 15."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Round <span class="math">12.3451</span> to the nearest hundredth.',
+      choices: ["12.35", "12.34", "12.345", "12.3"],
+      answer: "12.35",
+      hints: [
+        "Look at the thousandths digit (5) to decide.",
+        "The hundredths digit is 4, thousandths is 5.",
+        "Since 5 ≥ 5, round up: 12.35."
+      ],
+      explanation: [
+        "Hundredths digit: 4. Thousandths digit: 5.",
+        "5 ≥ 5, round up: 12.34 becomes 12.35."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Round <span class="math">4.73</span> to the nearest tenth.',
+      choices: ["4.7", "4.8", "5.0", "4.73"],
+      answer: "4.7",
+      hints: [
+        "Look at the hundredths digit: 3.",
+        "Since 3 < 5, round down.",
+        "4.73 rounds to 4.7."
+      ],
+      explanation: [
+        "The hundredths digit is 3 (less than 5), so round down.",
+        "4.73 ≈ 4.7.",
+        "The tenths digit stays the same."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Round <span class="math">8.465</span> to the nearest hundredth.',
+      answer: "8.47",
+      hints: [
+        "Look at the thousandths digit: 5.",
+        "Since 5 ≥ 5, round up.",
+        "8.465 rounds to 8.47."
+      ],
+      explanation: [
+        "The thousandths digit is 5 (≥ 5), so round up.",
+        "8.465 ≈ 8.47.",
+        "The hundredths digit goes from 6 to 7."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Round <span class="math">12.349</span> to the nearest tenth.',
+      choices: ["12.3", "12.4", "12.35", "12.5"],
+      answer: "12.3",
+      hints: [
+        "Look at the hundredths digit: 4.",
+        "Since 4 < 5, round down.",
+        "12.349 rounds to 12.3."
+      ],
+      explanation: [
+        "The hundredths digit is 4 (less than 5), so round down.",
+        "12.349 ≈ 12.3.",
+        "The tenths digit stays the same."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Round <span class="math">4.367</span> to the nearest tenth.',
+      choices: ["4.4", "4.3", "4.37", "4.0"],
+      answer: "4.4",
+      hints: [
+        "Look at the hundredths digit (6) to decide.",
+        "Since 6 ≥ 5, round the tenths digit up.",
+        "3 rounds up to 4, so 4.367 ≈ 4.4."
+      ],
+      explanation: [
+        "The tenths digit is 3. The hundredths digit is 6 (≥ 5), so round up.",
+        "4.367 rounded to the nearest tenth is 4.4.",
+        "Always look one digit to the right of the rounding place."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">3.6 \times 0.4</span>?',
+      answer: "1.44",
+      hints: [
+        "Multiply as whole numbers: 36 × 4 = 144.",
+        "Count total decimal places: 1 + 1 = 2.",
+        "Place the decimal: 1.44."
+      ],
+      explanation: [
+        "36 × 4 = 144. Total decimal places = 2.",
+        "Place decimal 2 places from right: 1.44.",
+        "The answer is 1.44."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Round <span class="math">9.845</span> to the nearest hundredth.',
+      choices: ["9.85", "9.84", "9.8", "9.9"],
+      answer: "9.85",
+      hints: [
+        "Look at the thousandths digit (5) to decide.",
+        "Since 5 ≥ 5, round the hundredths digit up.",
+        "4 rounds up to 5, so 9.845 ≈ 9.85."
+      ],
+      explanation: [
+        "The hundredths digit is 4. The thousandths digit is 5 (≥ 5), so round up.",
+        "9.845 rounded to the nearest hundredth is 9.85.",
+        "When the digit is exactly 5, we round up."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Round <span class="math">6.847</span> to the nearest hundredth.',
+      choices: ["6.85","6.84","6.8","6.9"],
+      answer: "6.85",
+      hints: [
+        "Look at the thousandths digit: 7.",
+        "Since 7 ≥ 5, round the hundredths digit up.",
+        "4 rounds up to 5, so 6.85."
+      ],
+      explanation: [
+        "The thousandths digit is 7 (≥ 5), so round up.",
+        "6.847 → 6.85 (hundredths digit 4 becomes 5).",
+        "The answer is 6.85."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Round <span class="math">3.24</span> to the nearest tenth.',
+      answer: "3.2",
+      hints: [
+        "Look at the hundredths digit: 4.",
+        "Since 4 < 5, round down (keep the tenths digit).",
+        "3.24 rounds to 3.2."
+      ],
+      explanation: [
+        "The hundredths digit is 4 (< 5), so round down.",
+        "3.24 → 3.2.",
+        "The answer is 3.2."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">0.6 \times 0.8</span>?',
+      choices: ["0.48","4.8","0.048","48"],
+      answer: "0.48",
+      hints: [
+        "Multiply: 6 × 8 = 48.",
+        "Count decimal places: 1 + 1 = 2 decimal places.",
+        "Place the decimal: 0.48."
+      ],
+      explanation: [
+        "6 × 8 = 48. Total decimal places: 2.",
+        "So 0.6 × 0.8 = 0.48.",
+        "The answer is 0.48."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Round <span class="math">3.4567</span> to the nearest hundredth.',
+      answer: "3.46",
+      hints: [
+        "The hundredths digit is 5.",
+        "Look at the next digit (thousandths): 6 ≥ 5, so round up.",
+        "3.4567 rounds to 3.46."
+      ],
+      explanation: [
+        "Hundredths digit is 5. The next digit is 6 (≥ 5), so round up.",
+        "3.4567 ≈ <strong>3.46</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Round <span class="math">8.7341</span> to the nearest tenth.',
+      choices: ["8.7", "8.8", "8.73", "9.0"],
+      answer: "8.7",
+      hints: [
+        "The tenths digit is 7.",
+        "Look at the next digit (hundredths): 3 < 5, so keep the 7.",
+        "8.7341 rounds to 8.7."
+      ],
+      explanation: [
+        "Tenths digit is 7. The next digit is 3 (< 5), so round down.",
+        "8.7341 ≈ <strong>8.7</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Round <span class="math">12.9951</span> to the nearest hundredth.',
+      answer: "13.00",
+      hints: [
+        "The hundredths digit is 9.",
+        "The next digit is 5, so round up: 9 becomes 10.",
+        "Carry over: 12.9951 rounds to 13.00."
+      ],
+      explanation: [
+        "Hundredths = 9, thousandths = 5 → round up.",
+        "0.99 rounds to 1.00, so 12.9951 ≈ <strong>13.00</strong>."
       ]
     }
   ],
@@ -8374,6 +13670,235 @@ EXTRA_QUESTIONS[5] = [
         "Answer: 1/8.",
         "Divide numerator and denominator by their GCD of 125."
       ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Convert <span class="math">\frac{3}{5}</span> to a decimal.',
+      answer: "0.6",
+      hints: [
+        "Divide the numerator by the denominator: 3 ÷ 5.",
+        "3 ÷ 5 = 0.6.",
+        "You can also think: 3/5 = 6/10 = 0.6."
+      ],
+      explanation: [
+        "3 ÷ 5 = 0.6.",
+        "Or: 3/5 = 6/10 = 0.6."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which decimal equals <span class="math">\frac{7}{8}</span>?',
+      choices: ["0.875", "0.78", "0.857", "0.87"],
+      answer: "0.875",
+      hints: [
+        "Divide 7 by 8.",
+        "7 ÷ 8 = 0.875.",
+        "Check: 0.875 × 8 = 7 ✓."
+      ],
+      explanation: [
+        "7 ÷ 8 = 0.875.",
+        "So 7/8 = 0.875."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert <span class="math">\frac{11}{20}</span> to a decimal.',
+      answer: "0.55",
+      hints: [
+        "Divide 11 by 20.",
+        "11 ÷ 20 = 0.55.",
+        "Or: 11/20 = 55/100 = 0.55."
+      ],
+      explanation: [
+        "11 ÷ 20 = 0.55.",
+        "Or: multiply top and bottom by 5: 55/100 = 0.55."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Convert <span class="math">3/5</span> to a decimal.',
+      answer: "0.6",
+      hints: [
+        "Divide the numerator by the denominator: 3 ÷ 5.",
+        "3 ÷ 5 = 0.6.",
+        "The decimal is 0.6."
+      ],
+      explanation: [
+        "3 ÷ 5 = 0.6.",
+        "So 3/5 = 0.6.",
+        "You can also multiply top and bottom by 2: 6/10 = 0.6."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which decimal equals <span class="math">7/8</span>?',
+      choices: ["0.875", "0.78", "0.7", "0.87"],
+      answer: "0.875",
+      hints: [
+        "Divide the numerator by the denominator: 7 ÷ 8.",
+        "7 ÷ 8 = 0.875.",
+        "The decimal is 0.875."
+      ],
+      explanation: [
+        "7 ÷ 8 = 0.875.",
+        "So 7/8 = 0.875.",
+        "Long division: 70÷8=8 R6, 60÷8=7 R4, 40÷8=5."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Convert <span class="math">1/4</span> to a decimal.',
+      choices: ["0.25", "0.4", "0.14", "0.5"],
+      answer: "0.25",
+      hints: [
+        "Divide the numerator by the denominator: 1 ÷ 4.",
+        "1 ÷ 4 = 0.25.",
+        "The decimal is 0.25."
+      ],
+      explanation: [
+        "1 ÷ 4 = 0.25.",
+        "So 1/4 = 0.25.",
+        "You can also think: 25/100 = 0.25."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Convert <span class="math">3/5</span> to a decimal.',
+      answer: "0.6",
+      hints: [
+        "Divide the numerator by the denominator: 3 ÷ 5.",
+        "3 ÷ 5 = 0.6.",
+        "The decimal is 0.6."
+      ],
+      explanation: [
+        "3 ÷ 5 = 0.6.",
+        "So 3/5 = 0.6.",
+        "You can also find an equivalent fraction with denominator 10: 6/10 = 0.6."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">7/8</span> to a decimal.',
+      choices: ["0.875", "0.78", "0.87", "0.75"],
+      answer: "0.875",
+      hints: [
+        "Divide 7 by 8.",
+        "7 ÷ 8 = 0.875.",
+        "The decimal is 0.875."
+      ],
+      explanation: [
+        "7 ÷ 8 = 0.875.",
+        "So 7/8 = 0.875.",
+        "This is a terminating decimal."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">11/20</span> to a decimal.',
+      choices: ["0.55", "0.511", "0.65", "0.1120"],
+      answer: "0.55",
+      hints: [
+        "Divide 11 by 20.",
+        "11 ÷ 20 = 0.55.",
+        "Or find an equivalent fraction: 11/20 = 55/100 = 0.55."
+      ],
+      explanation: [
+        "11 ÷ 20 = 0.55.",
+        "So 11/20 = 0.55.",
+        "Multiplying top and bottom by 5: 55/100 = 0.55."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert <span class="math">\frac{7}{8}</span> to a decimal.',
+      answer: "0.875",
+      hints: [
+        "Divide 7 by 8.",
+        "7 ÷ 8 = 0.875.",
+        "The decimal is 0.875."
+      ],
+      explanation: [
+        "7 ÷ 8 = 0.875.",
+        "So 7/8 = 0.875.",
+        "Divide the numerator by the denominator."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Convert <span class="math">\frac{3}{5}</span> to a decimal.',
+      choices: ["0.6","0.35","0.53","6"],
+      answer: "0.6",
+      hints: [
+        "Divide 3 by 5.",
+        "3 ÷ 5 = 0.6.",
+        "The decimal is 0.6."
+      ],
+      explanation: [
+        "3 ÷ 5 = 0.6.",
+        "So 3/5 = 0.6.",
+        "Multiply both by 2: 6/10 = 0.6."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">\frac{5}{16}</span> to a decimal.',
+      choices: ["0.3125","0.516","0.325","0.512"],
+      answer: "0.3125",
+      hints: [
+        "Divide 5 by 16.",
+        "5 ÷ 16 = 0.3125.",
+        "The decimal is 0.3125."
+      ],
+      explanation: [
+        "5 ÷ 16 = 0.3125.",
+        "So 5/16 = 0.3125.",
+        "Use long division to compute."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert <span class="math">7/8</span> to a decimal.',
+      answer: "0.875",
+      hints: [
+        "Divide 7 by 8.",
+        "7 ÷ 8 = 0.875.",
+        "You can also think: 7/8 = 875/1000."
+      ],
+      explanation: [
+        "7 ÷ 8 = <strong>0.875</strong>.",
+        "This is a terminating decimal."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which decimal is equal to <span class="math">3/5</span>?',
+      choices: ["0.6", "0.35", "0.53", "0.75"],
+      answer: "0.6",
+      hints: [
+        "Divide 3 by 5.",
+        "3 ÷ 5 = 0.6.",
+        "Or multiply top and bottom by 2: 6/10 = 0.6."
+      ],
+      explanation: [
+        "3/5 = 3 ÷ 5 = <strong>0.6</strong>.",
+        "You can also convert: 3/5 = 6/10 = 0.6."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Convert <span class="math">11/16</span> to a decimal.',
+      answer: "0.6875",
+      hints: [
+        "Divide 11 by 16.",
+        "11 ÷ 16: 110 ÷ 16 = 6 R 14, 140 ÷ 16 = 8 R 12, 120 ÷ 16 = 7 R 8, 80 ÷ 16 = 5.",
+        "11/16 = 0.6875."
+      ],
+      explanation: [
+        "11 ÷ 16 = <strong>0.6875</strong>.",
+        "Long division gives the terminating decimal 0.6875."
+      ]
     }
   ],
 
@@ -8718,6 +14243,237 @@ EXTRA_QUESTIONS[5] = [
         "0.375 = 375/1000 = 3/8.",
         "Answer: 3/8.",
         "Divide both by 125."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'What fraction is equal to <span class="math">0.35</span>?',
+      choices: ["7/20", "35/10", "7/10", "35/1000"],
+      answer: "7/20",
+      hints: [
+        "0.35 = 35/100.",
+        "Simplify: GCD(35, 100) = 5.",
+        "35 ÷ 5 = 7, 100 ÷ 5 = 20. So 0.35 = 7/20."
+      ],
+      explanation: [
+        "0.35 = 35/100.",
+        "Simplify: 35/100 = 7/20."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert <span class="math">0.84</span> to a fraction in simplest form. What is the numerator?',
+      answer: "21",
+      hints: [
+        "0.84 = 84/100.",
+        "Find GCD(84, 100). Both are divisible by 4.",
+        "84 ÷ 4 = 21, 100 ÷ 4 = 25. So 0.84 = 21/25."
+      ],
+      explanation: [
+        "0.84 = 84/100. GCD(84, 100) = 4.",
+        "84/100 = 21/25. The numerator is 21."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which decimal is equal to <span class="math">\frac{9}{16}</span>?',
+      choices: ["0.5625", "0.916", "0.5616", "0.56"],
+      answer: "0.5625",
+      hints: [
+        "Divide 9 by 16.",
+        "9 ÷ 16 = 0.5625.",
+        "Check: 0.5625 × 16 = 9 ✓."
+      ],
+      explanation: [
+        "9 ÷ 16 = 0.5625.",
+        "So 9/16 = 0.5625."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Convert <span class="math">0.6</span> to a fraction in simplest form.',
+      choices: ["3/5", "6/10", "6/100", "2/3"],
+      answer: "3/5",
+      hints: [
+        "0.6 = 6/10.",
+        "Simplify 6/10 by dividing both by 2.",
+        "6 ÷ 2 = 3, 10 ÷ 2 = 5."
+      ],
+      explanation: [
+        "0.6 = 6/10.",
+        "Simplify: 6/10 = 3/5.",
+        "The fraction in simplest form is 3/5."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert <span class="math">0.35</span> to a fraction. What is the numerator when simplified?',
+      answer: "7",
+      hints: [
+        "0.35 = 35/100.",
+        "Simplify by dividing both by 5.",
+        "35 ÷ 5 = 7, 100 ÷ 5 = 20."
+      ],
+      explanation: [
+        "0.35 = 35/100 = 7/20.",
+        "GCD(35, 100) = 5.",
+        "The numerator is 7."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">0.125</span> to a fraction in simplest form.',
+      choices: ["1/8", "125/1000", "1/4", "5/40"],
+      answer: "1/8",
+      hints: [
+        "0.125 = 125/1000.",
+        "Simplify by dividing both by 125.",
+        "125 ÷ 125 = 1, 1000 ÷ 125 = 8."
+      ],
+      explanation: [
+        "0.125 = 125/1000 = 1/8.",
+        "GCD(125, 1000) = 125.",
+        "The fraction in simplest form is 1/8."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Convert <span class="math">0.35</span> to a fraction in simplest form. What is the numerator?',
+      answer: "7",
+      hints: [
+        "0.35 = 35/100.",
+        "Simplify: GCD(35, 100) = 5.",
+        "35 ÷ 5 = 7, 100 ÷ 5 = 20. So 0.35 = 7/20."
+      ],
+      explanation: [
+        "0.35 = 35/100. GCD(35, 100) = 5.",
+        "35÷5 = 7, 100÷5 = 20.",
+        "So 0.35 = 7/20. The numerator is 7."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which fraction equals <span class="math">0.125</span>?',
+      choices: ["1/8", "1/5", "1/4", "3/25"],
+      answer: "1/8",
+      hints: [
+        "0.125 = 125/1000.",
+        "Simplify: GCD(125, 1000) = 125.",
+        "125 ÷ 125 = 1, 1000 ÷ 125 = 8."
+      ],
+      explanation: [
+        "0.125 = 125/1000 = 1/8.",
+        "GCD(125, 1000) = 125.",
+        "So 0.125 = 1/8."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">2 3/8</span> to a decimal.',
+      choices: ["2.375", "2.38", "2.35", "2.83"],
+      answer: "2.375",
+      hints: [
+        "Convert the fractional part: 3 ÷ 8 = 0.375.",
+        "Add to the whole number: 2 + 0.375.",
+        "The decimal is 2.375."
+      ],
+      explanation: [
+        "3 ÷ 8 = 0.375.",
+        "2 + 0.375 = 2.375.",
+        "So 2 3/8 = 2.375."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">0.45</span> to a fraction in simplest form.',
+      choices: ["9/20","45/10","4/5","45/100"],
+      answer: "9/20",
+      hints: [
+        "0.45 = 45/100.",
+        "Simplify: GCD(45, 100) = 5.",
+        "45 ÷ 5 = 9, 100 ÷ 5 = 20."
+      ],
+      explanation: [
+        "0.45 = 45/100.",
+        "GCD(45, 100) = 5. Simplify: 45/100 = 9/20.",
+        "The fraction is 9/20."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Convert <span class="math">\frac{3}{4}</span> to a decimal.',
+      answer: "0.75",
+      hints: [
+        "Divide 3 by 4.",
+        "3 ÷ 4 = 0.75.",
+        "The decimal is 0.75."
+      ],
+      explanation: [
+        "3 ÷ 4 = 0.75.",
+        "So 3/4 = 0.75.",
+        "Divide the numerator by the denominator."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">0.125</span> to a fraction in simplest form.',
+      choices: ["1/8","125/100","1/4","12/100"],
+      answer: "1/8",
+      hints: [
+        "0.125 = 125/1000.",
+        "Simplify: GCD(125, 1000) = 125.",
+        "125 ÷ 125 = 1, 1000 ÷ 125 = 8."
+      ],
+      explanation: [
+        "0.125 = 125/1000 = 1/8.",
+        "GCD(125, 1000) = 125. Simplify: 1/8.",
+        "The fraction is 1/8."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">0.375</span> to a fraction in lowest terms.',
+      choices: ["3/8", "375/1000", "37/80", "15/40"],
+      answer: "3/8",
+      hints: [
+        "0.375 = 375/1000.",
+        "Simplify: GCD(375, 1000) = 125.",
+        "375 ÷ 125 = 3, 1000 ÷ 125 = 8."
+      ],
+      explanation: [
+        "0.375 = 375/1000. GCD = 125.",
+        "375/1000 = <strong>3/8</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert <span class="math">0.24</span> to a fraction in lowest terms. What is the denominator?',
+      answer: "25",
+      hints: [
+        "0.24 = 24/100.",
+        "Simplify: GCD(24, 100) = 4.",
+        "24 ÷ 4 = 6, 100 ÷ 4 = 25."
+      ],
+      explanation: [
+        "0.24 = 24/100 = 6/25.",
+        "The denominator is <strong>25</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Convert <span class="math">0.625</span> to a fraction in lowest terms.',
+      choices: ["5/8", "625/1000", "25/40", "1/8"],
+      answer: "5/8",
+      hints: [
+        "0.625 = 625/1000.",
+        "Simplify: GCD(625, 1000) = 125.",
+        "625 ÷ 125 = 5, 1000 ÷ 125 = 8."
+      ],
+      explanation: [
+        "0.625 = 625/1000. GCD = 125.",
+        "625/1000 = <strong>5/8</strong>."
       ]
     }
   ],
@@ -9064,6 +14820,235 @@ EXTRA_QUESTIONS[5] = [
         "Answer: 4.80.",
         "You can also write this as 4.8."
       ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">0.6 \times 0.08</span>?',
+      answer: "0.048",
+      hints: [
+        "Multiply ignoring decimals: 6 × 8 = 48.",
+        "Count total decimal places: 1 + 2 = 3.",
+        "Place the decimal: 0.048."
+      ],
+      explanation: [
+        "6 × 8 = 48. Total decimal places: 3.",
+        "0.048."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">2.5 \times 0.14</span>?',
+      choices: ["0.35", "3.5", "0.035", "35"],
+      answer: "0.35",
+      hints: [
+        "Multiply ignoring decimals: 25 × 14 = 350.",
+        "Count total decimal places: 1 + 2 = 3.",
+        "Place the decimal: 0.350 = 0.35."
+      ],
+      explanation: [
+        "25 × 14 = 350. Total decimal places: 3.",
+        "0.350 = 0.35."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">1.2 \times 0.45</span>?',
+      answer: "0.54",
+      hints: [
+        "Multiply ignoring decimals: 12 × 45 = 540.",
+        "Count total decimal places: 1 + 2 = 3.",
+        "Place the decimal: 0.540 = 0.54."
+      ],
+      explanation: [
+        "12 × 45 = 540. Total decimal places: 3.",
+        "0.540 = 0.54."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">0.6 \times 0.8</span>?',
+      answer: "0.48",
+      hints: [
+        "Multiply 6 × 8 = 48.",
+        "Count decimal places: 1 + 1 = 2 places.",
+        "Place the decimal: 0.48."
+      ],
+      explanation: [
+        "6 × 8 = 48.",
+        "Total decimal places: 2.",
+        "0.6 × 0.8 = 0.48."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">2.5 \times 0.04</span>?',
+      choices: ["0.1", "0.01", "1.0", "10"],
+      answer: "0.1",
+      hints: [
+        "Multiply 25 × 4 = 100.",
+        "Count decimal places: 1 + 2 = 3 places.",
+        "Place the decimal: 0.100 = 0.1."
+      ],
+      explanation: [
+        "25 × 4 = 100.",
+        "Total decimal places: 3.",
+        "2.5 × 0.04 = 0.100 = 0.1."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">3.2 \times 0.5</span>?',
+      choices: ["1.6", "16", "0.16", "1.06"],
+      answer: "1.6",
+      hints: [
+        "Multiply 32 × 5 = 160.",
+        "Count decimal places: 1 + 1 = 2 places.",
+        "Place the decimal: 1.60 = 1.6."
+      ],
+      explanation: [
+        "32 × 5 = 160.",
+        "Total decimal places: 2.",
+        "3.2 × 0.5 = 1.60 = 1.6."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">2.5 \times 0.12</span>?',
+      answer: "0.3",
+      hints: [
+        "Multiply as whole numbers: 25 × 12 = 300.",
+        "Count total decimal places: 1 + 2 = 3.",
+        "Place the decimal: 0.300 = 0.3."
+      ],
+      explanation: [
+        "25 × 12 = 300. Total decimal places = 3.",
+        "Place decimal 3 places from right: 0.300 = 0.3.",
+        "The answer is 0.3."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">0.15 \times 0.4</span>?',
+      choices: ["0.06", "0.6", "0.006", "6.0"],
+      answer: "0.06",
+      hints: [
+        "Multiply as whole numbers: 15 × 4 = 60.",
+        "Count total decimal places: 2 + 1 = 3.",
+        "Place the decimal: 0.060 = 0.06."
+      ],
+      explanation: [
+        "15 × 4 = 60. Total decimal places = 3.",
+        "Place decimal 3 places from right: 0.060 = 0.06.",
+        "The answer is 0.06."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">4.2 \times 3.5</span>?',
+      choices: ["14.7", "14.07", "15.7", "147"],
+      answer: "14.7",
+      hints: [
+        "Multiply as whole numbers: 42 × 35 = 1470.",
+        "Count total decimal places: 1 + 1 = 2.",
+        "Place the decimal: 14.70 = 14.7."
+      ],
+      explanation: [
+        "42 × 35 = 1470. Total decimal places = 2.",
+        "Place decimal 2 places from right: 14.70 = 14.7.",
+        "The answer is 14.7."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">3.14 \times 5</span>?',
+      answer: "15.7",
+      hints: [
+        "Multiply: 314 × 5 = 1570.",
+        "Count decimal places in 3.14: 2 places.",
+        "Place decimal: 15.70 = 15.7."
+      ],
+      explanation: [
+        "314 × 5 = 1570. With 2 decimal places: 15.70.",
+        "Simplify: 15.70 = 15.7.",
+        "The answer is 15.7."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">0.7 \times 0.9</span>?',
+      choices: ["0.63","6.3","0.063","63"],
+      answer: "0.63",
+      hints: [
+        "Multiply: 7 × 9 = 63.",
+        "Count decimal places: 1 + 1 = 2.",
+        "Place decimal: 0.63."
+      ],
+      explanation: [
+        "7 × 9 = 63. Total decimal places: 2.",
+        "So 0.7 × 0.9 = 0.63.",
+        "The answer is 0.63."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">2.5 \times 0.04</span>?',
+      choices: ["0.1","1","0.01","10"],
+      answer: "0.1",
+      hints: [
+        "Multiply: 25 × 4 = 100.",
+        "Count decimal places: 1 + 2 = 3.",
+        "Place decimal: 0.100 = 0.1."
+      ],
+      explanation: [
+        "25 × 4 = 100. Total decimal places: 3.",
+        "So 2.5 × 0.04 = 0.100 = 0.1.",
+        "The answer is 0.1."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">2.4 × 0.15</span>?',
+      answer: "0.36",
+      hints: [
+        "Multiply as whole numbers: 24 × 15 = 360.",
+        "Count decimal places: 2.4 has 1, 0.15 has 2 → total 3.",
+        "Place the decimal: 0.360 = 0.36."
+      ],
+      explanation: [
+        "24 × 15 = 360. Total decimal places = 3.",
+        "0.360 = <strong>0.36</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">3.6 × 0.25</span>?',
+      choices: ["0.9", "9.0", "0.09", "90"],
+      answer: "0.9",
+      hints: [
+        "Multiply as whole numbers: 36 × 25 = 900.",
+        "Count decimal places: 3.6 has 1, 0.25 has 2 → total 3.",
+        "Place the decimal: 0.900 = 0.9."
+      ],
+      explanation: [
+        "36 × 25 = 900. Total decimal places = 3.",
+        "0.900 = <strong>0.9</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A notebook costs $3.75. How much do 4 notebooks cost?',
+      answer: "15.00",
+      hints: [
+        "Multiply: 3.75 × 4.",
+        "375 × 4 = 1500. Two decimal places.",
+        "15.00."
+      ],
+      explanation: [
+        "3.75 × 4 = <strong>15.00</strong> (or $15).",
+        "Multiply as whole numbers then place the decimal."
+      ]
     }
   ],
 
@@ -9407,6 +15392,236 @@ EXTRA_QUESTIONS[5] = [
         "Multiply both by 100: 720 ÷ 24 = 30.",
         "Answer: 30.",
         "Making the divisor a whole number simplifies division."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">3.6 \div 0.9</span>?',
+      choices: ["4", "0.4", "40", "0.04"],
+      answer: "4",
+      hints: [
+        "Multiply both by 10 to remove decimals: 36 ÷ 9.",
+        "36 ÷ 9 = 4.",
+        "So 3.6 ÷ 0.9 = 4."
+      ],
+      explanation: [
+        "Multiply both by 10: 36 ÷ 9 = 4.",
+        "3.6 ÷ 0.9 = 4."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">4.32 \div 0.06</span>?',
+      answer: "72",
+      hints: [
+        "Multiply both by 100 to remove decimals: 432 ÷ 6.",
+        "432 ÷ 6 = 72.",
+        "So 4.32 ÷ 0.06 = 72."
+      ],
+      explanation: [
+        "Multiply both by 100: 432 ÷ 6 = 72.",
+        "4.32 ÷ 0.06 = 72."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">0.288 \div 0.12</span>?',
+      choices: ["2.4", "24", "0.24", "0.024"],
+      answer: "2.4",
+      hints: [
+        "Multiply both by 100: 28.8 ÷ 12.",
+        "28.8 ÷ 12 = 2.4.",
+        "So 0.288 ÷ 0.12 = 2.4."
+      ],
+      explanation: [
+        "Multiply both by 100: 28.8 ÷ 12 = 2.4.",
+        "0.288 ÷ 0.12 = 2.4."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">4.8 \div 0.6</span>?',
+      answer: "8",
+      hints: [
+        "Multiply both by 10 to remove decimals: 48 ÷ 6.",
+        "48 ÷ 6 = 8.",
+        "The answer is 8."
+      ],
+      explanation: [
+        "4.8 ÷ 0.6 = 48 ÷ 6 = 8.",
+        "Move the decimal one place in both numbers.",
+        "The answer is 8."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">0.72 \div 0.08</span>?',
+      choices: ["9", "0.9", "90", "0.09"],
+      answer: "9",
+      hints: [
+        "Multiply both by 100 to remove decimals: 72 ÷ 8.",
+        "72 ÷ 8 = 9.",
+        "The answer is 9."
+      ],
+      explanation: [
+        "0.72 ÷ 0.08 = 72 ÷ 8 = 9.",
+        "Move the decimal two places in both numbers.",
+        "The answer is 9."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">3.6 \div 0.12</span>?',
+      choices: ["30", "3", "0.3", "300"],
+      answer: "30",
+      hints: [
+        "Multiply both by 100 to remove decimals: 360 ÷ 12.",
+        "360 ÷ 12 = 30.",
+        "The answer is 30."
+      ],
+      explanation: [
+        "3.6 ÷ 0.12 = 360 ÷ 12 = 30.",
+        "Move the decimal two places in both numbers.",
+        "The answer is 30."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">7.2 \div 0.9</span>?',
+      answer: "8",
+      hints: [
+        "Move decimal in both numbers to make divisor whole: 72 ÷ 9.",
+        "72 ÷ 9 = 8.",
+        "The answer is 8."
+      ],
+      explanation: [
+        "Multiply both by 10: 72 ÷ 9 = 8.",
+        "The answer is 8.",
+        "Moving decimals equally does not change the quotient."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">3.36 \div 0.08</span>?',
+      choices: ["42", "4.2", "420", "0.42"],
+      answer: "42",
+      hints: [
+        "Move decimal 2 places in both: 336 ÷ 8.",
+        "336 ÷ 8 = 42.",
+        "The answer is 42."
+      ],
+      explanation: [
+        "Multiply both by 100: 336 ÷ 8 = 42.",
+        "The answer is 42.",
+        "Make the divisor a whole number by shifting decimals."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">15.6 \div 1.2</span>?',
+      choices: ["13", "1.3", "130", "12"],
+      answer: "13",
+      hints: [
+        "Move decimal 1 place in both: 156 ÷ 12.",
+        "156 ÷ 12 = 13.",
+        "The answer is 13."
+      ],
+      explanation: [
+        "Multiply both by 10: 156 ÷ 12 = 13.",
+        "The answer is 13.",
+        "Check: 13 × 1.2 = 15.6 ✓."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">7.2 \div 0.9</span>?',
+      answer: "8",
+      hints: [
+        "Multiply both by 10 to remove decimals: 72 ÷ 9.",
+        "72 ÷ 9 = 8.",
+        "The answer is 8."
+      ],
+      explanation: [
+        "Move decimal: 72 ÷ 9 = 8.",
+        "7.2 ÷ 0.9 = 8.",
+        "Multiply both numbers by 10 to make the divisor a whole number."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">4.5 \div 0.5</span>?',
+      choices: ["9","0.9","90","0.09"],
+      answer: "9",
+      hints: [
+        "Multiply both by 10: 45 ÷ 5.",
+        "45 ÷ 5 = 9.",
+        "The answer is 9."
+      ],
+      explanation: [
+        "Move decimal: 45 ÷ 5 = 9.",
+        "4.5 ÷ 0.5 = 9.",
+        "The answer is 9."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">6.48 \div 0.08</span>?',
+      choices: ["81","8.1","810","0.81"],
+      answer: "81",
+      hints: [
+        "Multiply both by 100: 648 ÷ 8.",
+        "648 ÷ 8 = 81.",
+        "The answer is 81."
+      ],
+      explanation: [
+        "Move decimal two places: 648 ÷ 8 = 81.",
+        "6.48 ÷ 0.08 = 81.",
+        "The answer is 81."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">7.56 ÷ 0.3</span>?',
+      answer: "25.2",
+      hints: [
+        "Move the decimal: make 0.3 into 3 by multiplying both by 10.",
+        "Now divide 75.6 ÷ 3.",
+        "75.6 ÷ 3 = 25.2."
+      ],
+      explanation: [
+        "Multiply both by 10: 75.6 ÷ 3 = <strong>25.2</strong>.",
+        "Moving the decimal in the divisor makes it a whole number."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">4.68 ÷ 0.12</span>?',
+      choices: ["39", "3.9", "390", "0.39"],
+      answer: "39",
+      hints: [
+        "Move both decimals 2 places right: 468 ÷ 12.",
+        "468 ÷ 12 = 39.",
+        "The answer is 39."
+      ],
+      explanation: [
+        "Multiply both by 100: 468 ÷ 12 = <strong>39</strong>.",
+        "Moving decimals makes the divisor a whole number."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'You have $18.75 to buy pens that cost $1.25 each. How many pens can you buy?',
+      answer: "15",
+      hints: [
+        "Divide: 18.75 ÷ 1.25.",
+        "Move both decimals 2 places: 1875 ÷ 125.",
+        "1875 ÷ 125 = 15."
+      ],
+      explanation: [
+        "18.75 ÷ 1.25 = 1875 ÷ 125 = <strong>15</strong> pens.",
+        "Move decimals to make the divisor a whole number."
       ]
     }
   ],
@@ -9752,6 +15967,237 @@ EXTRA_QUESTIONS[5] = [
         "7/9 ≈ 0.7778 and 0.76 = 0.7600.",
         "0.7778 > 0.7600, so 7/9 is greater.",
         "Converting to decimals makes comparison easy."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">\frac{5}{11}</span> to a decimal (rounded to the nearest hundredth).',
+      choices: ["0.45", "0.46", "0.55", "0.44"],
+      answer: "0.45",
+      hints: [
+        "Divide 5 by 11: 5 ÷ 11 = 0.4545...",
+        "The thousandths digit is 4.",
+        "Since 4 < 5, round down: 0.45."
+      ],
+      explanation: [
+        "5 ÷ 11 = 0.45454...",
+        "Rounded to the nearest hundredth: 0.45."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Express <span class="math">2.375</span> as a fraction. What is the denominator in simplest form?',
+      answer: "8",
+      hints: [
+        "2.375 = 2 + 0.375.",
+        "0.375 = 375/1000 = 3/8.",
+        "So 2.375 = 2 3/8 = 19/8. The denominator is 8."
+      ],
+      explanation: [
+        "0.375 = 375/1000. GCD(375,1000)=125. 375/1000 = 3/8.",
+        "2.375 = 19/8. The denominator is 8."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which fraction equals <span class="math">0.5625</span>?',
+      choices: ["9/16", "5/8", "11/20", "7/12"],
+      answer: "9/16",
+      hints: [
+        "0.5625 = 5625/10000.",
+        "Simplify: GCD(5625, 10000) = 625.",
+        "5625/625 = 9, 10000/625 = 16. So 0.5625 = 9/16."
+      ],
+      explanation: [
+        "0.5625 = 5625/10000 = 9/16.",
+        "Check: 9 ÷ 16 = 0.5625 ✓."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">2.75</span> to a mixed number in simplest form.',
+      choices: ["2 3/4", "2 75/100", "2 7/10", "2 15/20"],
+      answer: "2 3/4",
+      hints: [
+        "The whole number part is 2. The decimal part is 0.75.",
+        "0.75 = 75/100 = 3/4.",
+        "So 2.75 = 2 3/4."
+      ],
+      explanation: [
+        "2.75 = 2 + 0.75 = 2 + 75/100 = 2 + 3/4.",
+        "The mixed number is 2 3/4.",
+        "GCD(75, 100) = 25, so 75/100 = 3/4."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Convert <span class="math">\frac{11}{8}</span> to a decimal.',
+      answer: "1.375",
+      hints: [
+        "Divide 11 by 8.",
+        "11 ÷ 8 = 1.375.",
+        "The decimal is 1.375."
+      ],
+      explanation: [
+        "11 ÷ 8 = 1 remainder 3.",
+        "Continue: 30÷8=3 R6, 60÷8=7 R4, 40÷8=5.",
+        "11/8 = 1.375."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which fraction equals <span class="math">0.625</span>?',
+      choices: ["5/8", "3/5", "5/6", "7/10"],
+      answer: "5/8",
+      hints: [
+        "0.625 = 625/1000.",
+        "Simplify: GCD(625, 1000) = 125.",
+        "625 ÷ 125 = 5, 1000 ÷ 125 = 8."
+      ],
+      explanation: [
+        "0.625 = 625/1000 = 5/8.",
+        "GCD(625, 1000) = 125.",
+        "The fraction is 5/8."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">0.4375</span> to a fraction in simplest form.',
+      choices: ["7/16", "43/100", "7/15", "4/9"],
+      answer: "7/16",
+      hints: [
+        "0.4375 = 4375/10000.",
+        "Simplify: GCD(4375, 10000) = 625.",
+        "4375 ÷ 625 = 7, 10000 ÷ 625 = 16."
+      ],
+      explanation: [
+        "0.4375 = 4375/10000.",
+        "GCD = 625. 4375÷625 = 7, 10000÷625 = 16.",
+        "So 0.4375 = 7/16."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Convert <span class="math">5 5/8</span> to a decimal.',
+      answer: "5.625",
+      hints: [
+        "Convert the fractional part: 5 ÷ 8 = 0.625.",
+        "Add the whole number: 5 + 0.625.",
+        "The answer is 5.625."
+      ],
+      explanation: [
+        "5 ÷ 8 = 0.625.",
+        "5 + 0.625 = 5.625.",
+        "So 5 5/8 = 5.625."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which is greater: <span class="math">3/7</span> or <span class="math">0.44</span>?',
+      choices: ["0.44", "3/7", "They are equal", "Cannot tell"],
+      answer: "0.44",
+      hints: [
+        "Convert 3/7 to a decimal: 3 ÷ 7 ≈ 0.4286.",
+        "Compare: 0.4286 vs 0.44.",
+        "0.44 > 0.4286."
+      ],
+      explanation: [
+        "3/7 ≈ 0.4286.",
+        "0.44 > 0.4286, so 0.44 is greater.",
+        "Converting to the same form makes comparison easy."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Convert <span class="math">\frac{11}{16}</span> to a decimal.',
+      choices: ["0.6875","0.6125","0.625","0.7125"],
+      answer: "0.6875",
+      hints: [
+        "Divide 11 by 16.",
+        "11 ÷ 16 = 0.6875.",
+        "The decimal is 0.6875."
+      ],
+      explanation: [
+        "11 ÷ 16 = 0.6875.",
+        "So 11/16 = 0.6875.",
+        "Use long division to compute."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert <span class="math">0.375</span> to a fraction. What is the denominator in simplest form?',
+      answer: "8",
+      hints: [
+        "0.375 = 375/1000.",
+        "Simplify: GCD(375, 1000) = 125.",
+        "375 ÷ 125 = 3, 1000 ÷ 125 = 8."
+      ],
+      explanation: [
+        "0.375 = 375/1000.",
+        "GCD(375, 1000) = 125. Simplify: 375/1000 = 3/8.",
+        "The denominator is 8."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which decimal is equivalent to <span class="math">\frac{7}{11}</span>?',
+      choices: ["0.636363...","0.637","0.583","0.714285..."],
+      answer: "0.636363...",
+      hints: [
+        "Divide 7 by 11.",
+        "7 ÷ 11 = 0.636363... (repeating).",
+        "The pattern 63 repeats."
+      ],
+      explanation: [
+        "7 ÷ 11 = 0.636363...",
+        "This is a repeating decimal with period 63.",
+        "The answer is 0.636363..."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">5/16</span> to a decimal.',
+      choices: ["0.3125", "0.516", "0.35", "0.325"],
+      answer: "0.3125",
+      hints: [
+        "Divide 5 by 16.",
+        "5.0000 ÷ 16: 50÷16=3 R2, 20÷16=1 R4, 40÷16=2 R8, 80÷16=5.",
+        "5/16 = 0.3125."
+      ],
+      explanation: [
+        "5 ÷ 16 = <strong>0.3125</strong>.",
+        "This is a terminating decimal."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Convert <span class="math">0.45</span> to a fraction in lowest terms. What is the numerator?',
+      answer: "9",
+      hints: [
+        "0.45 = 45/100.",
+        "Simplify: GCD(45, 100) = 5.",
+        "45 ÷ 5 = 9, 100 ÷ 5 = 20."
+      ],
+      explanation: [
+        "0.45 = 45/100 = 9/20.",
+        "The numerator is <strong>9</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which fraction is equal to <span class="math">0.1875</span>?',
+      choices: ["3/16", "1/8", "3/20", "1/5"],
+      answer: "3/16",
+      hints: [
+        "0.1875 = 1875/10000.",
+        "Simplify: GCD(1875, 10000) = 625.",
+        "1875 ÷ 625 = 3, 10000 ÷ 625 = 16."
+      ],
+      explanation: [
+        "0.1875 = 1875/10000 = <strong>3/16</strong>.",
+        "Divide both by GCD = 625."
       ]
     }
   ],
@@ -10099,6 +16545,237 @@ EXTRA_QUESTIONS[5] = [
         "The others (7, 11, 9) have prime factors other than 2 and 5.",
         "Only denominators with factors of 2 and 5 terminate."
       ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which fraction gives a repeating decimal?',
+      choices: ["5/6", "3/8", "1/4", "7/20"],
+      answer: "5/6",
+      hints: [
+        "A fraction gives a terminating decimal if the denominator (in simplest form) only has factors of 2 and 5.",
+        "8 = 2³ (terminating), 4 = 2² (terminating), 20 = 2² × 5 (terminating).",
+        "6 = 2 × 3. Since 3 is not 2 or 5, 5/6 repeats."
+      ],
+      explanation: [
+        "5/6: denominator 6 = 2 × 3. The factor 3 causes repetition.",
+        "5 ÷ 6 = 0.8333... (repeating)."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is the repeating digit in the decimal form of <span class="math">\frac{2}{9}</span>?',
+      answer: "2",
+      hints: [
+        "Divide 2 by 9.",
+        "2 ÷ 9 = 0.2222...",
+        "The repeating digit is 2."
+      ],
+      explanation: [
+        "2 ÷ 9 = 0.222... = 0.\overline{2}.",
+        "The repeating digit is 2."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\frac{7}{11}</span> as a repeating decimal?',
+      choices: ["0.636363...", "0.777...", "0.6363...", "0.6777..."],
+      answer: "0.636363...",
+      hints: [
+        "Divide 7 by 11.",
+        "7 ÷ 11 = 0.636363...",
+        "The repeating block is 63."
+      ],
+      explanation: [
+        "7 ÷ 11 = 0.\overline{63} = 0.636363...",
+        "The two-digit block 63 repeats forever."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which fraction gives a repeating decimal?',
+      choices: ["5/6", "3/8", "1/4", "7/10"],
+      answer: "5/6",
+      hints: [
+        "A fraction gives a terminating decimal if the denominator (in lowest terms) has only factors of 2 and 5.",
+        "8 = 2³ ✓, 4 = 2² ✓, 10 = 2×5 ✓.",
+        "6 = 2×3 — the factor 3 means it repeats."
+      ],
+      explanation: [
+        "5/6: denominator has factor 3, so it repeats (0.8333...).",
+        "3/8 = 0.375, 1/4 = 0.25, 7/10 = 0.7 — all terminate.",
+        "Only 5/6 has a repeating decimal."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert <span class="math">2/9</span> to a decimal. What digit repeats?',
+      answer: "2",
+      hints: [
+        "Divide 2 by 9: 2 ÷ 9 = 0.222...",
+        "The digit 2 repeats infinitely.",
+        "The repeating digit is 2."
+      ],
+      explanation: [
+        "2 ÷ 9 = 0.2222...",
+        "The digit 2 repeats.",
+        "We write this as 0.2 with a bar over the 2."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">5/11</span> as a repeating decimal?',
+      choices: ["0.454545...", "0.555...", "0.511...", "0.4555..."],
+      answer: "0.454545...",
+      hints: [
+        "Divide 5 by 11: 50 ÷ 11 = 4 R6, 60 ÷ 11 = 5 R5.",
+        "The pattern 45 repeats: 0.454545...",
+        "The repeating block is 45."
+      ],
+      explanation: [
+        "5 ÷ 11 = 0.454545...",
+        "The two-digit block 45 repeats infinitely.",
+        "We write this as 0.45 with a bar over 45."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What digit repeats when you convert <span class="math">1/9</span> to a decimal?',
+      answer: "1",
+      hints: [
+        "Divide 1 by 9: 1 ÷ 9 = 0.111...",
+        "The digit 1 repeats forever.",
+        "1/9 = 0.1̄."
+      ],
+      explanation: [
+        "1 ÷ 9 = 0.1111...",
+        "The repeating digit is 1.",
+        "All fractions with denominator 9 have a single repeating digit equal to the numerator."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which of these fractions produces a terminating decimal?',
+      choices: ["3/16", "5/11", "4/9", "2/7"],
+      answer: "3/16",
+      hints: [
+        "A fraction terminates when its denominator (in lowest terms) has only factors of 2 and/or 5.",
+        "16 = 2⁴ — only factors of 2.",
+        "11, 9, and 7 have other prime factors."
+      ],
+      explanation: [
+        "16 = 2⁴ (only factors of 2), so 3/16 terminates.",
+        "3/16 = 0.1875.",
+        "The others produce repeating decimals."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Convert <span class="math">10/11</span> to a decimal. What two digits repeat?',
+      choices: ["90", "09", "91", "10"],
+      answer: "90",
+      hints: [
+        "Divide 10 by 11: 10 ÷ 11 = 0.909090...",
+        "The digits 9 and 0 repeat in that order.",
+        "10/11 = 0.90̄."
+      ],
+      explanation: [
+        "10 ÷ 11 = 0.909090...",
+        "The repeating pair is 90.",
+        "All fractions with denominator 11 repeat with a two-digit pattern."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which fraction equals <span class="math">0.\overline{27}</span> (0.272727...)?',
+      choices: ["3/11","27/100","27/99","9/33"],
+      answer: "3/11",
+      hints: [
+        "Let x = 0.272727... Then 100x = 27.2727...",
+        "100x − x = 27, so 99x = 27.",
+        "x = 27/99 = 3/11."
+      ],
+      explanation: [
+        "0.272727... = 27/99.",
+        "Simplify: GCD(27, 99) = 9. 27/99 = 3/11.",
+        "The fraction is 3/11."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert <span class="math">\frac{5}{6}</span> to a decimal. What digit repeats?',
+      answer: "3",
+      hints: [
+        "Divide 5 by 6.",
+        "5 ÷ 6 = 0.8333...",
+        "The repeating digit is 3."
+      ],
+      explanation: [
+        "5 ÷ 6 = 0.8333...",
+        "The digit 3 repeats.",
+        "The answer is 3."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Convert <span class="math">\frac{4}{9}</span> to a repeating decimal.',
+      choices: ["0.444...","0.49","0.494949...","0.4"],
+      answer: "0.444...",
+      hints: [
+        "Divide 4 by 9.",
+        "4 ÷ 9 = 0.4444...",
+        "The digit 4 repeats infinitely."
+      ],
+      explanation: [
+        "4 ÷ 9 = 0.4444...",
+        "This is a repeating decimal: 0.4̄.",
+        "The answer is 0.444..."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert <span class="math">1/3</span> to a decimal.',
+      choices: ["0.333...", "0.3", "0.33", "0.13"],
+      answer: "0.333...",
+      hints: [
+        "Divide 1 by 3.",
+        "1 ÷ 3 = 0.3333... (the 3 repeats forever).",
+        "This is a repeating decimal."
+      ],
+      explanation: [
+        "1 ÷ 3 = <strong>0.333...</strong> (repeating).",
+        "The bar notation is 0.3̄."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Convert <span class="math">5/6</span> to a decimal rounded to the nearest hundredth.',
+      answer: "0.83",
+      hints: [
+        "Divide 5 by 6: 5 ÷ 6 = 0.8333...",
+        "The decimal repeats: 0.8333...",
+        "Rounded to nearest hundredth: 0.83."
+      ],
+      explanation: [
+        "5 ÷ 6 = 0.8333... (repeating).",
+        "Rounded to the nearest hundredth: <strong>0.83</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which fraction produces a repeating decimal?',
+      choices: ["5/11", "3/8", "1/4", "7/16"],
+      answer: "5/11",
+      hints: [
+        "A fraction produces a terminating decimal only if the denominator (in lowest terms) has only factors of 2 and 5.",
+        "8 = 2³ ✓, 4 = 2² ✓, 16 = 2⁴ ✓.",
+        "11 is prime and not 2 or 5, so 5/11 repeats."
+      ],
+      explanation: [
+        "Denominators with only factors of 2 and 5 give terminating decimals.",
+        "<strong>5/11</strong> repeats because 11 has no factors of 2 or 5."
+      ]
     }
   ],
 
@@ -10442,6 +17119,235 @@ EXTRA_QUESTIONS[5] = [
         "0.75 × 8 = 6.00.",
         "Eight stickers cost $6.00.",
         "75 cents × 8 = 600 cents = $6.00."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A book costs $14.75 and a pen costs $3.49. How much do they cost together?',
+      answer: "18.24",
+      hints: [
+        "Add the two prices: 14.75 + 3.49.",
+        "Line up decimal points and add.",
+        "14.75 + 3.49 = 18.24."
+      ],
+      explanation: [
+        "14.75 + 3.49 = 18.24.",
+        "The total cost is $18.24."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'You buy 3 bags of apples at $2.65 each. How much change do you get from $10?',
+      choices: ["$2.05", "$2.15", "$1.95", "$7.95"],
+      answer: "$2.05",
+      hints: [
+        "Total cost: 3 × $2.65.",
+        "3 × 2.65 = $7.95.",
+        "Change: $10.00 - $7.95 = $2.05."
+      ],
+      explanation: [
+        "3 × $2.65 = $7.95.",
+        "Change: $10.00 - $7.95 = $2.05."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A ribbon is 5.4 meters long. If you cut it into pieces that are 0.45 meters each, how many pieces do you get?',
+      answer: "12",
+      hints: [
+        "Divide: 5.4 ÷ 0.45.",
+        "Multiply both by 100: 540 ÷ 45.",
+        "540 ÷ 45 = 12."
+      ],
+      explanation: [
+        "5.4 ÷ 0.45 = 540 ÷ 45 = 12.",
+        "You get 12 pieces."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A notebook costs <span class="math">$3.45</span> and a pen costs <span class="math">$1.78</span>. What is the total cost?',
+      answer: "5.23",
+      hints: [
+        "Add the two prices: 3.45 + 1.78.",
+        "5 + 8 = 13, write 3 carry 1. 4 + 7 + 1 = 12, write 2 carry 1.",
+        "3 + 1 + 1 = 5. Total: $5.23."
+      ],
+      explanation: [
+        "3.45 + 1.78 = 5.23.",
+        "Line up the decimals and add column by column.",
+        "The total cost is $5.23."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Sarah buys 3 items at <span class="math">$2.65</span> each. How much does she spend?',
+      choices: ["$7.95", "$7.85", "$8.05", "$6.95"],
+      answer: "$7.95",
+      hints: [
+        "Multiply: 3 × 2.65.",
+        "3 × 265 = 795.",
+        "Place decimal: $7.95."
+      ],
+      explanation: [
+        "3 × 2.65 = 7.95.",
+        "Multiply as whole numbers, then place the decimal.",
+        "Sarah spends $7.95."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A rope is <span class="math">4.5</span> meters long. It is cut into pieces of <span class="math">0.75</span> meter each. How many pieces?',
+      choices: ["6", "5", "7", "4"],
+      answer: "6",
+      hints: [
+        "Divide: 4.5 ÷ 0.75.",
+        "Multiply both by 100: 450 ÷ 75.",
+        "450 ÷ 75 = 6."
+      ],
+      explanation: [
+        "4.5 ÷ 0.75 = 450 ÷ 75 = 6.",
+        "6 pieces can be cut.",
+        "The answer is 6."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A box weighs <span class="math">3.75</span> kg. A second box weighs <span class="math">2.48</span> kg. What is their combined weight?',
+      answer: "6.23",
+      hints: [
+        "Add the two weights: 3.75 + 2.48.",
+        "Hundredths: 5 + 8 = 13 → write 3, carry 1.",
+        "Tenths: 7 + 4 + 1 = 12 → write 2, carry 1. Ones: 3 + 2 + 1 = 6."
+      ],
+      explanation: [
+        "3.75 + 2.48 = 6.23.",
+        "The combined weight is 6.23 kg.",
+        "Line up decimal points and add column by column."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Juice costs <span class="math">$2.35</span> per bottle. How much do 7 bottles cost?',
+      choices: ["$16.45", "$16.35", "$14.45", "$15.45"],
+      answer: "$16.45",
+      hints: [
+        "Multiply: 2.35 × 7.",
+        "235 × 7 = 1645. Place decimal 2 places: 16.45.",
+        "The cost is $16.45."
+      ],
+      explanation: [
+        "2.35 × 7 = 16.45.",
+        "The total cost is $16.45.",
+        "Multiply as whole numbers, then place the decimal."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A wire is <span class="math">19.2</span> meters long. It is cut into 8 equal pieces. How long is each piece?',
+      choices: ["2.4 m", "2.04 m", "24 m", "2.5 m"],
+      answer: "2.4 m",
+      hints: [
+        "Divide: 19.2 ÷ 8.",
+        "192 ÷ 8 = 24. Place decimal: 2.4.",
+        "Each piece is 2.4 meters."
+      ],
+      explanation: [
+        "19.2 ÷ 8 = 2.4.",
+        "Each piece is 2.4 meters long.",
+        "Check: 8 × 2.4 = 19.2 ✓."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A book costs <span class="math">$12.75</span>. If you pay with a <span class="math">$20</span> bill, how much change do you get?',
+      answer: "7.25",
+      hints: [
+        "Subtract: 20.00 − 12.75.",
+        "Borrow: 20.00 − 12.75 = 7.25.",
+        "Your change is $7.25."
+      ],
+      explanation: [
+        "20.00 − 12.75 = 7.25.",
+        "You get $7.25 in change.",
+        "Always line up the decimal points when subtracting."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A ribbon costs <span class="math">$3.45</span> per meter. What is the cost of <span class="math">4</span> meters?',
+      choices: ["$13.80","$12.80","$7.45","$34.50"],
+      answer: "$13.80",
+      hints: [
+        "Multiply: 3.45 × 4.",
+        "345 × 4 = 1380. Two decimal places: $13.80.",
+        "The cost is $13.80."
+      ],
+      explanation: [
+        "3.45 × 4 = 13.80.",
+        "The cost of 4 meters is $13.80.",
+        "Multiply then place the decimal."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Three friends split a bill of <span class="math">$27.60</span> equally. How much does each person pay?',
+      choices: ["$9.20","$9.00","$8.20","$9.87"],
+      answer: "$9.20",
+      hints: [
+        "Divide: 27.60 ÷ 3.",
+        "27.60 ÷ 3 = 9.20.",
+        "Each person pays $9.20."
+      ],
+      explanation: [
+        "27.60 ÷ 3 = 9.20.",
+        "Each person pays $9.20.",
+        "The answer is $9.20."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'You buy a book for $12.49 and a pen for $3.75. How much change do you get from $20?',
+      answer: "3.76",
+      hints: [
+        "First find the total: 12.49 + 3.75 = 16.24.",
+        "Then subtract from 20: 20.00 − 16.24.",
+        "20.00 − 16.24 = 3.76."
+      ],
+      explanation: [
+        "Total: 12.49 + 3.75 = 16.24.",
+        "Change: 20.00 − 16.24 = <strong>$3.76</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Gas costs $3.45 per gallon. How much do 6.2 gallons cost?',
+      choices: ["$21.39", "$21.40", "$20.70", "$21.93"],
+      answer: "$21.39",
+      hints: [
+        "Multiply: 3.45 × 6.2.",
+        "345 × 62 = 21390. Three decimal places total.",
+        "21.390 = $21.39."
+      ],
+      explanation: [
+        "3.45 × 6.2 = <strong>$21.39</strong>.",
+        "Multiply as whole numbers then place the decimal."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A runner completes a 5K in 23.45 minutes on Monday and 22.78 minutes on Wednesday. How much faster was Wednesday?',
+      answer: "0.67",
+      hints: [
+        "Subtract: 23.45 − 22.78.",
+        "Ones: borrow, 15 − 8 = 7 (hundredths). 13 − 7 = 6 (tenths).",
+        "23.45 − 22.78 = 0.67."
+      ],
+      explanation: [
+        "23.45 − 22.78 = <strong>0.67</strong> minutes faster.",
+        "Line up decimals and subtract carefully."
       ]
     }
   ],
@@ -10788,6 +17694,237 @@ EXTRA_QUESTIONS[5] = [
         "0.06 = 6/100, 0.0006 = 6/10000.",
         "6/100 ÷ 6/10000 = 10000/100 = 100.",
         "It is 100 times greater."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'In the number <span class="math">7.2493</span>, the digit 9 is in which place?',
+      choices: ["Thousandths", "Hundredths", "Ten-thousandths", "Tenths"],
+      answer: "Thousandths",
+      hints: [
+        "After the decimal: 2 is tenths, 4 is hundredths, 9 is thousandths, 3 is ten-thousandths.",
+        "Count the positions after the decimal point.",
+        "The third position is thousandths."
+      ],
+      explanation: [
+        "7.2493: 2=tenths, 4=hundredths, 9=thousandths, 3=ten-thousandths.",
+        "The digit 9 is in the thousandths place."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 4,
+      question: 'How many times greater is the 3 in <span class="math">3.045</span> than the 3 in <span class="math">0.0003</span>?',
+      answer: "10000",
+      hints: [
+        "In 3.045, the 3 is in the ones place (value = 3).",
+        "In 0.0003, the 3 is in the ten-thousandths place (value = 0.0003).",
+        "3 ÷ 0.0003 = 10,000."
+      ],
+      explanation: [
+        "3 (ones) ÷ 0.0003 (ten-thousandths) = 3/0.0003 = 10000.",
+        "The 3 in 3.045 is 10,000 times greater."
+      ]
+    },
+    {
+      type: "mc", difficulty: 4,
+      question: 'Which number has a 5 in the hundred-thousandths place?',
+      choices: ["0.00005", "0.0005", "0.005", "0.50000"],
+      answer: "0.00005",
+      hints: [
+        "Count decimal places: tenths, hundredths, thousandths, ten-thousandths, hundred-thousandths.",
+        "The fifth decimal place is hundred-thousandths.",
+        "0.00005 has 5 in the fifth decimal place."
+      ],
+      explanation: [
+        "Hundred-thousandths = 5th decimal place.",
+        "0.00005 = 5 hundred-thousandths. The 5 is in the correct place."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'In the number <span class="math">5.2847</span>, what is the value of the digit 4?',
+      choices: ["4 thousandths", "4 hundredths", "4 tenths", "4 ten-thousandths"],
+      answer: "4 thousandths",
+      hints: [
+        "Count decimal places: 2 is tenths, 8 is hundredths, 4 is thousandths.",
+        "The third decimal place is thousandths.",
+        "So the 4 represents 4 thousandths (0.004)."
+      ],
+      explanation: [
+        "In 5.2847: 2=tenths, 8=hundredths, 4=thousandths, 7=ten-thousandths.",
+        "The digit 4 is in the thousandths place.",
+        "Its value is 4 thousandths or 0.004."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 4,
+      question: 'What is <span class="math">0.006</span> written as a fraction? Give the denominator.',
+      answer: "1000",
+      hints: [
+        "0.006 has the 6 in the thousandths place.",
+        "So 0.006 = 6/1000.",
+        "The denominator is 1000."
+      ],
+      explanation: [
+        "0.006 = 6/1000.",
+        "Three decimal places means thousandths.",
+        "The denominator is 1000."
+      ]
+    },
+    {
+      type: "mc", difficulty: 4,
+      question: 'Which number has 7 in the ten-thousandths place?',
+      choices: ["3.0527", "3.5072", "3.5270", "3.7052"],
+      answer: "3.0527",
+      hints: [
+        "Count decimal places: 1st=tenths, 2nd=hundredths, 3rd=thousandths, 4th=ten-thousandths.",
+        "Check 3.0527: 0=tenths, 5=hundredths, 2=thousandths, 7=ten-thousandths.",
+        "Yes, 7 is in the ten-thousandths place."
+      ],
+      explanation: [
+        "In 3.0527: 0=tenths, 5=hundredths, 2=thousandths, 7=ten-thousandths.",
+        "The digit 7 is in the 4th decimal place (ten-thousandths).",
+        "The answer is 3.0527."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'In the number <span class="math">6.3041</span>, what is the value of the digit 4?',
+      choices: ["0.004", "0.04", "0.4", "0.0004"],
+      answer: "0.004",
+      hints: [
+        "Count decimal places: 3=tenths, 0=hundredths, 4=thousandths.",
+        "The digit 4 is in the thousandths place.",
+        "Its value is 4 × 0.001 = 0.004."
+      ],
+      explanation: [
+        "In 6.3041: 3=tenths, 0=hundredths, 4=thousandths, 1=ten-thousandths.",
+        "The digit 4 is in the thousandths place.",
+        "Its value is 0.004."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 4,
+      question: 'How many times greater is the 8 in <span class="math">0.08</span> than the 8 in <span class="math">0.0008</span>?',
+      answer: "100",
+      hints: [
+        "The 8 in 0.08 is in the hundredths place: value = 0.08.",
+        "The 8 in 0.0008 is in the ten-thousandths place: value = 0.0008.",
+        "0.08 ÷ 0.0008 = 100."
+      ],
+      explanation: [
+        "0.08 ÷ 0.0008 = 100.",
+        "The 8 in 0.08 is 100 times greater than the 8 in 0.0008.",
+        "Each place to the left is 10× greater, and it is 2 places apart: 10 × 10 = 100."
+      ]
+    },
+    {
+      type: "mc", difficulty: 4,
+      question: 'Write <span class="math">8 tenths + 2 thousandths + 5 ten-thousandths</span> as a decimal.',
+      choices: ["0.8025", "0.825", "0.0825", "0.80025"],
+      answer: "0.8025",
+      hints: [
+        "8 tenths = 0.8, 2 thousandths = 0.002, 5 ten-thousandths = 0.0005.",
+        "Add them: 0.8 + 0.002 + 0.0005.",
+        "The result is 0.8025."
+      ],
+      explanation: [
+        "8 tenths = 0.8, 0 hundredths, 2 thousandths = 0.002, 5 ten-thousandths = 0.0005.",
+        "Sum: 0.8 + 0.002 + 0.0005 = 0.8025.",
+        "Place each digit in the correct position."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 4,
+      question: 'In the number <span class="math">8.50267</span>, what digit is in the ten-thousandths place?',
+      choices: ["6","2","7","5"],
+      answer: "6",
+      hints: [
+        "Count places after decimal: 5 (tenths), 0 (hundredths), 2 (thousandths), 6 (ten-thousandths).",
+        "The fourth decimal place is ten-thousandths.",
+        "The digit is 6."
+      ],
+      explanation: [
+        "8.50267: 5=tenths, 0=hundredths, 2=thousandths, 6=ten-thousandths, 7=hundred-thousandths.",
+        "The ten-thousandths digit is 6.",
+        "Count carefully from the decimal point."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Write <span class="math">2 tenths + 9 thousandths</span> as a decimal.',
+      answer: "0.209",
+      hints: [
+        "2 tenths = 0.2.",
+        "9 thousandths = 0.009.",
+        "Add them: 0.2 + 0.009 = 0.209."
+      ],
+      explanation: [
+        "0.2 + 0.009 = 0.209.",
+        "The hundredths place is 0 (no hundredths given).",
+        "Answer: 0.209."
+      ]
+    },
+    {
+      type: "mc", difficulty: 4,
+      question: 'How many times greater is the 9 in <span class="math">0.09</span> than the 9 in <span class="math">0.0009</span>?',
+      choices: ["100 times","10 times","1000 times","9 times"],
+      answer: "100 times",
+      hints: [
+        "0.09 = 9 hundredths. 0.0009 = 9 ten-thousandths.",
+        "One hundredth is 100 times one ten-thousandth.",
+        "So the 9 in 0.09 is 100 times greater."
+      ],
+      explanation: [
+        "0.09 = 9/100, 0.0009 = 9/10000.",
+        "9/100 ÷ 9/10000 = 10000/100 = 100.",
+        "It is 100 times greater."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is the value of the 7 in <span class="math">3.078</span>?',
+      choices: ["7 hundredths", "7 tenths", "7 thousandths", "7 ones"],
+      answer: "7 hundredths",
+      hints: [
+        "In 3.078: 0 is in the tenths place, 7 is in the hundredths place.",
+        "The hundredths place is the second digit after the decimal.",
+        "The 7 represents 7 hundredths = 0.07."
+      ],
+      explanation: [
+        "3.078: 0=tenths, 7=hundredths, 8=thousandths.",
+        "The 7 is worth <strong>7 hundredths</strong> (0.07)."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'In the number <span class="math">6.4029</span>, what digit is in the thousandths place?',
+      answer: "2",
+      hints: [
+        "Count places after the decimal: 4 (tenths), 0 (hundredths), 2 (thousandths).",
+        "The thousandths place is the third digit after the decimal.",
+        "The digit is 2."
+      ],
+      explanation: [
+        "6.4029: 4=tenths, 0=hundredths, 2=thousandths, 9=ten-thousandths.",
+        "The thousandths digit is <strong>2</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'How many times greater is the 4 in <span class="math">0.4</span> than the 4 in <span class="math">0.04</span>?',
+      choices: ["10 times", "100 times", "4 times", "2 times"],
+      answer: "10 times",
+      hints: [
+        "0.4 = 4 tenths. 0.04 = 4 hundredths.",
+        "One tenth is 10 times one hundredth.",
+        "So the 4 in 0.4 is 10 times the 4 in 0.04."
+      ],
+      explanation: [
+        "0.4 = 4/10, 0.04 = 4/100.",
+        "4/10 ÷ 4/100 = 100/10 = <strong>10 times</strong> greater."
       ]
     }
   ]

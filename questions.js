@@ -738,6 +738,317 @@ const WORLDS = [
             "So a² + b² = (a + b)² − 2ab",
             "= 100 − 42 = <strong>58</strong>"
           ]
+        },
+        // ── 20 additional boss questions ──
+        {
+          type: "numeric", difficulty: 3,
+          question: 'Compute <span class="math">8 × 125</span> mentally.',
+          answer: "1000",
+          hints: [
+            "Notice that 8 × 125 is a well-known product.",
+            "Think: 8 = 2³ and 125 = 5³, so 8 × 125 = (2 × 5)³",
+            "= 10³ = 1000"
+          ],
+          explanation: [
+            "8 × 125 = 2³ × 5³ = (2 × 5)³",
+            "= 10³",
+            "= <strong>1000</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'Which is larger: <span class="math">49 × 51</span> or <span class="math">50 × 50</span>?',
+          choices: ["49 × 51", "50 × 50", "They are equal", "Cannot determine"],
+          answer: "50 × 50",
+          hints: [
+            "Both center around 50. Use the difference of squares.",
+            "49 × 51 = (50 − 1)(50 + 1) = 2500 − 1 = 2499",
+            "50 × 50 = 2500"
+          ],
+          explanation: [
+            "49 × 51 = (50 − 1)(50 + 1) = 50² − 1² = 2500 − 1 = 2499",
+            "50 × 50 = 2500",
+            "<strong>50 × 50 = 2500</strong> is larger by 1"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 3,
+          question: 'Compute <span class="math">25 × 32</span> mentally.',
+          answer: "800",
+          hints: [
+            "Break 32 into 4 × 8.",
+            "25 × 32 = 25 × 4 × 8 = 100 × 8",
+            "= 800"
+          ],
+          explanation: [
+            "25 × 32 = 25 × (4 × 8)",
+            "= (25 × 4) × 8 = 100 × 8",
+            "= <strong>800</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'Compute <span class="math">73 × 99 + 73</span>.',
+          choices: ["7200", "7300", "7400", "7373"],
+          answer: "7300",
+          hints: [
+            "Factor out 73: 73 × 99 + 73 × 1 = 73 × (99 + 1)",
+            "73 × 100 = 7300",
+            "The distributive property saves the day!"
+          ],
+          explanation: [
+            "73 × 99 + 73 = 73 × 99 + 73 × 1",
+            "= 73 × (99 + 1) = 73 × 100",
+            "= <strong>7300</strong>"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 4,
+          question: 'Compute <span class="math">1 + 2 + 3 + ... + 100</span>.',
+          answer: "5050",
+          hints: [
+            "Pair numbers: 1 + 100 = 101, 2 + 99 = 101, ...",
+            "There are 50 such pairs.",
+            "50 × 101 = 5050"
+          ],
+          explanation: [
+            "Gauss's trick: pair 1+100 = 101, 2+99 = 101, ..., 50+51 = 101",
+            "50 pairs × 101 = 5050",
+            "Or: n(n+1)/2 = 100 × 101 / 2 = <strong>5050</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 3,
+          question: 'What is <span class="math">5 × 997</span>?',
+          choices: ["4985", "4975", "4995", "4965"],
+          answer: "4985",
+          hints: [
+            "997 = 1000 − 3",
+            "5 × 997 = 5 × (1000 − 3) = 5000 − 15",
+            "= 4985"
+          ],
+          explanation: [
+            "5 × 997 = 5 × (1000 − 3)",
+            "= 5000 − 15",
+            "= <strong>4985</strong>"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 3,
+          question: 'Compute <span class="math">16 × 25</span> mentally.',
+          answer: "400",
+          hints: [
+            "16 = 4 × 4, so 16 × 25 = 4 × (4 × 25)",
+            "4 × 25 = 100",
+            "4 × 100 = 400"
+          ],
+          explanation: [
+            "16 × 25 = 4 × (4 × 25)",
+            "= 4 × 100",
+            "= <strong>400</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'If <span class="math">a ⊕ b = 2a + 3b</span>, what is <span class="math">(1 ⊕ 2) ⊕ 3</span>?',
+          choices: ["25", "23", "19", "21"],
+          answer: "25",
+          hints: [
+            "First compute 1 ⊕ 2 = 2(1) + 3(2) = 2 + 6 = 8",
+            "Then compute 8 ⊕ 3 = 2(8) + 3(3) = 16 + 9",
+            "= 25"
+          ],
+          explanation: [
+            "1 ⊕ 2 = 2(1) + 3(2) = 2 + 6 = 8",
+            "8 ⊕ 3 = 2(8) + 3(3) = 16 + 9",
+            "= <strong>25</strong>"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 4,
+          question: 'What is the last digit of <span class="math">13 × 17 × 19</span>?',
+          answer: "9",
+          hints: [
+            "You only need to track the units digits: 3 × 7 × 9",
+            "3 × 7 = 21 → units digit 1",
+            "1 × 9 = 9 → units digit 9"
+          ],
+          explanation: [
+            "Track only units digits: 3 × 7 = 21 (units digit 1)",
+            "Then 1 × 9 = 9",
+            "The last digit is <strong>9</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 3,
+          question: 'Which expression equals <span class="math">7 × 48 + 7 × 52</span>?',
+          choices: ["7 × 100 = 700", "7 × 96 = 672", "14 × 100 = 1400", "7 × 104 = 728"],
+          answer: "7 × 100 = 700",
+          hints: [
+            "Both terms share the factor 7.",
+            "Factor: 7 × (48 + 52) = 7 × 100",
+            "= 700"
+          ],
+          explanation: [
+            "7 × 48 + 7 × 52 = 7 × (48 + 52)",
+            "= 7 × 100",
+            "= <strong>700</strong>"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 4,
+          question: 'Compute <span class="math">37 × 3 + 37 × 5 + 37 × 2</span>.',
+          answer: "370",
+          hints: [
+            "Every term has a factor of 37.",
+            "37 × (3 + 5 + 2) = 37 × 10",
+            "= 370"
+          ],
+          explanation: [
+            "37 × 3 + 37 × 5 + 37 × 2 = 37 × (3 + 5 + 2)",
+            "= 37 × 10",
+            "= <strong>370</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'Compute <span class="math">101²</span> using the identity <span class="math">(a + b)² = a² + 2ab + b²</span>.',
+          choices: ["10201", "10200", "10001", "10101"],
+          answer: "10201",
+          hints: [
+            "Write 101 = 100 + 1.",
+            "(100 + 1)² = 100² + 2(100)(1) + 1² = 10000 + 200 + 1",
+            "= 10201"
+          ],
+          explanation: [
+            "101² = (100 + 1)² = 100² + 2(100)(1) + 1²",
+            "= 10000 + 200 + 1",
+            "= <strong>10201</strong>"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 3,
+          question: 'Compute <span class="math">75 × 12</span> mentally.',
+          answer: "900",
+          hints: [
+            "75 × 12 = 75 × 4 × 3",
+            "75 × 4 = 300",
+            "300 × 3 = 900"
+          ],
+          explanation: [
+            "75 × 12 = 75 × (4 × 3)",
+            "= (75 × 4) × 3 = 300 × 3",
+            "= <strong>900</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 3,
+          question: 'Compute <span class="math">64 × 5</span> quickly.',
+          choices: ["300", "310", "320", "330"],
+          answer: "320",
+          hints: [
+            "Multiplying by 5 is the same as multiplying by 10 and dividing by 2.",
+            "64 × 10 = 640, then 640 ÷ 2 = 320",
+            "Or: 64 × 5 = 60 × 5 + 4 × 5 = 300 + 20 = 320"
+          ],
+          explanation: [
+            "64 × 5 = 64 × 10 ÷ 2 = 640 ÷ 2",
+            "= <strong>320</strong>",
+            "Tip: Multiplying by 5 = multiply by 10, then halve."
+          ]
+        },
+        {
+          type: "numeric", difficulty: 4,
+          question: 'If <span class="math">a − b = 4</span> and <span class="math">a + b = 12</span>, what is <span class="math">a × b</span>?',
+          answer: "32",
+          hints: [
+            "Add the two equations: 2a = 16, so a = 8.",
+            "Then b = 12 − 8 = 4.",
+            "a × b = 8 × 4 = 32"
+          ],
+          explanation: [
+            "a + b = 12 and a − b = 4. Add them: 2a = 16, so a = 8.",
+            "Then b = 12 − 8 = 4.",
+            "a × b = 8 × 4 = <strong>32</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'What is <span class="math">99²</span>?',
+          choices: ["9801", "9901", "9800", "9810"],
+          answer: "9801",
+          hints: [
+            "99 = 100 − 1, so 99² = (100 − 1)²",
+            "(100 − 1)² = 100² − 2(100)(1) + 1² = 10000 − 200 + 1",
+            "= 9801"
+          ],
+          explanation: [
+            "99² = (100 − 1)² = 100² − 2(100)(1) + 1²",
+            "= 10000 − 200 + 1",
+            "= <strong>9801</strong>"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 3,
+          question: 'Compute <span class="math">250 × 40</span> mentally.',
+          answer: "10000",
+          hints: [
+            "250 × 40 = 250 × 4 × 10",
+            "250 × 4 = 1000",
+            "1000 × 10 = 10000"
+          ],
+          explanation: [
+            "250 × 40 = (250 × 4) × 10",
+            "= 1000 × 10",
+            "= <strong>10000</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'Which is larger: <span class="math">29 × 31</span> or <span class="math">30²</span>?',
+          choices: ["29 × 31", "30²", "They are equal", "Cannot determine"],
+          answer: "30²",
+          hints: [
+            "29 × 31 = (30 − 1)(30 + 1) = 30² − 1² = 900 − 1",
+            "30² = 900",
+            "900 > 899"
+          ],
+          explanation: [
+            "29 × 31 = (30 − 1)(30 + 1) = 900 − 1 = 899",
+            "30² = 900",
+            "<strong>30² = 900</strong> is larger. The product (a−d)(a+d) = a² − d² is always less than a²."
+          ]
+        },
+        {
+          type: "numeric", difficulty: 4,
+          question: 'Compute <span class="math">2 + 4 + 6 + ... + 40</span> (sum of even numbers from 2 to 40).',
+          answer: "420",
+          hints: [
+            "Factor out 2: 2(1 + 2 + 3 + ... + 20)",
+            "1 + 2 + ... + 20 = 20 × 21 / 2 = 210",
+            "2 × 210 = 420"
+          ],
+          explanation: [
+            "2 + 4 + 6 + ... + 40 = 2(1 + 2 + 3 + ... + 20)",
+            "= 2 × (20 × 21 / 2) = 2 × 210",
+            "= <strong>420</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 3,
+          question: 'Compute <span class="math">48 × 25</span>.',
+          choices: ["1100", "1150", "1200", "1250"],
+          answer: "1200",
+          hints: [
+            "48 × 25 = 12 × 4 × 25 = 12 × 100",
+            "= 1200",
+            "Or: 48 × 25 = 48 × 100 ÷ 4 = 4800 ÷ 4 = 1200"
+          ],
+          explanation: [
+            "48 × 25 = (12 × 4) × 25 = 12 × (4 × 25)",
+            "= 12 × 100",
+            "= <strong>1200</strong>"
+          ]
         }
       ]
     }
@@ -1430,6 +1741,317 @@ const WORLDS = [
             "5³ = 125",
             "<strong>2⁷ = 128</strong> is larger (just barely!)"
           ]
+        },
+        // ── 20 additional boss questions ──
+        {
+          type: "numeric", difficulty: 3,
+          question: 'What is <span class="math">2⁹</span>?',
+          answer: "512",
+          hints: [
+            "2⁹ = 2⁸ × 2 = 256 × 2",
+            "Or: 2⁹ = 2¹⁰ ÷ 2 = 1024 ÷ 2",
+            "= 512"
+          ],
+          explanation: [
+            "2⁹ = 2⁸ × 2 = 256 × 2",
+            "= <strong>512</strong>",
+            "Powers of 2: ...128, 256, 512, 1024..."
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'What is the units digit of <span class="math">7⁴</span>?',
+          choices: ["1", "3", "7", "9"],
+          answer: "1",
+          hints: [
+            "Units digits of powers of 7 cycle: 7, 9, 3, 1, 7, 9, 3, 1, ...",
+            "The cycle length is 4. Since 4 ÷ 4 = 1 remainder 0, use the 4th element.",
+            "The 4th element in the cycle is 1."
+          ],
+          explanation: [
+            "7¹ → 7, 7² → 9, 7³ → 3, 7⁴ → 1 (cycle of length 4)",
+            "Since 4 mod 4 = 0, we land on the 4th position: 1",
+            "The units digit of 7⁴ is <strong>1</strong> (7⁴ = 2401)"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 3,
+          question: 'Simplify <span class="math">5⁴ ÷ 5²</span>. Give the numerical answer.',
+          answer: "25",
+          hints: [
+            "Quotient rule: 5⁴ ÷ 5² = 5⁴⁻² = 5²",
+            "5² = 25",
+            "That's it!"
+          ],
+          explanation: [
+            "5⁴ ÷ 5² = 5⁴⁻² = 5²",
+            "= <strong>25</strong>",
+            "The quotient rule: aᵐ ÷ aⁿ = aᵐ⁻ⁿ"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'What is the units digit of <span class="math">2²⁰</span>?',
+          choices: ["2", "4", "6", "8"],
+          answer: "6",
+          hints: [
+            "Units digits of powers of 2 cycle: 2, 4, 8, 6, 2, 4, 8, 6, ...",
+            "Cycle length = 4. 20 ÷ 4 = 5 remainder 0.",
+            "Remainder 0 means the 4th position in the cycle: 6."
+          ],
+          explanation: [
+            "2¹ → 2, 2² → 4, 2³ → 8, 2⁴ → 6 (cycle: 2, 4, 8, 6)",
+            "20 mod 4 = 0, so we use the 4th position: 6",
+            "The units digit of 2²⁰ is <strong>6</strong>"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 4,
+          question: 'If <span class="math">8 = 2³</span> and <span class="math">16 = 2⁴</span>, then <span class="math">8 × 16 = 2ⁿ</span>. What is n?',
+          answer: "7",
+          hints: [
+            "Write each as a power of 2.",
+            "8 × 16 = 2³ × 2⁴ = 2³⁺⁴",
+            "= 2⁷, so n = 7"
+          ],
+          explanation: [
+            "8 = 2³, 16 = 2⁴",
+            "8 × 16 = 2³ × 2⁴ = 2⁷",
+            "n = <strong>7</strong> (and 2⁷ = 128)"
+          ]
+        },
+        {
+          type: "mc", difficulty: 3,
+          question: 'What is <span class="math">3⁵</span>?',
+          choices: ["243", "162", "81", "729"],
+          answer: "243",
+          hints: [
+            "3⁵ = 3⁴ × 3 = 81 × 3",
+            "81 × 3 = 243",
+            "Or: 3⁵ = 3² × 3³ = 9 × 27 = 243"
+          ],
+          explanation: [
+            "3⁵ = 3⁴ × 3 = 81 × 3",
+            "= <strong>243</strong>",
+            "Powers of 3: 3, 9, 27, 81, 243, 729..."
+          ]
+        },
+        {
+          type: "numeric", difficulty: 4,
+          question: 'If <span class="math">9ⁿ = 3⁶</span>, what is n?',
+          answer: "3",
+          hints: [
+            "Write 9 as a power of 3: 9 = 3²",
+            "9ⁿ = (3²)ⁿ = 3²ⁿ",
+            "3²ⁿ = 3⁶ means 2n = 6, so n = 3"
+          ],
+          explanation: [
+            "9 = 3², so 9ⁿ = (3²)ⁿ = 3²ⁿ",
+            "We need 3²ⁿ = 3⁶, so 2n = 6",
+            "n = <strong>3</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'Which is larger: <span class="math">3⁵</span> or <span class="math">5³</span>?',
+          choices: ["3⁵", "5³", "They are equal", "Cannot tell"],
+          answer: "3⁵",
+          hints: [
+            "Compute 3⁵ = 243",
+            "Compute 5³ = 125",
+            "243 > 125"
+          ],
+          explanation: [
+            "3⁵ = 243",
+            "5³ = 125",
+            "<strong>3⁵ = 243</strong> is larger than 5³ = 125"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 3,
+          question: 'Compute <span class="math">2⁴ × 3²</span>.',
+          answer: "144",
+          hints: [
+            "2⁴ = 16 and 3² = 9",
+            "16 × 9 = 144",
+            "Fun fact: 144 = 12²"
+          ],
+          explanation: [
+            "2⁴ × 3² = 16 × 9",
+            "= <strong>144</strong>",
+            "Notice that 144 = 12² (a perfect square!)"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'What is the units digit of <span class="math">9⁹</span>?',
+          choices: ["1", "3", "7", "9"],
+          answer: "9",
+          hints: [
+            "Units digits of powers of 9 cycle: 9, 1, 9, 1, ...",
+            "Odd powers of 9 end in 9; even powers end in 1.",
+            "9 is odd, so 9⁹ ends in 9."
+          ],
+          explanation: [
+            "9¹ → 9, 9² → 1, 9³ → 9, 9⁴ → 1 (cycle: 9, 1)",
+            "Odd exponent → units digit 9",
+            "The units digit of 9⁹ is <strong>9</strong>"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 4,
+          question: 'Compute <span class="math">\\frac{2⁶ \\times 3⁴}{6²}</span>.',
+          answer: "144",
+          hints: [
+            "6² = (2 × 3)² = 2² × 3²",
+            "So the fraction = 2⁶ × 3⁴ ÷ (2² × 3²) = 2⁴ × 3²",
+            "= 16 × 9 = 144"
+          ],
+          explanation: [
+            "6² = 2² × 3², so (2⁶ × 3⁴) ÷ (2² × 3²) = 2⁴ × 3²",
+            "= 16 × 9",
+            "= <strong>144</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 3,
+          question: 'If <span class="math">2ⁿ = 32</span>, what is <span class="math">2ⁿ⁺²</span>?',
+          choices: ["64", "128", "256", "34"],
+          answer: "128",
+          hints: [
+            "2ⁿ = 32 means n = 5 (since 2⁵ = 32).",
+            "2ⁿ⁺² = 2⁵⁺² = 2⁷",
+            "Or: 2ⁿ⁺² = 2ⁿ × 2² = 32 × 4 = 128"
+          ],
+          explanation: [
+            "2ⁿ⁺² = 2ⁿ × 2² = 32 × 4",
+            "= <strong>128</strong>",
+            "No need to find n first — just multiply by 2² = 4!"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 3,
+          question: 'Compute <span class="math">5⁵ ÷ 5³</span>.',
+          answer: "25",
+          hints: [
+            "Quotient rule: 5⁵ ÷ 5³ = 5⁵⁻³ = 5²",
+            "5² = 25",
+            "Done!"
+          ],
+          explanation: [
+            "5⁵ ÷ 5³ = 5⁵⁻³ = 5²",
+            "= <strong>25</strong>",
+            "Quotient rule: subtract exponents when dividing same bases."
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'What is <span class="math">4⁵</span>?',
+          choices: ["512", "1024", "2048", "256"],
+          answer: "1024",
+          hints: [
+            "4⁵ = (2²)⁵ = 2¹⁰",
+            "2¹⁰ = 1024",
+            "Or compute directly: 4, 16, 64, 256, 1024"
+          ],
+          explanation: [
+            "4⁵ = (2²)⁵ = 2¹⁰ = 1024",
+            "Or step by step: 4² = 16, 4³ = 64, 4⁴ = 256, 4⁵ = 1024",
+            "= <strong>1024</strong>"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 4,
+          question: 'If <span class="math">2ᵃ = 16</span> and <span class="math">2ᵇ = 8</span>, what is <span class="math">2ᵃ⁺ᵇ</span>?',
+          answer: "128",
+          hints: [
+            "2ᵃ = 16 means a = 4; 2ᵇ = 8 means b = 3",
+            "2ᵃ⁺ᵇ = 2⁴⁺³ = 2⁷",
+            "Or simply: 2ᵃ⁺ᵇ = 2ᵃ × 2ᵇ = 16 × 8 = 128"
+          ],
+          explanation: [
+            "2ᵃ⁺ᵇ = 2ᵃ × 2ᵇ = 16 × 8",
+            "= <strong>128</strong>",
+            "Key insight: you can multiply the values instead of finding a and b!"
+          ]
+        },
+        {
+          type: "mc", difficulty: 3,
+          question: 'How many digits does <span class="math">10⁸</span> have?',
+          choices: ["8", "9", "10", "7"],
+          answer: "9",
+          hints: [
+            "10⁸ = 100,000,000",
+            "That's a 1 followed by 8 zeros.",
+            "Count all digits: 1 + 8 zeros = 9 digits total."
+          ],
+          explanation: [
+            "10⁸ = 100,000,000",
+            "The digit '1' plus 8 zeros = 9 digits total.",
+            "10⁸ has <strong>9</strong> digits."
+          ]
+        },
+        {
+          type: "numeric", difficulty: 4,
+          question: 'What is the units digit of <span class="math">4¹⁵</span>?',
+          answer: "4",
+          hints: [
+            "Units digits of powers of 4 cycle: 4, 6, 4, 6, ...",
+            "Odd powers of 4 end in 4; even powers end in 6.",
+            "15 is odd, so the units digit is 4."
+          ],
+          explanation: [
+            "4¹ → 4, 4² → 6, 4³ → 4, 4⁴ → 6 (cycle: 4, 6)",
+            "Odd exponent → units digit 4",
+            "The units digit of 4¹⁵ is <strong>4</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'Simplify <span class="math">\\frac{8⁴}{4⁴}</span>.',
+          choices: ["2⁴ = 16", "2⁸ = 256", "4⁴ = 256", "2¹² = 4096"],
+          answer: "2⁴ = 16",
+          hints: [
+            "8⁴ ÷ 4⁴ = (8 ÷ 4)⁴ = 2⁴",
+            "This uses the rule: (a/b)ⁿ = aⁿ/bⁿ",
+            "2⁴ = 16"
+          ],
+          explanation: [
+            "8⁴ ÷ 4⁴ = (8/4)⁴ = 2⁴",
+            "= <strong>16</strong>",
+            "Rule: aⁿ ÷ bⁿ = (a ÷ b)ⁿ when the bases are divided."
+          ]
+        },
+        {
+          type: "numeric", difficulty: 3,
+          question: 'Compute <span class="math">6³</span>.',
+          answer: "216",
+          hints: [
+            "6³ = 6 × 6 × 6",
+            "6 × 6 = 36, then 36 × 6 = ?",
+            "36 × 6 = 216"
+          ],
+          explanation: [
+            "6³ = 6 × 6 × 6 = 36 × 6",
+            "= <strong>216</strong>",
+            "Also: 6³ = (2 × 3)³ = 2³ × 3³ = 8 × 27 = 216 ✓"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'If <span class="math">25ⁿ = 5⁶</span>, what is n?',
+          choices: ["2", "3", "4", "6"],
+          answer: "3",
+          hints: [
+            "Write 25 as a power of 5: 25 = 5²",
+            "25ⁿ = (5²)ⁿ = 5²ⁿ",
+            "5²ⁿ = 5⁶ means 2n = 6, so n = 3"
+          ],
+          explanation: [
+            "25 = 5², so 25ⁿ = (5²)ⁿ = 5²ⁿ",
+            "5²ⁿ = 5⁶ → 2n = 6",
+            "n = <strong>3</strong>"
+          ]
         }
       ]
     }
@@ -2072,6 +2694,317 @@ const WORLDS = [
             "GCD(8, 9) = 1 since 8 = 2³ and 9 = 3² share no prime factors.",
             "When GCD = 1: LCM = a × b = 8 × 9",
             "= <strong>72</strong>"
+          ]
+        },
+        // ── 20 additional boss questions ──
+        {
+          type: "numeric", difficulty: 3,
+          question: 'What is the GCD of <span class="math">84</span> and <span class="math">126</span>?',
+          answer: "42",
+          hints: [
+            "84 = 2² × 3 × 7 and 126 = 2 × 3² × 7",
+            "Take the minimum power of each common prime: 2¹ × 3¹ × 7¹",
+            "= 2 × 3 × 7 = 42"
+          ],
+          explanation: [
+            "84 = 2² × 3 × 7",
+            "126 = 2 × 3² × 7",
+            "GCD = 2 × 3 × 7 = <strong>42</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'How many factors does <span class="math">72</span> have?',
+          choices: ["10", "11", "12", "14"],
+          answer: "12",
+          hints: [
+            "72 = 2³ × 3²",
+            "Factor count = (3+1)(2+1) = 4 × 3",
+            "= 12"
+          ],
+          explanation: [
+            "72 = 2³ × 3²",
+            "Number of factors = (3+1)(2+1) = 4 × 3 = <strong>12</strong>",
+            "They are: 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 3,
+          question: 'What is the LCM of <span class="math">14</span> and <span class="math">21</span>?',
+          answer: "42",
+          hints: [
+            "14 = 2 × 7 and 21 = 3 × 7",
+            "LCM = take the max power of each prime: 2 × 3 × 7",
+            "= 42"
+          ],
+          explanation: [
+            "14 = 2 × 7, 21 = 3 × 7",
+            "LCM = 2 × 3 × 7",
+            "= <strong>42</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'A number has the prime factorization <span class="math">2² × 3 × 7</span>. How many factors does it have?',
+          choices: ["6", "8", "10", "12"],
+          answer: "12",
+          hints: [
+            "Use the factor counting formula.",
+            "Number of factors = (2+1)(1+1)(1+1)",
+            "= 3 × 2 × 2 = 12"
+          ],
+          explanation: [
+            "If n = 2² × 3¹ × 7¹, then",
+            "number of factors = (2+1)(1+1)(1+1) = 3 × 2 × 2",
+            "= <strong>12</strong>"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 4,
+          question: 'What is the smallest number that is divisible by both <span class="math">9</span> and <span class="math">15</span>?',
+          answer: "45",
+          hints: [
+            "We need LCM(9, 15).",
+            "9 = 3² and 15 = 3 × 5",
+            "LCM = 3² × 5 = 9 × 5 = 45"
+          ],
+          explanation: [
+            "LCM(9, 15): 9 = 3², 15 = 3 × 5",
+            "LCM = 3² × 5 = 9 × 5",
+            "= <strong>45</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 3,
+          question: 'Is <span class="math">111</span> prime?',
+          choices: ["Yes", "No — it equals 3 × 37", "No — it equals 3 × 39", "No — it equals 11 × 10 + 1"],
+          answer: "No — it equals 3 × 37",
+          hints: [
+            "Check divisibility by 3: digit sum = 1 + 1 + 1 = 3.",
+            "3 is divisible by 3, so 111 is divisible by 3.",
+            "111 ÷ 3 = 37"
+          ],
+          explanation: [
+            "Digit sum: 1 + 1 + 1 = 3, which is divisible by 3.",
+            "111 ÷ 3 = 37",
+            "<strong>111 = 3 × 37</strong> — not prime!"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 4,
+          question: 'Two numbers have GCD = 8 and LCM = 120. If one number is 24, what is the other?',
+          answer: "40",
+          hints: [
+            "Key fact: GCD(a,b) × LCM(a,b) = a × b",
+            "8 × 120 = 24 × b",
+            "960 = 24b → b = 40"
+          ],
+          explanation: [
+            "GCD × LCM = a × b",
+            "8 × 120 = 24 × b → 960 = 24b",
+            "b = <strong>40</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 3,
+          question: 'Which of these is divisible by 8?',
+          choices: ["124", "132", "144", "150"],
+          answer: "144",
+          hints: [
+            "A number is divisible by 8 if its last three digits form a number divisible by 8.",
+            "Check: 124 ÷ 8 = 15.5, 132 ÷ 8 = 16.5, 144 ÷ 8 = ?",
+            "144 ÷ 8 = 18. Yes!"
+          ],
+          explanation: [
+            "Check each: 124 ÷ 8 = 15.5 ✗, 132 ÷ 8 = 16.5 ✗",
+            "144 ÷ 8 = 18 ✓, 150 ÷ 8 = 18.75 ✗",
+            "<strong>144</strong> is divisible by 8."
+          ]
+        },
+        {
+          type: "numeric", difficulty: 4,
+          question: 'How many factors does <span class="math">100</span> have?',
+          answer: "9",
+          hints: [
+            "100 = 2² × 5²",
+            "Factor count = (2+1)(2+1) = 3 × 3",
+            "= 9"
+          ],
+          explanation: [
+            "100 = 2² × 5²",
+            "Number of factors = (2+1)(2+1) = 3 × 3 = <strong>9</strong>",
+            "They are: 1, 2, 4, 5, 10, 20, 25, 50, 100"
+          ]
+        },
+        {
+          type: "mc", difficulty: 3,
+          question: 'What is the prime factorization of <span class="math">90</span>?',
+          choices: ["2 × 3² × 5", "2² × 3 × 5", "2 × 3 × 15", "2 × 9 × 5"],
+          answer: "2 × 3² × 5",
+          hints: [
+            "90 = 2 × 45 = 2 × 9 × 5",
+            "9 = 3², so 90 = 2 × 3² × 5",
+            "All factors 2, 3, 5 are prime. ✓"
+          ],
+          explanation: [
+            "90 = 2 × 45 = 2 × 9 × 5 = 2 × 3² × 5",
+            "The prime factorization is <strong>2 × 3² × 5</strong>.",
+            "Check: 2 × 9 × 5 = 90 ✓"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 4,
+          question: 'What is the GCD of <span class="math">120</span> and <span class="math">168</span>?',
+          answer: "24",
+          hints: [
+            "120 = 2³ × 3 × 5 and 168 = 2³ × 3 × 7",
+            "Common primes: 2 and 3.",
+            "GCD = 2³ × 3 = 8 × 3 = 24"
+          ],
+          explanation: [
+            "120 = 2³ × 3 × 5",
+            "168 = 2³ × 3 × 7",
+            "GCD = 2³ × 3 = <strong>24</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'What is the LCM of <span class="math">6</span>, <span class="math">10</span>, and <span class="math">15</span>?',
+          choices: ["30", "60", "90", "120"],
+          answer: "30",
+          hints: [
+            "6 = 2 × 3, 10 = 2 × 5, 15 = 3 × 5",
+            "LCM = max power of each prime: 2¹ × 3¹ × 5¹",
+            "= 2 × 3 × 5 = 30"
+          ],
+          explanation: [
+            "6 = 2 × 3, 10 = 2 × 5, 15 = 3 × 5",
+            "LCM = 2 × 3 × 5",
+            "= <strong>30</strong>"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 3,
+          question: 'Is <span class="math">143</span> prime? If not, give its smallest prime factor.',
+          answer: "11",
+          hints: [
+            "Check small primes: 143 is odd (not 2), digit sum = 8 (not divisible by 3), doesn't end in 0 or 5 (not 5).",
+            "Try 7: 143 ÷ 7 ≈ 20.4 (no). Try 11: 143 ÷ 11 = 13. Yes!",
+            "143 = 11 × 13"
+          ],
+          explanation: [
+            "143 ÷ 11 = 13",
+            "143 = 11 × 13",
+            "The smallest prime factor is <strong>11</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'If a number has exactly 2 factors, what can you say about it?',
+          choices: ["It is composite", "It is prime", "It is a perfect square", "It must be even"],
+          answer: "It is prime",
+          hints: [
+            "Every positive integer has at least the factors 1 and itself.",
+            "If there are EXACTLY 2 factors, the only factors are 1 and itself.",
+            "That is the definition of a prime number!"
+          ],
+          explanation: [
+            "A number with exactly 2 factors has only 1 and itself as factors.",
+            "This is the definition of a <strong>prime</strong> number.",
+            "Examples: 2 (factors: 1,2), 7 (factors: 1,7), 13 (factors: 1,13)"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 4,
+          question: 'How many prime numbers are there between 30 and 50?',
+          answer: "5",
+          hints: [
+            "Check each odd number from 31 to 49.",
+            "31: prime, 33 = 3×11, 35 = 5×7, 37: prime, 39 = 3×13, 41: prime, 43: prime, 45 = 5×9, 47: prime, 49 = 7²",
+            "Primes: 31, 37, 41, 43, 47 — that's 5."
+          ],
+          explanation: [
+            "Checking 31–49: 31 ✓, 37 ✓, 41 ✓, 43 ✓, 47 ✓",
+            "Non-primes: 32,33,34,35,36,38,39,40,42,44,45,46,48,49",
+            "There are <strong>5</strong> primes between 30 and 50."
+          ]
+        },
+        {
+          type: "mc", difficulty: 3,
+          question: 'What is the GCD of <span class="math">36</span> and <span class="math">54</span>?',
+          choices: ["6", "9", "12", "18"],
+          answer: "18",
+          hints: [
+            "36 = 2² × 3² and 54 = 2 × 3³",
+            "GCD = 2^min(2,1) × 3^min(2,3) = 2 × 9",
+            "= 18"
+          ],
+          explanation: [
+            "36 = 2² × 3², 54 = 2 × 3³",
+            "GCD = 2¹ × 3² = 2 × 9",
+            "= <strong>18</strong>"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 4,
+          question: 'What is the LCM of <span class="math">16</span> and <span class="math">24</span>?',
+          answer: "48",
+          hints: [
+            "16 = 2⁴ and 24 = 2³ × 3",
+            "LCM = 2⁴ × 3 = 16 × 3",
+            "= 48"
+          ],
+          explanation: [
+            "16 = 2⁴, 24 = 2³ × 3",
+            "LCM = 2^max(4,3) × 3^max(0,1) = 2⁴ × 3",
+            "= 16 × 3 = <strong>48</strong>"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'The product of two primes is <span class="math">91</span>. What are they?',
+          choices: ["3 and 29", "7 and 13", "11 and 9", "7 and 11"],
+          answer: "7 and 13",
+          hints: [
+            "91 is odd, so 2 is not a factor. Check small primes.",
+            "91 ÷ 7 = 13. Both 7 and 13 are prime!",
+            "91 = 7 × 13"
+          ],
+          explanation: [
+            "91 ÷ 7 = 13",
+            "Both 7 and 13 are prime.",
+            "91 = <strong>7 × 13</strong>"
+          ]
+        },
+        {
+          type: "numeric", difficulty: 3,
+          question: 'How many factors does <span class="math">48</span> have?',
+          answer: "10",
+          hints: [
+            "48 = 2⁴ × 3",
+            "Factor count = (4+1)(1+1) = 5 × 2",
+            "= 10"
+          ],
+          explanation: [
+            "48 = 2⁴ × 3¹",
+            "Number of factors = (4+1)(1+1) = 5 × 2 = <strong>10</strong>",
+            "They are: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48"
+          ]
+        },
+        {
+          type: "mc", difficulty: 4,
+          question: 'Three friends visit a library. Alex visits every <span class="math">4</span> days, Blake every <span class="math">6</span> days, and Casey every <span class="math">9</span> days. If they all go today, in how many days will they all meet again?',
+          choices: ["18", "36", "72", "108"],
+          answer: "36",
+          hints: [
+            "We need LCM(4, 6, 9).",
+            "4 = 2², 6 = 2 × 3, 9 = 3²",
+            "LCM = 2² × 3² = 4 × 9 = 36"
+          ],
+          explanation: [
+            "LCM(4, 6, 9): 4 = 2², 6 = 2 × 3, 9 = 3²",
+            "LCM = 2² × 3² = 4 × 9",
+            "They all meet again in <strong>36</strong> days."
           ]
         }
       ]

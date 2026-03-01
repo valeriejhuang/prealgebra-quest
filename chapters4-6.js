@@ -620,6 +620,317 @@ WORLDS[3] = {
           "= 7/20",
           "Numerator is <strong>7</strong>."
         ]
+      },
+      // ── 20 additional boss questions ──
+      {
+        type: "numeric", difficulty: 3,
+        question: 'What is <span class="math">7/8 − 2/5</span>? Give the numerator when written over the LCD.',
+        answer: "19",
+        hints: [
+          "LCD of 8 and 5 is 40.",
+          "7/8 = 35/40 and 2/5 = 16/40.",
+          "35/40 − 16/40 = 19/40."
+        ],
+        explanation: [
+          "LCD = 40",
+          "7/8 − 2/5 = 35/40 − 16/40 = 19/40",
+          "Numerator is <strong>19</strong>."
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'What is <span class="math">3/7 \\times 14/9</span> in simplest form?',
+        choices: ["2/3", "6/7", "42/63", "14/21"],
+        answer: "2/3",
+        hints: [
+          "Multiply: (3 × 14)/(7 × 9) = 42/63.",
+          "Cancel before multiplying: 3 and 9 share factor 3; 14 and 7 share factor 7.",
+          "= (1 × 2)/(1 × 3) = 2/3."
+        ],
+        explanation: [
+          "3/7 × 14/9 — cancel: 3/9 = 1/3, 14/7 = 2",
+          "= 1/3 × 2/1 = 2/3",
+          "= <strong>2/3</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'What is <span class="math">3\\frac{2}{3} + 2\\frac{3}{4}</span>? Give the numerator of the fractional part when over 12.',
+        answer: "5",
+        hints: [
+          "Add whole parts: 3 + 2 = 5.",
+          "Add fractions: 2/3 + 3/4. LCD = 12: 8/12 + 9/12 = 17/12 = 1 5/12.",
+          "Total = 5 + 1 5/12 = 6 5/12. Fractional numerator = 5."
+        ],
+        explanation: [
+          "Whole parts: 3 + 2 = 5",
+          "Fractions: 2/3 + 3/4 = 8/12 + 9/12 = 17/12 = 1 5/12",
+          "Total = 6 5/12. Fractional numerator is <strong>5</strong>."
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'What is <span class="math">5/9 \\div 10/27</span> in simplest form?',
+        choices: ["3/2", "2/3", "50/243", "27/18"],
+        answer: "3/2",
+        hints: [
+          "Flip and multiply: 5/9 × 27/10.",
+          "Cancel: 5 and 10 share 5 → 1/9 × 27/2.",
+          "9 and 27 share 9 → 1/1 × 3/2 = 3/2."
+        ],
+        explanation: [
+          "5/9 ÷ 10/27 = 5/9 × 27/10",
+          "Cancel common factors: 5→1, 10→2, 27→3, 9→1",
+          "= <strong>3/2</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'If <span class="math">\\frac{x}{5} − \\frac{x}{8} = 3</span>, what is x?',
+        answer: "40",
+        hints: [
+          "LCD of 5 and 8 is 40.",
+          "8x/40 − 5x/40 = 3 → 3x/40 = 3.",
+          "3x = 120, so x = 40."
+        ],
+        explanation: [
+          "LCD = 40: 8x/40 − 5x/40 = 3",
+          "3x/40 = 3 → 3x = 120",
+          "x = <strong>40</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'What is <span class="math">\\frac{2}{3}</span> of <span class="math">\\frac{5}{7}</span> of 42?',
+        choices: ["15", "20", "24", "28"],
+        answer: "20",
+        hints: [
+          "Work from right: 5/7 of 42 = 5 × 42/7 = 210/7 = 30.",
+          "Then 2/3 of 30 = 2 × 30/3 = 60/3 = 20.",
+          "Or multiply all: 2/3 × 5/7 × 42 = 420/21 = 20."
+        ],
+        explanation: [
+          "5/7 of 42 = 30",
+          "2/3 of 30 = 20",
+          "Answer: <strong>20</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'What is <span class="math">1\\frac{1}{2} \\times 2\\frac{2}{3}</span>? Give a whole number.',
+        answer: "4",
+        hints: [
+          "Convert to improper fractions: 1 1/2 = 3/2 and 2 2/3 = 8/3.",
+          "Multiply: 3/2 × 8/3 = 24/6.",
+          "Simplify: 24/6 = 4."
+        ],
+        explanation: [
+          "1 1/2 = 3/2, 2 2/3 = 8/3",
+          "3/2 × 8/3 = 24/6",
+          "= <strong>4</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A pool is <span class="math">3/7</span> full. After draining 6 liters, it is <span class="math">1/7</span> full. What is the pool\'s capacity in liters?',
+        choices: ["14", "18", "21", "28"],
+        answer: "21",
+        hints: [
+          "The 6 liters drained = 3/7 − 1/7 = 2/7 of the pool.",
+          "So 2/7 of the capacity = 6 liters.",
+          "Capacity = 6 × 7/2 = 21 liters."
+        ],
+        explanation: [
+          "3/7 − 1/7 = 2/7 of pool = 6 liters",
+          "1/7 = 3 liters",
+          "Full pool = 7 × 3 = <strong>21</strong> liters"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'Compute <span class="math">(3/4)² + (1/2)²</span>. Give the numerator when written over 16.',
+        answer: "13",
+        hints: [
+          "(3/4)² = 9/16 and (1/2)² = 1/4 = 4/16.",
+          "Add: 9/16 + 4/16 = 13/16.",
+          "Numerator = 13."
+        ],
+        explanation: [
+          "(3/4)² = 9/16, (1/2)² = 1/4 = 4/16",
+          "9/16 + 4/16 = 13/16",
+          "Numerator is <strong>13</strong>."
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'What is <span class="math">7/12 + 5/8</span> as a mixed number?',
+        choices: ["1 5/24", "1 1/4", "1 7/24", "29/24"],
+        answer: "1 5/24",
+        hints: [
+          "LCD of 12 and 8 is 24.",
+          "7/12 = 14/24 and 5/8 = 15/24.",
+          "14/24 + 15/24 = 29/24 = 1 5/24."
+        ],
+        explanation: [
+          "LCD = 24: 7/12 = 14/24, 5/8 = 15/24",
+          "14/24 + 15/24 = 29/24",
+          "= <strong>1 5/24</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'If <span class="math">\\frac{2}{5}</span> of a number equals <span class="math">\\frac{3}{4}</span> of 24, what is the number?',
+        answer: "45",
+        hints: [
+          "First: 3/4 of 24 = 18.",
+          "So 2/5 × n = 18.",
+          "n = 18 × 5/2 = 90/2 = 45."
+        ],
+        explanation: [
+          "3/4 × 24 = 18",
+          "2/5 × n = 18 → n = 18 × 5/2",
+          "n = <strong>45</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'What is <span class="math">5\\frac{1}{3} − 2\\frac{3}{4}</span>?',
+        choices: ["2 7/12", "3 1/12", "2 5/12", "3 7/12"],
+        answer: "2 7/12",
+        hints: [
+          "Convert: 5 1/3 = 16/3 and 2 3/4 = 11/4.",
+          "LCD = 12: 16/3 = 64/12 and 11/4 = 33/12.",
+          "64/12 − 33/12 = 31/12 = 2 7/12."
+        ],
+        explanation: [
+          "16/3 − 11/4 = 64/12 − 33/12",
+          "= 31/12",
+          "= <strong>2 7/12</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'What is <span class="math">1 \\div (\\frac{3}{4} + \\frac{1}{6})</span>? Give the denominator of the simplified fraction.',
+        answer: "11",
+        hints: [
+          "First add: 3/4 + 1/6. LCD = 12: 9/12 + 2/12 = 11/12.",
+          "Now divide: 1 ÷ 11/12 = 1 × 12/11 = 12/11.",
+          "Denominator = 11."
+        ],
+        explanation: [
+          "3/4 + 1/6 = 9/12 + 2/12 = 11/12",
+          "1 ÷ 11/12 = 12/11",
+          "Denominator is <strong>11</strong>."
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'Which is larger: <span class="math">5/7</span> or <span class="math">7/10</span>?',
+        choices: ["5/7", "7/10", "They are equal"],
+        answer: "5/7",
+        hints: [
+          "Cross-multiply to compare: 5 × 10 = 50 and 7 × 7 = 49.",
+          "50 > 49.",
+          "So 5/7 > 7/10."
+        ],
+        explanation: [
+          "Cross-multiply: 5 × 10 = 50, 7 × 7 = 49",
+          "50 > 49, so 5/7 > 7/10",
+          "<strong>5/7</strong> is larger."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'A jar is <span class="math">5/8</span> full of marbles. After removing 15 marbles, it is <span class="math">1/4</span> full. How many marbles does the full jar hold?',
+        answer: "40",
+        hints: [
+          "The 15 marbles removed = 5/8 − 1/4 = 5/8 − 2/8 = 3/8 of the jar.",
+          "So 3/8 of the total = 15.",
+          "Total = 15 × 8/3 = 40."
+        ],
+        explanation: [
+          "5/8 − 1/4 = 5/8 − 2/8 = 3/8 of the jar = 15 marbles",
+          "1/8 of jar = 5 marbles",
+          "Full jar = 8 × 5 = <strong>40</strong> marbles"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'What is <span class="math">2\\frac{1}{4} \\div \\frac{3}{8}</span>?',
+        choices: ["4", "5", "6", "8"],
+        answer: "6",
+        hints: [
+          "Convert: 2 1/4 = 9/4.",
+          "Flip and multiply: 9/4 × 8/3 = 72/12.",
+          "Simplify: 72/12 = 6."
+        ],
+        explanation: [
+          "2 1/4 = 9/4",
+          "9/4 ÷ 3/8 = 9/4 × 8/3 = 72/12",
+          "= <strong>6</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'Three friends share a pizza. Alex eats <span class="math">1/3</span>, Ben eats <span class="math">1/4</span>, Chris eats <span class="math">1/5</span>. What numerator represents the fraction left (over 60)?',
+        answer: "13",
+        hints: [
+          "LCD = 60. Total eaten: 1/3 + 1/4 + 1/5 = 20/60 + 15/60 + 12/60 = 47/60.",
+          "Left: 60/60 − 47/60 = 13/60.",
+          "Numerator = 13."
+        ],
+        explanation: [
+          "Eaten: 1/3+1/4+1/5 = 20/60+15/60+12/60 = 47/60",
+          "Left: 60/60 − 47/60 = 13/60",
+          "Numerator is <strong>13</strong>."
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'What is <span class="math">(\\frac{3}{5})^2 \\times \\frac{5}{3}</span> in simplest form?',
+        choices: ["3/5", "9/15", "1/3", "5/3"],
+        answer: "3/5",
+        hints: [
+          "(3/5)² = 9/25.",
+          "9/25 × 5/3 = 45/75.",
+          "Simplify: GCD(45,75) = 15. 45/75 = 3/5."
+        ],
+        explanation: [
+          "(3/5)² = 9/25",
+          "9/25 × 5/3 = 45/75",
+          "GCD(45,75)=15 → 45/75 = <strong>3/5</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'Simplify <span class="math">48/72</span> to lowest terms. What is the numerator?',
+        answer: "2",
+        hints: [
+          "Find GCD(48, 72). Both divisible by 24.",
+          "48 ÷ 24 = 2, 72 ÷ 24 = 3.",
+          "48/72 = 2/3. Numerator = 2."
+        ],
+        explanation: [
+          "GCD(48, 72) = 24",
+          "48/72 = (48÷24)/(72÷24) = 2/3",
+          "Numerator is <strong>2</strong>."
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'Emma spent <span class="math">1/4</span> of her money on books and <span class="math">2/5</span> on clothes. She saved the remaining $21. How much money did she start with?',
+        choices: ["$40", "$48", "$56", "$60"],
+        answer: "$60",
+        hints: [
+          "Fraction spent: 1/4 + 2/5 = 5/20 + 8/20 = 13/20.",
+          "Fraction saved: 1 − 13/20 = 7/20.",
+          "7/20 × total = $21 → total = 21 × 20/7 = $60."
+        ],
+        explanation: [
+          "Spent: 1/4 + 2/5 = 5/20 + 8/20 = 13/20",
+          "Saved: 7/20 of total = $21",
+          "Total = 21 × 20/7 = <strong>$60</strong>"
+        ]
       }
     ]
   }
@@ -1258,6 +1569,317 @@ WORLDS[4] = {
           "Perimeter of square = 4s",
           "4s = 52",
           "s = <strong>13</strong> meters"
+        ]
+      },
+      // ── 20 additional boss questions ──
+      {
+        type: "numeric", difficulty: 3,
+        question: 'Solve: <span class="math">5(2x + 1) − 3(x − 4) = 38</span>',
+        answer: "3",
+        hints: [
+          "Distribute: 10x + 5 − 3x + 12 = 38.",
+          "Combine: 7x + 17 = 38.",
+          "7x = 21, x = 3."
+        ],
+        explanation: [
+          "10x + 5 − 3x + 12 = 38",
+          "7x + 17 = 38 → 7x = 21",
+          "x = <strong>3</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'The sum of 4 consecutive odd integers is 64. What is the largest?',
+        choices: ["15", "17", "19", "21"],
+        answer: "19",
+        hints: [
+          "Let them be n, n+2, n+4, n+6.",
+          "4n + 12 = 64 → 4n = 52 → n = 13.",
+          "Largest = 13 + 6 = 19."
+        ],
+        explanation: [
+          "n + (n+2) + (n+4) + (n+6) = 64",
+          "4n + 12 = 64 → n = 13",
+          "Largest = 13 + 6 = <strong>19</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'Solve: <span class="math">3(x + 2) − 2(x − 1) = 20</span>',
+        answer: "12",
+        hints: [
+          "Distribute: 3x + 6 − 2x + 2 = 20.",
+          "Combine: x + 8 = 20.",
+          "x = 12."
+        ],
+        explanation: [
+          "3x + 6 − 2x + 2 = 20",
+          "x + 8 = 20",
+          "x = <strong>12</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'Solve: <span class="math">2x − 7 &lt; 11</span>. What is the largest whole number x can be?',
+        choices: ["7", "8", "9", "10"],
+        answer: "8",
+        hints: [
+          "Add 7: 2x < 18.",
+          "Divide by 2: x < 9.",
+          "Largest whole number less than 9 is 8."
+        ],
+        explanation: [
+          "2x − 7 < 11",
+          "2x < 18 → x < 9",
+          "Largest whole number: <strong>8</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'Tom is 5 years older than Sam. In 3 years, the sum of their ages will be 41. How old is Sam now?',
+        answer: "15",
+        hints: [
+          "Let Sam = s, Tom = s + 5.",
+          "In 3 years: (s+3) + (s+8) = 41.",
+          "2s + 11 = 41 → 2s = 30 → s = 15."
+        ],
+        explanation: [
+          "Sam now = s, Tom now = s + 5",
+          "In 3 years: (s+3) + (s+5+3) = 41",
+          "2s + 11 = 41 → s = <strong>15</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'If <span class="math">3x + 4y = 26</span> and <span class="math">x = 2</span>, what is y?',
+        choices: ["3", "4", "5", "6"],
+        answer: "5",
+        hints: [
+          "Substitute x = 2: 3(2) + 4y = 26.",
+          "6 + 4y = 26 → 4y = 20.",
+          "y = 5."
+        ],
+        explanation: [
+          "3(2) + 4y = 26",
+          "6 + 4y = 26 → 4y = 20",
+          "y = <strong>5</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'Solve: <span class="math">7x − (3x + 8) = 20</span>',
+        answer: "7",
+        hints: [
+          "Distribute the negative: 7x − 3x − 8 = 20.",
+          "Combine: 4x − 8 = 20.",
+          "4x = 28, x = 7."
+        ],
+        explanation: [
+          "7x − 3x − 8 = 20",
+          "4x − 8 = 20 → 4x = 28",
+          "x = <strong>7</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A taxi charges $3 base fare plus $2.50 per mile. You have $18. What is the maximum number of whole miles you can travel?',
+        choices: ["4", "5", "6", "7"],
+        answer: "6",
+        hints: [
+          "Set up: 3 + 2.50m ≤ 18.",
+          "2.50m ≤ 15.",
+          "m ≤ 6. Maximum whole miles = 6."
+        ],
+        explanation: [
+          "3 + 2.50m ≤ 18",
+          "2.50m ≤ 15 → m ≤ 6",
+          "Maximum whole miles = <strong>6</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'Solve: <span class="math">\\frac{x+2}{3} + \\frac{x+1}{4} = 5</span>',
+        answer: "7",
+        hints: [
+          "LCD = 12. Multiply through: 4(x+2) + 3(x+1) = 60.",
+          "4x + 8 + 3x + 3 = 60.",
+          "7x + 11 = 60 → 7x = 49 → x = 7."
+        ],
+        explanation: [
+          "LCD = 12: 4(x+2) + 3(x+1) = 60",
+          "7x + 11 = 60 → 7x = 49",
+          "x = <strong>7</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'Solve: <span class="math">3x + 5 \\geq 20</span>. What is the smallest whole number x can be?',
+        choices: ["4", "5", "6", "7"],
+        answer: "5",
+        hints: [
+          "Subtract 5: 3x ≥ 15.",
+          "Divide by 3: x ≥ 5.",
+          "Smallest whole number = 5."
+        ],
+        explanation: [
+          "3x + 5 ≥ 20",
+          "3x ≥ 15 → x ≥ 5",
+          "Smallest whole number: <strong>5</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: '3 pens and 2 notebooks cost $13. Each notebook costs $2. How much does each pen cost (in dollars)?',
+        answer: "3",
+        hints: [
+          "Let pen = p. Equation: 3p + 2(2) = 13.",
+          "3p + 4 = 13.",
+          "3p = 9, p = 3."
+        ],
+        explanation: [
+          "3p + 2(2) = 13",
+          "3p + 4 = 13 → 3p = 9",
+          "p = <strong>$3</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'The sum of two numbers is 50 and their difference is 14. What is the larger number?',
+        choices: ["28", "30", "32", "36"],
+        answer: "32",
+        hints: [
+          "Let the numbers be x and y: x + y = 50 and x − y = 14.",
+          "Add the equations: 2x = 64.",
+          "x = 32."
+        ],
+        explanation: [
+          "x + y = 50, x − y = 14",
+          "Add: 2x = 64 → x = 32",
+          "Larger number = <strong>32</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'Solve: <span class="math">2(x + 3) = 3(x − 2)</span>',
+        answer: "12",
+        hints: [
+          "Distribute: 2x + 6 = 3x − 6.",
+          "Subtract 2x: 6 = x − 6.",
+          "Add 6: x = 12."
+        ],
+        explanation: [
+          "2x + 6 = 3x − 6",
+          "6 + 6 = 3x − 2x",
+          "x = <strong>12</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'Temperature converts by <span class="math">F = \\frac{9C}{5} + 32</span>. If <span class="math">F = 77</span>, what is C?',
+        choices: ["20", "25", "30", "35"],
+        answer: "25",
+        hints: [
+          "77 = 9C/5 + 32.",
+          "Subtract 32: 45 = 9C/5.",
+          "Multiply by 5/9: C = 45 × 5/9 = 25."
+        ],
+        explanation: [
+          "77 − 32 = 45 = 9C/5",
+          "45 × 5/9 = 225/9 = 25",
+          "C = <strong>25</strong>°"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'A rectangle\'s length is 4 less than 3 times its width. The perimeter is 40. What is the width?',
+        answer: "6",
+        hints: [
+          "Let width = w. Length = 3w − 4.",
+          "Perimeter: 2(3w − 4) + 2w = 40 → 6w − 8 + 2w = 40.",
+          "8w = 48, w = 6."
+        ],
+        explanation: [
+          "width = w, length = 3w − 4",
+          "2(3w−4) + 2w = 40 → 8w − 8 = 40",
+          "8w = 48 → w = <strong>6</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'What is the smallest integer satisfying <span class="math">2x + 1 > 7</span>?',
+        choices: ["2", "3", "4", "5"],
+        answer: "4",
+        hints: [
+          "Subtract 1: 2x > 6.",
+          "Divide by 2: x > 3.",
+          "Smallest integer greater than 3 is 4."
+        ],
+        explanation: [
+          "2x + 1 > 7",
+          "2x > 6 → x > 3",
+          "Smallest integer: <strong>4</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'A number is increased by 20% and the result is 42. What was the original number?',
+        answer: "35",
+        hints: [
+          "Increasing by 20% means multiplying by 1.2.",
+          "1.2 × n = 42.",
+          "n = 42 ÷ 1.2 = 35."
+        ],
+        explanation: [
+          "1.2n = 42",
+          "n = 42/1.2 = 42 × 10/12",
+          "n = <strong>35</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'Ana\'s age doubled plus 5 equals 33. How old is Ana?',
+        choices: ["12", "13", "14", "15"],
+        answer: "14",
+        hints: [
+          "Equation: 2a + 5 = 33.",
+          "2a = 28.",
+          "a = 14."
+        ],
+        explanation: [
+          "2a + 5 = 33",
+          "2a = 28",
+          "a = <strong>14</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'Solve: <span class="math">8x − 3(2x + 4) = 6</span>',
+        answer: "9",
+        hints: [
+          "Distribute: 8x − 6x − 12 = 6.",
+          "Combine: 2x − 12 = 6.",
+          "2x = 18, x = 9."
+        ],
+        explanation: [
+          "8x − 6x − 12 = 6",
+          "2x − 12 = 6 → 2x = 18",
+          "x = <strong>9</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A farmer has chickens and cows totaling 20 heads and 56 legs. How many cows are there?',
+        choices: ["6", "8", "10", "12"],
+        answer: "8",
+        hints: [
+          "Let cows = c, chickens = k. Then c + k = 20 and 4c + 2k = 56.",
+          "Substitute k = 20 − c: 4c + 2(20 − c) = 56.",
+          "4c + 40 − 2c = 56 → 2c = 16 → c = 8."
+        ],
+        explanation: [
+          "c + k = 20, 4c + 2k = 56",
+          "4c + 2(20−c) = 56 → 2c + 40 = 56",
+          "2c = 16 → c = <strong>8</strong> cows"
         ]
       }
     ]
@@ -1912,6 +2534,314 @@ WORLDS[5] = {
           "100x = 45.555..., 10x = 4.555...",
           "90x = 41",
           "x = <strong>41/90</strong>"
+        ]
+      },
+      // ── 20 additional boss questions ──
+      {
+        type: "numeric", difficulty: 3,
+        question: 'What is <span class="math">4.56 \\div 0.12</span>?',
+        answer: "38",
+        hints: [
+          "Multiply both by 100 to remove decimals: 456 ÷ 12.",
+          "456 ÷ 12 = 38.",
+          "Check: 38 × 0.12 = 4.56 ✓"
+        ],
+        explanation: [
+          "4.56 ÷ 0.12 = 456 ÷ 12",
+          "= <strong>38</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'What is <span class="math">0.75 \\times 2.4</span>?',
+        choices: ["1.5", "1.8", "1.75", "2.0"],
+        answer: "1.8",
+        hints: [
+          "Ignore decimals: 75 × 24 = 1800.",
+          "Total decimal places: 2 + 1 = 3.",
+          "Place decimal: 1.800 = 1.8."
+        ],
+        explanation: [
+          "75 × 24 = 1800",
+          "3 decimal places → 1.800",
+          "= <strong>1.8</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'What is <span class="math">0.36̄</span> (0.3666...) as a fraction? Give the numerator in lowest terms.',
+        answer: "11",
+        hints: [
+          "Let x = 0.3666... Then 10x = 3.666... and 100x = 36.666...",
+          "100x − 10x = 36.666... − 3.666... = 33.",
+          "90x = 33 → x = 33/90 = 11/30. Numerator = 11."
+        ],
+        explanation: [
+          "Let x = 0.3666...",
+          "100x − 10x = 33 → 90x = 33",
+          "x = 33/90 = <strong>11</strong>/30"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A store marks down a $45 item by 15%. What is the sale price?',
+        choices: ["$36.25", "$38.25", "$39.75", "$40.50"],
+        answer: "$38.25",
+        hints: [
+          "Discount = 45 × 0.15 = $6.75.",
+          "Sale price = $45 − $6.75 = $38.25.",
+          "Or: 45 × 0.85 = $38.25."
+        ],
+        explanation: [
+          "15% of $45 = $6.75",
+          "$45 − $6.75 = <strong>$38.25</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'What is <span class="math">6.4 \\div 0.08</span>?',
+        answer: "80",
+        hints: [
+          "Multiply both by 100: 640 ÷ 8.",
+          "640 ÷ 8 = 80.",
+          "Check: 80 × 0.08 = 6.4 ✓"
+        ],
+        explanation: [
+          "6.4 ÷ 0.08 = 640 ÷ 8",
+          "= <strong>80</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'Round <span class="math">12.3456</span> to the nearest hundredth.',
+        choices: ["12.34", "12.35", "12.345", "12.30"],
+        answer: "12.35",
+        hints: [
+          "The hundredths digit is 4.",
+          "Look at the thousandths digit: 5.",
+          "5 ≥ 5, so round up: 12.35."
+        ],
+        explanation: [
+          "Hundredths digit = 4, next digit = 5 ≥ 5",
+          "Round up: 4 → 5",
+          "12.3456 ≈ <strong>12.35</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'What is <span class="math">0.\\overline{3} + 0.\\overline{6}</span>? (0.333... + 0.666...)',
+        answer: "1",
+        hints: [
+          "0.333... = 1/3 and 0.666... = 2/3.",
+          "1/3 + 2/3 = 3/3 = 1.",
+          "Or observe: 0.333... + 0.666... = 0.999... = 1."
+        ],
+        explanation: [
+          "0.333... = 1/3, 0.666... = 2/3",
+          "1/3 + 2/3 = 1",
+          "= <strong>1</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'Which fraction equals 0.625?',
+        choices: ["5/8", "3/5", "5/6", "7/10"],
+        answer: "5/8",
+        hints: [
+          "0.625 = 625/1000.",
+          "Simplify: GCD(625, 1000) = 125.",
+          "625/1000 = 5/8."
+        ],
+        explanation: [
+          "0.625 = 625/1000",
+          "GCD(625, 1000) = 125",
+          "625/1000 = <strong>5/8</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'You pay with a $25 bill for items costing $4.35, $7.89, and $3.26. How much change do you get? (No $ sign)',
+        answer: "9.5",
+        hints: [
+          "Total spent: $4.35 + $7.89 + $3.26.",
+          "$4.35 + $7.89 = $12.24. Then $12.24 + $3.26 = $15.50.",
+          "Change = $25.00 − $15.50 = $9.50."
+        ],
+        explanation: [
+          "Total = $4.35 + $7.89 + $3.26 = $15.50",
+          "Change = $25.00 − $15.50",
+          "= <strong>$9.50</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'What is <span class="math">0.27̄</span> (0.2777...) as a fraction in lowest terms?',
+        choices: ["5/18", "27/99", "7/25", "27/100"],
+        answer: "5/18",
+        hints: [
+          "Let x = 0.2777... Then 10x = 2.777... and 100x = 27.777...",
+          "100x − 10x = 25 → 90x = 25.",
+          "x = 25/90 = 5/18."
+        ],
+        explanation: [
+          "Let x = 0.2777...",
+          "100x − 10x = 27.777... − 2.777... = 25",
+          "90x = 25 → x = 25/90 = <strong>5/18</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'Convert <span class="math">7/11</span> to a decimal. Round to the nearest hundredth.',
+        answer: "0.64",
+        hints: [
+          "7 ÷ 11 = 0.636363...",
+          "The repeating block is 63.",
+          "Rounded to nearest hundredth: 0.64 (since the next digit, 6, ≥ 5)."
+        ],
+        explanation: [
+          "7 ÷ 11 = 0.6363...",
+          "Hundredths digit = 3, next digit = 6 ≥ 5 → round up",
+          "≈ <strong>0.64</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'What is <span class="math">2.5^2</span>?',
+        choices: ["5.0", "5.25", "6.25", "6.5"],
+        answer: "6.25",
+        hints: [
+          "2.5 × 2.5.",
+          "25 × 25 = 625. Total decimal places = 2.",
+          "Place decimal: 6.25."
+        ],
+        explanation: [
+          "2.5 × 2.5 = 6.25",
+          "Or: (5/2)² = 25/4 = 6.25",
+          "= <strong>6.25</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'Gas costs $3.45 per gallon. You buy 10.4 gallons. What is the total to the nearest cent? (No $ sign)',
+        answer: "35.88",
+        hints: [
+          "3.45 × 10.4.",
+          "3.45 × 10 = 34.50 and 3.45 × 0.4 = 1.38.",
+          "34.50 + 1.38 = 35.88."
+        ],
+        explanation: [
+          "$3.45 × 10 = $34.50",
+          "$3.45 × 0.4 = $1.38",
+          "Total = <strong>$35.88</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'What is <span class="math">0.08 \\times 0.05</span>?',
+        choices: ["0.4", "0.04", "0.004", "0.0004"],
+        answer: "0.004",
+        hints: [
+          "Ignore decimals: 8 × 5 = 40.",
+          "Total decimal places: 2 + 2 = 4.",
+          "Place decimal: 0.0040 = 0.004."
+        ],
+        explanation: [
+          "8 × 5 = 40",
+          "4 decimal places → 0.0040",
+          "= <strong>0.004</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'Convert <span class="math">5/12</span> to a decimal. Round to the nearest thousandth.',
+        answer: "0.417",
+        hints: [
+          "5 ÷ 12 = 0.41666...",
+          "The digit after thousandths is 6 ≥ 5, so round up.",
+          "0.41666... ≈ 0.417."
+        ],
+        explanation: [
+          "5 ÷ 12 = 0.41666...",
+          "Thousandths digit = 6, next digit = 6 ≥ 5",
+          "Round up: <strong>0.417</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'What is <span class="math">1.2 \\times 0.5 + 0.8 \\times 0.25</span>?',
+        choices: ["0.7", "0.8", "0.9", "1.0"],
+        answer: "0.8",
+        hints: [
+          "First: 1.2 × 0.5 = 0.6.",
+          "Then: 0.8 × 0.25 = 0.2.",
+          "Add: 0.6 + 0.2 = 0.8."
+        ],
+        explanation: [
+          "1.2 × 0.5 = 0.6",
+          "0.8 × 0.25 = 0.2",
+          "0.6 + 0.2 = <strong>0.8</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'Convert <span class="math">0.84</span> to a fraction in lowest terms. What is the denominator?',
+        answer: "25",
+        hints: [
+          "0.84 = 84/100.",
+          "GCD(84, 100) = 4.",
+          "84/100 = 21/25. Denominator = 25."
+        ],
+        explanation: [
+          "0.84 = 84/100",
+          "GCD(84, 100) = 4 → 84/100 = 21/25",
+          "Denominator is <strong>25</strong>."
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'You buy 3 items at $6.50 each and receive 10% off the total. What do you pay?',
+        choices: ["$16.50", "$17.55", "$18.50", "$19.50"],
+        answer: "$17.55",
+        hints: [
+          "Subtotal: 3 × $6.50 = $19.50.",
+          "Discount: 10% of $19.50 = $1.95.",
+          "You pay: $19.50 − $1.95 = $17.55."
+        ],
+        explanation: [
+          "3 × $6.50 = $19.50",
+          "10% off: $19.50 × 0.10 = $1.95",
+          "Total = $19.50 − $1.95 = <strong>$17.55</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'What is <span class="math">0.4 + 0.36 + 0.125</span>?',
+        answer: "0.885",
+        hints: [
+          "Write with same decimal places: 0.400 + 0.360 + 0.125.",
+          "Add: 400 + 360 + 125 = 885 thousandths.",
+          "= 0.885."
+        ],
+        explanation: [
+          "0.400 + 0.360 + 0.125",
+          "= 0.885",
+          "= <strong>0.885</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'Which is the largest: <span class="math">0.\\overline{7}</span> (0.777...), <span class="math">0.78</span>, or <span class="math">0.785</span>?',
+        choices: ["0.777...", "0.78", "0.785", "They are all equal"],
+        answer: "0.785",
+        hints: [
+          "0.777... = 0.7777...",
+          "Compare: 0.7777... vs 0.7800 vs 0.7850.",
+          "0.7850 > 0.7800 > 0.7777..., so 0.785 is largest."
+        ],
+        explanation: [
+          "0.777... ≈ 0.778, 0.78 = 0.780, 0.785 = 0.785",
+          "0.785 > 0.780 > 0.778",
+          "<strong>0.785</strong> is the largest."
         ]
       }
     ]

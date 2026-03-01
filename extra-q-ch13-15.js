@@ -370,6 +370,258 @@ EXTRA_QUESTIONS[12] = [
         'Sum = 100.'
       ]
     }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'The number of pages read each day for a week were: 10, 12, 14, 16, 18, 20, 22. What is the mean number of pages read per day?',
+      choices: ["14", "16", "18", "20"],
+      answer: "16",
+      hints: [
+        'Add all seven values together.',
+        '10 + 12 + 14 + 16 + 18 + 20 + 22 = 112.',
+        'Divide the sum by 7.'
+      ],
+      explanation: [
+        'Sum = 10 + 12 + 14 + 16 + 18 + 20 + 22 = 112.',
+        'Count = 7.',
+        'Mean = 112 ÷ 7 = 16.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'The mean of 6 numbers is 13. What is the sum of all 6 numbers?',
+      answer: "78",
+      hints: [
+        'Use the formula: Sum = Mean × Count.',
+        'Mean = 13, Count = 6.',
+        'Multiply 13 × 6.'
+      ],
+      explanation: [
+        'Sum = Mean × Count = 13 × 6.',
+        'Sum = 78.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A class collected 35, 42, 28, 45, and 50 cans for a food drive over five weeks. What is the mean number of cans collected per week?',
+      answer: "40",
+      hints: [
+        'Add all five weekly totals.',
+        '35 + 42 + 28 + 45 + 50 = 200.',
+        'Divide by 5.'
+      ],
+      explanation: [
+        'Sum = 35 + 42 + 28 + 45 + 50 = 200.',
+        'Mean = 200 ÷ 5 = 40 cans per week.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A student practiced piano for 25, 35, 40, 30, and 20 minutes over five days. What is the mean practice time per day?',
+      choices: ["28", "30", "32", "35"],
+      answer: "30",
+      hints: [
+        'Add all five practice times.',
+        '25 + 35 + 40 + 30 + 20 = 150.',
+        'Divide by 5.'
+      ],
+      explanation: [
+        'Sum = 25 + 35 + 40 + 30 + 20 = 150.',
+        'Mean = 150 ÷ 5 = 30 minutes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'Find the mean of: 18, 22, 26.',
+      answer: "22",
+      hints: [
+        'Add the three numbers together.',
+        '18 + 22 + 26 = 66.',
+        'Divide by 3.'
+      ],
+      explanation: [
+        'Sum = 18 + 22 + 26 = 66.',
+        'Mean = 66 ÷ 3 = 22.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'The mean of 5 numbers is 22. What is the sum of all 5 numbers?',
+      answer: "110",
+      hints: [
+        'Use the formula: Sum = Mean × Count.',
+        'Mean = 22, Count = 5.',
+        'Multiply 22 × 5.'
+      ],
+      explanation: [
+        'Sum = Mean × Count = 22 × 5.',
+        'Sum = 110.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'The number of goals scored in 4 games were 3, 5, 7, and 9. What is the mean number of goals per game?',
+      choices: ["4", "5", "6", "7"],
+      answer: "6",
+      hints: [
+        'Add all four numbers together.',
+        '3 + 5 + 7 + 9 = 24.',
+        'Divide by 4.'
+      ],
+      explanation: [
+        'Sum = 3 + 5 + 7 + 9 = 24.',
+        'Mean = 24 ÷ 4 = 6.',
+        'The mean is 6 goals per game.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'The mean of 12 numbers is 9. What is the sum of all 12 numbers?',
+      answer: "108",
+      hints: [
+        'Use the formula: Sum = Mean × Count.',
+        'Mean = 9, Count = 12.',
+        'Multiply 9 × 12.'
+      ],
+      explanation: [
+        'Sum = Mean × Count = 9 × 12.',
+        'Sum = 108.',
+        'The sum of all 12 numbers is 108.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Find the mean of: 14, 28, 42, 56.',
+      answer: "35",
+      hints: [
+        'Add all four numbers together.',
+        '14 + 28 + 42 + 56 = 140.',
+        'Divide by 4.'
+      ],
+      explanation: [
+        'Sum = 14 + 28 + 42 + 56 = 140.',
+        'Mean = 140 ÷ 4 = 35.',
+        'The mean is 35.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'The daily temperatures for 4 days were 68, 72, 76, and 64 degrees. What is the mean temperature?',
+      choices: ["68", "70", "72", "74"],
+      answer: "70",
+      hints: [
+        'Add all four temperatures together.',
+        '68 + 72 + 76 + 64 = 280.',
+        'Divide by 4.'
+      ],
+      explanation: [
+        'Sum = 68 + 72 + 76 + 64 = 280.',
+        'Mean = 280 ÷ 4 = 70.',
+        'The mean temperature is 70 degrees.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'The mean of 6 numbers is 21. What is the sum of all 6 numbers?',
+      answer: "126",
+      hints: [
+        'Use the formula: Sum = Mean × Count.',
+        'Mean = 21, Count = 6.',
+        'Multiply 21 × 6.'
+      ],
+      explanation: [
+        'Sum = Mean × Count = 21 × 6.',
+        'Sum = 126.',
+        'The sum of all 6 numbers is 126.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'Find the mean of: 33, 47, 55.',
+      answer: "45",
+      hints: [
+        'Add the three numbers together.',
+        '33 + 47 + 55 = 135.',
+        'Divide by 3.'
+      ],
+      explanation: [
+        'Sum = 33 + 47 + 55 = 135.',
+        'Mean = 135 ÷ 3 = 45.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A soccer team scored 3, 5, 1, 4, and 7 goals in their last five games. What is the <span class="math">mean</span> number of goals per game?',
+      answer: "4",
+      hints: [
+        'Add all five goal totals together.',
+        '3 + 5 + 1 + 4 + 7 = 20.',
+        'Divide the sum by the number of games (5).'
+      ],
+      explanation: [
+        '<strong>Sum</strong> = 3 + 5 + 1 + 4 + 7 = 20.',
+        'Count = 5 games.',
+        '<strong>Mean</strong> = 20 ÷ 5 = <strong>4</strong> goals per game.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'On five tests, Maya scored 78, 85, 92, 71, and 89. What is her <span class="math">mean</span> score?',
+      choices: ["82","83","84","85"],
+      answer: "83",
+      hints: [
+        'Add all five test scores.',
+        '78 + 85 + 92 + 71 + 89 = 415.',
+        'Divide the sum by 5.'
+      ],
+      explanation: [
+        '<strong>Sum</strong> = 78 + 85 + 92 + 71 + 89 = 415.',
+        '<strong>Mean</strong> = 415 ÷ 5 = <strong>83</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A student has a mean of 88 on four exams. What total number of points has the student earned across all four exams?',
+      answer: "352",
+      hints: [
+        'Use the relationship: Sum = Mean × Count.',
+        'Mean = 88 and Count = 4.',
+        'Multiply 88 × 4.'
+      ],
+      explanation: [
+        'We know <strong>Sum = Mean × Count</strong>.',
+        'Sum = 88 × 4 = <strong>352</strong> total points.'
+      ]
+    }
   ],
 
   // --- Topic 1: Median --- difficulty 1-2
@@ -747,6 +999,264 @@ EXTRA_QUESTIONS[12] = [
         'Median = 83.'
       ]
     }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'What is the median of: 6, 18, 24, 30, 42?',
+      choices: ["18", "20", "24", "30"],
+      answer: "24",
+      hints: [
+        'The list is already in order.',
+        'There are 5 values, so the median is the 3rd one.',
+        'Count to the 3rd value.'
+      ],
+      explanation: [
+        'Sorted: 6, 18, 24, 30, 42.',
+        'The 3rd value is 24.',
+        'Median = 24.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Find the median of: 45, 32, 58, 27, 63, 41.',
+      answer: "43",
+      hints: [
+        'Sort the numbers: 27, 32, 41, 45, 58, 63.',
+        'There are 6 values (even count), so average the 3rd and 4th.',
+        '3rd = 41, 4th = 45.'
+      ],
+      explanation: [
+        'Sorted: 27, 32, 41, 45, 58, 63.',
+        'Median = (41 + 45) ÷ 2 = 86 ÷ 2 = 43.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Find the median of: 17, 33, 25, 41, 29, 37, 21.',
+      answer: "29",
+      hints: [
+        'Sort the list: 17, 21, 25, 29, 33, 37, 41.',
+        'There are 7 values, so the median is the 4th.',
+        'Count to the 4th value.'
+      ],
+      explanation: [
+        'Sorted: 17, 21, 25, 29, 33, 37, 41.',
+        'The 4th value out of 7 is 29.',
+        'Median = 29.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'Find the median of: 11, 27, 35, 43, 59.',
+      answer: "35",
+      hints: [
+        'The list is already in order.',
+        'There are 5 values, so the median is the 3rd.',
+        'Count to the 3rd value.'
+      ],
+      explanation: [
+        'Sorted: 11, 27, 35, 43, 59.',
+        'The 3rd value is 35.',
+        'Median = 35.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'What is the median of: 50, 34, 66, 42, 58, 28?',
+      choices: ["42", "46", "48", "50"],
+      answer: "46",
+      hints: [
+        'Sort the six numbers: 28, 34, 42, 50, 58, 66.',
+        'With an even count, average the two middle values.',
+        'Average the 3rd and 4th values: 42 and 50.'
+      ],
+      explanation: [
+        'Sorted: 28, 34, 42, 50, 58, 66.',
+        'Middle two values: 42 and 50.',
+        'Median = (42 + 50) ÷ 2 = 46.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Find the median of: 88, 62, 75, 54, 91, 70, 83.',
+      answer: "75",
+      hints: [
+        'Sort the list: 54, 62, 70, 75, 83, 88, 91.',
+        'There are 7 values, so the median is the 4th.',
+        'Count to the 4th value.'
+      ],
+      explanation: [
+        'Sorted: 54, 62, 70, 75, 83, 88, 91.',
+        'The 4th value out of 7 is 75.',
+        'Median = 75.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'What is the median of: 9, 21, 33, 45, 57?',
+      choices: ["21", "27", "33", "45"],
+      answer: "33",
+      hints: [
+        'The list is already in order.',
+        'There are 5 values, so the median is the 3rd.',
+        'Count to the 3rd value.'
+      ],
+      explanation: [
+        'Sorted: 9, 21, 33, 45, 57.',
+        'The 3rd value is 33.',
+        'Median = 33.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Find the median of: 26, 44, 18, 52, 36, 60.',
+      answer: "40",
+      hints: [
+        'Sort the numbers: 18, 26, 36, 44, 52, 60.',
+        'There are 6 values (even), so average the 3rd and 4th.',
+        '3rd = 36, 4th = 44.'
+      ],
+      explanation: [
+        'Sorted: 18, 26, 36, 44, 52, 60.',
+        'Median = (36 + 44) ÷ 2 = 80 ÷ 2 = 40.',
+        'The median is 40.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Find the median of: 48, 33, 57, 21, 66, 39, 54.',
+      answer: "48",
+      hints: [
+        'Sort the list: 21, 33, 39, 48, 54, 57, 66.',
+        'There are 7 values, so the median is the 4th.',
+        'Count to the 4th value.'
+      ],
+      explanation: [
+        'Sorted: 21, 33, 39, 48, 54, 57, 66.',
+        'The 4th value out of 7 is 48.',
+        'Median = 48.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Find the median of: 83, 67, 91, 54, 76, 88.',
+      answer: "79.5",
+      hints: [
+        'Sort the numbers: 54, 67, 76, 83, 88, 91.',
+        'There are 6 values (even), so average the 3rd and 4th.',
+        '3rd = 76, 4th = 83.'
+      ],
+      explanation: [
+        'Sorted: 54, 67, 76, 83, 88, 91.',
+        'Median = (76 + 83) ÷ 2 = 159 ÷ 2 = 79.5.',
+        'The median is 79.5.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'What is the median of: 13, 29, 37, 45, 51?',
+      choices: ["29", "33", "37", "45"],
+      answer: "37",
+      hints: [
+        'The list is already in order.',
+        'There are 5 values, so the median is the 3rd.',
+        'Count to the 3rd value.'
+      ],
+      explanation: [
+        'Sorted: 13, 29, 37, 45, 51.',
+        'The 3rd value is 37.',
+        'Median = 37.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Find the median of: 61, 43, 78, 35, 52, 69, 87.',
+      answer: "61",
+      hints: [
+        'Sort the list: 35, 43, 52, 61, 69, 78, 87.',
+        'There are 7 values, so the median is the 4th.',
+        'Count to the 4th value.'
+      ],
+      explanation: [
+        'Sorted: 35, 43, 52, 61, 69, 78, 87.',
+        'The 4th value out of 7 is 61.',
+        'Median = 61.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Find the median of: 12, 18, 7, 15, 22, 9, 14.',
+      answer: "14",
+      hints: [
+        'First sort the numbers from least to greatest.',
+        'Sorted: 7, 9, 12, 14, 15, 18, 22.',
+        'With 7 values, the median is the 4th number.'
+      ],
+      explanation: [
+        'Sorted order: 7, 9, 12, <strong>14</strong>, 15, 18, 22.',
+        'There are 7 values, so the median is the 4th value.',
+        'Median = <strong>14</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'What is the median of: 34, 41, 27, 53, 19, 46?',
+      choices: ["34","37.5","41","40"],
+      answer: "37.5",
+      hints: [
+        'Sort the data: 19, 27, 34, 41, 46, 53.',
+        'With an even count (6), average the 3rd and 4th values.',
+        'The 3rd value is 34 and the 4th is 41.'
+      ],
+      explanation: [
+        'Sorted: 19, 27, <strong>34, 41</strong>, 46, 53.',
+        'Median = (34 + 41) ÷ 2 = 75 ÷ 2 = <strong>37.5</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Seven students ran a race with times (in seconds): 58, 42, 65, 49, 53, 71, 47. What is the median time?',
+      answer: "53",
+      hints: [
+        'Sort the times from fastest to slowest.',
+        'Sorted: 42, 47, 49, 53, 58, 65, 71.',
+        'The 4th value out of 7 is the median.'
+      ],
+      explanation: [
+        'Sorted: 42, 47, 49, <strong>53</strong>, 58, 65, 71.',
+        'With 7 values, the median is the 4th.',
+        'Median = <strong>53</strong> seconds.'
+      ]
+    }
   ],
 
   // --- Topic 2: Mode & Range --- difficulty 1-2
@@ -1116,6 +1626,260 @@ EXTRA_QUESTIONS[12] = [
         'Range = 20 − 11 = 9.'
       ]
     }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'Find the mode of: 5, 9, 5, 3, 9, 5, 8.',
+      answer: "5",
+      hints: [
+        'Count each value: 5 appears 3 times, 9 appears 2 times.',
+        '3 and 8 each appear once.',
+        'The mode is the most frequent value.'
+      ],
+      explanation: [
+        '5 appears 3 times, which is more than any other value.',
+        'Mode = 5.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Data set: 16, 22, 16, 28, 22, 16, 34. What are the mode and range?',
+      choices: ["Mode = 16, Range = 18", "Mode = 22, Range = 18", "Mode = 16, Range = 12", "Mode = 22, Range = 12"],
+      answer: "Mode = 16, Range = 18",
+      hints: [
+        'Count each value: 16 appears 3 times, 22 appears 2 times.',
+        'Mode is the most frequent value.',
+        'Range = max − min = 34 − 16.'
+      ],
+      explanation: [
+        '16 appears 3 times (most), so mode = 16.',
+        'Range = 34 − 16 = 18.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Find the range of: 53, 29, 71, 38, 17.',
+      answer: "54",
+      hints: [
+        'Range = maximum − minimum.',
+        'Maximum = 71.',
+        'Minimum = 17.'
+      ],
+      explanation: [
+        'Maximum = 71, Minimum = 17.',
+        'Range = 71 − 17 = 54.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'What is the mode of: 10, 6, 10, 4, 6, 10, 2?',
+      choices: ["2", "4", "6", "10"],
+      answer: "10",
+      hints: [
+        'Count each value: 10 appears 3 times, 6 appears 2 times.',
+        '4 and 2 each appear once.',
+        'The mode is the most frequent value.'
+      ],
+      explanation: [
+        '10 appears 3 times, which is more than any other value.',
+        'Mode = 10.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Find the range of: 64, 38, 52, 79, 21.',
+      answer: "58",
+      hints: [
+        'Range = maximum − minimum.',
+        'Maximum = 79.',
+        'Minimum = 21.'
+      ],
+      explanation: [
+        'Maximum = 79, Minimum = 21.',
+        'Range = 79 − 21 = 58.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Data set: 13, 20, 13, 27, 20, 13, 33. What are the mode and range?',
+      choices: ["Mode = 13, Range = 20", "Mode = 20, Range = 20", "Mode = 13, Range = 14", "Mode = 20, Range = 14"],
+      answer: "Mode = 13, Range = 20",
+      hints: [
+        'Count each value: 13 appears 3 times, 20 appears 2 times.',
+        'Mode is the most frequent value.',
+        'Range = max − min = 33 − 13.'
+      ],
+      explanation: [
+        '13 appears 3 times (most), so mode = 13.',
+        'Range = 33 − 13 = 20.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'What is the mode of: 15, 9, 15, 6, 9, 15, 3?',
+      choices: ["3", "6", "9", "15"],
+      answer: "15",
+      hints: [
+        'Count each value: 15 appears 3 times, 9 appears 2 times.',
+        '3 and 6 each appear once.',
+        'The mode is the most frequent value.'
+      ],
+      explanation: [
+        '15 appears 3 times, which is more than any other value.',
+        'Mode = 15.',
+        'The most frequently occurring value is the mode.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Find the range of: 47, 23, 68, 31, 85.',
+      answer: "62",
+      hints: [
+        'Range = maximum − minimum.',
+        'Maximum = 85.',
+        'Minimum = 23.'
+      ],
+      explanation: [
+        'Maximum = 85, Minimum = 23.',
+        'Range = 85 − 23 = 62.',
+        'The range is 62.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Data set: 21, 28, 21, 35, 28, 21, 42. What are the mode and range?',
+      choices: ["Mode = 21, Range = 21", "Mode = 28, Range = 21", "Mode = 21, Range = 14", "Mode = 28, Range = 14"],
+      answer: "Mode = 21, Range = 21",
+      hints: [
+        'Count each value: 21 appears 3 times, 28 appears 2 times.',
+        'Mode is the most frequent value.',
+        'Range = max − min = 42 − 21.'
+      ],
+      explanation: [
+        '21 appears 3 times (most), so mode = 21.',
+        'Range = 42 − 21 = 21.',
+        'Mode = 21, Range = 21.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'Find the mode of: 11, 7, 11, 3, 7, 11, 9.',
+      answer: "11",
+      hints: [
+        'Count each value: 11 appears 3 times, 7 appears 2 times.',
+        '3 and 9 each appear once.',
+        'The mode is the most frequent value.'
+      ],
+      explanation: [
+        '11 appears 3 times, which is more than any other value.',
+        'Mode = 11.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Data set: 18, 24, 18, 30, 24, 18, 36. What are the mode and range?',
+      choices: ["Mode = 18, Range = 18", "Mode = 24, Range = 18", "Mode = 18, Range = 12", "Mode = 24, Range = 12"],
+      answer: "Mode = 18, Range = 18",
+      hints: [
+        'Count each value: 18 appears 3 times, 24 appears 2 times.',
+        'Mode is the most frequent value.',
+        'Range = max − min = 36 − 18.'
+      ],
+      explanation: [
+        '18 appears 3 times (most), so mode = 18.',
+        'Range = 36 − 18 = 18.',
+        'Mode = 18, Range = 18.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Find the range of: 57, 34, 72, 19, 88.',
+      answer: "69",
+      hints: [
+        'Range = maximum − minimum.',
+        'Maximum = 88.',
+        'Minimum = 19.'
+      ],
+      explanation: [
+        'Maximum = 88, Minimum = 19.',
+        'Range = 88 − 19 = 69.',
+        'The range is 69.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Find the mode of: 4, 7, 2, 7, 5, 8, 7, 3. How many times does the mode appear?',
+      choices: ["2 times","3 times","4 times","5 times"],
+      answer: "3 times",
+      hints: [
+        'The mode is the value that appears most often.',
+        'Count each number: 7 appears 3 times.',
+        'No other number appears more than once.'
+      ],
+      explanation: [
+        'Frequencies: 2→1, 3→1, 4→1, 5→1, 7→<strong>3</strong>, 8→1.',
+        'The mode is 7, and it appears <strong>3 times</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'In a survey, students picked their favorite sport: Basketball 8, Soccer 5, Baseball 8, Tennis 3, Swimming 8. What is the range of these frequencies?',
+      answer: "5",
+      hints: [
+        'The frequencies are: 8, 5, 8, 3, 8.',
+        'Range = maximum − minimum.',
+        'Max = 8, Min = 3.'
+      ],
+      explanation: [
+        'The frequencies are 8, 5, 8, 3, 8.',
+        '<strong>Range</strong> = 8 − 3 = <strong>5</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Data set: 15, 22, 15, 28, 22, 15, 31, 22. This data set has two values that appear often. What is the mode?',
+      choices: ["15 only","22 only","Both 15 and 22","28"],
+      answer: "Both 15 and 22",
+      hints: [
+        'Count each value carefully.',
+        '15 appears 3 times, 22 appears 3 times, 28 once, 31 once.',
+        'When two values tie for highest frequency, the set is bimodal.'
+      ],
+      explanation: [
+        '15 appears 3 times and 22 appears 3 times — both appear equally often.',
+        'When two values tie for the highest frequency, the data set is <strong>bimodal</strong>.',
+        'Both 15 and 22 are modes: <strong>Both 15 and 22</strong>.'
+      ]
+    }
   ],
 
   // --- Topic 3: Reading Graphs --- difficulty 1-2
@@ -1482,6 +2246,257 @@ EXTRA_QUESTIONS[12] = [
         'Difference = 7 − 2 = 5 inches.'
       ]
     }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'A pictograph uses one symbol to represent 3 stickers. A row shows 9 symbols. How many stickers does that row represent?',
+      answer: "27",
+      hints: [
+        'Each symbol stands for 3 stickers.',
+        'Multiply the number of symbols by 3.',
+        '9 × 3 = ?'
+      ],
+      explanation: [
+        'Each symbol = 3 stickers.',
+        '9 symbols = 9 × 3 = 27 stickers.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A pie chart shows how 250 fans chose teams: Eagles = 32%, Hawks = 28%, Lions = 24%, Bears = 16%. How many fans chose Lions?',
+      choices: ["40", "50", "60", "70"],
+      answer: "60",
+      hints: [
+        'Lions = 24% of 250.',
+        '24% = 0.24.',
+        '0.24 × 250 = ?'
+      ],
+      explanation: [
+        'Lions = 24% × 250.',
+        '= 0.24 × 250 = 60 fans.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A bar graph shows cookies sold: Chocolate = 42, Vanilla = 36, Oatmeal = 54, Peanut Butter = 48. What is the total number of cookies sold?',
+      answer: "180",
+      hints: [
+        'Add all four values.',
+        '42 + 36 + 54 + 48.',
+        '= 78 + 102.'
+      ],
+      explanation: [
+        'Total = 42 + 36 + 54 + 48.',
+        '= 180 cookies.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'A bar graph shows shoe sizes in a class: Size 5 = 6 students, Size 6 = 10 students, Size 7 = 8 students, Size 8 = 4 students. Which size is most common?',
+      choices: ["Size 5", "Size 6", "Size 7", "Size 8"],
+      answer: "Size 6",
+      hints: [
+        'Compare the values for each size.',
+        'Look for the largest number.',
+        '10 is the greatest value.'
+      ],
+      explanation: [
+        'Size 5: 6, Size 6: 10, Size 7: 8, Size 8: 4.',
+        'Size 6 is most common with 10 students.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A pie chart shows how 400 visitors chose attractions: Rides = 45%, Shows = 30%, Games = 15%, Food = 10%. How many visitors chose Games?',
+      answer: "60",
+      hints: [
+        'Games = 15% of 400.',
+        '15% = 0.15.',
+        '0.15 × 400 = ?'
+      ],
+      explanation: [
+        'Games = 15% × 400.',
+        '= 0.15 × 400 = 60 visitors.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A pictograph uses one symbol to represent 12 students. A row shows 5 symbols. How many students does that row represent?',
+      answer: "60",
+      hints: [
+        'Each symbol stands for 12 students.',
+        'Multiply the number of symbols by 12.',
+        '5 × 12 = ?'
+      ],
+      explanation: [
+        'Each symbol = 12 students.',
+        '5 symbols = 5 × 12 = 60 students.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'A bar graph shows pets owned: Dogs = 42, Cats = 38, Fish = 15, Birds = 25. Which pet is owned the least?',
+      choices: ["Dogs", "Cats", "Fish", "Birds"],
+      answer: "Fish",
+      hints: [
+        'Compare the values for each pet.',
+        'Look for the smallest number.',
+        '15 is the least.'
+      ],
+      explanation: [
+        'Dogs = 42, Cats = 38, Fish = 15, Birds = 25.',
+        'Fish is owned the least at 15.',
+        'The answer is Fish.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A pie chart shows how 500 people voted: Option A = 32%, Option B = 28%, Option C = 24%, Option D = 16%. How many people voted for Option A?',
+      answer: "160",
+      hints: [
+        'Option A = 32% of 500.',
+        '32% = 0.32.',
+        '0.32 × 500 = ?'
+      ],
+      explanation: [
+        'Option A = 32% × 500.',
+        '= 0.32 × 500 = 160.',
+        '160 people voted for Option A.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A pictograph uses one symbol to represent 15 students. A row shows 4 symbols. How many students does that row represent?',
+      answer: "60",
+      hints: [
+        'Each symbol stands for 15 students.',
+        'Multiply the number of symbols by 15.',
+        '4 × 15 = ?'
+      ],
+      explanation: [
+        'Each symbol = 15 students.',
+        '4 symbols = 4 × 15 = 60.',
+        '60 students are represented.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'A bar graph shows snack sales: Chips = 55, Cookies = 40, Fruit = 30, Candy = 25. Which snack sold the most?',
+      choices: ["Chips", "Cookies", "Fruit", "Candy"],
+      answer: "Chips",
+      hints: [
+        'Compare the values for each snack.',
+        'Look for the largest number.',
+        '55 is the greatest value.'
+      ],
+      explanation: [
+        'Chips = 55, Cookies = 40, Fruit = 30, Candy = 25.',
+        'Chips had the highest sales at 55.',
+        'The answer is Chips.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A pie chart shows how 300 people exercise: Running = 40%, Swimming = 20%, Cycling = 25%, Yoga = 15%. How many people swim?',
+      answer: "60",
+      hints: [
+        'Swimming = 20% of 300.',
+        '20% = 0.20.',
+        '0.20 × 300 = ?'
+      ],
+      explanation: [
+        'Swimming = 20% × 300.',
+        '= 0.20 × 300 = 60 people.',
+        '60 people swim.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A pictograph uses one symbol to represent 12 apples. A row shows 8 symbols. How many apples does that row represent?',
+      answer: "96",
+      hints: [
+        'Each symbol stands for 12 apples.',
+        'Multiply the number of symbols by 12.',
+        '8 × 12 = ?'
+      ],
+      explanation: [
+        'Each symbol = 12 apples.',
+        '8 symbols = 8 × 12 = 96.',
+        '96 apples are represented.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A bar graph shows: Art Club = 18 members, Drama Club = 24, Science Club = 31, Music Club = 15. How many more members does Science Club have than Music Club?',
+      answer: "16",
+      hints: [
+        'Find the values for Science Club and Music Club.',
+        'Science = 31, Music = 15.',
+        'Subtract: 31 − 15.'
+      ],
+      explanation: [
+        'Science Club = 31 members, Music Club = 15 members.',
+        'Difference = 31 − 15 = <strong>16</strong> more members.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A bar graph shows Mon: 15, Tue: 22, Wed: 18, Thu: 28, Fri: 17 customers. What is the total number of customers for the week?',
+      choices: ["95","100","105","110"],
+      answer: "100",
+      hints: [
+        'Add all five daily customer counts.',
+        '15 + 22 + 18 + 28 + 17.',
+        'Add step by step: 15 + 22 = 37, 37 + 18 = 55, 55 + 28 = 83, 83 + 17 = 100.'
+      ],
+      explanation: [
+        '<strong>Total</strong> = 15 + 22 + 18 + 28 + 17.',
+        '= 37 + 18 + 28 + 17 = 55 + 28 + 17 = 83 + 17 = <strong>100</strong> customers.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A pictograph shows library books checked out, where each symbol represents 10 books. Monday has 4 symbols and Thursday has 7 symbols. How many more books were checked out on Thursday than Monday?',
+      answer: "30",
+      hints: [
+        'Convert symbols to books: each symbol = 10 books.',
+        'Monday = 4 × 10 = 40 books. Thursday = 7 × 10 = 70 books.',
+        'Subtract: 70 − 40.'
+      ],
+      explanation: [
+        'Monday: 4 × 10 = 40 books. Thursday: 7 × 10 = 70 books.',
+        'Difference = 70 − 40 = <strong>30</strong> more books on Thursday.'
+      ]
+    }
   ],
 
   // --- Topic 4: Data Interpretation --- difficulty 1-2
@@ -1846,6 +2861,259 @@ EXTRA_QUESTIONS[12] = [
         'Total = 45 + 38 + 22 + 15 = 120.',
         'Cats fraction = 38/120.',
         'Simplify: 38/120 = 19/60.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'A frequency table shows: Soccer = 16, Tennis = 10, Swimming = 8, Track = 14. How many total athletes were counted?',
+      answer: "48",
+      hints: [
+        'Add all the frequencies together.',
+        '16 + 10 + 8 + 14.',
+        '= 26 + 22.'
+      ],
+      explanation: [
+        'Total = 16 + 10 + 8 + 14.',
+        '= 48 athletes.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A class of 11 students has a mean test score of 84. What is the total of all their scores?',
+      choices: ["914", "920", "924", "936"],
+      answer: "924",
+      hints: [
+        'Total = Mean × Count.',
+        'Multiply 84 × 11.',
+        '84 × 11 = ?'
+      ],
+      explanation: [
+        'Total = Mean × Count = 84 × 11.',
+        '84 × 11 = 924.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A survey of 150 people found that 28% prefer cats, 42% prefer dogs, and the rest prefer birds. How many people prefer birds?',
+      answer: "45",
+      hints: [
+        'Birds = 100% − 28% − 42% = 30%.',
+        '30% of 150 people.',
+        '0.30 × 150 = ?'
+      ],
+      explanation: [
+        'Bird percentage = 100% − 28% − 42% = 30%.',
+        'Bird fans = 30% × 150 = 45.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'A table shows test scores: Art = 88, Music = 76, PE = 94, Drama = 82. In which subject did the student score the highest?',
+      choices: ["Art", "Music", "PE", "Drama"],
+      answer: "PE",
+      hints: [
+        'Compare all four scores.',
+        'Find the largest value.',
+        'PE has the highest score of 94.'
+      ],
+      explanation: [
+        'Art = 88, Music = 76, PE = 94, Drama = 82.',
+        'The highest score is 94 in PE.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A class of 7 students has a mean test score of 88. What is the total of all their scores?',
+      answer: "616",
+      hints: [
+        'Total = Mean × Count.',
+        'Multiply 88 × 7.',
+        '88 × 7 = ?'
+      ],
+      explanation: [
+        'Total = Mean × Count = 88 × 7.',
+        '88 × 7 = 616.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A survey of 250 people found that 36% prefer chocolate, 28% prefer vanilla, and the rest prefer strawberry. How many people prefer strawberry?',
+      answer: "90",
+      hints: [
+        'Strawberry = 100% − 36% − 28% = 36%.',
+        '36% of 250 people.',
+        '0.36 × 250 = ?'
+      ],
+      explanation: [
+        'Strawberry percentage = 100% − 36% − 28% = 36%.',
+        'Strawberry fans = 36% × 250 = 90.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'A table shows test scores: Science = 91, Math = 87, English = 93, History = 85. Which subject had the highest score?',
+      choices: ["Science", "Math", "English", "History"],
+      answer: "English",
+      hints: [
+        'Compare all four scores.',
+        'Look for the largest value.',
+        '93 is the highest.'
+      ],
+      explanation: [
+        'Science = 91, Math = 87, English = 93, History = 85.',
+        'English had the highest score at 93.',
+        'The answer is English.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A class of 9 students has a mean test score of 76. What is the total of all their scores?',
+      answer: "684",
+      hints: [
+        'Total = Mean × Count.',
+        'Multiply 76 × 9.',
+        '76 × 9 = ?'
+      ],
+      explanation: [
+        'Total = Mean × Count = 76 × 9.',
+        '76 × 9 = 684.',
+        'The total of all scores is 684.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A survey of 400 people found that 22% prefer tea, 48% prefer coffee, and the rest prefer juice. How many people prefer juice?',
+      answer: "120",
+      hints: [
+        'Juice = 100% − 22% − 48% = 30%.',
+        '30% of 400 people.',
+        '0.30 × 400 = ?'
+      ],
+      explanation: [
+        'Juice percentage = 100% − 22% − 48% = 30%.',
+        'Juice fans = 30% × 400 = 120.',
+        '120 people prefer juice.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A table shows quiz scores: Math = 88, Science = 76, English = 92, History = 84. Which subject had the lowest score?',
+      choices: ["Math", "Science", "English", "History"],
+      answer: "Science",
+      hints: [
+        'Compare all four scores.',
+        '88, 76, 92, 84.',
+        'Which is the smallest?'
+      ],
+      explanation: [
+        'Math = 88, Science = 76, English = 92, History = 84.',
+        'Science had the lowest score at 76.',
+        'The answer is Science.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A survey of 250 people found that 36% prefer cats, 44% prefer dogs, and the rest prefer birds. How many people prefer birds?',
+      answer: "50",
+      hints: [
+        'Birds = 100% − 36% − 44% = 20%.',
+        '20% of 250 people.',
+        '0.20 × 250 = ?'
+      ],
+      explanation: [
+        'Bird percentage = 100% − 36% − 44% = 20%.',
+        'Bird fans = 20% × 250 = 50.',
+        '50 people prefer birds.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'A class of 10 students has a mean test score of 85. What is the total of all their scores?',
+      answer: "850",
+      hints: [
+        'Total = Mean × Count.',
+        'Multiply 85 × 10.',
+        '85 × 10 = ?'
+      ],
+      explanation: [
+        'Total = Mean × Count = 85 × 10.',
+        'Total = 850.',
+        'The total of all scores is 850.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A double bar graph compares boys and girls in sports. In basketball, boys = 28 and girls = 22. In soccer, boys = 18 and girls = 25. Which sport has more total players?',
+      choices: ["Basketball with 50","Soccer with 43","Basketball with 46","Soccer with 50"],
+      answer: "Basketball with 50",
+      hints: [
+        'Add boys + girls for each sport.',
+        'Basketball total: 28 + 22. Soccer total: 18 + 25.',
+        'Compare the totals.'
+      ],
+      explanation: [
+        'Basketball: 28 + 22 = <strong>50</strong> players.',
+        'Soccer: 18 + 25 = 43 players.',
+        'Basketball has more total players with <strong>50</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A line graph shows a store\'s monthly profit: Jan = $400, Feb = $550, Mar = $500, Apr = $650, May = $600. What is the mean monthly profit?',
+      answer: "540",
+      hints: [
+        'Add all five monthly profits.',
+        '400 + 550 + 500 + 650 + 600 = 2700.',
+        'Divide by 5.'
+      ],
+      explanation: [
+        '<strong>Sum</strong> = 400 + 550 + 500 + 650 + 600 = 2700.',
+        '<strong>Mean</strong> = 2700 ÷ 5 = <strong>$540</strong> per month.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A survey of 80 students shows: 30% prefer reading, 25% prefer gaming, 20% prefer sports, and the rest prefer art. How many students prefer art?',
+      choices: ["15","18","20","25"],
+      answer: "20",
+      hints: [
+        'First find the percentage for art: 100% − 30% − 25% − 20%.',
+        'Art = 25%.',
+        '25% of 80 = ?'
+      ],
+      explanation: [
+        'Art percentage = 100% − 30% − 25% − 20% = <strong>25%</strong>.',
+        'Students who prefer art = 25% × 80 = 0.25 × 80 = <strong>20</strong>.'
       ]
     }
   ],
@@ -2228,6 +3496,266 @@ EXTRA_QUESTIONS[12] = [
         'The mean adds all values and divides by count, so an extreme value changes the sum significantly.',
         'The median is the middle value and is resistant to outliers.',
         'Therefore the mean is most affected by extreme values.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Data: 3, 3, 4, 5, 60. By how much does the mean exceed the median?',
+      answer: "11",
+      hints: [
+        'Median = 4 (middle of 5 sorted values).',
+        'Mean = (3 + 3 + 4 + 5 + 60) ÷ 5 = 75 ÷ 5 = 15.',
+        'Difference = 15 − 4.'
+      ],
+      explanation: [
+        'Median = 4. Mean = 75 ÷ 5 = 15.',
+        'Mean − Median = 15 − 4 = 11.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Data: 60, 62, 64, 66, 68. Which is true about the mean and median?',
+      choices: ["Mean > Median", "Mean < Median", "Mean = Median", "Cannot determine"],
+      answer: "Mean = Median",
+      hints: [
+        'Median = 64 (middle of 5 sorted values).',
+        'Mean = (60 + 62 + 64 + 66 + 68) ÷ 5 = 320 ÷ 5 = 64.',
+        'Compare 64 and 64.'
+      ],
+      explanation: [
+        'Mean = 320 ÷ 5 = 64. Median = 64.',
+        'Mean = Median = 64.',
+        'Symmetric data has equal mean and median.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Data set: 12, 12, 13, 14, 400. Which measure better represents the typical value?',
+      choices: ["Mean", "Median", "Range", "Sum"],
+      answer: "Median",
+      hints: [
+        'Mean = (12 + 12 + 13 + 14 + 400) ÷ 5 = 451 ÷ 5 = 90.2.',
+        'Median = 13 (middle of sorted list).',
+        '400 is a large outlier pulling the mean far from typical values.'
+      ],
+      explanation: [
+        'Mean = 90.2, Median = 13.',
+        'The median (13) is much closer to the typical values (12, 12, 13, 14).',
+        'Median is better when outliers are present.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Data: 70, 72, 74, 76, 78. Which is true about the mean and median?',
+      choices: ["Mean > Median", "Mean < Median", "Mean = Median", "Cannot determine"],
+      answer: "Mean = Median",
+      hints: [
+        'Median = 74 (middle of 5 sorted values).',
+        'Mean = (70 + 72 + 74 + 76 + 78) ÷ 5 = 370 ÷ 5 = 74.',
+        'Compare 74 and 74.'
+      ],
+      explanation: [
+        'Mean = 370 ÷ 5 = 74. Median = 74.',
+        'Mean = Median = 74.',
+        'Symmetric data has equal mean and median.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Data: 5, 5, 6, 7, 130. By how much does the mean exceed the median?',
+      answer: "24.6",
+      hints: [
+        'Median = 6 (middle of 5 sorted values).',
+        'Mean = (5 + 5 + 6 + 7 + 130) ÷ 5 = 153 ÷ 5 = 30.6.',
+        'Difference = 30.6 − 6.'
+      ],
+      explanation: [
+        'Median = 6. Mean = 153 ÷ 5 = 30.6.',
+        'Mean − Median = 30.6 − 6 = 24.6.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Data: 15, 15, 16, 17, 500. Which measure better represents the typical value?',
+      choices: ["Mean", "Median", "Range", "Sum"],
+      answer: "Median",
+      hints: [
+        'Mean = (15 + 15 + 16 + 17 + 500) ÷ 5 = 563 ÷ 5 = 112.6.',
+        'Median = 16 (middle of sorted list).',
+        '500 is a large outlier.'
+      ],
+      explanation: [
+        'Mean = 112.6, Median = 16.',
+        'The median (16) is much closer to the typical values.',
+        'Median is better when outliers are present.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'The data set is: 20, 22, 24, 26, 28. Which statement is true?',
+      choices: ["Mean > Median", "Mean < Median", "Mean = Median", "Cannot be determined"],
+      answer: "Mean = Median",
+      hints: [
+        'Mean = (20+22+24+26+28) ÷ 5 = 120 ÷ 5 = 24.',
+        'Median = 24 (middle of 5 sorted values).',
+        'Compare the two.'
+      ],
+      explanation: [
+        'Mean = 120 ÷ 5 = 24. Median = 24.',
+        'Mean = Median = 24.',
+        'Symmetric data has equal mean and median.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Data: 8, 8, 9, 10, 200. By how much does the mean exceed the median?',
+      answer: "38",
+      hints: [
+        'Median = 9 (middle of 5 sorted values).',
+        'Mean = (8+8+9+10+200) ÷ 5 = 235 ÷ 5 = 47.',
+        'Difference = 47 − 9.'
+      ],
+      explanation: [
+        'Median = 9. Mean = 235 ÷ 5 = 47.',
+        'Mean − Median = 47 − 9 = 38.',
+        'The mean exceeds the median by 38.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Data: 40, 42, 44, 46, 48. If 48 is changed to 148, which changes more: the mean or the median?',
+      choices: ["Mean", "Median", "Both change equally", "Neither changes"],
+      answer: "Mean",
+      hints: [
+        'Original mean = 44, median = 44.',
+        'New mean = (40+42+44+46+148)/5 = 320/5 = 64.',
+        'New median = 44 (unchanged).'
+      ],
+      explanation: [
+        'New mean = 320/5 = 64 (changed by 20).',
+        'New median = 44 (unchanged).',
+        'The mean changes far more than the median.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Data set: 15, 17, 19, 21, 23. Which is greater, the mean or the median?',
+      choices: ["Mean", "Median", "They are equal", "Cannot determine"],
+      answer: "They are equal",
+      hints: [
+        'Mean = (15+17+19+21+23) ÷ 5 = 95 ÷ 5 = 19.',
+        'Median = 19 (middle of 5 sorted values).',
+        'Compare the two.'
+      ],
+      explanation: [
+        'Mean = 95 ÷ 5 = 19. Median = 19.',
+        'Mean = Median = 19.',
+        'Symmetric data has equal mean and median.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Data: 5, 5, 6, 7, 150. By how much does the mean exceed the median?',
+      answer: "28.6",
+      hints: [
+        'Median = 6 (middle of 5 sorted values).',
+        'Mean = (5+5+6+7+150) ÷ 5 = 173 ÷ 5 = 34.6.',
+        'Difference = 34.6 − 6.'
+      ],
+      explanation: [
+        'Median = 6. Mean = 173 ÷ 5 = 34.6.',
+        'Mean − Median = 34.6 − 6 = 28.6.',
+        'The mean exceeds the median by 28.6.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Data: 30, 32, 34, 36, 38. If 38 is changed to 238, which changes more: the mean or the median?',
+      choices: ["Mean", "Median", "Both change equally", "Neither changes"],
+      answer: "Mean",
+      hints: [
+        'Original mean = 34, median = 34.',
+        'New mean = (30+32+34+36+238)/5 = 370/5 = 74.',
+        'New median = 34 (unchanged).'
+      ],
+      explanation: [
+        'New mean = 370/5 = 74 (changed by 40).',
+        'New median = 34 (unchanged).',
+        'The mean changes far more than the median.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A line graph shows temperatures rising: Mon 52°F, Tue 55°F, Wed 59°F, Thu 64°F, Fri 70°F. What is the overall increase from Monday to Friday?',
+      choices: ["15°F","16°F","17°F","18°F"],
+      answer: "18°F",
+      hints: [
+        'Find the temperature on Monday and Friday.',
+        'Monday = 52°F, Friday = 70°F.',
+        'Subtract: 70 − 52.'
+      ],
+      explanation: [
+        'Monday temperature = 52°F, Friday temperature = 70°F.',
+        'Overall increase = 70 − 52 = <strong>18°F</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A data set has mean = 15 and median = 12. A new data set is formed by adding 5 to every value. What is the new median?',
+      answer: "17",
+      hints: [
+        'When you add a constant to every value, the median increases by that constant.',
+        'Original median = 12, constant added = 5.',
+        'New median = 12 + 5.'
+      ],
+      explanation: [
+        'Adding a constant <span class="math">c</span> to every value shifts the median by <span class="math">c</span>.',
+        'New median = 12 + 5 = <strong>17</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Data set: 10, 12, 14, 15, 49. The mean is 20 and the median is 14. Which measure better represents the typical value?',
+      choices: ["Mean, because it uses all values","Median, because the mean is pulled up by the outlier 49","Neither","They are equally good"],
+      answer: "Median, because the mean is pulled up by the outlier 49",
+      hints: [
+        'Look at the data — most values are between 10 and 15.',
+        'The value 49 is much larger than the rest (an outlier).',
+        'Outliers affect the mean more than the median.'
+      ],
+      explanation: [
+        'The outlier 49 pulls the mean up to 20, which is higher than 4 of the 5 values.',
+        'The median (14) better represents the <strong>typical</strong> value in this data set.'
       ]
     }
   ],
@@ -2614,6 +4142,264 @@ EXTRA_QUESTIONS[12] = [
         'Sixth number = 90 − 76 = 14.'
       ]
     }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'The mean of five numbers is 24. Four of them are 20, 28, 18, and 30. What is the fifth number?',
+      answer: "24",
+      hints: [
+        'Total = Mean × Count = 24 × 5 = 120.',
+        'Sum of known values = 20 + 28 + 18 + 30 = 96.',
+        'Fifth number = 120 − 96.'
+      ],
+      explanation: [
+        'Total needed = 24 × 5 = 120.',
+        'Known sum = 20 + 28 + 18 + 30 = 96.',
+        'Missing = 120 − 96 = 24.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'After 5 games, a basketball player\'s mean score is 18. What score does she need in game 6 to raise her mean to 20?',
+      choices: ["24", "28", "30", "32"],
+      answer: "30",
+      hints: [
+        'Current total = 18 × 5 = 90.',
+        'Target total = 20 × 6 = 120.',
+        'Needed score = 120 − 90.'
+      ],
+      explanation: [
+        'Current total = 18 × 5 = 90.',
+        'Target total = 20 × 6 = 120.',
+        'Needed score = 120 − 90 = 30.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'The mean of 7 numbers is 28. Six of them are 25, 30, 22, 35, 27, and 31. What is the seventh number?',
+      answer: "26",
+      hints: [
+        'Total = 28 × 7 = 196.',
+        'Sum of known = 25 + 30 + 22 + 35 + 27 + 31 = 170.',
+        'Seventh = 196 − 170.'
+      ],
+      explanation: [
+        'Total needed = 28 × 7 = 196.',
+        'Known sum = 25 + 30 + 22 + 35 + 27 + 31 = 170.',
+        'Missing = 196 − 170 = 26.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'The mean of six numbers is 17. Five of them are 14, 20, 12, 22, and 16. What is the sixth number?',
+      choices: ["16", "18", "20", "22"],
+      answer: "18",
+      hints: [
+        'Total = Mean × Count = 17 × 6 = 102.',
+        'Sum of known values = 14 + 20 + 12 + 22 + 16 = 84.',
+        'Sixth number = 102 − 84.'
+      ],
+      explanation: [
+        'Total needed = 17 × 6 = 102.',
+        'Known sum = 14 + 20 + 12 + 22 + 16 = 84.',
+        'Missing = 102 − 84 = 18.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'After 6 tests, a student\'s mean is 74. What score does she need on the 7th test to raise her mean to 76?',
+      answer: "88",
+      hints: [
+        'Current total = 74 × 6 = 444.',
+        'Target total = 76 × 7 = 532.',
+        'Needed score = 532 − 444.'
+      ],
+      explanation: [
+        'Current total = 74 × 6 = 444.',
+        'Target total = 76 × 7 = 532.',
+        'Needed score = 532 − 444 = 88.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'The mean of 5 numbers is 32. Four of them are 28, 36, 24, and 40. What is the fifth number?',
+      answer: "32",
+      hints: [
+        'Total = 32 × 5 = 160.',
+        'Sum of known = 28 + 36 + 24 + 40 = 128.',
+        'Fifth = 160 − 128.'
+      ],
+      explanation: [
+        'Total needed = 32 × 5 = 160.',
+        'Known sum = 28 + 36 + 24 + 40 = 128.',
+        'Missing = 160 − 128 = 32.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'The mean of 4 numbers is 20. Three of them are 15, 25, and 18. What is the fourth number?',
+      answer: "22",
+      hints: [
+        'Total = 20 × 4 = 80.',
+        'Sum of known = 15 + 25 + 18 = 58.',
+        'Fourth = 80 − 58.'
+      ],
+      explanation: [
+        'Total needed = 20 × 4 = 80.',
+        'Known sum = 15 + 25 + 18 = 58.',
+        'Missing = 80 − 58 = 22.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'After 5 tests, a student\'s mean is 78. What score does she need on the 6th test to raise her mean to 80?',
+      choices: ["86", "88", "90", "92"],
+      answer: "90",
+      hints: [
+        'Current total = 78 × 5 = 390.',
+        'Target total = 80 × 6 = 480.',
+        'Needed score = 480 − 390.'
+      ],
+      explanation: [
+        'Current total = 78 × 5 = 390.',
+        'Target total = 80 × 6 = 480.',
+        'Needed score = 480 − 390 = 90.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'The mean of 7 numbers is 24. Six of them are 20, 22, 26, 28, 30, and 18. What is the seventh number?',
+      answer: "24",
+      hints: [
+        'Total = 24 × 7 = 168.',
+        'Sum of known = 20 + 22 + 26 + 28 + 30 + 18 = 144.',
+        'Seventh = 168 − 144.'
+      ],
+      explanation: [
+        'Total needed = 24 × 7 = 168.',
+        'Known sum = 20 + 22 + 26 + 28 + 30 + 18 = 144.',
+        'Missing = 168 − 144 = 24.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'The mean of five numbers is 24. Four of the numbers are 18, 26, 30, and 14. What is the fifth number?',
+      answer: "32",
+      hints: [
+        'Total = 24 × 5 = 120.',
+        'Sum of known = 18 + 26 + 30 + 14 = 88.',
+        'Missing = 120 − 88.'
+      ],
+      explanation: [
+        'Total needed = 24 × 5 = 120.',
+        'Known sum = 18 + 26 + 30 + 14 = 88.',
+        'Missing = 120 − 88 = 32.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'After 4 tests, a student\'s mean is 82. What score does she need on the 5th test to raise her mean to 85?',
+      choices: ["89", "93", "95", "97"],
+      answer: "97",
+      hints: [
+        'Current total = 82 × 4 = 328.',
+        'Target total = 85 × 5 = 425.',
+        'Needed score = 425 − 328.'
+      ],
+      explanation: [
+        'Current total = 82 × 4 = 328.',
+        'Target total = 85 × 5 = 425.',
+        'Needed score = 425 − 328 = 97.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'The mean of 8 numbers is 19. Seven of them are 16, 21, 14, 23, 18, 20, and 17. What is the eighth number?',
+      answer: "23",
+      hints: [
+        'Total = 19 × 8 = 152.',
+        'Sum of known = 16 + 21 + 14 + 23 + 18 + 20 + 17 = 129.',
+        'Eighth = 152 − 129.'
+      ],
+      explanation: [
+        'Total needed = 19 × 8 = 152.',
+        'Known sum = 16 + 21 + 14 + 23 + 18 + 20 + 17 = 129.',
+        'Missing = 152 − 129 = 23.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A circle graph shows: 40% like pizza, 25% like burgers, 20% like tacos, and the rest like salad. Out of 200 students surveyed, how many like pizza?',
+      answer: "80",
+      hints: [
+        'Pizza accounts for 40% of the total.',
+        'Calculate 40% of 200.',
+        '0.40 × 200 = ?'
+      ],
+      explanation: [
+        'Pizza = 40% of 200 students.',
+        '0.40 × 200 = <strong>80</strong> students like pizza.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Four test scores are 82, 90, 76, and <span class="math">x</span>. If the mean of all four scores is 85, what is <span class="math">x</span>?',
+      choices: ["88","90","92","94"],
+      answer: "92",
+      hints: [
+        'Mean × Count = Sum, so 85 × 4 = 340.',
+        'Sum of known scores: 82 + 90 + 76 = 248.',
+        'x = 340 − 248.'
+      ],
+      explanation: [
+        'Total needed: 85 × 4 = <strong>340</strong>.',
+        'Known sum: 82 + 90 + 76 = 248.',
+        '<span class="math">x</span> = 340 − 248 = <strong>92</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A circle graph of a school budget shows: Teachers 45%, Supplies 20%, Maintenance 15%, Technology 12%. What percentage is left for "Other"?',
+      answer: "8",
+      hints: [
+        'All percentages must add up to 100%.',
+        'Add the known percentages: 45 + 20 + 15 + 12.',
+        'Subtract from 100.'
+      ],
+      explanation: [
+        'Known total = 45 + 20 + 15 + 12 = <strong>92%</strong>.',
+        'Other = 100% − 92% = <strong>8%</strong>.'
+      ]
+    }
   ],
 
   // --- Topic 7: Weighted Averages --- difficulty 2-3
@@ -2992,6 +4778,262 @@ EXTRA_QUESTIONS[12] = [
         'Participation: 0.20 × 95 = 19. Total = 30 + 34 + 19 = 83.'
       ]
     }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A grade is based on: Reading 40%, Math 60%. A student scores 85 on reading and 75 on math. What is the weighted average?',
+      answer: "79",
+      hints: [
+        'Reading: 85 × 0.40 = 34.',
+        'Math: 75 × 0.60 = 45.',
+        'Add the results.'
+      ],
+      explanation: [
+        'Reading: 85 × 0.40 = 34.',
+        'Math: 75 × 0.60 = 45.',
+        'Weighted average = 34 + 45 = 79.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Lab A has 16 students with mean 72. Lab B has 24 students with mean 82. What is the combined mean?',
+      choices: ["76", "77", "78", "80"],
+      answer: "78",
+      hints: [
+        'Total A = 16 × 72 = 1152.',
+        'Total B = 24 × 82 = 1968.',
+        'Combined = (1152 + 1968) ÷ 40.'
+      ],
+      explanation: [
+        'Total A = 1152, Total B = 1968.',
+        'Combined = 3120 ÷ 40 = 78.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A store sells 8 liters of paint at $6/liter and 12 liters at $9/liter. What is the average price per liter? Give your answer as a decimal.',
+      answer: "7.8",
+      hints: [
+        'Total cost = (8 × 6) + (12 × 9).',
+        '= 48 + 108 = 156.',
+        'Average price = 156 ÷ 20.'
+      ],
+      explanation: [
+        'Total cost = 48 + 108 = $156.',
+        'Total volume = 8 + 12 = 20 liters.',
+        'Average price = 156 ÷ 20 = $7.80.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Group M has 25 students with mean 68. Group N has 15 students with mean 88. What is the combined mean?',
+      choices: ["75.5", "76", "78", "80.5"],
+      answer: "75.5",
+      hints: [
+        'Total M = 25 × 68 = 1700.',
+        'Total N = 15 × 88 = 1320.',
+        'Combined = (1700 + 1320) ÷ 40.'
+      ],
+      explanation: [
+        'Total M = 1700, Total N = 1320.',
+        'Combined = 3020 ÷ 40 = 75.5.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A grade is based on: Projects 45%, Tests 55%. A student gets 80 on projects and 90 on tests. What is the weighted average? Give as a decimal.',
+      answer: "85.5",
+      hints: [
+        'Projects: 80 × 0.45 = 36.',
+        'Tests: 90 × 0.55 = 49.5.',
+        'Add the results.'
+      ],
+      explanation: [
+        'Projects: 80 × 0.45 = 36.',
+        'Tests: 90 × 0.55 = 49.5.',
+        'Weighted average = 36 + 49.5 = 85.5.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A store sells 9 kg of flour at $2/kg and 6 kg at $5/kg. What is the average price per kilogram?',
+      answer: "3.2",
+      hints: [
+        'Total cost = (9 × 2) + (6 × 5).',
+        '= 18 + 30 = 48.',
+        'Average price = 48 ÷ 15.'
+      ],
+      explanation: [
+        'Total cost = 18 + 30 = $48.',
+        'Total weight = 9 + 6 = 15 kg.',
+        'Average price = 48 ÷ 15 = $3.20.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A grade is based on: Quizzes 40%, Exams 60%. A student gets 85 on quizzes and 75 on exams. What is the weighted average?',
+      answer: "79",
+      hints: [
+        'Quizzes: 85 × 0.40 = 34.',
+        'Exams: 75 × 0.60 = 45.',
+        'Add the results.'
+      ],
+      explanation: [
+        'Quizzes: 85 × 0.40 = 34.',
+        'Exams: 75 × 0.60 = 45.',
+        'Weighted average = 34 + 45 = 79.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A store sells 12 kg of rice at $3/kg and 8 kg at $5/kg. What is the average price per kilogram?',
+      choices: ["$3.40", "$3.60", "$3.80", "$4.00"],
+      answer: "$3.80",
+      hints: [
+        'Total cost = (12 × 3) + (8 × 5).',
+        '= 36 + 40 = 76.',
+        'Average = 76 ÷ 20.'
+      ],
+      explanation: [
+        'Total cost = 36 + 40 = $76.',
+        'Total weight = 12 + 8 = 20 kg.',
+        'Average price = 76 ÷ 20 = $3.80.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Class A has 18 students with a mean score of 82. Class B has 12 students with a mean score of 88. What is the combined mean? (Give as a decimal.)',
+      answer: "84.4",
+      hints: [
+        'Total A = 18 × 82 = 1476.',
+        'Total B = 12 × 88 = 1056.',
+        'Combined mean = (1476 + 1056) ÷ 30.'
+      ],
+      explanation: [
+        'Total A = 1476. Total B = 1056.',
+        'Combined = (1476 + 1056) ÷ 30 = 2532 ÷ 30.',
+        'Combined mean = 84.4.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A student scores 90% on homework (weight 40%) and 80% on the final (weight 60%). What is the weighted average?',
+      answer: "84",
+      hints: [
+        'Multiply each score by its weight.',
+        '90 × 0.40 = 36; 80 × 0.60 = 48.',
+        'Add the weighted parts together.'
+      ],
+      explanation: [
+        'Homework: 90 × 0.40 = 36.',
+        'Final: 80 × 0.60 = 48.',
+        'Weighted average = 36 + 48 = 84.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A store sells 15 kg of apples at $4/kg and 10 kg at $6/kg. What is the average price per kilogram?',
+      choices: ["$4.40", "$4.60", "$4.80", "$5.00"],
+      answer: "$4.80",
+      hints: [
+        'Total cost = (15 × 4) + (10 × 6).',
+        '= 60 + 60 = 120.',
+        'Average = 120 ÷ 25.'
+      ],
+      explanation: [
+        'Total cost = 60 + 60 = $120.',
+        'Total weight = 15 + 10 = 25 kg.',
+        'Average price = 120 ÷ 25 = $4.80.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Class A has 20 students with a mean score of 75. Class B has 10 students with a mean score of 90. What is the combined mean?',
+      answer: "80",
+      hints: [
+        'Total A = 20 × 75 = 1500.',
+        'Total B = 10 × 90 = 900.',
+        'Combined mean = (1500 + 900) ÷ 30.'
+      ],
+      explanation: [
+        'Total A = 1500. Total B = 900.',
+        'Combined = (1500 + 900) ÷ 30 = 2400 ÷ 30.',
+        'Combined mean = 80.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'In a stem-and-leaf plot, stem 4 has leaves 2, 5, 7, 8. What is the median of the values represented by this stem?',
+      choices: ["45","46","47","47.5"],
+      answer: "46",
+      hints: [
+        'The values are: 42, 45, 47, 48.',
+        'With 4 values (even count), average the 2nd and 3rd.',
+        '2nd = 45, 3rd = 47.'
+      ],
+      explanation: [
+        'Values from stem 4: 42, 45, 47, 48.',
+        'Median = (45 + 47) ÷ 2 = 92 ÷ 2 = <strong>46</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A stem-and-leaf plot shows: Stem 3 | Leaves: 1, 4, 6; Stem 4 | Leaves: 0, 3, 5, 8; Stem 5 | Leaves: 2, 7. How many data values are there in total?',
+      answer: "9",
+      hints: [
+        'Count the leaves in each stem.',
+        'Stem 3 has 3 leaves, Stem 4 has 4 leaves, Stem 5 has 2 leaves.',
+        'Add: 3 + 4 + 2.'
+      ],
+      explanation: [
+        'Each leaf represents one data value.',
+        'Total = 3 + 4 + 2 = <strong>9</strong> data values.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A stem-and-leaf plot has: Stem 6 | Leaves: 0, 3, 3, 5, 9; Stem 7 | Leaves: 1, 4, 8. What is the range of all the data?',
+      choices: ["15","16","18","20"],
+      answer: "18",
+      hints: [
+        'Find the smallest and largest values.',
+        'Smallest: stem 6, leaf 0 = 60. Largest: stem 7, leaf 8 = 78.',
+        'Range = 78 − 60.'
+      ],
+      explanation: [
+        'Smallest value = 60, Largest value = 78.',
+        '<strong>Range</strong> = 78 − 60 = <strong>18</strong>.'
+      ]
+    }
   ],
 
   // --- Topic 8: Outlier Effects --- difficulty 2-3
@@ -3365,6 +5407,260 @@ EXTRA_QUESTIONS[12] = [
         'Removing an outlier greatly changes the range (max − min) and the mean.',
         'The sum decreases by the outlier value.',
         'The median depends on middle values and usually changes very little.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Data: 40, 42, 44, 46, 48. If 40 is changed to 140, what is the new mean?',
+      answer: "64",
+      hints: [
+        'Original sum = 40 + 42 + 44 + 46 + 48 = 220.',
+        'New sum = 220 − 40 + 140 = 320.',
+        'New mean = 320 ÷ 5.'
+      ],
+      explanation: [
+        'Original sum = 220. New sum = 220 − 40 + 140 = 320.',
+        'New mean = 320 ÷ 5 = 64.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Data: 30, 32, 34, 36, 38. If 600 is added to the set, which statistic is least affected?',
+      choices: ["Mean", "Median", "Range", "Sum"],
+      answer: "Median",
+      hints: [
+        'Original median = 34. With 600 added: 30, 32, 34, 36, 38, 600.',
+        'New median = (34 + 36)/2 = 35.',
+        'New mean = (170 + 600)/6 ≈ 128.3. Mean changed drastically.'
+      ],
+      explanation: [
+        'Median changed from 34 to 35 (change of 1).',
+        'Mean changed from 34 to about 128.3 (change of ~94).',
+        'The median is least affected by the outlier.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Data: 22, 24, 26, 28, 30. If 30 is changed to 180, by how much does the mean increase?',
+      answer: "30",
+      hints: [
+        'Original mean = (22 + 24 + 26 + 28 + 30) ÷ 5 = 130 ÷ 5 = 26.',
+        'New sum = 130 − 30 + 180 = 280. New mean = 280 ÷ 5 = 56.',
+        'Increase = 56 − 26.'
+      ],
+      explanation: [
+        'Original mean = 26. New mean = 280 ÷ 5 = 56.',
+        'Increase = 56 − 26 = 30.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Data: 50, 52, 54, 56, 58. If 50 is changed to 250, which statistic changes the most?',
+      choices: ["Mean", "Median", "Mode", "All change equally"],
+      answer: "Mean",
+      hints: [
+        'Original mean = 54. New mean = (250+52+54+56+58)/5 = 470/5 = 94.',
+        'Original median = 54. New median still involves middle values.',
+        'Mean changed by 40, median barely changed.'
+      ],
+      explanation: [
+        'Mean changed from 54 to 94 (increase of 40).',
+        'Median changed minimally.',
+        'The mean is most affected by the outlier.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Data: 15, 17, 19, 21, 23. If 23 is changed to 123, by how much does the mean increase?',
+      answer: "20",
+      hints: [
+        'Original mean = (15+17+19+21+23) ÷ 5 = 95 ÷ 5 = 19.',
+        'New sum = 95 − 23 + 123 = 195. New mean = 195 ÷ 5 = 39.',
+        'Increase = 39 − 19.'
+      ],
+      explanation: [
+        'Original mean = 19. New mean = 195 ÷ 5 = 39.',
+        'Increase = 39 − 19 = 20.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Data: 75, 77, 79, 81, 83. If 83 is replaced by 283, what is the new mean?',
+      answer: "119",
+      hints: [
+        'Original sum = 75+77+79+81+83 = 395.',
+        'New sum = 395 − 83 + 283 = 595.',
+        'New mean = 595 ÷ 5.'
+      ],
+      explanation: [
+        'Original sum = 395. New sum = 595.',
+        'New mean = 595 ÷ 5 = 119.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Data: 20, 22, 24, 26, 28. If we add 200 to the set, which statistic changes the most?',
+      choices: ["Mean", "Median", "Mode", "All change equally"],
+      answer: "Mean",
+      hints: [
+        'The mean is most sensitive to extreme values.',
+        'Adding 200 is a large outlier.',
+        'The median and mode will barely shift.'
+      ],
+      explanation: [
+        'Original mean = 24. New mean = (120+200)/6 ≈ 53.3.',
+        'Median shifts only slightly.',
+        'The mean is most affected by the outlier.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Data: 30, 32, 34, 36, 38. If 38 is changed to 138, by how much does the mean increase?',
+      answer: "20",
+      hints: [
+        'Original mean = (30+32+34+36+38) ÷ 5 = 170 ÷ 5 = 34.',
+        'New sum = 170 − 38 + 138 = 270. New mean = 270 ÷ 5 = 54.',
+        'Increase = 54 − 34.'
+      ],
+      explanation: [
+        'Original mean = 34. New mean = 270 ÷ 5 = 54.',
+        'Increase = 54 − 34 = 20.',
+        'The mean increased by 20.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Data: 50, 52, 54, 56, 58. If 58 is replaced by 258, what is the new mean?',
+      answer: "94",
+      hints: [
+        'Original sum = 50+52+54+56+58 = 270.',
+        'New sum = 270 − 58 + 258 = 470.',
+        'New mean = 470 ÷ 5.'
+      ],
+      explanation: [
+        'Original sum = 270. New sum = 470.',
+        'New mean = 470 ÷ 5 = 94.',
+        'The new mean is 94.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Data: 20, 22, 24, 26, 28. If we add 200 to the set, which statistic changes the most?',
+      choices: ["Mean", "Median", "Mode", "All change equally"],
+      answer: "Mean",
+      hints: [
+        'The mean is most sensitive to extreme values.',
+        'Adding 200 is a large outlier.',
+        'The median and mode barely shift.'
+      ],
+      explanation: [
+        'Original mean = 24. New mean = (120+200)/6 ≈ 53.3.',
+        'Median shifts only slightly.',
+        'The mean is most affected by the outlier.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Data: 40, 42, 44, 46, 48. If 48 is changed to 248, by how much does the mean increase?',
+      answer: "40",
+      hints: [
+        'Original mean = (40+42+44+46+48) ÷ 5 = 220 ÷ 5 = 44.',
+        'New sum = 220 − 48 + 248 = 420. New mean = 420 ÷ 5 = 84.',
+        'Increase = 84 − 44.'
+      ],
+      explanation: [
+        'Original mean = 44. New mean = 420 ÷ 5 = 84.',
+        'Increase = 84 − 44 = 40.',
+        'The mean increased by 40.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Data: 15, 16, 17, 18, 19. If 15 is replaced by 115, which remains unchanged?',
+      choices: ["Mean", "Median", "Range", "All change"],
+      answer: "Median",
+      hints: [
+        'Original median = 17.',
+        'Replacing 15 with 115 does not change the middle value.',
+        'But the mean and range both change.'
+      ],
+      explanation: [
+        'Original: mean = 17, median = 17, range = 4.',
+        'New: mean = 37, median = 17, range = 100.',
+        'The median remains unchanged.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A box-and-whisker plot shows: min = 20, Q1 = 35, median = 42, Q3 = 58, max = 70. What is the interquartile range (IQR)?',
+      answer: "23",
+      hints: [
+        'The IQR is the difference between Q3 and Q1.',
+        'Q3 = 58, Q1 = 35.',
+        'IQR = Q3 − Q1.'
+      ],
+      explanation: [
+        '<strong>IQR</strong> = Q3 − Q1 = 58 − 35.',
+        'IQR = <strong>23</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A box plot shows: min = 15, Q1 = 28, median = 36, Q3 = 44, max = 62. What percentage of the data falls between Q1 and Q3?',
+      choices: ["25%","50%","75%","100%"],
+      answer: "50%",
+      hints: [
+        'The box in a box plot represents the middle portion of the data.',
+        'Q1 is the 25th percentile and Q3 is the 75th percentile.',
+        '75% − 25% = ?'
+      ],
+      explanation: [
+        'By definition, Q1 marks the 25th percentile and Q3 marks the 75th percentile.',
+        'The data between Q1 and Q3 represents 75% − 25% = <strong>50%</strong> of the data.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A box-and-whisker plot has min = 10, Q1 = 22, median = 30, Q3 = 45, max = 68. What is the total range of the data?',
+      answer: "58",
+      hints: [
+        'The total range is max − min.',
+        'Max = 68, Min = 10.',
+        'Subtract: 68 − 10.'
+      ],
+      explanation: [
+        '<strong>Range</strong> = max − min = 68 − 10.',
+        'Range = <strong>58</strong>.'
       ]
     }
   ],
@@ -3745,6 +6041,262 @@ EXTRA_QUESTIONS[12] = [
         'New mean = 2 × 30 − 5 = 60 − 5 = 55.'
       ]
     }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A data set has a mean of 25 and range of 16. If you subtract 7 from every value, what are the new mean and range?',
+      choices: ["Mean = 18, Range = 9", "Mean = 18, Range = 16", "Mean = 25, Range = 9", "Mean = 32, Range = 16"],
+      answer: "Mean = 18, Range = 16",
+      hints: [
+        'Subtracting a constant shifts all values equally.',
+        'The mean decreases by 7.',
+        'The range stays the same because max and min both decrease by 7.'
+      ],
+      explanation: [
+        'Subtracting 7: new mean = 25 − 7 = 18.',
+        'Range = max − min. Both decrease by 7, so the difference is unchanged.',
+        'New range = 16 (unchanged).'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Data: 8, 16, 24, 32. If every value is multiplied by 6, what is the new range?',
+      answer: "144",
+      hints: [
+        'Original range = 32 − 8 = 24.',
+        'Multiplying by 6 also multiplies the range by 6.',
+        'New range = 24 × 6.'
+      ],
+      explanation: [
+        'Original range = 32 − 8 = 24.',
+        'New range = 24 × 6 = 144.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Data: 10, 18, 26, 34. If every value is multiplied by 3 and then 4 is added, what is the new mean?',
+      answer: "70",
+      hints: [
+        'Original mean = (10 + 18 + 26 + 34) ÷ 4 = 88 ÷ 4 = 22.',
+        'Multiplying by 3 gives new mean = 22 × 3 = 66.',
+        'Adding 4 to every value increases the mean by 4.'
+      ],
+      explanation: [
+        'Original mean = 22.',
+        'After ×3: mean = 66. After +4: mean = 70.',
+        'New mean = 70.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Data: 12, 20, 28, 36. If you add 15 to every value, what is the new mean?',
+      answer: "39",
+      hints: [
+        'Original mean = (12 + 20 + 28 + 36) ÷ 4 = 96 ÷ 4 = 24.',
+        'Adding 15 to every value increases the mean by 15.',
+        'New mean = 24 + 15.'
+      ],
+      explanation: [
+        'Original mean = 96 ÷ 4 = 24.',
+        'New mean = 24 + 15 = 39.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Data: 5, 15, 25, 35. If every value is multiplied by 7, what is the new range?',
+      choices: ["30", "140", "210", "245"],
+      answer: "210",
+      hints: [
+        'Original range = 35 − 5 = 30.',
+        'Multiplying by 7 also multiplies the range by 7.',
+        'New range = 30 × 7.'
+      ],
+      explanation: [
+        'Original range = 35 − 5 = 30.',
+        'New range = 30 × 7 = 210.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Data: 7, 13, 19, 25. If every value is multiplied by 4 and then 3 is subtracted, what is the new mean?',
+      answer: "61",
+      hints: [
+        'Original mean = (7 + 13 + 19 + 25) ÷ 4 = 64 ÷ 4 = 16.',
+        'Multiplying by 4: new mean = 16 × 4 = 64.',
+        'Subtracting 3: new mean = 64 − 3.'
+      ],
+      explanation: [
+        'Original mean = 16.',
+        'After ×4: mean = 64. After −3: mean = 61.',
+        'New mean = 61.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Data: 10, 20, 30, 40. If 12 is added to every value, what is the new mean?',
+      answer: "37",
+      hints: [
+        'Original mean = (10+20+30+40) ÷ 4 = 100 ÷ 4 = 25.',
+        'Adding a constant shifts the mean by the same amount.',
+        'New mean = 25 + 12.'
+      ],
+      explanation: [
+        'Original mean = 100 ÷ 4 = 25.',
+        'New mean = 25 + 12 = 37.',
+        'Adding 12 to each value raises the mean by 12.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Data: 8, 18, 28, 38. If every value is multiplied by 5, what is the new range?',
+      choices: ["30", "100", "150", "190"],
+      answer: "150",
+      hints: [
+        'Original range = 38 − 8 = 30.',
+        'Multiplying by 5 also multiplies the range by 5.',
+        'New range = 30 × 5.'
+      ],
+      explanation: [
+        'Original range = 38 − 8 = 30.',
+        'New range = 30 × 5 = 150.',
+        'Multiplying all values by 5 multiplies the range by 5.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Data: 6, 14, 22, 30. If every value is multiplied by 3 and then 5 is added, what is the new mean?',
+      answer: "59",
+      hints: [
+        'Original mean = (6+14+22+30) ÷ 4 = 72 ÷ 4 = 18.',
+        'After ×3: new mean = 18 × 3 = 54.',
+        'After +5: new mean = 54 + 5.'
+      ],
+      explanation: [
+        'Original mean = 18.',
+        'After ×3: mean = 54. After +5: mean = 59.',
+        'New mean = 59.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Data: 8, 12, 16, 20, 24. If you add 10 to every value, what is the new mean?',
+      answer: "26",
+      hints: [
+        'Original mean = (8+12+16+20+24) ÷ 5 = 80 ÷ 5 = 16.',
+        'Adding a constant shifts the mean by the same amount.',
+        'New mean = 16 + 10.'
+      ],
+      explanation: [
+        'Original mean = 80 ÷ 5 = 16.',
+        'New mean = 16 + 10 = 26.',
+        'Adding 10 to each value raises the mean by 10.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Data: 5, 15, 25, 35. If every value is multiplied by 4, what is the new range?',
+      choices: ["30", "60", "90", "120"],
+      answer: "120",
+      hints: [
+        'Original range = 35 − 5 = 30.',
+        'Multiplying by 4 also multiplies the range by 4.',
+        'New range = 30 × 4.'
+      ],
+      explanation: [
+        'Original range = 35 − 5 = 30.',
+        'New range = 30 × 4 = 120.',
+        'Multiplying all values by 4 multiplies the range by 4.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Data: 10, 20, 30, 40. If every value is multiplied by 2 and then 7 is added, what is the new mean?',
+      answer: "57",
+      hints: [
+        'Original mean = (10+20+30+40) ÷ 4 = 100 ÷ 4 = 25.',
+        'After ×2: new mean = 25 × 2 = 50.',
+        'After +7: new mean = 50 + 7.'
+      ],
+      explanation: [
+        'Original mean = 25.',
+        'After ×2: mean = 50. After +7: mean = 57.',
+        'New mean = 57.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Test scores: 10, 12, 11, 13, 85. The mean is 26.2. Why might the mean be misleading here?',
+      choices: ["The mean is always the best measure","The outlier 85 pulls the mean much higher than most scores","There are too few values","The median equals the mean"],
+      answer: "The outlier 85 pulls the mean much higher than most scores",
+      hints: [
+        'Look at the data — four scores are around 10-13, but one is 85.',
+        'The value 85 is far from the others (an outlier).',
+        'How does one extreme value affect the average?'
+      ],
+      explanation: [
+        'Most scores are near 10-13, but 85 is an <strong>outlier</strong>.',
+        'The mean (26.2) is higher than 4 of the 5 values, making it <strong>misleading</strong> as a typical score.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A graph shows sales from $98 to $102 on a y-axis starting at $95. Why could this be misleading?',
+      choices: ["The data is incorrect","The y-axis does not start at 0, exaggerating small differences","There are not enough data points","The x-axis is wrong"],
+      answer: "The y-axis does not start at 0, exaggerating small differences",
+      hints: [
+        'When a graph axis does not start at zero, small changes look large.',
+        'The actual range is only $4 (98 to 102).',
+        'A compressed scale exaggerates differences.'
+      ],
+      explanation: [
+        'Starting the y-axis at $95 instead of $0 makes a $4 difference look dramatic.',
+        'This is a common way graphs can be <strong>misleading</strong> — always check the axis scale.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Home prices in a neighborhood: $150K, $160K, $155K, $165K, $800K. The mean is $286K. What is the median price (in thousands)?',
+      answer: "160",
+      hints: [
+        'Sort the prices: 150, 155, 160, 165, 800 (in thousands).',
+        'With 5 values, the median is the 3rd one.',
+        'The median is less affected by the outlier $800K.'
+      ],
+      explanation: [
+        'Sorted: 150, 155, <strong>160</strong>, 165, 800 (thousands).',
+        'The median is 160, which better represents typical home prices than the mean of 286.',
+        'Median = <strong>$160K</strong>.'
+      ]
+    }
   ],
 
   // --- Topic 10: Stem-and-Leaf Plots --- difficulty 3-4
@@ -4123,6 +6675,263 @@ EXTRA_QUESTIONS[12] = [
         'Range = 94 − 70 = 24.'
       ]
     }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A stem-and-leaf plot shows: Stem 3 | Leaves: 2, 6, 6, 9; Stem 4 | Leaves: 1, 5, 8. What is the mode?',
+      choices: ["32", "36", "41", "No mode"],
+      answer: "36",
+      hints: [
+        'List all values: 32, 36, 36, 39, 41, 45, 48.',
+        'The mode is the value that appears most often.',
+        '36 appears twice; all others appear once.'
+      ],
+      explanation: [
+        'Values: 32, 36, 36, 39, 41, 45, 48.',
+        '36 appears 2 times (most frequent).',
+        'Mode = 36.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'A stem-and-leaf plot shows: 5 | 1 4, 6 | 0 3 7, 7 | 2 6. What is the median?',
+      answer: "63",
+      hints: [
+        'List all values: 51, 54, 60, 63, 67, 72, 76.',
+        'There are 7 values, so the median is the 4th.',
+        'Count to the 4th value.'
+      ],
+      explanation: [
+        'All values: 51, 54, 60, 63, 67, 72, 76.',
+        'The 4th value out of 7 is 63.',
+        'Median = 63.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'A stem-and-leaf plot shows: 4 | 1 5, 5 | 2 6 9, 6 | 3 7. What is the mean of this data? (Round to the nearest hundredth.)',
+      answer: "54.71",
+      hints: [
+        'List values: 41, 45, 52, 56, 59, 63, 67.',
+        'Sum = 41 + 45 + 52 + 56 + 59 + 63 + 67 = 383.',
+        'Mean = 383 ÷ 7 ≈ 54.71.'
+      ],
+      explanation: [
+        'Values: 41, 45, 52, 56, 59, 63, 67.',
+        'Sum = 383. Count = 7.',
+        'Mean = 383 ÷ 7 ≈ 54.71.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A stem-and-leaf plot shows: 2 | 0 4 7, 3 | 1 5 5 8, 4 | 2 6. How many data values are there?',
+      answer: "9",
+      hints: [
+        'Count all leaves across every stem.',
+        'Stem 2: 3 leaves, Stem 3: 4 leaves, Stem 4: 2 leaves.',
+        'Total = 3 + 4 + 2.'
+      ],
+      explanation: [
+        'Stem 2: 3 values, Stem 3: 4 values, Stem 4: 2 values.',
+        'Total = 3 + 4 + 2 = 9 data values.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 4,
+      question: 'A stem-and-leaf plot shows: 6 | 2 5, 7 | 0 3 8, 8 | 1 4. What is the median?',
+      choices: ["70", "73", "75", "78"],
+      answer: "73",
+      hints: [
+        'List all values: 62, 65, 70, 73, 78, 81, 84.',
+        'There are 7 values, so the median is the 4th.',
+        'Count to the 4th value.'
+      ],
+      explanation: [
+        'All values: 62, 65, 70, 73, 78, 81, 84.',
+        'The 4th value out of 7 is 73.',
+        'Median = 73.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'A stem-and-leaf plot shows: 5 | 0 3, 6 | 1 4 7, 7 | 2 5. What is the range?',
+      answer: "25",
+      hints: [
+        'List values: 50, 53, 61, 64, 67, 72, 75.',
+        'Range = maximum − minimum.',
+        'Max = 75, Min = 50.'
+      ],
+      explanation: [
+        'Values: 50, 53, 61, 64, 67, 72, 75.',
+        'Range = 75 − 50 = 25.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'In a stem-and-leaf plot, the stem is 3 and the leaves are 1, 4, 6, 9. What is the range of the values?',
+      choices: ["5", "6", "8", "9"],
+      answer: "8",
+      hints: [
+        'Values: 31, 34, 36, 39.',
+        'Range = maximum − minimum.',
+        '39 − 31 = ?'
+      ],
+      explanation: [
+        'Values: 31, 34, 36, 39.',
+        'Range = 39 − 31 = 8.',
+        'The range is 8.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'A stem-and-leaf plot shows: 3 | 5 8, 4 | 1 3 7 9, 5 | 2 6. What is the mean of all the data values?',
+      answer: "45.125",
+      hints: [
+        'Values: 35, 38, 41, 43, 47, 49, 52, 56.',
+        'Sum = 35+38+41+43+47+49+52+56 = 361.',
+        'Mean = 361 ÷ 8.'
+      ],
+      explanation: [
+        'All values: 35, 38, 41, 43, 47, 49, 52, 56.',
+        'Sum = 361. Count = 8.',
+        'Mean = 361 ÷ 8 = 45.125.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 4,
+      question: 'A stem-and-leaf plot shows: 2 | 3 7, 3 | 1 5 9, 4 | 0 4. What is the median?',
+      choices: ["31", "35", "37", "39"],
+      answer: "35",
+      hints: [
+        'List all values: 23, 27, 31, 35, 39, 40, 44.',
+        'There are 7 values, so the median is the 4th.',
+        'Count to the 4th value.'
+      ],
+      explanation: [
+        'All values: 23, 27, 31, 35, 39, 40, 44.',
+        'The 4th value out of 7 is 35.',
+        'Median = 35.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'In a stem-and-leaf plot, the stem is 6 and the leaves are 0, 3, 5, 8. What is the range of the values?',
+      choices: ["3", "5", "8", "10"],
+      answer: "8",
+      hints: [
+        'Values: 60, 63, 65, 68.',
+        'Range = maximum − minimum.',
+        '68 − 60 = ?'
+      ],
+      explanation: [
+        'Values: 60, 63, 65, 68.',
+        'Range = 68 − 60 = 8.',
+        'The range is 8.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'A stem-and-leaf plot shows: 4 | 2 5 8, 5 | 1 3 6 9, 6 | 4. What is the median of this data?',
+      answer: "52",
+      hints: [
+        'List all values: 42, 45, 48, 51, 53, 56, 59, 64.',
+        'There are 8 values (even), so average the 4th and 5th.',
+        '4th = 51, 5th = 53.'
+      ],
+      explanation: [
+        'All values: 42, 45, 48, 51, 53, 56, 59, 64.',
+        'Median = (51 + 53) ÷ 2 = 104 ÷ 2 = 52.',
+        'The median is 52.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A stem-and-leaf plot shows: 1 | 2 5 8, 2 | 0 3 7, 3 | 1 4. How many data values are there in total?',
+      answer: "8",
+      hints: [
+        'Count the leaves in each row.',
+        'Stem 1: 3 leaves. Stem 2: 3 leaves. Stem 3: 2 leaves.',
+        'Total = 3 + 3 + 2.'
+      ],
+      explanation: [
+        'Stem 1 has 3 values, stem 2 has 3 values, stem 3 has 2 values.',
+        'Total = 3 + 3 + 2 = 8 data values.',
+        'There are 8 data values.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A researcher wants to know how many hours students sleep. She watches students without asking them. Which type of study is this?',
+      choices: ["Survey","Experiment","Observational study","Census"],
+      answer: "Observational study",
+      hints: [
+        'In a survey, you ask questions directly.',
+        'In an experiment, you change a variable to test its effect.',
+        'Watching without interacting is called observational.'
+      ],
+      explanation: [
+        'Since the researcher watches without asking or changing anything, this is an <strong>observational study</strong>.',
+        'Surveys ask questions; experiments manipulate variables.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A school polls every 5th student entering the building to ask about lunch preferences. What type of sampling is this?',
+      choices: ["Random sampling","Systematic sampling","Convenience sampling","Stratified sampling"],
+      answer: "Systematic sampling",
+      hints: [
+        'Selecting every nth item is a specific sampling method.',
+        'Random means every person has an equal chance, chosen at random.',
+        'Choosing every 5th person follows a systematic pattern.'
+      ],
+      explanation: [
+        'Selecting every 5th student is a fixed-interval pattern.',
+        'This is called <strong>systematic sampling</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A survey asks 120 students their favorite subject. Results: Math 35, Science 28, English 22, History 18, Art 17. How many students chose something not listed?',
+      answer: "0",
+      hints: [
+        'Add up all the reported responses.',
+        '35 + 28 + 22 + 18 + 17 = 120.',
+        'Compare the sum to the total number surveyed.'
+      ],
+      explanation: [
+        'Total responses = 35 + 28 + 22 + 18 + 17 = <strong>120</strong>.',
+        'Since 120 = total surveyed, <strong>0</strong> students chose something not listed.'
+      ]
+    }
   ]
 ];
 
@@ -4492,6 +7301,257 @@ EXTRA_QUESTIONS[13] = [
         'Total schedules = 3 × 4 × 2 = 24.'
       ]
     }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'A fruit stand has 5 types of fruit and 3 types of yogurt. How many fruit-yogurt combos can you make?',
+      choices: ["8", "10", "15", "20"],
+      answer: "15",
+      hints: [
+        'Use the Multiplication Principle.',
+        '5 fruit choices × 3 yogurt choices.',
+        '5 × 3 = ?'
+      ],
+      explanation: [
+        'Combos = fruit × yogurt.',
+        '= 5 × 3 = 15.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A coin is flipped 7 times. How many total outcomes are possible?',
+      answer: "128",
+      hints: [
+        'Each flip has 2 outcomes (H or T).',
+        'Total = 2 × 2 × 2 × 2 × 2 × 2 × 2.',
+        '= 2⁷.'
+      ],
+      explanation: [
+        'Each of the 7 flips has 2 outcomes.',
+        'Total = 2⁷ = 128.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A gift shop offers 6 types of cards, 4 types of wrapping paper, and 2 types of ribbons. How many gift-wrap combos (one of each) are possible?',
+      answer: "48",
+      hints: [
+        'Multiply the number of choices at each step.',
+        '6 × 4 × 2.',
+        '= 24 × 2.'
+      ],
+      explanation: [
+        'Combos = cards × wrapping × ribbons.',
+        '= 6 × 4 × 2 = 48.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A photo booth has 5 backgrounds and 4 props. You choose one background and one prop. How many different photo setups are possible?',
+      choices: ["9", "15", "20", "25"],
+      answer: "20",
+      hints: [
+        'Use the Multiplication Principle.',
+        '5 backgrounds × 4 props.',
+        '5 × 4 = ?'
+      ],
+      explanation: [
+        'Setups = backgrounds × props.',
+        '= 5 × 4 = 20.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'A game board has 10 tokens and 3 dice. How many ways can you choose one token and one die?',
+      answer: "30",
+      hints: [
+        'Use the Multiplication Principle.',
+        '10 tokens × 3 dice.',
+        '10 × 3 = ?'
+      ],
+      explanation: [
+        'Choices = tokens × dice.',
+        '= 10 × 3 = 30.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A password is 3 letters (A–Z) long. If repetition is allowed, how many passwords are possible?',
+      answer: "17576",
+      hints: [
+        'Each position has 26 choices.',
+        'Total = 26 × 26 × 26.',
+        '= 26³.'
+      ],
+      explanation: [
+        'Each of the 3 positions has 26 choices.',
+        'Total = 26³ = 17,576.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'A pizza shop offers 3 sizes and 8 toppings. How many different one-topping pizzas can you order?',
+      choices: ["11", "16", "24", "32"],
+      answer: "24",
+      hints: [
+        'Use the Multiplication Principle.',
+        '3 sizes × 8 toppings.',
+        '3 × 8 = ?'
+      ],
+      explanation: [
+        'Pizzas = sizes × toppings.',
+        '= 3 × 8 = 24.',
+        'There are 24 different one-topping pizzas.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A lock has 3 wheels, each with digits 0–9. How many combinations are possible?',
+      answer: "1000",
+      hints: [
+        'Each wheel has 10 choices.',
+        'Total = 10 × 10 × 10.',
+        '= 10³.'
+      ],
+      explanation: [
+        'Each of the 3 wheels has 10 choices.',
+        'Total = 10³ = 1,000.',
+        'There are 1,000 possible combinations.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A restaurant offers 6 appetizers, 5 main courses, and 4 desserts. How many different 3-course meals can be ordered?',
+      answer: "120",
+      hints: [
+        'Use the Multiplication Principle.',
+        '6 × 5 × 4.',
+        '= 120.'
+      ],
+      explanation: [
+        'Meals = appetizers × mains × desserts.',
+        '= 6 × 5 × 4 = 120.',
+        'There are 120 possible 3-course meals.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'A cafeteria offers 5 drinks and 3 snacks. How many drink-and-snack combos can you choose?',
+      choices: ["8", "12", "15", "18"],
+      answer: "15",
+      hints: [
+        'Each drink can be paired with each snack.',
+        'Total = 5 × 3.',
+        '= 15.'
+      ],
+      explanation: [
+        'Combos = drinks × snacks.',
+        '= 5 × 3 = 15.',
+        'There are 15 different combos.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A license plate has 2 letters followed by 3 digits. How many plates are possible if repetition is allowed?',
+      answer: "676000",
+      hints: [
+        'Letters: 26 × 26. Digits: 10 × 10 × 10.',
+        'Total = 26 × 26 × 10 × 10 × 10.',
+        '= 676 × 1000.'
+      ],
+      explanation: [
+        'Letters: 26² = 676.',
+        'Digits: 10³ = 1,000.',
+        'Total = 676 × 1,000 = 676,000.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'A toy store offers 6 colors of trucks and 4 sizes. How many different truck options are there?',
+      answer: "24",
+      hints: [
+        'Each color can come in each size.',
+        'Total = 6 × 4.',
+        '= 24.'
+      ],
+      explanation: [
+        'Options = colors × sizes.',
+        '= 6 × 4 = 24.',
+        'There are 24 different truck options.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A pizza shop offers 3 sizes, 4 types of crust, and 6 toppings. If you pick one of each, how many different pizzas can you make?',
+      answer: "72",
+      hints: [
+        'Use the Counting Principle: multiply the number of choices.',
+        '3 sizes × 4 crusts × 6 toppings.',
+        '3 × 4 = 12, then 12 × 6.'
+      ],
+      explanation: [
+        '<strong>Counting Principle</strong>: 3 × 4 × 6.',
+        '= 12 × 6 = <strong>72</strong> different pizzas.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'You have 3 shirts and 4 pairs of pants. How many different outfits can you make?',
+      choices: ["7","10","12","16"],
+      answer: "12",
+      hints: [
+        'For each shirt, you can pair it with any of the 4 pants.',
+        'Use the Counting Principle: multiply choices.',
+        '3 × 4 = ?'
+      ],
+      explanation: [
+        '<strong>Counting Principle</strong>: 3 shirts × 4 pants.',
+        '= <strong>12</strong> outfits.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A license plate has 2 letters followed by 3 digits. How many different plates are possible if letters and digits can repeat? (There are 26 letters and 10 digits.)',
+      answer: "676000",
+      hints: [
+        'Each letter position has 26 choices, each digit position has 10 choices.',
+        'Multiply: 26 × 26 × 10 × 10 × 10.',
+        '26 × 26 = 676, then 676 × 1000.'
+      ],
+      explanation: [
+        '<strong>Counting Principle</strong>: 26 × 26 × 10 × 10 × 10.',
+        '= 676 × 1000 = <strong>676,000</strong> plates.'
+      ]
+    }
   ],
 
   // --- Topic 1: Sample Spaces --- difficulty 1-2
@@ -4848,6 +7908,258 @@ EXTRA_QUESTIONS[13] = [
         'Total = 6 × 6 = 36 outcomes in the sample space.'
       ]
     }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'A spinner has 5 equal sections {1, 2, 3, 4, 5} and a coin is flipped. How many outcomes are in the sample space?',
+      choices: ["5", "7", "10", "25"],
+      answer: "10",
+      hints: [
+        'Spinner: 5 outcomes. Coin: 2 outcomes.',
+        'Total = 5 × 2.',
+        '= 10.'
+      ],
+      explanation: [
+        'Spinner: 5 outcomes. Coin: 2 outcomes.',
+        '5 × 2 = 10 outcomes in the sample space.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A bag has 3 colored balls (red, blue, green) and two coins are flipped. How many outcomes are in the sample space?',
+      answer: "12",
+      hints: [
+        'Balls: 3 choices. Coins: 2 × 2 = 4 outcomes.',
+        'Total = 3 × 4.',
+        '= 12.'
+      ],
+      explanation: [
+        'Balls: 3 choices. Two coins: 2 × 2 = 4 outcomes.',
+        'Total = 3 × 4 = 12 outcomes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Six coins are flipped. How many outcomes are in the sample space?',
+      answer: "64",
+      hints: [
+        'Each coin has 2 outcomes.',
+        'Total = 2 × 2 × 2 × 2 × 2 × 2 = 2⁶.',
+        '= 64.'
+      ],
+      explanation: [
+        'Each of the 6 coins has 2 outcomes.',
+        'Total outcomes = 2⁶ = 64.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'You roll a die and draw a card from {A, B, C}. How many outcomes are in the sample space?',
+      answer: "18",
+      hints: [
+        'Die: 6 outcomes. Cards: 3 outcomes.',
+        'Total = 6 × 3.',
+        '= 18.'
+      ],
+      explanation: [
+        'Die: 6 outcomes. Cards: 3 outcomes.',
+        'Total = 6 × 3 = 18 outcomes.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Two spinners are spun. Spinner 1 has {A, B, C, D} and Spinner 2 has {1, 2, 3}. How many outcomes are in the sample space?',
+      choices: ["7", "8", "10", "12"],
+      answer: "12",
+      hints: [
+        'Spinner 1: 4 outcomes. Spinner 2: 3 outcomes.',
+        'Total = 4 × 3.',
+        '= 12.'
+      ],
+      explanation: [
+        'Spinner 1: 4 outcomes. Spinner 2: 3 outcomes.',
+        'Total = 4 × 3 = 12.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Seven coins are flipped. How many outcomes are in the sample space?',
+      answer: "128",
+      hints: [
+        'Each coin has 2 outcomes.',
+        'Total = 2⁷.',
+        '= 128.'
+      ],
+      explanation: [
+        'Each of the 7 coins has 2 outcomes.',
+        'Total outcomes = 2⁷ = 128.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'You roll two dice. How many outcomes are in the sample space?',
+      choices: ["6", "12", "24", "36"],
+      answer: "36",
+      hints: [
+        'Die 1: 6 outcomes. Die 2: 6 outcomes.',
+        'Total = 6 × 6.',
+        '= 36.'
+      ],
+      explanation: [
+        'Each die has 6 outcomes.',
+        'Total outcomes = 6 × 6 = 36.',
+        'The sample space has 36 outcomes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A spinner has 5 sections and a coin is flipped. How many outcomes are in the sample space?',
+      answer: "10",
+      hints: [
+        'Spinner: 5 outcomes. Coin: 2 outcomes.',
+        'Total = 5 × 2.',
+        '= 10.'
+      ],
+      explanation: [
+        'Spinner: 5 outcomes. Coin: 2 outcomes.',
+        'Total = 5 × 2 = 10.',
+        'The sample space has 10 outcomes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Six coins are flipped. How many outcomes are in the sample space?',
+      answer: "64",
+      hints: [
+        'Each coin has 2 outcomes.',
+        'Total = 2⁶.',
+        '= 64.'
+      ],
+      explanation: [
+        'Each of the 6 coins has 2 outcomes.',
+        'Total outcomes = 2⁶ = 64.',
+        'The sample space has 64 outcomes.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'You roll a die and flip a coin. How many outcomes are in the sample space?',
+      choices: ["6", "8", "10", "12"],
+      answer: "12",
+      hints: [
+        'A die has 6 outcomes.',
+        'A coin has 2 outcomes.',
+        'Total = 6 × 2.'
+      ],
+      explanation: [
+        'Die: 6 outcomes. Coin: 2 outcomes.',
+        'Total = 6 × 2 = 12.',
+        'The sample space has 12 outcomes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Three coins are flipped. How many outcomes are in the sample space?',
+      answer: "8",
+      hints: [
+        'Each coin has 2 outcomes.',
+        'Total = 2 × 2 × 2.',
+        '= 2³.'
+      ],
+      explanation: [
+        'Each of the 3 coins has 2 outcomes.',
+        'Total = 2³ = 8.',
+        'The sample space has 8 outcomes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A spinner has 4 sections and a die is rolled. How many outcomes are in the sample space?',
+      answer: "24",
+      hints: [
+        'Spinner: 4 outcomes. Die: 6 outcomes.',
+        'Total = 4 × 6.',
+        '= 24.'
+      ],
+      explanation: [
+        'Spinner: 4 outcomes. Die: 6 outcomes.',
+        'Total = 4 × 6 = 24.',
+        'The sample space has 24 outcomes.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Two coins are flipped. How many total outcomes are in the sample space?',
+      choices: ["2","3","4","8"],
+      answer: "4",
+      hints: [
+        'Each coin has 2 outcomes: Heads (H) or Tails (T).',
+        'List them: HH, HT, TH, TT.',
+        'Count the outcomes.'
+      ],
+      explanation: [
+        'Outcomes: HH, HT, TH, TT.',
+        'Total = 2 × 2 = <strong>4</strong> outcomes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A spinner has 3 sections (Red, Blue, Green) and a coin is flipped. How many outcomes are in the sample space?',
+      answer: "6",
+      hints: [
+        'The spinner has 3 outcomes; the coin has 2 outcomes.',
+        'Use the Counting Principle: 3 × 2.',
+        'List some: Red-H, Red-T, Blue-H, Blue-T, ...'
+      ],
+      explanation: [
+        '<strong>Counting Principle</strong>: 3 spinner outcomes × 2 coin outcomes.',
+        '= <strong>6</strong> total outcomes in the sample space.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Three coins are flipped. How many outcomes have exactly 2 heads?',
+      choices: ["2","3","4","6"],
+      answer: "3",
+      hints: [
+        'List all 8 outcomes: HHH, HHT, HTH, HTT, THH, THT, TTH, TTT.',
+        'Find those with exactly 2 heads.',
+        'HHT, HTH, THH — count them.'
+      ],
+      explanation: [
+        'Outcomes with exactly 2 heads: HHT, HTH, THH.',
+        'There are <strong>3</strong> outcomes with exactly 2 heads.'
+      ]
+    }
   ],
 
   // --- Topic 2: Factorial & Arrangements --- difficulty 1-2
@@ -5119,7 +8431,8 @@ EXTRA_QUESTIONS[13] = [
         '= 362880.'
       ],
       explanation: [
-        'Arrangements = 9! = 362,880.'
+        'Arranging 9 items uses 9!.',
+        '9! = 9 × 8 × 7 × 6 × 5 × 4 × 3 × 2 × 1 = 362,880.'
       ]
     },
     {
@@ -5199,6 +8512,255 @@ EXTRA_QUESTIONS[13] = [
         'President: 8 choices. VP: 7 remaining. Secretary: 6 remaining.',
         '8 × 7 × 6 = 336.',
         'This is P(8,3) = 336.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'Calculate 7! (7 factorial).',
+      answer: "5040",
+      hints: [
+        '7! = 7 × 6 × 5 × 4 × 3 × 2 × 1.',
+        '7 × 6 = 42, 42 × 5 = 210.',
+        '210 × 4 = 840, 840 × 3 = 2520, 2520 × 2 = 5040.'
+      ],
+      explanation: [
+        '7! = 7 × 6 × 5 × 4 × 3 × 2 × 1.',
+        '= 5040.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'What is 8! ÷ 6!?',
+      choices: ["28", "42", "56", "72"],
+      answer: "56",
+      hints: [
+        '8! ÷ 6! = (8 × 7 × 6!) ÷ 6!.',
+        'The 6! cancels out.',
+        '= 8 × 7.'
+      ],
+      explanation: [
+        '8!/6! = (8 × 7 × 6!) / 6! = 8 × 7.',
+        '= 56.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'How many ways can 3 friends sit in a row of 3 chairs?',
+      answer: "6",
+      hints: [
+        'Arranging 3 people in 3 chairs = 3!.',
+        '3! = 3 × 2 × 1.',
+        '= 6.'
+      ],
+      explanation: [
+        '3 people in 3 chairs = 3! arrangements.',
+        '3! = 3 × 2 × 1 = 6.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'What is 2! (2 factorial)?',
+      choices: ["1", "2", "4", "8"],
+      answer: "2",
+      hints: [
+        '2! = 2 × 1.',
+        '= 2.',
+        'Factorial means multiply all integers down to 1.'
+      ],
+      explanation: [
+        '2! means multiply all integers from 2 down to 1.',
+        '2! = 2 × 1 = 2.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'How many ways can 9 books be arranged in a row on a shelf?',
+      answer: "362880",
+      hints: [
+        'Arranging 9 items = 9!.',
+        '9! = 9 × 8 × 7 × 6 × 5 × 4 × 3 × 2 × 1.',
+        '= 362,880.'
+      ],
+      explanation: [
+        'Arrangements = 9! = 362,880.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is 5! ÷ 3!?',
+      answer: "20",
+      hints: [
+        '5! ÷ 3! = (5 × 4 × 3!) ÷ 3!.',
+        'The 3! cancels out.',
+        '= 5 × 4.'
+      ],
+      explanation: [
+        '5!/3! = (5 × 4 × 3!) / 3!, and the 3! cancels.',
+        '= 5 × 4 = 20.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'What is 4!?',
+      choices: ["12", "16", "20", "24"],
+      answer: "24",
+      hints: [
+        '4! = 4 × 3 × 2 × 1.',
+        '= 12 × 2 × 1.',
+        '= 24.'
+      ],
+      explanation: [
+        '4! means multiply all integers from 4 down to 1.',
+        '4! = 4 × 3 × 2 × 1 = 24.',
+        'The answer is 24.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'How many ways can 7 people line up for a photo?',
+      answer: "5040",
+      hints: [
+        'Arranging 7 people = 7!.',
+        '7! = 7 × 6 × 5 × 4 × 3 × 2 × 1.',
+        '= 5,040.'
+      ],
+      explanation: [
+        'Arrangements = 7! = 7 × 6 × 5 × 4 × 3 × 2 × 1.',
+        '= 5,040.',
+        'There are 5,040 ways.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is 6! ÷ 4!?',
+      answer: "30",
+      hints: [
+        '6! ÷ 4! = (6 × 5 × 4!) ÷ 4!.',
+        'The 4! cancels out.',
+        '= 6 × 5.'
+      ],
+      explanation: [
+        '6!/4! = (6 × 5 × 4!) / 4!, and the 4! cancels.',
+        '= 6 × 5 = 30.',
+        'The answer is 30.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'Calculate 3! (3 factorial).',
+      answer: "6",
+      hints: [
+        '3! = 3 × 2 × 1.',
+        '3 × 2 = 6.',
+        '6 × 1 = 6.'
+      ],
+      explanation: [
+        '3! = 3 × 2 × 1 = 6.',
+        'The answer is 6.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'How many ways can 5 books be arranged on a shelf?',
+      choices: ["24", "60", "120", "720"],
+      answer: "120",
+      hints: [
+        'Arranging 5 items = 5!.',
+        '5! = 5 × 4 × 3 × 2 × 1.',
+        '= 120.'
+      ],
+      explanation: [
+        'Arrangements = 5! = 5 × 4 × 3 × 2 × 1.',
+        '= 120.',
+        'There are 120 ways.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is 7! ÷ 5!?',
+      answer: "42",
+      hints: [
+        '7! ÷ 5! = (7 × 6 × 5!) ÷ 5!.',
+        'The 5! cancels out.',
+        '= 7 × 6.'
+      ],
+      explanation: [
+        '7!/5! = (7 × 6 × 5!) / 5!, and the 5! cancels.',
+        '= 7 × 6 = 42.',
+        'The answer is 42.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'How many ways can you arrange 5 different books on a shelf?',
+      answer: "120",
+      hints: [
+        'This is a permutation of 5 items: <span class="math">5!</span>.',
+        '<span class="math">5! = 5 × 4 × 3 × 2 × 1</span>.',
+        'Calculate step by step.'
+      ],
+      explanation: [
+        '<span class="math">5!</span> = 5 × 4 × 3 × 2 × 1.',
+        '= 20 × 6 = <strong>120</strong> arrangements.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'How many 3-letter "words" (arrangements) can be formed from the letters A, B, C, D, E if no letter repeats?',
+      choices: ["15","30","60","120"],
+      answer: "60",
+      hints: [
+        'Choose the 1st letter: 5 options. 2nd letter: 4 options. 3rd letter: 3 options.',
+        'Multiply: 5 × 4 × 3.',
+        'This is <span class="math">P(5,3)</span>.'
+      ],
+      explanation: [
+        '<span class="math">P(5,3)</span> = 5 × 4 × 3.',
+        '= <strong>60</strong> arrangements.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Eight runners compete in a race. How many ways can the gold, silver, and bronze medals be awarded?',
+      answer: "336",
+      hints: [
+        'This is a permutation: choosing 3 winners from 8.',
+        '<span class="math">P(8,3) = 8 × 7 × 6</span>.',
+        'Multiply step by step.'
+      ],
+      explanation: [
+        '<span class="math">P(8,3)</span> = 8 × 7 × 6.',
+        '= 56 × 6 = <strong>336</strong> ways.'
       ]
     }
   ],
@@ -5567,6 +9129,259 @@ EXTRA_QUESTIONS[13] = [
         'P(even) = 4/8 = 1/2.'
       ]
     }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'A jar has 6 red, 4 blue, and 2 yellow marbles. What is the probability of drawing a red marble?',
+      choices: ["<span class=\"math\">\\frac{1}{6}</span>", "<span class=\"math\">\\frac{1}{3}</span>", "<span class=\"math\">\\frac{1}{2}</span>", "<span class=\"math\">\\frac{2}{3}</span>"],
+      answer: "<span class=\"math\">\\frac{1}{2}</span>",
+      hints: [
+        'Total marbles = 6 + 4 + 2 = 12.',
+        'Red marbles = 6.',
+        'P(red) = 6/12 = ?'
+      ],
+      explanation: [
+        'Total = 6 + 4 + 2 = 12 marbles.',
+        'P(red) = 6/12 = 1/2.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A standard die is rolled. What is the probability of rolling an even number? Give your answer as a fraction (e.g., 1/3).',
+      answer: "1/2",
+      hints: [
+        'Even numbers on a die: 2, 4, 6.',
+        'That is 3 favorable outcomes out of 6.',
+        'Simplify 3/6.'
+      ],
+      explanation: [
+        'Favorable outcomes: {2, 4, 6} → 3 outcomes.',
+        'P(even) = 3/6 = 1/2.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A bag has 5 green, 3 orange, and 7 purple beads. What is the probability of picking a purple bead?',
+      choices: ["<span class=\"math\">\\frac{1}{5}</span>", "<span class=\"math\">\\frac{1}{3}</span>", "<span class=\"math\">\\frac{7}{15}</span>", "<span class=\"math\">\\frac{7}{12}</span>"],
+      answer: "<span class=\"math\">\\frac{7}{15}</span>",
+      hints: [
+        'Total beads = 5 + 3 + 7 = 15.',
+        'Purple beads = 7.',
+        'P(purple) = 7/15.'
+      ],
+      explanation: [
+        'Total = 5 + 3 + 7 = 15 beads.',
+        'P(purple) = 7/15.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'A bag has 4 red and 6 blue marbles. What is the probability of drawing a red marble? Give your answer as a fraction.',
+      answer: "2/5",
+      hints: [
+        'Total marbles = 4 + 6 = 10.',
+        'Red marbles = 4.',
+        'P(red) = 4/10 = 2/5.'
+      ],
+      explanation: [
+        'Total = 10 marbles.',
+        'P(red) = 4/10 = 2/5.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A die is rolled. What is the probability of rolling a number less than 3?',
+      choices: ["<span class=\"math\">\\frac{1}{6}</span>", "<span class=\"math\">\\frac{1}{3}</span>", "<span class=\"math\">\\frac{1}{2}</span>", "<span class=\"math\">\\frac{2}{3}</span>"],
+      answer: "<span class=\"math\">\\frac{1}{3}</span>",
+      hints: [
+        'Numbers less than 3: 1 and 2.',
+        'That is 2 out of 6 outcomes.',
+        'Simplify 2/6.'
+      ],
+      explanation: [
+        'Favorable: {1, 2} → 2 outcomes.',
+        'P(< 3) = 2/6 = 1/3.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A spinner has 8 equal sections numbered 1–8. What is the probability of landing on an odd number? Give as a fraction.',
+      answer: "1/2",
+      hints: [
+        'Odd numbers from 1–8: 1, 3, 5, 7.',
+        'That is 4 out of 8 sections.',
+        'Simplify 4/8.'
+      ],
+      explanation: [
+        'Odd numbers: {1, 3, 5, 7} → 4 outcomes.',
+        'P(odd) = 4/8 = 1/2.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'A bag has 6 red and 4 green marbles. What is the probability of drawing a green marble?',
+      choices: ["<span class=\"math\">\\frac{1}{5}</span>", "<span class=\"math\">\\frac{2}{5}</span>", "<span class=\"math\">\\frac{3}{5}</span>", "<span class=\"math\">\\frac{4}{5}</span>"],
+      answer: "<span class=\"math\">\\frac{2}{5}</span>",
+      hints: [
+        'Total marbles = 6 + 4 = 10.',
+        'Green marbles = 4.',
+        'P(green) = 4/10. Simplify.'
+      ],
+      explanation: [
+        'Total = 10 marbles.',
+        'P(green) = 4/10 = 2/5.',
+        'The probability is 2/5.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A spinner has 10 equal sections numbered 1–10. What is the probability of landing on a number greater than 7? Give as a fraction.',
+      answer: "3/10",
+      hints: [
+        'Numbers greater than 7: 8, 9, 10.',
+        'That is 3 out of 10 sections.',
+        'P = 3/10.'
+      ],
+      explanation: [
+        'Favorable: {8, 9, 10} → 3 outcomes.',
+        'P(> 7) = 3/10.',
+        'The probability is 3/10.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A deck has 52 cards. What is the probability of drawing a king? Give as a fraction.',
+      answer: "1/13",
+      hints: [
+        'There are 4 kings in a standard deck.',
+        'P(king) = 4/52.',
+        'Simplify the fraction.'
+      ],
+      explanation: [
+        'There are 4 kings out of 52 cards.',
+        'P(king) = 4/52 = 1/13.',
+        'The probability is 1/13.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'A bag has 4 red, 6 blue, and 2 white marbles. What is the probability of drawing a red marble?',
+      choices: ["<span class=\"math\">\\frac{1}{4}</span>", "<span class=\"math\">\\frac{1}{3}</span>", "<span class=\"math\">\\frac{1}{2}</span>", "<span class=\"math\">\\frac{2}{3}</span>"],
+      answer: "<span class=\"math\">\\frac{1}{3}</span>",
+      hints: [
+        'Total marbles = 4 + 6 + 2 = 12.',
+        'Red marbles = 4.',
+        'P(red) = 4/12. Simplify.'
+      ],
+      explanation: [
+        'Total = 12 marbles.',
+        'P(red) = 4/12 = 1/3.',
+        'The probability is 1/3.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A spinner has 8 equal sections numbered 1–8. What is the probability of landing on an even number? Give as a fraction.',
+      answer: "1/2",
+      hints: [
+        'Even numbers: 2, 4, 6, 8.',
+        'That is 4 out of 8 sections.',
+        'P = 4/8. Simplify.'
+      ],
+      explanation: [
+        'Favorable: {2, 4, 6, 8} → 4 outcomes.',
+        'P(even) = 4/8 = 1/2.',
+        'The probability is 1/2.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A deck has 52 cards. What is the probability of drawing a heart? Give as a fraction.',
+      answer: "1/4",
+      hints: [
+        'There are 13 hearts in a standard deck.',
+        'P(heart) = 13/52.',
+        'Simplify the fraction.'
+      ],
+      explanation: [
+        'There are 13 hearts out of 52 cards.',
+        'P(heart) = 13/52 = 1/4.',
+        'The probability is 1/4.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A bag has 5 red, 3 blue, and 2 green marbles. What is the probability of drawing a red marble?',
+      choices: ["1/5","1/2","3/10","2/5"],
+      answer: "1/2",
+      hints: [
+        'Total marbles = 5 + 3 + 2 = 10.',
+        'P(red) = number of red ÷ total.',
+        '5/10 simplifies to what?'
+      ],
+      explanation: [
+        'Total = 5 + 3 + 2 = 10 marbles.',
+        'P(red) = 5/10 = <strong>1/2</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'How many ways can you choose 3 students from a group of 7 for a committee? (Order does not matter.)',
+      answer: "35",
+      hints: [
+        'This is a combination: <span class="math">C(7,3)</span>.',
+        '<span class="math">C(7,3) = 7! / (3! × 4!)</span>.',
+        '= (7 × 6 × 5) / (3 × 2 × 1).'
+      ],
+      explanation: [
+        '<span class="math">C(7,3)</span> = (7 × 6 × 5) / (3 × 2 × 1).',
+        '= 210 / 6 = <strong>35</strong> ways.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A standard deck has 52 cards. What is the probability of drawing a heart?',
+      choices: ["1/13","1/4","1/2","4/13"],
+      answer: "1/4",
+      hints: [
+        'A deck has 4 suits, each with 13 cards.',
+        'There are 13 hearts in a deck of 52.',
+        'P(heart) = 13/52.'
+      ],
+      explanation: [
+        'P(heart) = 13/52 = <strong>1/4</strong>.',
+        'There are 13 hearts out of 52 total cards.'
+      ]
+    }
   ],
 
   // --- Topic 4: Complementary Events --- difficulty 1-2
@@ -5921,6 +9736,257 @@ EXTRA_QUESTIONS[13] = [
         'P(not 6) = 1 − 1/6 = 5/6.'
       ]
     }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'The probability of a bus arriving on time is 0.82. What is the probability it does NOT arrive on time?',
+      choices: ["0.08", "0.12", "0.18", "0.28"],
+      answer: "0.18",
+      hints: [
+        'P(not A) = 1 − P(A).',
+        'P(not on time) = 1 − 0.82.',
+        '= 0.18.'
+      ],
+      explanation: [
+        'Complementary probability: P(not on time) = 1 − P(on time).',
+        'P(not on time) = 1 − 0.82 = 0.18.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'A spinner has P(landing on blue) = 2/7. What is P(NOT landing on blue)? Give your answer as a fraction.',
+      answer: "5/7",
+      hints: [
+        'P(not blue) = 1 − P(blue).',
+        '1 − 2/7 = 7/7 − 2/7.',
+        '= 5/7.'
+      ],
+      explanation: [
+        'P(not blue) = 1 − 2/7.',
+        '= 7/7 − 2/7 = 5/7.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'The probability of picking a vowel from a letter bag is 0.4. What is the probability of NOT picking a vowel?',
+      answer: "0.6",
+      hints: [
+        'P(not vowel) = 1 − P(vowel).',
+        '1 − 0.4 = ?',
+        '= 0.6.'
+      ],
+      explanation: [
+        'P(not vowel) = 1 − P(vowel).',
+        'P(not vowel) = 1 − 0.4 = 0.6.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'The probability of winning a prize is 0.15. What is the probability of NOT winning?',
+      answer: "0.85",
+      hints: [
+        'P(not A) = 1 − P(A).',
+        '1 − 0.15.',
+        '= 0.85.'
+      ],
+      explanation: [
+        'P(not winning) = 1 − P(winning).',
+        'P(not winning) = 1 − 0.15 = 0.85.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A spinner has P(yellow) = 4/9. What is P(NOT yellow)?',
+      choices: ["<span class=\"math\">\\frac{4}{9}</span>", "<span class=\"math\">\\frac{5}{9}</span>", "<span class=\"math\">\\frac{2}{3}</span>", "<span class=\"math\">\\frac{1}{3}</span>"],
+      answer: "<span class=\"math\">\\frac{5}{9}</span>",
+      hints: [
+        'P(not yellow) = 1 − P(yellow).',
+        '1 − 4/9 = 9/9 − 4/9.',
+        '= 5/9.'
+      ],
+      explanation: [
+        'P(not yellow) = 1 − P(yellow).',
+        'P(not yellow) = 1 − 4/9 = 9/9 − 4/9 = 5/9.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'The probability that a light bulb is defective is 0.03. What is the probability it is NOT defective?',
+      answer: "0.97",
+      hints: [
+        'P(not defective) = 1 − P(defective).',
+        '1 − 0.03.',
+        '= 0.97.'
+      ],
+      explanation: [
+        'Complementary probability: P(not defective) = 1 − P(defective).',
+        'P(not defective) = 1 − 0.03 = 0.97.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'The probability that it will snow tomorrow is 0.20. What is the probability it will NOT snow?',
+      choices: ["0.20", "0.40", "0.60", "0.80"],
+      answer: "0.80",
+      hints: [
+        'P(not snow) = 1 − P(snow).',
+        '1 − 0.20.',
+        '= 0.80.'
+      ],
+      explanation: [
+        'Complementary probability: P(not snow) = 1 − P(snow).',
+        'P(not snow) = 1 − 0.20 = 0.80.',
+        'The probability it will NOT snow is 0.80.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'The probability of a team winning a game is 0.65. What is the probability they do NOT win?',
+      answer: "0.35",
+      hints: [
+        'P(not winning) = 1 − P(winning).',
+        '1 − 0.65.',
+        '= 0.35.'
+      ],
+      explanation: [
+        'Complementary probability: P(not winning) = 1 − P(winning).',
+        'P(not winning) = 1 − 0.65 = 0.35.',
+        'The probability is 0.35.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A spinner has P(green) = 3/7. What is P(NOT green)?',
+      choices: ["<span class=\"math\">\\frac{3}{7}</span>", "<span class=\"math\">\\frac{4}{7}</span>", "<span class=\"math\">\\frac{2}{7}</span>", "<span class=\"math\">\\frac{5}{7}</span>"],
+      answer: "<span class=\"math\">\\frac{4}{7}</span>",
+      hints: [
+        'P(not green) = 1 − P(green).',
+        '1 − 3/7 = 7/7 − 3/7.',
+        '= 4/7.'
+      ],
+      explanation: [
+        'P(not green) = 1 − P(green).',
+        'P(not green) = 1 − 3/7 = 4/7.',
+        'The probability of NOT green is 4/7.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'The probability of a bus being late is 0.15. What is the probability the bus is NOT late?',
+      choices: ["0.15", "0.75", "0.85", "0.95"],
+      answer: "0.85",
+      hints: [
+        'P(not late) = 1 − P(late).',
+        '1 − 0.15.',
+        '= 0.85.'
+      ],
+      explanation: [
+        'Complementary probability: P(not late) = 1 − P(late).',
+        'P(not late) = 1 − 0.15 = 0.85.',
+        'The probability is 0.85.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'The probability of drawing a red card from a standard deck is 1/2. What is the probability of NOT drawing a red card? Give as a fraction.',
+      answer: "1/2",
+      hints: [
+        'P(not red) = 1 − P(red).',
+        '1 − 1/2.',
+        '= 1/2.'
+      ],
+      explanation: [
+        'P(not red) = 1 − 1/2 = 1/2.',
+        'The probability of not drawing red is 1/2.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'The probability of a spinner landing on blue is 0.42. What is the probability it does NOT land on blue?',
+      answer: "0.58",
+      hints: [
+        'P(not blue) = 1 − P(blue).',
+        '1 − 0.42.',
+        '= 0.58.'
+      ],
+      explanation: [
+        'P(not blue) = 1 − 0.42 = 0.58.',
+        'The probability is 0.58.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'The probability of rain tomorrow is 0.35. What is the probability that it will NOT rain?',
+      answer: "0.65",
+      hints: [
+        'The complement of an event has probability 1 − P(event).',
+        'P(no rain) = 1 − P(rain).',
+        '1 − 0.35 = ?'
+      ],
+      explanation: [
+        'P(no rain) = 1 − P(rain) = 1 − 0.35.',
+        'P(no rain) = <strong>0.65</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A spinner has sections: Red (30%), Blue (25%), Green (20%), Yellow (25%). What is the probability of NOT landing on Green?',
+      choices: ["20%","75%","80%","100%"],
+      answer: "80%",
+      hints: [
+        'P(not Green) = 100% − P(Green).',
+        'P(Green) = 20%.',
+        '100% − 20% = ?'
+      ],
+      explanation: [
+        'P(not Green) = 100% − 20%.',
+        '= <strong>80%</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A bag has 8 marbles: 3 red and 5 blue. What is the probability of NOT drawing a red marble?',
+      choices: ["3/8","5/8","1/2","3/5"],
+      answer: "5/8",
+      hints: [
+        'P(red) = 3/8.',
+        'P(not red) = 1 − P(red).',
+        '1 − 3/8 = 5/8.'
+      ],
+      explanation: [
+        'P(red) = 3/8, so P(not red) = 1 − 3/8.',
+        '= <strong>5/8</strong>.'
+      ]
+    }
   ],
 
   // --- Topic 5: Combinations --- difficulty 2-3
@@ -6272,6 +10338,257 @@ EXTRA_QUESTIONS[13] = [
         '= 28.'
       ]
     }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'How many ways can you choose 3 books from a shelf of 7? Calculate C(7, 3).',
+      answer: "35",
+      hints: [
+        'C(n, r) = n! / (r! × (n−r)!).',
+        'C(7, 3) = 7! / (3! × 4!).',
+        '= (7 × 6 × 5) / (3 × 2 × 1) = 210/6.'
+      ],
+      explanation: [
+        'C(7, 3) = (7 × 6 × 5) / (3 × 2 × 1).',
+        '= 210 / 6 = 35.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'How many ways can a coach choose 4 players from a team of 9?',
+      choices: ["36", "84", "126", "3024"],
+      answer: "126",
+      hints: [
+        'Order does not matter, so use C(9, 4).',
+        'C(9, 4) = (9 × 8 × 7 × 6) / (4 × 3 × 2 × 1).',
+        '= 3024 / 24.'
+      ],
+      explanation: [
+        'C(9, 4) = (9 × 8 × 7 × 6) / (4 × 3 × 2 × 1).',
+        '= 3024 / 24 = 126.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Calculate C(10, 2).',
+      answer: "45",
+      hints: [
+        'C(10, 2) = 10! / (2! × 8!).',
+        '= (10 × 9) / (2 × 1).',
+        '= 90 / 2.'
+      ],
+      explanation: [
+        'C(10, 2) = (10 × 9) / (2 × 1).',
+        '= 90 / 2 = 45.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'How many ways can you choose 2 flavors from 5? Calculate C(5, 2).',
+      choices: ["5", "10", "15", "20"],
+      answer: "10",
+      hints: [
+        'C(5, 2) = 5! / (2! × 3!).',
+        '= (5 × 4) / (2 × 1).',
+        '= 20/2.'
+      ],
+      explanation: [
+        'C(5, 2) = 5! / (2! × 3!) = (5 × 4) / (2 × 1).',
+        '= 20 / 2 = 10.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Calculate C(8, 4).',
+      answer: "70",
+      hints: [
+        'C(8, 4) = 8! / (4! × 4!).',
+        '= (8 × 7 × 6 × 5) / (4 × 3 × 2 × 1).',
+        '= 1680 / 24.'
+      ],
+      explanation: [
+        'C(8, 4) = (8 × 7 × 6 × 5) / (4 × 3 × 2 × 1).',
+        '= 1680 / 24 = 70.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A committee of 3 is chosen from 10 people. How many committees are possible?',
+      answer: "120",
+      hints: [
+        'C(10, 3) = 10! / (3! × 7!).',
+        '= (10 × 9 × 8) / (3 × 2 × 1).',
+        '= 720 / 6.'
+      ],
+      explanation: [
+        'C(10, 3) = (10 × 9 × 8) / (3 × 2 × 1).',
+        '= 720 / 6 = 120.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Calculate C(7, 2).',
+      choices: ["14", "21", "28", "35"],
+      answer: "21",
+      hints: [
+        'C(7, 2) = 7! / (2! × 5!).',
+        '= (7 × 6) / (2 × 1).',
+        '= 42 / 2.'
+      ],
+      explanation: [
+        'C(7, 2) = 7! / (2! × 5!) = (7 × 6) / (2 × 1).',
+        '= 42 / 2 = 21.',
+        'There are 21 ways to choose 2 from 7.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Calculate C(9, 3).',
+      answer: "84",
+      hints: [
+        'C(9, 3) = 9! / (3! × 6!).',
+        '= (9 × 8 × 7) / (3 × 2 × 1).',
+        '= 504 / 6.'
+      ],
+      explanation: [
+        'C(9, 3) = (9 × 8 × 7) / (3 × 2 × 1).',
+        '= 504 / 6 = 84.',
+        'There are 84 ways to choose 3 from 9.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A team of 4 is chosen from 8 players. How many teams are possible?',
+      answer: "70",
+      hints: [
+        'C(8, 4) = 8! / (4! × 4!).',
+        '= (8 × 7 × 6 × 5) / (4 × 3 × 2 × 1).',
+        '= 1680 / 24.'
+      ],
+      explanation: [
+        'C(8, 4) = (8 × 7 × 6 × 5) / (4 × 3 × 2 × 1).',
+        '= 1680 / 24 = 70.',
+        'There are 70 possible teams.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'How many ways can you choose 3 students from a group of 7? Calculate C(7, 3).',
+      answer: "35",
+      hints: [
+        'C(n, r) = n! / (r! × (n−r)!).',
+        'C(7, 3) = 7! / (3! × 4!).',
+        '= (7 × 6 × 5) / (3 × 2 × 1) = 210/6.'
+      ],
+      explanation: [
+        'C(7, 3) = 7! / (3! × 4!) = (7 × 6 × 5) / (3 × 2 × 1).',
+        '= 210 / 6 = 35.',
+        'There are 35 ways to choose 3 from 7.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Calculate C(10, 2).',
+      choices: ["30", "40", "45", "50"],
+      answer: "45",
+      hints: [
+        'C(10, 2) = 10! / (2! × 8!).',
+        '= (10 × 9) / (2 × 1).',
+        '= 90 / 2.'
+      ],
+      explanation: [
+        'C(10, 2) = (10 × 9) / (2 × 1).',
+        '= 90 / 2 = 45.',
+        'There are 45 ways to choose 2 from 10.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A committee of 3 is chosen from 9 members. How many committees are possible?',
+      answer: "84",
+      hints: [
+        'C(9, 3) = 9! / (3! × 6!).',
+        '= (9 × 8 × 7) / (3 × 2 × 1).',
+        '= 504 / 6.'
+      ],
+      explanation: [
+        'C(9, 3) = (9 × 8 × 7) / (3 × 2 × 1).',
+        '= 504 / 6 = 84.',
+        'There are 84 possible committees.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'How many ways can you choose 2 toppings from a list of 6? (Order does not matter.)',
+      answer: "15",
+      hints: [
+        'This is <span class="math">C(6,2)</span>.',
+        '<span class="math">C(6,2) = (6 × 5) / (2 × 1)</span>.',
+        '= 30 / 2.'
+      ],
+      explanation: [
+        '<span class="math">C(6,2)</span> = (6 × 5) / (2 × 1).',
+        '= 30 / 2 = <strong>15</strong> ways.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'From a group of 8 students, a teacher picks 4 for a project. How many different groups are possible?',
+      choices: ["56","70","168","1680"],
+      answer: "70",
+      hints: [
+        'Order does not matter, so use combinations: <span class="math">C(8,4)</span>.',
+        '<span class="math">C(8,4) = 8! / (4! × 4!)</span>.',
+        '= (8 × 7 × 6 × 5) / (4 × 3 × 2 × 1) = 1680 / 24.'
+      ],
+      explanation: [
+        '<span class="math">C(8,4)</span> = (8 × 7 × 6 × 5) / (4 × 3 × 2 × 1).',
+        '= 1680 / 24 = <strong>70</strong> groups.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'How many ways can a committee of 3 be chosen from 10 volunteers?',
+      answer: "120",
+      hints: [
+        'Use <span class="math">C(10,3)</span> since order does not matter.',
+        '<span class="math">C(10,3) = (10 × 9 × 8) / (3 × 2 × 1)</span>.',
+        '= 720 / 6.'
+      ],
+      explanation: [
+        '<span class="math">C(10,3)</span> = (10 × 9 × 8) / (3 × 2 × 1).',
+        '= 720 / 6 = <strong>120</strong> ways.'
+      ]
+    }
   ],
 
   // --- Topic 6: Permutations --- difficulty 2-3
@@ -6618,6 +10935,259 @@ EXTRA_QUESTIONS[13] = [
       explanation: [
         '4 distinct letters: M, A, T, H.',
         'Arrangements = 4! = 4 × 3 × 2 × 1 = 24.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'How many ways can you arrange 4 letters from the word PLANETS (7 letters, all different)? Calculate P(7, 4).',
+      answer: "840",
+      hints: [
+        'P(n, r) = n! / (n−r)!.',
+        'P(7, 4) = 7! / 3! = 7 × 6 × 5 × 4.',
+        '= 840.'
+      ],
+      explanation: [
+        'P(7, 4) = 7 × 6 × 5 × 4.',
+        '= 42 × 20 = 840.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'In a spelling bee, 12 students compete. How many ways can 1st, 2nd, and 3rd place be awarded?',
+      choices: ["220", "660", "1320", "1728"],
+      answer: "1320",
+      hints: [
+        'This is P(12, 3) since order matters.',
+        '12 × 11 × 10.',
+        '= 1320.'
+      ],
+      explanation: [
+        '1st: 12 choices. 2nd: 11. 3rd: 10.',
+        'P(12, 3) = 12 × 11 × 10 = 1320.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Calculate P(8, 2).',
+      answer: "56",
+      hints: [
+        'P(n, r) = n! / (n−r)!.',
+        'P(8, 2) = 8! / 6! = 8 × 7.',
+        '= 56.'
+      ],
+      explanation: [
+        'P(n, r) = n!/(n−r)!. P(8, 2) = 8!/6!.',
+        '= 8 × 7 = 56.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Calculate P(6, 2).',
+      choices: ["12", "15", "24", "30"],
+      answer: "30",
+      hints: [
+        'P(n, r) = n! / (n−r)!.',
+        'P(6, 2) = 6! / 4! = 6 × 5.',
+        '= 30.'
+      ],
+      explanation: [
+        'P(6, 2) = 6!/4! = 6 × 5.',
+        '= 30.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'How many 3-letter arrangements can be made from the letters A, B, C, D, E (no repeats)?',
+      answer: "60",
+      hints: [
+        'P(5, 3) = 5 × 4 × 3.',
+        '= 20 × 3.',
+        '= 60.'
+      ],
+      explanation: [
+        'P(5, 3) = 5!/2! = 5 × 4 × 3.',
+        '= 60 arrangements.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'In a class of 15 students, how many ways can a president, vice president, and secretary be chosen?',
+      answer: "2730",
+      hints: [
+        'Order matters, so P(15, 3).',
+        '15 × 14 × 13.',
+        '= 210 × 13.'
+      ],
+      explanation: [
+        'P(15, 3) = 15 × 14 × 13.',
+        '= 2730.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Calculate P(8, 2).',
+      choices: ["28", "56", "64", "72"],
+      answer: "56",
+      hints: [
+        'P(n, r) = n! / (n−r)!.',
+        'P(8, 2) = 8! / 6! = 8 × 7.',
+        '= 56.'
+      ],
+      explanation: [
+        'P(8, 2) = 8!/6! = 8 × 7.',
+        '= 56.',
+        'There are 56 ways to arrange 2 items from 8.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'How many 4-letter arrangements can be made from the letters A, B, C, D, E, F (no repeats)?',
+      answer: "360",
+      hints: [
+        'P(6, 4) = 6 × 5 × 4 × 3.',
+        '= 30 × 12.',
+        '= 360.'
+      ],
+      explanation: [
+        'P(6, 4) = 6!/2! = 6 × 5 × 4 × 3.',
+        '= 360 arrangements.',
+        'There are 360 possible 4-letter arrangements.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'In a race with 12 runners, how many ways can the gold, silver, and bronze medals be awarded?',
+      answer: "1320",
+      hints: [
+        'Order matters, so use P(12, 3).',
+        '12 × 11 × 10.',
+        '= 1320.'
+      ],
+      explanation: [
+        'P(12, 3) = 12 × 11 × 10.',
+        '= 1320.',
+        'There are 1320 ways to award the three medals.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'How many ways can you arrange 2 people in a row from a group of 9? Calculate P(9, 2).',
+      answer: "72",
+      hints: [
+        'P(n, r) = n! / (n−r)!.',
+        'P(9, 2) = 9! / 7! = 9 × 8.',
+        '= 72.'
+      ],
+      explanation: [
+        'P(9, 2) = 9!/7! = 9 × 8.',
+        '= 72.',
+        'There are 72 ways to arrange 2 from 9.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'In a spelling bee with 10 contestants, how many ways can 1st and 2nd place be awarded?',
+      choices: ["20", "45", "90", "100"],
+      answer: "90",
+      hints: [
+        'Order matters: P(10, 2).',
+        '= 10 × 9.',
+        '= 90.'
+      ],
+      explanation: [
+        'P(10, 2) = 10 × 9.',
+        '= 90.',
+        'There are 90 ways.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'How many 3-letter arrangements can be made from the letters A, B, C, D, E (no repeats)?',
+      answer: "60",
+      hints: [
+        'P(5, 3) = 5 × 4 × 3.',
+        '= 20 × 3.',
+        '= 60.'
+      ],
+      explanation: [
+        'P(5, 3) = 5!/2! = 5 × 4 × 3.',
+        '= 60 arrangements.',
+        'There are 60 possible 3-letter arrangements.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'You flip a fair coin and roll a standard die. What is the probability of getting heads AND rolling a 6?',
+      choices: ["1/6","1/8","1/12","1/2"],
+      answer: "1/12",
+      hints: [
+        'These are independent events.',
+        'P(heads) = 1/2, P(rolling 6) = 1/6.',
+        'Multiply: (1/2) × (1/6).'
+      ],
+      explanation: [
+        'P(heads AND 6) = P(heads) × P(6) = (1/2) × (1/6).',
+        '= <strong>1/12</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Two standard dice are rolled. What is the probability of both showing a number greater than 4? Express as a fraction: how many favorable outcomes are there out of 36?',
+      answer: "4",
+      hints: [
+        'Numbers greater than 4 on a die: 5 and 6 (2 options).',
+        'Favorable outcomes for die 1: 2. For die 2: 2.',
+        'Total favorable = 2 × 2.'
+      ],
+      explanation: [
+        'Each die has 2 favorable outcomes (5 or 6).',
+        'Favorable outcomes = 2 × 2 = <strong>4</strong> out of 36.',
+        'P = 4/36 = 1/9.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A spinner has 4 equal sections (1, 2, 3, 4) and a coin is flipped. What is the probability of spinning a 3 AND getting tails?',
+      choices: ["1/4","1/6","1/8","1/2"],
+      answer: "1/8",
+      hints: [
+        'P(spinning 3) = 1/4. P(tails) = 1/2.',
+        'These are independent events.',
+        'Multiply: (1/4) × (1/2).'
+      ],
+      explanation: [
+        'P(3 AND tails) = (1/4) × (1/2).',
+        '= <strong>1/8</strong>.'
       ]
     }
   ],
@@ -6981,6 +11551,258 @@ EXTRA_QUESTIONS[13] = [
         'Second digit: 9 choices (0-9 minus the first digit).',
         'Third: 8 remaining. Fourth: 7 remaining.',
         'Total = 9 × 9 × 8 × 7 = 4536.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A 5-digit PIN uses digits 0–9 with repetition allowed. How many PINs are possible?',
+      choices: ["50000", "100000", "500000", "1000000"],
+      answer: "100000",
+      hints: [
+        'Each digit has 10 choices (0–9).',
+        'Total = 10 × 10 × 10 × 10 × 10.',
+        '= 10⁵.'
+      ],
+      explanation: [
+        'Each of the 5 positions has 10 choices.',
+        'Total = 10⁵ = 100,000.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A 4-letter code uses letters A–Z with NO repetition. How many codes are possible?',
+      answer: "358800",
+      hints: [
+        'First letter: 26 choices.',
+        'Second: 25, Third: 24, Fourth: 23.',
+        'Total = 26 × 25 × 24 × 23.'
+      ],
+      explanation: [
+        'No repetition: 26 × 25 × 24 × 23.',
+        '= 650 × 552 = 358,800.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A binary string is 8 characters long (each is 0 or 1). How many different strings are possible?',
+      answer: "256",
+      hints: [
+        'Each position has 2 choices: 0 or 1.',
+        'Total = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2.',
+        '= 2⁸.'
+      ],
+      explanation: [
+        'Each of the 8 positions has 2 choices.',
+        'Total = 2⁸ = 256.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A 3-digit code uses digits 0–9 with repetition allowed. How many codes are possible?',
+      answer: "1000",
+      hints: [
+        'Each digit has 10 choices.',
+        'Total = 10 × 10 × 10.',
+        '= 10³.'
+      ],
+      explanation: [
+        'Each of the 3 positions has 10 choices.',
+        'Total = 10³ = 1,000.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A 2-digit code uses digits 1–9 with NO repetition. How many codes are possible?',
+      choices: ["72", "81", "90", "100"],
+      answer: "72",
+      hints: [
+        'First digit: 9 choices. Second digit: 8 remaining.',
+        'Total = 9 × 8.',
+        '= 72.'
+      ],
+      explanation: [
+        'First digit: 9 choices. Second digit: 8 remaining.',
+        'Total = 9 × 8 = 72 codes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A 3-letter code uses letters A–Z with NO repetition. How many codes are possible?',
+      answer: "15600",
+      hints: [
+        'First letter: 26 choices.',
+        'Second: 25, Third: 24.',
+        'Total = 26 × 25 × 24.'
+      ],
+      explanation: [
+        'No repetition: 26 × 25 × 24.',
+        '= 15,600.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A 5-digit ZIP code uses digits 0–9 with repetition allowed. How many ZIP codes are possible?',
+      answer: "100000",
+      hints: [
+        'Each digit has 10 choices (0–9).',
+        'Total = 10 × 10 × 10 × 10 × 10.',
+        '= 10⁵.'
+      ],
+      explanation: [
+        'Each of the 5 positions has 10 choices.',
+        'Total = 10⁵ = 100,000.',
+        'There are 100,000 possible ZIP codes.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A 3-digit code uses digits 1–6 with NO repetition. How many codes are possible?',
+      choices: ["20", "60", "120", "216"],
+      answer: "120",
+      hints: [
+        'First digit: 6 choices. Second: 5 remaining. Third: 4 remaining.',
+        'Total = 6 × 5 × 4.',
+        '= 120.'
+      ],
+      explanation: [
+        'No repetition: 6 × 5 × 4 = 120.',
+        'There are 120 possible codes.',
+        'This is P(6,3) = 120.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A 2-letter code uses letters A–Z with repetition allowed. How many codes are possible?',
+      answer: "676",
+      hints: [
+        'Each position has 26 choices.',
+        'Total = 26 × 26.',
+        '= 26².'
+      ],
+      explanation: [
+        'Each of the 2 positions has 26 choices.',
+        'Total = 26² = 676.',
+        'There are 676 possible codes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A 3-digit PIN uses digits 0–9 and allows repetition. How many PINs are possible?',
+      answer: "1000",
+      hints: [
+        'Each digit has 10 choices (0–9).',
+        'Total = 10 × 10 × 10.',
+        '= 10³.'
+      ],
+      explanation: [
+        'Each of the 3 positions has 10 choices.',
+        'Total = 10³ = 1,000.',
+        'There are 1,000 possible PINs.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A 4-digit code uses digits 1–5 with NO repetition. How many codes are possible?',
+      choices: ["24", "60", "120", "625"],
+      answer: "120",
+      hints: [
+        'First digit: 5 choices. Second: 4. Third: 3. Fourth: 2.',
+        'Total = 5 × 4 × 3 × 2.',
+        '= 120.'
+      ],
+      explanation: [
+        'No repetition: 5 × 4 × 3 × 2 = 120.',
+        'This is P(5, 4) = 120.',
+        'There are 120 possible codes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A 3-letter code uses letters A–Z with repetition allowed. How many codes are possible?',
+      answer: "17576",
+      hints: [
+        'Each position has 26 choices.',
+        'Total = 26 × 26 × 26.',
+        '= 26³.'
+      ],
+      explanation: [
+        'Each of the 3 positions has 26 choices.',
+        'Total = 26³ = 17,576.',
+        'There are 17,576 possible codes.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A bag has 6 red and 4 blue marbles. You draw 2 marbles without replacement. What is the probability that both are red?',
+      choices: ["6/10","1/3","3/10","30/90"],
+      answer: "1/3",
+      hints: [
+        'P(1st red) = 6/10. After removing a red, P(2nd red) = 5/9.',
+        'Multiply: (6/10) × (5/9).',
+        '= 30/90 = 1/3.'
+      ],
+      explanation: [
+        'P(1st red) = 6/10. P(2nd red | 1st red) = 5/9.',
+        'P(both red) = (6/10) × (5/9) = 30/90 = <strong>1/3</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A jar has 5 red and 3 green candies. You pick 2 without replacement. How many total ways can you choose 2 candies from 8?',
+      answer: "28",
+      hints: [
+        'Use combinations: <span class="math">C(8,2)</span>.',
+        '<span class="math">C(8,2) = (8 × 7) / (2 × 1)</span>.',
+        '= 56 / 2.'
+      ],
+      explanation: [
+        '<span class="math">C(8,2)</span> = (8 × 7) / (2 × 1) = 56 / 2.',
+        '= <strong>28</strong> ways.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'From a deck of 52 cards, you draw 2 cards without replacement. Is the probability of the second card affected by the first draw?',
+      choices: ["No, they are independent","Yes, these are dependent events","Only if both are the same suit","It depends on the card drawn"],
+      answer: "Yes, these are dependent events",
+      hints: [
+        'Without replacement means the first card is not put back.',
+        'This changes the total number of cards for the second draw.',
+        'When one event affects another, they are dependent.'
+      ],
+      explanation: [
+        'Drawing without replacement changes the sample space for the second draw (51 cards instead of 52).',
+        'These are <strong>dependent events</strong>.'
       ]
     }
   ],
@@ -7352,6 +12174,257 @@ EXTRA_QUESTIONS[13] = [
         'Not divisible by 3 or 5: 100 − 47 = 53.'
       ]
     }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A coin is flipped 4 times. What is the probability of getting at least one head?',
+      choices: ["<span class=\"math\">\\frac{1}{16}</span>", "<span class=\"math\">\\frac{1}{2}</span>", "<span class=\"math\">\\frac{15}{16}</span>", "<span class=\"math\">\\frac{7}{8}</span>"],
+      answer: "<span class=\"math\">\\frac{15}{16}</span>",
+      hints: [
+        'P(at least one H) = 1 − P(no H).',
+        'P(all tails in 4 flips) = (1/2)⁴ = 1/16.',
+        '1 − 1/16 = 15/16.'
+      ],
+      explanation: [
+        'P(all tails) = (1/2)⁴ = 1/16.',
+        'P(at least one head) = 1 − 1/16 = 15/16.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A die is rolled twice. What is the probability of getting at least one 5? Give your answer as a fraction.',
+      answer: "11/36",
+      hints: [
+        'P(at least one 5) = 1 − P(no 5 in 2 rolls).',
+        'P(not 5 on one roll) = 5/6.',
+        'P(no 5 in 2 rolls) = (5/6)² = 25/36.'
+      ],
+      explanation: [
+        'P(no 5 in 2 rolls) = (5/6)² = 25/36.',
+        'P(at least one 5) = 1 − 25/36 = 11/36.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A bag has 8 marbles: 3 red and 5 blue. If you draw one marble, what is the probability it is NOT red?',
+      choices: ["<span class=\"math\">\\frac{3}{8}</span>", "<span class=\"math\">\\frac{5}{8}</span>", "<span class=\"math\">\\frac{1}{2}</span>", "<span class=\"math\">\\frac{3}{5}</span>"],
+      answer: "<span class=\"math\">\\frac{5}{8}</span>",
+      hints: [
+        'P(not red) = 1 − P(red).',
+        'P(red) = 3/8.',
+        '1 − 3/8 = 5/8.'
+      ],
+      explanation: [
+        'P(red) = 3/8.',
+        'P(not red) = 1 − 3/8 = 5/8.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A die is rolled 4 times. What is the probability of getting at least one 6? (Round to the nearest hundredth.)',
+      answer: "0.52",
+      hints: [
+        'P(at least one 6) = 1 − P(no 6 in 4 rolls).',
+        'P(not 6) = 5/6. P(no 6 in 4 rolls) = (5/6)⁴.',
+        '(5/6)⁴ = 625/1296 ≈ 0.482.'
+      ],
+      explanation: [
+        'P(no 6 in 4 rolls) = (5/6)⁴ = 625/1296 ≈ 0.482.',
+        'P(at least one 6) ≈ 1 − 0.482 = 0.52.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A bag has 10 marbles: 4 red and 6 blue. What is the probability of NOT drawing a blue marble?',
+      choices: ["<span class=\"math\">\\frac{2}{5}</span>", "<span class=\"math\">\\frac{3}{5}</span>", "<span class=\"math\">\\frac{1}{2}</span>", "<span class=\"math\">\\frac{1}{5}</span>"],
+      answer: "<span class=\"math\">\\frac{2}{5}</span>",
+      hints: [
+        'P(blue) = 6/10 = 3/5.',
+        'P(not blue) = 1 − 3/5.',
+        '= 2/5.'
+      ],
+      explanation: [
+        'P(blue) = 6/10 = 3/5.',
+        'P(not blue) = 1 − 3/5 = 2/5.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A coin is flipped 5 times. What is the probability of getting at least one head? Give as a fraction.',
+      answer: "31/32",
+      hints: [
+        'P(at least one H) = 1 − P(all tails).',
+        'P(all tails) = (1/2)⁵ = 1/32.',
+        '1 − 1/32 = 31/32.'
+      ],
+      explanation: [
+        'P(all tails) = (1/2)⁵ = 1/32.',
+        'P(at least one head) = 1 − 1/32 = 31/32.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A bag has 12 marbles: 5 red and 7 yellow. What is the probability of NOT drawing a red marble?',
+      choices: ["<span class=\"math\">\\frac{5}{12}</span>", "<span class=\"math\">\\frac{7}{12}</span>", "<span class=\"math\">\\frac{1}{2}</span>", "<span class=\"math\">\\frac{1}{3}</span>"],
+      answer: "<span class=\"math\">\\frac{7}{12}</span>",
+      hints: [
+        'P(red) = 5/12.',
+        'P(not red) = 1 − 5/12.',
+        '= 7/12.'
+      ],
+      explanation: [
+        'P(red) = 5/12.',
+        'P(not red) = 1 − 5/12 = 7/12.',
+        'The probability of not drawing red is 7/12.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A coin is flipped 4 times. What is the probability of getting at least one tail? Give as a fraction.',
+      answer: "15/16",
+      hints: [
+        'P(at least one T) = 1 − P(all heads).',
+        'P(all heads) = (1/2)⁴ = 1/16.',
+        '1 − 1/16 = 15/16.'
+      ],
+      explanation: [
+        'P(all heads) = (1/2)⁴ = 1/16.',
+        'P(at least one tail) = 1 − 1/16 = 15/16.',
+        'The probability is 15/16.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A die is rolled twice. What is the probability of getting at least one 5? (Round to the nearest hundredth.)',
+      answer: "0.31",
+      hints: [
+        'P(at least one 5) = 1 − P(no 5 in 2 rolls).',
+        'P(not 5) = 5/6. P(no 5 in 2 rolls) = (5/6)² = 25/36.',
+        '1 − 25/36 = 11/36 ≈ ?'
+      ],
+      explanation: [
+        'P(no 5 in 2 rolls) = (5/6)² = 25/36.',
+        'P(at least one 5) = 1 − 25/36 = 11/36.',
+        '11 ÷ 36 ≈ 0.31.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A coin is flipped 5 times. What is the probability of getting at least one head? Give as a fraction.',
+      choices: ["15/16", "29/32", "31/32", "63/64"],
+      answer: "31/32",
+      hints: [
+        'P(at least one H) = 1 − P(all tails).',
+        'P(all tails) = (1/2)⁵ = 1/32.',
+        '1 − 1/32 = 31/32.'
+      ],
+      explanation: [
+        'P(all tails) = (1/2)⁵ = 1/32.',
+        'P(at least one head) = 1 − 1/32 = 31/32.',
+        'The probability is 31/32.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A bag has 7 blue and 3 red balls. What is the probability of NOT drawing blue? Give as a decimal.',
+      answer: "0.3",
+      hints: [
+        'P(blue) = 7/10.',
+        'P(not blue) = 1 − 7/10.',
+        '= 3/10 = 0.3.'
+      ],
+      explanation: [
+        'P(blue) = 7/10 = 0.7.',
+        'P(not blue) = 1 − 0.7 = 0.3.',
+        'The probability is 0.3.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'The probability of picking a vowel from a bag of letters is 2/5. What is the probability of NOT picking a vowel? Give as a fraction.',
+      answer: "3/5",
+      hints: [
+        'P(not vowel) = 1 − P(vowel).',
+        '1 − 2/5 = 5/5 − 2/5.',
+        '= 3/5.'
+      ],
+      explanation: [
+        'P(not vowel) = 1 − 2/5 = 3/5.',
+        'The probability is 3/5.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'In 80 coin flips, a student got 47 heads. What is the experimental probability of heads? (Express as a decimal rounded to hundredths.)',
+      answer: "0.59",
+      hints: [
+        'Experimental probability = favorable outcomes / total trials.',
+        'Favorable = 47 heads, total = 80 flips.',
+        '47 ÷ 80 ≈ ?'
+      ],
+      explanation: [
+        'Experimental P(heads) = 47/80.',
+        '= 0.5875 ≈ <strong>0.59</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A basketball player made 72 out of 90 free throws this season. What is her experimental probability of making a free throw?',
+      choices: ["72%","75%","78%","80%"],
+      answer: "80%",
+      hints: [
+        'Experimental probability = makes / attempts.',
+        '72 / 90 = ?',
+        'Simplify or convert to a percentage.'
+      ],
+      explanation: [
+        'P(make) = 72/90 = 4/5 = 0.80.',
+        '= <strong>80%</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A spinner was spun 60 times. It landed on blue 18 times. What is the experimental probability of landing on blue? (Write as a simplified fraction numerator — if the fraction is 3/10, enter 3.)',
+      answer: "3",
+      hints: [
+        'Experimental P(blue) = 18/60.',
+        'Simplify the fraction: divide both by their GCF.',
+        'GCF of 18 and 60 is 6. So 18/60 = 3/10.'
+      ],
+      explanation: [
+        'P(blue) = 18/60 = 3/10.',
+        'The simplified fraction is <strong>3/10</strong>, so the numerator is <strong>3</strong>.'
+      ]
+    }
   ],
 
   // --- Topic 9: Probability with Dice --- difficulty 2-3
@@ -7720,6 +12793,259 @@ EXTRA_QUESTIONS[13] = [
         'P(doubles) = 6/36 = 1/6.'
       ]
     }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Two dice are rolled. How many ways can you get a sum of 5?',
+      answer: "4",
+      hints: [
+        'List pairs (a, b) where a + b = 5 and 1 ≤ a, b ≤ 6.',
+        '(1,4), (2,3), (3,2), (4,1).',
+        'Count them.'
+      ],
+      explanation: [
+        'Pairs summing to 5: (1,4), (2,3), (3,2), (4,1).',
+        'There are 4 ways.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Two dice are rolled. What is the probability of getting a sum of 11?',
+      choices: ["<span class=\"math\">\\frac{1}{36}</span>", "<span class=\"math\">\\frac{1}{18}</span>", "<span class=\"math\">\\frac{1}{12}</span>", "<span class=\"math\">\\frac{1}{9}</span>"],
+      answer: "<span class=\"math\">\\frac{1}{18}</span>",
+      hints: [
+        'Total outcomes for two dice = 36.',
+        'Pairs that sum to 11: (5,6) and (6,5).',
+        'That is 2 favorable outcomes out of 36.'
+      ],
+      explanation: [
+        'Favorable: (5,6), (6,5) → 2 outcomes.',
+        'P(sum = 11) = 2/36 = 1/18.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Two dice are rolled. How many ways can you get a sum of 6?',
+      answer: "5",
+      hints: [
+        'List pairs (a, b) where a + b = 6.',
+        '(1,5), (2,4), (3,3), (4,2), (5,1).',
+        'Count them.'
+      ],
+      explanation: [
+        'Pairs summing to 6: (1,5), (2,4), (3,3), (4,2), (5,1).',
+        'There are 5 ways.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Two dice are rolled. What is the probability of getting a sum of 10?',
+      choices: ["<span class=\"math\">\\frac{1}{36}</span>", "<span class=\"math\">\\frac{1}{18}</span>", "<span class=\"math\">\\frac{1}{12}</span>", "<span class=\"math\">\\frac{1}{9}</span>"],
+      answer: "<span class=\"math\">\\frac{1}{12}</span>",
+      hints: [
+        'Total outcomes = 36.',
+        'Pairs summing to 10: (4,6), (5,5), (6,4).',
+        'That is 3 favorable outcomes.'
+      ],
+      explanation: [
+        'Favorable: (4,6), (5,5), (6,4) → 3 outcomes.',
+        'P(sum = 10) = 3/36 = 1/12.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Two dice are rolled. How many ways can you get a sum of 4?',
+      answer: "3",
+      hints: [
+        'List pairs (a, b) where a + b = 4.',
+        '(1,3), (2,2), (3,1).',
+        'Count them.'
+      ],
+      explanation: [
+        'Pairs summing to 4: (1,3), (2,2), (3,1).',
+        'There are 3 ways.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Two dice are rolled. How many ways can you get a sum of 8?',
+      answer: "5",
+      hints: [
+        'List pairs (a, b) where a + b = 8.',
+        '(2,6), (3,5), (4,4), (5,3), (6,2).',
+        'Count them.'
+      ],
+      explanation: [
+        'Pairs summing to 8: (2,6), (3,5), (4,4), (5,3), (6,2).',
+        'There are 5 ways.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Two dice are rolled. What is the probability of getting a sum of 9?',
+      choices: ["<span class=\"math\">\\frac{1}{12}</span>", "<span class=\"math\">\\frac{1}{9}</span>", "<span class=\"math\">\\frac{5}{36}</span>", "<span class=\"math\">\\frac{1}{6}</span>"],
+      answer: "<span class=\"math\">\\frac{1}{9}</span>",
+      hints: [
+        'Total outcomes = 36.',
+        'Pairs summing to 9: (3,6), (4,5), (5,4), (6,3).',
+        'That is 4 favorable outcomes.'
+      ],
+      explanation: [
+        'Favorable: (3,6), (4,5), (5,4), (6,3) → 4 outcomes.',
+        'P(sum = 9) = 4/36 = 1/9.',
+        'The probability is 1/9.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Two dice are rolled. How many ways can you get a sum of 6?',
+      answer: "5",
+      hints: [
+        'List pairs (a, b) where a + b = 6.',
+        '(1,5), (2,4), (3,3), (4,2), (5,1).',
+        'Count them.'
+      ],
+      explanation: [
+        'Pairs summing to 6: (1,5), (2,4), (3,3), (4,2), (5,1).',
+        'There are 5 ways.',
+        'Each die shows 1–6, so all pairs are valid.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Two dice are rolled. How many ways can you get a sum of 11?',
+      answer: "2",
+      hints: [
+        'List pairs (a, b) where a + b = 11.',
+        '(5,6) and (6,5).',
+        'Count them.'
+      ],
+      explanation: [
+        'Pairs summing to 11: (5,6) and (6,5).',
+        'There are only 2 ways.',
+        'No other combinations of 1–6 sum to 11.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Two dice are rolled. What is the probability of getting a sum of 5?',
+      choices: ["<span class=\"math\">\\frac{1}{12}</span>", "<span class=\"math\">\\frac{1}{9}</span>", "<span class=\"math\">\\frac{5}{36}</span>", "<span class=\"math\">\\frac{1}{6}</span>"],
+      answer: "<span class=\"math\">\\frac{1}{9}</span>",
+      hints: [
+        'Total outcomes for two dice = 36.',
+        'Pairs that sum to 5: (1,4), (2,3), (3,2), (4,1).',
+        'That is 4 favorable outcomes.'
+      ],
+      explanation: [
+        'Favorable: (1,4), (2,3), (3,2), (4,1) → 4 outcomes.',
+        'P(sum = 5) = 4/36 = 1/9.',
+        'The probability is 1/9.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'Two dice are rolled. How many ways can you get a sum of 8?',
+      answer: "5",
+      hints: [
+        'List pairs (a, b) where a + b = 8.',
+        '(2,6), (3,5), (4,4), (5,3), (6,2).',
+        'Count them.'
+      ],
+      explanation: [
+        'Pairs summing to 8: (2,6), (3,5), (4,4), (5,3), (6,2).',
+        'There are 5 ways.',
+        'Each die shows 1–6, so all pairs are valid.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Two dice are rolled. What is the probability of getting a sum of 12?',
+      choices: ["<span class=\"math\">\\frac{1}{36}</span>", "<span class=\"math\">\\frac{1}{18}</span>", "<span class=\"math\">\\frac{1}{12}</span>", "<span class=\"math\">\\frac{1}{6}</span>"],
+      answer: "<span class=\"math\">\\frac{1}{36}</span>",
+      hints: [
+        'Total outcomes = 36.',
+        'Only one pair sums to 12: (6, 6).',
+        'P = 1/36.'
+      ],
+      explanation: [
+        'Only (6, 6) sums to 12 → 1 outcome.',
+        'P(sum = 12) = 1/36.',
+        'The probability is 1/36.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A game: win $5 with probability 0.3, lose $2 with probability 0.7. What is the expected value per play?',
+      choices: ["$0.10","$0.50","$1.50","$0.90"],
+      answer: "$0.10",
+      hints: [
+        'Expected value = (win amount × P(win)) + (loss amount × P(loss)).',
+        'E = (5 × 0.3) + (−2 × 0.7).',
+        '= 1.50 + (−1.40).'
+      ],
+      explanation: [
+        'E = (5)(0.3) + (−2)(0.7) = 1.50 − 1.40.',
+        '= <strong>$0.10</strong> per play.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Two standard dice are rolled. How many ways can the sum equal 7?',
+      answer: "6",
+      hints: [
+        'List pairs that sum to 7: (1,6), (2,5), (3,4), ...',
+        'Also include: (4,3), (5,2), (6,1).',
+        'Count all pairs.'
+      ],
+      explanation: [
+        'Pairs summing to 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1).',
+        'There are <strong>6</strong> ways.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A carnival game costs $3 to play. You win $10 with probability 1/4 and $0 otherwise. What is the expected net gain per game?',
+      choices: ["-$0.50","$0.50","-$1.00","$2.50"],
+      answer: "-$0.50",
+      hints: [
+        'Expected winnings = (10 × 1/4) + (0 × 3/4) = $2.50.',
+        'You pay $3 to play each time.',
+        'Net gain = expected winnings − cost.'
+      ],
+      explanation: [
+        'Expected winnings = (10)(1/4) + (0)(3/4) = $2.50.',
+        'Expected net gain = $2.50 − $3.00 = <strong>−$0.50</strong> per game.'
+      ]
+    }
   ],
 
   // --- Topic 10: Expected Value --- difficulty 3-4
@@ -8079,6 +13405,260 @@ EXTRA_QUESTIONS[13] = [
         'E = (1/2)(3) + (1/2)(−1).',
         '= 1.5 − 0.5.',
         '= $1.00 expected gain per flip.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A spinner has 4 equal sections: win $8, win $4, lose $2, lose $6. What is the expected value?',
+      choices: ["$0.50", "$1", "$1.50", "$2"],
+      answer: "$1",
+      hints: [
+        'Each section has probability 1/4.',
+        'E = (1/4)(8) + (1/4)(4) + (1/4)(−2) + (1/4)(−6).',
+        'E = (8 + 4 − 2 − 6)/4.'
+      ],
+      explanation: [
+        'E = (8 + 4 − 2 − 6) / 4.',
+        'E = 4 / 4 = $1.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'A game costs $3 to play. You roll a die: if you get a 6, you win $15; otherwise you win nothing. What is the expected profit per game? (Round to the nearest cent.)',
+      answer: "-0.5",
+      hints: [
+        'Expected winnings = (1/6)(15) + (5/6)(0) = $2.50.',
+        'Expected profit = expected winnings − cost.',
+        '= 2.50 − 3.00.'
+      ],
+      explanation: [
+        'Expected winnings = (1/6) × $15 = $2.50.',
+        'Cost = $3.00.',
+        'Expected profit = $2.50 − $3.00 = −$0.50.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A coin is flipped. If heads, you win $6. If tails, you lose $4. What is the expected value?',
+      answer: "1",
+      hints: [
+        'P(heads) = 1/2, P(tails) = 1/2.',
+        'E = (1/2)(6) + (1/2)(−4).',
+        'E = 3 − 2.'
+      ],
+      explanation: [
+        'E = (1/2)(6) + (1/2)(−4).',
+        'E = 3 − 2 = $1.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A spinner has 5 equal sections: win $10, win $5, win $0, lose $5, lose $10. What is the expected value?',
+      answer: "0",
+      hints: [
+        'Each section has probability 1/5.',
+        'E = (1/5)(10 + 5 + 0 + (−5) + (−10)).',
+        'E = (10 + 5 + 0 − 5 − 10)/5.'
+      ],
+      explanation: [
+        'E = (10 + 5 + 0 − 5 − 10) / 5.',
+        'E = 0 / 5 = $0.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 4,
+      question: 'A lottery ticket costs $2. You have a 1/100 chance of winning $50 and a 99/100 chance of winning nothing. What is the expected profit?',
+      choices: ["-$1.50", "-$1.00", "-$0.50", "$0.50"],
+      answer: "-$1.50",
+      hints: [
+        'Expected winnings = (1/100)(50) + (99/100)(0).',
+        '= $0.50.',
+        'Expected profit = winnings − cost = 0.50 − 2.00.'
+      ],
+      explanation: [
+        'Expected winnings = (1/100)(50) = $0.50.',
+        'Cost = $2.00.',
+        'Expected profit = $0.50 − $2.00 = −$1.50.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'A die is rolled. If the number is even, you win that many dollars. If odd, you win nothing. What is the expected value? (Round to the nearest cent.)',
+      answer: "2",
+      hints: [
+        'Even outcomes: 2, 4, 6 (each with probability 1/6).',
+        'E = (1/6)(0+2+0+4+0+6).',
+        '= 12/6.'
+      ],
+      explanation: [
+        'E = (1/6)(0) + (1/6)(2) + (1/6)(0) + (1/6)(4) + (1/6)(0) + (1/6)(6).',
+        '= (2 + 4 + 6)/6 = 12/6 = $2.00.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A game costs $3 to play. You roll a die: if you get a 6, you win $12; otherwise you win nothing. What is the expected profit per game?',
+      answer: "-1",
+      hints: [
+        'Expected winnings = (1/6)(12) + (5/6)(0).',
+        '= $2.',
+        'Expected profit = winnings − cost = 2 − 3.'
+      ],
+      explanation: [
+        'Expected winnings = (1/6)(12) = $2.',
+        'Cost = $3.',
+        'Expected profit = $2 − $3 = −$1.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 4,
+      question: 'A spinner has 4 equal sections: $0, $5, $10, $15. What is the expected value per spin?',
+      choices: ["$5.00", "$6.50", "$7.50", "$10.00"],
+      answer: "$7.50",
+      hints: [
+        'Each section has probability 1/4.',
+        'E = (1/4)(0 + 5 + 10 + 15).',
+        '= 30/4.'
+      ],
+      explanation: [
+        'E = (0 + 5 + 10 + 15)/4.',
+        '= 30/4 = $7.50.',
+        'The expected value is $7.50 per spin.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'You flip a coin. Heads wins $8, tails loses $3. What is the expected value? (Give as a decimal.)',
+      answer: "2.5",
+      hints: [
+        'P(heads) = 1/2, P(tails) = 1/2.',
+        'E = (1/2)(8) + (1/2)(−3).',
+        '= 4 + (−1.5).'
+      ],
+      explanation: [
+        'E = (1/2)(8) + (1/2)(−3).',
+        '= 4 − 1.5 = 2.5.',
+        'The expected value is $2.50.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A game pays $6 if you roll an even number on a die, and $0 otherwise. What is the expected value per roll?',
+      answer: "3",
+      hints: [
+        'P(even) = 3/6 = 1/2.',
+        'EV = (1/2)(6) + (1/2)(0).',
+        '= 3.'
+      ],
+      explanation: [
+        'P(even) = 1/2, P(odd) = 1/2.',
+        'EV = (1/2)(6) + (1/2)(0) = 3.',
+        'The expected value is $3.00 per roll.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 4,
+      question: 'A spinner has 5 equal sections: $0, $2, $4, $6, $8. What is the expected value per spin?',
+      choices: ["$3.00", "$3.50", "$4.00", "$5.00"],
+      answer: "$4.00",
+      hints: [
+        'Each section has probability 1/5.',
+        'E = (1/5)(0 + 2 + 4 + 6 + 8).',
+        '= 20/5.'
+      ],
+      explanation: [
+        'E = (0 + 2 + 4 + 6 + 8)/5.',
+        '= 20/5 = $4.00.',
+        'The expected value is $4.00 per spin.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'You flip a coin. Heads wins $12, tails loses $4. What is the expected value? (Give as a decimal.)',
+      answer: "4",
+      hints: [
+        'P(heads) = 1/2, P(tails) = 1/2.',
+        'E = (1/2)(12) + (1/2)(−4).',
+        '= 6 + (−2).'
+      ],
+      explanation: [
+        'E = (1/2)(12) + (1/2)(−4).',
+        '= 6 − 2 = 4.',
+        'The expected value is $4.00.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'There are 5 favorable outcomes and 8 unfavorable outcomes. What are the odds in favor?',
+      choices: ["5:13","5:8","8:5","8:13"],
+      answer: "5:8",
+      hints: [
+        'Odds in favor = favorable : unfavorable.',
+        'Favorable = 5, Unfavorable = 8.',
+        'Express as a ratio.'
+      ],
+      explanation: [
+        'Odds in favor = favorable : unfavorable.',
+        '= <strong>5:8</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A raffle has 200 tickets. You buy 8 tickets. What are the odds against you winning? Give the number of unfavorable outcomes.',
+      answer: "192",
+      hints: [
+        'Favorable outcomes (you win) = 8 tickets.',
+        'Unfavorable outcomes (you lose) = 200 − 8.',
+        'Odds against = unfavorable : favorable.'
+      ],
+      explanation: [
+        'Unfavorable = 200 − 8 = <strong>192</strong>.',
+        'Odds against winning = 192:8 = 24:1.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'The odds of a team winning are 3:2. What is the probability of the team winning?',
+      choices: ["2/5","3/5","2/3","3/2"],
+      answer: "3/5",
+      hints: [
+        'Odds of 3:2 means 3 favorable and 2 unfavorable.',
+        'Total outcomes = 3 + 2 = 5.',
+        'Probability = favorable / total.'
+      ],
+      explanation: [
+        'Odds 3:2 → favorable = 3, total = 3 + 2 = 5.',
+        'P(win) = 3/5 = <strong>3/5</strong>.'
       ]
     }
   ],
@@ -8459,6 +14039,260 @@ EXTRA_QUESTIONS[13] = [
         '3 ways: (5 nickels), (3 nickels + 1 dime), (1 nickel + 2 dimes).'
       ]
     }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'How many 2-digit numbers have digits that sum to 5?',
+      choices: ["4", "5", "6", "7"],
+      answer: "5",
+      hints: [
+        'A 2-digit number has a tens digit (1–9) and a units digit (0–9).',
+        'List pairs (t, u) where t + u = 5 and t ≥ 1.',
+        '(1,4), (2,3), (3,2), (4,1), (5,0).'
+      ],
+      explanation: [
+        'Pairs: (1,4)→14, (2,3)→23, (3,2)→32, (4,1)→41, (5,0)→50.',
+        'Total = 5 two-digit numbers.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'How many ways can you make change for 30 cents using only nickels and dimes?',
+      answer: "4",
+      hints: [
+        'Let n = number of nickels, d = number of dimes. Then 5n + 10d = 30.',
+        'Try d = 0: n = 6. d = 1: n = 4. d = 2: n = 2. d = 3: n = 0.',
+        'd = 4 would give 40 > 30.'
+      ],
+      explanation: [
+        'd=0,n=6; d=1,n=4; d=2,n=2; d=3,n=0.',
+        'Total = 4 ways.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'How many 3-digit odd numbers can be formed using the digits {2, 3, 5, 6} with no repetition?',
+      answer: "12",
+      hints: [
+        'For a number to be odd, the last digit must be odd: 3 or 5.',
+        'Case 1: last digit = 3 → first digit: 3 choices (2,5,6), middle: 2 choices.',
+        'Case 2: last digit = 5 → first digit: 3 choices (2,3,6), middle: 2 choices.'
+      ],
+      explanation: [
+        'Case 1 (ends in 3): 3 × 2 = 6 numbers.',
+        'Case 2 (ends in 5): 3 × 2 = 6 numbers.',
+        'Total = 6 + 6 = 12.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'How many 2-digit numbers have digits that sum to 8?',
+      answer: "8",
+      hints: [
+        'A 2-digit number: tens digit t (1–9), units digit u (0–9), t + u = 8.',
+        'List: (1,7),(2,6),(3,5),(4,4),(5,3),(6,2),(7,1),(8,0).',
+        'Count them.'
+      ],
+      explanation: [
+        'Pairs: 17, 26, 35, 44, 53, 62, 71, 80.',
+        'Total = 8 two-digit numbers.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 4,
+      question: 'How many ways can you make change for 20 cents using only nickels and dimes?',
+      choices: ["2", "3", "4", "5"],
+      answer: "3",
+      hints: [
+        'Let n = nickels, d = dimes. Then 5n + 10d = 20.',
+        'Try d = 0: n = 4. d = 1: n = 2. d = 2: n = 0.',
+        'd = 3 would give 30 > 20.'
+      ],
+      explanation: [
+        'd=0,n=4; d=1,n=2; d=2,n=0.',
+        'Total = 3 ways.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'How many 3-digit numbers can be formed using the digits {1, 2, 3, 4, 5} with no repetition if the number must be greater than 300?',
+      answer: "36",
+      hints: [
+        'First digit must be 3, 4, or 5 (for the number to be ≥ 300).',
+        'For each choice of first digit: 4 remaining digits for 2nd, 3 for 3rd.',
+        '3 × 4 × 3 = ?'
+      ],
+      explanation: [
+        'First digit: 3, 4, or 5 → 3 choices.',
+        'Second digit: 4 remaining. Third digit: 3 remaining.',
+        'Total = 3 × 4 × 3 = 36.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'How many 3-digit odd numbers can be formed using the digits {2, 3, 4, 5} with no repetition?',
+      choices: ["6", "8", "10", "12"],
+      answer: "12",
+      hints: [
+        'Last digit must be odd: 3 or 5 (2 choices).',
+        'First digit: 3 remaining choices. Middle digit: 2 remaining.',
+        '2 × 3 × 2 = ?'
+      ],
+      explanation: [
+        'Units digit: 3 or 5 → 2 choices.',
+        'First digit: 3 remaining. Second digit: 2 remaining.',
+        'Total = 2 × 3 × 2 = 12.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'How many 2-digit numbers have digits that sum to 11?',
+      answer: "8",
+      hints: [
+        'Tens digit t (1–9), units digit u (0–9), t + u = 11.',
+        'List: (2,9),(3,8),(4,7),(5,6),(6,5),(7,4),(8,3),(9,2).',
+        'Note t = 1 gives u = 10 (invalid). Count valid pairs.'
+      ],
+      explanation: [
+        'Valid pairs: (2,9),(3,8),(4,7),(5,6),(6,5),(7,4),(8,3),(9,2).',
+        'Numbers: 29, 38, 47, 56, 65, 74, 83, 92.',
+        'Total = 8.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 4,
+      question: 'How many ways can you make change for 25 cents using only nickels and dimes?',
+      choices: ["2", "3", "4", "5"],
+      answer: "3",
+      hints: [
+        'Let n = nickels, d = dimes. Then 5n + 10d = 25.',
+        'Try d = 0: n = 5. d = 1: n = 3. d = 2: n = 1.',
+        'd = 3 would give 30 > 25.'
+      ],
+      explanation: [
+        'd=0, n=5; d=1, n=3; d=2, n=1.',
+        'All three have non-negative integer solutions.',
+        'Total = 3 ways.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'How many 3-digit even numbers can be formed using the digits {2, 3, 5, 6} with no repetition?',
+      answer: "12",
+      hints: [
+        'Last digit must be even: 2 or 6.',
+        'Case 1: last = 2 → 3 × 2 = 6. Case 2: last = 6 → 3 × 2 = 6.',
+        'Total = 6 + 6.'
+      ],
+      explanation: [
+        'Case 1 (ends in 2): 3 × 2 = 6 numbers.',
+        'Case 2 (ends in 6): 3 × 2 = 6 numbers.',
+        'Total = 6 + 6 = 12.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 4,
+      question: 'How many ways can you make change for 30 cents using only nickels and dimes?',
+      choices: ["2", "3", "4", "5"],
+      answer: "4",
+      hints: [
+        'Let n = nickels, d = dimes. Then 5n + 10d = 30.',
+        'd = 0: n = 6. d = 1: n = 4. d = 2: n = 2. d = 3: n = 0.',
+        'Count valid solutions.'
+      ],
+      explanation: [
+        'd=0, n=6; d=1, n=4; d=2, n=2; d=3, n=0.',
+        'All four have non-negative integer solutions.',
+        'Total = 4 ways.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'How many 2-digit numbers have digits that sum to 9?',
+      answer: "9",
+      hints: [
+        'Tens digit t (1–9), units digit u (0–9), t + u = 9.',
+        'List: (1,8),(2,7),(3,6),(4,5),(5,4),(6,3),(7,2),(8,1),(9,0).',
+        'Count valid pairs.'
+      ],
+      explanation: [
+        'Valid pairs: (1,8),(2,7),(3,6),(4,5),(5,4),(6,3),(7,2),(8,1),(9,0).',
+        'Numbers: 18, 27, 36, 45, 54, 63, 72, 81, 90.',
+        'Total = 9.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: '3 friends need to sit in a row of 5 seats. How many ways can they choose 3 seats and arrange themselves?',
+      answer: "60",
+      hints: [
+        'First choose which 3 seats, then arrange 3 people in them.',
+        'Or think of it as <span class="math">P(5,3)</span> = 5 × 4 × 3.',
+        '= 60.'
+      ],
+      explanation: [
+        '<span class="math">P(5,3)</span> = 5 × 4 × 3.',
+        '= <strong>60</strong> arrangements.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A lock has 3 dials, each with digits 0-9. How many possible codes are there?',
+      choices: ["30","100","720","1000"],
+      answer: "1000",
+      hints: [
+        'Each dial has 10 choices (0 through 9).',
+        'Digits can repeat.',
+        '10 × 10 × 10 = ?'
+      ],
+      explanation: [
+        'Each of the 3 dials has 10 options.',
+        'Total codes = 10 × 10 × 10 = <strong>1,000</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A team of 2 boys and 2 girls is to be formed from 5 boys and 4 girls. How many different teams are possible?',
+      answer: "60",
+      hints: [
+        'Choose 2 boys from 5: <span class="math">C(5,2)</span>. Choose 2 girls from 4: <span class="math">C(4,2)</span>.',
+        '<span class="math">C(5,2) = 10</span>, <span class="math">C(4,2) = 6</span>.',
+        'Multiply the two results.'
+      ],
+      explanation: [
+        '<span class="math">C(5,2)</span> = 10, <span class="math">C(4,2)</span> = 6.',
+        'Total teams = 10 × 6 = <strong>60</strong>.'
+      ]
+    }
   ]
 ];
 
@@ -8827,6 +14661,260 @@ EXTRA_QUESTIONS[14] = [
         '10th term = 5 + (10−1)(7) = 5 + 63 = 68.'
       ]
     }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'What is the next term in the arithmetic sequence: 7, 15, 23, 31, ___?',
+      choices: ["35", "37", "39", "41"],
+      answer: "39",
+      hints: [
+        'Find the common difference: 15 − 7 = 8.',
+        'Each term increases by 8.',
+        '31 + 8 = ?'
+      ],
+      explanation: [
+        'Common difference = 15 − 7 = 8.',
+        'Next term = 31 + 8 = 39.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the next term in the geometric sequence: 5, 15, 45, 135, ___?',
+      answer: "405",
+      hints: [
+        'Find the common ratio: 15 ÷ 5 = 3.',
+        'Each term is multiplied by 3.',
+        '135 × 3 = ?'
+      ],
+      explanation: [
+        'Common ratio = 15 ÷ 5 = 3.',
+        'Next term = 135 × 3 = 405.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'What is the 10th term of the arithmetic sequence: 4, 9, 14, 19, ...?',
+      choices: ["44", "47", "49", "54"],
+      answer: "49",
+      hints: [
+        'Common difference = 9 − 4 = 5.',
+        'The nth term = first term + (n−1) × difference.',
+        '10th term = 4 + 9 × 5.'
+      ],
+      explanation: [
+        'Common difference = 5.',
+        '10th term = 4 + (10−1) × 5 = 4 + 45 = 49.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'What is the next term in the arithmetic sequence: 3, 10, 17, 24, ___?',
+      answer: "31",
+      hints: [
+        'Find the common difference: 10 − 3 = 7.',
+        'Each term increases by 7.',
+        '24 + 7 = ?'
+      ],
+      explanation: [
+        'Common difference = 7.',
+        'Next term = 24 + 7 = 31.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'What is the next term in the geometric sequence: 2, 10, 50, 250, ___?',
+      choices: ["500", "750", "1000", "1250"],
+      answer: "1250",
+      hints: [
+        'Find the common ratio: 10 ÷ 2 = 5.',
+        'Each term is multiplied by 5.',
+        '250 × 5 = ?'
+      ],
+      explanation: [
+        'Common ratio = 5.',
+        'Next term = 250 × 5 = 1250.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the 8th term of the arithmetic sequence: 6, 11, 16, 21, ...?',
+      answer: "41",
+      hints: [
+        'Common difference = 11 − 6 = 5.',
+        'The nth term = first term + (n−1) × difference.',
+        '8th term = 6 + 7 × 5.'
+      ],
+      explanation: [
+        'Common difference = 5.',
+        '8th term = 6 + (8−1) × 5 = 6 + 35 = 41.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'What is the next term in the arithmetic sequence: 10, 17, 24, 31, ___?',
+      choices: ["35", "37", "38", "42"],
+      answer: "38",
+      hints: [
+        'Find the common difference: 17 − 10 = 7.',
+        'Each term increases by 7.',
+        '31 + 7 = ?'
+      ],
+      explanation: [
+        'Common difference = 7.',
+        'Next term = 31 + 7 = 38.',
+        'The next term is 38.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the next term in the geometric sequence: 5, 15, 45, 135, ___?',
+      answer: "405",
+      hints: [
+        'Find the common ratio: 15 ÷ 5 = 3.',
+        'Each term is multiplied by 3.',
+        '135 × 3 = ?'
+      ],
+      explanation: [
+        'Common ratio = 3.',
+        'Next term = 135 × 3 = 405.',
+        'The next term is 405.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the 12th term of the arithmetic sequence: 4, 9, 14, 19, ...?',
+      answer: "59",
+      hints: [
+        'Common difference = 9 − 4 = 5.',
+        'The nth term = first term + (n−1) × difference.',
+        '12th term = 4 + 11 × 5.'
+      ],
+      explanation: [
+        'Common difference = 5.',
+        '12th term = 4 + (12−1) × 5 = 4 + 55 = 59.',
+        'The 12th term is 59.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'What is the next term in the arithmetic sequence: 8, 15, 22, 29, ___?',
+      answer: "36",
+      hints: [
+        'Find the common difference: 15 − 8 = 7.',
+        'Each term increases by 7.',
+        '29 + 7 = ?'
+      ],
+      explanation: [
+        'Common difference = 7.',
+        'Next term = 29 + 7 = 36.',
+        'The next term is 36.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'What is the next term in the geometric sequence: 4, 12, 36, 108, ___?',
+      choices: ["216", "256", "324", "432"],
+      answer: "324",
+      hints: [
+        'Find the common ratio: 12 ÷ 4 = 3.',
+        'Each term is multiplied by 3.',
+        '108 × 3 = ?'
+      ],
+      explanation: [
+        'Common ratio = 3.',
+        'Next term = 108 × 3 = 324.',
+        'The next term is 324.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the 15th term of the arithmetic sequence: 3, 7, 11, 15, ...?',
+      answer: "59",
+      hints: [
+        'Common difference = 7 − 3 = 4.',
+        'The nth term = first term + (n−1) × difference.',
+        '15th term = 3 + 14 × 4.'
+      ],
+      explanation: [
+        'Common difference = 4.',
+        '15th term = 3 + (15−1) × 4 = 3 + 56 = 59.',
+        'The 15th term is 59.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Two numbers have a sum of 23 and a difference of 7. What are the two numbers?',
+      choices: ["10 and 13","8 and 15","9 and 14","11 and 12"],
+      answer: "8 and 15",
+      hints: [
+        'Let the numbers be <span class="math">x</span> and <span class="math">y</span> where x > y.',
+        'x + y = 23 and x − y = 7.',
+        'Add the equations: 2x = 30, so x = 15.'
+      ],
+      explanation: [
+        'Adding the equations: (x + y) + (x − y) = 23 + 7 → 2x = 30 → x = <strong>15</strong>.',
+        'Then y = 23 − 15 = <strong>8</strong>.',
+        'Check: 15 + 8 = 23 and 15 − 8 = 7. ✓'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'The sum of two consecutive odd numbers is 52. What is the smaller number?',
+      answer: "25",
+      hints: [
+        'Let the smaller odd number be <span class="math">n</span> and the next odd number be <span class="math">n + 2</span>.',
+        'n + (n + 2) = 52.',
+        '2n + 2 = 52, so 2n = 50.'
+      ],
+      explanation: [
+        '<span class="math">n + (n+2) = 52</span> → 2n = 50 → n = <strong>25</strong>.',
+        'Check: 25 + 27 = 52. ✓'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A number doubled and then increased by 5 gives 31. What is the number?',
+      choices: ["11","12","13","14"],
+      answer: "13",
+      hints: [
+        'Set up: <span class="math">2x + 5 = 31</span>.',
+        'Subtract 5: 2x = 26.',
+        'Divide by 2.'
+      ],
+      explanation: [
+        '<span class="math">2x + 5 = 31</span> → 2x = 26 → x = <strong>13</strong>.',
+        'Check: 2(13) + 5 = 26 + 5 = 31. ✓'
+      ]
+    }
   ],
 
   // --- Topic 1: Special Number Patterns --- difficulty 1-2
@@ -9185,6 +15273,259 @@ EXTRA_QUESTIONS[14] = [
         'Differences: 4, 7, 10, 13. Each increases by 3.',
         'Next difference = 13 + 3 = 16.',
         '6th pentagonal number = 35 + 16 = 51.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'The triangular numbers are: 1, 3, 6, 10, 15, ... What is the 7th triangular number?',
+      answer: "28",
+      hints: [
+        'The nth triangular number = n(n+1)/2.',
+        'For n = 7: 7 × 8 / 2.',
+        '= 56 / 2.'
+      ],
+      explanation: [
+        'The nth triangular number = n(n+1)/2.',
+        'T₇ = 7 × 8 / 2 = 56 / 2 = 28.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'What is the 6th perfect square?',
+      choices: ["25", "30", "36", "42"],
+      answer: "36",
+      hints: [
+        'Perfect squares are: 1, 4, 9, 16, 25, 36, ...',
+        'The 6th one is 6².',
+        '6 × 6 = ?'
+      ],
+      explanation: [
+        'Perfect squares: 1², 2², 3², 4², 5², 6².',
+        'The 6th = 6² = 36.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'The sequence of perfect cubes starts: 1, 8, 27, 64, 125, ... What is the 6th perfect cube?',
+      answer: "216",
+      hints: [
+        'The nth perfect cube = n³.',
+        'For n = 6: 6 × 6 × 6.',
+        '= 36 × 6.'
+      ],
+      explanation: [
+        'The 6th perfect cube = 6³.',
+        '6³ = 6 × 6 × 6 = 216.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'What is the 8th triangular number?',
+      choices: ["28", "32", "36", "40"],
+      answer: "36",
+      hints: [
+        'The nth triangular number = n(n+1)/2.',
+        'For n = 8: 8 × 9 / 2.',
+        '= 72 / 2.'
+      ],
+      explanation: [
+        'The nth triangular number = n(n+1)/2.',
+        'T₈ = 8 × 9 / 2 = 72 / 2 = 36.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the difference between the 5th and 3rd perfect squares?',
+      answer: "16",
+      hints: [
+        '5th perfect square = 5² = 25.',
+        '3rd perfect square = 3² = 9.',
+        'Difference = 25 − 9.'
+      ],
+      explanation: [
+        '5² = 25, 3² = 9.',
+        'Difference = 25 − 9 = 16.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'The sum of the first n perfect squares is given by the formula n(n+1)(2n+1)/6. What is the sum of the first 4 perfect squares (1 + 4 + 9 + 16)?',
+      answer: "30",
+      hints: [
+        'Just add: 1 + 4 + 9 + 16.',
+        '= 5 + 25.',
+        '= 30.'
+      ],
+      explanation: [
+        'Sum = 1 + 4 + 9 + 16 = 30.',
+        'Using the formula: 4 × 5 × 9 / 6 = 180/6 = 30. ✓'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'Which of these is a perfect cube?',
+      choices: ["100", "121", "125", "150"],
+      answer: "125",
+      hints: [
+        'A perfect cube is n³ for some integer n.',
+        'Try: 4³ = 64, 5³ = 125, 6³ = 216.',
+        'Which one matches a choice?'
+      ],
+      explanation: [
+        '5³ = 5 × 5 × 5 = 125.',
+        '125 is a perfect cube.',
+        'None of the others are perfect cubes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the 10th triangular number? (Use the formula n(n+1)/2.)',
+      answer: "55",
+      hints: [
+        'The nth triangular number = n(n+1)/2.',
+        'For n = 10: 10 × 11 / 2.',
+        '= 110 / 2.'
+      ],
+      explanation: [
+        'The nth triangular number = n(n+1)/2.',
+        'T₁₀ = 10 × 11 / 2 = 110 / 2 = 55.',
+        'The 10th triangular number is 55.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the sum of the 6th and 7th perfect squares?',
+      answer: "85",
+      hints: [
+        '6th perfect square = 6² = 36.',
+        '7th perfect square = 7² = 49.',
+        'Sum = 36 + 49.'
+      ],
+      explanation: [
+        '6² = 36, 7² = 49.',
+        'Sum = 36 + 49 = 85.',
+        'The answer is 85.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'Which of these is a perfect square?',
+      choices: ["108", "115", "121", "130"],
+      answer: "121",
+      hints: [
+        'A perfect square is n² for some integer n.',
+        'Try: 10² = 100, 11² = 121, 12² = 144.',
+        'Which one matches a choice?'
+      ],
+      explanation: [
+        '11² = 121.',
+        '121 is the only perfect square among the choices.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the 8th triangular number? (Use the formula n(n+1)/2.)',
+      answer: "36",
+      hints: [
+        'The nth triangular number = n(n+1)/2.',
+        'For n = 8: 8 × 9 / 2.',
+        '= 72 / 2.'
+      ],
+      explanation: [
+        'The nth triangular number = n(n+1)/2.',
+        'T₈ = 8 × 9 / 2 = 72 / 2 = 36.',
+        'The 8th triangular number is 36.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the sum of the 5th and 8th perfect squares?',
+      answer: "89",
+      hints: [
+        '5th perfect square = 5² = 25.',
+        '8th perfect square = 8² = 64.',
+        'Sum = 25 + 64.'
+      ],
+      explanation: [
+        '5² = 25, 8² = 64.',
+        'Sum = 25 + 64 = 89.',
+        'The answer is 89.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'After doubling your money and spending $10, you have $30. How much money did you start with?',
+      answer: "20",
+      hints: [
+        'Work backwards: start from $30.',
+        'Undo "spending $10" by adding $10: 30 + 10 = $40.',
+        'Undo "doubling" by dividing by 2: 40 ÷ 2.'
+      ],
+      explanation: [
+        'Working backwards: $30 + $10 = $40 (undo spending).',
+        '$40 ÷ 2 = <strong>$20</strong> (undo doubling).',
+        'Check: 20 × 2 = 40, 40 − 10 = 30. ✓'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A number is tripled, then 8 is subtracted, giving 22. What is the original number?',
+      choices: ["8","9","10","11"],
+      answer: "10",
+      hints: [
+        'Work backwards from 22.',
+        'Undo "subtract 8" by adding 8: 22 + 8 = 30.',
+        'Undo "tripled" by dividing by 3: 30 ÷ 3.'
+      ],
+      explanation: [
+        'Working backwards: 22 + 8 = 30 (undo subtraction).',
+        '30 ÷ 3 = <strong>10</strong> (undo tripling).',
+        'Check: 10 × 3 = 30, 30 − 8 = 22. ✓'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'You gave half your stickers to a friend, then used 5 for a project. You have 12 left. How many did you start with?',
+      answer: "34",
+      hints: [
+        'Work backwards from 12 stickers.',
+        'Undo "used 5": 12 + 5 = 17.',
+        'Undo "gave half": 17 is half the original, so multiply by 2.'
+      ],
+      explanation: [
+        'Working backwards: 12 + 5 = 17 (undo using 5).',
+        '17 × 2 = <strong>34</strong> (undo giving half).',
+        'Check: 34 ÷ 2 = 17, 17 − 5 = 12. ✓'
       ]
     }
   ],
@@ -9557,6 +15898,263 @@ EXTRA_QUESTIONS[14] = [
         'Undo ×2: 32 ÷ 2 = 16.'
       ]
     }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'I think of a number, multiply it by 5, subtract 8, and get 42. What was the number?',
+      answer: "10",
+      hints: [
+        'Work backwards from 42.',
+        'Undo subtract 8: 42 + 8 = 50.',
+        'Undo multiply by 5: 50 ÷ 5 = ?'
+      ],
+      explanation: [
+        'Start with 42.',
+        'Undo −8: 42 + 8 = 50.',
+        'Undo ×5: 50 ÷ 5 = 10.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'After doubling a number and adding 10, the result is 30. What was the original number?',
+      choices: ["5", "8", "10", "15"],
+      answer: "10",
+      hints: [
+        'Work backwards from 30.',
+        'Undo add 10: 30 − 10 = 20.',
+        'Undo double: 20 ÷ 2 = ?'
+      ],
+      explanation: [
+        'Start with 30.',
+        'Undo +10: 30 − 10 = 20.',
+        'Undo ×2: 20 ÷ 2 = 10.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'I think of a number, divide it by 3, add 7, and get 15. What was the number?',
+      answer: "24",
+      hints: [
+        'Work backwards from 15.',
+        'Undo add 7: 15 − 7 = 8.',
+        'Undo divide by 3: 8 × 3 = ?'
+      ],
+      explanation: [
+        'Start with 15.',
+        'Undo +7: 15 − 7 = 8.',
+        'Undo ÷3: 8 × 3 = 24.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'After halving a number and adding 6, the result is 14. What was the original number?',
+      choices: ["8", "12", "16", "20"],
+      answer: "16",
+      hints: [
+        'Work backwards from 14.',
+        'Undo add 6: 14 − 6 = 8.',
+        'Undo halving: 8 × 2 = ?'
+      ],
+      explanation: [
+        'Start with 14.',
+        'Undo +6: 14 − 6 = 8.',
+        'Undo ÷2: 8 × 2 = 16.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'I think of a number, multiply it by 4, add 11, and get 51. What was the number?',
+      answer: "10",
+      hints: [
+        'Work backwards from 51.',
+        'Undo add 11: 51 − 11 = 40.',
+        'Undo multiply by 4: 40 ÷ 4 = ?'
+      ],
+      explanation: [
+        'Start with 51.',
+        'Undo +11: 51 − 11 = 40.',
+        'Undo ×4: 40 ÷ 4 = 10.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'I think of a number, subtract 9, then double it, and get 26. What was the number?',
+      answer: "22",
+      hints: [
+        'Work backwards from 26.',
+        'Undo double: 26 ÷ 2 = 13.',
+        'Undo subtract 9: 13 + 9 = ?'
+      ],
+      explanation: [
+        'Start with 26.',
+        'Undo ×2: 26 ÷ 2 = 13.',
+        'Undo −9: 13 + 9 = 22.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'I think of a number, add 15, and get 42. What was the number?',
+      choices: ["22", "25", "27", "30"],
+      answer: "27",
+      hints: [
+        'Work backwards from 42.',
+        'Undo add 15: 42 − 15.',
+        '= 27.'
+      ],
+      explanation: [
+        'Start with 42.',
+        'Undo +15: 42 − 15 = 27.',
+        'The original number was 27.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'I think of a number, multiply it by 6, subtract 8, and get 40. What was the number?',
+      answer: "8",
+      hints: [
+        'Work backwards from 40.',
+        'Undo subtract 8: 40 + 8 = 48.',
+        'Undo multiply by 6: 48 ÷ 6 = ?'
+      ],
+      explanation: [
+        'Start with 40.',
+        'Undo −8: 40 + 8 = 48.',
+        'Undo ×6: 48 ÷ 6 = 8.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'I think of a number, divide it by 3, add 10, and get 18. What was the number?',
+      answer: "24",
+      hints: [
+        'Work backwards from 18.',
+        'Undo add 10: 18 − 10 = 8.',
+        'Undo divide by 3: 8 × 3 = ?'
+      ],
+      explanation: [
+        'Start with 18.',
+        'Undo +10: 18 − 10 = 8.',
+        'Undo ÷3: 8 × 3 = 24.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'I think of a number, triple it, subtract 5, and get 22. What was the number?',
+      answer: "9",
+      hints: [
+        'Work backwards from 22.',
+        'Undo subtract 5: 22 + 5 = 27.',
+        'Undo triple: 27 ÷ 3 = ?'
+      ],
+      explanation: [
+        'Start with 22.',
+        'Undo −5: 22 + 5 = 27.',
+        'Undo ×3: 27 ÷ 3 = 9.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'I think of a number, add 12, and get 35. What was the number?',
+      choices: ["21", "23", "25", "27"],
+      answer: "23",
+      hints: [
+        'Work backwards from 35.',
+        'Undo add 12: 35 − 12.',
+        '= 23.'
+      ],
+      explanation: [
+        'Start with 35.',
+        'Undo +12: 35 − 12 = 23.',
+        'The original number was 23.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'I think of a number, multiply it by 4, add 9, and get 53. What was the number?',
+      answer: "11",
+      hints: [
+        'Work backwards from 53.',
+        'Undo add 9: 53 − 9 = 44.',
+        'Undo multiply by 4: 44 ÷ 4 = ?'
+      ],
+      explanation: [
+        'Start with 53.',
+        'Undo +9: 53 − 9 = 44.',
+        'Undo ×4: 44 ÷ 4 = 11.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Sequence: 1, 4, 9, 16, 25, 36, 49, ... What is the 8th term?',
+      answer: "64",
+      hints: [
+        'Look at the pattern: 1, 4, 9, 16, 25, ...',
+        'These are perfect squares: <span class="math">1², 2², 3², 4², 5², ...</span>',
+        'The 8th term is <span class="math">8²</span>.'
+      ],
+      explanation: [
+        'The pattern is <span class="math">n²</span>: 1², 2², 3², 4², 5², 6², 7², 8².',
+        '8² = <strong>64</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'Sequence: 2, 6, 18, 54, ... What is the next term?',
+      choices: ["108","126","162","216"],
+      answer: "162",
+      hints: [
+        'Find the pattern: 6 ÷ 2 = 3, 18 ÷ 6 = 3, 54 ÷ 18 = 3.',
+        'Each term is multiplied by 3.',
+        'Next term = 54 × 3.'
+      ],
+      explanation: [
+        'This is a geometric sequence with common ratio 3.',
+        'Next term = 54 × 3 = <strong>162</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Sequence: 3, 7, 11, 15, 19, ... What is the 10th term?',
+      answer: "39",
+      hints: [
+        'Find the common difference: 7 − 3 = 4.',
+        'The nth term = first term + (n − 1) × difference.',
+        '10th term = 3 + (10 − 1) × 4.'
+      ],
+      explanation: [
+        'Common difference = 4. First term = 3.',
+        '10th term = 3 + (9)(4) = 3 + 36 = <strong>39</strong>.'
+      ]
+    }
   ],
 
   // --- Topic 3: Gauss's Summation --- difficulty 1-2
@@ -9918,6 +16516,257 @@ EXTRA_QUESTIONS[14] = [
         '= 1050.'
       ]
     }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'What is 1 + 2 + 3 + ... + 15?',
+      answer: "120",
+      hints: [
+        'Use Gauss\'s formula: n(n + 1)/2.',
+        'n = 15: 15 × 16 / 2.',
+        '= 240 / 2.'
+      ],
+      explanation: [
+        'Sum = n(n + 1)/2 = 15 × 16 / 2.',
+        '= 240 / 2 = 120.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'What is the sum of the first 30 positive integers?',
+      choices: ["435", "450", "465", "480"],
+      answer: "465",
+      hints: [
+        'Use Gauss\'s formula: n(n + 1)/2.',
+        '30 × 31 / 2.',
+        '= 930 / 2.'
+      ],
+      explanation: [
+        'Sum = 30 × 31 / 2.',
+        '= 930 / 2 = 465.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the sum of even numbers from 2 to 20? (2 + 4 + 6 + ... + 20)',
+      answer: "110",
+      hints: [
+        'Factor out 2: 2(1 + 2 + 3 + ... + 10).',
+        'Use Gauss: 1+2+...+10 = 10 × 11 / 2 = 55.',
+        '2 × 55 = ?'
+      ],
+      explanation: [
+        '2 + 4 + ... + 20 = 2(1 + 2 + ... + 10).',
+        '= 2 × 55 = 110.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'What is 1 + 2 + 3 + ... + 10?',
+      choices: ["45", "50", "55", "60"],
+      answer: "55",
+      hints: [
+        'Use Gauss\'s formula: n(n + 1)/2.',
+        'n = 10: 10 × 11 / 2.',
+        '= 110 / 2.'
+      ],
+      explanation: [
+        'Sum = n(n + 1)/2 = 10 × 11 / 2.',
+        '= 110 / 2 = 55.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the sum of the first 40 positive integers?',
+      answer: "820",
+      hints: [
+        'Use Gauss\'s formula: n(n + 1)/2.',
+        '40 × 41 / 2.',
+        '= 1640 / 2.'
+      ],
+      explanation: [
+        'Use Gauss\'s formula: n(n+1)/2.',
+        'Sum = 40 × 41 / 2 = 1640 / 2 = 820.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the sum of odd numbers from 1 to 19? (1 + 3 + 5 + ... + 19)',
+      answer: "100",
+      hints: [
+        'There are 10 odd numbers from 1 to 19.',
+        'The sum of the first n odd numbers = n².',
+        '10² = ?'
+      ],
+      explanation: [
+        'Odd numbers: 1,3,5,...,19. Count = 10.',
+        'Sum = 10² = 100.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'What is 1 + 2 + 3 + ... + 15?',
+      choices: ["100", "110", "120", "130"],
+      answer: "120",
+      hints: [
+        'Use Gauss\'s formula: n(n + 1)/2.',
+        'n = 15: 15 × 16 / 2.',
+        '= 240 / 2.'
+      ],
+      explanation: [
+        'Sum = n(n + 1)/2 = 15 × 16 / 2.',
+        '= 240 / 2 = 120.',
+        'The sum of the first 15 positive integers is 120.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the sum of the first 60 positive integers?',
+      answer: "1830",
+      hints: [
+        'Use Gauss\'s formula: n(n + 1)/2.',
+        '60 × 61 / 2.',
+        '= 3660 / 2.'
+      ],
+      explanation: [
+        'Sum = n(n+1)/2 = 60 × 61 / 2.',
+        '= 3660 / 2 = 1830.',
+        'The sum is 1830.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the sum of even numbers from 2 to 30? (2 + 4 + 6 + ... + 30)',
+      answer: "240",
+      hints: [
+        'Factor out 2: 2(1 + 2 + 3 + ... + 15).',
+        'Sum inside = 15 × 16 / 2 = 120.',
+        'Multiply by 2.'
+      ],
+      explanation: [
+        '2 + 4 + 6 + ... + 30 = 2(1 + 2 + 3 + ... + 15).',
+        'Inner sum = 15 × 16 / 2 = 120.',
+        'Total = 2 × 120 = 240.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'What is 1 + 2 + 3 + ... + 12?',
+      answer: "78",
+      hints: [
+        'Use Gauss\'s formula: n(n + 1)/2.',
+        'n = 12: 12 × 13 / 2.',
+        '= 156 / 2.'
+      ],
+      explanation: [
+        'Sum = n(n + 1)/2 = 12 × 13 / 2.',
+        '= 156 / 2 = 78.',
+        'The sum is 78.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'What is the sum of the first 40 positive integers?',
+      choices: ["780", "800", "820", "840"],
+      answer: "820",
+      hints: [
+        'Use Gauss\'s formula: n(n + 1)/2.',
+        'n = 40: 40 × 41 / 2.',
+        '= 1640 / 2.'
+      ],
+      explanation: [
+        'Sum = n(n+1)/2 = 40 × 41 / 2.',
+        '= 1640 / 2 = 820.',
+        'The sum is 820.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the sum of even numbers from 2 to 20? (2 + 4 + 6 + ... + 20)',
+      answer: "110",
+      hints: [
+        'Factor out 2: 2(1 + 2 + 3 + ... + 10).',
+        'Sum inside = 10 × 11 / 2 = 55.',
+        'Multiply by 2.'
+      ],
+      explanation: [
+        '2 + 4 + 6 + ... + 20 = 2(1 + 2 + 3 + ... + 10).',
+        'Inner sum = 10 × 11 / 2 = 55.',
+        'Total = 2 × 55 = 110.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A straight fence is 64 feet long with a post every 8 feet, including both ends. How many fence posts are needed?',
+      answer: "9",
+      hints: [
+        'Count the number of 8-foot sections: 64 ÷ 8 = 8 sections.',
+        'The number of posts = sections + 1 (counting both endpoints).',
+        '8 + 1 = ?'
+      ],
+      explanation: [
+        'Number of sections = 64 ÷ 8 = 8.',
+        'Number of posts = 8 + 1 = <strong>9</strong> (one at each end of every section).'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'What is the sum <span class="math">1 + 2 + 3 + ... + 50</span>?',
+      choices: ["1225","1250","1275","1300"],
+      answer: "1275",
+      hints: [
+        'Use Gauss\'s formula: Sum = <span class="math">n(n + 1)/2</span>.',
+        'Here n = 50.',
+        '50 × 51 / 2 = ?'
+      ],
+      explanation: [
+        'Sum = <span class="math">n(n+1)/2</span> = 50 × 51 / 2.',
+        '= 2550 / 2 = <strong>1275</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'Trees are planted along both sides of a 100-meter road, one every 10 meters (including at both ends). How many trees are planted in total?',
+      answer: "22",
+      hints: [
+        'On one side: 100 ÷ 10 = 10 sections → 11 trees.',
+        'Both sides: 11 × 2.',
+        'Multiply.'
+      ],
+      explanation: [
+        'One side: 100 ÷ 10 + 1 = <strong>11</strong> trees.',
+        'Both sides: 11 × 2 = <strong>22</strong> trees total.'
+      ]
+    }
   ],
 
   // --- Topic 4: Visual Counting --- difficulty 1-2
@@ -10274,6 +17123,257 @@ EXTRA_QUESTIONS[14] = [
         'Horizontal lines = 3. Choose 2: C(3,2) = 3.',
         'Vertical lines = 4. Choose 2: C(4,2) = 6.',
         'Total rectangles = 3 × 6 = 18.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'A 4×4 grid is made of unit squares. How many unit squares are in the grid?',
+      answer: "16",
+      hints: [
+        'Count the small 1×1 squares.',
+        'Each row has 4 squares, and there are 4 rows.',
+        '4 × 4 = ?'
+      ],
+      explanation: [
+        'A 4×4 grid has 4 rows and 4 columns of unit squares.',
+        'Total unit squares = 4 × 4 = 16.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'How many rectangles (of any size) are in a 1×4 grid (1 row, 4 columns)?',
+      choices: ["4", "6", "8", "10"],
+      answer: "10",
+      hints: [
+        'Count 1×1: 4, 1×2: 3, 1×3: 2, 1×4: 1.',
+        'Add them up.',
+        '4 + 3 + 2 + 1 = ?'
+      ],
+      explanation: [
+        '1×1: 4, 1×2: 3, 1×3: 2, 1×4: 1.',
+        'Total = 4 + 3 + 2 + 1 = 10 rectangles.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'How many triangles are in a row of 4 small triangles arranged in a strip? (Count all sizes.)',
+      answer: "10",
+      hints: [
+        'Size 1 triangles: 4.',
+        'Size 2 (made of 2 small triangles): 3.',
+        'Size 3: 2, Size 4: 1. Total = 4 + 3 + 2 + 1.'
+      ],
+      explanation: [
+        'Size 1: 4, Size 2: 3, Size 3: 2, Size 4: 1.',
+        'Total = 4 + 3 + 2 + 1 = 10 triangles.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'A 5×5 grid is made of unit squares. How many unit squares are in the grid?',
+      choices: ["20", "25", "30", "36"],
+      answer: "25",
+      hints: [
+        'Count the small 1×1 squares.',
+        'Each row has 5 squares, and there are 5 rows.',
+        '5 × 5 = ?'
+      ],
+      explanation: [
+        'Each row has 5 squares and there are 5 rows.',
+        'Total = 5 × 5 = 25 unit squares.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'How many rectangles (of any size) are in a 1×5 grid (1 row, 5 columns)?',
+      answer: "15",
+      hints: [
+        'Count 1×1: 5, 1×2: 4, 1×3: 3, 1×4: 2, 1×5: 1.',
+        'Add them up.',
+        '5 + 4 + 3 + 2 + 1 = ?'
+      ],
+      explanation: [
+        '1×1: 5, 1×2: 4, 1×3: 3, 1×4: 2, 1×5: 1.',
+        'Total = 5 + 4 + 3 + 2 + 1 = 15 rectangles.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A 2×2 grid has 4 unit squares. How many total squares of all sizes does it contain?',
+      answer: "5",
+      hints: [
+        'Count 1×1 squares: 4.',
+        'Count 2×2 squares: 1.',
+        'Total = 4 + 1.'
+      ],
+      explanation: [
+        '1×1: 4 squares. 2×2: 1 square.',
+        'Total = 4 + 1 = 5.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 1,
+      question: 'A 4×4 grid is made of unit squares. How many unit squares are in the grid?',
+      choices: ["8", "12", "14", "16"],
+      answer: "16",
+      hints: [
+        'Count the small 1×1 squares.',
+        'Each row has 4 squares and there are 4 rows.',
+        '4 × 4 = ?'
+      ],
+      explanation: [
+        'Each row has 4 squares and there are 4 rows.',
+        'Total = 4 × 4 = 16 unit squares.',
+        '16 is the answer.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'How many rectangles (of any size) are in a 1×6 grid (1 row, 6 columns)?',
+      answer: "21",
+      hints: [
+        'Count 1×1: 6, 1×2: 5, 1×3: 4, 1×4: 3, 1×5: 2, 1×6: 1.',
+        'Add them up.',
+        '6 + 5 + 4 + 3 + 2 + 1 = ?'
+      ],
+      explanation: [
+        '1×1: 6, 1×2: 5, 1×3: 4, 1×4: 3, 1×5: 2, 1×6: 1.',
+        'Total = 6 + 5 + 4 + 3 + 2 + 1 = 21.',
+        'There are 21 rectangles.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A 3×3 grid has 9 unit squares. How many total squares of all sizes does it contain?',
+      answer: "14",
+      hints: [
+        'Count 1×1 squares: 9.',
+        'Count 2×2 squares: 4. Count 3×3 squares: 1.',
+        'Total = 9 + 4 + 1.'
+      ],
+      explanation: [
+        '1×1: 9, 2×2: 4, 3×3: 1.',
+        'Total = 9 + 4 + 1 = 14.',
+        'There are 14 squares of all sizes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 1,
+      question: 'A 5×5 grid is made of unit squares. How many unit squares are in the grid?',
+      answer: "25",
+      hints: [
+        'Count the small 1×1 squares.',
+        'Each row has 5 squares, and there are 5 rows.',
+        '5 × 5 = ?'
+      ],
+      explanation: [
+        'Each row has 5 squares and there are 5 rows.',
+        'Total = 5 × 5 = 25 unit squares.',
+        '25 is the answer.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'How many rectangles (of any size) are in a 1×5 grid (1 row, 5 columns)?',
+      choices: ["10", "12", "15", "20"],
+      answer: "15",
+      hints: [
+        'Count 1×1: 5, 1×2: 4, 1×3: 3, 1×4: 2, 1×5: 1.',
+        'Add them up.',
+        '5 + 4 + 3 + 2 + 1 = ?'
+      ],
+      explanation: [
+        '1×1: 5, 1×2: 4, 1×3: 3, 1×4: 2, 1×5: 1.',
+        'Total = 5 + 4 + 3 + 2 + 1 = 15.',
+        'There are 15 rectangles.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A 4×4 grid has 16 unit squares. How many total squares of all sizes does it contain?',
+      answer: "30",
+      hints: [
+        'Count 1×1: 16. Count 2×2: 9. Count 3×3: 4. Count 4×4: 1.',
+        'Total = 16 + 9 + 4 + 1.',
+        'Add them up.'
+      ],
+      explanation: [
+        '1×1: 16, 2×2: 9, 3×3: 4, 4×4: 1.',
+        'Total = 16 + 9 + 4 + 1 = 30.',
+        'There are 30 squares of all sizes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'You start with $20 in savings and add $5 every week. How many weeks until you have $75?',
+      answer: "11",
+      hints: [
+        'You need $75 − $20 = $55 more.',
+        'At $5 per week, how many weeks?',
+        '$55 ÷ $5 = ?'
+      ],
+      explanation: [
+        'Amount needed beyond $20: $75 − $20 = $55.',
+        'Weeks = $55 ÷ $5 = <strong>11</strong> weeks.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A phone plan charges $25/month plus $0.10 per text. If you sent 150 texts, what is your bill?',
+      choices: ["$35","$37.50","$40","$42.50"],
+      answer: "$40",
+      hints: [
+        'Monthly fee = $25. Text cost = 150 × $0.10.',
+        '150 × 0.10 = $15.',
+        'Total = $25 + $15.'
+      ],
+      explanation: [
+        'Text charges: 150 × $0.10 = <strong>$15</strong>.',
+        'Total bill = $25 + $15 = <strong>$40</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A pool fills at 8 gallons per minute. It already has 120 gallons and holds 360 gallons. How many more minutes until it is full?',
+      answer: "30",
+      hints: [
+        'Gallons still needed: 360 − 120.',
+        '= 240 gallons.',
+        'Time = 240 ÷ 8.'
+      ],
+      explanation: [
+        'Gallons needed = 360 − 120 = 240.',
+        'Minutes = 240 ÷ 8 = <strong>30</strong> minutes.'
       ]
     }
   ],
@@ -10642,6 +17742,259 @@ EXTRA_QUESTIONS[14] = [
         'Cycle of 2: 2, 4, 8, 6 (repeats every 4).',
         '100 ÷ 4 = 25 remainder 0 → 4th in cycle.',
         'Units digit = 6.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'What is the units digit of 9⁸?',
+      choices: ["1", "3", "7", "9"],
+      answer: "1",
+      hints: [
+        'Units digit pattern of powers of 9: 9, 1, 9, 1, ...',
+        'The cycle length is 2.',
+        '8 ÷ 2 = 4 remainder 0. Remainder 0 → last in cycle (1).'
+      ],
+      explanation: [
+        'Cycle: 9, 1 (period 2).',
+        '8 mod 2 = 0, so the units digit matches the 2nd in the cycle → 1.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'What is the units digit of 4⁵⁰?',
+      answer: "6",
+      hints: [
+        'Units digits of powers of 4: 4, 6, 4, 6, ...',
+        'The cycle length is 2.',
+        '50 ÷ 2 = 25 remainder 0. Remainder 0 → last in cycle (6).'
+      ],
+      explanation: [
+        'Cycle: 4, 6 (period 2).',
+        '50 mod 2 = 0 → units digit is 6.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'What is the units digit of 8¹⁵?',
+      choices: ["2", "4", "6", "8"],
+      answer: "2",
+      hints: [
+        'Units digit cycle of powers of 8: 8, 4, 2, 6 (period 4).',
+        '15 ÷ 4 = 3 remainder 3.',
+        'The 3rd in the cycle is 2.'
+      ],
+      explanation: [
+        'Cycle: 8, 4, 2, 6 (period 4).',
+        '15 mod 4 = 3 → units digit matches 8³ → 2.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the units digit of 6¹⁰⁰?',
+      answer: "6",
+      hints: [
+        'Powers of 6 always end in 6.',
+        '6¹ = 6, 6² = 36, 6³ = 216.',
+        'The units digit is always 6.'
+      ],
+      explanation: [
+        'Any power of 6 ends in 6.',
+        'So 6¹⁰⁰ has units digit 6.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'What is the units digit of 2²⁵?',
+      choices: ["2", "4", "6", "8"],
+      answer: "2",
+      hints: [
+        'Units digit cycle of powers of 2: 2, 4, 8, 6 (period 4).',
+        '25 ÷ 4 = 6 remainder 1.',
+        'The 1st in the cycle is 2.'
+      ],
+      explanation: [
+        'Cycle: 2, 4, 8, 6 (period 4).',
+        '25 mod 4 = 1 → units digit is 2.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'What is the units digit of 7²⁴?',
+      answer: "1",
+      hints: [
+        'Units digit cycle of powers of 7: 7, 9, 3, 1 (period 4).',
+        '24 ÷ 4 = 6 remainder 0.',
+        'Remainder 0 → last in cycle (1).'
+      ],
+      explanation: [
+        'Cycle: 7, 9, 3, 1 (period 4).',
+        '24 mod 4 = 0 → units digit is 1.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'What is the units digit of 9¹⁵?',
+      choices: ["1", "3", "7", "9"],
+      answer: "9",
+      hints: [
+        'Units digit cycle of powers of 9: 9, 1 (period 2).',
+        '15 ÷ 2 = 7 remainder 1.',
+        'Remainder 1 → 1st in cycle = 9.'
+      ],
+      explanation: [
+        'Cycle: 9, 1 (period 2).',
+        '15 mod 2 = 1 → units digit is 9.',
+        'The units digit of 9¹⁵ is 9.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'What is the units digit of 4⁵⁰?',
+      answer: "6",
+      hints: [
+        'Units digit cycle of powers of 4: 4, 6 (period 2).',
+        '50 ÷ 2 = 25 remainder 0.',
+        'Remainder 0 → last in cycle (6).'
+      ],
+      explanation: [
+        'Cycle: 4, 6 (period 2).',
+        '50 mod 2 = 0 → units digit is 6.',
+        'The units digit of 4⁵⁰ is 6.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'What is the units digit of 3³³?',
+      answer: "3",
+      hints: [
+        'Units digit cycle of powers of 3: 3, 9, 7, 1 (period 4).',
+        '33 ÷ 4 = 8 remainder 1.',
+        'Remainder 1 → 1st in cycle = 3.'
+      ],
+      explanation: [
+        'Cycle: 3, 9, 7, 1 (period 4).',
+        '33 mod 4 = 1 → units digit is 3.',
+        'The units digit of 3³³ is 3.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'What is the units digit of 8²⁰?',
+      choices: ["2", "4", "6", "8"],
+      answer: "6",
+      hints: [
+        'Units digit cycle of powers of 8: 8, 4, 2, 6 (period 4).',
+        '20 ÷ 4 = 5 remainder 0.',
+        'Remainder 0 → last in cycle = 6.'
+      ],
+      explanation: [
+        'Cycle: 8, 4, 2, 6 (period 4).',
+        '20 mod 4 = 0 → units digit is 6.',
+        'The units digit of 8²⁰ is 6.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'What is the units digit of 2²⁵?',
+      answer: "2",
+      hints: [
+        'Units digit cycle of powers of 2: 2, 4, 8, 6 (period 4).',
+        '25 ÷ 4 = 6 remainder 1.',
+        'Remainder 1 → 1st in cycle = 2.'
+      ],
+      explanation: [
+        'Cycle: 2, 4, 8, 6 (period 4).',
+        '25 mod 4 = 1 → units digit is 2.',
+        'The units digit of 2²⁵ is 2.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'What is the units digit of 6¹⁰⁰?',
+      choices: ["0", "2", "4", "6"],
+      answer: "6",
+      hints: [
+        'Any power of 6 always ends in 6.',
+        '6¹ = 6, 6² = 36, 6³ = 216.',
+        'The units digit is always 6.'
+      ],
+      explanation: [
+        'Powers of 6 always end in 6.',
+        '6¹⁰⁰ has units digit 6.',
+        'The units digit of 6¹⁰⁰ is 6.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the sum <span class="math">1 + 2 + 3 + ... + 20</span>?',
+      answer: "210",
+      hints: [
+        'Use the formula: <span class="math">Sum = n(n + 1) / 2</span>.',
+        'Here n = 20.',
+        '20 × 21 / 2 = ?'
+      ],
+      explanation: [
+        'Sum = <span class="math">n(n+1)/2</span> = 20 × 21 / 2.',
+        '= 420 / 2 = <strong>210</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'What is the units digit of <span class="math">7^{20}</span>?',
+      choices: ["1","3","7","9"],
+      answer: "1",
+      hints: [
+        'Find the pattern of units digits: 7¹ = 7, 7² = 49, 7³ = 343, 7⁴ = 2401.',
+        'Units digits cycle: 7, 9, 3, 1, 7, 9, 3, 1, ...',
+        'The cycle length is 4. 20 ÷ 4 = 5 with remainder 0.'
+      ],
+      explanation: [
+        'Units digit pattern of powers of 7: 7, 9, 3, <strong>1</strong>, repeating every 4.',
+        '20 ÷ 4 = 5 remainder 0, so the units digit matches the 4th in the cycle: <strong>1</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the sum of all even numbers from 2 to 30?',
+      answer: "240",
+      hints: [
+        'Even numbers from 2 to 30: 2, 4, 6, ..., 30.',
+        'There are 15 such numbers.',
+        'Sum = (number of terms) × (first + last) / 2 = 15 × 32 / 2.'
+      ],
+      explanation: [
+        'Number of terms = 30 / 2 = 15.',
+        'Sum = 15 × (2 + 30) / 2 = 15 × 16 = <strong>240</strong>.'
       ]
     }
   ],
@@ -11014,6 +18367,265 @@ EXTRA_QUESTIONS[14] = [
         '4c + 40 − 2c = 56. 2c = 16. c = 8 cows.'
       ]
     }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'A caterpillar climbs 6 feet during the day and slides back 2 feet at night on a 30-foot tree. On which day does it reach the top?',
+      choices: ["6", "7", "8", "9"],
+      answer: "7",
+      hints: [
+        'Net gain per cycle = 6 − 2 = 4 feet.',
+        'After n nights, position = 4n. It escapes when 4n + 6 ≥ 30.',
+        'Solve: 4n ≥ 24 → n ≥ 6. After night 6, position = 24; day 7 it climbs to 30.'
+      ],
+      explanation: [
+        'After night 6: position = 24 feet.',
+        'On day 7 it climbs 6 → 30 feet, reaching the top.',
+        'The caterpillar reaches the top on day 7.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A snail climbs 3 feet during the day and slides back 1 foot at night on a 20-foot wall. On which day does it reach the top?',
+      answer: "10",
+      hints: [
+        'Net gain per cycle = 3 − 1 = 2 feet.',
+        'After n nights, position = 2n. It escapes when 2n + 3 ≥ 20.',
+        'Solve: 2n ≥ 17 → n ≥ 9. After night 9, position = 18; day 10 it climbs to 21.'
+      ],
+      explanation: [
+        'After night 9: position = 18 feet.',
+        'On day 10 it climbs 3 → 21 ≥ 20.',
+        'The snail reaches the top on day 10.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'You have a 3-liter jug and a 5-liter jug. Can you measure exactly 4 liters?',
+      choices: ["Yes", "No", "Only with a third jug", "Not enough information"],
+      answer: "Yes",
+      hints: [
+        'Fill the 5-liter jug. Pour into the 3-liter jug until full.',
+        'The 5-liter jug now has 2 liters left.',
+        'Empty the 3-liter jug, pour the 2 liters into it, fill the 5-liter jug, pour into the 3-liter jug (which needs 1 more liter). Now the 5-liter jug has 4 liters.'
+      ],
+      explanation: [
+        'Fill 5L, pour into 3L → 5L has 2L left.',
+        'Empty 3L, pour 2L into 3L, refill 5L.',
+        'Pour from 5L into 3L (needs 1L more) → 5L now has exactly 4L.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A worm climbs 4 feet during the day and slides back 1 foot at night on a 25-foot pole. On which day does it reach the top?',
+      answer: "8",
+      hints: [
+        'Net gain per cycle = 4 − 1 = 3 feet.',
+        'After n nights, position = 3n. It escapes when 3n + 4 ≥ 25.',
+        'Solve: 3n ≥ 21 → n ≥ 7. After night 7, position = 21; day 8 it climbs to 25.'
+      ],
+      explanation: [
+        'After night 7: position = 21 feet.',
+        'On day 8 it climbs 4 → 25 feet.',
+        'The worm reaches the top on day 8.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A lizard climbs 7 feet during the day and slides back 4 feet at night on a 40-foot wall. On which day does it reach the top?',
+      choices: ["11", "12", "13", "14"],
+      answer: "12",
+      hints: [
+        'Net gain = 7 − 4 = 3 feet per cycle.',
+        'After n nights, position = 3n. Escapes when 3n + 7 ≥ 40.',
+        '3n ≥ 33 → n ≥ 11. After night 11 = 33 ft; day 12 it climbs to 40.'
+      ],
+      explanation: [
+        'After night 11: position = 33 feet.',
+        'On day 12 it climbs 7 → 40 feet.',
+        'The lizard escapes on day 12.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A bacteria colony doubles every hour. It fills a jar in 24 hours. At what hour was the jar half full?',
+      answer: "23",
+      hints: [
+        'If it doubles each hour and is full at hour 24...',
+        'At hour 23 it was half of the full amount.',
+        'Because half × 2 = full.'
+      ],
+      explanation: [
+        'Since the colony doubles every hour, at hour 23 it was half full.',
+        'Half full × 2 = full at hour 24.',
+        'The jar was half full at hour 23.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A frog climbs 6 feet during the day and slides back 2 feet at night on a 30-foot wall. On which day does it reach the top?',
+      answer: "7",
+      hints: [
+        'Net gain per cycle = 6 − 2 = 4 feet.',
+        'After n nights, position = 4n. It escapes when 4n + 6 ≥ 30.',
+        '4n ≥ 24 → n ≥ 6. After night 6 = 24 ft; day 7 it climbs to 30.'
+      ],
+      explanation: [
+        'After night 6: position = 24 feet.',
+        'On day 7 it climbs 6 → 30 feet.',
+        'The frog reaches the top on day 7.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A virus colony triples every hour. It fills a petri dish in 12 hours. At what hour was the dish one-third full?',
+      choices: ["4", "8", "10", "11"],
+      answer: "11",
+      hints: [
+        'If it triples each hour and is full at hour 12...',
+        'At hour 11 it was one-third of the full amount.',
+        'Because one-third × 3 = full.'
+      ],
+      explanation: [
+        'Since the colony triples every hour, at hour 11 it was 1/3 full.',
+        '1/3 full × 3 = full at hour 12.',
+        'The dish was one-third full at hour 11.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A caterpillar climbs 8 feet during the day and slides back 5 feet at night on a 35-foot tree. On which day does it reach the top?',
+      answer: "10",
+      hints: [
+        'Net gain = 8 − 5 = 3 feet per cycle.',
+        'After n nights, position = 3n. Escapes when 3n + 8 ≥ 35.',
+        '3n ≥ 27 → n ≥ 9. After night 9 = 27 ft; day 10 it climbs to 35.'
+      ],
+      explanation: [
+        'After night 9: position = 27 feet.',
+        'On day 10 it climbs 8 → 35 feet.',
+        'The caterpillar reaches the top on day 10.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A snail climbs 4 feet during the day and slides back 2 feet at night. The wall is 18 feet tall. On which day does it reach the top?',
+      answer: "8",
+      hints: [
+        'Net gain per cycle = 4 − 2 = 2 feet.',
+        'After n nights, position = 2n. Escapes when 2n + 4 ≥ 18.',
+        '2n ≥ 14 → n ≥ 7. After night 7 = 14 ft; day 8 it climbs to 18.'
+      ],
+      explanation: [
+        'After night 7: position = 14 feet.',
+        'On day 8 it climbs 4 → 18 feet.',
+        'The snail reaches the top on day 8.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A bacteria colony doubles every hour. It fills a jar in 10 hours. At what hour was the jar half full?',
+      choices: ["5", "7", "8", "9"],
+      answer: "9",
+      hints: [
+        'If it doubles each hour and is full at hour 10...',
+        'At hour 9 it was half of the full amount.',
+        'Because half × 2 = full.'
+      ],
+      explanation: [
+        'Since the colony doubles every hour, at hour 9 it was half full.',
+        'Half full × 2 = full at hour 10.',
+        'The jar was half full at hour 9.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A worm climbs 7 feet during the day and slides back 4 feet at night on a 25-foot pole. On which day does it reach the top?',
+      answer: "7",
+      hints: [
+        'Net gain = 7 − 4 = 3 feet per cycle.',
+        'After n nights, position = 3n. Escapes when 3n + 7 ≥ 25.',
+        '3n ≥ 18 → n ≥ 6. After night 6 = 18 ft; day 7 it climbs to 25.'
+      ],
+      explanation: [
+        'After night 6: position = 18 feet.',
+        'On day 7 it climbs 7 → 25 feet.',
+        'The worm reaches the top on day 7.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'All squares are rectangles. All rectangles have 4 right angles. What can you conclude about squares?',
+      choices: ["Squares have 3 right angles","Squares have 4 right angles","Squares are not rectangles","Not enough information"],
+      answer: "Squares have 4 right angles",
+      hints: [
+        'If all squares are rectangles, then every property of rectangles applies to squares.',
+        'Rectangles have 4 right angles.',
+        'Therefore squares must also have 4 right angles.'
+      ],
+      explanation: [
+        'Since all squares are rectangles, and all rectangles have 4 right angles...',
+        'By logical deduction, all <strong>squares have 4 right angles</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'If it rains, the game is canceled. The game was NOT canceled. What can you conclude?',
+      choices: ["It rained","It did not rain","The game was played indoors","Not enough information"],
+      answer: "It did not rain",
+      hints: [
+        'This is called the contrapositive.',
+        'If P → Q, then NOT Q → NOT P.',
+        'The game not being canceled means rain did not happen.'
+      ],
+      explanation: [
+        'If rain → canceled. The contrapositive: not canceled → <strong>not rain</strong>.',
+        'Since the game was not canceled, it did <strong>not rain</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'In a class of 30 students, 18 play soccer, 12 play basketball, and 5 play both. How many play neither sport?',
+      answer: "5",
+      hints: [
+        'Use inclusion-exclusion: students playing at least one = soccer + basketball − both.',
+        '= 18 + 12 − 5 = 25.',
+        'Neither = total − at least one = 30 − 25.'
+      ],
+      explanation: [
+        'At least one sport: 18 + 12 − 5 = <strong>25</strong>.',
+        'Neither: 30 − 25 = <strong>5</strong> students.'
+      ]
+    }
   ],
 
   // --- Topic 7: Handshake Problem --- difficulty 2-3
@@ -11370,6 +18982,259 @@ EXTRA_QUESTIONS[14] = [
         'n = 10 people attended.'
       ]
     }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'If 12 people each shake hands with every other person exactly once, how many handshakes occur?',
+      answer: "66",
+      hints: [
+        'Use the handshake formula: n(n−1)/2.',
+        'n = 12: 12 × 11 / 2.',
+        '= 132 / 2.'
+      ],
+      explanation: [
+        'Handshakes = n(n−1)/2 = 12 × 11 / 2.',
+        '= 132 / 2 = 66.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'At a party, there were 28 handshakes and everyone shook hands with everyone else exactly once. How many people were at the party?',
+      choices: ["6", "7", "8", "9"],
+      answer: "8",
+      hints: [
+        'n(n−1)/2 = 28, so n(n−1) = 56.',
+        'Try n = 8: 8 × 7 = 56. ✓',
+        'So there were 8 people.'
+      ],
+      explanation: [
+        'n(n−1)/2 = 28 → n(n−1) = 56.',
+        '8 × 7 = 56, so n = 8.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A round-robin tournament has 7 teams. Each team plays every other team exactly once. How many games are played?',
+      answer: "21",
+      hints: [
+        'This is the same as the handshake problem.',
+        'Games = n(n−1)/2 = 7 × 6 / 2.',
+        '= 42 / 2.'
+      ],
+      explanation: [
+        'Each pair plays once, so this is the handshake formula.',
+        'Games = 7 × 6 / 2 = 42 / 2 = 21.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'If 6 people each shake hands with every other person exactly once, how many handshakes occur?',
+      choices: ["10", "12", "15", "18"],
+      answer: "15",
+      hints: [
+        'Use the handshake formula: n(n−1)/2.',
+        'n = 6: 6 × 5 / 2.',
+        '= 30 / 2.'
+      ],
+      explanation: [
+        'Use n(n−1)/2 with n = 6.',
+        'Handshakes = 6 × 5 / 2 = 15.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'At a party, there were 66 handshakes. Everyone shook hands with everyone else exactly once. How many people were at the party?',
+      answer: "12",
+      hints: [
+        'n(n−1)/2 = 66, so n(n−1) = 132.',
+        'Try n = 12: 12 × 11 = 132. ✓',
+        'So there were 12 people.'
+      ],
+      explanation: [
+        'n(n−1)/2 = 66 → n(n−1) = 132.',
+        '12 × 11 = 132, so n = 12.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'In a chess tournament, 9 players each play every other player exactly once. How many games are played?',
+      answer: "36",
+      hints: [
+        'Same as the handshake problem.',
+        'Games = n(n−1)/2 = 9 × 8 / 2.',
+        '= 72 / 2.'
+      ],
+      explanation: [
+        'Each pair plays once, like the handshake problem.',
+        'Games = 9 × 8 / 2 = 72 / 2 = 36.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'If 11 people each shake hands with every other person exactly once, how many handshakes occur?',
+      choices: ["45", "50", "55", "60"],
+      answer: "55",
+      hints: [
+        'Use the handshake formula: n(n−1)/2.',
+        'n = 11: 11 × 10 / 2.',
+        '= 110 / 2.'
+      ],
+      explanation: [
+        'Use n(n−1)/2 with n = 11.',
+        'Handshakes = 11 × 10 / 2 = 55.',
+        'There are 55 handshakes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'At a party, there were 91 handshakes. Everyone shook hands with everyone else exactly once. How many people were at the party?',
+      answer: "14",
+      hints: [
+        'n(n−1)/2 = 91, so n(n−1) = 182.',
+        'Try n = 14: 14 × 13 = 182. ✓',
+        'So there were 14 people.'
+      ],
+      explanation: [
+        'n(n−1)/2 = 91 → n(n−1) = 182.',
+        '14 × 13 = 182, so n = 14.',
+        'There were 14 people at the party.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'In a round-robin tournament with 7 teams, each team plays every other team once. How many total games are played?',
+      answer: "21",
+      hints: [
+        'Same as the handshake problem.',
+        'Games = n(n−1)/2 = 7 × 6 / 2.',
+        '= 42 / 2.'
+      ],
+      explanation: [
+        'Each pair plays once, just like the handshake problem.',
+        'Games = 7 × 6 / 2 = 42 / 2 = 21.',
+        'There are 21 games.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'If 9 people each shake hands with every other person exactly once, how many handshakes occur?',
+      answer: "36",
+      hints: [
+        'Use the handshake formula: n(n−1)/2.',
+        'n = 9: 9 × 8 / 2.',
+        '= 72 / 2.'
+      ],
+      explanation: [
+        'Use n(n−1)/2 with n = 9.',
+        'Handshakes = 9 × 8 / 2 = 36.',
+        'There are 36 handshakes.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'At a party, there were 66 handshakes. Everyone shook hands with everyone else exactly once. How many people were at the party?',
+      choices: ["10", "11", "12", "13"],
+      answer: "12",
+      hints: [
+        'n(n−1)/2 = 66, so n(n−1) = 132.',
+        'Try n = 12: 12 × 11 = 132. ✓',
+        'So there were 12 people.'
+      ],
+      explanation: [
+        'n(n−1)/2 = 66 → n(n−1) = 132.',
+        '12 × 11 = 132, so n = 12.',
+        'There were 12 people at the party.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'In a round-robin tournament with 9 teams, each team plays every other team once. How many total games are played?',
+      answer: "36",
+      hints: [
+        'Same as the handshake problem.',
+        'Games = n(n−1)/2 = 9 × 8 / 2.',
+        '= 72 / 2.'
+      ],
+      explanation: [
+        'Each pair plays once, just like the handshake problem.',
+        'Games = 9 × 8 / 2 = 72 / 2 = 36.',
+        'There are 36 games.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'At a party, everyone shakes hands with everyone else exactly once. If there are 6 people, how many handshakes occur?',
+      choices: ["12","15","18","30"],
+      answer: "15",
+      hints: [
+        'Each person shakes hands with 5 others.',
+        'Total if we count from each person: 6 × 5 = 30, but each handshake is counted twice.',
+        'Divide by 2: 30 / 2.'
+      ],
+      explanation: [
+        'Handshakes = <span class="math">C(6,2)</span> = (6 × 5) / 2.',
+        '= <strong>15</strong> handshakes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: '10 teams play in a tournament where every team plays every other team once. How many games are played?',
+      answer: "45",
+      hints: [
+        'This is the same as the handshake problem.',
+        '<span class="math">C(10,2) = (10 × 9) / 2</span>.',
+        '= 90 / 2.'
+      ],
+      explanation: [
+        '<span class="math">C(10,2)</span> = (10 × 9) / 2 = 90 / 2.',
+        '= <strong>45</strong> games.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Amy, Ben, Cara, and Dan each have a different pet (cat, dog, fish, bird). Amy does not have a dog or cat. Ben has the fish. Cara has the dog. What pet does Amy have?',
+      choices: ["Cat","Dog","Fish","Bird"],
+      answer: "Bird",
+      hints: [
+        'Ben has the fish. Cara has the dog. Eliminate these for others.',
+        'Amy cannot have dog or cat (given). Amy also cannot have fish (Ben has it).',
+        'The only option left for Amy is bird.'
+      ],
+      explanation: [
+        'Ben → fish, Cara → dog.',
+        'Amy: not dog, not cat, not fish → <strong>bird</strong>.',
+        'Dan gets the remaining pet: cat.'
+      ]
+    }
   ],
 
   // --- Topic 8: Counting Squares on Grids --- difficulty 2-3
@@ -11719,6 +19584,260 @@ EXTRA_QUESTIONS[14] = [
         'Horizontal lines = 4. C(4,2) = 6.',
         'Vertical lines = 4. C(4,2) = 6.',
         'Total rectangles = 6 × 6 = 36.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'How many squares of all sizes are on a 5×5 grid?',
+      answer: "55",
+      hints: [
+        'Sum squares from 1×1 to 5×5.',
+        '1×1: 25, 2×2: 16, 3×3: 9, 4×4: 4, 5×5: 1.',
+        '25 + 16 + 9 + 4 + 1 = ?'
+      ],
+      explanation: [
+        '1×1: 5²=25. 2×2: 4²=16. 3×3: 3²=9. 4×4: 2²=4. 5×5: 1²=1.',
+        'Total = 25 + 16 + 9 + 4 + 1 = 55.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'How many squares of all sizes are on a 2×2 grid?',
+      choices: ["4", "5", "6", "8"],
+      answer: "5",
+      hints: [
+        'Count by size: 1×1, 2×2.',
+        '1×1: 4, 2×2: 1.',
+        'Total = 4 + 1.'
+      ],
+      explanation: [
+        '1×1: 2²=4. 2×2: 1²=1.',
+        'Total = 4 + 1 = 5.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'How many rectangles of all sizes are on a 2×3 grid (2 rows, 3 columns)?',
+      answer: "18",
+      hints: [
+        'To form a rectangle, choose 2 horizontal lines and 2 vertical lines.',
+        'Horizontal lines: 3 (rows + 1). C(3,2) = 3.',
+        'Vertical lines: 4 (cols + 1). C(4,2) = 6. Total = 3 × 6.'
+      ],
+      explanation: [
+        'Horizontal lines: 3. C(3,2) = 3.',
+        'Vertical lines: 4. C(4,2) = 6.',
+        'Total rectangles = 3 × 6 = 18.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'How many squares of all sizes are on a 1×1 grid?',
+      choices: ["0", "1", "2", "4"],
+      answer: "1",
+      hints: [
+        'A 1×1 grid is just a single square.',
+        'There is only 1 square: the 1×1 square itself.',
+        'No larger squares fit.'
+      ],
+      explanation: [
+        'A 1×1 grid has exactly 1 square.',
+        'Total = 1.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'How many squares of all sizes are on a 6×6 grid?',
+      answer: "91",
+      hints: [
+        'Sum: 1×1 + 2×2 + ... + 6×6.',
+        '36 + 25 + 16 + 9 + 4 + 1.',
+        '= 91.'
+      ],
+      explanation: [
+        '1×1: 36, 2×2: 25, 3×3: 16, 4×4: 9, 5×5: 4, 6×6: 1.',
+        'Total = 36 + 25 + 16 + 9 + 4 + 1 = 91.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'How many rectangles of all sizes are on a 2×2 grid?',
+      answer: "9",
+      hints: [
+        'Choose 2 horizontal lines from 3 and 2 vertical lines from 3.',
+        'C(3,2) × C(3,2) = 3 × 3.',
+        '= 9.'
+      ],
+      explanation: [
+        'Horizontal lines: 3. C(3,2) = 3.',
+        'Vertical lines: 3. C(3,2) = 3.',
+        'Total rectangles = 3 × 3 = 9.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'How many squares of all sizes are on a 7×7 grid?',
+      choices: ["120", "140", "160", "180"],
+      answer: "140",
+      hints: [
+        'Sum of squares: 1² + 2² + 3² + ... + 7².',
+        '1 + 4 + 9 + 16 + 25 + 36 + 49.',
+        'Add them up.'
+      ],
+      explanation: [
+        '1×1: 49, 2×2: 36, 3×3: 25, 4×4: 16, 5×5: 9, 6×6: 4, 7×7: 1.',
+        'Total = 49 + 36 + 25 + 16 + 9 + 4 + 1 = 140.',
+        'There are 140 squares of all sizes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'How many rectangles of all sizes are in a 1×4 grid (1 row, 4 columns)?',
+      answer: "10",
+      hints: [
+        'Count 1×1: 4, 1×2: 3, 1×3: 2, 1×4: 1.',
+        'Add them up.',
+        '4 + 3 + 2 + 1 = ?'
+      ],
+      explanation: [
+        '1×1: 4, 1×2: 3, 1×3: 2, 1×4: 1.',
+        'Total = 4 + 3 + 2 + 1 = 10.',
+        'There are 10 rectangles.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'How many rectangles of all sizes are on a 3×3 grid?',
+      answer: "36",
+      hints: [
+        'Choose 2 horizontal lines from 4 and 2 vertical lines from 4.',
+        'C(4,2) × C(4,2) = 6 × 6.',
+        '= 36.'
+      ],
+      explanation: [
+        'A 3×3 grid has 4 horizontal and 4 vertical lines.',
+        'C(4,2) = 6 ways to choose each pair.',
+        'Total rectangles = 6 × 6 = 36.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'How many squares of all sizes are on a 5×5 grid?',
+      answer: "55",
+      hints: [
+        'Count by size: 1×1, 2×2, 3×3, 4×4, 5×5.',
+        '25 + 16 + 9 + 4 + 1.',
+        'Add them up.'
+      ],
+      explanation: [
+        '1×1: 25, 2×2: 16, 3×3: 9, 4×4: 4, 5×5: 1.',
+        'Total = 25 + 16 + 9 + 4 + 1 = 55.',
+        'There are 55 squares of all sizes.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'How many rectangles of all sizes are in a 1×3 grid (1 row, 3 columns)?',
+      choices: ["3", "4", "5", "6"],
+      answer: "6",
+      hints: [
+        'Count 1×1: 3, 1×2: 2, 1×3: 1.',
+        'Add them up.',
+        '3 + 2 + 1 = ?'
+      ],
+      explanation: [
+        '1×1: 3, 1×2: 2, 1×3: 1.',
+        'Total = 3 + 2 + 1 = 6.',
+        'There are 6 rectangles.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'How many squares of all sizes are on a 6×6 grid?',
+      answer: "91",
+      hints: [
+        'Sum of squares: 1² + 2² + 3² + 4² + 5² + 6².',
+        '1 + 4 + 9 + 16 + 25 + 36.',
+        'Add them up.'
+      ],
+      explanation: [
+        '1×1: 36, 2×2: 25, 3×3: 16, 4×4: 9, 5×5: 4, 6×6: 1.',
+        'Total = 36 + 25 + 16 + 9 + 4 + 1 = 91.',
+        'There are 91 squares of all sizes.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'A bookstore sells 3 books at $12 each with a 20% discount. What is the total after an 8% sales tax? (Round to nearest cent.)',
+      answer: "31.10",
+      hints: [
+        'Original total: 3 × $12 = $36.',
+        'After 20% discount: $36 × 0.80 = $28.80.',
+        'After 8% tax: $28.80 × 1.08.'
+      ],
+      explanation: [
+        'Before discount: 3 × $12 = $36.',
+        'After 20% discount: $36 × 0.80 = <strong>$28.80</strong>.',
+        'After 8% tax: $28.80 × 1.08 = <strong>$31.10</strong> (rounded).'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A 3×3 grid of unit squares has how many total squares of all sizes?',
+      choices: ["9","10","13","14"],
+      answer: "14",
+      hints: [
+        'Count 1×1 squares: 9. Count 2×2 squares: 4.',
+        'Count 3×3 squares: 1.',
+        'Add them all up.'
+      ],
+      explanation: [
+        '1×1: 9 squares, 2×2: 4 squares, 3×3: 1 square.',
+        'Total = 9 + 4 + 1 = <strong>14</strong> squares.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'You buy a shirt for $24.50, pants for $32, and a belt for $15.50. You have a coupon for 15% off the total. What do you pay? (Round to the nearest cent.)',
+      answer: "61.20",
+      hints: [
+        'Total before discount: $24.50 + $32 + $15.50.',
+        '= $72.',
+        'After 15% off: $72 × 0.85.'
+      ],
+      explanation: [
+        'Total = $24.50 + $32 + $15.50 = <strong>$72</strong>.',
+        'After 15% discount: $72 × 0.85 = <strong>$61.20</strong>.'
       ]
     }
   ],
@@ -12074,6 +20193,259 @@ EXTRA_QUESTIONS[14] = [
       explanation: [
         '1 + 4 + 9 + 16 + 25 + 36 = 91.',
         'Formula: 6 × 7 × 13 / 6 = 546/6 = 91.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the 10th Fibonacci number? (The sequence starts 1, 1, 2, 3, 5, 8, ...)',
+      answer: "55",
+      hints: [
+        'Continue the sequence: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55.',
+        'Each number is the sum of the two before it.',
+        'F₉ = 34, F₁₀ = 34 + 21.'
+      ],
+      explanation: [
+        'Each Fibonacci number is the sum of the two before it.',
+        'F₁=1, F₂=1, F₃=2, F₄=3, F₅=5, F₆=8, F₇=13, F₈=21, F₉=34, F₁₀=55.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'What is the sum of the first 7 odd numbers (1 + 3 + 5 + 7 + 9 + 11 + 13)?',
+      choices: ["36", "42", "49", "56"],
+      answer: "49",
+      hints: [
+        'The sum of the first n odd numbers = n².',
+        'n = 7, so sum = 7².',
+        '= 49.'
+      ],
+      explanation: [
+        'The sum of the first n odd numbers = n².',
+        'Sum = 7² = 49.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'What is the sum of the first 10 Fibonacci numbers? (1, 1, 2, 3, 5, 8, 13, 21, 34, 55)',
+      answer: "143",
+      hints: [
+        'Add them up: 1+1+2+3+5+8+13+21+34+55.',
+        'Group: (1+1)+(2+3)+(5+8)+(13+21)+(34+55).',
+        '= 2 + 5 + 13 + 34 + 89.'
+      ],
+      explanation: [
+        'Sum = 1+1+2+3+5+8+13+21+34+55.',
+        '= 143.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'What is the 9th Fibonacci number? (Sequence: 1, 1, 2, 3, 5, 8, 13, 21, ...)',
+      choices: ["29", "34", "42", "55"],
+      answer: "34",
+      hints: [
+        'F₇ = 13, F₈ = 21.',
+        'F₉ = F₇ + F₈ = 13 + 21.',
+        '= 34.'
+      ],
+      explanation: [
+        'Each Fibonacci number is the sum of the two before it.',
+        'F₉ = F₇ + F₈ = 13 + 21 = 34.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'What is the sum of the first 5 odd numbers (1 + 3 + 5 + 7 + 9)?',
+      answer: "25",
+      hints: [
+        'The sum of the first n odd numbers = n².',
+        'n = 5, so sum = 5².',
+        '= 25.'
+      ],
+      explanation: [
+        'The sum of the first n odd numbers = n².',
+        'Sum = 5² = 25.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'What is the sum of the first 6 Fibonacci numbers? (1, 1, 2, 3, 5, 8)',
+      answer: "20",
+      hints: [
+        'Add: 1 + 1 + 2 + 3 + 5 + 8.',
+        '= 2 + 5 + 13.',
+        '= 20.'
+      ],
+      explanation: [
+        'Add all 6 Fibonacci numbers.',
+        'Sum = 1 + 1 + 2 + 3 + 5 + 8 = 20.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'What is the 11th Fibonacci number? (F₁ = 1, F₂ = 1, F₃ = 2, ...)',
+      choices: ["55", "89", "144", "233"],
+      answer: "89",
+      hints: [
+        'List the sequence: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89.',
+        'Each number is the sum of the two before it.',
+        'F₁₁ = F₉ + F₁₀ = 34 + 55.'
+      ],
+      explanation: [
+        'Fibonacci: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89.',
+        'F₁₁ = 34 + 55 = 89.',
+        'The 11th Fibonacci number is 89.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'What is the sum of the first 7 odd numbers (1 + 3 + 5 + 7 + 9 + 11 + 13)?',
+      answer: "49",
+      hints: [
+        'The sum of the first n odd numbers = n².',
+        'n = 7, so sum = 7².',
+        '= 49.'
+      ],
+      explanation: [
+        'The sum of the first n odd numbers = n².',
+        'Sum = 7² = 49.',
+        'Alternatively: 1+3+5+7+9+11+13 = 49.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'In the Fibonacci sequence (1, 1, 2, 3, 5, 8, 13, 21, 34, ...), what is F₁₀?',
+      answer: "55",
+      hints: [
+        'F₈ = 21, F₉ = 34.',
+        'F₁₀ = F₈ + F₉.',
+        '21 + 34 = ?'
+      ],
+      explanation: [
+        'F₁₀ = F₈ + F₉ = 21 + 34.',
+        'F₁₀ = 55.',
+        'Each Fibonacci number is the sum of the two before it.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'What is the sum of the first 6 Fibonacci numbers? (1, 1, 2, 3, 5, 8)',
+      answer: "20",
+      hints: [
+        'Add them up: 1 + 1 + 2 + 3 + 5 + 8.',
+        'Group: (1+1) + (2+3) + (5+8).',
+        '= 2 + 5 + 13.'
+      ],
+      explanation: [
+        'Sum = 1 + 1 + 2 + 3 + 5 + 8.',
+        '= 20.',
+        'The sum of the first 6 Fibonacci numbers is 20.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'What is the 12th Fibonacci number? (F₁ = 1, F₂ = 1, F₃ = 2, ...)',
+      choices: ["89", "121", "144", "233"],
+      answer: "144",
+      hints: [
+        'List: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144.',
+        'Each number is the sum of the two before it.',
+        'F₁₂ = F₁₀ + F₁₁ = 55 + 89.'
+      ],
+      explanation: [
+        'Fibonacci: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144.',
+        'F₁₂ = 55 + 89 = 144.',
+        'The 12th Fibonacci number is 144.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'What is the sum of the first 9 odd numbers (1 + 3 + 5 + ... + 17)?',
+      answer: "81",
+      hints: [
+        'The sum of the first n odd numbers = n².',
+        'n = 9, so sum = 9².',
+        '= 81.'
+      ],
+      explanation: [
+        'The sum of the first n odd numbers = n².',
+        'Sum = 9² = 81.',
+        'Alternatively: 1+3+5+7+9+11+13+15+17 = 81.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Estimate <span class="math">489 × 21</span> by rounding to the nearest ten.',
+      choices: ["8000","9000","10000","10500"],
+      answer: "10000",
+      hints: [
+        'Round 489 to 490 (or 500) and 21 to 20.',
+        'Using 500 × 20 gives a good estimate.',
+        '500 × 20 = ?'
+      ],
+      explanation: [
+        'Round: 489 ≈ 500, 21 ≈ 20.',
+        'Estimate = 500 × 20 = <strong>10,000</strong>.',
+        '(Exact answer is 10,269.)'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'In the Fibonacci sequence (1, 1, 2, 3, 5, 8, 13, 21, ...), what is the 10th term?',
+      answer: "55",
+      hints: [
+        'Each term = sum of the two before it.',
+        'Continue: 1, 1, 2, 3, 5, 8, 13, 21, 34, ...',
+        'Term 9 = 34. Term 10 = 21 + 34.'
+      ],
+      explanation: [
+        'Fibonacci: 1, 1, 2, 3, 5, 8, 13, 21, 34, <strong>55</strong>.',
+        'Term 10 = 21 + 34 = <strong>55</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 2,
+      question: 'Estimate <span class="math">312 + 689 + 198</span> by rounding each to the nearest hundred.',
+      choices: ["1100","1200","1300","1000"],
+      answer: "1200",
+      hints: [
+        'Round each: 312 ≈ 300, 689 ≈ 700, 198 ≈ 200.',
+        'Add the rounded values.',
+        '300 + 700 + 200 = ?'
+      ],
+      explanation: [
+        'Rounded: 300 + 700 + 200 = <strong>1200</strong>.',
+        '(Exact answer is 1199.)'
       ]
     }
   ],
@@ -12457,6 +20829,264 @@ EXTRA_QUESTIONS[14] = [
         'Worst case: 2 of each of 5 colors = 10 marbles, none with 3 of a kind.',
         'The 11th marble must match some color for a 3rd time.',
         'Minimum = 5 × 2 + 1 = 11.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A drawer has red, blue, green, and yellow socks. What is the minimum number of socks you must grab (without looking) to guarantee a matching pair?',
+      choices: ["3", "4", "5", "8"],
+      answer: "5",
+      hints: [
+        'There are 4 colors (pigeonholes).',
+        'With 4 socks, you could have one of each color.',
+        'The 5th sock must match one of the 4 colors.'
+      ],
+      explanation: [
+        '4 colors = 4 pigeonholes.',
+        'With 4 socks you might have all different colors.',
+        'The 5th sock guarantees a matching pair. Minimum = 4 + 1 = 5.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'There are 40 students in a class. What is the minimum number of students guaranteed to share a birth month? (12 months)',
+      answer: "4",
+      hints: [
+        '12 months are the pigeonholes, 40 students are the pigeons.',
+        'If each month had at most 3 students, that accounts for only 36.',
+        '40 ÷ 12 = 3.33, round up to 4.'
+      ],
+      explanation: [
+        '40 students, 12 months.',
+        'By the pigeonhole principle, at least ⌈40/12⌉ = 4 students share a birth month.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'A bag has 6 different colored marbles. How many marbles must you draw to guarantee at least 2 are the same color?',
+      answer: "7",
+      hints: [
+        'Worst case: draw as many as possible without matching.',
+        'You could draw 6 marbles all of different colors.',
+        'The 7th must match one of the 6 colors.'
+      ],
+      explanation: [
+        'Worst case: 1 of each of 6 colors = 6 marbles with no match.',
+        'The 7th marble must match one color.',
+        'Minimum = 6 + 1 = 7.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A drawer has red, blue, green, yellow, and white socks. What is the minimum number of socks you must grab to guarantee a matching pair?',
+      answer: "6",
+      hints: [
+        'There are 5 colors (pigeonholes).',
+        'With 5 socks, you could have one of each color.',
+        'The 6th must match one of the 5 colors.'
+      ],
+      explanation: [
+        '5 colors = 5 pigeonholes.',
+        'With 5 socks you might have all different colors.',
+        'The 6th sock guarantees a match. Minimum = 5 + 1 = 6.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 4,
+      question: 'In a class of 25 students, what is the minimum number guaranteed to share the same birth month?',
+      choices: ["2", "3", "4", "5"],
+      answer: "3",
+      hints: [
+        '25 students, 12 months.',
+        'If each month had at most 2, that covers only 24.',
+        '25 ÷ 12 = 2.08, round up to 3.'
+      ],
+      explanation: [
+        '25 students and 12 months.',
+        'By the pigeonhole principle, at least ⌈25/12⌉ = 3 students share a month.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'A bag has 4 different colored marbles. How many marbles must you draw to guarantee at least 3 are the same color?',
+      answer: "9",
+      hints: [
+        'Worst case: draw as many as possible without 3 of any color.',
+        'Maximum without 3 of one color = 2 of each = 2 × 4 = 8.',
+        'The 9th must give a 3rd of some color.'
+      ],
+      explanation: [
+        'Worst case: 2 of each of 4 colors = 8 marbles, no 3 of a kind.',
+        'The 9th marble must match some color for a 3rd time.',
+        'Minimum = 4 × 2 + 1 = 9.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A box has 8 types of crayons. How many crayons must you pull out to guarantee at least 3 are the same color?',
+      answer: "17",
+      hints: [
+        'Worst case: pick as many as possible without 3 of any color.',
+        'Maximum without 3 of one color = 2 of each = 2 × 8 = 16.',
+        'The 17th must give a 3rd of some color.'
+      ],
+      explanation: [
+        'Worst case: 2 of each of 8 colors = 16 crayons, no 3 of a kind.',
+        'The 17th crayon must match some color for a 3rd time.',
+        'Minimum = 8 × 2 + 1 = 17.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 4,
+      question: 'There are 50 students in a class. What is the minimum number of students guaranteed to share the same birth month?',
+      choices: ["3", "4", "5", "6"],
+      answer: "5",
+      hints: [
+        '50 students, 12 months.',
+        'If each month had at most 4, that covers only 48.',
+        '50 ÷ 12 = 4.17, round up to 5.'
+      ],
+      explanation: [
+        '50 students and 12 months.',
+        'By the pigeonhole principle, at least ⌈50/12⌉ = 5 students share a month.',
+        'Minimum guaranteed = 5.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'A bag has 5 different colored balls. How many balls must you draw to guarantee at least 4 are the same color?',
+      answer: "16",
+      hints: [
+        'Worst case: draw as many as possible without 4 of any color.',
+        'Maximum without 4 of one color = 3 of each = 3 × 5 = 15.',
+        'The 16th must give a 4th of some color.'
+      ],
+      explanation: [
+        'Worst case: 3 of each of 5 colors = 15 balls, no 4 of a kind.',
+        'The 16th ball must match some color for a 4th time.',
+        'Minimum = 5 × 3 + 1 = 16.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A drawer has red, blue, green, and white socks. What is the minimum number of socks you must grab (without looking) to guarantee a matching pair?',
+      choices: ["2", "3", "4", "5"],
+      answer: "5",
+      hints: [
+        'There are 4 colors of socks.',
+        'In the worst case, you pick one of each color first (4 socks, no match).',
+        'The 5th sock must match one of the 4 colors.'
+      ],
+      explanation: [
+        '4 colors means you could pick 4 socks, all different.',
+        'The 5th sock guarantees a match by the pigeonhole principle.',
+        'Minimum = 4 + 1 = 5.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 4,
+      question: 'A box has 6 types of candy. How many pieces must you pull out to guarantee at least 3 are the same type?',
+      answer: "13",
+      hints: [
+        'Worst case: pick as many as possible without 3 of any type.',
+        'Maximum without 3 of one type = 2 of each = 2 × 6 = 12.',
+        'The 13th must give a 3rd of some type.'
+      ],
+      explanation: [
+        'Worst case: 2 of each of 6 types = 12 pieces, no 3 of a kind.',
+        'The 13th piece must match some type for a 3rd time.',
+        'Minimum = 6 × 2 + 1 = 13.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 4,
+      question: 'There are 30 students in a class. What is the minimum number of students guaranteed to share the same birth month?',
+      choices: ["2", "3", "4", "5"],
+      answer: "3",
+      hints: [
+        '30 students, 12 months.',
+        'If each month had at most 2, that covers only 24.',
+        '30 ÷ 12 = 2.5, round up to 3.'
+      ],
+      explanation: [
+        '30 students and 12 months.',
+        'By the pigeonhole principle, at least ⌈30/12⌉ = 3 students share a month.',
+        'Minimum guaranteed = 3.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 2,
+      question: 'You have a $100 budget for a party. Decorations cost $15 and food costs $6.50 per person. What is the maximum number of people you can feed?',
+      answer: "13",
+      hints: [
+        'Subtract decoration cost first: $100 − $15 = $85.',
+        'Divide remaining by cost per person: $85 ÷ $6.50.',
+        'Round down since you cannot invite a fraction of a person.'
+      ],
+      explanation: [
+        'Budget for food: $100 − $15 = <strong>$85</strong>.',
+        '$85 ÷ $6.50 = 13.08...',
+        'Maximum whole people: <strong>13</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "mc",
+      difficulty: 3,
+      question: 'A drawer has red, blue, and green socks (many of each). What is the minimum number of socks you must grab (without looking) to guarantee at least 2 of the same color?',
+      choices: ["2","3","4","6"],
+      answer: "4",
+      hints: [
+        'This is the Pigeonhole Principle.',
+        'There are 3 colors (pigeonholes).',
+        'In the worst case, you pick one of each color first (3 socks), then the next must match one.'
+      ],
+      explanation: [
+        'With 3 colors, the worst case is picking 1 red, 1 blue, 1 green (3 socks, all different).',
+        'The 4th sock must match one of the 3 colors. Minimum = <strong>4</strong>.'
+      ]
+    }
+  ,
+    {
+      type: "numeric",
+      difficulty: 3,
+      question: 'A cell phone plan costs $45/month for 500 minutes. Extra minutes cost $0.25 each. If you use 620 minutes, what is your bill?',
+      answer: "75",
+      hints: [
+        'Extra minutes used: 620 − 500 = 120.',
+        'Extra charge: 120 × $0.25.',
+        'Total = base cost + extra charge.'
+      ],
+      explanation: [
+        'Extra minutes: 620 − 500 = 120.',
+        'Extra charge: 120 × $0.25 = <strong>$30</strong>.',
+        'Total bill: $45 + $30 = <strong>$75</strong>.'
       ]
     }
   ]

@@ -354,6 +354,235 @@ EXTRA_QUESTIONS[6] = [
         "6 : 36 simplifies to 1 : 6."
       ]
     }
+  ,
+    {
+      type: "mc", difficulty: 1,
+      question: 'A jar has 4 red buttons and 15 blue buttons. What is the ratio of red to blue?',
+      choices: ["4 : 15", "15 : 4", "4 : 19", "15 : 19"],
+      answer: "4 : 15",
+      hints: [
+        'A ratio compares two quantities in order.',
+        'Red is mentioned first, blue second.',
+        'There are 4 red and 15 blue buttons.'
+      ],
+      explanation: [
+        'Red buttons = 4, blue buttons = 15.',
+        'Ratio of red to blue = 4 : 15.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A bag has 24 green marbles and 16 yellow marbles. Write the ratio of yellow to green in simplest form as <span class="math">a : b</span>. Enter <span class="math">a</span>.',
+      answer: "2",
+      hints: [
+        'Yellow = 16, green = 24.',
+        'Ratio = 16 : 24. Find the GCD.',
+        'GCD(16, 24) = 8 \u2192 2 : 3.'
+      ],
+      explanation: [
+        '16 : 24 simplifies to 2 : 3 (divide by 8).',
+        'So a = 2.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A bowl has 12 strawberries, 8 blueberries, and 20 grapes. What is the ratio of blueberries to total fruit in simplest form?',
+      choices: ["1 : 5", "2 : 5", "8 : 40", "8 : 12"],
+      answer: "1 : 5",
+      hints: [
+        'Total fruit = 12 + 8 + 20 = 40.',
+        'Blueberries to total = 8 : 40.',
+        'Simplify by dividing both by 8: 1 : 5.'
+      ],
+      explanation: [
+        'Total = 12 + 8 + 20 = 40.',
+        '8 : 40 simplifies to 1 : 5.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'A parking lot has 9 trucks and 15 cars. What is the first number in the ratio of trucks to cars in simplest form?',
+      answer: "3",
+      hints: [
+        'Trucks to cars = 9 : 15.',
+        'Find the GCD of 9 and 15.',
+        'GCD = 3. Divide both by 3: 3 : 5. The first number is 3.'
+      ],
+      explanation: [
+        '9 : 15 simplified by GCD 3 gives 3 : 5.',
+        'The first number is 3.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A recipe uses 4 cups of flour, 2 cups of sugar, and 6 cups of milk. What is the ratio of sugar to the total ingredients?',
+      choices: ["1 : 6", "2 : 12", "1 : 4", "2 : 6"],
+      answer: "1 : 6",
+      hints: [
+        'Total = 4 + 2 + 6 = 12.',
+        'Sugar to total = 2 : 12.',
+        'Simplify by dividing both by 2: 1 : 6.'
+      ],
+      explanation: [
+        'Total cups = 4 + 2 + 6 = 12.',
+        '2 : 12 simplifies to 1 : 6.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 1,
+      question: 'In a garden there are 7 roses and 11 tulips. What is the ratio of tulips to roses?',
+      choices: ["11 : 7", "7 : 11", "11 : 18", "7 : 18"],
+      answer: "11 : 7",
+      hints: [
+        'The question asks tulips to roses, not roses to tulips.',
+        'Count tulips first, then roses.',
+        'Tulips : roses = 11 : 7.'
+      ],
+      explanation: [
+        'Tulips = 11, roses = 7.',
+        'Ratio of tulips to roses = 11 : 7.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'A drawer has 13 forks and 17 spoons. What is the first number in the ratio of forks to spoons?',
+      answer: "13",
+      hints: [
+        "Forks are mentioned first.",
+        "There are 13 forks.",
+        "The ratio is 13 : 17."
+      ],
+      explanation: [
+        "Forks = 13, spoons = 17.",
+        "Ratio of forks to spoons = 13 : 17, so the first number is 13."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A bag has 10 green, 14 blue, and 6 yellow marbles. What is the ratio of yellow to total marbles in simplest form?',
+      choices: ["1 : 5", "6 : 30", "3 : 15", "2 : 10"],
+      answer: "1 : 5",
+      hints: [
+        "Total marbles = 10 + 14 + 6 = 30.",
+        "Yellow to total = 6 : 30.",
+        "Simplify by dividing both by 6: 1 : 5."
+      ],
+      explanation: [
+        "Total = 10 + 14 + 6 = 30.",
+        "6 : 30 simplifies to 1 : 5."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'A fish tank has 8 guppies and 5 tetras. What is the ratio of tetras to guppies?',
+      choices: ["5 : 8", "8 : 5", "5 : 13", "8 : 13"],
+      answer: "5 : 8",
+      hints: [
+        "Tetras are mentioned first.",
+        "There are 5 tetras and 8 guppies.",
+        "Write tetras first, then guppies."
+      ],
+      explanation: [
+        "Tetras = 5, guppies = 8.",
+        "Ratio of tetras to guppies = 5 : 8."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'A desk has 6 pencils and 11 crayons. What is the ratio of pencils to crayons?',
+      choices: ["6 : 11", "11 : 6", "6 : 17", "11 : 17"],
+      answer: "6 : 11",
+      hints: [
+        "Pencils are mentioned first.",
+        "There are 6 pencils and 11 crayons.",
+        "Write pencils first, then crayons."
+      ],
+      explanation: [
+        "Pencils = 6, crayons = 11.",
+        "Ratio of pencils to crayons = 6 : 11."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A box has 21 red buttons, 9 blue buttons, and 12 green buttons. Write the ratio of blue to total buttons in simplest form as <span class="math">a : b</span>. Enter <span class="math">b</span>.',
+      answer: "14",
+      hints: [
+        "Total = 21 + 9 + 12 = 42.",
+        "Blue to total = 9 : 42.",
+        "Simplify by dividing both by 3: 3 : 14."
+      ],
+      explanation: [
+        "Total = 21 + 9 + 12 = 42.",
+        "9 : 42 simplifies to 3 : 14 (divide by 3).",
+        "So b = 14."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A kitchen drawer has 18 forks and 12 knives. What is the ratio of knives to forks in simplest form?',
+      choices: ["2 : 3", "3 : 2", "12 : 18", "4 : 6"],
+      answer: "2 : 3",
+      hints: [
+        "Knives = 12, forks = 18.",
+        "Ratio = 12 : 18. Find the GCD.",
+        "GCD(12, 18) = 6 → 2 : 3."
+      ],
+      explanation: [
+        "Knives to forks = 12 : 18.",
+        "GCD(12, 18) = 6 → simplified 2 : 3."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A classroom has 14 boys and 16 girls. What is the ratio of boys to total students in simplest form?',
+      choices: ["7 : 15", "14 : 30", "7 : 8", "14 : 16"],
+      answer: "7 : 15",
+      hints: [
+        "Total students = 14 + 16 = 30.",
+        "Boys to total = 14 : 30.",
+        "Divide both by 2 to simplify: 7 : 15."
+      ],
+      explanation: [
+        "Total students = 14 + 16 = <strong>30</strong>.",
+        "14 : 30 simplifies to <strong>7 : 15</strong> (GCD = 2)."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A sports team has 11 players on the field and 5 on the bench. Write the ratio of bench players to total players in simplest form as <span class="math">a : b</span>. Enter <span class="math">b</span>.',
+      answer: "16",
+      hints: [
+        "Total players = 11 + 5 = 16.",
+        "Bench to total = 5 : 16.",
+        "GCD(5, 16) = 1, so it is already in simplest form."
+      ],
+      explanation: [
+        "Total players = 11 + 5 = <strong>16</strong>.",
+        "5 : 16 is already in simplest form, so b = <strong>16</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A nature trail has 9 oak trees and 21 pine trees. What is the ratio of oak trees to pine trees in simplest form?',
+      choices: ["3 : 7", "9 : 21", "1 : 3", "7 : 3"],
+      answer: "3 : 7",
+      hints: [
+        "Oak to pine = 9 : 21.",
+        "Find the GCD of 9 and 21.",
+        "GCD(9, 21) = 3, so 9 ÷ 3 = 3 and 21 ÷ 3 = 7."
+      ],
+      explanation: [
+        "Oak to pine = 9 : 21.",
+        "GCD(9, 21) = 3 → simplified to <strong>3 : 7</strong>."
+      ]
+    }
   ],
 
   // ----------------------------------------------------------
@@ -719,6 +948,244 @@ EXTRA_QUESTIONS[6] = [
         "Simplified ratio = 3 : 2."
       ]
     }
+  ,
+    {
+      type: "mc", difficulty: 1,
+      question: 'Simplify the ratio <span class="math">40 : 24</span>.',
+      choices: ["5 : 3", "8 : 6", "3 : 5", "20 : 12"],
+      answer: "5 : 3",
+      hints: [
+        'Find the GCD of 40 and 24.',
+        'GCD(40, 24) = 8.',
+        'Divide both by 8.'
+      ],
+      explanation: [
+        'GCD of 40 and 24 is 8.',
+        '40 \u00f7 8 = 5 and 24 \u00f7 8 = 3.',
+        'Simplified ratio = 5 : 3.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Simplify <span class="math">78 : 52</span>. What is the first number in the simplified ratio?',
+      answer: "3",
+      hints: [
+        'Find the GCD of 78 and 52.',
+        'GCD(78, 52) = 26.',
+        'Divide both by 26: 3 : 2.'
+      ],
+      explanation: [
+        'GCD of 78 and 52 is 26.',
+        '78 \u00f7 26 = 3 and 52 \u00f7 26 = 2.',
+        'The first number is 3.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify the ratio <span class="math">75 : 45</span>.',
+      choices: ["5 : 3", "15 : 9", "3 : 5", "25 : 15"],
+      answer: "5 : 3",
+      hints: [
+        'Find the GCD of 75 and 45.',
+        'GCD(75, 45) = 15.',
+        '75 \u00f7 15 = 5, 45 \u00f7 15 = 3.'
+      ],
+      explanation: [
+        'GCD of 75 and 45 is 15.',
+        '75 \u00f7 15 = 5 and 45 \u00f7 15 = 3.',
+        'Simplified ratio = 5 : 3.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 1,
+      question: 'Simplify the ratio 42 : 56.',
+      choices: ["3 : 4", "6 : 8", "7 : 8", "42 : 56"],
+      answer: "3 : 4",
+      hints: [
+        'Find the GCD of 42 and 56.',
+        'GCD(42, 56) = 14.',
+        '42 \u00f7 14 = 3, 56 \u00f7 14 = 4.'
+      ],
+      explanation: [
+        'GCD of 42 and 56 is 14.',
+        '42 \u00f7 14 = 3 and 56 \u00f7 14 = 4.',
+        'Simplified ratio = 3 : 4.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Simplify the ratio 84 : 60. What is the first number in the simplified ratio?',
+      answer: "7",
+      hints: [
+        'Find the GCD of 84 and 60.',
+        'GCD(84, 60) = 12.',
+        '84 \u00f7 12 = 7, 60 \u00f7 12 = 5. The first number is 7.'
+      ],
+      explanation: [
+        'GCD of 84 and 60 is 12.',
+        '84 \u00f7 12 = 7 and 60 \u00f7 12 = 5.',
+        'Simplified ratio = 7 : 5.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify the ratio 90 : 126.',
+      choices: ["5 : 7", "10 : 14", "15 : 21", "9 : 14"],
+      answer: "5 : 7",
+      hints: [
+        'Find the GCD of 90 and 126.',
+        'GCD(90, 126) = 18.',
+        '90 \u00f7 18 = 5, 126 \u00f7 18 = 7.'
+      ],
+      explanation: [
+        'GCD of 90 and 126 is 18.',
+        '90 \u00f7 18 = 5 and 126 \u00f7 18 = 7.',
+        'Simplified ratio = 5 : 7.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Simplify <span class="math">52 : 39</span>. What is the first number in the simplified ratio?',
+      answer: "4",
+      hints: [
+        "Find the GCD of 52 and 39.",
+        "GCD(52, 39) = 13.",
+        "Divide both by 13: 4 : 3."
+      ],
+      explanation: [
+        "GCD of 52 and 39 is 13.",
+        "52 ÷ 13 = 4 and 39 ÷ 13 = 3.",
+        "The first number is 4."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Simplify the ratio <span class="math">28 : 42</span>.',
+      choices: ["2 : 3", "4 : 6", "14 : 21", "7 : 6"],
+      answer: "2 : 3",
+      hints: [
+        "Find the GCD of 28 and 42.",
+        "GCD(28, 42) = 14.",
+        "Divide both by 14."
+      ],
+      explanation: [
+        "GCD of 28 and 42 is 14.",
+        "28 ÷ 14 = 2 and 42 ÷ 14 = 3.",
+        "Simplified ratio = 2 : 3."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify the ratio <span class="math">108 : 72</span>.',
+      choices: ["3 : 2", "9 : 6", "6 : 4", "2 : 3"],
+      answer: "3 : 2",
+      hints: [
+        "Find the GCD of 108 and 72.",
+        "GCD(108, 72) = 36.",
+        "108 ÷ 36 = 3, 72 ÷ 36 = 2."
+      ],
+      explanation: [
+        "GCD of 108 and 72 is 36.",
+        "108 ÷ 36 = 3 and 72 ÷ 36 = 2.",
+        "Simplified ratio = 3 : 2."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Simplify <span class="math">32 : 24</span>. What is the first number in the simplified ratio?',
+      answer: "4",
+      hints: [
+        "Find the GCD of 32 and 24.",
+        "GCD(32, 24) = 8.",
+        "Divide both by 8: 4 : 3."
+      ],
+      explanation: [
+        "GCD of 32 and 24 is 8.",
+        "32 ÷ 8 = 4 and 24 ÷ 8 = 3.",
+        "The first number is 4."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify the ratio <span class="math">120 : 84</span>.',
+      choices: ["10 : 7", "20 : 14", "60 : 42", "6 : 7"],
+      answer: "10 : 7",
+      hints: [
+        "Find the GCD of 120 and 84.",
+        "GCD(120, 84) = 12.",
+        "120 ÷ 12 = 10, 84 ÷ 12 = 7."
+      ],
+      explanation: [
+        "GCD of 120 and 84 is 12.",
+        "120 ÷ 12 = 10 and 84 ÷ 12 = 7.",
+        "Simplified ratio = 10 : 7."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Simplify <span class="math">91 : 65</span>. What is the second number in the simplified ratio?',
+      answer: "5",
+      hints: [
+        "Find the GCD of 91 and 65.",
+        "GCD(91, 65) = 13.",
+        "Divide both by 13: 7 : 5."
+      ],
+      explanation: [
+        "GCD of 91 and 65 is 13.",
+        "91 ÷ 13 = 7 and 65 ÷ 13 = 5.",
+        "The second number is 5."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'If <span class="math">3 : 5 = x : 20</span>, find <span class="math">x</span>.',
+      answer: "12",
+      hints: [
+        "Set up the proportion: 3/5 = x/20.",
+        "Multiply both sides by 20: x = 3 × 20 ÷ 5.",
+        "x = 60 ÷ 5 = 12."
+      ],
+      explanation: [
+        "Since 5 × 4 = 20, multiply the first term by 4 as well.",
+        "3 × 4 = <strong>12</strong>, so x = 12."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which ratio is equivalent to <span class="math">7 : 4</span>?',
+      choices: ["21 : 12", "14 : 10", "28 : 20", "7 : 8"],
+      answer: "21 : 12",
+      hints: [
+        "Multiply both parts of 7 : 4 by the same number.",
+        "7 × 3 = 21, 4 × 3 = 12.",
+        "Check: 21 : 12 simplifies back to 7 : 4."
+      ],
+      explanation: [
+        "7 × 3 = 21, 4 × 3 = 12.",
+        "<strong>21 : 12</strong> is equivalent to 7 : 4."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Complete the equivalent ratio: <span class="math">6 : 11 = 18 : ?</span>. Enter the missing number.',
+      answer: "33",
+      hints: [
+        "6 was multiplied by something to get 18.",
+        "18 ÷ 6 = 3, so the multiplier is 3.",
+        "11 × 3 = 33."
+      ],
+      explanation: [
+        "The multiplier is 18 ÷ 6 = <strong>3</strong>.",
+        "11 × 3 = <strong>33</strong>."
+      ]
+    }
   ],
 
   // ----------------------------------------------------------
@@ -1061,6 +1528,233 @@ EXTRA_QUESTIONS[6] = [
         "Each machine uses 12 bolts."
       ]
     }
+  ,
+    {
+      type: "mc", difficulty: 1,
+      question: 'A painter paints 72 square feet in 6 hours. What is the rate per hour?',
+      choices: ["12 sq ft per hour", "10 sq ft per hour", "8 sq ft per hour", "14 sq ft per hour"],
+      answer: "12 sq ft per hour",
+      hints: [
+        'Divide total area by hours.',
+        '72 \u00f7 6 = ?',
+        '72 \u00f7 6 = 12.'
+      ],
+      explanation: [
+        'Unit rate = 72 \u00f7 6 = 12.',
+        'The painter covers 12 square feet per hour.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A typist types 315 words in 9 minutes. How many words per minute is that?',
+      answer: "35",
+      hints: [
+        'Divide total words by minutes.',
+        '315 \u00f7 9 = ?',
+        '315 \u00f7 9 = 35.'
+      ],
+      explanation: [
+        'Unit rate = 315 \u00f7 9 = 35.',
+        'The typist types 35 words per minute.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A store sells 12 bananas for $3.60. What is the cost per banana?',
+      choices: ["$0.30", "$0.50", "$0.25", "$0.40"],
+      answer: "$0.30",
+      hints: [
+        'Divide total cost by number of bananas.',
+        '$3.60 \u00f7 12 = ?',
+        '$3.60 \u00f7 12 = $0.30.'
+      ],
+      explanation: [
+        'Cost per banana = $3.60 \u00f7 12 = $0.30.',
+        'Each banana costs 30 cents.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'A car travels 270 miles on 9 gallons of gas. How many miles per gallon does it get?',
+      answer: "30",
+      hints: [
+        'Unit rate = total miles \u00f7 total gallons.',
+        '270 \u00f7 9 = ?',
+        '270 \u00f7 9 = 30.'
+      ],
+      explanation: [
+        'Miles per gallon = 270 \u00f7 9 = 30.',
+        'The car gets 30 miles per gallon.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A factory produces 560 widgets in 8 hours. What is the unit rate in widgets per hour?',
+      choices: ["70 widgets/hr", "80 widgets/hr", "56 widgets/hr", "65 widgets/hr"],
+      answer: "70 widgets/hr",
+      hints: [
+        'Unit rate = total widgets \u00f7 hours.',
+        '560 \u00f7 8 = ?',
+        '560 \u00f7 8 = 70.'
+      ],
+      explanation: [
+        '560 widgets \u00f7 8 hours = 70 widgets per hour.',
+        'The factory makes 70 widgets each hour.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 1,
+      question: 'A 5-pack of notebooks costs $8.75. What is the cost per notebook?',
+      choices: ["$1.75", "$1.50", "$2.00", "$1.85"],
+      answer: "$1.75",
+      hints: [
+        'Cost per notebook = total cost \u00f7 number of notebooks.',
+        '$8.75 \u00f7 5 = ?',
+        '$8.75 \u00f7 5 = $1.75.'
+      ],
+      explanation: [
+        'Cost per notebook = $8.75 \u00f7 5 = $1.75.',
+        'Each notebook costs $1.75.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A warehouse ships 462 boxes in 6 days. How many boxes per day?',
+      choices: ["77 boxes per day", "72 boxes per day", "80 boxes per day", "66 boxes per day"],
+      answer: "77 boxes per day",
+      hints: [
+        "Unit rate = total boxes ÷ days.",
+        "462 ÷ 6 = ?",
+        "462 ÷ 6 = 77."
+      ],
+      explanation: [
+        "Unit rate = 462 ÷ 6 = 77.",
+        "The warehouse ships 77 boxes per day."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'A machine fills 117 bottles in 9 minutes. How many bottles per minute?',
+      answer: "13",
+      hints: [
+        "Divide total bottles by minutes.",
+        "117 ÷ 9 = ?",
+        "117 ÷ 9 = 13."
+      ],
+      explanation: [
+        "Unit rate = 117 ÷ 9 = 13.",
+        "The machine fills 13 bottles per minute."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'A student types 176 words in 8 minutes. What is the typing rate per minute?',
+      choices: ["22 words per minute", "20 words per minute", "24 words per minute", "18 words per minute"],
+      answer: "22 words per minute",
+      hints: [
+        "Divide total words by minutes.",
+        "176 ÷ 8 = ?",
+        "176 ÷ 8 = 22."
+      ],
+      explanation: [
+        "Unit rate = 176 ÷ 8 = 22.",
+        "The student types 22 words per minute."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A machine makes 192 parts in 8 hours. What is the unit rate?',
+      choices: ["24 parts per hour", "20 parts per hour", "28 parts per hour", "16 parts per hour"],
+      answer: "24 parts per hour",
+      hints: [
+        "Unit rate = total parts ÷ hours.",
+        "192 ÷ 8 = ?",
+        "192 ÷ 8 = 24."
+      ],
+      explanation: [
+        "Unit rate = 192 ÷ 8 = 24.",
+        "The machine makes 24 parts per hour."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'A store sells 10 bagels for $7.50. What is the cost per bagel in cents?',
+      answer: "75",
+      hints: [
+        "Divide total cost by number of bagels.",
+        "$7.50 ÷ 10 = ?",
+        "$7.50 ÷ 10 = $0.75 = 75 cents."
+      ],
+      explanation: [
+        "Cost per bagel = $7.50 ÷ 10 = $0.75.",
+        "Each bagel costs 75 cents."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A biker rides 126 miles in 7 hours. What is the speed?',
+      choices: ["18 miles per hour", "16 miles per hour", "20 miles per hour", "14 miles per hour"],
+      answer: "18 miles per hour",
+      hints: [
+        "Speed = total miles ÷ hours.",
+        "126 ÷ 7 = ?",
+        "126 ÷ 7 = 18."
+      ],
+      explanation: [
+        "Unit rate = 126 ÷ 7 = 18.",
+        "The biker rides 18 miles per hour."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A car travels 364 miles in 7 hours. What is the speed in miles per hour?',
+      answer: "52",
+      hints: [
+        "Unit rate = total miles ÷ hours.",
+        "364 ÷ 7 = ?",
+        "364 ÷ 7 = 52."
+      ],
+      explanation: [
+        "Speed = 364 ÷ 7 = <strong>52</strong> miles per hour.",
+        "The car travels 52 mph."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A baker uses 13.5 cups of flour to make 9 loaves of bread. How many cups of flour per loaf?',
+      choices: ["1.5 cups per loaf", "1.25 cups per loaf", "2 cups per loaf", "1.75 cups per loaf"],
+      answer: "1.5 cups per loaf",
+      hints: [
+        "Divide total cups by number of loaves.",
+        "13.5 ÷ 9 = ?",
+        "13.5 ÷ 9 = 1.5."
+      ],
+      explanation: [
+        "Unit rate = 13.5 ÷ 9 = <strong>1.5</strong> cups per loaf.",
+        "Each loaf needs 1.5 cups of flour."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A swimmer completes 44 laps in 8 sessions at the pool. How many laps per session? Enter as a decimal.',
+      answer: "5.5",
+      hints: [
+        "Divide total laps by sessions.",
+        "44 ÷ 8 = ?",
+        "44 ÷ 8 = 5.5."
+      ],
+      explanation: [
+        "Unit rate = 44 ÷ 8 = <strong>5.5</strong> laps per session.",
+        "The swimmer averages 5.5 laps per session."
+      ]
+    }
   ],
 
   // ----------------------------------------------------------
@@ -1400,6 +2094,232 @@ EXTRA_QUESTIONS[6] = [
       explanation: [
         "12 meters × 100 cm/m = 1200 cm.",
         "12 meters equals 1200 centimeters."
+      ]
+    }
+  ,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'How many minutes are in 5 hours?',
+      answer: "300",
+      hints: [
+        '1 hour = 60 minutes.',
+        'Multiply hours by 60.',
+        '5 \u00d7 60 = 300.'
+      ],
+      explanation: [
+        '5 hours \u00d7 60 minutes/hour = 300 minutes.',
+        'There are 300 minutes in 5 hours.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'How many inches are in 9 feet? <span class="math">(1 \\text{ ft} = 12 \\text{ in})</span>',
+      choices: ["108", "96", "84", "120"],
+      answer: "108",
+      hints: [
+        '1 foot = 12 inches.',
+        'Multiply feet by 12.',
+        '9 \u00d7 12 = 108.'
+      ],
+      explanation: [
+        '9 feet \u00d7 12 inches/foot = 108 inches.',
+        'There are 108 inches in 9 feet.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert 7 meters to centimeters. <span class="math">(1 \\text{ m} = 100 \\text{ cm})</span>',
+      answer: "700",
+      hints: [
+        '1 meter = 100 centimeters.',
+        'Multiply meters by 100.',
+        '7 \u00d7 100 = 700.'
+      ],
+      explanation: [
+        '7 meters \u00d7 100 cm/m = 700 cm.',
+        '7 meters equals 700 centimeters.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Convert 4 feet to inches. (1 foot = 12 inches)',
+      answer: "48",
+      hints: [
+        'Multiply feet by 12 to get inches.',
+        '4 \u00d7 12 = ?',
+        '4 \u00d7 12 = 48.'
+      ],
+      explanation: [
+        '4 feet \u00d7 12 inches/foot = 48 inches.',
+        '4 feet equals 48 inches.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'How many minutes are in 6.5 hours?',
+      choices: ["390 minutes", "360 minutes", "380 minutes", "400 minutes"],
+      answer: "390 minutes",
+      hints: [
+        '1 hour = 60 minutes.',
+        '6.5 \u00d7 60 = ?',
+        '6.5 \u00d7 60 = 390.'
+      ],
+      explanation: [
+        '6.5 hours \u00d7 60 minutes/hour = 390 minutes.',
+        '6.5 hours equals 390 minutes.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 1,
+      question: 'Convert 5 kilometers to meters. (1 km = 1,000 m)',
+      choices: ["5,000 m", "500 m", "50,000 m", "50 m"],
+      answer: "5,000 m",
+      hints: [
+        'Multiply kilometers by 1,000.',
+        '5 \u00d7 1,000 = ?',
+        '5 \u00d7 1,000 = 5,000.'
+      ],
+      explanation: [
+        '5 km \u00d7 1,000 m/km = 5,000 m.',
+        '5 kilometers equals 5,000 meters.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert 13 feet to inches. <span class="math">(1 \text{ ft} = 12 \text{ in})</span>',
+      answer: "156",
+      hints: [
+        "Multiply feet by 12.",
+        "13 × 12 = ?",
+        "13 × 12 = 156."
+      ],
+      explanation: [
+        "13 feet × 12 inches/foot = 156 inches.",
+        "13 feet equals 156 inches."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'How many minutes are in 7 hours?',
+      choices: ["420", "360", "480", "350"],
+      answer: "420",
+      hints: [
+        "1 hour = 60 minutes.",
+        "Multiply hours by 60.",
+        "7 × 60 = 420."
+      ],
+      explanation: [
+        "7 hours × 60 minutes/hour = 420 minutes.",
+        "There are 420 minutes in 7 hours."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'How many centimeters are in 14 meters? <span class="math">(1 \text{ m} = 100 \text{ cm})</span>',
+      choices: ["1,400", "140", "14,000", "1,040"],
+      answer: "1,400",
+      hints: [
+        "1 meter = 100 centimeters.",
+        "Multiply meters by 100.",
+        "14 × 100 = 1,400."
+      ],
+      explanation: [
+        "14 meters × 100 cm/m = 1,400 cm.",
+        "14 meters equals 1,400 centimeters."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Convert 8 feet to inches. <span class="math">(1 \text{ ft} = 12 \text{ in})</span>',
+      answer: "96",
+      hints: [
+        "Multiply feet by 12.",
+        "8 × 12 = ?",
+        "8 × 12 = 96."
+      ],
+      explanation: [
+        "8 feet × 12 inches/foot = 96 inches.",
+        "8 feet equals 96 inches."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'How many feet are in 7 yards? <span class="math">(1 \text{ yd} = 3 \text{ ft})</span>',
+      choices: ["21 feet", "24 feet", "18 feet", "14 feet"],
+      answer: "21 feet",
+      hints: [
+        "1 yard = 3 feet.",
+        "Multiply yards by 3.",
+        "7 × 3 = 21."
+      ],
+      explanation: [
+        "7 yards × 3 feet/yard = 21 feet.",
+        "7 yards equals 21 feet."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert 240 minutes to hours.',
+      answer: "4",
+      hints: [
+        "Divide minutes by 60.",
+        "240 ÷ 60 = ?",
+        "240 ÷ 60 = 4."
+      ],
+      explanation: [
+        "240 minutes ÷ 60 minutes/hour = 4 hours.",
+        "240 minutes equals 4 hours."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Brand A sells 12 oz of cereal for $3.60. Brand B sells 8 oz for $2.00. Which is the better buy?',
+      choices: ["Brand B", "Brand A", "They cost the same", "Cannot be determined"],
+      answer: "Brand B",
+      hints: [
+        "Find the unit price for each brand.",
+        "Brand A: $3.60 ÷ 12 = $0.30 per oz. Brand B: $2.00 ÷ 8 = $0.25 per oz.",
+        "The lower unit price is the better buy."
+      ],
+      explanation: [
+        "Brand A: $3.60 ÷ 12 = <strong>$0.30/oz</strong>. Brand B: $2.00 ÷ 8 = <strong>$0.25/oz</strong>.",
+        "Brand B is cheaper per ounce, so <strong>Brand B</strong> is the better buy."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A 15-oz bottle of shampoo costs $4.50 and a 20-oz bottle costs $5.60. What is the unit price of the cheaper option in cents per ounce?',
+      answer: "28",
+      hints: [
+        "Find unit price for each: $4.50 ÷ 15 and $5.60 ÷ 20.",
+        "15-oz: $0.30/oz = 30 cents. 20-oz: $0.28/oz = 28 cents.",
+        "The 20-oz bottle is cheaper per ounce."
+      ],
+      explanation: [
+        "15-oz: $4.50 ÷ 15 = $0.30/oz. 20-oz: $5.60 ÷ 20 = <strong>$0.28/oz</strong>.",
+        "The cheaper unit price is <strong>28</strong> cents per ounce."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Store A sells 6 notebooks for $7.50. Store B sells 4 notebooks for $4.60. Which store has the better deal?',
+      choices: ["Store B", "Store A", "Same price per notebook", "Cannot tell"],
+      answer: "Store B",
+      hints: [
+        "Find the unit price at each store.",
+        "Store A: $7.50 ÷ 6 = $1.25. Store B: $4.60 ÷ 4 = $1.15.",
+        "Compare: $1.15 < $1.25."
+      ],
+      explanation: [
+        "Store A: $7.50 ÷ 6 = $1.25 each. Store B: $4.60 ÷ 4 = <strong>$1.15</strong> each.",
+        "<strong>Store B</strong> has the better deal."
       ]
     }
   ],
@@ -1762,6 +2682,241 @@ EXTRA_QUESTIONS[6] = [
         "Machine Q is faster."
       ]
     }
+  ,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Baker A bakes 48 cookies in 4 hours. Baker B bakes 63 cookies in 7 hours. Who bakes faster per hour?',
+      choices: ["Baker A", "Baker B", "Same rate", "Cannot tell"],
+      answer: "Baker A",
+      hints: [
+        'Find each baker\u0027s rate.',
+        'A: 48 \u00f7 4 = 12 cookies/hr. B: 63 \u00f7 7 = 9 cookies/hr.',
+        '12 > 9, so Baker A is faster.'
+      ],
+      explanation: [
+        'Baker A: 48 \u00f7 4 = 12 cookies/hr.',
+        'Baker B: 63 \u00f7 7 = 9 cookies/hr.',
+        'Baker A bakes more cookies per hour.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Pack A has 5 granola bars for $4. Pack B has 8 granola bars for $6. What is the cost per bar for Pack A in cents?',
+      answer: "80",
+      hints: [
+        'Divide the price by the number of bars for Pack A.',
+        '$4 \u00f7 5 = ?',
+        '$4 \u00f7 5 = $0.80 = 80 cents.'
+      ],
+      explanation: [
+        'Pack A: $4 \u00f7 5 = $0.80 per bar.',
+        'That is 80 cents per granola bar.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Car A travels 240 miles on 8 gallons. Car B travels 315 miles on 9 gallons. Which car gets better mileage?',
+      choices: ["Car B", "Car A", "Same mileage", "Cannot tell"],
+      answer: "Car B",
+      hints: [
+        'Find each car\u0027s miles per gallon.',
+        'A: 240 \u00f7 8 = 30 mpg. B: 315 \u00f7 9 = 35 mpg.',
+        '35 > 30, so Car B is more efficient.'
+      ],
+      explanation: [
+        'Car A: 240 \u00f7 8 = 30 mpg.',
+        'Car B: 315 \u00f7 9 = 35 mpg.',
+        'Car B gets better mileage.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 1,
+      question: 'Store A sells 6 apples for $4.20. Store B sells 8 apples for $5.20. Which store has the cheaper price per apple?',
+      choices: ["Store B", "Store A", "They are equal", "Cannot tell"],
+      answer: "Store B",
+      hints: [
+        'Find the unit price at each store.',
+        'Store A: $4.20 \u00f7 6 = $0.70. Store B: $5.20 \u00f7 8 = $0.65.',
+        '$0.65 < $0.70, so Store B is cheaper.'
+      ],
+      explanation: [
+        'Store A: $4.20 \u00f7 6 = $0.70 per apple.',
+        'Store B: $5.20 \u00f7 8 = $0.65 per apple.',
+        'Store B is cheaper.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Runner A covers 18 km in 2 hours. Runner B covers 28 km in 3.5 hours. What is Runner B\u2019s speed in km/hr?',
+      answer: "8",
+      hints: [
+        'Speed = distance \u00f7 time.',
+        'Runner B: 28 \u00f7 3.5 = ?',
+        '28 \u00f7 3.5 = 8 km/hr.'
+      ],
+      explanation: [
+        'Runner A: 18 \u00f7 2 = 9 km/hr. Runner B: 28 \u00f7 3.5 = 8 km/hr.',
+        'Runner B\u2019s speed is 8 km/hr.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Printer X prints 120 pages in 4 minutes. Printer Y prints 200 pages in 5 minutes. Which printer is faster?',
+      choices: ["Printer Y", "Printer X", "They are equal", "Cannot tell"],
+      answer: "Printer Y",
+      hints: [
+        'Find pages per minute for each.',
+        'X: 120 \u00f7 4 = 30. Y: 200 \u00f7 5 = 40.',
+        '40 > 30, so Printer Y is faster.'
+      ],
+      explanation: [
+        'Printer X: 120 \u00f7 4 = 30 pages/min.',
+        'Printer Y: 200 \u00f7 5 = 40 pages/min.',
+        'Printer Y is faster.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Bakery A sells 6 cupcakes for $9. Bakery B sells 10 cupcakes for $14. What is the cost per cupcake at Bakery A in cents?',
+      answer: "150",
+      hints: [
+        "Divide the price by the number of cupcakes for Bakery A.",
+        "$9 ÷ 6 = ?",
+        "$9 ÷ 6 = $1.50 = 150 cents."
+      ],
+      explanation: [
+        "Bakery A: $9 ÷ 6 = $1.50 per cupcake.",
+        "That is 150 cents per cupcake."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Typist A types 240 words in 8 minutes. Typist B types 195 words in 5 minutes. Who types faster?',
+      choices: ["Typist B", "Typist A", "Same speed", "Cannot tell"],
+      answer: "Typist B",
+      hints: [
+        "Find each typist's rate in words per minute.",
+        "A: 240 ÷ 8 = 30 wpm. B: 195 ÷ 5 = 39 wpm.",
+        "39 > 30, so Typist B is faster."
+      ],
+      explanation: [
+        "Typist A: 240 ÷ 8 = 30 words/min.",
+        "Typist B: 195 ÷ 5 = 39 words/min.",
+        "Typist B types faster."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Farm A produces 56 eggs in 7 days. Farm B produces 72 eggs in 8 days. Which farm produces more eggs per day?',
+      choices: ["Farm B", "Farm A", "Same rate", "Cannot tell"],
+      answer: "Farm B",
+      hints: [
+        "Find each farm's daily rate.",
+        "A: 56 ÷ 7 = 8 eggs/day. B: 72 ÷ 8 = 9 eggs/day.",
+        "9 > 8, so Farm B is more productive."
+      ],
+      explanation: [
+        "Farm A: 56 ÷ 7 = 8 eggs/day.",
+        "Farm B: 72 ÷ 8 = 9 eggs/day.",
+        "Farm B produces more eggs per day."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Plumber A fixes 8 pipes in 4 hours. Plumber B fixes 15 pipes in 5 hours. Who is faster?',
+      choices: ["Plumber B", "Plumber A", "Same rate", "Cannot tell"],
+      answer: "Plumber B",
+      hints: [
+        "Find each plumber's rate.",
+        "A: 8 ÷ 4 = 2 pipes/hr. B: 15 ÷ 5 = 3 pipes/hr.",
+        "3 > 2, so Plumber B is faster."
+      ],
+      explanation: [
+        "Plumber A: 8 ÷ 4 = 2 pipes/hr.",
+        "Plumber B: 15 ÷ 5 = 3 pipes/hr.",
+        "Plumber B fixes pipes faster."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Store C sells 9 muffins for $6.30. Store D sells 12 muffins for $9.60. What is the cost per muffin at Store C in cents?',
+      answer: "70",
+      hints: [
+        "Divide the price by the number of muffins for Store C.",
+        "$6.30 ÷ 9 = ?",
+        "$6.30 ÷ 9 = $0.70 = 70 cents."
+      ],
+      explanation: [
+        "Store C: $6.30 ÷ 9 = $0.70 per muffin.",
+        "That is 70 cents per muffin."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Car A travels 200 miles on 10 gallons. Car B travels 270 miles on 9 gallons. Which car is more fuel efficient?',
+      choices: ["Car B", "Car A", "Same efficiency", "Cannot tell"],
+      answer: "Car B",
+      hints: [
+        "Find miles per gallon for each car.",
+        "A: 200 ÷ 10 = 20 mpg. B: 270 ÷ 9 = 30 mpg.",
+        "30 > 20, so Car B is more efficient."
+      ],
+      explanation: [
+        "Car A: 200 ÷ 10 = 20 mpg.",
+        "Car B: 270 ÷ 9 = 30 mpg.",
+        "Car B gets better fuel economy."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve the proportion: <span class="math">4/7 = x/35</span>. What is <span class="math">x</span>?',
+      answer: "20",
+      hints: [
+        "Think: 7 × ? = 35.",
+        "7 × 5 = 35, so multiply the numerator by 5 too.",
+        "4 × 5 = 20."
+      ],
+      explanation: [
+        "Since 7 × 5 = 35, multiply the numerator: 4 × 5 = <strong>20</strong>.",
+        "x = <strong>20</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">9/12 = n/28</span>. What is <span class="math">n</span>?',
+      choices: ["21", "24", "18", "27"],
+      answer: "21",
+      hints: [
+        "Cross multiply: 9 × 28 = 12 × n.",
+        "252 = 12n.",
+        "n = 252 ÷ 12 = 21."
+      ],
+      explanation: [
+        "Cross multiply: 9 × 28 = 252 and 12 × n.",
+        "n = 252 ÷ 12 = <strong>21</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve the proportion: <span class="math">5/8 = 30/x</span>. What is <span class="math">x</span>?',
+      answer: "48",
+      hints: [
+        "Cross multiply: 5 × x = 8 × 30.",
+        "5x = 240.",
+        "x = 240 ÷ 5 = 48."
+      ],
+      explanation: [
+        "Cross multiply: 5x = 8 × 30 = 240.",
+        "x = 240 ÷ 5 = <strong>48</strong>."
+      ]
+    }
   ],
 
   // ----------------------------------------------------------
@@ -2100,6 +3255,229 @@ EXTRA_QUESTIONS[6] = [
       explanation: [
         "Cross-multiply: 11 × 27 = 33x → 297 = 33x.",
         "x = 297 ÷ 33 = 9."
+      ]
+    }
+  ,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">7/9 = x/36</span>. What is <span class="math">x</span>?',
+      answer: "28",
+      hints: [
+        'Cross-multiply: 7 \u00d7 36 = 9 \u00d7 x.',
+        '252 = 9x.',
+        'x = 252 \u00f7 9 = 28.'
+      ],
+      explanation: [
+        'Cross-multiply: 7 \u00d7 36 = 9x \u2192 252 = 9x.',
+        'x = 252 \u00f7 9 = 28.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">x/20 = 9/12</span>. What is <span class="math">x</span>?',
+      choices: ["15", "12", "18", "10"],
+      answer: "15",
+      hints: [
+        'Cross-multiply: 12 \u00d7 x = 20 \u00d7 9.',
+        '12x = 180.',
+        'x = 180 \u00f7 12 = 15.'
+      ],
+      explanation: [
+        'Cross-multiply: 12x = 20 \u00d7 9 = 180.',
+        'x = 180 \u00f7 12 = 15.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve: <span class="math">18/x = 6/11</span>. What is <span class="math">x</span>?',
+      answer: "33",
+      hints: [
+        'Cross-multiply: 18 \u00d7 11 = 6 \u00d7 x.',
+        '198 = 6x.',
+        'x = 198 \u00f7 6 = 33.'
+      ],
+      explanation: [
+        'Cross-multiply: 18 \u00d7 11 = 6x \u2192 198 = 6x.',
+        'x = 198 \u00f7 6 = 33.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve the proportion: <span class="math">\\frac{7}{x} = \\frac{21}{27}</span>. What is x?',
+      answer: "9",
+      hints: [
+        'Cross-multiply: 7 \u00d7 27 = 21 \u00d7 x.',
+        '189 = 21x.',
+        'x = 189 \u00f7 21 = 9.'
+      ],
+      explanation: [
+        'Cross-multiply: 7 \u00d7 27 = 21x \u2192 189 = 21x.',
+        'x = 189 \u00f7 21 = 9.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">\\frac{15}{x} = \\frac{45}{63}</span>.',
+      choices: ["21", "27", "18", "24"],
+      answer: "21",
+      hints: [
+        'Cross-multiply: 15 \u00d7 63 = 45 \u00d7 x.',
+        '945 = 45x.',
+        'x = 945 \u00f7 45 = 21.'
+      ],
+      explanation: [
+        'Cross-multiply: 15 \u00d7 63 = 45x \u2192 945 = 45x.',
+        'x = 945 \u00f7 45 = 21.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve: <span class="math">\\frac{x}{14} = \\frac{36}{56}</span>. What is x?',
+      answer: "9",
+      hints: [
+        'Cross-multiply: 56x = 14 \u00d7 36.',
+        '56x = 504.',
+        'x = 504 \u00f7 56 = 9.'
+      ],
+      explanation: [
+        'Cross-multiply: 56x = 14 \u00d7 36 = 504.',
+        'x = 504 \u00f7 56 = 9.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">\frac{x}{18} = \frac{8}{12}</span>. What is <span class="math">x</span>?',
+      choices: ["12", "8", "15", "10"],
+      answer: "12",
+      hints: [
+        "Cross-multiply: 12 × x = 18 × 8.",
+        "12x = 144.",
+        "x = 144 ÷ 12 = 12."
+      ],
+      explanation: [
+        "Cross-multiply: 12x = 18 × 8 = 144.",
+        "x = 144 ÷ 12 = 12."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">\frac{4}{7} = \frac{x}{42}</span>. What is <span class="math">x</span>?',
+      answer: "24",
+      hints: [
+        "Cross-multiply: 4 × 42 = 7 × x.",
+        "168 = 7x.",
+        "x = 168 ÷ 7 = 24."
+      ],
+      explanation: [
+        "Cross-multiply: 4 × 42 = 7x → 168 = 7x.",
+        "x = 168 ÷ 7 = 24."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve: <span class="math">\frac{20}{x} = \frac{8}{6}</span>. What is <span class="math">x</span>?',
+      answer: "15",
+      hints: [
+        "Cross-multiply: 20 × 6 = 8 × x.",
+        "120 = 8x.",
+        "x = 120 ÷ 8 = 15."
+      ],
+      explanation: [
+        "Cross-multiply: 20 × 6 = 8x → 120 = 8x.",
+        "x = 120 ÷ 8 = 15."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Solve: <span class="math">\frac{6}{7} = \frac{x}{35}</span>. What is <span class="math">x</span>?',
+      answer: "30",
+      hints: [
+        "Cross-multiply: 6 × 35 = 7 × x.",
+        "210 = 7x.",
+        "x = 210 ÷ 7 = 30."
+      ],
+      explanation: [
+        "Cross-multiply: 6 × 35 = 7x → 210 = 7x.",
+        "x = 210 ÷ 7 = 30."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Solve: <span class="math">\frac{x}{27} = \frac{8}{9}</span>. What is <span class="math">x</span>?',
+      choices: ["24", "18", "27", "21"],
+      answer: "24",
+      hints: [
+        "Cross-multiply: 9 × x = 27 × 8.",
+        "9x = 216.",
+        "x = 216 ÷ 9 = 24."
+      ],
+      explanation: [
+        "Cross-multiply: 9x = 27 × 8 = 216.",
+        "x = 216 ÷ 9 = 24."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Solve: <span class="math">\frac{16}{x} = \frac{4}{7}</span>. What is <span class="math">x</span>?',
+      answer: "28",
+      hints: [
+        "Cross-multiply: 16 × 7 = 4 × x.",
+        "112 = 4x.",
+        "x = 112 ÷ 4 = 28."
+      ],
+      explanation: [
+        "Cross-multiply: 16 × 7 = 4x → 112 = 4x.",
+        "x = 112 ÷ 4 = 28."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Use cross multiplication to solve: <span class="math">3/8 = 12/n</span>. What is <span class="math">n</span>?',
+      answer: "32",
+      hints: [
+        "Cross multiply: 3 × n = 8 × 12.",
+        "3n = 96.",
+        "n = 96 ÷ 3 = 32."
+      ],
+      explanation: [
+        "Cross multiply: 3 × n = 8 × 12 = 96.",
+        "n = 96 ÷ 3 = <strong>32</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Use cross multiplication to solve: <span class="math">7/x = 21/27</span>. What is <span class="math">x</span>?',
+      choices: ["9", "7", "12", "11"],
+      answer: "9",
+      hints: [
+        "Cross multiply: 7 × 27 = x × 21.",
+        "189 = 21x.",
+        "x = 189 ÷ 21 = 9."
+      ],
+      explanation: [
+        "Cross multiply: 7 × 27 = 189 = 21x.",
+        "x = 189 ÷ 21 = <strong>9</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Cross multiply to solve: <span class="math">11/5 = 44/n</span>. What is <span class="math">n</span>?',
+      answer: "20",
+      hints: [
+        "Cross multiply: 11 × n = 5 × 44.",
+        "11n = 220.",
+        "n = 220 ÷ 11 = 20."
+      ],
+      explanation: [
+        "Cross multiply: 11n = 5 × 44 = 220.",
+        "n = 220 ÷ 11 = <strong>20</strong>."
       ]
     }
   ],
@@ -2446,6 +3824,234 @@ EXTRA_QUESTIONS[6] = [
       explanation: [
         "7/4 = x/24 → 4x = 7 × 24 = 168.",
         "x = 168 ÷ 4 = 42 cm."
+      ]
+    }
+  ,
+    {
+      type: "mc", difficulty: 2,
+      question: 'The ratio of adults to children at a park is 4 : 7. If there are 28 adults, how many children are there?',
+      choices: ["49", "42", "35", "56"],
+      answer: "49",
+      hints: [
+        'Set up: 4/7 = 28/x.',
+        'Cross-multiply: 4x = 196.',
+        'x = 49.'
+      ],
+      explanation: [
+        '4/7 = 28/x \u2192 4x = 7 \u00d7 28 = 196.',
+        'x = 196 \u00f7 4 = 49 children.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Lions, tigers, and bears are in a 2 : 3 : 7 ratio at a zoo. If there are 72 animals total, how many are tigers?',
+      answer: "18",
+      hints: [
+        'Total parts = 2 + 3 + 7 = 12.',
+        'Each part = 72 \u00f7 12 = 6 animals.',
+        'Tigers = 3 \u00d7 6 = 18.'
+      ],
+      explanation: [
+        'Total parts = 2 + 3 + 7 = 12. Each part = 72 \u00f7 12 = 6.',
+        'Tigers = 3 \u00d7 6 = 18.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A ribbon is cut into two pieces in a 6 : 5 ratio. If the longer piece is 42 cm, how long is the shorter piece?',
+      choices: ["35 cm", "30 cm", "40 cm", "25 cm"],
+      answer: "35 cm",
+      hints: [
+        'Set up: 6/5 = 42/x.',
+        'Cross-multiply: 6x = 210.',
+        'x = 35.'
+      ],
+      explanation: [
+        '6/5 = 42/x \u2192 6x = 5 \u00d7 42 = 210.',
+        'x = 210 \u00f7 6 = 35 cm.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A recipe for 4 servings uses 10 cups of flour. How many cups are needed for 14 servings?',
+      choices: ["35", "28", "40", "32"],
+      answer: "35",
+      hints: [
+        'Set up a proportion: 10/4 = x/14.',
+        'Cross-multiply: 10 \u00d7 14 = 4x.',
+        '140 = 4x \u2192 x = 35.'
+      ],
+      explanation: [
+        '10/4 = x/14. Cross-multiply: 140 = 4x.',
+        'x = 140 \u00f7 4 = 35 cups.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'If 8 workers can paint a fence in 6 hours, how many hours would it take 12 workers at the same rate? (Assume the total work is the same.)',
+      answer: "4",
+      hints: [
+        'Total worker-hours = 8 \u00d7 6 = 48.',
+        '12 workers \u00d7 h hours = 48.',
+        'h = 48 \u00f7 12 = 4.'
+      ],
+      explanation: [
+        'Total work = 8 \u00d7 6 = 48 worker-hours.',
+        '12 \u00d7 h = 48 \u2192 h = 4 hours.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'The ratio of boys to girls in a club is 5 : 3. If there are 45 boys, how many girls are there?',
+      choices: ["27", "30", "24", "15"],
+      answer: "27",
+      hints: [
+        'Set up: 5/3 = 45/x.',
+        'Cross-multiply: 5x = 3 \u00d7 45.',
+        '5x = 135 \u2192 x = 27.'
+      ],
+      explanation: [
+        '5/3 = 45/x. Cross-multiply: 5x = 135.',
+        'x = 135 \u00f7 5 = 27 girls.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Apples, bananas, and cherries are in a 3 : 2 : 5 ratio. If there are 70 total pieces of fruit, how many are bananas?',
+      choices: ["14", "21", "35", "10"],
+      answer: "14",
+      hints: [
+        "Total parts = 3 + 2 + 5 = 10.",
+        "Each part = 70 ÷ 10 = 7 pieces.",
+        "Bananas = 2 × 7 = 14."
+      ],
+      explanation: [
+        "Total parts = 3 + 2 + 5 = 10. Each part = 70 ÷ 10 = 7.",
+        "Bananas = 2 × 7 = 14."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Markers and pencils are in a 3 : 8 ratio. If there are 24 markers, how many pencils are there?',
+      answer: "64",
+      hints: [
+        "Set up: 3/8 = 24/x.",
+        "Cross-multiply: 3x = 192.",
+        "x = 64."
+      ],
+      explanation: [
+        "3/8 = 24/x → 3x = 8 × 24 = 192.",
+        "x = 192 ÷ 3 = 64 pencils."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A rope is cut into two pieces in a 4 : 9 ratio. If the shorter piece is 32 cm, how long is the longer piece?',
+      choices: ["72 cm", "64 cm", "54 cm", "81 cm"],
+      answer: "72 cm",
+      hints: [
+        "Set up: 4/9 = 32/x.",
+        "Cross-multiply: 4x = 288.",
+        "x = 72."
+      ],
+      explanation: [
+        "4/9 = 32/x → 4x = 9 × 32 = 288.",
+        "x = 288 ÷ 4 = 72 cm."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Roses and lilies are in a 5 : 3 ratio. If there are 40 roses, how many lilies are there?',
+      choices: ["24", "15", "30", "20"],
+      answer: "24",
+      hints: [
+        "Set up: 5/3 = 40/x.",
+        "Cross-multiply: 5x = 120.",
+        "x = 24."
+      ],
+      explanation: [
+        "5/3 = 40/x → 5x = 3 × 40 = 120.",
+        "x = 120 ÷ 5 = 24 lilies."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Cookies, brownies, and cupcakes are in a 3 : 2 : 7 ratio. If there are 96 total treats, how many are brownies?',
+      answer: "16",
+      hints: [
+        "Total parts = 3 + 2 + 7 = 12.",
+        "Each part = 96 ÷ 12 = 8 treats.",
+        "Brownies = 2 × 8 = 16."
+      ],
+      explanation: [
+        "Total parts = 3 + 2 + 7 = 12. Each part = 96 ÷ 12 = 8.",
+        "Brownies = 2 × 8 = 16."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A wire is cut into two pieces in an 8 : 3 ratio. If the total wire is 77 cm, how long is the shorter piece?',
+      choices: ["21 cm", "24 cm", "33 cm", "28 cm"],
+      answer: "21 cm",
+      hints: [
+        "Total parts = 8 + 3 = 11.",
+        "Each part = 77 ÷ 11 = 7 cm.",
+        "Shorter piece = 3 × 7 = 21 cm."
+      ],
+      explanation: [
+        "Total parts = 8 + 3 = 11. Each part = 77 ÷ 11 = 7.",
+        "Shorter piece = 3 × 7 = 21 cm."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'On a map, the scale is 1 inch = 50 miles. Two cities are 3.5 inches apart on the map. What is the actual distance in miles?',
+      answer: "175",
+      hints: [
+        "Multiply the map distance by the scale factor.",
+        "3.5 × 50 = ?",
+        "3.5 × 50 = 175."
+      ],
+      explanation: [
+        "Actual distance = 3.5 × 50 = <strong>175 miles</strong>.",
+        "The cities are 175 miles apart."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A blueprint uses a scale of 1 cm = 4 feet. A room measures 6.5 cm on the blueprint. What is the actual length of the room?',
+      choices: ["26 feet", "24 feet", "28 feet", "30 feet"],
+      answer: "26 feet",
+      hints: [
+        "Multiply the blueprint measurement by the scale factor.",
+        "6.5 × 4 = ?",
+        "6.5 × 4 = 26."
+      ],
+      explanation: [
+        "Actual length = 6.5 × 4 = <strong>26 feet</strong>.",
+        "The room is 26 feet long."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A park map uses a scale of 1 inch = 200 feet. The lake on the map is 4.25 inches long. What is the actual length of the lake?',
+      choices: ["850 feet", "800 feet", "900 feet", "825 feet"],
+      answer: "850 feet",
+      hints: [
+        "Multiply the map distance by the scale.",
+        "4.25 × 200 = ?",
+        "4.25 × 200 = 850."
+      ],
+      explanation: [
+        "Actual length = 4.25 × 200 = <strong>850 feet</strong>.",
+        "The lake is 850 feet long."
       ]
     }
   ],
@@ -2797,6 +4403,235 @@ EXTRA_QUESTIONS[6] = [
         "Total distance = 135 + 120 = 255 miles."
       ]
     }
+  ,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A kayaker paddles at 8 miles per hour for 3.5 hours. How many miles does the kayaker travel?',
+      answer: "28",
+      hints: [
+        'Use the formula: distance = rate \u00d7 time.',
+        'd = 8 \u00d7 3.5.',
+        'd = 28 miles.'
+      ],
+      explanation: [
+        'd = r \u00d7 t = 8 \u00d7 3.5 = 28.',
+        'The kayaker travels 28 miles.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A bus travels 195 miles at 30 mph. How long does the trip take?',
+      choices: ["6.5 hours", "6 hours", "7 hours", "5.5 hours"],
+      answer: "6.5 hours",
+      hints: [
+        'Use: time = distance \u00f7 rate.',
+        't = 195 \u00f7 30.',
+        't = 6.5 hours.'
+      ],
+      explanation: [
+        't = d \u00f7 r = 195 \u00f7 30 = 6.5.',
+        'The trip takes 6.5 hours.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A car drives 70 mph for 2 hours, then 50 mph for 4 hours. What is the total distance?',
+      choices: ["340 miles", "320 miles", "360 miles", "300 miles"],
+      answer: "340 miles",
+      hints: [
+        'First segment: d = 70 \u00d7 2 = 140 miles.',
+        'Second segment: d = 50 \u00d7 4 = 200 miles.',
+        'Total = 140 + 200 = 340.'
+      ],
+      explanation: [
+        'Segment 1: 70 \u00d7 2 = 140 miles.',
+        'Segment 2: 50 \u00d7 4 = 200 miles.',
+        'Total distance = 140 + 200 = 340 miles.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A bus travels at 45 mph for 4 hours. How many miles does it cover?',
+      answer: "180",
+      hints: [
+        'Use d = r \u00d7 t.',
+        'd = 45 \u00d7 4.',
+        'd = 180 miles.'
+      ],
+      explanation: [
+        'Distance = 45 \u00d7 4 = 180 miles.',
+        'The bus covers 180 miles.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A cyclist rides 84 miles in 3.5 hours. What is the average speed?',
+      choices: ["24 mph", "28 mph", "22 mph", "30 mph"],
+      answer: "24 mph",
+      hints: [
+        'Speed = distance \u00f7 time.',
+        '84 \u00f7 3.5 = ?',
+        '84 \u00f7 3.5 = 24 mph.'
+      ],
+      explanation: [
+        'Speed = 84 \u00f7 3.5 = 24 mph.',
+        'The cyclist\u2019s average speed is 24 mph.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A train travels at 90 km/hr. How many hours does it take to travel 405 km?',
+      answer: "4.5",
+      hints: [
+        'Use t = d \u00f7 r.',
+        't = 405 \u00f7 90.',
+        '405 \u00f7 90 = 4.5 hours.'
+      ],
+      explanation: [
+        'Time = 405 \u00f7 90 = 4.5 hours.',
+        'The train takes 4.5 hours.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A jogger runs at 6 miles per hour for 2.5 hours. How many miles does the jogger run?',
+      answer: "15",
+      hints: [
+        "Use d = r × t.",
+        "d = 6 × 2.5.",
+        "d = 15 miles."
+      ],
+      explanation: [
+        "d = r × t = 6 × 2.5 = 15.",
+        "The jogger runs 15 miles."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A boat travels 252 miles at 36 mph. How long does the trip take?',
+      choices: ["7 hours", "6 hours", "8 hours", "9 hours"],
+      answer: "7 hours",
+      hints: [
+        "Use: time = distance ÷ rate.",
+        "t = 252 ÷ 36.",
+        "t = 7 hours."
+      ],
+      explanation: [
+        "t = d ÷ r = 252 ÷ 36 = 7.",
+        "The trip takes 7 hours."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A truck drives 40 mph for 3 hours, then 65 mph for 2 hours. What is the total distance?',
+      choices: ["250 miles", "240 miles", "260 miles", "230 miles"],
+      answer: "250 miles",
+      hints: [
+        "First segment: d = 40 × 3 = 120 miles.",
+        "Second segment: d = 65 × 2 = 130 miles.",
+        "Total = 120 + 130 = 250."
+      ],
+      explanation: [
+        "Segment 1: 40 × 3 = 120 miles.",
+        "Segment 2: 65 × 2 = 130 miles.",
+        "Total distance = 120 + 130 = 250 miles."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A runner jogs at 8 miles per hour for 3 hours. How many miles does the runner cover?',
+      answer: "24",
+      hints: [
+        "Use d = r × t.",
+        "d = 8 × 3.",
+        "d = 24 miles."
+      ],
+      explanation: [
+        "d = r × t = 8 × 3 = 24.",
+        "The runner covers 24 miles."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A plane flies 2,100 miles at 350 mph. How long does the flight take?',
+      choices: ["6 hours", "5 hours", "7 hours", "8 hours"],
+      answer: "6 hours",
+      hints: [
+        "Use: time = distance ÷ rate.",
+        "t = 2100 ÷ 350.",
+        "t = 6 hours."
+      ],
+      explanation: [
+        "t = d ÷ r = 2100 ÷ 350 = 6.",
+        "The flight takes 6 hours."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A van drives 55 mph for 3 hours, then 40 mph for 2 hours. What is the total distance?',
+      choices: ["245 miles", "260 miles", "230 miles", "250 miles"],
+      answer: "245 miles",
+      hints: [
+        "First segment: d = 55 × 3 = 165 miles.",
+        "Second segment: d = 40 × 2 = 80 miles.",
+        "Total = 165 + 80 = 245."
+      ],
+      explanation: [
+        "Segment 1: 55 × 3 = 165 miles.",
+        "Segment 2: 40 × 2 = 80 miles.",
+        "Total distance = 165 + 80 = 245 miles."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Two similar triangles have corresponding sides in the ratio 6 : 9. If one side of the smaller triangle is 8 cm, what is the corresponding side of the larger triangle?',
+      answer: "12",
+      hints: [
+        "Set up the proportion: 6/9 = 8/x.",
+        "Cross multiply: 6x = 9 × 8 = 72.",
+        "x = 72 ÷ 6 = 12."
+      ],
+      explanation: [
+        "The ratio is 6 : 9, which simplifies to 2 : 3.",
+        "8 × (3/2) = <strong>12 cm</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Two similar rectangles have widths of 5 in and 15 in. If the length of the smaller rectangle is 7 in, what is the length of the larger?',
+      choices: ["21 in", "17 in", "25 in", "35 in"],
+      answer: "21 in",
+      hints: [
+        "Find the scale factor: 15 ÷ 5 = 3.",
+        "Multiply the smaller length by the scale factor.",
+        "7 × 3 = 21."
+      ],
+      explanation: [
+        "Scale factor = 15 ÷ 5 = <strong>3</strong>.",
+        "Larger length = 7 × 3 = <strong>21 in</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A flagpole casts a 24-foot shadow. At the same time, a 5-foot person casts a 4-foot shadow. How tall is the flagpole in feet?',
+      answer: "30",
+      hints: [
+        "Set up a proportion: height/shadow = height/shadow.",
+        "5/4 = x/24.",
+        "x = 5 × 24 ÷ 4 = 30."
+      ],
+      explanation: [
+        "Proportion: 5/4 = x/24. Cross multiply: 4x = 120.",
+        "x = 120 ÷ 4 = <strong>30 feet</strong>."
+      ]
+    }
   ],
 
   // ----------------------------------------------------------
@@ -3140,6 +4975,234 @@ EXTRA_QUESTIONS[6] = [
         "The model statue is 5 feet tall."
       ]
     }
+  ,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'On a map, 1 inch represents 25 miles. If two cities are 5 inches apart on the map, what is the actual distance in miles?',
+      answer: "125",
+      hints: [
+        'Multiply the map distance by the scale.',
+        '5 \u00d7 25 = ?',
+        '5 \u00d7 25 = 125 miles.'
+      ],
+      explanation: [
+        'Actual distance = 5 inches \u00d7 25 miles/inch = 125 miles.',
+        'The cities are 125 miles apart.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A model rocket has a scale of 1 : 30. If the real rocket is 90 feet tall, how tall is the model?',
+      choices: ["3 feet", "2 feet", "4 feet", "6 feet"],
+      answer: "3 feet",
+      hints: [
+        'Divide the real size by the scale factor.',
+        '90 \u00f7 30 = ?',
+        '90 \u00f7 30 = 3 feet.'
+      ],
+      explanation: [
+        'Model height = 90 \u00f7 30 = 3 feet.',
+        'The model rocket is 3 feet tall.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A blueprint uses a scale of 1 cm = 7 meters. A garage is 3.5 cm on the blueprint. What is the actual length?',
+      choices: ["24.5 meters", "21 meters", "28 meters", "10.5 meters"],
+      answer: "24.5 meters",
+      hints: [
+        'Multiply the blueprint measurement by the scale.',
+        '3.5 \u00d7 7 = ?',
+        '3.5 \u00d7 7 = 24.5 meters.'
+      ],
+      explanation: [
+        'Actual length = 3.5 cm \u00d7 7 m/cm = 24.5 meters.',
+        'The garage is 24.5 meters long.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'On a map, 1 cm represents 50 km. Two cities are 4.5 cm apart on the map. What is the actual distance?',
+      choices: ["225 km", "200 km", "250 km", "180 km"],
+      answer: "225 km",
+      hints: [
+        'Actual distance = map distance \u00d7 scale factor.',
+        '4.5 \u00d7 50 = ?',
+        '4.5 \u00d7 50 = 225 km.'
+      ],
+      explanation: [
+        'Actual distance = 4.5 cm \u00d7 50 km/cm = 225 km.',
+        'The two cities are 225 km apart.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A model car is built at a scale of 1 : 24. If the model is 7.5 inches long, how long is the real car in inches?',
+      answer: "180",
+      hints: [
+        'Real length = model length \u00d7 scale factor.',
+        '7.5 \u00d7 24 = ?',
+        '7.5 \u00d7 24 = 180 inches.'
+      ],
+      explanation: [
+        'Real car length = 7.5 \u00d7 24 = 180 inches.',
+        'The real car is 180 inches long.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A blueprint uses a scale of 1 inch = 8 feet. A room is 2.25 inches wide on the blueprint. What is the actual width?',
+      choices: ["18 feet", "16 feet", "20 feet", "14 feet"],
+      answer: "18 feet",
+      hints: [
+        'Actual width = blueprint width \u00d7 8.',
+        '2.25 \u00d7 8 = ?',
+        '2.25 \u00d7 8 = 18 feet.'
+      ],
+      explanation: [
+        'Actual width = 2.25 inches \u00d7 8 feet/inch = 18 feet.',
+        'The room is 18 feet wide.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'On a map, 1 inch represents 30 miles. If two cities are 6 inches apart, what is the actual distance in miles?',
+      answer: "180",
+      hints: [
+        "Multiply the map distance by the scale.",
+        "6 × 30 = ?",
+        "6 × 30 = 180 miles."
+      ],
+      explanation: [
+        "Actual distance = 6 inches × 30 miles/inch = 180 miles.",
+        "The cities are 180 miles apart."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A model bridge has a scale of 1 : 60. If the real bridge is 300 feet long, how long is the model?',
+      choices: ["5 feet", "6 feet", "4 feet", "10 feet"],
+      answer: "5 feet",
+      hints: [
+        "Divide the real size by the scale factor.",
+        "300 ÷ 60 = ?",
+        "300 ÷ 60 = 5 feet."
+      ],
+      explanation: [
+        "Model length = 300 ÷ 60 = 5 feet.",
+        "The model bridge is 5 feet long."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A blueprint uses a scale of 1 cm = 9 meters. A hallway is 4 cm on the blueprint. What is the actual length?',
+      choices: ["36 meters", "32 meters", "45 meters", "27 meters"],
+      answer: "36 meters",
+      hints: [
+        "Multiply the blueprint measurement by the scale.",
+        "4 × 9 = ?",
+        "4 × 9 = 36 meters."
+      ],
+      explanation: [
+        "Actual length = 4 cm × 9 m/cm = 36 meters.",
+        "The hallway is 36 meters long."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'On a map, 1 inch represents 12 miles. If two cities are 11 inches apart on the map, what is the actual distance in miles?',
+      answer: "132",
+      hints: [
+        "Multiply the map distance by the scale.",
+        "11 × 12 = ?",
+        "11 × 12 = 132 miles."
+      ],
+      explanation: [
+        "Actual distance = 11 inches × 12 miles/inch = 132 miles.",
+        "The cities are 132 miles apart."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A model tower has a scale of 1 : 75. If the real tower is 225 feet tall, how tall is the model?',
+      choices: ["3 feet", "4 feet", "5 feet", "2 feet"],
+      answer: "3 feet",
+      hints: [
+        "Divide the real size by the scale factor.",
+        "225 ÷ 75 = ?",
+        "225 ÷ 75 = 3 feet."
+      ],
+      explanation: [
+        "Model height = 225 ÷ 75 = 3 feet.",
+        "The model tower is 3 feet tall."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A blueprint uses a scale of 1 cm = 11 meters. A fence is 5.5 cm on the blueprint. What is the actual length?',
+      choices: ["60.5 meters", "55 meters", "66 meters", "44 meters"],
+      answer: "60.5 meters",
+      hints: [
+        "Multiply the blueprint measurement by the scale.",
+        "5.5 × 11 = ?",
+        "5.5 × 11 = 60.5 meters."
+      ],
+      explanation: [
+        "Actual length = 5.5 cm × 11 m/cm = 60.5 meters.",
+        "The fence is 60.5 meters long."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'If 5 notebooks cost $8.75, how much do 12 notebooks cost? Enter the dollar amount (no $ sign).',
+      answer: "21",
+      hints: [
+        "Find the cost of one notebook first: $8.75 ÷ 5.",
+        "$8.75 ÷ 5 = $1.75 per notebook.",
+        "$1.75 × 12 = $21.00."
+      ],
+      explanation: [
+        "Unit price = $8.75 ÷ 5 = <strong>$1.75</strong>.",
+        "12 notebooks cost $1.75 × 12 = <strong>$21</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A recipe calls for 3 cups of rice to serve 8 people. How many cups are needed to serve 20 people?',
+      choices: ["7.5 cups", "6 cups", "8 cups", "9 cups"],
+      answer: "7.5 cups",
+      hints: [
+        "Set up a proportion: 3/8 = x/20.",
+        "Cross multiply: 8x = 60.",
+        "x = 60 ÷ 8 = 7.5."
+      ],
+      explanation: [
+        "Proportion: 3/8 = x/20. Cross multiply: 8x = 60.",
+        "x = 60 ÷ 8 = <strong>7.5 cups</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A machine produces 45 parts in 15 minutes. At this rate, how many parts will it produce in 40 minutes?',
+      choices: ["120 parts", "135 parts", "100 parts", "90 parts"],
+      answer: "120 parts",
+      hints: [
+        "Find the unit rate: 45 ÷ 15 = 3 parts per minute.",
+        "Multiply by the new time: 3 × 40.",
+        "3 × 40 = 120."
+      ],
+      explanation: [
+        "Rate = 45 ÷ 15 = <strong>3 parts/min</strong>.",
+        "In 40 minutes: 3 × 40 = <strong>120 parts</strong>."
+      ]
+    }
   ],
 
   // ----------------------------------------------------------
@@ -3479,6 +5542,231 @@ EXTRA_QUESTIONS[6] = [
       explanation: [
         "7 days × 24 hr/day = 168 hours.",
         "168 hours × 60 min/hr = 10,080 minutes."
+      ]
+    }
+  ,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert 9 yards to inches. <span class="math">(1 \\text{ yd} = 3 \\text{ ft}, \\; 1 \\text{ ft} = 12 \\text{ in})</span>',
+      answer: "324",
+      hints: [
+        'First convert yards to feet: 9 \u00d7 3 = 27 feet.',
+        'Then convert feet to inches: 27 \u00d7 12.',
+        '27 \u00d7 12 = 324 inches.'
+      ],
+      explanation: [
+        '9 yards \u00d7 3 ft/yd = 27 feet.',
+        '27 feet \u00d7 12 in/ft = 324 inches.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'How many seconds are in 10 hours?',
+      choices: ["36,000", "6,000", "60,000", "3,600"],
+      answer: "36,000",
+      hints: [
+        'Hours \u2192 minutes: 10 \u00d7 60 = 600 minutes.',
+        'Minutes \u2192 seconds: 600 \u00d7 60.',
+        '600 \u00d7 60 = 36,000.'
+      ],
+      explanation: [
+        '10 hours \u00d7 60 min/hr = 600 minutes.',
+        '600 minutes \u00d7 60 sec/min = 36,000 seconds.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'How many minutes are in 10 days?',
+      answer: "14400",
+      hints: [
+        'Days \u2192 hours: 10 \u00d7 24 = 240 hours.',
+        'Hours \u2192 minutes: 240 \u00d7 60.',
+        '240 \u00d7 60 = 14,400.'
+      ],
+      explanation: [
+        '10 days \u00d7 24 hr/day = 240 hours.',
+        '240 hours \u00d7 60 min/hr = 14,400 minutes.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert 3 miles to feet. (1 mile = 5,280 feet)',
+      answer: "15840",
+      hints: [
+        'Multiply miles by 5,280.',
+        '3 \u00d7 5,280 = ?',
+        '3 \u00d7 5,280 = 15,840.'
+      ],
+      explanation: [
+        '3 miles \u00d7 5,280 feet/mile = 15,840 feet.',
+        '3 miles equals 15,840 feet.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Convert 2.5 hours to seconds.',
+      choices: ["9,000", "7,500", "10,000", "8,500"],
+      answer: "9,000",
+      hints: [
+        'First convert hours to minutes: 2.5 \u00d7 60 = 150 minutes.',
+        'Then convert minutes to seconds: 150 \u00d7 60.',
+        '150 \u00d7 60 = 9,000 seconds.'
+      ],
+      explanation: [
+        '2.5 hours \u00d7 60 min/hr = 150 minutes.',
+        '150 minutes \u00d7 60 sec/min = 9,000 seconds.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A tank holds 7 gallons of water. How many cups is that? (1 gallon = 16 cups)',
+      choices: ["112 cups", "96 cups", "128 cups", "104 cups"],
+      answer: "112 cups",
+      hints: [
+        'Multiply gallons by 16.',
+        '7 \u00d7 16 = ?',
+        '7 \u00d7 16 = 112.'
+      ],
+      explanation: [
+        '7 gallons \u00d7 16 cups/gallon = 112 cups.',
+        'The tank holds 112 cups of water.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Convert 11 yards to inches. <span class="math">(1 \text{ yd} = 3 \text{ ft}, \; 1 \text{ ft} = 12 \text{ in})</span>',
+      answer: "396",
+      hints: [
+        "First convert yards to feet: 11 × 3 = 33 feet.",
+        "Then convert feet to inches: 33 × 12.",
+        "33 × 12 = 396 inches."
+      ],
+      explanation: [
+        "11 yards × 3 ft/yd = 33 feet.",
+        "33 feet × 12 in/ft = 396 inches."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'How many seconds are in 7 hours?',
+      choices: ["25,200", "42,000", "4,200", "7,200"],
+      answer: "25,200",
+      hints: [
+        "Hours → minutes: 7 × 60 = 420 minutes.",
+        "Minutes → seconds: 420 × 60.",
+        "420 × 60 = 25,200."
+      ],
+      explanation: [
+        "7 hours × 60 min/hr = 420 minutes.",
+        "420 minutes × 60 sec/min = 25,200 seconds."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert 4 miles to feet. <span class="math">(1 \text{ mile} = 5{,}280 \text{ ft})</span>',
+      answer: "21120",
+      hints: [
+        "Multiply miles by 5,280.",
+        "4 × 5,280 = ?",
+        "4 × 5,280 = 21,120."
+      ],
+      explanation: [
+        "4 miles × 5,280 feet/mile = 21,120 feet.",
+        "4 miles equals 21,120 feet."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'How many seconds are in 9 hours?',
+      choices: ["32,400", "54,000", "5,400", "16,200"],
+      answer: "32,400",
+      hints: [
+        "Hours → minutes: 9 × 60 = 540 minutes.",
+        "Minutes → seconds: 540 × 60.",
+        "540 × 60 = 32,400."
+      ],
+      explanation: [
+        "9 hours × 60 min/hr = 540 minutes.",
+        "540 minutes × 60 sec/min = 32,400 seconds."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert 12 yards to inches. <span class="math">(1 \text{ yd} = 3 \text{ ft}, \; 1 \text{ ft} = 12 \text{ in})</span>',
+      answer: "432",
+      hints: [
+        "First convert yards to feet: 12 × 3 = 36 feet.",
+        "Then convert feet to inches: 36 × 12.",
+        "36 × 12 = 432 inches."
+      ],
+      explanation: [
+        "12 yards × 3 ft/yd = 36 feet.",
+        "36 feet × 12 in/ft = 432 inches."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'How many minutes are in 8 days?',
+      choices: ["11,520", "10,080", "12,960", "8,640"],
+      answer: "11,520",
+      hints: [
+        "Days → hours: 8 × 24 = 192 hours.",
+        "Hours → minutes: 192 × 60.",
+        "192 × 60 = 11,520."
+      ],
+      explanation: [
+        "8 days × 24 hr/day = 192 hours.",
+        "192 hours × 60 min/hr = 11,520 minutes."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A model car is built at a 1 : 24 scale. If the real car is 192 inches long, how many inches long is the model?',
+      answer: "8",
+      hints: [
+        "A 1 : 24 scale means the model is 1/24 of the real size.",
+        "Divide the real length by 24.",
+        "192 ÷ 24 = 8."
+      ],
+      explanation: [
+        "Model length = 192 ÷ 24 = <strong>8 inches</strong>.",
+        "The model car is 8 inches long."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A map uses a scale of 1 inch = 75 miles. If two cities are 375 miles apart, how far apart are they on the map?',
+      choices: ["5 inches", "4 inches", "6 inches", "3.75 inches"],
+      answer: "5 inches",
+      hints: [
+        "Divide actual distance by the scale.",
+        "375 ÷ 75 = ?",
+        "375 ÷ 75 = 5."
+      ],
+      explanation: [
+        "Map distance = 375 ÷ 75 = <strong>5 inches</strong>.",
+        "The cities are 5 inches apart on the map."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A model airplane is built at a 1 : 48 scale. The real airplane wingspan is 96 feet. What is the model wingspan in feet?',
+      answer: "2",
+      hints: [
+        "Scale 1 : 48 means the model is 1/48 of real size.",
+        "96 ÷ 48 = ?",
+        "96 ÷ 48 = 2."
+      ],
+      explanation: [
+        "Model wingspan = 96 ÷ 48 = <strong>2 feet</strong>.",
+        "The model wingspan is 2 feet."
       ]
     }
   ]
@@ -3830,6 +6118,234 @@ EXTRA_QUESTIONS[7] = [
         "It means 2 times (or 200 out of every 100)."
       ]
     }
+  ,
+    {
+      type: "mc", difficulty: 1,
+      question: 'What does 5% mean?',
+      choices: ["5 out of 100", "5 out of 10", "50 out of 100", "5 out of 1,000"],
+      answer: "5 out of 100",
+      hints: [
+        'Percent means per hundred.',
+        '5% = 5 per 100.',
+        'It means 5 out of every 100.'
+      ],
+      explanation: [
+        'The word percent comes from per centum (per hundred).',
+        '5% means 5 out of 100.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A grid has 100 squares. 29 are shaded. What percent is NOT shaded?',
+      answer: "71",
+      hints: [
+        'Total squares = 100, shaded = 29.',
+        'Not shaded = 100 \u2212 29 = 71.',
+        '71 out of 100 = 71%.'
+      ],
+      explanation: [
+        'Not shaded = 100 \u2212 29 = 71.',
+        '71 out of 100 = 71%.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 1,
+      question: 'If 44 out of 100 birds are sparrows, what percent are sparrows?',
+      choices: ["44%", "56%", "4.4%", "440%"],
+      answer: "44%",
+      hints: [
+        'Percent means per hundred.',
+        '44 out of 100 = 44%.',
+        'Just read the number over 100.'
+      ],
+      explanation: [
+        '44 out of 100 = 44/100 = 44%.',
+        '44% of the birds are sparrows.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'In a class of 100 students, 37 chose pizza as their favorite food. What percent chose pizza?',
+      answer: "37",
+      hints: [
+        'Percent means parts per 100.',
+        '37 out of 100 = 37/100.',
+        '37/100 = 37%.'
+      ],
+      explanation: [
+        '37 out of 100 = 37/100 = 37%.',
+        '37% of students chose pizza.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 1,
+      question: 'A survey of 100 people found that 62 prefer summer. What percent prefer summer?',
+      choices: ["62%", "38%", "6.2%", "620%"],
+      answer: "62%",
+      hints: [
+        'The total is already 100.',
+        '62 out of 100 = 62%.',
+        'When the total is 100, the number is the percent.'
+      ],
+      explanation: [
+        '62 out of 100 = 62/100 = 62%.',
+        '62% prefer summer.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A jar has 100 marbles. 19 are green and 81 are yellow. What percent are green?',
+      choices: ["19%", "81%", "1.9%", "9%"],
+      answer: "19%",
+      hints: [
+        'Green marbles = 19 out of 100.',
+        '19/100 as a percent is 19%.',
+        'With 100 total, the count equals the percent.'
+      ],
+      explanation: [
+        '19 out of 100 = 19%.',
+        '19% of the marbles are green.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A jar has 100 jelly beans. 46 are red and the rest are blue. What percent are blue?',
+      choices: ["54%", "46%", "64%", "36%"],
+      answer: "54%",
+      hints: [
+        "Blue = 100 − 46 = 54.",
+        "54 out of 100 = 54%.",
+        "Percent means per hundred."
+      ],
+      explanation: [
+        "Blue jelly beans = 100 − 46 = 54.",
+        "54 out of 100 = 54%."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'If 78 out of 100 tickets were sold, what percent were sold?',
+      answer: "78",
+      hints: [
+        "Percent means out of 100.",
+        "78 out of 100 = 78%.",
+        "The answer is 78."
+      ],
+      explanation: [
+        "78 out of 100 = 78/100 = 78%.",
+        "78% of tickets were sold."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'What does 1% mean?',
+      choices: ["1 out of 100", "1 out of 10", "10 out of 100", "1 out of 1,000"],
+      answer: "1 out of 100",
+      hints: [
+        "Percent means per hundred.",
+        "1% = 1 per 100.",
+        "It means 1 out of every 100."
+      ],
+      explanation: [
+        "The word percent comes from per centum (per hundred).",
+        "1% means 1 out of 100."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'What does 83% mean?',
+      choices: ["83 out of 100", "83 out of 10", "8.3 out of 100", "83 out of 1,000"],
+      answer: "83 out of 100",
+      hints: [
+        "Percent means per hundred.",
+        "83% = 83 per 100.",
+        "It means 83 out of every 100."
+      ],
+      explanation: [
+        "The prefix per-cent means per hundred.",
+        "83% means 83 out of 100."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'In a school, 37 out of 100 students ride the bus. What percent of students ride the bus?',
+      answer: "37",
+      hints: [
+        "Percent means out of 100.",
+        "37 out of 100 = 37%.",
+        "The answer is 37."
+      ],
+      explanation: [
+        "37 out of 100 already tells us the percent directly.",
+        "37 out of 100 = 37%."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'A grid has 100 squares, and 64 are shaded. What percent is shaded?',
+      choices: ["64%", "36%", "6.4%", "46%"],
+      answer: "64%",
+      hints: [
+        "Shaded squares out of 100 total squares.",
+        "64 out of 100 = 64%.",
+        "Percent means per hundred."
+      ],
+      explanation: [
+        "64 shaded out of 100 total squares.",
+        "64 out of 100 = 64%."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Write 0.45 as a percent.',
+      choices: ["45%", "4.5%", "0.45%", "450%"],
+      answer: "45%",
+      hints: [
+        "To convert a decimal to a percent, multiply by 100.",
+        "0.45 × 100 = ?",
+        "0.45 × 100 = 45."
+      ],
+      explanation: [
+        "Multiply the decimal by 100: 0.45 × 100 = <strong>45</strong>.",
+        "So 0.45 = <strong>45%</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Write 0.08 as a percent. Enter just the number.',
+      answer: "8",
+      hints: [
+        "Multiply the decimal by 100.",
+        "0.08 × 100 = ?",
+        "0.08 × 100 = 8."
+      ],
+      explanation: [
+        "0.08 × 100 = <strong>8</strong>.",
+        "So 0.08 = <strong>8%</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Write 1.35 as a percent.',
+      choices: ["135%", "13.5%", "1.35%", "1350%"],
+      answer: "135%",
+      hints: [
+        "Multiply the decimal by 100.",
+        "1.35 × 100 = ?",
+        "Numbers greater than 1 become more than 100%."
+      ],
+      explanation: [
+        "1.35 × 100 = <strong>135</strong>.",
+        "So 1.35 = <strong>135%</strong>."
+      ]
+    }
   ],
 
   // ----------------------------------------------------------
@@ -4171,6 +6687,233 @@ EXTRA_QUESTIONS[7] = [
       explanation: [
         "55% = 55/100.",
         "GCD(55, 100) = 5 → 55/100 = 11/20."
+      ]
+    }
+  ,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert 65% to a fraction in simplest form.',
+      choices: ["13/20", "65/100", "6/10", "3/5"],
+      answer: "13/20",
+      hints: [
+        '65% = 65/100.',
+        'Divide both by 5.',
+        '65/100 = 13/20.'
+      ],
+      explanation: [
+        '65% = 65/100.',
+        'GCD(65, 100) = 5 \u2192 65/100 = 13/20.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Convert <span class="math">3/10</span> to a percent. Enter just the number.',
+      answer: "30",
+      hints: [
+        'Divide 3 by 10 to get a decimal.',
+        '3 \u00f7 10 = 0.3.',
+        'Multiply by 100: 0.3 \u00d7 100 = 30%.'
+      ],
+      explanation: [
+        '3/10 = 0.3.',
+        '0.3 \u00d7 100 = 30%.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert 90% to a fraction in simplest form.',
+      choices: ["9/10", "90/100", "4/5", "18/20"],
+      answer: "9/10",
+      hints: [
+        '90% = 90/100.',
+        'Divide both by 10.',
+        '90/100 = 9/10.'
+      ],
+      explanation: [
+        '90% = 90/100.',
+        'GCD(90, 100) = 10 \u2192 90/100 = 9/10.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 1,
+      question: 'Convert 45% to a fraction in simplest form.',
+      choices: ["9/20", "45/100", "9/10", "4/5"],
+      answer: "9/20",
+      hints: [
+        '45% = 45/100.',
+        'Find the GCD of 45 and 100.',
+        'GCD = 5. So 45/100 = 9/20.'
+      ],
+      explanation: [
+        '45% = 45/100.',
+        'GCD(45, 100) = 5 \u2192 45/100 = 9/20.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert <span class="math">\\frac{7}{25}</span> to a percent. Enter just the number.',
+      answer: "28",
+      hints: [
+        'To convert a fraction to a percent, divide then multiply by 100.',
+        '7 \u00f7 25 = 0.28.',
+        '0.28 \u00d7 100 = 28%.'
+      ],
+      explanation: [
+        '7 \u00f7 25 = 0.28.',
+        '0.28 \u00d7 100 = 28%.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert 160% to a fraction in simplest form.',
+      choices: ["8/5", "16/10", "160/100", "4/5"],
+      answer: "8/5",
+      hints: [
+        '160% = 160/100.',
+        'Find the GCD of 160 and 100.',
+        'GCD = 20. So 160/100 = 8/5.'
+      ],
+      explanation: [
+        '160% = 160/100.',
+        'GCD(160, 100) = 20 \u2192 160/100 = 8/5.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert <span class="math">\frac{9}{40}</span> to a percent. Enter just the number.',
+      answer: "22.5",
+      hints: [
+        "Divide 9 by 40.",
+        "9 ÷ 40 = 0.225.",
+        "Multiply by 100: 0.225 × 100 = 22.5%."
+      ],
+      explanation: [
+        "9/40 = 0.225.",
+        "0.225 × 100 = 22.5%."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Convert 5% to a fraction in simplest form.',
+      choices: ["1/20", "5/100", "1/5", "1/10"],
+      answer: "1/20",
+      hints: [
+        "5% = 5/100.",
+        "Divide both by 5.",
+        "5/100 = 1/20."
+      ],
+      explanation: [
+        "5% = 5/100.",
+        "GCD(5, 100) = 5 → 5/100 = 1/20."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert 125% to a fraction in simplest form.',
+      choices: ["5/4", "125/100", "25/20", "6/5"],
+      answer: "5/4",
+      hints: [
+        "125% = 125/100.",
+        "Find the GCD of 125 and 100.",
+        "GCD = 25. So 125/100 = 5/4."
+      ],
+      explanation: [
+        "125% = 125/100.",
+        "GCD(125, 100) = 25 → 125/100 = 5/4."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Convert <span class="math">\frac{7}{10}</span> to a percent. Enter just the number.',
+      answer: "70",
+      hints: [
+        "Divide 7 by 10 to get a decimal.",
+        "7 ÷ 10 = 0.7.",
+        "Multiply by 100: 0.7 × 100 = 70%."
+      ],
+      explanation: [
+        "7 ÷ 10 = 0.7.",
+        "0.7 × 100 = 70%."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert 85% to a fraction in simplest form.',
+      choices: ["17/20", "85/100", "4/5", "8/10"],
+      answer: "17/20",
+      hints: [
+        "Write 85% as 85/100.",
+        "Find the GCD of 85 and 100.",
+        "GCD = 5 → 85/100 = 17/20."
+      ],
+      explanation: [
+        "85% = 85/100.",
+        "Simplify: 85 ÷ 5 = 17, 100 ÷ 5 = 20 → 17/20."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert <span class="math">\frac{9}{20}</span> to a percent. Enter just the number.',
+      answer: "45",
+      hints: [
+        "Divide 9 by 20.",
+        "9 ÷ 20 = 0.45.",
+        "Multiply by 100: 0.45 × 100 = 45%."
+      ],
+      explanation: [
+        "9 ÷ 20 = 0.45.",
+        "0.45 × 100 = 45%."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Write <span class="math">3/8</span> as a percent. Enter your answer as a decimal percent (like 37.5).',
+      answer: "37.5",
+      hints: [
+        "Divide the numerator by the denominator: 3 ÷ 8.",
+        "3 ÷ 8 = 0.375.",
+        "Multiply by 100: 0.375 × 100 = 37.5."
+      ],
+      explanation: [
+        "3 ÷ 8 = 0.375.",
+        "0.375 × 100 = <strong>37.5%</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Write <span class="math">5/6</span> as a percent (rounded to the nearest tenth).',
+      choices: ["83.3%", "80%", "85%", "83.5%"],
+      answer: "83.3%",
+      hints: [
+        "Divide 5 by 6: 5 ÷ 6 ≈ 0.8333…",
+        "Multiply by 100: 83.33…%",
+        "Round to the nearest tenth: 83.3%."
+      ],
+      explanation: [
+        "5 ÷ 6 ≈ 0.8333…",
+        "0.8333… × 100 ≈ <strong>83.3%</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Write <span class="math">7/20</span> as a percent.',
+      choices: ["35%", "30%", "40%", "70%"],
+      answer: "35%",
+      hints: [
+        "Divide 7 by 20: 7 ÷ 20 = 0.35.",
+        "Multiply by 100.",
+        "0.35 × 100 = 35."
+      ],
+      explanation: [
+        "7 ÷ 20 = 0.35.",
+        "0.35 × 100 = <strong>35%</strong>."
       ]
     }
   ],
@@ -4517,6 +7260,234 @@ EXTRA_QUESTIONS[7] = [
         "225% as a decimal is 2.25."
       ]
     }
+  ,
+    {
+      type: "mc", difficulty: 1,
+      question: 'Convert 65% to a decimal.',
+      choices: ["0.65", "6.5", "0.065", "65.0"],
+      answer: "0.65",
+      hints: [
+        'Divide 65 by 100.',
+        'Move the decimal point 2 places left.',
+        '65% = 0.65.'
+      ],
+      explanation: [
+        '65% \u00f7 100 = 0.65.',
+        '65% as a decimal is 0.65.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert 0.56 to a percent. Enter just the number.',
+      answer: "56",
+      hints: [
+        'Multiply the decimal by 100.',
+        '0.56 \u00d7 100 = ?',
+        '0.56 \u00d7 100 = 56.'
+      ],
+      explanation: [
+        '0.56 \u00d7 100 = 56.',
+        '0.56 as a percent is 56%.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert 300% to a decimal.',
+      choices: ["3.0", "0.3", "30.0", "0.03"],
+      answer: "3.0",
+      hints: [
+        'Divide 300 by 100.',
+        '300 \u00f7 100 = 3.0.',
+        'Percents over 100 give decimals greater than 1.'
+      ],
+      explanation: [
+        '300% \u00f7 100 = 3.0.',
+        '300% as a decimal is 3.0.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Convert 0.72 to a percent. Enter just the number.',
+      answer: "72",
+      hints: [
+        'Multiply the decimal by 100 to get a percent.',
+        '0.72 \u00d7 100 = ?',
+        '0.72 \u00d7 100 = 72.'
+      ],
+      explanation: [
+        '0.72 \u00d7 100 = 72%.',
+        '0.72 as a percent is 72%.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 1,
+      question: 'What is 56% as a decimal?',
+      choices: ["0.56", "5.6", "0.056", "56.0"],
+      answer: "0.56",
+      hints: [
+        'Divide the percent by 100.',
+        '56 \u00f7 100 = ?',
+        '56 \u00f7 100 = 0.56.'
+      ],
+      explanation: [
+        '56% \u00f7 100 = 0.56.',
+        '56% as a decimal is 0.56.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is 0.035 as a percent?',
+      choices: ["3.5%", "0.35%", "35%", "0.035%"],
+      answer: "3.5%",
+      hints: [
+        'Multiply by 100 to convert to percent.',
+        '0.035 \u00d7 100 = ?',
+        '0.035 \u00d7 100 = 3.5.'
+      ],
+      explanation: [
+        '0.035 \u00d7 100 = 3.5%.',
+        '0.035 as a percent is 3.5%.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'Convert 0.15 to a percent. Enter just the number.',
+      answer: "15",
+      hints: [
+        "Multiply the decimal by 100.",
+        "0.15 × 100 = ?",
+        "0.15 × 100 = 15."
+      ],
+      explanation: [
+        "0.15 × 100 = 15.",
+        "0.15 as a percent is 15%."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Convert 0.006 to a percent.',
+      choices: ["0.6%", "6%", "60%", "0.06%"],
+      answer: "0.6%",
+      hints: [
+        "Multiply by 100.",
+        "0.006 × 100 = ?",
+        "0.006 × 100 = 0.6."
+      ],
+      explanation: [
+        "0.006 × 100 = 0.6.",
+        "0.006 as a percent is 0.6%."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Convert 92% to a decimal.',
+      choices: ["0.92", "9.2", "0.092", "92.0"],
+      answer: "0.92",
+      hints: [
+        "Divide 92 by 100.",
+        "Move the decimal point 2 places left.",
+        "92% = 0.92."
+      ],
+      explanation: [
+        "92% ÷ 100 = 0.92.",
+        "92% as a decimal is 0.92."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Convert 32% to a decimal.',
+      choices: ["0.32", "3.2", "0.032", "32.0"],
+      answer: "0.32",
+      hints: [
+        "To convert percent to decimal, divide by 100.",
+        "Move the decimal point 2 places left.",
+        "32% = 0.32."
+      ],
+      explanation: [
+        "32% ÷ 100 = 0.32.",
+        "32% as a decimal is 0.32."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Convert 0.185 to a percent. Enter just the number (e.g. for 18.5% enter 18.5).',
+      answer: "18.5",
+      hints: [
+        "Multiply the decimal by 100.",
+        "0.185 × 100 = ?",
+        "0.185 × 100 = 18.5."
+      ],
+      explanation: [
+        "0.185 × 100 = 18.5.",
+        "0.185 as a percent is 18.5%."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Convert 0.09 to a percent.',
+      choices: ["9%", "0.9%", "90%", "0.09%"],
+      answer: "9%",
+      hints: [
+        "Multiply the decimal by 100.",
+        "0.09 × 100 = ?",
+        "0.09 × 100 = 9."
+      ],
+      explanation: [
+        "0.09 × 100 = 9.",
+        "0.09 as a percent is 9%."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is 35% of 80?',
+      answer: "28",
+      hints: [
+        "Convert 35% to a decimal: 0.35.",
+        "Multiply: 0.35 × 80.",
+        "0.35 × 80 = 28."
+      ],
+      explanation: [
+        "35% = 0.35.",
+        "0.35 × 80 = <strong>28</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A school has 450 students. If 62% brought lunch from home today, how many students brought lunch?',
+      choices: ["279", "270", "290", "280"],
+      answer: "279",
+      hints: [
+        "Convert 62% to a decimal: 0.62.",
+        "Multiply: 0.62 × 450.",
+        "0.62 × 450 = 279."
+      ],
+      explanation: [
+        "62% = 0.62.",
+        "0.62 × 450 = <strong>279 students</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is 15% of 240?',
+      choices: ["36", "24", "48", "30"],
+      answer: "36",
+      hints: [
+        "Convert 15% to a decimal: 0.15.",
+        "Multiply: 0.15 × 240.",
+        "0.15 × 240 = 36."
+      ],
+      explanation: [
+        "15% = 0.15.",
+        "0.15 × 240 = <strong>36</strong>."
+      ]
+    }
   ],
 
   // ----------------------------------------------------------
@@ -4854,6 +7825,230 @@ EXTRA_QUESTIONS[7] = [
       explanation: [
         "18% = 0.18.",
         "0.18 × 250 = 45."
+      ]
+    }
+  ,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is 25% of 48?',
+      answer: "12",
+      hints: [
+        '25% means one quarter.',
+        '48 \u00f7 4 = ?',
+        '48 \u00f7 4 = 12.'
+      ],
+      explanation: [
+        '25% = 0.25.',
+        '0.25 \u00d7 48 = 12.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is 70% of 110?',
+      choices: ["77", "70", "84", "66"],
+      answer: "77",
+      hints: [
+        '70% = 0.70.',
+        '0.70 \u00d7 110 = ?',
+        '0.70 \u00d7 110 = 77.'
+      ],
+      explanation: [
+        '70% = 0.70.',
+        '0.70 \u00d7 110 = 77.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is 22% of 150?',
+      answer: "33",
+      hints: [
+        'Convert 22% to 0.22.',
+        'Multiply: 0.22 \u00d7 150.',
+        '0.22 \u00d7 150 = 33.'
+      ],
+      explanation: [
+        '22% = 0.22.',
+        '0.22 \u00d7 150 = 33.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is 15% of 80?',
+      answer: "12",
+      hints: [
+        'Convert 15% to a decimal: 0.15.',
+        'Multiply: 0.15 \u00d7 80.',
+        '0.15 \u00d7 80 = 12.'
+      ],
+      explanation: [
+        '15% = 0.15.',
+        '0.15 \u00d7 80 = 12.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is 35% of 260?',
+      choices: ["91", "78", "104", "85"],
+      answer: "91",
+      hints: [
+        'Convert 35% to a decimal: 0.35.',
+        'Multiply: 0.35 \u00d7 260.',
+        '0.35 \u00d7 260 = 91.'
+      ],
+      explanation: [
+        '35% = 0.35.',
+        '0.35 \u00d7 260 = 91.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 1,
+      question: 'What is 50% of 124?',
+      choices: ["62", "64", "50", "72"],
+      answer: "62",
+      hints: [
+        '50% means half.',
+        '124 \u00f7 2 = ?',
+        '124 \u00f7 2 = 62.'
+      ],
+      explanation: [
+        '50% of 124 = 124 \u00f7 2 = 62.',
+        'The answer is 62.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is 15% of 240?',
+      answer: "36",
+      hints: [
+        "Convert 15% to a decimal: 0.15.",
+        "Multiply: 0.15 × 240.",
+        "0.15 × 240 = 36."
+      ],
+      explanation: [
+        "15% = 0.15.",
+        "0.15 × 240 = 36."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'What is 50% of 160?',
+      choices: ["80", "60", "100", "32"],
+      answer: "80",
+      hints: [
+        "50% means half.",
+        "160 ÷ 2 = ?",
+        "160 ÷ 2 = 80."
+      ],
+      explanation: [
+        "50% of 160 = 160 ÷ 2 = 80.",
+        "The answer is 80."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is 40% of 175?',
+      answer: "70",
+      hints: [
+        "Convert 40% to a decimal: 0.40.",
+        "Multiply: 0.40 × 175.",
+        "0.40 × 175 = 70."
+      ],
+      explanation: [
+        "40% = 0.40.",
+        "0.40 × 175 = 70."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is 20% of 150?',
+      answer: "30",
+      hints: [
+        "Convert 20% to a decimal: 0.20.",
+        "Multiply: 0.20 × 150.",
+        "0.20 × 150 = 30."
+      ],
+      explanation: [
+        "20% = 0.20.",
+        "0.20 × 150 = 30."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is 35% of 200?',
+      choices: ["70", "60", "80", "35"],
+      answer: "70",
+      hints: [
+        "Convert 35% to a decimal: 0.35.",
+        "Multiply: 0.35 × 200.",
+        "0.35 × 200 = 70."
+      ],
+      explanation: [
+        "35% = 0.35.",
+        "0.35 × 200 = 70."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is 15% of 360?',
+      answer: "54",
+      hints: [
+        "Convert 15% to a decimal: 0.15.",
+        "Multiply: 0.15 × 360.",
+        "0.15 × 360 = 54."
+      ],
+      explanation: [
+        "15% = 0.15.",
+        "0.15 × 360 = 54."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: '18 out of 72 is what percent?',
+      answer: "25",
+      hints: [
+        "Divide the part by the whole: 18 ÷ 72.",
+        "18 ÷ 72 = 0.25.",
+        "Multiply by 100: 0.25 × 100 = 25."
+      ],
+      explanation: [
+        "18 ÷ 72 = 0.25.",
+        "0.25 × 100 = <strong>25%</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A basketball player made 27 out of 36 free throws. What percent did she make?',
+      choices: ["75%", "80%", "70%", "65%"],
+      answer: "75%",
+      hints: [
+        "Divide makes by attempts: 27 ÷ 36.",
+        "27 ÷ 36 = 0.75.",
+        "0.75 × 100 = 75%."
+      ],
+      explanation: [
+        "27 ÷ 36 = 0.75.",
+        "0.75 × 100 = <strong>75%</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A student scored 42 out of 60 on a test. What percent is that?',
+      answer: "70",
+      hints: [
+        "Divide the score by the total: 42 ÷ 60.",
+        "42 ÷ 60 = 0.70.",
+        "Multiply by 100: 0.70 × 100 = 70."
+      ],
+      explanation: [
+        "42 ÷ 60 = 0.70.",
+        "0.70 × 100 = <strong>70%</strong>."
       ]
     }
   ],
@@ -5196,6 +8391,232 @@ EXTRA_QUESTIONS[7] = [
       explanation: [
         "24 ÷ 60 = 0.40.",
         "0.40 × 100 = 40%."
+      ]
+    }
+  ,
+    {
+      type: "mc", difficulty: 1,
+      question: 'What percent of 40 is 16?',
+      choices: ["40%", "16%", "25%", "30%"],
+      answer: "40%",
+      hints: [
+        'Divide the part by the whole.',
+        '16 \u00f7 40 = 0.40.',
+        'Multiply by 100: 40%.'
+      ],
+      explanation: [
+        '16 \u00f7 40 = 0.40.',
+        '0.40 \u00d7 100 = 40%.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What percent of 250 is 75?',
+      answer: "30",
+      hints: [
+        'Divide 75 by 250.',
+        '75 \u00f7 250 = 0.30.',
+        '0.30 \u00d7 100 = 30%.'
+      ],
+      explanation: [
+        '75 \u00f7 250 = 0.30.',
+        '0.30 \u00d7 100 = 30%.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What percent of 125 is 50?',
+      choices: ["40%", "50%", "25%", "35%"],
+      answer: "40%",
+      hints: [
+        'Divide 50 by 125.',
+        '50 \u00f7 125 = 0.40.',
+        '0.40 \u00d7 100 = 40%.'
+      ],
+      explanation: [
+        '50 \u00f7 125 = 0.40.',
+        '0.40 \u00d7 100 = 40%.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What percent is 18 out of 72?',
+      answer: "25",
+      hints: [
+        'Divide the part by the whole.',
+        '18 \u00f7 72 = 0.25.',
+        '0.25 \u00d7 100 = 25%.'
+      ],
+      explanation: [
+        '18 \u00f7 72 = 0.25.',
+        '0.25 \u00d7 100 = 25%.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What percent is 63 out of 210?',
+      choices: ["30%", "25%", "35%", "33%"],
+      answer: "30%",
+      hints: [
+        'Divide the part by the whole.',
+        '63 \u00f7 210 = 0.30.',
+        '0.30 \u00d7 100 = 30%.'
+      ],
+      explanation: [
+        '63 \u00f7 210 = 0.30.',
+        '0.30 \u00d7 100 = 30%.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What percent is 42 out of 168?',
+      answer: "25",
+      hints: [
+        'Divide the part by the whole.',
+        '42 \u00f7 168 = 0.25.',
+        '0.25 \u00d7 100 = 25%.'
+      ],
+      explanation: [
+        '42 \u00f7 168 = 0.25.',
+        '0.25 \u00d7 100 = 25%.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What percent of 60 is 9?',
+      choices: ["15%", "12%", "18%", "9%"],
+      answer: "15%",
+      hints: [
+        "Divide the part by the whole.",
+        "9 ÷ 60 = 0.15.",
+        "Multiply by 100: 15%."
+      ],
+      explanation: [
+        "9 ÷ 60 = 0.15.",
+        "0.15 × 100 = 15%."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What percent of 25 is 5?',
+      answer: "20",
+      hints: [
+        "Divide 5 by 25.",
+        "5 ÷ 25 = 0.20.",
+        "Multiply by 100: 20%."
+      ],
+      explanation: [
+        "5 ÷ 25 = 0.20.",
+        "0.20 × 100 = 20%."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What percent of 150 is 45?',
+      choices: ["30%", "25%", "35%", "20%"],
+      answer: "30%",
+      hints: [
+        "Divide the part by the whole.",
+        "45 ÷ 150 = 0.30.",
+        "Multiply by 100: 30%."
+      ],
+      explanation: [
+        "45 ÷ 150 = 0.30.",
+        "0.30 × 100 = 30%."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'What percent of 80 is 24?',
+      choices: ["30%", "25%", "35%", "20%"],
+      answer: "30%",
+      hints: [
+        "Divide the part by the whole.",
+        "24 ÷ 80 = 0.30.",
+        "Multiply by 100: 30%."
+      ],
+      explanation: [
+        "24 ÷ 80 = 0.30.",
+        "0.30 × 100 = 30%."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What percent of 125 is 25?',
+      answer: "20",
+      hints: [
+        "Divide 25 by 125.",
+        "25 ÷ 125 = 0.20.",
+        "Multiply by 100: 20%."
+      ],
+      explanation: [
+        "25 ÷ 125 = 0.20.",
+        "0.20 × 100 = 20%."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What percent of 90 is 27?',
+      choices: ["30%", "25%", "33%", "27%"],
+      answer: "30%",
+      hints: [
+        "Divide the part by the whole.",
+        "27 ÷ 90 = 0.30.",
+        "Multiply by 100: 30%."
+      ],
+      explanation: [
+        "27 ÷ 90 = 0.30.",
+        "0.30 × 100 = 30%."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: '40% of what number is 26?',
+      answer: "65",
+      hints: [
+        "Set up: 0.40 × n = 26.",
+        "Divide both sides by 0.40.",
+        "n = 26 ÷ 0.40 = 65."
+      ],
+      explanation: [
+        "0.40 × n = 26.",
+        "n = 26 ÷ 0.40 = <strong>65</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: '15% of what number is 27?',
+      choices: ["180", "200", "150", "160"],
+      answer: "180",
+      hints: [
+        "Set up: 0.15 × n = 27.",
+        "Divide both sides by 0.15.",
+        "n = 27 ÷ 0.15 = 180."
+      ],
+      explanation: [
+        "0.15 × n = 27.",
+        "n = 27 ÷ 0.15 = <strong>180</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: '75% of what number is 54?',
+      answer: "72",
+      hints: [
+        "Set up: 0.75 × n = 54.",
+        "Divide both sides by 0.75.",
+        "n = 54 ÷ 0.75 = 72."
+      ],
+      explanation: [
+        "0.75 × n = 54.",
+        "n = 54 ÷ 0.75 = <strong>72</strong>."
       ]
     }
   ],
@@ -5542,6 +8963,234 @@ EXTRA_QUESTIONS[7] = [
         "Original = $63 ÷ 0.70 = $90."
       ]
     }
+  ,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A pair of sneakers costs $75 and is 20% off. What is the sale price?',
+      choices: ["$60", "$55", "$65", "$70"],
+      answer: "$60",
+      hints: [
+        'Find the discount: 20% of $75.',
+        '0.20 \u00d7 75 = $15 discount.',
+        'Sale price = $75 \u2212 $15 = $60.'
+      ],
+      explanation: [
+        'Discount = 0.20 \u00d7 $75 = $15.',
+        'Sale price = $75 \u2212 $15 = $60.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A store buys a painting for $120 and marks it up by 65%. What is the selling price in dollars?',
+      answer: "198",
+      hints: [
+        'Markup = 65% of $120.',
+        '0.65 \u00d7 120 = $78.',
+        'Selling price = $120 + $78 = $198.'
+      ],
+      explanation: [
+        'Markup = 0.65 \u00d7 $120 = $78.',
+        'Selling price = $120 + $78 = $198.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A camera costs $135 after a 10% discount. What was the original price?',
+      choices: ["$150", "$148.50", "$145", "$140"],
+      answer: "$150",
+      hints: [
+        'After 10% off, you pay 90% of the original.',
+        '0.90 \u00d7 original = $135.',
+        'Original = $135 \u00f7 0.90 = $150.'
+      ],
+      explanation: [
+        '90% of original = $135.',
+        'Original = $135 \u00f7 0.90 = $150.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A jacket costs $85. It is on sale for 30% off. What is the sale price?',
+      choices: ["$59.50", "$55.00", "$60.50", "$65.00"],
+      answer: "$59.50",
+      hints: [
+        'Discount = 30% of $85 = 0.30 \u00d7 85.',
+        '0.30 \u00d7 85 = $25.50.',
+        'Sale price = $85 \u2212 $25.50 = $59.50.'
+      ],
+      explanation: [
+        'Discount = 0.30 \u00d7 $85 = $25.50.',
+        'Sale price = $85 \u2212 $25.50 = $59.50.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A store marks up a $42 item by 60%. What is the selling price?',
+      answer: "67.2",
+      hints: [
+        'Markup amount = 60% of $42 = 0.60 \u00d7 42.',
+        '0.60 \u00d7 42 = $25.20.',
+        'Selling price = $42 + $25.20 = $67.20.'
+      ],
+      explanation: [
+        'Markup = 0.60 \u00d7 $42 = $25.20.',
+        'Selling price = $42 + $25.20 = $67.20.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'After a 15% discount, a TV costs $510. What was the original price?',
+      choices: ["$600", "$585", "$550", "$620"],
+      answer: "$600",
+      hints: [
+        'After 15% off, you pay 85% of the original.',
+        '0.85 \u00d7 original = $510.',
+        'Original = $510 \u00f7 0.85 = $600.'
+      ],
+      explanation: [
+        '85% of original = $510.',
+        'Original = $510 \u00f7 0.85 = $600.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A jacket originally costs $85. It is on sale for 20% off. What is the sale price in dollars?',
+      answer: "68",
+      hints: [
+        "Discount = 20% of $85 = 0.20 × 85 = $17.",
+        "Sale price = $85 − $17.",
+        "Sale price = $68."
+      ],
+      explanation: [
+        "Discount = 0.20 × $85 = $17.",
+        "Sale price = $85 − $17 = $68."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A store marks up a $40 item by 35%. What is the selling price?',
+      choices: ["$54", "$52", "$56", "$48"],
+      answer: "$54",
+      hints: [
+        "Markup = 35% of $40 = 0.35 × 40 = $14.",
+        "Selling price = $40 + $14.",
+        "Selling price = $54."
+      ],
+      explanation: [
+        "Markup = 0.35 × $40 = $14.",
+        "Selling price = $40 + $14 = $54."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A $120 backpack is discounted 25%. What is the sale price?',
+      choices: ["$90", "$95", "$85", "$80"],
+      answer: "$90",
+      hints: [
+        "Discount = 25% of $120 = 0.25 × 120 = $30.",
+        "Sale price = $120 − $30.",
+        "Sale price = $90."
+      ],
+      explanation: [
+        "Discount = 0.25 × $120 = $30.",
+        "Sale price = $120 − $30 = $90."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A jacket costs $80 and is 30% off. What is the sale price?',
+      choices: ["$56", "$50", "$60", "$64"],
+      answer: "$56",
+      hints: [
+        "Find the discount: 30% of $80.",
+        "0.30 × 80 = $24 discount.",
+        "Sale price = $80 − $24 = $56."
+      ],
+      explanation: [
+        "Discount = 0.30 × $80 = $24.",
+        "Sale price = $80 − $24 = $56."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A store buys a table for $120 and marks it up 75%. What is the selling price in dollars?',
+      answer: "210",
+      hints: [
+        "Markup = 75% of $120.",
+        "0.75 × 120 = $90.",
+        "Selling price = $120 + $90 = $210."
+      ],
+      explanation: [
+        "Markup = 0.75 × $120 = $90.",
+        "Selling price = $120 + $90 = $210."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A laptop originally costs $600 and is on sale for 15% off. What is the sale price?',
+      choices: ["$510", "$540", "$500", "$480"],
+      answer: "$510",
+      hints: [
+        "Find the discount: 15% of $600.",
+        "0.15 × 600 = $90.",
+        "Sale price = $600 − $90 = $510."
+      ],
+      explanation: [
+        "Discount = 0.15 × $600 = $90.",
+        "Sale price = $600 − $90 = $510."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'The price of a jacket went from $50 to $62. What is the percent increase?',
+      answer: "24",
+      hints: [
+        "Find the amount of change: $62 − $50 = $12.",
+        "Divide by the original: 12 ÷ 50 = 0.24.",
+        "Multiply by 100: 0.24 × 100 = 24."
+      ],
+      explanation: [
+        "Change = $62 − $50 = $12.",
+        "Percent increase = (12 ÷ 50) × 100 = <strong>24%</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A town\'s population grew from 1,200 to 1,500. What is the percent increase?',
+      choices: ["25%", "20%", "30%", "15%"],
+      answer: "25%",
+      hints: [
+        "Change = 1500 − 1200 = 300.",
+        "Divide by original: 300 ÷ 1200.",
+        "300 ÷ 1200 = 0.25 = 25%."
+      ],
+      explanation: [
+        "Change = 1500 − 1200 = 300.",
+        "Percent increase = (300 ÷ 1200) × 100 = <strong>25%</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A plant grew from 8 inches to 11 inches. What is the percent increase?',
+      choices: ["37.5%", "30%", "27.5%", "40%"],
+      answer: "37.5%",
+      hints: [
+        "Change = 11 − 8 = 3 inches.",
+        "Divide by original: 3 ÷ 8 = 0.375.",
+        "0.375 × 100 = 37.5%."
+      ],
+      explanation: [
+        "Change = 11 − 8 = 3.",
+        "Percent increase = (3 ÷ 8) × 100 = <strong>37.5%</strong>."
+      ]
+    }
   ],
 
   // ----------------------------------------------------------
@@ -5883,6 +9532,233 @@ EXTRA_QUESTIONS[7] = [
       explanation: [
         "Change = 225 − 180 = 45.",
         "Percent increase = (45 ÷ 180) × 100 = 25%."
+      ]
+    }
+  ,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A stock price rose from $40 to $52. What is the percent increase?',
+      choices: ["30%", "20%", "25%", "12%"],
+      answer: "30%",
+      hints: [
+        'Change = 52 \u2212 40 = 12.',
+        'Percent change = (change \u00f7 original) \u00d7 100.',
+        '(12 \u00f7 40) \u00d7 100 = 30%.'
+      ],
+      explanation: [
+        'Change = $52 \u2212 $40 = $12.',
+        'Percent increase = (12 \u00f7 40) \u00d7 100 = 30%.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A town\u0027s population dropped from 800 to 600. What is the percent decrease?',
+      answer: "25",
+      hints: [
+        'Change = 800 \u2212 600 = 200.',
+        'Percent change = (200 \u00f7 800) \u00d7 100.',
+        '(200 \u00f7 800) \u00d7 100 = 25%.'
+      ],
+      explanation: [
+        'Change = 800 \u2212 600 = 200.',
+        'Percent decrease = (200 \u00f7 800) \u00d7 100 = 25%.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A test score went from 72 to 90. What is the percent increase?',
+      choices: ["25%", "18%", "20%", "30%"],
+      answer: "25%",
+      hints: [
+        'Change = 90 \u2212 72 = 18.',
+        'Percent increase = (18 \u00f7 72) \u00d7 100.',
+        '(18 \u00f7 72) \u00d7 100 = 25%.'
+      ],
+      explanation: [
+        'Change = 90 \u2212 72 = 18.',
+        'Percent increase = (18 \u00f7 72) \u00d7 100 = 25%.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A population grew from 400 to 500. What is the percent increase?',
+      answer: "25",
+      hints: [
+        'Change = 500 \u2212 400 = 100.',
+        'Percent increase = (100 \u00f7 400) \u00d7 100.',
+        '(100 \u00f7 400) \u00d7 100 = 25%.'
+      ],
+      explanation: [
+        'Change = 500 \u2212 400 = 100.',
+        'Percent increase = (100 \u00f7 400) \u00d7 100 = 25%.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'The price of a stock fell from $250 to $200. What is the percent decrease?',
+      choices: ["20%", "25%", "50%", "10%"],
+      answer: "20%",
+      hints: [
+        'Change = $250 \u2212 $200 = $50.',
+        'Percent decrease = (50 \u00f7 250) \u00d7 100.',
+        '(50 \u00f7 250) \u00d7 100 = 20%.'
+      ],
+      explanation: [
+        'Change = $250 \u2212 $200 = $50.',
+        'Percent decrease = (50 \u00f7 250) \u00d7 100 = 20%.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A town\u2019s population decreased from 12,000 to 9,600. What is the percent decrease?',
+      choices: ["20%", "25%", "15%", "30%"],
+      answer: "20%",
+      hints: [
+        'Change = 12,000 \u2212 9,600 = 2,400.',
+        'Percent decrease = (2,400 \u00f7 12,000) \u00d7 100.',
+        '(2,400 \u00f7 12,000) \u00d7 100 = 20%.'
+      ],
+      explanation: [
+        'Change = 12,000 \u2212 9,600 = 2,400.',
+        'Percent decrease = (2,400 \u00f7 12,000) \u00d7 100 = 20%.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A shirt was priced at $40 and is now $52. What is the percent increase?',
+      answer: "30",
+      hints: [
+        "Change = 52 − 40 = 12.",
+        "Percent change = (12 ÷ 40) × 100.",
+        "(12 ÷ 40) × 100 = 30%."
+      ],
+      explanation: [
+        "Change = $52 − $40 = $12.",
+        "Percent increase = (12 ÷ 40) × 100 = 30%."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A population dropped from 400 to 340. What is the percent decrease?',
+      choices: ["15%", "20%", "10%", "25%"],
+      answer: "15%",
+      hints: [
+        "Change = 400 − 340 = 60.",
+        "Percent change = (60 ÷ 400) × 100.",
+        "(60 ÷ 400) × 100 = 15%."
+      ],
+      explanation: [
+        "Change = 400 − 340 = 60.",
+        "Percent decrease = (60 ÷ 400) × 100 = 15%."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Rent increased from $800 to $920. What is the percent increase?',
+      choices: ["15%", "12%", "20%", "10%"],
+      answer: "15%",
+      hints: [
+        "Change = 920 − 800 = 120.",
+        "Percent change = (120 ÷ 800) × 100.",
+        "(120 ÷ 800) × 100 = 15%."
+      ],
+      explanation: [
+        "Change = $920 − $800 = $120.",
+        "Percent increase = (120 ÷ 800) × 100 = 15%."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A bicycle\'s price went from $150 to $180. What is the percent increase?',
+      answer: "20",
+      hints: [
+        "Change = 180 − 150 = 30.",
+        "Percent change = (30 ÷ 150) × 100.",
+        "(30 ÷ 150) × 100 = 20%."
+      ],
+      explanation: [
+        "Change = 180 − 150 = 30.",
+        "Percent increase = (30 ÷ 150) × 100 = 20%."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A company\'s sales dropped from $500 to $350. What is the percent decrease?',
+      choices: ["30%", "25%", "35%", "40%"],
+      answer: "30%",
+      hints: [
+        "Change = 500 − 350 = 150.",
+        "Percent change = (150 ÷ 500) × 100.",
+        "(150 ÷ 500) × 100 = 30%."
+      ],
+      explanation: [
+        "Change = 500 − 350 = 150.",
+        "Percent decrease = (150 ÷ 500) × 100 = 30%."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A population grew from 800 to 1,000. What is the percent increase?',
+      choices: ["25%", "20%", "30%", "15%"],
+      answer: "25%",
+      hints: [
+        "Change = 1000 − 800 = 200.",
+        "Percent change = (200 ÷ 800) × 100.",
+        "(200 ÷ 800) × 100 = 25%."
+      ],
+      explanation: [
+        "Change = 1000 − 800 = 200.",
+        "Percent increase = (200 ÷ 800) × 100 = 25%."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A town\'s population dropped from 800 to 600. What is the percent decrease?',
+      answer: "25",
+      hints: [
+        "Find the change: 800 − 600 = 200.",
+        "Divide by the original: 200 ÷ 800 = 0.25.",
+        "Multiply by 100: 0.25 × 100 = 25."
+      ],
+      explanation: [
+        "Change = 800 − 600 = 200.",
+        "Percent decrease = (200 ÷ 800) × 100 = <strong>25%</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A store\'s monthly revenue fell from $12,000 to $9,000. What is the percent decrease?',
+      choices: ["25%", "30%", "20%", "33%"],
+      answer: "25%",
+      hints: [
+        "Change = $12,000 − $9,000 = $3,000.",
+        "Divide by original: 3000 ÷ 12000 = 0.25.",
+        "0.25 × 100 = 25%."
+      ],
+      explanation: [
+        "Change = $12,000 − $9,000 = $3,000.",
+        "Percent decrease = (3000 ÷ 12000) × 100 = <strong>25%</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'The temperature dropped from 90°F to 72°F. What is the percent decrease?',
+      answer: "20",
+      hints: [
+        "Change = 90 − 72 = 18.",
+        "Divide by original: 18 ÷ 90 = 0.20.",
+        "0.20 × 100 = 20."
+      ],
+      explanation: [
+        "Change = 90 − 72 = 18.",
+        "Percent decrease = (18 ÷ 90) × 100 = <strong>20%</strong>."
       ]
     }
   ],
@@ -6227,6 +10103,233 @@ EXTRA_QUESTIONS[7] = [
         "The salesperson earns $340."
       ]
     }
+  ,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A meal costs $55. You leave a 15% tip. How much is the tip in dollars? Enter as a decimal.',
+      answer: "8.25",
+      hints: [
+        'Tip = 15% of $55.',
+        '0.15 \u00d7 55 = ?',
+        '0.15 \u00d7 55 = 8.25.'
+      ],
+      explanation: [
+        'Tip = 0.15 \u00d7 $55 = $8.25.',
+        'The tip is $8.25.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A laptop costs $600 with 9% sales tax. What is the total cost?',
+      choices: ["$654", "$609", "$660", "$645"],
+      answer: "$654",
+      hints: [
+        'Tax = 9% of $600 = 0.09 \u00d7 600.',
+        'Tax = $54.',
+        'Total = $600 + $54 = $654.'
+      ],
+      explanation: [
+        'Tax = 0.09 \u00d7 $600 = $54.',
+        'Total = $600 + $54 = $654.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A salesperson earns 8% commission on $3,500 in sales. How much commission do they earn in dollars?',
+      answer: "280",
+      hints: [
+        'Commission = 8% of $3,500.',
+        '0.08 \u00d7 3500 = ?',
+        '0.08 \u00d7 3500 = 280.'
+      ],
+      explanation: [
+        'Commission = 0.08 \u00d7 $3,500 = $280.',
+        'The salesperson earns $280.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A meal costs $45. You leave a 20% tip. How much is the tip?',
+      answer: "9",
+      hints: [
+        'Tip = 20% of $45.',
+        '0.20 \u00d7 45 = ?',
+        '0.20 \u00d7 45 = $9.'
+      ],
+      explanation: [
+        'Tip = 0.20 \u00d7 $45 = $9.',
+        'The tip is $9.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A laptop costs $680. Sales tax is 7.5%. What is the total cost including tax?',
+      choices: ["$731", "$714", "$748", "$700"],
+      answer: "$731",
+      hints: [
+        'Tax = 7.5% of $680 = 0.075 \u00d7 680.',
+        '0.075 \u00d7 680 = $51.',
+        'Total = $680 + $51 = $731.'
+      ],
+      explanation: [
+        'Tax = 0.075 \u00d7 $680 = $51.',
+        'Total = $680 + $51 = $731.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A real estate agent earns 6% commission. If a house sells for $275,000, how much commission does the agent earn?',
+      choices: ["$16,500", "$15,500", "$17,500", "$14,500"],
+      answer: "$16,500",
+      hints: [
+        'Commission = 6% of $275,000.',
+        '0.06 \u00d7 275,000 = ?',
+        '0.06 \u00d7 275,000 = $16,500.'
+      ],
+      explanation: [
+        'Commission = 0.06 \u00d7 $275,000 = $16,500.',
+        'The agent earns $16,500.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A meal costs $45. You leave a 20% tip. How much is the tip in dollars?',
+      answer: "9",
+      hints: [
+        "Tip = 20% of $45.",
+        "0.20 × 45 = ?",
+        "0.20 × 45 = $9."
+      ],
+      explanation: [
+        "Tip = 0.20 × $45 = $9.",
+        "The tip is $9."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A $250 item has 8% sales tax. What is the total cost including tax?',
+      choices: ["$270", "$258", "$278", "$268"],
+      answer: "$270",
+      hints: [
+        "Tax = 8% of $250 = 0.08 × 250 = $20.",
+        "Total = $250 + $20.",
+        "Total = $270."
+      ],
+      explanation: [
+        "Tax = 0.08 × $250 = $20.",
+        "Total cost = $250 + $20 = $270."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A salesperson earns a 6% commission. If they sell $3,500 worth of goods, how much commission do they earn?',
+      choices: ["$210", "$180", "$250", "$350"],
+      answer: "$210",
+      hints: [
+        "Commission = 6% of $3,500.",
+        "0.06 × 3,500 = ?",
+        "0.06 × 3,500 = $210."
+      ],
+      explanation: [
+        "Commission = 0.06 × $3,500 = $210.",
+        "The salesperson earns $210."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A meal costs $65. You leave an 18% tip. How much is the tip in dollars (round to nearest cent)?',
+      answer: "11.70",
+      hints: [
+        "Tip = 18% of $65.",
+        "0.18 × 65 = ?",
+        "0.18 × 65 = 11.70."
+      ],
+      explanation: [
+        "Tip = 0.18 × $65 = $11.70.",
+        "The tip is $11.70."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A salesperson earns 12% commission on a $750 sale. How much commission is earned?',
+      choices: ["$90", "$75", "$100", "$85"],
+      answer: "$90",
+      hints: [
+        "Commission = 12% of $750.",
+        "0.12 × 750 = ?",
+        "0.12 × 750 = $90."
+      ],
+      explanation: [
+        "Commission = 0.12 × $750 = $90.",
+        "The salesperson earns $90."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A pair of shoes costs $85 with 6% sales tax. What is the total cost?',
+      choices: ["$90.10", "$91.00", "$89.10", "$88.10"],
+      answer: "$90.10",
+      hints: [
+        "Tax = 6% of $85 = 0.06 × 85.",
+        "Tax = $5.10.",
+        "Total = $85 + $5.10 = $90.10."
+      ],
+      explanation: [
+        "Tax = 0.06 × $85 = $5.10.",
+        "Total = $85 + $5.10 = $90.10."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A $45 shirt is on sale for 20% off. What is the sale price?',
+      choices: ["$36", "$40", "$38", "$35"],
+      answer: "$36",
+      hints: [
+        "Find the discount: 20% of $45 = 0.20 × 45 = $9.",
+        "Subtract from original: $45 − $9.",
+        "$45 − $9 = $36."
+      ],
+      explanation: [
+        "Discount = 0.20 × $45 = <strong>$9</strong>.",
+        "Sale price = $45 − $9 = <strong>$36</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A $120 pair of shoes is 35% off. What is the sale price in dollars?',
+      answer: "78",
+      hints: [
+        "Find the discount: 35% of $120 = 0.35 × 120 = $42.",
+        "Subtract the discount from the price.",
+        "$120 − $42 = $78."
+      ],
+      explanation: [
+        "Discount = 0.35 × $120 = <strong>$42</strong>.",
+        "Sale price = $120 − $42 = <strong>$78</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A backpack that costs $60 is on sale for 15% off. What is the sale price?',
+      choices: ["$51", "$50", "$54", "$48"],
+      answer: "$51",
+      hints: [
+        "Find the discount: 15% of $60 = 0.15 × 60 = $9.",
+        "Subtract from original price.",
+        "$60 − $9 = $51."
+      ],
+      explanation: [
+        "Discount = 0.15 × $60 = <strong>$9</strong>.",
+        "Sale price = $60 − $9 = <strong>$51</strong>."
+      ]
+    }
   ],
 
   // ----------------------------------------------------------
@@ -6567,6 +10670,232 @@ EXTRA_QUESTIONS[7] = [
       explanation: [
         "0.18 × x = 54.",
         "x = 54 ÷ 0.18 = 300."
+      ]
+    }
+  ,
+    {
+      type: "mc", difficulty: 2,
+      question: '30% of a number is 21. What is the number?',
+      choices: ["70", "63", "60", "80"],
+      answer: "70",
+      hints: [
+        'Set up: 0.30 \u00d7 x = 21.',
+        'Divide both sides by 0.30.',
+        'x = 21 \u00f7 0.30 = 70.'
+      ],
+      explanation: [
+        '0.30 \u00d7 x = 21.',
+        'x = 21 \u00f7 0.30 = 70.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: '12% of what number is 42?',
+      answer: "350",
+      hints: [
+        '0.12 \u00d7 x = 42.',
+        'Divide: x = 42 \u00f7 0.12.',
+        'x = 350.'
+      ],
+      explanation: [
+        '0.12 \u00d7 x = 42.',
+        'x = 42 \u00f7 0.12 = 350.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: '45% of a number is 108. What is the number?',
+      choices: ["240", "200", "250", "216"],
+      answer: "240",
+      hints: [
+        '0.45 \u00d7 x = 108.',
+        'x = 108 \u00f7 0.45.',
+        'x = 240.'
+      ],
+      explanation: [
+        '0.45 \u00d7 x = 108.',
+        'x = 108 \u00f7 0.45 = 240.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: '30% of a number is 54. What is the number?',
+      answer: "180",
+      hints: [
+        '0.30 \u00d7 x = 54.',
+        'x = 54 \u00f7 0.30.',
+        'x = 180.'
+      ],
+      explanation: [
+        '0.30 \u00d7 x = 54.',
+        'x = 54 \u00f7 0.30 = 180.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: '12% of what number is 36?',
+      choices: ["300", "288", "360", "240"],
+      answer: "300",
+      hints: [
+        '0.12 \u00d7 x = 36.',
+        'x = 36 \u00f7 0.12.',
+        'x = 300.'
+      ],
+      explanation: [
+        '0.12 \u00d7 x = 36.',
+        'x = 36 \u00f7 0.12 = 300.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: '85% of a number is 340. What is the number?',
+      answer: "400",
+      hints: [
+        '0.85 \u00d7 x = 340.',
+        'x = 340 \u00f7 0.85.',
+        'x = 400.'
+      ],
+      explanation: [
+        '0.85 \u00d7 x = 340.',
+        'x = 340 \u00f7 0.85 = 400.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: '30% of a number is 54. What is the number?',
+      answer: "180",
+      hints: [
+        "Set up: 0.30 × n = 54.",
+        "n = 54 ÷ 0.30.",
+        "n = 180."
+      ],
+      explanation: [
+        "0.30 × n = 54.",
+        "n = 54 ÷ 0.30 = 180."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: '15% of what number is 27?',
+      choices: ["180", "162", "200", "135"],
+      answer: "180",
+      hints: [
+        "Set up: 0.15 × n = 27.",
+        "n = 27 ÷ 0.15.",
+        "n = 180."
+      ],
+      explanation: [
+        "0.15 × n = 27.",
+        "n = 27 ÷ 0.15 = 180."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: '45% of a number is 99. What is the number?',
+      answer: "220",
+      hints: [
+        "Set up: 0.45 × n = 99.",
+        "n = 99 ÷ 0.45.",
+        "n = 220."
+      ],
+      explanation: [
+        "0.45 × n = 99.",
+        "n = 99 ÷ 0.45 = 220."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: '30% of a number is 45. What is the number?',
+      choices: ["150", "135", "120", "180"],
+      answer: "150",
+      hints: [
+        "Set up: 0.30 × x = 45.",
+        "Divide both sides by 0.30.",
+        "x = 45 ÷ 0.30 = 150."
+      ],
+      explanation: [
+        "0.30 × x = 45.",
+        "x = 45 ÷ 0.30 = 150."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: '12% of what number is 36?',
+      answer: "300",
+      hints: [
+        "0.12 × x = 36.",
+        "Divide: x = 36 ÷ 0.12.",
+        "x = 300."
+      ],
+      explanation: [
+        "0.12 × x = 36.",
+        "x = 36 ÷ 0.12 = 300."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: '15% of a number is 27. What is the number?',
+      choices: ["180", "150", "200", "162"],
+      answer: "180",
+      hints: [
+        "Set up: 0.15 × x = 27.",
+        "Divide both sides by 0.15.",
+        "x = 27 ÷ 0.15 = 180."
+      ],
+      explanation: [
+        "0.15 × x = 27.",
+        "x = 27 ÷ 0.15 = 180."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A dinner bill is $35. The tax rate is 8% and you leave a 15% tip on the pre-tax amount. What is the total? Enter as a decimal (like 43.05).',
+      answer: "43.05",
+      hints: [
+        "Tax = 8% of $35 = 0.08 × 35 = $2.80.",
+        "Tip = 15% of $35 = 0.15 × 35 = $5.25.",
+        "Total = $35 + $2.80 + $5.25 = $43.05."
+      ],
+      explanation: [
+        "Tax = $2.80, Tip = $5.25.",
+        "Total = $35 + $2.80 + $5.25 = <strong>$43.05</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'You buy a $24 book and the sales tax is 6.5%. What is the total cost?',
+      choices: ["$25.56", "$25.50", "$26.00", "$25.44"],
+      answer: "$25.56",
+      hints: [
+        "Tax = 6.5% of $24 = 0.065 × 24.",
+        "0.065 × 24 = $1.56.",
+        "Total = $24 + $1.56 = $25.56."
+      ],
+      explanation: [
+        "Tax = 0.065 × $24 = <strong>$1.56</strong>.",
+        "Total = $24 + $1.56 = <strong>$25.56</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A haircut costs $40. You want to leave a 20% tip. What is the total you pay?',
+      choices: ["$48", "$50", "$44", "$46"],
+      answer: "$48",
+      hints: [
+        "Tip = 20% of $40 = 0.20 × 40 = $8.",
+        "Add tip to the original cost.",
+        "$40 + $8 = $48."
+      ],
+      explanation: [
+        "Tip = 0.20 × $40 = <strong>$8</strong>.",
+        "Total = $40 + $8 = <strong>$48</strong>."
       ]
     }
   ],
@@ -6920,6 +11249,235 @@ EXTRA_QUESTIONS[7] = [
         "After year 2: $690 × 1.10 = $759."
       ]
     }
+  ,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A $200 item increases by 25%, then decreases by 20%. What is the final price?',
+      choices: ["$200", "$210", "$190", "$225"],
+      answer: "$200",
+      hints: [
+        'After 25% increase: $200 \u00d7 1.25 = $250.',
+        'After 20% decrease: $250 \u00d7 0.80 = $200.',
+        'The final price happens to be $200.'
+      ],
+      explanation: [
+        'After increase: $200 \u00d7 1.25 = $250.',
+        'After decrease: $250 \u00d7 0.80 = $200.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A population of 500 increases by 20%, then increases by 10%. What is the final population?',
+      answer: "660",
+      hints: [
+        'After 20% increase: 500 \u00d7 1.20 = 600.',
+        'After 10% increase: 600 \u00d7 1.10 = ?',
+        '600 \u00d7 1.10 = 660.'
+      ],
+      explanation: [
+        'After first increase: 500 \u00d7 1.20 = 600.',
+        'After second increase: 600 \u00d7 1.10 = 660.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A $120 coat is discounted 25%, then an additional 20% off the sale price. What is the final price?',
+      choices: ["$72", "$66", "$54", "$78"],
+      answer: "$72",
+      hints: [
+        'After 25% off: $120 \u00d7 0.75 = $90.',
+        'After additional 20% off: $90 \u00d7 0.80 = ?',
+        '$90 \u00d7 0.80 = $72.'
+      ],
+      explanation: [
+        'After first discount: $120 \u00d7 0.75 = $90.',
+        'After second discount: $90 \u00d7 0.80 = $72.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'A shirt is marked up 40% and then discounted 40%. Is the final price equal to the original?',
+      choices: ["No, it is less", "Yes, they are equal", "No, it is more", "Cannot tell"],
+      answer: "No, it is less",
+      hints: [
+        'Start with $100. After 40% markup: $100 \u00d7 1.40 = $140.',
+        'After 40% discount: $140 \u00d7 0.60 = $84.',
+        '$84 < $100, so the final price is less.'
+      ],
+      explanation: [
+        '$100 \u00d7 1.40 = $140. Then $140 \u00d7 0.60 = $84.',
+        'The final price ($84) is less than the original ($100).'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A $200 item is increased by 10% and then decreased by 10%. What is the final price?',
+      answer: "198",
+      hints: [
+        'After 10% increase: $200 \u00d7 1.10 = $220.',
+        'After 10% decrease: $220 \u00d7 0.90 = ?',
+        '$220 \u00d7 0.90 = $198.'
+      ],
+      explanation: [
+        '$200 \u00d7 1.10 = $220.',
+        '$220 \u00d7 0.90 = $198.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A stock increases 50% one year and decreases 30% the next. If it started at $400, what is it worth now?',
+      choices: ["$420", "$480", "$380", "$400"],
+      answer: "$420",
+      hints: [
+        'After 50% increase: $400 \u00d7 1.50 = $600.',
+        'After 30% decrease: $600 \u00d7 0.70 = ?',
+        '$600 \u00d7 0.70 = $420.'
+      ],
+      explanation: [
+        '$400 \u00d7 1.50 = $600.',
+        '$600 \u00d7 0.70 = $420.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'A $200 item is marked up 40%, then discounted 25%. What is the final price?',
+      choices: ["$210", "$200", "$220", "$230"],
+      answer: "$210",
+      hints: [
+        "After 40% markup: $200 × 1.40 = $280.",
+        "After 25% discount: $280 × 0.75.",
+        "$280 × 0.75 = $210."
+      ],
+      explanation: [
+        "$200 × 1.40 = $280.",
+        "$280 × 0.75 = $210."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A stock goes up 20% then down 10%. If it started at $500, what is the final value in dollars?',
+      answer: "540",
+      hints: [
+        "After 20% increase: $500 × 1.20 = $600.",
+        "After 10% decrease: $600 × 0.90.",
+        "$600 × 0.90 = $540."
+      ],
+      explanation: [
+        "$500 × 1.20 = $600.",
+        "$600 × 0.90 = $540."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A $300 item is discounted 10%, then another 20% off the new price. What is the final price?',
+      choices: ["$216", "$210", "$220", "$200"],
+      answer: "$216",
+      hints: [
+        "After 10% off: $300 × 0.90 = $270.",
+        "After 20% off the new price: $270 × 0.80.",
+        "$270 × 0.80 = $216."
+      ],
+      explanation: [
+        "$300 × 0.90 = $270.",
+        "$270 × 0.80 = $216."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'A $200 item increases by 20%, then decreases by 25%. What is the final price?',
+      choices: ["$180", "$200", "$190", "$175"],
+      answer: "$180",
+      hints: [
+        "After 20% increase: $200 × 1.20 = $240.",
+        "After 25% decrease: $240 × 0.75 = $180.",
+        "The final price is $180."
+      ],
+      explanation: [
+        "After increase: $200 × 1.20 = $240.",
+        "After decrease: $240 × 0.75 = $180.",
+        "The final price is $180."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'A stock worth $400 drops by 25%, then rises by 40%. What is the final value in dollars?',
+      answer: "420",
+      hints: [
+        "After 25% drop: $400 × 0.75 = $300.",
+        "After 40% rise: $300 × 1.40 = ?",
+        "$300 × 1.40 = $420."
+      ],
+      explanation: [
+        "After drop: $400 × 0.75 = $300.",
+        "After rise: $300 × 1.40 = $420."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A price of $500 is increased by 10% twice in a row. What is the final price?',
+      choices: ["$605", "$600", "$610", "$550"],
+      answer: "$605",
+      hints: [
+        "First increase: $500 × 1.10 = $550.",
+        "Second increase: $550 × 1.10 = $605.",
+        "The final price is $605."
+      ],
+      explanation: [
+        "After first 10%: $500 × 1.10 = $550.",
+        "After second 10%: $550 × 1.10 = $605.",
+        "The final price is $605."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'You deposit $500 in a savings account that earns 4% simple interest per year. How much interest do you earn after 3 years?',
+      answer: "60",
+      hints: [
+        "Use the formula: I = P × r × t.",
+        "I = 500 × 0.04 × 3.",
+        "I = 60."
+      ],
+      explanation: [
+        "I = P × r × t = 500 × 0.04 × 3.",
+        "I = <strong>$60</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Maria invests $1,200 at 5% simple interest for 2 years. What is the total amount she has after 2 years?',
+      choices: ["$1,320", "$1,200", "$1,260", "$1,440"],
+      answer: "$1,320",
+      hints: [
+        "Interest = P × r × t = 1200 × 0.05 × 2.",
+        "Interest = $120.",
+        "Total = $1,200 + $120 = $1,320."
+      ],
+      explanation: [
+        "I = 1200 × 0.05 × 2 = <strong>$120</strong>.",
+        "Total = $1,200 + $120 = <strong>$1,320</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Jake borrows $800 at 6% simple interest for 4 years. How much interest will he owe?',
+      answer: "192",
+      hints: [
+        "I = P × r × t.",
+        "I = 800 × 0.06 × 4.",
+        "I = 192."
+      ],
+      explanation: [
+        "I = 800 × 0.06 × 4 = <strong>$192</strong>.",
+        "Jake will owe $192 in interest."
+      ]
+    }
   ]
 ];
 
@@ -7268,6 +11826,232 @@ EXTRA_QUESTIONS[8] = [
         "58 is not a perfect square (7² = 49, 8² = 64)."
       ]
     }
+  ,
+    {
+      type: "mc", difficulty: 1,
+      question: 'What is <span class="math">14^2</span>?',
+      choices: ["196", "184", "168", "204"],
+      answer: "196",
+      hints: [
+        '14 squared means 14 \u00d7 14.',
+        '14 \u00d7 14 = ?',
+        '14 \u00d7 14 = 196.'
+      ],
+      explanation: [
+        '14\u00b2 = 14 \u00d7 14 = 196.',
+        '196 is a perfect square.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">17^2</span>?',
+      answer: "289",
+      hints: [
+        '17 squared means 17 \u00d7 17.',
+        '17 \u00d7 17 = ?',
+        '17 \u00d7 17 = 289.'
+      ],
+      explanation: [
+        '17\u00b2 = 17 \u00d7 17 = 289.',
+        '289 is a perfect square.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which of the following is NOT a perfect square?',
+      choices: ["72", "64", "81", "100"],
+      answer: "72",
+      hints: [
+        'Check each: 64 = 8\u00b2, 81 = 9\u00b2, 100 = 10\u00b2.',
+        'What about 72?',
+        '8\u00b2 = 64, 9\u00b2 = 81 \u2014 no integer squared gives 72.'
+      ],
+      explanation: [
+        '64 = 8\u00b2, 81 = 9\u00b2, 100 = 10\u00b2.',
+        '72 is not a perfect square (it falls between 8\u00b2 and 9\u00b2).'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 1,
+      question: 'Which of the following is a perfect square?',
+      choices: ["144", "130", "150", "140"],
+      answer: "144",
+      hints: [
+        'A perfect square is a number that equals some integer times itself.',
+        'Check: 12 \u00d7 12 = 144.',
+        '144 is a perfect square.'
+      ],
+      explanation: [
+        '12\u00b2 = 144.',
+        '144 is the only perfect square among the choices.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is 13 squared?',
+      answer: "169",
+      hints: [
+        '13 squared means 13 \u00d7 13.',
+        '13 \u00d7 13 = ?',
+        '13 \u00d7 13 = 169.'
+      ],
+      explanation: [
+        '13\u00b2 = 13 \u00d7 13 = 169.',
+        '169 is a perfect square.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Is 120 a perfect square?',
+      choices: ["No", "Yes"],
+      answer: "No",
+      hints: [
+        '10\u00b2 = 100 and 11\u00b2 = 121.',
+        '120 falls between 100 and 121.',
+        'No integer squared gives 120, so it is not a perfect square.'
+      ],
+      explanation: [
+        '10\u00b2 = 100, 11\u00b2 = 121.',
+        '120 is between them and is not a perfect square.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">17^2</span>?',
+      answer: "289",
+      hints: [
+        "17 squared means 17 × 17.",
+        "17 × 17 = ?",
+        "17 × 17 = 289."
+      ],
+      explanation: [
+        "17² = 17 × 17 = 289.",
+        "289 is a perfect square."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Which of the following is a perfect square?',
+      choices: ["100", "90", "110", "95"],
+      answer: "100",
+      hints: [
+        "A perfect square is a number times itself.",
+        "10 × 10 = 100.",
+        "100 is a perfect square."
+      ],
+      explanation: [
+        "10 × 10 = 100.",
+        "100 is a perfect square; 90, 110, 95 are not."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which number is NOT a perfect square?',
+      choices: ["72", "64", "81", "196"],
+      answer: "72",
+      hints: [
+        "Check each: 64 = 8², 81 = 9², 196 = 14².",
+        "What about 72?",
+        "No integer times itself gives 72."
+      ],
+      explanation: [
+        "64 = 8², 81 = 9², 196 = 14².",
+        "72 is not a perfect square (8² = 64, 9² = 81)."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">17^2</span>?',
+      answer: "289",
+      hints: [
+        "17² means 17 × 17.",
+        "17 × 17 = ?",
+        "17 × 17 = 289."
+      ],
+      explanation: [
+        "17 × 17 = 289.",
+        "17² = 289."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">19^2</span>?',
+      choices: ["361", "341", "381", "329"],
+      answer: "361",
+      hints: [
+        "19² means 19 × 19.",
+        "Compute: 20² = 400, subtract 20 + 19 = 39.",
+        "400 − 39 = 361."
+      ],
+      explanation: [
+        "19 × 19 = 361.",
+        "Or: 20² − (20 + 19) = 400 − 39 = 361."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">14^2</span>?',
+      answer: "196",
+      hints: [
+        "14² means 14 × 14.",
+        "14 × 14 = ?",
+        "14 × 14 = 196."
+      ],
+      explanation: [
+        "14 × 14 = 196.",
+        "14² = 196."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">&radic;144</span>?',
+      answer: "12",
+      hints: [
+        "Ask: what number times itself equals 144?",
+        "Try 12: 12 × 12 = 144.",
+        "So the square root of 144 is 12."
+      ],
+      explanation: [
+        "12 × 12 = 144.",
+        "&radic;144 = <strong>12</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">&radic;196</span>?',
+      choices: ["14", "13", "15", "16"],
+      answer: "14",
+      hints: [
+        "Ask: what number squared equals 196?",
+        "Try 14: 14 × 14 = 196.",
+        "So the square root is 14."
+      ],
+      explanation: [
+        "14 × 14 = 196.",
+        "&radic;196 = <strong>14</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">&radic;289</span>?',
+      answer: "17",
+      hints: [
+        "Think of perfect squares near 289.",
+        "16² = 256 and 17² = 289.",
+        "So &radic;289 = 17."
+      ],
+      explanation: [
+        "17 × 17 = 289.",
+        "&radic;289 = <strong>17</strong>."
+      ]
+    }
   ],
 
   // ----------------------------------------------------------
@@ -7606,6 +12390,232 @@ EXTRA_QUESTIONS[8] = [
       explanation: [
         "18 × 18 = 324.",
         "√324 = 18."
+      ]
+    }
+  ,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">\\sqrt{144}</span>?',
+      answer: "12",
+      hints: [
+        'Find a number that multiplied by itself gives 144.',
+        'Try 12: 12 \u00d7 12 = 144.',
+        '\u221a144 = 12.'
+      ],
+      explanation: [
+        '12 \u00d7 12 = 144.',
+        '\u221a144 = 12.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\\sqrt{196}</span>?',
+      choices: ["14", "13", "15", "16"],
+      answer: "14",
+      hints: [
+        'Find a number that multiplied by itself gives 196.',
+        'Try 14: 14 \u00d7 14 = 196.',
+        '\u221a196 = 14.'
+      ],
+      explanation: [
+        '14 \u00d7 14 = 196.',
+        '\u221a196 = 14.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">\\sqrt{225}</span>?',
+      answer: "15",
+      hints: [
+        'Find a number that multiplied by itself gives 225.',
+        'Try 15: 15 \u00d7 15 = 225.',
+        '\u221a225 = 15.'
+      ],
+      explanation: [
+        '15 \u00d7 15 = 225.',
+        '\u221a225 = 15.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">\\sqrt{196}</span>?',
+      answer: "14",
+      hints: [
+        'Find a number that when multiplied by itself gives 196.',
+        'Try 14: 14 \u00d7 14 = 196.',
+        '\u221a196 = 14.'
+      ],
+      explanation: [
+        '14 \u00d7 14 = 196.',
+        '\u221a196 = 14.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\\sqrt{169}</span>?',
+      choices: ["13", "12", "14", "11"],
+      answer: "13",
+      hints: [
+        'Find a number that times itself equals 169.',
+        'Try 13: 13 \u00d7 13 = 169.',
+        '\u221a169 = 13.'
+      ],
+      explanation: [
+        '13 \u00d7 13 = 169.',
+        '\u221a169 = 13.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 1,
+      question: 'What is <span class="math">\\sqrt{64}</span>?',
+      choices: ["8", "6", "7", "9"],
+      answer: "8",
+      hints: [
+        'Think: what number times itself gives 64?',
+        '8 \u00d7 8 = 64.',
+        '\u221a64 = 8.'
+      ],
+      explanation: [
+        '8 \u00d7 8 = 64.',
+        '\u221a64 = 8.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">\sqrt{144}</span>?',
+      answer: "12",
+      hints: [
+        "Find the number that times itself gives 144.",
+        "12 × 12 = 144.",
+        "√144 = 12."
+      ],
+      explanation: [
+        "12 × 12 = 144.",
+        "√144 = 12."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\sqrt{196}</span>?',
+      choices: ["14", "13", "15", "16"],
+      answer: "14",
+      hints: [
+        "Find the number that times itself gives 196.",
+        "14 × 14 = 196.",
+        "√196 = 14."
+      ],
+      explanation: [
+        "14 × 14 = 196.",
+        "√196 = 14."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">\sqrt{225}</span>?',
+      answer: "15",
+      hints: [
+        "Find the number that times itself gives 225.",
+        "15 × 15 = 225.",
+        "√225 = 15."
+      ],
+      explanation: [
+        "15 × 15 = 225.",
+        "√225 = 15."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'What is <span class="math">\sqrt{100}</span>?',
+      choices: ["10", "11", "9", "12"],
+      answer: "10",
+      hints: [
+        "What number times itself equals 100?",
+        "10 × 10 = 100.",
+        "√100 = 10."
+      ],
+      explanation: [
+        "10 × 10 = 100.",
+        "Therefore √100 = 10."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">\sqrt{144}</span>?',
+      answer: "12",
+      hints: [
+        "What number squared equals 144?",
+        "Try 12: 12 × 12 = 144.",
+        "√144 = 12."
+      ],
+      explanation: [
+        "12 × 12 = 144.",
+        "Therefore √144 = 12."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'What is <span class="math">\sqrt{36}</span>?',
+      choices: ["6", "7", "5", "8"],
+      answer: "6",
+      hints: [
+        "What number times itself equals 36?",
+        "6 × 6 = 36.",
+        "√36 = 6."
+      ],
+      explanation: [
+        "6 × 6 = 36.",
+        "Therefore √36 = 6."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Between which two consecutive whole numbers is <span class="math">&radic;50</span>?',
+      choices: ["7 and 8", "6 and 7", "8 and 9", "5 and 6"],
+      answer: "7 and 8",
+      hints: [
+        "Find perfect squares near 50.",
+        "7² = 49 and 8² = 64.",
+        "Since 49 < 50 < 64, &radic;50 is between 7 and 8."
+      ],
+      explanation: [
+        "7² = 49 and 8² = 64.",
+        "49 < 50 < 64, so &radic;50 is between <strong>7 and 8</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Between which two consecutive whole numbers is <span class="math">&radic;90</span>?',
+      choices: ["9 and 10", "8 and 9", "10 and 11", "7 and 8"],
+      answer: "9 and 10",
+      hints: [
+        "Find perfect squares near 90.",
+        "9² = 81 and 10² = 100.",
+        "Since 81 < 90 < 100, &radic;90 is between 9 and 10."
+      ],
+      explanation: [
+        "9² = 81 and 10² = 100.",
+        "81 < 90 < 100, so &radic;90 is between <strong>9 and 10</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: '<span class="math">&radic;30</span> is between two consecutive whole numbers. What is the smaller of those two numbers?',
+      answer: "5",
+      hints: [
+        "Find perfect squares near 30.",
+        "5² = 25 and 6² = 36.",
+        "25 < 30 < 36, so &radic;30 is between 5 and 6."
+      ],
+      explanation: [
+        "5² = 25 and 6² = 36.",
+        "Since 25 < 30 < 36, the smaller whole number is <strong>5</strong>."
       ]
     }
   ],
@@ -7954,6 +12964,234 @@ EXTRA_QUESTIONS[8] = [
         "125 is between them, so it is not a perfect square."
       ]
     }
+  ,
+    {
+      type: "mc", difficulty: 1,
+      question: 'Is 144 a perfect square?',
+      choices: ["Yes", "No"],
+      answer: "Yes",
+      hints: [
+        'Can you find an integer whose square is 144?',
+        'Try 12: 12 \u00d7 12 = 144.',
+        'Yes, 144 is a perfect square.'
+      ],
+      explanation: [
+        '12 \u00d7 12 = 144.',
+        'Since 12 is a whole number, 144 is a perfect square.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Is 90 a perfect square?',
+      choices: ["No", "Yes"],
+      answer: "No",
+      hints: [
+        '9\u00b2 = 81 and 10\u00b2 = 100.',
+        '90 is between these, so it is not a perfect square.',
+        'No whole number squared equals 90.'
+      ],
+      explanation: [
+        '9\u00b2 = 81 < 90 < 100 = 10\u00b2.',
+        'No integer squared equals 90, so it is not a perfect square.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is the smallest perfect square greater than 200?',
+      answer: "225",
+      hints: [
+        '14\u00b2 = 196 and 15\u00b2 = 225.',
+        '200 is between 196 and 225.',
+        'The next perfect square after 200 is 225.'
+      ],
+      explanation: [
+        '14\u00b2 = 196 < 200 < 225 = 15\u00b2.',
+        'The smallest perfect square greater than 200 is 225.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 1,
+      question: 'Which of these is NOT a perfect square: 49, 56, 81, 121?',
+      choices: ["56", "49", "81", "121"],
+      answer: "56",
+      hints: [
+        '7\u00b2 = 49, 9\u00b2 = 81, 11\u00b2 = 121.',
+        'Check 56: 7\u00b2 = 49, 8\u00b2 = 64.',
+        '56 is between 49 and 64 and is not a perfect square.'
+      ],
+      explanation: [
+        '49 = 7\u00b2, 81 = 9\u00b2, 121 = 11\u00b2. All are perfect squares.',
+        '56 is not a perfect square (it falls between 7\u00b2 and 8\u00b2).'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is the largest perfect square less than 150?',
+      answer: "144",
+      hints: [
+        'Find perfect squares near 150.',
+        '12\u00b2 = 144 and 13\u00b2 = 169.',
+        '144 < 150 < 169, so 144 is the answer.'
+      ],
+      explanation: [
+        '12\u00b2 = 144 and 13\u00b2 = 169.',
+        'The largest perfect square less than 150 is 144.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Between which two consecutive perfect squares does 110 fall?',
+      choices: ["100 and 121", "81 and 100", "121 and 144", "64 and 81"],
+      answer: "100 and 121",
+      hints: [
+        '10\u00b2 = 100 and 11\u00b2 = 121.',
+        'Is 100 < 110 < 121?',
+        'Yes, 110 falls between 100 and 121.'
+      ],
+      explanation: [
+        '10\u00b2 = 100 and 11\u00b2 = 121.',
+        '100 < 110 < 121.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 1,
+      question: 'Is 256 a perfect square?',
+      choices: ["Yes", "No"],
+      answer: "Yes",
+      hints: [
+        "A perfect square is a number times itself.",
+        "16 × 16 = 256.",
+        "256 is a perfect square."
+      ],
+      explanation: [
+        "16 × 16 = 256.",
+        "Yes, 256 is a perfect square."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is the square root of 289?',
+      answer: "17",
+      hints: [
+        "Find the number that times itself gives 289.",
+        "17 × 17 = 289.",
+        "√289 = 17."
+      ],
+      explanation: [
+        "17 × 17 = 289.",
+        "√289 = 17."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which of the following is a perfect square?',
+      choices: ["324", "320", "330", "340"],
+      answer: "324",
+      hints: [
+        "A perfect square is an integer times itself.",
+        "18 × 18 = 324.",
+        "324 is a perfect square."
+      ],
+      explanation: [
+        "18 × 18 = 324.",
+        "324 is a perfect square; the others are not."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Is 225 a perfect square?',
+      choices: ["Yes", "No"],
+      answer: "Yes",
+      hints: [
+        "Can you find an integer whose square is 225?",
+        "Try 15: 15 × 15 = 225.",
+        "Yes, 225 is a perfect square."
+      ],
+      explanation: [
+        "15 × 15 = 225.",
+        "Since 15 is a whole number, 225 is a perfect square."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is the smallest perfect square greater than 200?',
+      answer: "225",
+      hints: [
+        "14² = 196 and 15² = 225.",
+        "196 < 200 < 225.",
+        "The smallest perfect square greater than 200 is 225."
+      ],
+      explanation: [
+        "14² = 196 (too small), 15² = 225.",
+        "225 is the smallest perfect square above 200."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Is 130 a perfect square?',
+      choices: ["No", "Yes"],
+      answer: "No",
+      hints: [
+        "11² = 121 and 12² = 144.",
+        "130 is between these, so it is not a perfect square.",
+        "No whole number squared equals 130."
+      ],
+      explanation: [
+        "11² = 121 < 130 < 144 = 12².",
+        "Since 130 falls between two consecutive perfect squares, it is not a perfect square."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Is 225 a perfect square?',
+      choices: ["Yes", "No", "Only if divided by 5", "Cannot be determined"],
+      answer: "Yes",
+      hints: [
+        "Try to find a whole number whose square is 225.",
+        "15 × 15 = 225.",
+        "Since 15² = 225, it is a perfect square."
+      ],
+      explanation: [
+        "15 × 15 = 225.",
+        "225 is a <strong>perfect square</strong> because 15² = 225."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which of the following is NOT a perfect square?',
+      choices: ["200", "169", "256", "324"],
+      answer: "200",
+      hints: [
+        "Check each: 13² = 169, 16² = 256, 18² = 324.",
+        "Is there a whole number whose square is 200?",
+        "14² = 196 and 15² = 225, so 200 is not a perfect square."
+      ],
+      explanation: [
+        "169 = 13², 256 = 16², 324 = 18².",
+        "<strong>200</strong> is not a perfect square (between 14² = 196 and 15² = 225)."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is the smallest perfect square greater than 150?',
+      answer: "169",
+      hints: [
+        "12² = 144, which is less than 150.",
+        "13² = 169.",
+        "169 > 150, so it is the first perfect square above 150."
+      ],
+      explanation: [
+        "12² = 144 (too small). 13² = 169.",
+        "The smallest perfect square greater than 150 is <strong>169</strong>."
+      ]
+    }
   ],
 
   // ----------------------------------------------------------
@@ -8293,6 +13531,233 @@ EXTRA_QUESTIONS[8] = [
       explanation: [
         "29 × 29 = 841.",
         "√841 = 29."
+      ]
+    }
+  ,
+    {
+      type: "mc", difficulty: 1,
+      question: 'What is <span class="math">\\sqrt{400}</span>?',
+      choices: ["20", "40", "200", "25"],
+      answer: "20",
+      hints: [
+        'Find a number that multiplied by itself gives 400.',
+        'Try 20: 20 \u00d7 20 = 400.',
+        '\u221a400 = 20.'
+      ],
+      explanation: [
+        '20 \u00d7 20 = 400.',
+        '\u221a400 = 20.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">\\sqrt{625}</span>?',
+      answer: "25",
+      hints: [
+        'Find a number that multiplied by itself gives 625.',
+        'Try 25: 25 \u00d7 25 = 625.',
+        '\u221a625 = 25.'
+      ],
+      explanation: [
+        '25 \u00d7 25 = 625.',
+        '\u221a625 = 25.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\\sqrt{576}</span>?',
+      choices: ["24", "22", "26", "28"],
+      answer: "24",
+      hints: [
+        'Find a number that multiplied by itself gives 576.',
+        'Try 24: 24 \u00d7 24 = 576.',
+        '\u221a576 = 24.'
+      ],
+      explanation: [
+        '24 \u00d7 24 = 576.',
+        '\u221a576 = 24.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">\\sqrt{625}</span>?',
+      answer: "25",
+      hints: [
+        'Find a number that times itself gives 625.',
+        'Try 25: 25 \u00d7 25 = 625.',
+        '\u221a625 = 25.'
+      ],
+      explanation: [
+        '25 \u00d7 25 = 625.',
+        '\u221a625 = 25.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\\sqrt{729}</span>?',
+      choices: ["27", "26", "28", "29"],
+      answer: "27",
+      hints: [
+        'Try numbers in the upper 20s.',
+        '27 \u00d7 27 = 729.',
+        '\u221a729 = 27.'
+      ],
+      explanation: [
+        '27 \u00d7 27 = 729.',
+        '\u221a729 = 27.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\\sqrt{484}</span>?',
+      choices: ["22", "21", "23", "24"],
+      answer: "22",
+      hints: [
+        'Try numbers in the low 20s.',
+        '22 \u00d7 22 = 484.',
+        '\u221a484 = 22.'
+      ],
+      explanation: [
+        '22 \u00d7 22 = 484.',
+        '\u221a484 = 22.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">\sqrt{400}</span>?',
+      answer: "20",
+      hints: [
+        "Find the number that times itself gives 400.",
+        "20 × 20 = 400.",
+        "√400 = 20."
+      ],
+      explanation: [
+        "20 × 20 = 400.",
+        "√400 = 20."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\sqrt{529}</span>?',
+      choices: ["23", "22", "24", "21"],
+      answer: "23",
+      hints: [
+        "Find the number that times itself gives 529.",
+        "23 × 23 = 529.",
+        "√529 = 23."
+      ],
+      explanation: [
+        "23 × 23 = 529.",
+        "√529 = 23."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">\sqrt{169}</span>?',
+      answer: "13",
+      hints: [
+        "Find the number that times itself gives 169.",
+        "13 × 13 = 169.",
+        "√169 = 13."
+      ],
+      explanation: [
+        "13 × 13 = 169.",
+        "√169 = 13."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">\sqrt{225}</span>?',
+      answer: "15",
+      hints: [
+        "What number times itself equals 225?",
+        "15 × 15 = 225.",
+        "√225 = 15."
+      ],
+      explanation: [
+        "15 × 15 = 225.",
+        "√225 = 15."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\sqrt{324}</span>?',
+      choices: ["18", "16", "17", "19"],
+      answer: "18",
+      hints: [
+        "What number squared gives 324?",
+        "18 × 18 = 324.",
+        "√324 = 18."
+      ],
+      explanation: [
+        "18 × 18 = 324.",
+        "√324 = 18."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">\sqrt{400}</span>?',
+      answer: "20",
+      hints: [
+        "What number times itself equals 400?",
+        "20 × 20 = 400.",
+        "√400 = 20."
+      ],
+      explanation: [
+        "20 × 20 = 400.",
+        "√400 = 20."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify <span class="math">&radic;72</span>.',
+      choices: ["6&radic;2", "3&radic;8", "2&radic;18", "8&radic;3"],
+      answer: "6&radic;2",
+      hints: [
+        "Find the largest perfect square factor of 72.",
+        "72 = 36 × 2, and 36 is a perfect square.",
+        "&radic;72 = &radic;36 × &radic;2 = 6&radic;2."
+      ],
+      explanation: [
+        "72 = 36 × 2.",
+        "&radic;72 = &radic;36 · &radic;2 = <strong>6&radic;2</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Simplify <span class="math">&radic;128</span>.',
+      choices: ["8&radic;2", "4&radic;8", "2&radic;32", "16&radic;2"],
+      answer: "8&radic;2",
+      hints: [
+        "Find the largest perfect square factor of 128.",
+        "128 = 64 × 2.",
+        "&radic;128 = &radic;64 × &radic;2 = 8&radic;2."
+      ],
+      explanation: [
+        "128 = 64 × 2.",
+        "&radic;128 = &radic;64 · &radic;2 = <strong>8&radic;2</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify <span class="math">&radic;45</span>.',
+      choices: ["3&radic;5", "5&radic;3", "9&radic;5", "5&radic;9"],
+      answer: "3&radic;5",
+      hints: [
+        "Find the largest perfect square factor of 45.",
+        "45 = 9 × 5.",
+        "&radic;45 = &radic;9 × &radic;5 = 3&radic;5."
+      ],
+      explanation: [
+        "45 = 9 × 5.",
+        "&radic;45 = &radic;9 · &radic;5 = <strong>3&radic;5</strong>."
       ]
     }
   ],
@@ -8645,6 +14110,234 @@ EXTRA_QUESTIONS[8] = [
         "There are 6 perfect squares."
       ]
     }
+  ,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which of the following is a perfect square?',
+      choices: ["529", "530", "520", "540"],
+      answer: "529",
+      hints: [
+        'Try some values: 22\u00b2 = 484, 23\u00b2 = 529.',
+        '529 = 23 \u00d7 23.',
+        '529 is a perfect square.'
+      ],
+      explanation: [
+        '23 \u00d7 23 = 529.',
+        '529 is a perfect square.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">\\sqrt{289}</span>?',
+      answer: "17",
+      hints: [
+        'Find a number that multiplied by itself gives 289.',
+        'Try 17: 17 \u00d7 17 = 289.',
+        '\u221a289 = 17.'
+      ],
+      explanation: [
+        '17 \u00d7 17 = 289.',
+        '\u221a289 = 17.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\\sqrt{441}</span>?',
+      choices: ["21", "19", "22", "20"],
+      answer: "21",
+      hints: [
+        'Find a number that multiplied by itself gives 441.',
+        'Try 21: 21 \u00d7 21 = 441.',
+        '\u221a441 = 21.'
+      ],
+      explanation: [
+        '21 \u00d7 21 = 441.',
+        '\u221a441 = 21.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What is <span class="math">\\sqrt{324}</span>?',
+      answer: "18",
+      hints: [
+        'Think of a number near 18.',
+        '18 \u00d7 18 = 324.',
+        '\u221a324 = 18.'
+      ],
+      explanation: [
+        '18 \u00d7 18 = 324.',
+        '\u221a324 = 18.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\\sqrt{784}</span>?',
+      choices: ["28", "27", "29", "26"],
+      answer: "28",
+      hints: [
+        'Try numbers near 28.',
+        '28 \u00d7 28 = 784.',
+        '\u221a784 = 28.'
+      ],
+      explanation: [
+        '28 \u00d7 28 = 784.',
+        '\u221a784 = 28.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which of the following equals <span class="math">\\sqrt{529}</span>?',
+      choices: ["23", "22", "24", "21"],
+      answer: "23",
+      hints: [
+        'Try 23: 23 \u00d7 23 = ?',
+        '23 \u00d7 23 = 529.',
+        '\u221a529 = 23.'
+      ],
+      explanation: [
+        '23 \u00d7 23 = 529.',
+        '\u221a529 = 23.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which of these is a perfect square?',
+      choices: ["625", "620", "630", "615"],
+      answer: "625",
+      hints: [
+        "25 × 25 = 625.",
+        "625 is a perfect square.",
+        "The others are not perfect squares."
+      ],
+      explanation: [
+        "25 × 25 = 625.",
+        "625 is a perfect square."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What number squared gives 576?',
+      answer: "24",
+      hints: [
+        "Find the number n where n × n = 576.",
+        "24 × 24 = 576.",
+        "The answer is 24."
+      ],
+      explanation: [
+        "24 × 24 = 576.",
+        "√576 = 24."
+      ]
+    },
+    {
+      type: "mc", difficulty: 1,
+      question: 'Is 441 a perfect square?',
+      choices: ["Yes", "No"],
+      answer: "Yes",
+      hints: [
+        "A perfect square is an integer times itself.",
+        "21 × 21 = 441.",
+        "441 is a perfect square."
+      ],
+      explanation: [
+        "21 × 21 = 441.",
+        "Yes, 441 is a perfect square."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which number is NOT a perfect square?',
+      choices: ["200", "196", "225", "169"],
+      answer: "200",
+      hints: [
+        "Check each: 14² = 196, 15² = 225, 13² = 169.",
+        "200 is between 196 and 225.",
+        "200 is not a perfect square."
+      ],
+      explanation: [
+        "196 = 14², 225 = 15², 169 = 13².",
+        "200 has no integer square root, so it is not a perfect square."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 1,
+      question: 'What perfect square comes right after 225?',
+      answer: "256",
+      hints: [
+        "√225 = 15, so the next integer is 16.",
+        "16² = ?",
+        "16² = 256."
+      ],
+      explanation: [
+        "15² = 225, so the next perfect square is 16².",
+        "16² = 256."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'How many perfect squares are between 50 and 150 (inclusive)?',
+      choices: ["5", "4", "6", "3"],
+      answer: "5",
+      hints: [
+        "List perfect squares: 64, 81, 100, 121, 144.",
+        "That is 8², 9², 10², 11², 12².",
+        "There are 5 perfect squares."
+      ],
+      explanation: [
+        "8² = 64, 9² = 81, 10² = 100, 11² = 121, 12² = 144.",
+        "All are between 50 and 150. Count = 5."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify: <span class="math">3&radic;5 + 7&radic;5</span>.',
+      choices: ["10&radic;5", "10&radic;10", "21&radic;5", "4&radic;10"],
+      answer: "10&radic;5",
+      hints: [
+        "These are like radicals (both have &radic;5).",
+        "Add the coefficients: 3 + 7 = 10.",
+        "Keep the radical: 10&radic;5."
+      ],
+      explanation: [
+        "3&radic;5 + 7&radic;5 = (3 + 7)&radic;5.",
+        "= <strong>10&radic;5</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Simplify: <span class="math">9&radic;3 − 4&radic;3</span>. The answer is <span class="math">a&radic;3</span>. Enter <span class="math">a</span>.',
+      answer: "5",
+      hints: [
+        "Both terms have &radic;3.",
+        "Subtract the coefficients: 9 − 4 = 5.",
+        "The result is 5&radic;3."
+      ],
+      explanation: [
+        "9&radic;3 − 4&radic;3 = (9 − 4)&radic;3.",
+        "= <strong>5</strong>&radic;3."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify: <span class="math">6&radic;7 + 2&radic;7 − 3&radic;7</span>.',
+      choices: ["5&radic;7", "11&radic;7", "5&radic;21", "1&radic;7"],
+      answer: "5&radic;7",
+      hints: [
+        "All terms have &radic;7.",
+        "Combine coefficients: 6 + 2 − 3 = 5.",
+        "Result is 5&radic;7."
+      ],
+      explanation: [
+        "6 + 2 − 3 = 5.",
+        "6&radic;7 + 2&radic;7 − 3&radic;7 = <strong>5&radic;7</strong>."
+      ]
+    }
   ],
 
   // ----------------------------------------------------------
@@ -8992,6 +14685,233 @@ EXTRA_QUESTIONS[8] = [
         "10² = 100 and 11² = 121.",
         "115 is closer to 121 than to 100.",
         "√115 ≈ 10.7."
+      ]
+    }
+  ,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Between which two integers does <span class="math">\\sqrt{60}</span> lie?',
+      choices: ["7 and 8", "6 and 7", "8 and 9", "5 and 6"],
+      answer: "7 and 8",
+      hints: [
+        '7\u00b2 = 49 and 8\u00b2 = 64.',
+        '60 is between 49 and 64.',
+        'So \u221a60 is between 7 and 8.'
+      ],
+      explanation: [
+        '7\u00b2 = 49 < 60 < 64 = 8\u00b2.',
+        'Therefore \u221a60 is between 7 and 8.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: '<span class="math">\\sqrt{110}</span> is between which two consecutive integers? Enter the smaller integer.',
+      answer: "10",
+      hints: [
+        '10\u00b2 = 100 and 11\u00b2 = 121.',
+        '110 is between 100 and 121.',
+        'So \u221a110 is between 10 and 11.'
+      ],
+      explanation: [
+        '10\u00b2 = 100 < 110 < 121 = 11\u00b2.',
+        'The smaller integer is 10.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which is the best estimate for <span class="math">\\sqrt{40}</span>?',
+      choices: ["6.3", "5.8", "6.8", "7.1"],
+      answer: "6.3",
+      hints: [
+        '6\u00b2 = 36 and 7\u00b2 = 49.',
+        '40 is closer to 36 than to 49.',
+        'Try 6.3: 6.3 \u00d7 6.3 = 39.69 \u2248 40.'
+      ],
+      explanation: [
+        '6\u00b2 = 36, 7\u00b2 = 49. 40 is between them.',
+        '6.3\u00b2 = 39.69 \u2248 40, so \u221a40 \u2248 6.3.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Estimate <span class="math">\\sqrt{55}</span> to one decimal place.',
+      choices: ["7.4", "7.0", "8.0", "6.8"],
+      answer: "7.4",
+      hints: [
+        '7\u00b2 = 49 and 8\u00b2 = 64. So \u221a55 is between 7 and 8.',
+        '55 is closer to 49 than to 64.',
+        'Try 7.4: 7.4 \u00d7 7.4 = 54.76 \u2248 55.'
+      ],
+      explanation: [
+        '7\u00b2 = 49, 8\u00b2 = 64. 55 is between them.',
+        '7.4\u00b2 = 54.76 \u2248 55, so \u221a55 \u2248 7.4.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Estimate <span class="math">\\sqrt{90}</span> to one decimal place.',
+      answer: "9.5",
+      hints: [
+        '9\u00b2 = 81 and 10\u00b2 = 100. So \u221a90 is between 9 and 10.',
+        '90 is about halfway between 81 and 100.',
+        'Try 9.5: 9.5 \u00d7 9.5 = 90.25 \u2248 90.'
+      ],
+      explanation: [
+        '9\u00b2 = 81, 10\u00b2 = 100. 90 is between them.',
+        '9.5\u00b2 = 90.25 \u2248 90, so \u221a90 \u2248 9.5.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Between which two consecutive integers does <span class="math">\\sqrt{150}</span> fall?',
+      choices: ["12 and 13", "11 and 12", "13 and 14", "10 and 11"],
+      answer: "12 and 13",
+      hints: [
+        '12\u00b2 = 144 and 13\u00b2 = 169.',
+        'Is 144 < 150 < 169?',
+        'Yes, so \u221a150 is between 12 and 13.'
+      ],
+      explanation: [
+        '12\u00b2 = 144 and 13\u00b2 = 169.',
+        '144 < 150 < 169, so \u221a150 is between 12 and 13.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Between which two consecutive whole numbers does <span class="math">\sqrt{85}</span> fall?',
+      choices: ["9 and 10", "8 and 9", "10 and 11", "7 and 8"],
+      answer: "9 and 10",
+      hints: [
+        "9² = 81 and 10² = 100.",
+        "Is 81 < 85 < 100?",
+        "Yes, so √85 is between 9 and 10."
+      ],
+      explanation: [
+        "9² = 81 and 10² = 100.",
+        "81 < 85 < 100, so √85 is between 9 and 10."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: '<span class="math">\sqrt{200}</span> falls between which two consecutive integers? Enter the smaller one.',
+      answer: "14",
+      hints: [
+        "14² = 196 and 15² = 225.",
+        "Is 196 < 200 < 225?",
+        "Yes, so √200 is between 14 and 15. The smaller is 14."
+      ],
+      explanation: [
+        "14² = 196 and 15² = 225.",
+        "196 < 200 < 225, so √200 is between 14 and 15."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Between which two consecutive whole numbers does <span class="math">\sqrt{175}</span> fall?',
+      choices: ["13 and 14", "12 and 13", "14 and 15", "11 and 12"],
+      answer: "13 and 14",
+      hints: [
+        "13² = 169 and 14² = 196.",
+        "Is 169 < 175 < 196?",
+        "Yes, so √175 is between 13 and 14."
+      ],
+      explanation: [
+        "13² = 169 and 14² = 196.",
+        "169 < 175 < 196, so √175 is between 13 and 14."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Between which two integers does <span class="math">\sqrt{85}</span> lie?',
+      choices: ["9 and 10", "8 and 9", "10 and 11", "7 and 8"],
+      answer: "9 and 10",
+      hints: [
+        "9² = 81 and 10² = 100.",
+        "85 is between 81 and 100.",
+        "So √85 is between 9 and 10."
+      ],
+      explanation: [
+        "9² = 81 < 85 < 100 = 10².",
+        "Therefore √85 is between 9 and 10."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: '<span class="math">\sqrt{200}</span> is between which two consecutive integers? Enter the smaller integer.',
+      answer: "14",
+      hints: [
+        "14² = 196 and 15² = 225.",
+        "200 is between 196 and 225.",
+        "So √200 is between 14 and 15."
+      ],
+      explanation: [
+        "14² = 196 < 200 < 225 = 15².",
+        "The smaller integer is 14."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which integer is closest to <span class="math">\sqrt{63}</span>?',
+      choices: ["8", "7", "9", "6"],
+      answer: "8",
+      hints: [
+        "7² = 49 and 8² = 64.",
+        "63 is very close to 64.",
+        "So √63 ≈ 8."
+      ],
+      explanation: [
+        "7² = 49, 8² = 64. Since 63 is only 1 less than 64,",
+        "√63 is very close to 8."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">&radic;[3]{64}</span> (the cube root of 64)?',
+      answer: "4",
+      hints: [
+        "Ask: what number cubed equals 64?",
+        "Try 4: 4 × 4 × 4 = 64.",
+        "So the cube root of 64 is 4."
+      ],
+      explanation: [
+        "4 × 4 × 4 = 4³ = 64.",
+        "The cube root of 64 is <strong>4</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">&radic;[3]{216}</span> (the cube root of 216)?',
+      choices: ["6", "7", "5", "8"],
+      answer: "6",
+      hints: [
+        "What number cubed gives 216?",
+        "Try 6: 6 × 6 = 36, then 36 × 6 = 216.",
+        "So the cube root of 216 is 6."
+      ],
+      explanation: [
+        "6 × 6 × 6 = 216.",
+        "The cube root of 216 is <strong>6</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">&radic;[3]{125}</span> (the cube root of 125)?',
+      answer: "5",
+      hints: [
+        "What number cubed gives 125?",
+        "Try 5: 5 × 5 × 5 = 125.",
+        "So the cube root of 125 is 5."
+      ],
+      explanation: [
+        "5 × 5 × 5 = 125.",
+        "The cube root of 125 is <strong>5</strong>."
       ]
     }
   ],
@@ -9347,6 +15267,238 @@ EXTRA_QUESTIONS[8] = [
         "√245 = √(49 × 5) = 7√5."
       ]
     }
+  ,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify <span class="math">\\sqrt{32}</span>.',
+      choices: ["4\u221a2", "2\u221a8", "8\u221a2", "16"],
+      answer: "4\u221a2",
+      hints: [
+        'Find the largest perfect square factor of 32.',
+        '32 = 16 \u00d7 2, and 16 is a perfect square.',
+        '\u221a32 = \u221a16 \u00d7 \u221a2 = 4\u221a2.'
+      ],
+      explanation: [
+        '32 = 16 \u00d7 2.',
+        '\u221a32 = \u221a(16 \u00d7 2) = \u221a16 \u00d7 \u221a2 = 4\u221a2.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Simplify <span class="math">\\sqrt{180}</span>. If the result is <span class="math">a\\sqrt{b}</span>, what is <span class="math">a</span>?',
+      answer: "6",
+      hints: [
+        '180 = 36 \u00d7 5.',
+        '\u221a36 = 6.',
+        '\u221a180 = 6\u221a5, so a = 6.'
+      ],
+      explanation: [
+        '180 = 36 \u00d7 5.',
+        '\u221a180 = \u221a(36 \u00d7 5) = 6\u221a5.',
+        'a = 6.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Simplify <span class="math">\\sqrt{147}</span>.',
+      choices: ["7\u221a3", "3\u221a7", "49\u221a3", "21"],
+      answer: "7\u221a3",
+      hints: [
+        '147 = 49 \u00d7 3.',
+        '\u221a49 = 7.',
+        '\u221a147 = 7\u221a3.'
+      ],
+      explanation: [
+        '147 = 49 \u00d7 3.',
+        '\u221a147 = \u221a(49 \u00d7 3) = 7\u221a3.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify <span class="math">\\sqrt{80}</span>.',
+      choices: ["4\u221a5", "8\u221a5", "2\u221a20", "5\u221a4"],
+      answer: "4\u221a5",
+      hints: [
+        'Find the largest perfect square factor of 80.',
+        '80 = 16 \u00d7 5.',
+        '\u221a80 = \u221a(16 \u00d7 5) = 4\u221a5.'
+      ],
+      explanation: [
+        '80 = 16 \u00d7 5.',
+        '\u221a80 = \u221a(16 \u00d7 5) = 4\u221a5.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Simplify <span class="math">\\sqrt{288}</span>. If the answer is a\u221ab, what is a?',
+      answer: "12",
+      hints: [
+        'Find the largest perfect square factor of 288.',
+        '288 = 144 \u00d7 2.',
+        '\u221a288 = \u221a(144 \u00d7 2) = 12\u221a2. So a = 12.'
+      ],
+      explanation: [
+        '288 = 144 \u00d7 2.',
+        '\u221a288 = 12\u221a2. The value of a is 12.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Simplify <span class="math">\\sqrt{180}</span>.',
+      choices: ["6\u221a5", "3\u221a20", "9\u221a5", "5\u221a6"],
+      answer: "6\u221a5",
+      hints: [
+        'Find the largest perfect square factor of 180.',
+        '180 = 36 \u00d7 5.',
+        '\u221a180 = \u221a(36 \u00d7 5) = 6\u221a5.'
+      ],
+      explanation: [
+        '180 = 36 \u00d7 5.',
+        '\u221a180 = \u221a(36 \u00d7 5) = 6\u221a5.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Simplify <span class="math">\sqrt{200}</span>.',
+      choices: ["10√2", "5√8", "2√50", "4√5"],
+      answer: "10√2",
+      hints: [
+        "200 = 100 × 2.",
+        "√100 = 10.",
+        "√200 = 10√2."
+      ],
+      explanation: [
+        "200 = 100 × 2.",
+        "√200 = √(100 × 2) = 10√2."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'Simplify <span class="math">\sqrt{75}</span>. If the answer is <span class="math">a\sqrt{b}</span>, what is <span class="math">a</span>?',
+      answer: "5",
+      hints: [
+        "75 = 25 × 3.",
+        "√25 = 5.",
+        "√75 = 5√3, so a = 5."
+      ],
+      explanation: [
+        "75 = 25 × 3.",
+        "√75 = √(25 × 3) = 5√3.",
+        "a = 5."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Simplify <span class="math">\sqrt{147}</span>.',
+      choices: ["7√3", "3√7", "49√3", "21√7"],
+      answer: "7√3",
+      hints: [
+        "147 = 49 × 3.",
+        "√49 = 7.",
+        "√147 = 7√3."
+      ],
+      explanation: [
+        "147 = 49 × 3.",
+        "√147 = √(49 × 3) = 7√3."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify <span class="math">\sqrt{98}</span>.',
+      choices: ["7√2", "2√7", "49√2", "14"],
+      answer: "7√2",
+      hints: [
+        "Find the largest perfect square factor of 98.",
+        "98 = 49 × 2, and 49 is a perfect square.",
+        "√98 = √49 × √2 = 7√2."
+      ],
+      explanation: [
+        "98 = 49 × 2.",
+        "√98 = √(49 × 2) = √49 × √2 = 7√2."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Simplify <span class="math">\sqrt{200}</span>. If the result is <span class="math">a\sqrt{b}</span>, what is <span class="math">a</span>?',
+      answer: "10",
+      hints: [
+        "200 = 100 × 2.",
+        "√100 = 10.",
+        "√200 = 10√2, so a = 10."
+      ],
+      explanation: [
+        "200 = 100 × 2.",
+        "√200 = √(100 × 2) = 10√2.",
+        "a = 10."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Simplify <span class="math">\sqrt{180}</span>.',
+      choices: ["6√5", "5√6", "3√20", "36√5"],
+      answer: "6√5",
+      hints: [
+        "180 = 36 × 5.",
+        "√36 = 6.",
+        "√180 = 6√5."
+      ],
+      explanation: [
+        "180 = 36 × 5.",
+        "√180 = √(36 × 5) = √36 × √5 = 6√5."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Is <span class="math">&radic;49</span> rational or irrational?',
+      choices: ["Rational", "Irrational", "Neither", "Both"],
+      answer: "Rational",
+      hints: [
+        "&radic;49 = 7, which is a whole number.",
+        "All whole numbers are rational.",
+        "Since &radic;49 simplifies to 7, it is rational."
+      ],
+      explanation: [
+        "&radic;49 = 7.",
+        "7 is a whole number (and can be written as 7/1), so it is <strong>rational</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which of the following numbers is irrational?',
+      choices: ["&radic;13", "&radic;25", "0.75", "3/4"],
+      answer: "&radic;13",
+      hints: [
+        "A number is irrational if it cannot be written as a fraction.",
+        "&radic;25 = 5 (rational). 0.75 and 3/4 are rational.",
+        "13 is not a perfect square, so &radic;13 is irrational."
+      ],
+      explanation: [
+        "&radic;25 = 5 (rational), 0.75 = 3/4 (rational).",
+        "13 is not a perfect square, so <strong>&radic;13</strong> is irrational."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Is <span class="math">&radic;80</span> rational or irrational?',
+      choices: ["Irrational", "Rational", "Cannot be determined", "Neither"],
+      answer: "Irrational",
+      hints: [
+        "Check if 80 is a perfect square.",
+        "8² = 64 and 9² = 81. 80 is not a perfect square.",
+        "Since 80 is not a perfect square, &radic;80 is irrational."
+      ],
+      explanation: [
+        "80 is not a perfect square (between 64 and 81).",
+        "Therefore &radic;80 is <strong>irrational</strong>."
+      ]
+    }
   ],
 
   // ----------------------------------------------------------
@@ -9687,6 +15839,234 @@ EXTRA_QUESTIONS[8] = [
       explanation: [
         "√4 × √81 = 2 × 9 = 18.",
         "The answer is 18."
+      ]
+    }
+  ,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\\sqrt{2} \\times \\sqrt{18}</span>?',
+      choices: ["6", "\u221a20", "36", "\u221a36"],
+      answer: "6",
+      hints: [
+        'Use the property: \u221aa \u00d7 \u221ab = \u221a(ab).',
+        '\u221a2 \u00d7 \u221a18 = \u221a(2 \u00d7 18) = \u221a36.',
+        '\u221a36 = 6.'
+      ],
+      explanation: [
+        '\u221a2 \u00d7 \u221a18 = \u221a(2 \u00d7 18) = \u221a36.',
+        '\u221a36 = 6.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">\\sqrt{11} \\times \\sqrt{11}</span>?',
+      answer: "11",
+      hints: [
+        '\u221aa \u00d7 \u221aa = a.',
+        '\u221a11 \u00d7 \u221a11 = 11.',
+        'This is the definition of square root.'
+      ],
+      explanation: [
+        '\u221a11 \u00d7 \u221a11 = (\u221a11)\u00b2 = 11.',
+        'Any square root times itself equals the number under the radical.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Simplify <span class="math">\\sqrt{6} \\times \\sqrt{24}</span>.',
+      choices: ["12", "\u221a30", "6\u221a4", "144"],
+      answer: "12",
+      hints: [
+        '\u221a6 \u00d7 \u221a24 = \u221a(6 \u00d7 24) = \u221a144.',
+        '\u221a144 = 12.',
+        'The answer is 12.'
+      ],
+      explanation: [
+        '\u221a6 \u00d7 \u221a24 = \u221a(6 \u00d7 24) = \u221a144.',
+        '\u221a144 = 12.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">\\sqrt{5} \\times \\sqrt{20}</span>?',
+      answer: "10",
+      hints: [
+        'Use the property: \u221aa \u00d7 \u221ab = \u221a(a \u00d7 b).',
+        '\u221a5 \u00d7 \u221a20 = \u221a(5 \u00d7 20) = \u221a100.',
+        '\u221a100 = 10.'
+      ],
+      explanation: [
+        '\u221a5 \u00d7 \u221a20 = \u221a(5 \u00d7 20) = \u221a100.',
+        '\u221a100 = 10.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\\sqrt{8} \\times \\sqrt{18}</span>?',
+      choices: ["12", "10", "14", "16"],
+      answer: "12",
+      hints: [
+        '\u221a8 \u00d7 \u221a18 = \u221a(8 \u00d7 18).',
+        '8 \u00d7 18 = 144.',
+        '\u221a144 = 12.'
+      ],
+      explanation: [
+        '\u221a8 \u00d7 \u221a18 = \u221a(8 \u00d7 18) = \u221a144.',
+        '\u221a144 = 12.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Simplify <span class="math">\\sqrt{7} \\times \\sqrt{28}</span>.',
+      choices: ["14", "7\u221a4", "28", "7\u221a2"],
+      answer: "14",
+      hints: [
+        '\u221a7 \u00d7 \u221a28 = \u221a(7 \u00d7 28).',
+        '7 \u00d7 28 = 196.',
+        '\u221a196 = 14.'
+      ],
+      explanation: [
+        '\u221a7 \u00d7 \u221a28 = \u221a(7 \u00d7 28) = \u221a196.',
+        '\u221a196 = 14.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\sqrt{5} \times \sqrt{20}</span>?',
+      choices: ["10", "25", "√100", "5√4"],
+      answer: "10",
+      hints: [
+        "√5 × √20 = √(5 × 20) = √100.",
+        "√100 = 10.",
+        "The answer is 10."
+      ],
+      explanation: [
+        "√5 × √20 = √(5 × 20) = √100.",
+        "√100 = 10."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">\sqrt{8} \times \sqrt{18}</span>?',
+      answer: "12",
+      hints: [
+        "√8 × √18 = √(8 × 18) = √144.",
+        "√144 = 12.",
+        "The answer is 12."
+      ],
+      explanation: [
+        "√8 × √18 = √(8 × 18) = √144.",
+        "√144 = 12."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\sqrt{12} \times \sqrt{3}</span>?',
+      choices: ["6", "9", "√36", "3√4"],
+      answer: "6",
+      hints: [
+        "√12 × √3 = √(12 × 3) = √36.",
+        "√36 = 6.",
+        "The answer is 6."
+      ],
+      explanation: [
+        "√12 × √3 = √(12 × 3) = √36.",
+        "√36 = 6."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">\sqrt{6} \times \sqrt{6}</span>?',
+      answer: "6",
+      hints: [
+        "√a × √a = a.",
+        "√6 × √6 = 6.",
+        "This is the definition of square root."
+      ],
+      explanation: [
+        "By definition, √6 × √6 = 6.",
+        "The answer is 6."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\sqrt{8} \times \sqrt{2}</span>?',
+      choices: ["4", "√16", "2√4", "√10"],
+      answer: "4",
+      hints: [
+        "Use the property: √a × √b = √(ab).",
+        "√8 × √2 = √(8 × 2) = √16.",
+        "√16 = 4."
+      ],
+      explanation: [
+        "√8 × √2 = √(8 × 2) = √16.",
+        "√16 = 4."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">\sqrt{7} \times \sqrt{28}</span>?',
+      answer: "14",
+      hints: [
+        "Use the property: √a × √b = √(ab).",
+        "√7 × √28 = √(7 × 28) = √196.",
+        "√196 = 14."
+      ],
+      explanation: [
+        "√7 × √28 = √(7 × 28) = √196.",
+        "√196 = 14."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Order from least to greatest: <span class="math">&radic;10</span>, 3.2, <span class="math">&pi;</span>.',
+      choices: ["&radic;10, &pi;, 3.2", "3.2, &radic;10, &pi;", "&pi;, &radic;10, 3.2", "&radic;10, 3.2, &pi;"],
+      answer: "&pi;, &radic;10, 3.2",
+      hints: [
+        "Estimate each: &radic;10 ≈ 3.162, &pi; ≈ 3.14159.",
+        "Compare: &pi; ≈ 3.142, &radic;10 ≈ 3.162, 3.2 = 3.200.",
+        "&pi; ≈ 3.142 < &radic;10 ≈ 3.162 < 3.2."
+      ],
+      explanation: [
+        "&radic;10 ≈ 3.162, &pi; ≈ 3.142, 3.2 = 3.200.",
+        "Least to greatest: <strong>&pi;, &radic;10, 3.2</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Which is greater: <span class="math">&radic;20</span> or 4.5?',
+      choices: ["4.5", "&radic;20", "They are equal", "Cannot be determined"],
+      answer: "4.5",
+      hints: [
+        "Estimate &radic;20: 4² = 16, 5² = 25.",
+        "&radic;20 ≈ 4.47.",
+        "Compare: 4.47 < 4.5."
+      ],
+      explanation: [
+        "&radic;20 ≈ 4.472.",
+        "Since 4.472 < 4.5, <strong>4.5</strong> is greater."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Order from least to greatest: <span class="math">2.8, &radic;8, &radic;9</span>.',
+      choices: ["2.8, &radic;8, &radic;9", "&radic;8, 2.8, &radic;9", "&radic;9, &radic;8, 2.8", "2.8, &radic;9, &radic;8"],
+      answer: "2.8, &radic;8, &radic;9",
+      hints: [
+        "Estimate: &radic;8 ≈ 2.828, &radic;9 = 3.",
+        "Compare: 2.8, 2.828, 3.",
+        "Order: 2.8 < &radic;8 < &radic;9."
+      ],
+      explanation: [
+        "&radic;8 ≈ 2.828, &radic;9 = 3.",
+        "Least to greatest: <strong>2.8, &radic;8, &radic;9</strong>."
       ]
     }
   ],
@@ -10042,6 +16422,237 @@ EXTRA_QUESTIONS[8] = [
         "√275 = √(25 × 11) = 5√11."
       ]
     }
+  ,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify <span class="math">\\sqrt{44}</span>.',
+      choices: ["2\u221a11", "4\u221a11", "11\u221a2", "22"],
+      answer: "2\u221a11",
+      hints: [
+        '44 = 4 \u00d7 11.',
+        '\u221a4 = 2.',
+        '\u221a44 = 2\u221a11.'
+      ],
+      explanation: [
+        '44 = 4 \u00d7 11.',
+        '\u221a44 = \u221a(4 \u00d7 11) = 2\u221a11.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Simplify <span class="math">\\sqrt{507}</span>. If the result is <span class="math">a\\sqrt{b}</span>, what is <span class="math">a</span>?',
+      answer: "13",
+      hints: [
+        '507 = 169 \u00d7 3.',
+        '\u221a169 = 13.',
+        '\u221a507 = 13\u221a3, so a = 13.'
+      ],
+      explanation: [
+        '507 = 169 \u00d7 3.',
+        '\u221a507 = \u221a(169 \u00d7 3) = 13\u221a3.',
+        'a = 13.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Simplify <span class="math">\\sqrt{245}</span>.',
+      choices: ["7\u221a5", "5\u221a7", "49\u221a5", "35"],
+      answer: "7\u221a5",
+      hints: [
+        '245 = 49 \u00d7 5.',
+        '\u221a49 = 7.',
+        '\u221a245 = 7\u221a5.'
+      ],
+      explanation: [
+        '245 = 49 \u00d7 5.',
+        '\u221a245 = \u221a(49 \u00d7 5) = 7\u221a5.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify <span class="math">\\sqrt{128}</span>.',
+      choices: ["8\u221a2", "4\u221a8", "16\u221a2", "2\u221a32"],
+      answer: "8\u221a2",
+      hints: [
+        'Find the largest perfect square factor of 128.',
+        '128 = 64 \u00d7 2.',
+        '\u221a128 = \u221a(64 \u00d7 2) = 8\u221a2.'
+      ],
+      explanation: [
+        '128 = 64 \u00d7 2.',
+        '\u221a128 = \u221a(64 \u00d7 2) = 8\u221a2.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Simplify <span class="math">\\sqrt{500}</span>. If the answer is a\u221ab, what is a?',
+      answer: "10",
+      hints: [
+        'Find the largest perfect square factor of 500.',
+        '500 = 100 \u00d7 5.',
+        '\u221a500 = \u221a(100 \u00d7 5) = 10\u221a5. So a = 10.'
+      ],
+      explanation: [
+        '500 = 100 \u00d7 5.',
+        '\u221a500 = 10\u221a5. The value of a is 10.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Simplify <span class="math">\\sqrt{363}</span>.',
+      choices: ["11\u221a3", "3\u221a11", "33\u221a3", "3\u221a33"],
+      answer: "11\u221a3",
+      hints: [
+        'Find the largest perfect square factor of 363.',
+        '363 = 121 \u00d7 3.',
+        '\u221a363 = \u221a(121 \u00d7 3) = 11\u221a3.'
+      ],
+      explanation: [
+        '363 = 121 \u00d7 3.',
+        '\u221a363 = \u221a(121 \u00d7 3) = 11\u221a3.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'Simplify <span class="math">\sqrt{245}</span>.',
+      choices: ["7√5", "5√7", "49√5", "35√7"],
+      answer: "7√5",
+      hints: [
+        "245 = 49 × 5.",
+        "√49 = 7.",
+        "√245 = 7√5."
+      ],
+      explanation: [
+        "245 = 49 × 5.",
+        "√245 = √(49 × 5) = 7√5."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Simplify <span class="math">\sqrt{338}</span>. If the answer is <span class="math">a\sqrt{b}</span>, what is <span class="math">a</span>?',
+      answer: "13",
+      hints: [
+        "338 = 169 × 2.",
+        "√169 = 13.",
+        "√338 = 13√2, so a = 13."
+      ],
+      explanation: [
+        "338 = 169 × 2.",
+        "√338 = √(169 × 2) = 13√2.",
+        "a = 13."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Simplify <span class="math">\sqrt{432}</span>.',
+      choices: ["12√3", "6√12", "4√27", "3√48"],
+      answer: "12√3",
+      hints: [
+        "432 = 144 × 3.",
+        "√144 = 12.",
+        "√432 = 12√3."
+      ],
+      explanation: [
+        "432 = 144 × 3.",
+        "√432 = √(144 × 3) = 12√3."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'Simplify <span class="math">\sqrt{128}</span>.',
+      choices: ["8√2", "4√8", "2√32", "16√2"],
+      answer: "8√2",
+      hints: [
+        "128 = 64 × 2.",
+        "√64 = 8.",
+        "√128 = 8√2."
+      ],
+      explanation: [
+        "128 = 64 × 2.",
+        "√128 = √(64 × 2) = 8√2."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Simplify <span class="math">\sqrt{245}</span>. If the result is <span class="math">a\sqrt{b}</span>, what is <span class="math">b</span>?',
+      answer: "5",
+      hints: [
+        "245 = 49 × 5.",
+        "√49 = 7.",
+        "√245 = 7√5, so b = 5."
+      ],
+      explanation: [
+        "245 = 49 × 5.",
+        "√245 = √(49 × 5) = 7√5.",
+        "b = 5."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Simplify <span class="math">\sqrt{300}</span>.',
+      choices: ["10√3", "5√12", "3√100", "6√50"],
+      answer: "10√3",
+      hints: [
+        "300 = 100 × 3.",
+        "√100 = 10.",
+        "√300 = 10√3."
+      ],
+      explanation: [
+        "300 = 100 × 3.",
+        "√300 = √(100 × 3) = 10√3."
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'Which whole number is closest to <span class="math">&radic;20</span>?',
+      choices: ["4", "5", "3", "6"],
+      answer: "4",
+      hints: [
+        "4² = 16 and 5² = 25.",
+        "&radic;20 is between 4 and 5.",
+        "20 is closer to 16 than to 25, so &radic;20 is closer to 4."
+      ],
+      explanation: [
+        "&radic;20 ≈ 4.47.",
+        "4.47 is closer to <strong>4</strong> than to 5."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'Which whole number is closest to <span class="math">&radic;67</span>?',
+      answer: "8",
+      hints: [
+        "8² = 64 and 9² = 81.",
+        "&radic;67 is between 8 and 9.",
+        "67 is closer to 64 than to 81."
+      ],
+      explanation: [
+        "&radic;67 ≈ 8.19.",
+        "8.19 is closest to <strong>8</strong>."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'On a number line, <span class="math">&radic;38</span> is between which two consecutive whole numbers?',
+      choices: ["6 and 7", "5 and 6", "7 and 8", "4 and 5"],
+      answer: "6 and 7",
+      hints: [
+        "6² = 36 and 7² = 49.",
+        "Since 36 < 38 < 49, &radic;38 is between 6 and 7.",
+        "&radic;38 ≈ 6.16."
+      ],
+      explanation: [
+        "6² = 36, 7² = 49. Since 36 < 38 < 49,",
+        "&radic;38 is between <strong>6 and 7</strong>."
+      ]
+    }
   ],
 
   // ----------------------------------------------------------
@@ -10385,6 +16996,234 @@ EXTRA_QUESTIONS[8] = [
       explanation: [
         "√(64/225) = √64 / √225 = 8/15.",
         "The answer is 8/15."
+      ]
+    }
+  ,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\\sqrt{36/121}</span>?',
+      choices: ["6/11", "36/121", "11/6", "6/121"],
+      answer: "6/11",
+      hints: [
+        '\u221a(a/b) = \u221aa / \u221ab.',
+        '\u221a36 = 6 and \u221a121 = 11.',
+        '\u221a(36/121) = 6/11.'
+      ],
+      explanation: [
+        '\u221a(36/121) = \u221a36 / \u221a121 = 6/11.',
+        'The answer is 6/11.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">\\sqrt{81/196}</span>? Enter the numerator of the simplified fraction.',
+      answer: "9",
+      hints: [
+        '\u221a(a/b) = \u221aa / \u221ab.',
+        '\u221a81 = 9 and \u221a196 = 14.',
+        '\u221a(81/196) = 9/14. The numerator is 9.'
+      ],
+      explanation: [
+        '\u221a(81/196) = \u221a81 / \u221a196 = 9/14.',
+        'The numerator is 9.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\\sqrt{100/289}</span>?',
+      choices: ["10/17", "100/289", "17/10", "10/289"],
+      answer: "10/17",
+      hints: [
+        '\u221a(a/b) = \u221aa / \u221ab.',
+        '\u221a100 = 10 and \u221a289 = 17.',
+        '\u221a(100/289) = 10/17.'
+      ],
+      explanation: [
+        '\u221a(100/289) = \u221a100 / \u221a289 = 10/17.',
+        'The answer is 10/17.'
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'What is <span class="math">\\sqrt{\\frac{49}{144}}</span>? Enter the numerator of the simplified fraction.',
+      answer: "7",
+      hints: [
+        '\u221a(a/b) = \u221aa / \u221ab.',
+        '\u221a49 = 7 and \u221a144 = 12.',
+        '\u221a(49/144) = 7/12. The numerator is 7.'
+      ],
+      explanation: [
+        '\u221a(49/144) = \u221a49 / \u221a144 = 7/12.',
+        'The numerator is 7.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\\sqrt{\\frac{225}{400}}</span>?',
+      choices: ["3/4", "15/20", "5/4", "15/400"],
+      answer: "3/4",
+      hints: [
+        '\u221a(a/b) = \u221aa / \u221ab.',
+        '\u221a225 = 15 and \u221a400 = 20.',
+        '15/20 = 3/4 in simplest form.'
+      ],
+      explanation: [
+        '\u221a(225/400) = \u221a225 / \u221a400 = 15/20.',
+        '15/20 simplifies to 3/4.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\\sqrt{9 \\times 64}</span>?',
+      choices: ["24", "18", "36", "72"],
+      answer: "24",
+      hints: [
+        '\u221a(a \u00d7 b) = \u221aa \u00d7 \u221ab.',
+        '\u221a9 = 3 and \u221a64 = 8.',
+        '3 \u00d7 8 = 24.'
+      ],
+      explanation: [
+        '\u221a(9 \u00d7 64) = \u221a9 \u00d7 \u221a64 = 3 \u00d7 8.',
+        '3 \u00d7 8 = 24.'
+      ]
+    }
+,
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\sqrt{\frac{4}{49}}</span>?',
+      choices: ["2/7", "4/49", "7/2", "4/7"],
+      answer: "2/7",
+      hints: [
+        "√(a/b) = √a / √b.",
+        "√4 = 2 and √49 = 7.",
+        "√(4/49) = 2/7."
+      ],
+      explanation: [
+        "√(4/49) = √4 / √49 = 2/7.",
+        "The answer is 2/7."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">\sqrt{25 \times 36}</span>?',
+      answer: "30",
+      hints: [
+        "√(25 × 36) = √25 × √36.",
+        "√25 = 5 and √36 = 6.",
+        "5 × 6 = 30."
+      ],
+      explanation: [
+        "√(25 × 36) = √25 × √36 = 5 × 6.",
+        "5 × 6 = 30."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'Simplify <span class="math">\sqrt{\frac{121}{196}}</span>.',
+      choices: ["11/14", "121/196", "14/11", "11/196"],
+      answer: "11/14",
+      hints: [
+        "√(121/196) = √121 / √196.",
+        "√121 = 11 and √196 = 14.",
+        "The answer is 11/14."
+      ],
+      explanation: [
+        "√(121/196) = √121 / √196 = 11/14.",
+        "The answer is 11/14."
+      ]
+    },
+    {
+      type: "mc", difficulty: 2,
+      question: 'What is <span class="math">\sqrt{\frac{49}{64}}</span>?',
+      choices: ["7/8", "49/64", "8/7", "7/64"],
+      answer: "7/8",
+      hints: [
+        "√(a/b) = √a / √b.",
+        "√49 = 7 and √64 = 8.",
+        "√(49/64) = 7/8."
+      ],
+      explanation: [
+        "√(49/64) = √49 / √64 = 7/8.",
+        "The answer is 7/8."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 3,
+      question: 'What is <span class="math">\sqrt{\frac{144}{169}}</span>? Enter the denominator of the simplified fraction.',
+      answer: "13",
+      hints: [
+        "√(144/169) = √144 / √169.",
+        "√144 = 12 and √169 = 13.",
+        "The denominator is 13."
+      ],
+      explanation: [
+        "√(144/169) = √144 / √169 = 12/13.",
+        "The denominator is 13."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'What is <span class="math">\sqrt{\frac{81}{225}}</span> in simplest form?',
+      choices: ["3/5", "9/15", "9/25", "81/225"],
+      answer: "3/5",
+      hints: [
+        "√(81/225) = √81 / √225.",
+        "√81 = 9 and √225 = 15.",
+        "Simplify 9/15: divide by 3 → 3/5."
+      ],
+      explanation: [
+        "√(81/225) = √81 / √225 = 9/15.",
+        "Simplify: 9/15 = 3/5.",
+        "The answer is 3/5."
+      ]
+    }
+,
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A square garden has an area of 196 ft². What is the side length of the garden in feet?',
+      answer: "14",
+      hints: [
+        "For a square, area = side × side.",
+        "side = &radic;area = &radic;196.",
+        "14 × 14 = 196, so the side is 14 ft."
+      ],
+      explanation: [
+        "Side = &radic;196 = <strong>14 feet</strong>.",
+        "The garden is 14 feet on each side."
+      ]
+    },
+    {
+      type: "mc", difficulty: 3,
+      question: 'A square tile has an area of 81 cm². What is the perimeter of the tile?',
+      choices: ["36 cm", "18 cm", "81 cm", "27 cm"],
+      answer: "36 cm",
+      hints: [
+        "First find the side: side = &radic;81 = 9 cm.",
+        "Perimeter of a square = 4 × side.",
+        "4 × 9 = 36."
+      ],
+      explanation: [
+        "Side = &radic;81 = 9 cm.",
+        "Perimeter = 4 × 9 = <strong>36 cm</strong>."
+      ]
+    },
+    {
+      type: "numeric", difficulty: 2,
+      question: 'A square painting has an area of 256 in². What is the length of one side in inches?',
+      answer: "16",
+      hints: [
+        "Side = &radic;area.",
+        "&radic;256 = ?",
+        "16 × 16 = 256."
+      ],
+      explanation: [
+        "Side = &radic;256 = <strong>16 inches</strong>.",
+        "Each side of the painting is 16 inches."
       ]
     }
   ]

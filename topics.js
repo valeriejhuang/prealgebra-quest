@@ -33,6 +33,9 @@
     12: { t: [0,5,7, 1,6,9, 2,3,13, 4,10,8, 11,12,14],        c: [0,10,4, 1,5,6, 3,7,13, 2,8,11, 9,12,14] },
     13: { t: [0,6,13, 5,9,11, 1,2,7, 3,4,8, 12,14,10],        c: [0,6,10, 1,12,14, 2,4,8, 5,11,13, 3,9,7] },
     14: { t: [0,1,7, 2,10,14, 3,6,11, 4,8,12, 5,9,13],        c: [0,5,12, 3,7,13, 2,9,11, 6,14,10, 4,8,1] },
+    // W15-W16: questions already written in topic order — identity maps
+    15: { t: [0,1,2, 3,4,5, 6,7,8, 9,10,11, 12,13,14],      c: [0,1,2, 3,4,5, 6,7,8, 9,10,11, 12,13,14] },
+    16: { t: [0,1,2, 3,4,5, 6,7,8, 9,10,11, 12,13,14],      c: [0,1,2, 3,4,5, 6,7,8, 9,10,11, 12,13,14] },
   };
 
   // ── Topic definitions ──
@@ -238,11 +241,39 @@
       // NEW topic
       { name: "Pigeonhole Principle", note: 'If you put <b>n+1 items</b> into <b>n boxes</b>, at least one box has 2+ items. Example: 13 people, 12 months &rarr; at least 2 share a birth month. Simple but powerful!' },
     ],
+    15: [
+      { name: "Function Basics", note: 'A <b>function</b> is a rule that assigns exactly one output to each input. If <span class="math">f(x) = 2x + 1</span>, then <span class="math">f(3) = 7</span>.' },
+      { name: "Evaluating Functions", note: 'Substitute the input and simplify: <span class="math">f(x) = 3x &minus; 4</span>, so <span class="math">f(5) = 15 &minus; 4 = 11</span>.' },
+      { name: "Sequences", note: '<b>Arithmetic sequence</b>: add the same number each time. 2, 5, 8, 11 &rarr; common difference = 3. Next term = last + 3.' },
+      { name: "Function Tables", note: 'Complete a table by substituting each x-value into the rule. For <span class="math">y = 2x + 1</span>: x=0&rarr;y=1, x=1&rarr;y=3, x=2&rarr;y=5.' },
+      { name: "Plotting Points", note: 'An ordered pair <span class="math">(x, y)</span> locates a point on the coordinate plane. x goes right/left, y goes up/down.' },
+      { name: "Rate of Change", note: 'Rate of change = <span class="math">(change in y) &divide; (change in x)</span>. It tells how fast the output changes per unit of input.' },
+      { name: "Direct Variation", note: '<span class="math">y = kx</span> where k is the <b>constant of variation</b>. The graph passes through the origin. <span class="math">k = y &divide; x</span>.' },
+      { name: "Slope", note: '<span class="math">slope = (y&sub2; &minus; y&sub1;) &divide; (x&sub2; &minus; x&sub1;)</span> = rise &divide; run. Positive slopes go up, negative go down, zero is flat.' },
+      { name: "Slope-Intercept Form", note: '<span class="math">y = mx + b</span> where m = slope and b = y-intercept (where the line crosses the y-axis).' },
+      { name: "Writing Linear Equations", note: 'Given slope m and y-intercept b, write <span class="math">y = mx + b</span>. Given two points, find m first, then b.' },
+      // NEW topic
+      { name: "Systems of Equations", note: 'A <b>system</b> is two equations with two unknowns. Solve by substitution: from one equation get y in terms of x, plug into the other.' },
+    ],
+    16: [
+      { name: "3D Figure Names", note: '<b>Prism</b>: two identical parallel bases. <b>Pyramid</b>: one base, triangular faces meeting at a point. <b>Cylinder</b>: circular bases. <b>Cone</b>: circular base, point on top. <b>Sphere</b>: all points same distance from center.' },
+      { name: "Volume of Rectangular Prisms", note: '<span class="math">V = l &times; w &times; h</span>. Length times width times height. Units are cubed (cm&sup3;, ft&sup3;).' },
+      { name: "Volume of Triangular Prisms", note: '<span class="math">V = (&frac12; &times; b &times; h<sub>tri</sub>) &times; h<sub>prism</sub></span>. Find the triangular base area first, then multiply by the prism height.' },
+      { name: "Volume of Cylinders", note: '<span class="math">V = &pi;r&sup2;h</span>. Find the circular base area (<span class="math">&pi;r&sup2;</span>), then multiply by height. Use <span class="math">&pi; &asymp; 3.14</span>.' },
+      { name: "Volume of Pyramids", note: '<span class="math">V = &frac13; &times; B &times; h</span> where B = base area. A pyramid is one-third the volume of a prism with the same base and height.' },
+      { name: "Volume of Cones & Spheres", note: 'Cone: <span class="math">V = &frac13;&pi;r&sup2;h</span>. Sphere: <span class="math">V = &frac43;&pi;r&sup3;</span>. A cone is one-third of its cylinder.' },
+      { name: "Surface Area of Prisms", note: '<span class="math">SA = 2B + Ph</span> where B = base area, P = base perimeter, h = height. Think: two bases + the rectangular sides.' },
+      { name: "Surface Area of Cylinders", note: '<span class="math">SA = 2&pi;r&sup2; + 2&pi;rh</span>. Two circular ends + the curved side (a rectangle when unrolled).' },
+      { name: "SA of Pyramids & Cones", note: 'Pyramid: <span class="math">SA = B + &frac12;Pl</span> (l = slant height). Cone: <span class="math">SA = &pi;r&sup2; + &pi;rl</span>.' },
+      { name: "Composite 3D Shapes", note: 'Break into simpler shapes, find each volume separately, then add. A silo = cylinder + half-sphere on top.' },
+      // NEW topic
+      { name: "Similar Solids", note: 'If two solids are similar with scale factor k, then surface areas scale by <span class="math">k&sup2;</span> and volumes scale by <span class="math">k&sup3;</span>. Double the size &rarr; 4&times; the surface area, 8&times; the volume!' },
+    ],
   };
 
   // ── Apply reordering, merge extra questions, and attach topics ──
 
-  for (var wid = 0; wid < 15; wid++) {
+  for (var wid = 0; wid < WORLDS.length; wid++) {
     var w = WORLDS[wid];
     if (!w || !w.pool) continue;
 

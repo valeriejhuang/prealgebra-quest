@@ -8,11 +8,12 @@
   const SAVE_KEY_PREFIX = "mathquest_save";
   const SAVE_SLOTS = 3;
   function getSaveKey(slot) { return SAVE_KEY_PREFIX + "_" + slot; }
-  const PLAYABLE_WORLDS = 15;
+  const PLAYABLE_WORLDS = 17;
   const SHRINE_HEARTS = 3;
   const BOSS_HEARTS = 5;
   const DEFAULT_SHRINES = 10;
   const BOSS_PROBLEMS = 5;
+  const SHRINE_PUZZLES = 5; // number of puzzles per shrine visit
   const SHRINE_REQ_RATIO = 0.7; // must complete 70% of shrines to unlock boss
   const XP_CORRECT_FIRST = 50;
   const XP_CORRECT_RETRY = 25;
@@ -453,26 +454,37 @@
     };
   })();
 
+  // ── Save Version & Migration System ──
+  // Increment CURRENT_SAVE_VERSION whenever you add/rename/restructure persisted fields.
+  // Then add a migration function to SAVE_MIGRATIONS (see below saveGame).
+  const CURRENT_SAVE_VERSION = 1;
+
+  // Factory: returns a fresh default state with all current fields.
+  function createDefaultState() {
+    return {
+      saveVersion: CURRENT_SAVE_VERSION,
+      xp: 0,
+      coins: 50,
+      tearsCollected: [],
+      worldProgress: {},
+      totalSolved: 0,
+      totalAttempts: 0,
+      currentStreak: 0,
+      bestStreak: 0,
+      badges: [],           // array of badge id strings
+      character: null,       // character id
+      solvedNoHints: 0,      // count of problems solved without any hints
+      totalPerfectShrines: 0,
+      bossTimes: {},         // { [worldId]: best time in seconds }
+      totalBossRebattles: 0, // number of times player re-battled a defeated boss
+      inventory: [],         // array of shop item IDs owned
+      equipped: { weapon: null, armor: null, magic: null }, // currently equipped item IDs
+      soundMuted: false,
+    };
+  }
+
   // ── Game State (persisted) ──
-  let state = {
-    xp: 0,
-    coins: 50,
-    tearsCollected: [],
-    worldProgress: {},
-    totalSolved: 0,
-    totalAttempts: 0,
-    currentStreak: 0,
-    bestStreak: 0,
-    badges: [],           // array of badge id strings
-    character: null,       // character id
-    solvedNoHints: 0,      // count of problems solved without any hints
-    totalPerfectShrines: 0,
-    bossTimes: {},         // { [worldId]: best time in seconds }
-    totalBossRebattles: 0, // number of times player re-battled a defeated boss
-    inventory: [],         // array of shop item IDs owned
-    equipped: { weapon: null, armor: null, magic: null }, // currently equipped item IDs
-    soundMuted: false,
-  };
+  let state = createDefaultState();
 
   // ── Session State ──
   let session = {
@@ -485,9 +497,11 @@
     hearts: SHRINE_HEARTS,
     hintsUsed: 0,
     wrongThisShrine: 0,
+    wrongTotal: 0,
     isBoss: false,
     bossHP: 0,
     bossMaxHP: 0,
+    bossMaxHearts: BOSS_HEARTS,
     worldSelections: {},
     particleTimers: [],
     timerInterval: null,
@@ -769,27 +783,26 @@
     const pool = world.pool;
     if (!pool) return { shrines: world.problems || [], boss: world.bossProblems || [] };
 
-    // Pick 1 random question from each topic pool every time.
-    // This ensures each shrine entry gets a fresh random question from the pool.
+    // Pick SHRINE_PUZZLES random questions from each topic pool.
+    // Each shrine is an array of questions (one per puzzle).
     // topicPools (built by topics.js) contains one array per topic with all available questions.
-    // Falls back to the legacy group-of-3 slicing if topicPools is missing.
     const shrines = [];
     if (pool.topicPools) {
       for (let t = 0; t < pool.topicPools.length; t++) {
         const tp = pool.topicPools[t];
-        shrines.push(tp[Math.floor(Math.random() * tp.length)]);
+        shrines.push(pickRandom(tp, SHRINE_PUZZLES));
       }
     } else {
-      // Legacy fallback: groups of 3 in flat arrays
+      // Legacy fallback: groups of 3 in flat arrays — pick up to SHRINE_PUZZLES
       const tutorialTopics = Math.floor(pool.tutorial.length / 3);
       for (let t = 0; t < tutorialTopics; t++) {
         const group = pool.tutorial.slice(t * 3, t * 3 + 3);
-        shrines.push(group[Math.floor(Math.random() * group.length)]);
+        shrines.push(pickRandom(group, SHRINE_PUZZLES));
       }
       const challengeTopics = Math.floor(pool.challenge.length / 3);
       for (let t = 0; t < challengeTopics; t++) {
         const group = pool.challenge.slice(t * 3, t * 3 + 3);
-        shrines.push(group[Math.floor(Math.random() * group.length)]);
+        shrines.push(pickRandom(group, SHRINE_PUZZLES));
       }
     }
     const bossPick = pickRandom(pool.boss, BOSS_PROBLEMS);
@@ -815,10 +828,11 @@
   function getWorldProgress(worldId) {
     const sc = getShrineCount(worldId);
     if (!state.worldProgress[worldId]) {
-      state.worldProgress[worldId] = { shrineStars: new Array(sc).fill(0), bossDefeated: false };
+      state.worldProgress[worldId] = { shrineStars: new Array(sc).fill(0), bossDefeated: false, perfectShrines: [] };
     }
     const wp = state.worldProgress[worldId];
     while (wp.shrineStars.length < sc) wp.shrineStars.push(0);
+    if (!wp.perfectShrines) wp.perfectShrines = [];
     return wp;
   }
 
@@ -827,9 +841,8 @@
   }
 
   function isWorldUnlocked(worldId) {
-    if (worldId === 0) return true;
     if (worldId >= PLAYABLE_WORLDS) return false;
-    return getWorldProgress(worldId - 1).bossDefeated;
+    return true; // All worlds freely accessible
   }
 
   function hasPool(worldId) {
@@ -837,55 +850,153 @@
     return w && w.pool && w.pool.tutorial && w.pool.tutorial.length > 0;
   }
 
-  // ── Save / Load ──
-  function saveGame() {
-    try { localStorage.setItem(getSaveKey(session.activeSlot), JSON.stringify(state)); } catch (e) {}
+  // ── Save / Load / Migration ──
+  //
+  // HOW TO ADD BACKWARD-COMPATIBLE CHANGES:
+  // 1. Add your new field(s) to createDefaultState() (above).
+  // 2. Increment CURRENT_SAVE_VERSION (above).
+  // 3. Append a migration function to SAVE_MIGRATIONS below. The function
+  //    receives the parsed save data object and must:
+  //      - Add/transform any new or changed fields
+  //      - Set data.saveVersion to the new version number
+  //      - Return the data object
+  //    Old saves will run through each migration sequentially
+  //    (v0→v1→v2→…) until they reach CURRENT_SAVE_VERSION.
+  //
+  // Players never lose progress — every old save is migrated automatically.
+
+  // Migration registry — index N migrates from version N to N+1.
+  var SAVE_MIGRATIONS = [
+    // v0 → v1: consolidate all fields added during initial development
+    function (data) {
+      if (!data.badges || !Array.isArray(data.badges)) data.badges = [];
+      if (!data.character) data.character = null;
+      if (data.xp === undefined) data.xp = 0;
+      if (data.coins === undefined) data.coins = 50;
+      if (!Array.isArray(data.tearsCollected)) data.tearsCollected = [];
+      if (!data.worldProgress || typeof data.worldProgress !== 'object') data.worldProgress = {};
+      if (data.totalSolved === undefined) data.totalSolved = 0;
+      if (data.totalAttempts === undefined) data.totalAttempts = 0;
+      if (data.currentStreak === undefined) data.currentStreak = 0;
+      if (data.bestStreak === undefined) data.bestStreak = 0;
+      if (data.solvedNoHints === undefined) data.solvedNoHints = 0;
+      if (data.totalPerfectShrines === undefined) data.totalPerfectShrines = 0;
+      if (!data.bossTimes || typeof data.bossTimes !== 'object') data.bossTimes = {};
+      if (data.totalBossRebattles === undefined) data.totalBossRebattles = 0;
+      if (!Array.isArray(data.inventory)) data.inventory = [];
+      if (!data.equipped || typeof data.equipped !== 'object') {
+        data.equipped = { weapon: null, armor: null, magic: null };
+      } else {
+        if (data.equipped.weapon === undefined) data.equipped.weapon = null;
+        if (data.equipped.armor === undefined) data.equipped.armor = null;
+        if (data.equipped.magic === undefined) data.equipped.magic = null;
+      }
+      if (data.soundMuted === undefined) data.soundMuted = false;
+      // Ensure every worldProgress entry has perfectShrines
+      for (var wid in data.worldProgress) {
+        var wp = data.worldProgress[wid];
+        if (wp) {
+          if (!Array.isArray(wp.shrineStars)) wp.shrineStars = [];
+          if (wp.bossDefeated === undefined) wp.bossDefeated = false;
+          if (!Array.isArray(wp.perfectShrines)) wp.perfectShrines = [];
+        }
+      }
+      data.saveVersion = 1;
+      return data;
+    }
+    // Future migrations go here:
+    // function (data) { /* v1 → v2 */ data.newField = ...; data.saveVersion = 2; return data; }
+  ];
+
+  // Run all needed migrations sequentially on parsed save data
+  function migrateState(data) {
+    var version = (typeof data.saveVersion === 'number') ? data.saveVersion : 0;
+    while (version < CURRENT_SAVE_VERSION && version < SAVE_MIGRATIONS.length) {
+      try {
+        data = SAVE_MIGRATIONS[version](data);
+      } catch (e) {
+        console.error('Save migration v' + version + ' failed:', e);
+        break;
+      }
+      version = (typeof data.saveVersion === 'number') ? data.saveVersion : version + 1;
+    }
+    return data;
   }
 
-  // Load save data from a specific slot (or active slot by default)
+  function saveGame() {
+    try {
+      state.saveVersion = CURRENT_SAVE_VERSION;
+      localStorage.setItem(getSaveKey(session.activeSlot), JSON.stringify(state));
+    } catch (e) {}
+  }
+
+  // Load save data from a specific slot (or active slot by default).
+  // Automatically migrates old saves and re-persists the migrated version.
   function loadGame(slot) {
     var s = slot !== undefined ? slot : session.activeSlot;
     try {
-      const data = localStorage.getItem(getSaveKey(s));
-      if (data) {
-        const parsed = JSON.parse(data);
-        state = { ...state, ...parsed };
-        // Ensure new fields exist from older saves
-        if (!state.badges) state.badges = [];
-        if (!state.character) state.character = null;
-        if (state.currentStreak === undefined) state.currentStreak = 0;
-        if (state.bestStreak === undefined) state.bestStreak = 0;
-        if (state.solvedNoHints === undefined) state.solvedNoHints = 0;
-        if (state.totalPerfectShrines === undefined) state.totalPerfectShrines = 0;
-        if (!state.bossTimes) state.bossTimes = {};
-        if (state.totalBossRebattles === undefined) state.totalBossRebattles = 0;
-        if (!state.inventory) state.inventory = [];
-        if (!state.equipped) state.equipped = { weapon: null, armor: null, magic: null };
-        if (state.soundMuted === undefined) state.soundMuted = false;
+      var raw = localStorage.getItem(getSaveKey(s));
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        var needsMigration = (parsed.saveVersion || 0) < CURRENT_SAVE_VERSION;
+        parsed = migrateState(parsed);
+        // Merge onto fresh defaults so any brand-new fields get their defaults
+        var defaults = createDefaultState();
+        state = mergeStateWithDefaults(defaults, parsed);
+        state.saveVersion = CURRENT_SAVE_VERSION;
         SFX.setMuted(state.soundMuted);
+        // Persist migrated data so migration only runs once
+        if (needsMigration) saveGame();
         return true;
       }
-    } catch (e) {}
+    } catch (e) { console.error('loadGame error:', e); }
     return false;
   }
 
-  // Peek at a slot's data without modifying state (for save slot preview)
+  // Deep-merge saved data onto defaults, preserving nested objects like equipped
+  // and worldProgress while ensuring no default keys are lost.
+  function mergeStateWithDefaults(defaults, saved) {
+    var result = {};
+    for (var key in defaults) {
+      if (saved[key] === undefined || saved[key] === null) {
+        result[key] = defaults[key];
+      } else if (
+        typeof defaults[key] === 'object' && defaults[key] !== null &&
+        !Array.isArray(defaults[key]) &&
+        typeof saved[key] === 'object' && saved[key] !== null &&
+        !Array.isArray(saved[key])
+      ) {
+        // Shallow merge for plain objects (equipped, bossTimes, worldProgress)
+        result[key] = Object.assign({}, defaults[key], saved[key]);
+      } else {
+        result[key] = saved[key];
+      }
+    }
+    // Also copy any extra keys from saved that are not in defaults
+    // (future-proofing: a newer save loaded in older code won't lose data)
+    for (var key2 in saved) {
+      if (result[key2] === undefined) {
+        result[key2] = saved[key2];
+      }
+    }
+    return result;
+  }
+
+  // Peek at a slot's data without modifying active state (for save slot preview).
+  // Runs migration so display is accurate for old saves.
   function peekSlot(slot) {
     try {
-      const data = localStorage.getItem(getSaveKey(slot));
-      if (data) return JSON.parse(data);
+      var raw = localStorage.getItem(getSaveKey(slot));
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        return migrateState(parsed);
+      }
     } catch (e) {}
     return null;
   }
 
   function resetState() {
-    state = {
-      xp: 0, coins: 50, tearsCollected: [], worldProgress: {},
-      totalSolved: 0, totalAttempts: 0, currentStreak: 0, bestStreak: 0,
-      badges: [], character: null, solvedNoHints: 0, totalPerfectShrines: 0, bossTimes: {}, totalBossRebattles: 0,
-      inventory: [], equipped: { weapon: null, armor: null, magic: null },
-      soundMuted: false,
-    };
+    state = createDefaultState();
     SFX.setMuted(false);
     session.worldSelections = {};
   }
@@ -1266,15 +1377,16 @@
     for (let idx = 0; idx < sc; idx++) {
       const stars = wp.shrineStars[idx];
       const done = stars > 0;
+      const isPerfect = wp.perfectShrines && wp.perfectShrines.indexOf(idx) !== -1;
       const type = idx < tutorialCount ? "tutorial" : "challenge";
       const topicName = topics[idx] ? topics[idx].name : ("Shrine " + (idx + 1));
       const div = document.createElement("div");
-      div.className = "shrine-marker" + (done ? " completed" : "");
+      div.className = "shrine-marker" + (done ? " completed" : "") + (isPerfect ? " perfect" : "");
       div.innerHTML = `
         <div class="shrine-number">${done ? "\u2713" : (idx + 1)}</div>
         <div class="shrine-type-label ${type}">${type}</div>
         <div class="shrine-topic-label">${topicName}</div>
-        ${done ? `<div class="shrine-stars-display">${"\u2B50".repeat(stars)}</div>` : ""}
+        ${done ? `<div class="shrine-stars-display">${"\u2B50".repeat(stars)}${isPerfect ? " \u2764\uFE0F" : ""}</div>` : ""}
       `;
       div.onclick = function () { SFX.click(); startShrine(worldId, idx); };
       grid.appendChild(div);
@@ -1294,12 +1406,14 @@
       bestTimeEl.style.display = "none";
     }
 
+    const perfectCount = wp.perfectShrines ? wp.perfectShrines.length : 0;
+    const bonusLabel = perfectCount > 0 ? ` | \u2764\uFE0F +${perfectCount} bonus heart${perfectCount !== 1 ? "s" : ""} for boss` : "";
     if (wp.bossDefeated) {
-      $("temple-req").textContent = "\u2713 Guardian Defeated";
+      $("temple-req").textContent = "\u2713 Guardian Defeated" + bonusLabel;
     } else if (bossUnlocked) {
-      $("temple-req").textContent = "The temple doors are open!";
+      $("temple-req").textContent = "The temple doors are open!" + bonusLabel;
     } else {
-      $("temple-req").textContent = `Complete ${shrineReq - shrinesDone} more shrine${shrineReq - shrinesDone !== 1 ? "s" : ""} to enter`;
+      $("temple-req").textContent = `Complete ${shrineReq - shrinesDone} more shrine${shrineReq - shrinesDone !== 1 ? "s" : ""} to enter` + bonusLabel;
     }
 
     const bossBtn = $("btn-enter-boss");
@@ -1326,10 +1440,11 @@
     session.currentWorld = worldId;
     session.currentShrineIndex = shrineIdx;
     session.currentProblemIndex = 0;
-    session.problems = [sel.shrines[shrineIdx]];
+    session.problems = sel.shrines[shrineIdx]; // array of SHRINE_PUZZLES questions
     session.hearts = SHRINE_HEARTS;
     session.hintsUsed = 0;
     session.wrongThisShrine = 0;
+    session.wrongTotal = 0; // total wrong across all puzzles in this shrine visit
     session.isBoss = false;
 
     showScreen("shrine");
@@ -1379,7 +1494,8 @@
     $("shrine-progress-text").textContent = "Puzzle " + (session.currentProblemIndex + 1) + " of " + session.problems.length;
     $("shrine-coins").textContent = "\u{1FA99} " + state.coins;
     $("tablet-difficulty").textContent = "\u2B50".repeat(prob.difficulty);
-    $("tablet-question").innerHTML = renderMath(prob.question);
+    var diagramHTML = (prob.diagram && typeof renderDiagram === 'function') ? renderDiagram(prob.diagram) : '';
+    $("tablet-question").innerHTML = renderMath(prob.question) + diagramHTML;
 
     const area = $("answer-area");
     area.innerHTML = "";
@@ -1467,34 +1583,58 @@
       state.xp += xpGain;
       state.coins += coinGain;
 
+      // Stars based on total mistakes across all puzzles in this shrine
       let stars = 3;
-      if (session.wrongThisShrine > 0 || session.hintsUsed > 0) stars = 2;
-      if (session.wrongThisShrine >= 2 || session.hintsUsed >= 2) stars = 1;
+      const totalWrong = session.wrongTotal || 0;
+      if (totalWrong > 0 || session.hintsUsed > 0) stars = 2;
+      if (totalWrong >= 3 || session.hintsUsed >= 3) stars = 1;
 
       if (session.isBoss) {
         handleBossCorrect(prob);
       } else {
-        const wp = getWorldProgress(session.currentWorld);
-        const prevStars = wp.shrineStars[session.currentShrineIndex];
-        if (stars > prevStars) wp.shrineStars[session.currentShrineIndex] = stars;
+        // Check if there are more puzzles in this shrine
+        const nextIdx = session.currentProblemIndex + 1;
+        if (nextIdx < session.problems.length) {
+          // More puzzles — advance after a short delay
+          saveGame();
+          checkBadges();
+          setTimeout(() => {
+            session.currentProblemIndex = nextIdx;
+            session.hintsUsed = 0;
+            session.wrongThisShrine = 0; // reset per-puzzle wrong count
+            renderShrineProblem();
+          }, 600);
+        } else {
+          // All puzzles done — shrine complete
+          const wp = getWorldProgress(session.currentWorld);
+          const prevStars = wp.shrineStars[session.currentShrineIndex];
+          if (stars > prevStars) wp.shrineStars[session.currentShrineIndex] = stars;
 
-        // Perfect shrine bonus
-        let bonusXP = 0;
-        if (stars === 3) {
-          bonusXP = XP_PERFECT_BONUS;
-          state.xp += bonusXP;
-          if (prevStars < 3) state.totalPerfectShrines++;
-          launchConfetti(2000);
-          SFX.perfect();
+          // Perfect shrine bonus: 0 wrong answers across all 5 puzzles → bonus heart for boss
+          let bonusXP = 0;
+          const isPerfect = session.wrongTotal === 0 && session.hintsUsed === 0;
+          if (isPerfect) {
+            bonusXP = XP_PERFECT_BONUS;
+            state.xp += bonusXP;
+            if (prevStars < 3) state.totalPerfectShrines++;
+            // Track this shrine as perfect for bonus boss hearts
+            if (!wp.perfectShrines) wp.perfectShrines = [];
+            if (wp.perfectShrines.indexOf(session.currentShrineIndex) === -1) {
+              wp.perfectShrines.push(session.currentShrineIndex);
+            }
+            launchConfetti(2000);
+            SFX.perfect();
+          }
+
+          saveGame();
+          checkBadges();
+          setTimeout(() => showFeedback(true, xpGain + bonusXP, coinGain, stars, prob), 500);
         }
-
-        saveGame();
-        checkBadges();
-        setTimeout(() => showFeedback(true, xpGain + bonusXP, coinGain, stars, prob), 500);
       }
     } else {
       SFX.wrong();
       session.wrongThisShrine++;
+      if (!session.isBoss) session.wrongTotal++;
       state.currentStreak = 0;
       clickedEl.classList.add("wrong");
 
@@ -1506,17 +1646,16 @@
 
       if (session.isBoss) {
         handleBossWrong();
-        if (prob.type === "numeric") {
+        // On wrong answer, swap in a new random question instead of retrying
+        if (session.hearts > 0) {
+          const bossPool = WORLDS[session.currentWorld].pool.boss;
+          const replacement = bossPool[Math.floor(Math.random() * bossPool.length)];
+          session.problems[session.currentProblemIndex] = replacement;
           setTimeout(() => {
-            clickedEl.classList.remove("wrong"); clickedEl.disabled = false;
-            const input = area.querySelector(".answer-input");
-            if (input) { input.disabled = false; input.value = ""; input.focus(); }
-            if (session.hearts > 0) startBossCountdown();
-          }, 600);
-        } else {
-          setTimeout(() => { clickedEl.disabled = true; clickedEl.style.opacity = "0.4"; }, 400);
-          // Restart countdown if still alive (MC — wrong choice disabled, player picks again)
-          if (session.hearts > 0) setTimeout(() => startBossCountdown(), 500);
+            session.wrongThisShrine = 0;
+            session.hintsUsed = 0;
+            renderBossProblem();
+          }, 800);
         }
       } else {
         session.hearts--;
@@ -1583,7 +1722,7 @@
     overlay.style.display = "flex";
     $("feedback-icon").textContent = correct ? "\u2728" : "\uD83D\uDC94";
     const titleText = correct
-      ? (stars === 3 ? "Perfect! Shrine Puzzle Solved!" : "Shrine Puzzle Solved!")
+      ? (stars === 3 ? "Perfect! Shrine Complete!" : "Shrine Complete!")
       : "Not Quite...";
     $("feedback-title").textContent = titleText;
     $("feedback-title").className = "feedback-title " + (correct ? "correct" : "wrong");
@@ -1657,7 +1796,11 @@
     session.isBoss = true;
     session.problems = sel.boss.slice();
     session.currentProblemIndex = 0;
-    session.hearts = BOSS_HEARTS;
+    // Bonus hearts: +1 for each shrine completed perfectly (0 mistakes) in this world
+    const wp = getWorldProgress(worldId);
+    const bonusHearts = wp.perfectShrines ? wp.perfectShrines.length : 0;
+    session.hearts = BOSS_HEARTS + bonusHearts;
+    session.bossMaxHearts = BOSS_HEARTS + bonusHearts;
     session.wrongThisShrine = 0;
     session.bossHP = session.problems.length;
     session.bossMaxHP = session.problems.length;
@@ -1675,7 +1818,7 @@
   function renderBoss(world, worldId) {
     $("boss-name-display").textContent = world.bossName;
     $("boss-hp-fill").style.width = "100%";
-    renderHearts($("boss-player-hearts"), session.hearts, BOSS_HEARTS);
+    renderHearts($("boss-player-hearts"), session.hearts, session.bossMaxHearts || BOSS_HEARTS);
 
     // Set unique boss CSS via data attribute
     const bossVisual = $("boss-visual");
@@ -1693,7 +1836,8 @@
   function renderBossProblem() {
     if (session.currentProblemIndex >= session.problems.length) { bossDefeated(); return; }
     const prob = session.problems[session.currentProblemIndex];
-    $("boss-question").innerHTML = renderMath(prob.question);
+    var bossDiagramHTML = (prob.diagram && typeof renderDiagram === 'function') ? renderDiagram(prob.diagram) : '';
+    $("boss-question").innerHTML = renderMath(prob.question) + bossDiagramHTML;
     const area = $("boss-answer-area");
     area.innerHTML = "";
 
@@ -1744,7 +1888,7 @@
     SFX.bossAttack();
     SFX.heartLost();
     session.hearts--;
-    renderHearts($("boss-player-hearts"), session.hearts, BOSS_HEARTS);
+    renderHearts($("boss-player-hearts"), session.hearts, session.bossMaxHearts || BOSS_HEARTS);
     stopBossCountdown();
     const bossVisual = $("boss-visual");
     bossVisual.classList.add("boss-attack-anim");

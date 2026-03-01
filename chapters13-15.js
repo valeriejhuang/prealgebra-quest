@@ -683,6 +683,328 @@ WORLDS[12] = {
           "Group B sum = 90 × 3 = 270",
           "Overall mean = (410 + 270) ÷ 8 = 680 ÷ 8 = <strong>85</strong>"
         ]
+      },
+      // ── 20 additional boss questions ──
+      {
+        type: "numeric", difficulty: 3,
+        question: 'The mean of 5 numbers is 20. If the number 30 is removed from the set, what is the new mean of the remaining 4 numbers?',
+        answer: "17.5",
+        hints: [
+          "Total sum = 20 × 5 = 100.",
+          "Remove 30: new sum = 100 − 30 = 70.",
+          "New mean = 70 ÷ 4 = 17.5."
+        ],
+        explanation: [
+          "Original sum = 20 × 5 = 100",
+          "After removing 30: sum = 70, count = 4",
+          "New mean = 70 ÷ 4 = <strong>17.5</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'Data set: <span class="math">4, 4, 6, 8, 8</span>. What is true about mean, median, and mode?',
+        choices: [
+          "Mean = median = mode",
+          "Mean = median, but there are two modes",
+          "Mean < median < mode",
+          "Mean > median > mode"
+        ],
+        answer: "Mean = median, but there are two modes",
+        hints: [
+          "Mean = (4+4+6+8+8)/5 = 30/5 = 6. Median = 6 (middle value).",
+          "Mode: 4 appears twice, 8 appears twice — bimodal.",
+          "Mean = median = 6, but there are two modes (4 and 8)."
+        ],
+        explanation: [
+          "Mean = 30/5 = 6. Median = 6.",
+          "Both 4 and 8 appear twice — the data is bimodal.",
+          "<strong>Mean = median, but there are two modes</strong>."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'A student scores 72, 85, 91, and 68 on four tests. What score must she get on the 5th test to have an overall average of exactly 80?',
+        answer: "84",
+        hints: [
+          "Target sum = 80 × 5 = 400.",
+          "Current sum = 72 + 85 + 91 + 68 = 316.",
+          "Needed score = 400 − 316 = 84."
+        ],
+        explanation: [
+          "Target total = 80 × 5 = 400",
+          "Current total = 72 + 85 + 91 + 68 = 316",
+          "Fifth score = 400 − 316 = <strong>84</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'If every value in a data set is multiplied by 3, what happens to the mean and the range?',
+        choices: [
+          "Both the mean and range are multiplied by 3",
+          "The mean is multiplied by 3, but the range stays the same",
+          "The range is multiplied by 3, but the mean stays the same",
+          "Neither changes"
+        ],
+        answer: "Both the mean and range are multiplied by 3",
+        hints: [
+          "If every value is multiplied by 3, the sum is multiplied by 3, so the mean is tripled.",
+          "The max and min are both tripled, so new range = 3×max − 3×min = 3(max − min).",
+          "Both mean and range are multiplied by 3."
+        ],
+        explanation: [
+          "Multiplying every value by k multiplies the mean by k.",
+          "Range = max − min → both scaled by 3, so range is also tripled.",
+          "<strong>Both the mean and range are multiplied by 3</strong>."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'Find the median of: <span class="math">14, 22, 9, 31, 17, 5, 27, 11</span>',
+        answer: "15.5",
+        hints: [
+          "First sort: 5, 9, 11, 14, 17, 22, 27, 31.",
+          "8 values → median = average of 4th and 5th.",
+          "(14 + 17) ÷ 2 = 15.5."
+        ],
+        explanation: [
+          "Sorted: 5, 9, 11, <strong>14, 17</strong>, 22, 27, 31",
+          "Median = (14 + 17) ÷ 2 = <strong>15.5</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'A class of 10 students has a mean test score of 78. A new student joins and the mean rises to 80. What was the new student\'s score?',
+        answer: "102",
+        hints: [
+          "Original total = 78 × 10 = 780.",
+          "New total with 11 students = 80 × 11 = 880.",
+          "New student's score = 880 − 780 = 102."
+        ],
+        explanation: [
+          "Original sum = 78 × 10 = 780",
+          "New sum = 80 × 11 = 880",
+          "New student = 880 − 780 = <strong>102</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'A data set is: <span class="math">10, 12, 14, 16, 18</span>. If 100 is added to the set, which changes the LEAST?',
+        choices: ["Mean", "Median", "Range", "All change equally"],
+        answer: "Median",
+        hints: [
+          "Original median = 14. New sorted set: 10, 12, 14, 16, 18, 100.",
+          "New median = (14 + 16)/2 = 15. It barely moved (from 14 to 15).",
+          "Mean jumps from 14 to 28.3, range jumps from 8 to 90."
+        ],
+        explanation: [
+          "Mean: 14 → 170/6 ≈ 28.3 (big change).",
+          "Range: 8 → 90 (huge change).",
+          "Median: 14 → 15 — the <strong>median</strong> changes the least."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'Grade weights: Homework 25%, Midterm 35%, Final 40%. A student scores 92 on homework and 80 on midterm. What score on the final gives a weighted average of exactly 85?',
+        answer: "85",
+        hints: [
+          "0.25 × 92 + 0.35 × 80 + 0.40 × F = 85.",
+          "23 + 28 + 0.40F = 85 → 0.40F = 34.",
+          "F = 34 ÷ 0.40 = 85."
+        ],
+        explanation: [
+          "0.25(92) + 0.35(80) + 0.40(F) = 85",
+          "23 + 28 + 0.40F = 85 → 0.40F = 34",
+          "F = 34 ÷ 0.40 = <strong>85</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'The mean of 10 numbers is 50. One number is incorrectly recorded as 65 instead of 56. What is the correct mean?',
+        choices: ["49.1", "49.5", "50.9", "51"],
+        answer: "49.1",
+        hints: [
+          "Recorded sum = 50 × 10 = 500.",
+          "Correct sum = 500 − 65 + 56 = 491.",
+          "Correct mean = 491 ÷ 10 = 49.1."
+        ],
+        explanation: [
+          "Recorded sum = 500. Error: recorded 65 instead of 56.",
+          "Correct sum = 500 − 65 + 56 = 491",
+          "Correct mean = 491 ÷ 10 = <strong>49.1</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'The mean of five consecutive even numbers is 24. What is the largest of these numbers?',
+        answer: "28",
+        hints: [
+          "Five consecutive even numbers: n, n+2, n+4, n+6, n+8.",
+          "Their mean = middle value = n+4 = 24, so n = 20.",
+          "Largest = 20 + 8 = 28."
+        ],
+        explanation: [
+          "Consecutive even numbers: 20, 22, 24, 26, 28.",
+          "Mean = middle = 24 ✓",
+          "Largest = <strong>28</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A stem-and-leaf plot shows:<br>1 | 5 &nbsp; 8<br>2 | 2 &nbsp; 2 &nbsp; 7<br>3 | 0 &nbsp; 4 &nbsp; 4 &nbsp; 9<br>4 | 1<br>What is the mode?',
+        choices: ["22", "34", "22 and 34", "No mode exists"],
+        answer: "22 and 34",
+        hints: [
+          "Data: 15, 18, 22, 22, 27, 30, 34, 34, 39, 41.",
+          "22 appears twice and 34 appears twice — more than any other value.",
+          "Both are modes (bimodal)."
+        ],
+        explanation: [
+          "22 appears 2 times, 34 appears 2 times, all others appear once.",
+          "Since both share the highest frequency, the data is bimodal.",
+          "Modes = <strong>22 and 34</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'Group X has 12 students with a mean score of 75. Group Y has 8 students with a mean score of 90. What is the combined mean of all 20 students?',
+        answer: "81",
+        hints: [
+          "Group X total = 75 × 12 = 900.",
+          "Group Y total = 90 × 8 = 720.",
+          "Combined mean = (900 + 720) ÷ 20 = 1620 ÷ 20 = 81."
+        ],
+        explanation: [
+          "Sum X = 75 × 12 = 900. Sum Y = 90 × 8 = 720.",
+          "Combined = (900 + 720) / 20 = 1620 / 20",
+          "Combined mean = <strong>81</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'Data: <span class="math">3, 7, 7, 10, 13</span>. The mean is 8. If we remove the value 13, by how much does the mean decrease?',
+        answer: "1.25",
+        hints: [
+          "Original mean = (3+7+7+10+13)/5 = 40/5 = 8.",
+          "New mean = (3+7+7+10)/4 = 27/4 = 6.75.",
+          "Decrease = 8 − 6.75 = 1.25."
+        ],
+        explanation: [
+          "Original mean = 40/5 = 8",
+          "New mean (without 13) = 27/4 = 6.75",
+          "Decrease = 8 − 6.75 = <strong>1.25</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'A data set has 7 values with a mean of 12 and a median of 10. Which statement MUST be true?',
+        choices: [
+          "The data is skewed right (toward higher values)",
+          "The data is skewed left (toward lower values)",
+          "The data is perfectly symmetric",
+          "The mode must be 10"
+        ],
+        answer: "The data is skewed right (toward higher values)",
+        hints: [
+          "When the mean is greater than the median, the distribution is pulled right.",
+          "High values (outliers) pull the mean up but leave the median mostly unchanged.",
+          "Mean > median → right skew."
+        ],
+        explanation: [
+          "Mean (12) > Median (10) indicates a right skew.",
+          "Some larger values are pulling the mean above the median.",
+          "<strong>The data is skewed right (toward higher values)</strong>."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'A teacher weights grades: Tests 50%, Projects 30%, Participation 20%. Maria scores 90 on tests, 95 on projects, and 70 on participation. Her friend Kenji scores 82 on tests, 85 on projects, and 80 on participation. What is the difference between their weighted averages?',
+        answer: "5",
+        hints: [
+          "Maria: 0.50(90) + 0.30(95) + 0.20(70) = 45 + 28.5 + 14 = 87.5.",
+          "Kenji: 0.50(82) + 0.30(85) + 0.20(80) = 41 + 25.5 + 16 = 82.5.",
+          "Difference = 87.5 − 82.5 = 5."
+        ],
+        explanation: [
+          "Maria: 0.50(90) + 0.30(95) + 0.20(70) = 45 + 28.5 + 14 = 87.5",
+          "Kenji: 0.50(82) + 0.30(85) + 0.20(80) = 41 + 25.5 + 16 = 82.5",
+          "Difference = 87.5 − 82.5 = <strong>5</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'The mean of 7 numbers is 30. The mean of 3 of those numbers is 20. What is the mean of the other 4 numbers?',
+        answer: "37.5",
+        hints: [
+          "Total sum = 30 × 7 = 210.",
+          "Sum of the 3 numbers = 20 × 3 = 60.",
+          "Sum of the other 4 = 210 − 60 = 150. Mean = 150 ÷ 4 = 37.5."
+        ],
+        explanation: [
+          "Total = 30 × 7 = 210. Subset sum = 20 × 3 = 60.",
+          "Remaining sum = 210 − 60 = 150",
+          "Mean of remaining 4 = 150 ÷ 4 = <strong>37.5</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'Data: <span class="math">5, 5, 5, 5, 5</span>. What is the range?',
+        choices: ["0", "5", "25", "1"],
+        answer: "0",
+        hints: [
+          "Range = maximum − minimum.",
+          "Max = 5, Min = 5.",
+          "5 − 5 = 0."
+        ],
+        explanation: [
+          "All values are identical, so max = min = 5.",
+          "Range = 5 − 5 = <strong>0</strong>",
+          "When all values are the same, the range is always 0."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'Ten students scored: <span class="math">60, 65, 70, 72, 75, 78, 80, 85, 90, 95</span>. If the top score (95) is changed to 150, by how much does the mean increase?',
+        answer: "5.5",
+        hints: [
+          "Original sum = 60+65+70+72+75+78+80+85+90+95 = 770. Mean = 77.",
+          "New sum = 770 − 95 + 150 = 825. New mean = 82.5.",
+          "Increase = 82.5 − 77 = 5.5."
+        ],
+        explanation: [
+          "Original mean = 770/10 = 77",
+          "New mean = (770 − 95 + 150)/10 = 825/10 = 82.5",
+          "Increase = 82.5 − 77 = <strong>5.5</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'The sorted data set <span class="math">2, 5, x, 15, 18</span> has a median of <span class="math">x</span>. If the mean of the data set is 9, what is <span class="math">x</span>?',
+        choices: ["5", "7", "8", "9"],
+        answer: "5",
+        hints: [
+          "The median of 5 sorted values is the 3rd value, which is x.",
+          "Mean = (2 + 5 + x + 15 + 18) / 5 = 9.",
+          "40 + x = 45 → x = 5."
+        ],
+        explanation: [
+          "Mean equation: (2 + 5 + x + 15 + 18) / 5 = 9",
+          "40 + x = 45 → x = 5",
+          "Check: sorted 2, 5, 5, 15, 18 — median = <strong>5</strong> ✓"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'A histogram shows test scores: 60-69 (4 students), 70-79 (8 students), 80-89 (6 students), 90-99 (2 students). How many students scored below 80?',
+        answer: "12",
+        hints: [
+          "Below 80 means the 60-69 and 70-79 ranges.",
+          "4 + 8 = 12 students.",
+          "The answer is 12."
+        ],
+        explanation: [
+          "60-69: 4 students. 70-79: 8 students.",
+          "Below 80 = 4 + 8 = <strong>12</strong> students."
+        ]
       }
     ]
 
@@ -1366,6 +1688,302 @@ WORLDS[13] = {
           "P(5,3) = 5 × 4 × 3 = <strong>60</strong>",
           "This is a permutation because order (medal type) matters."
         ]
+      },
+      // ── 20 additional boss questions ──
+      {
+        type: "numeric", difficulty: 3,
+        question: 'Two dice are rolled. How many ways can the sum be 10 or greater?',
+        answer: "6",
+        hints: [
+          "Sum = 10: (4,6),(5,5),(6,4) → 3 ways.",
+          "Sum = 11: (5,6),(6,5) → 2 ways.",
+          "Sum = 12: (6,6) → 1 way. Total = 3 + 2 + 1 = 6."
+        ],
+        explanation: [
+          "Sum 10: (4,6),(5,5),(6,4) = 3",
+          "Sum 11: (5,6),(6,5) = 2. Sum 12: (6,6) = 1.",
+          "Total = 3 + 2 + 1 = <strong>6</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'How many ways can you choose 4 students from a group of 9? (Order doesn\'t matter)',
+        choices: ["126", "3024", "36", "84"],
+        answer: "126",
+        hints: [
+          "C(9,4) = 9! / (4! × 5!).",
+          "= (9 × 8 × 7 × 6) / (4 × 3 × 2 × 1).",
+          "= 3024 / 24 = 126."
+        ],
+        explanation: [
+          "C(9,4) = (9 × 8 × 7 × 6) / (4 × 3 × 2 × 1)",
+          "= 3024 / 24 = <strong>126</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'A coin is flipped 4 times. What is the number of outcomes with exactly 2 heads?',
+        answer: "6",
+        hints: [
+          "Choose which 2 of 4 flips are heads: C(4,2).",
+          "C(4,2) = (4 × 3) / (2 × 1) = 6.",
+          "The 6 outcomes: HHTT, HTHT, HTTH, THHT, THTH, TTHH."
+        ],
+        explanation: [
+          "C(4,2) = (4 × 3) / (2 × 1) = <strong>6</strong>",
+          "Examples: HHTT, HTHT, HTTH, THHT, THTH, TTHH."
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'Two dice are rolled. What is the probability that the sum is at least 10?',
+        choices: ["1/6", "1/12", "5/36", "1/3"],
+        answer: "1/6",
+        hints: [
+          "Sum ≥ 10: count (4,6),(5,5),(6,4),(5,6),(6,5),(6,6) = 6 outcomes.",
+          "Total outcomes = 36.",
+          "P = 6/36 = 1/6."
+        ],
+        explanation: [
+          "Favorable: 6 outcomes (sums 10, 11, 12).",
+          "P = 6/36 = <strong>1/6</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'How many ways can you go from corner A to corner B on a 3×2 grid, moving only right or down? (3 steps right, 2 steps down)',
+        answer: "10",
+        hints: [
+          "You must take 3 Right steps and 2 Down steps in some order — 5 steps total.",
+          "Choose which 2 of the 5 steps are Down: C(5,2).",
+          "C(5,2) = (5 × 4)/(2 × 1) = 10."
+        ],
+        explanation: [
+          "Path = sequence of 3 R's and 2 D's.",
+          "C(5,2) = 10 (choose positions for the Down steps).",
+          "Total paths = <strong>10</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'A standard deck of 52 cards has 4 aces. You draw one card. What is the probability of NOT drawing an ace?',
+        choices: ["12/13", "1/13", "4/52", "48/52"],
+        answer: "12/13",
+        hints: [
+          "Not an ace = 52 − 4 = 48 cards.",
+          "P(not ace) = 48/52.",
+          "Simplify: 48/52 = 12/13."
+        ],
+        explanation: [
+          "P(not ace) = 48/52 = 12/13.",
+          "<strong>12/13</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'The word MATH has 4 distinct letters. How many 2-letter arrangements can be made from these letters (no repeats)?',
+        answer: "12",
+        hints: [
+          "This is P(4,2) — order matters since MA ≠ AM.",
+          "P(4,2) = 4 × 3 = 12.",
+          "Examples: MA, MT, MH, AM, AT, AH, TM, TA, TH, HM, HA, HT."
+        ],
+        explanation: [
+          "P(4,2) = 4 × 3 = <strong>12</strong>",
+          "Order matters in arrangements."
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A bag has 5 red and 3 blue marbles. You draw two marbles one at a time without replacement. What is the probability both are red?',
+        choices: ["5/14", "25/64", "5/8", "10/28"],
+        answer: "5/14",
+        hints: [
+          "P(1st red) = 5/8.",
+          "P(2nd red | 1st red) = 4/7.",
+          "P(both red) = (5/8)(4/7) = 20/56 = 5/14."
+        ],
+        explanation: [
+          "P(1st red) = 5/8. After removing a red: P(2nd red) = 4/7.",
+          "P(both) = (5/8) × (4/7) = 20/56 = <strong>5/14</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'How many ways can the letters in the word BOOK be arranged?',
+        answer: "12",
+        hints: [
+          "BOOK has 4 letters, but O repeats twice.",
+          "Total arrangements = 4! / 2! (divide by repeated letters).",
+          "= 24 / 2 = 12."
+        ],
+        explanation: [
+          "4 letters with O repeated twice.",
+          "Arrangements = 4! / 2! = 24 / 2 = <strong>12</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'You roll a die 3 times. What is the probability of getting a 6 on at least one roll?',
+        choices: ["91/216", "1/216", "1/6", "125/216"],
+        answer: "91/216",
+        hints: [
+          "Use the complement: P(at least one 6) = 1 − P(no 6s).",
+          "P(no 6 on one roll) = 5/6. P(no 6s in 3 rolls) = (5/6)³ = 125/216.",
+          "P(at least one 6) = 1 − 125/216 = 91/216."
+        ],
+        explanation: [
+          "P(no sixes) = (5/6)³ = 125/216",
+          "P(at least one 6) = 1 − 125/216 = <strong>91/216</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'A committee of 2 boys and 2 girls is chosen from 5 boys and 4 girls. How many committees are possible?',
+        answer: "60",
+        hints: [
+          "Choose 2 boys from 5: C(5,2) = 10.",
+          "Choose 2 girls from 4: C(4,2) = 6.",
+          "Total = 10 × 6 = 60."
+        ],
+        explanation: [
+          "C(5,2) = 10 ways to pick boys.",
+          "C(4,2) = 6 ways to pick girls.",
+          "Total committees = 10 × 6 = <strong>60</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'A coin is flipped 5 times. How many total outcomes are there?',
+        choices: ["10", "25", "32", "64"],
+        answer: "32",
+        hints: [
+          "Each flip has 2 outcomes.",
+          "5 flips: 2 × 2 × 2 × 2 × 2 = 2⁵.",
+          "2⁵ = 32."
+        ],
+        explanation: [
+          "Each flip doubles the outcomes: 2 × 2 × 2 × 2 × 2.",
+          "2⁵ = <strong>32</strong> total outcomes."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'How many 3-letter codes can be made from A, B, C, D, E, F if letters CAN repeat?',
+        answer: "216",
+        hints: [
+          "6 choices for each of 3 positions, with repetition allowed.",
+          "6 × 6 × 6 = 6³.",
+          "= 216."
+        ],
+        explanation: [
+          "With repetition allowed, each of 3 positions has 6 choices.",
+          "Total = 6 × 6 × 6 = 6³ = <strong>216</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'From a group of 7 people, you choose a president, vice president, and secretary (all different). How many ways?',
+        choices: ["35", "210", "343", "21"],
+        answer: "210",
+        hints: [
+          "Order matters — P(7,3).",
+          "7 × 6 × 5 = 210.",
+          "President: 7 choices, VP: 6 remaining, Secretary: 5 remaining."
+        ],
+        explanation: [
+          "P(7,3) = 7 × 6 × 5 = <strong>210</strong>",
+          "Order matters since each role is different."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'Two fair dice are rolled. What is the number of outcomes where the two dice show different numbers?',
+        answer: "30",
+        hints: [
+          "Total outcomes = 36.",
+          "Same number outcomes: (1,1),(2,2),(3,3),(4,4),(5,5),(6,6) = 6.",
+          "Different = 36 − 6 = 30."
+        ],
+        explanation: [
+          "Total = 36. Same = 6 (doubles).",
+          "Different = 36 − 6 = <strong>30</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'A bag has 10 marbles: 4 red, 3 blue, 2 green, 1 yellow. What is the probability of drawing a marble that is NOT blue and NOT yellow?',
+        choices: ["6/10", "3/5", "7/10", "4/10"],
+        answer: "3/5",
+        hints: [
+          "Not blue and not yellow means red or green.",
+          "Red + green = 4 + 2 = 6.",
+          "P = 6/10 = 3/5."
+        ],
+        explanation: [
+          "Favorable: red (4) + green (2) = 6",
+          "P = 6/10 = <strong>3/5</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'How many ways can 6 people sit around a circular table? (Rotations of the same arrangement are considered identical)',
+        answer: "120",
+        hints: [
+          "For circular permutations, fix one person's seat.",
+          "Then arrange the remaining 5: 5!.",
+          "5! = 120."
+        ],
+        explanation: [
+          "Circular permutations of n objects = (n−1)!",
+          "(6−1)! = 5! = 120",
+          "Total = <strong>120</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A standard deck has 52 cards (4 suits of 13). You draw one card. What is the probability it is a heart or a face card (J, Q, K)?',
+        choices: ["22/52", "25/52", "11/26", "9/52"],
+        answer: "11/26",
+        hints: [
+          "Hearts: 13 cards. Face cards: 12 (3 per suit × 4 suits).",
+          "But 3 face cards are already hearts (J♥, Q♥, K♥) — don't double-count!",
+          "Total = 13 + 12 − 3 = 22. P = 22/52 = 11/26."
+        ],
+        explanation: [
+          "Hearts = 13. Face cards = 12. Overlap (heart face cards) = 3.",
+          "By inclusion-exclusion: 13 + 12 − 3 = 22.",
+          "P = 22/52 = <strong>11/26</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'You have 8 different trophies but only 3 spots on a shelf. How many ways can you display them? (Order matters)',
+        answer: "336",
+        hints: [
+          "P(8,3) = 8 × 7 × 6.",
+          "8 × 7 = 56. 56 × 6 = 336.",
+          "Order matters because the positions are distinct."
+        ],
+        explanation: [
+          "This is a permutation: P(8,3) = 8 × 7 × 6.",
+          "= 56 × 6 = <strong>336</strong> arrangements."
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A spinner has 4 equal sections: Red, Blue, Green, Yellow. You spin twice. What is the probability of getting the same color both times?',
+        choices: ["1/16", "1/4", "4/16", "1/2"],
+        answer: "1/4",
+        hints: [
+          "Total outcomes = 4 × 4 = 16.",
+          "Same color: (R,R), (B,B), (G,G), (Y,Y) = 4 outcomes.",
+          "P = 4/16 = 1/4."
+        ],
+        explanation: [
+          "Favorable: 4 outcomes (one for each color repeated).",
+          "P = 4/16 = <strong>1/4</strong>"
+        ]
       }
     ]
 
@@ -2013,6 +2631,311 @@ WORLDS[14] = {
           "Split: (1+2+...+100) + (99+98+...+1) = 5050 + 4950",
           "= <strong>10,000</strong>",
           "Alternatively: this equals 100², because the sum 1+2+...+(n−1)+n+(n−1)+...+1 = n²."
+        ]
+      },
+      // ── 20 additional boss questions ──
+      {
+        type: "mc", difficulty: 4,
+        question: 'A clock shows 4:30. What is the angle between the hour and minute hands?',
+        choices: ["30°", "45°", "60°", "75°"],
+        answer: "45°",
+        hints: [
+          "At 4:30, the minute hand points to 6 (180°). The hour hand is halfway between 4 and 5.",
+          "Hour hand: 4 × 30° + 15° = 135°. Minute hand: 180°.",
+          "Angle = 180° − 135° = 45°."
+        ],
+        explanation: [
+          "Hour hand at 4:30 = 4.5 × 30° = 135° from 12.",
+          "Minute hand at 30 min = 180° from 12.",
+          "Angle = 180° − 135° = <strong>45°</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 5,
+        question: 'What is <span class="math">1³ + 2³ + 3³ + 4³ + 5³</span>?',
+        answer: "225",
+        hints: [
+          "1³ = 1, 2³ = 8, 3³ = 27, 4³ = 64, 5³ = 125.",
+          "Sum = 1 + 8 + 27 + 64 + 125 = 225.",
+          "Fun fact: the sum of the first n cubes equals (1+2+...+n)², so this equals 15² = 225."
+        ],
+        explanation: [
+          "1 + 8 + 27 + 64 + 125 = 225",
+          "Shortcut: (1+2+3+4+5)² = 15² = <strong>225</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'What is <span class="math">1 − 2 + 3 − 4 + 5 − 6 + ... − 98 + 99 − 100</span>?',
+        choices: ["-100", "-50", "0", "50"],
+        answer: "-50",
+        hints: [
+          "Group in pairs: (1−2) + (3−4) + (5−6) + ... + (99−100).",
+          "Each pair equals −1.",
+          "There are 50 pairs (from 1-2 up to 99-100), so the sum = 50 × (−1) = −50."
+        ],
+        explanation: [
+          "Pair up: (1−2) + (3−4) + ... + (99−100)",
+          "Each pair = −1. Number of pairs = 50.",
+          "Total = 50 × (−1) = <strong>−50</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'How many total squares (of any size) are on a 5×5 grid?',
+        answer: "55",
+        hints: [
+          "Count by size: 1×1: 25, 2×2: 16, 3×3: 9, 4×4: 4, 5×5: 1.",
+          "Formula: 1² + 2² + 3² + 4² + 5² = 1 + 4 + 9 + 16 + 25.",
+          "= 55."
+        ],
+        explanation: [
+          "1² + 2² + 3² + 4² + 5² = 1 + 4 + 9 + 16 + 25",
+          "= <strong>55</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 5,
+        question: 'A lily pad doubles in area every day. It covers the entire pond on day 30. On what day did it cover exactly half the pond?',
+        choices: ["Day 15", "Day 20", "Day 25", "Day 29"],
+        answer: "Day 29",
+        hints: [
+          "If it doubles every day, then the day before it was full, it was half full.",
+          "Full on day 30 → half on day 29.",
+          "This is a classic exponential growth problem — think backwards!"
+        ],
+        explanation: [
+          "Doubles each day → day before full = half full.",
+          "Full on day 30, so half on <strong>day 29</strong>.",
+          "Many people guess 15, but exponential growth is deceptive!"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'The sum of three consecutive integers is 72. What is the largest of the three?',
+        answer: "25",
+        hints: [
+          "Let the integers be n−1, n, n+1.",
+          "Sum = 3n = 72 → n = 24.",
+          "Largest = n + 1 = 25."
+        ],
+        explanation: [
+          "Three consecutive integers: n−1, n, n+1. Sum = 3n = 72.",
+          "n = 24, so the integers are 23, 24, 25.",
+          "Largest = <strong>25</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'How many total rectangles (including squares) are on a 4×2 grid of unit squares?',
+        choices: ["18", "24", "27", "30"],
+        answer: "30",
+        hints: [
+          "A 4×2 grid has 5 vertical lines and 3 horizontal lines.",
+          "Choose 2 vertical lines: C(5,2) = 10. Choose 2 horizontal: C(3,2) = 3.",
+          "Total = 10 × 3 = 30."
+        ],
+        explanation: [
+          "C(5,2) = 10 pairs of vertical lines.",
+          "C(3,2) = 3 pairs of horizontal lines.",
+          "Total rectangles = 10 × 3 = <strong>30</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 5,
+        question: 'What is the sum <span class="math">\\frac{1}{1 \\times 2} + \\frac{1}{2 \\times 3} + \\frac{1}{3 \\times 4} + \\frac{1}{4 \\times 5}</span>? Express as a simplified fraction (enter as a/b).',
+        answer: "4/5",
+        hints: [
+          "Use partial fractions: 1/(n(n+1)) = 1/n − 1/(n+1).",
+          "Sum = (1/1 − 1/2) + (1/2 − 1/3) + (1/3 − 1/4) + (1/4 − 1/5).",
+          "This telescopes! Most terms cancel, leaving 1 − 1/5 = 4/5."
+        ],
+        explanation: [
+          "Telescoping sum: 1/(n(n+1)) = 1/n − 1/(n+1)",
+          "= (1 − 1/2) + (1/2 − 1/3) + (1/3 − 1/4) + (1/4 − 1/5) = 1 − 1/5",
+          "= <strong>4/5</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'You have a 3×3 grid of dots. How many triangles can be formed using 3 of these dots as vertices? (Hint: not all sets of 3 dots form a triangle.)',
+        choices: ["72", "76", "80", "84"],
+        answer: "76",
+        hints: [
+          "Total ways to choose 3 dots from 9: C(9,3) = 84.",
+          "Subtract sets of 3 collinear dots (they form a line, not a triangle).",
+          "3 rows + 3 columns + 2 diagonals = 8 collinear triples. 84 − 8 = 76."
+        ],
+        explanation: [
+          "C(9,3) = 84 total ways to pick 3 dots.",
+          "Collinear triples: 3 rows + 3 cols + 2 main diagonals = 8.",
+          "Triangles = 84 − 8 = <strong>76</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'A train travels at 60 mph for 2 hours, then at 40 mph for 3 hours. What is the train\'s average speed for the whole trip (in mph)?',
+        answer: "48",
+        hints: [
+          "Total distance = 60×2 + 40×3 = 120 + 120 = 240 miles.",
+          "Total time = 2 + 3 = 5 hours.",
+          "Average speed = 240 ÷ 5 = 48 mph."
+        ],
+        explanation: [
+          "Distance: 60(2) + 40(3) = 120 + 120 = 240 mi.",
+          "Time: 2 + 3 = 5 hrs.",
+          "Average speed = 240/5 = <strong>48</strong> mph"
+        ]
+      },
+      {
+        type: "mc", difficulty: 5,
+        question: 'What is the units digit of <span class="math">9<sup>99</sup></span>?',
+        choices: ["1", "3", "7", "9"],
+        answer: "9",
+        hints: [
+          "Units digit cycle of 9ⁿ: 9, 1, 9, 1, ... (period 2).",
+          "Odd powers end in 9, even powers end in 1.",
+          "99 is odd → units digit = 9."
+        ],
+        explanation: [
+          "9¹=9, 9²=81, 9³=729 → cycle: 9, 1, 9, 1, ...",
+          "99 is odd → same as 9¹ → units digit = <strong>9</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 5,
+        question: 'What is <span class="math">2 + 4 + 6 + ... + 200</span>? (Sum of even numbers from 2 to 200)',
+        answer: "10100",
+        hints: [
+          "Factor out 2: 2(1 + 2 + 3 + ... + 100).",
+          "1 + 2 + ... + 100 = 100 × 101 / 2 = 5050.",
+          "2 × 5050 = 10100."
+        ],
+        explanation: [
+          "2(1 + 2 + ... + 100) = 2 × 5050",
+          "= <strong>10,100</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'In a knockout tournament with 64 teams, how many total games must be played to determine a champion?',
+        choices: ["32", "63", "64", "128"],
+        answer: "63",
+        hints: [
+          "Each game eliminates exactly one team.",
+          "To go from 64 teams to 1 champion, you need to eliminate 63 teams.",
+          "So 63 games are needed."
+        ],
+        explanation: [
+          "Each game eliminates 1 team.",
+          "63 teams must be eliminated to leave 1 champion.",
+          "Total games = <strong>63</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 5,
+        question: 'How many paths are there from the bottom-left to the top-right of a 4×3 grid, moving only right or up? (4 right + 3 up steps)',
+        answer: "35",
+        hints: [
+          "Total steps = 4 right + 3 up = 7 steps.",
+          "Choose which 3 of 7 steps are 'up': C(7,3).",
+          "C(7,3) = (7×6×5)/(3×2×1) = 210/6 = 35."
+        ],
+        explanation: [
+          "7 total steps, choose 3 for 'up' (or 4 for 'right').",
+          "C(7,3) = 35",
+          "Total paths = <strong>35</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'The ages of a father and son add up to 45. Five years ago, the father was 4 times as old as the son. How old is the son now?',
+        choices: ["10", "12", "13", "15"],
+        answer: "12",
+        hints: [
+          "Let father = F, son = S. F + S = 45.",
+          "Five years ago: (F−5) = 4(S−5) → F − 5 = 4S − 20 → F = 4S − 15.",
+          "Substitute: (4S − 15) + S = 45 → 5S = 60 → S = 12."
+        ],
+        explanation: [
+          "F + S = 45 and F − 5 = 4(S − 5).",
+          "F = 4S − 15. Substituting: 4S − 15 + S = 45 → 5S = 60 → S = 12.",
+          "Son = <strong>12</strong>, Father = 33. Check: 28 = 4 × 7 ✓"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'How many diagonals does a regular 10-sided polygon (decagon) have?',
+        answer: "35",
+        hints: [
+          "Formula: n(n−3)/2 where n = number of sides.",
+          "10 × (10−3) / 2 = 10 × 7 / 2.",
+          "= 70 / 2 = 35."
+        ],
+        explanation: [
+          "Each vertex connects to n−3 others by diagonals (can't connect to itself or adjacent vertices).",
+          "Total = n(n−3)/2 = 10(7)/2 = <strong>35</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 5,
+        question: 'What is <span class="math">1 \\times 2 + 2 \\times 3 + 3 \\times 4 + ... + 9 \\times 10</span>?',
+        choices: ["240", "330", "285", "165"],
+        answer: "330",
+        hints: [
+          "Each term is n(n+1). Sum from n=1 to 9 of n(n+1) = sum of n² + sum of n.",
+          "Sum of n² from 1-9 = 9(10)(19)/6 = 285. Sum of n from 1-9 = 45.",
+          "Total = 285 + 45 = 330."
+        ],
+        explanation: [
+          "n(n+1) = n² + n. Sum = Σn² + Σn (n=1 to 9).",
+          "Σn² = 9(10)(19)/6 = 285. Σn = 9(10)/2 = 45.",
+          "Total = 285 + 45 = <strong>330</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 5,
+        question: 'A rope is cut into pieces. The first cut makes 2 pieces. Each subsequent cut can cut one existing piece into two. After 10 cuts, what is the maximum number of pieces?',
+        answer: "11",
+        hints: [
+          "Each cut adds exactly 1 new piece.",
+          "Start with 1 piece. After 1 cut: 2. After 2 cuts: 3.",
+          "After n cuts: n + 1 pieces. After 10 cuts: 11."
+        ],
+        explanation: [
+          "Each cut turns 1 piece into 2 → net gain of 1 piece per cut.",
+          "After 10 cuts: 1 + 10 = <strong>11</strong> pieces."
+        ]
+      },
+      {
+        type: "mc", difficulty: 5,
+        question: 'What is the remainder when <span class="math">1 + 2 + 3 + ... + 100</span> is divided by 7?',
+        choices: ["0", "1", "3", "6"],
+        answer: "3",
+        hints: [
+          "1 + 2 + ... + 100 = 5050.",
+          "Divide: 5050 ÷ 7 = 721 with remainder.",
+          "721 × 7 = 5047. 5050 − 5047 = 3."
+        ],
+        explanation: [
+          "1 + 2 + ... + 100 = 5050.",
+          "5050 = 721 × 7 + 3.",
+          "Remainder = <strong>3</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 5,
+        question: 'A 4×4 chessboard has its corners at (0,0), (4,0), (4,4), and (0,4). How many total rectangles (of any size, including squares) are on this grid?',
+        answer: "100",
+        hints: [
+          "A 4×4 grid has 5 horizontal lines and 5 vertical lines.",
+          "Choose 2 horizontal lines: C(5,2) = 10. Choose 2 vertical: C(5,2) = 10.",
+          "Total rectangles = 10 × 10 = 100."
+        ],
+        explanation: [
+          "C(5,2) = 10 ways to pick horizontal lines.",
+          "C(5,2) = 10 ways to pick vertical lines.",
+          "Total = 10 × 10 = <strong>100</strong>"
         ]
       }
     ]

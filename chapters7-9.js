@@ -618,6 +618,314 @@ WORLDS[6] = {
           "Each machine = 10 widgets/hour",
           "Machines = 30 ÷ 10 = <strong>3</strong>"
         ]
+      },
+      // ── 20 additional boss questions ──────────────────────────
+      {
+        type: "numeric", difficulty: 3,
+        question: 'Solve the proportion: <span class="math">\\frac{9}{15} = \\frac{x}{25}</span>. What is x?',
+        answer: "15",
+        hints: [
+          "Cross-multiply: 9 × 25 = 15 × x.",
+          "225 = 15x.",
+          "x = 225 ÷ 15 = 15."
+        ],
+        explanation: [
+          "Cross-multiply: 9 \\times 25 = 15 \\times x",
+          "225 = 15x",
+          "x = <strong>15</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'A printer prints 24 pages in 4 minutes. At the same rate, how many pages does it print in 15 minutes?',
+        choices: ["60", "72", "90", "96"],
+        answer: "90",
+        hints: [
+          "Rate = 24 ÷ 4 = 6 pages per minute.",
+          "In 15 minutes: 6 × 15 = ?",
+          "= 90 pages."
+        ],
+        explanation: [
+          "Rate = 24 ÷ 4 = 6 pages/min",
+          "6 × 15 = <strong>90 pages</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'A runner completes a 5-km race in 20 minutes. At the same pace, how many minutes would a 12-km race take?',
+        answer: "48",
+        hints: [
+          "Rate = 5 km / 20 min, so 1 km takes 4 minutes.",
+          "12 km × 4 min/km = ?",
+          "= 48 minutes."
+        ],
+        explanation: [
+          "Time per km = 20 ÷ 5 = 4 min/km",
+          "12 × 4 = <strong>48 minutes</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'Two gears are meshed. Gear A has 20 teeth and Gear B has 50 teeth. If Gear A turns 10 times, how many times does Gear B turn?',
+        choices: ["2", "4", "5", "25"],
+        answer: "4",
+        hints: [
+          "The teeth ratio determines turns: 20 × 10 = 200 total teeth engaged.",
+          "Gear B turns: 200 ÷ 50 = ?",
+          "= 4 turns."
+        ],
+        explanation: [
+          "Total teeth engaged = 20 × 10 = 200",
+          "Gear B turns = 200 ÷ 50 = <strong>4</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'A recipe for 8 cookies uses <span class="math">\\frac{3}{4}</span> cup of butter. How many cups of butter are needed for 32 cookies? Give your answer as a whole number.',
+        answer: "3",
+        hints: [
+          "Scale factor = 32 ÷ 8 = 4.",
+          "Butter = (3/4) × 4 = ?",
+          "= 3 cups."
+        ],
+        explanation: [
+          "Scale factor = 32 ÷ 8 = 4",
+          "(3/4) × 4 = 3",
+          "Butter needed = <strong>3 cups</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'Sam drives 150 miles in 2.5 hours, then 100 miles in 2 hours. What is his average speed for the whole trip?',
+        choices: ["50 mph", "55.6 mph", "62.5 mph", "56 mph"],
+        answer: "55.6 mph",
+        hints: [
+          "Total distance = 150 + 100 = 250 miles.",
+          "Total time = 2.5 + 2 = 4.5 hours.",
+          "Average speed = 250 ÷ 4.5 ≈ 55.6 mph."
+        ],
+        explanation: [
+          "Total distance = 250 miles, total time = 4.5 hours",
+          "Average speed = 250 ÷ 4.5",
+          "≈ <strong>55.6 mph</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'A map uses a scale of 1 inch : 8 miles. Two towns are 45 miles apart in real life. How many inches apart are they on the map? Give your answer as a decimal.',
+        answer: "5.625",
+        hints: [
+          "Map distance = real distance ÷ scale factor.",
+          "45 ÷ 8 = ?",
+          "= 5.625 inches."
+        ],
+        explanation: [
+          "Map distance = 45 ÷ 8",
+          "= 5.625",
+          "The towns are <strong>5.625 inches</strong> apart on the map."
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'Pipe X fills a tank in 10 hours. Pipe Y drains it in 15 hours. If both are open, how many hours to fill the empty tank?',
+        choices: ["25", "30", "6", "12"],
+        answer: "30",
+        hints: [
+          "Fill rate = 1/10 per hour. Drain rate = 1/15 per hour.",
+          "Net rate = 1/10 − 1/15 = 3/30 − 2/30 = 1/30 per hour.",
+          "Time = 1 ÷ (1/30) = 30 hours."
+        ],
+        explanation: [
+          "Net rate = 1/10 − 1/15 = 1/30 per hour",
+          "Time = 1 ÷ (1/30)",
+          "= <strong>30 hours</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'Alice can mow a lawn in 3 hours. Bob can mow it in 6 hours. Charlie can mow it in 9 hours. Working together, how many hours does it take? Give your answer as a fraction (e.g., 18/11).',
+        answer: "18/11",
+        hints: [
+          "Rates: Alice = 1/3, Bob = 1/6, Charlie = 1/9 per hour.",
+          "Combined = 1/3 + 1/6 + 1/9 = 6/18 + 3/18 + 2/18 = 11/18.",
+          "Time = 18/11 hours."
+        ],
+        explanation: [
+          "Combined rate = 1/3 + 1/6 + 1/9 = 11/18 per hour",
+          "Time = 1 ÷ (11/18) = 18/11",
+          "= <strong>18/11 hours</strong> (about 1 hr 38 min)"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A boat travels 24 km upstream in 3 hours and 24 km downstream in 2 hours. What is the speed of the current?',
+        choices: ["1 km/h", "2 km/h", "3 km/h", "4 km/h"],
+        answer: "2 km/h",
+        hints: [
+          "Upstream speed = 24 ÷ 3 = 8 km/h. Downstream speed = 24 ÷ 2 = 12 km/h.",
+          "Current = (downstream − upstream) ÷ 2.",
+          "= (12 − 8) ÷ 2 = 2 km/h."
+        ],
+        explanation: [
+          "Upstream = 8 km/h, Downstream = 12 km/h",
+          "Current = (12 − 8) ÷ 2",
+          "= <strong>2 km/h</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'A school has boys and girls in the ratio 5:7. If there are 180 students total, how many more girls than boys are there?',
+        answer: "30",
+        hints: [
+          "Total parts = 5 + 7 = 12. Each part = 180 ÷ 12 = 15.",
+          "Boys = 5 × 15 = 75. Girls = 7 × 15 = 105.",
+          "Difference = 105 − 75 = 30."
+        ],
+        explanation: [
+          "Each part = 180 ÷ 12 = 15",
+          "Boys = 75, Girls = 105",
+          "Difference = <strong>30</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A photograph is 4 inches by 6 inches. It is enlarged so the longer side becomes 15 inches. What is the new shorter side?',
+        choices: ["8 inches", "9 inches", "10 inches", "12 inches"],
+        answer: "10 inches",
+        hints: [
+          "Scale factor = 15 ÷ 6 = 2.5.",
+          "New shorter side = 4 × 2.5 = ?",
+          "= 10 inches."
+        ],
+        explanation: [
+          "Scale factor = 15 ÷ 6 = 2.5",
+          "New shorter side = 4 × 2.5",
+          "= <strong>10 inches</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'Car A leaves at 8:00 AM going 55 mph. Car B leaves the same spot at 9:00 AM going 70 mph in the same direction. At what time does Car B catch Car A? Give the number of hours after 8:00 AM as a decimal (e.g., 4.5).',
+        answer: "4.67",
+        hints: [
+          "At time t hours after 9 AM, Car A has traveled 55(t+1) miles, Car B has traveled 70t miles.",
+          "Set equal: 55(t+1) = 70t → 55t + 55 = 70t → 55 = 15t → t = 55/15 ≈ 3.67 hours after 9 AM.",
+          "That is about 4.67 hours after 8 AM (≈ 12:40 PM)."
+        ],
+        explanation: [
+          "55(t+1) = 70t → 15t = 55 → t ≈ 3.67 hr after 9 AM",
+          "= 4.67 hours after 8 AM",
+          "Car B catches Car A about <strong>4.67</strong> hours after 8 AM."
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'A machine makes 360 parts in 6 hours. A second machine makes 280 parts in 8 hours. Which machine has the higher rate?',
+        choices: ["First machine (60/hr)", "Second machine (35/hr)", "They are equal", "Cannot be determined"],
+        answer: "First machine (60/hr)",
+        hints: [
+          "First machine: 360 ÷ 6 = 60 parts/hour.",
+          "Second machine: 280 ÷ 8 = 35 parts/hour.",
+          "60 > 35, so the first machine is faster."
+        ],
+        explanation: [
+          "First: 360 ÷ 6 = 60 parts/hr",
+          "Second: 280 ÷ 8 = 35 parts/hr",
+          "<strong>First machine</strong> has the higher rate."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'Solve: <span class="math">\\frac{x}{4} = \\frac{21}{12}</span>. What is x?',
+        answer: "7",
+        hints: [
+          "Cross-multiply: 12x = 4 × 21.",
+          "12x = 84.",
+          "x = 84 ÷ 12 = 7."
+        ],
+        explanation: [
+          "12x = 4 × 21 = 84",
+          "x = 84 ÷ 12",
+          "x = <strong>7</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A 6-foot person casts an 8-foot shadow. A nearby tree casts a 32-foot shadow. How tall is the tree?',
+        choices: ["18 feet", "20 feet", "24 feet", "28 feet"],
+        answer: "24 feet",
+        hints: [
+          "Set up a proportion: person/shadow = tree/shadow.",
+          "6/8 = x/32. Cross-multiply: 6 × 32 = 8x.",
+          "192 = 8x → x = 24 feet."
+        ],
+        explanation: [
+          "6/8 = x/32",
+          "6 × 32 = 8x → 192 = 8x",
+          "x = <strong>24 feet</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'A mixture requires cement, sand, and gravel in the ratio 1:3:5. If you need 54 kg of the mixture total, how many kg of sand are needed?',
+        answer: "18",
+        hints: [
+          "Total parts = 1 + 3 + 5 = 9.",
+          "Each part = 54 ÷ 9 = 6 kg.",
+          "Sand = 3 × 6 = 18 kg."
+        ],
+        explanation: [
+          "Total parts = 9, each part = 54 ÷ 9 = 6 kg",
+          "Sand = 3 × 6",
+          "= <strong>18 kg</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A plane flies 600 miles with a tailwind in 2 hours and the return trip against the wind takes 3 hours. What is the wind speed?',
+        choices: ["25 mph", "50 mph", "75 mph", "100 mph"],
+        answer: "50 mph",
+        hints: [
+          "With wind: 600/2 = 300 mph. Against wind: 600/3 = 200 mph.",
+          "Let plane speed = p, wind speed = w. Then p + w = 300 and p − w = 200.",
+          "Subtract: 2w = 100, so w = 50 mph."
+        ],
+        explanation: [
+          "With wind: 300 mph. Against wind: 200 mph.",
+          "2w = 300 − 200 = 100",
+          "w = <strong>50 mph</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'It takes 5 workers 8 days to build a wall. How many days would it take 10 workers to build the same wall?',
+        answer: "4",
+        hints: [
+          "Total work = 5 × 8 = 40 worker-days.",
+          "With 10 workers: 40 ÷ 10 = ?",
+          "= 4 days."
+        ],
+        explanation: [
+          "Total work = 5 × 8 = 40 worker-days",
+          "Time for 10 workers = 40 ÷ 10",
+          "= <strong>4 days</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A faucet fills a bathtub in 8 minutes. The drain empties it in 12 minutes. If both are open with the tub empty, how many minutes to fill the tub?',
+        choices: ["16", "20", "24", "10"],
+        answer: "24",
+        hints: [
+          "Fill rate = 1/8 per min. Drain rate = 1/12 per min.",
+          "Net rate = 1/8 − 1/12 = 3/24 − 2/24 = 1/24 per min.",
+          "Time = 1 ÷ (1/24) = 24 minutes."
+        ],
+        explanation: [
+          "Net rate = 1/8 − 1/12 = 1/24 per minute",
+          "Time = 1 ÷ (1/24)",
+          "= <strong>24 minutes</strong>"
+        ]
       }
     ]
   }
@@ -1227,6 +1535,307 @@ WORLDS[7] = {
           "1000 × 0.90 = 900",
           "900 × 0.90 = 810",
           "810 × 0.90 = <strong>729</strong>"
+        ]
+      },
+      // ── 20 additional boss questions ──────────────────────────
+      {
+        type: "numeric", difficulty: 3,
+        question: 'A jacket originally costs $80. It is marked down 25%, then that sale price is marked down another 20%. What is the final price?',
+        answer: "48",
+        hints: [
+          "After 25% off: 80 × 0.75 = $60.",
+          "After another 20% off: 60 × 0.80 = ?",
+          "= $48."
+        ],
+        explanation: [
+          "80 × 0.75 = 60",
+          "60 × 0.80 = <strong>48</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'A store raises a $50 item by 30%, then offers a 30% discount on the new price. What is the final price?',
+        choices: ["$50.00", "$45.50", "$49.00", "$47.25"],
+        answer: "$45.50",
+        hints: [
+          "After 30% increase: 50 × 1.30 = $65.",
+          "After 30% discount: 65 × 0.70 = ?",
+          "= $45.50. Note: raising and lowering by the same percent does NOT get you back to the original!"
+        ],
+        explanation: [
+          "50 × 1.30 = 65",
+          "65 × 0.70 = <strong>$45.50</strong>",
+          "A 30% increase then 30% decrease is a 9% net decrease."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'A shirt costs $35 before tax. After 6% sales tax, what is the total cost? (Give your answer as a decimal, no dollar sign.)',
+        answer: "37.1",
+        hints: [
+          "Tax = 6% of 35 = 0.06 × 35 = $2.10.",
+          "Total = 35 + 2.10 = ?",
+          "= $37.10."
+        ],
+        explanation: [
+          "Tax = 35 × 0.06 = $2.10",
+          "Total = 35 + 2.10 = <strong>37.1</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'In a class of 40 students, 60% passed a test. Of those who passed, 75% scored above 80. How many students scored above 80?',
+        choices: ["15", "18", "20", "24"],
+        answer: "18",
+        hints: [
+          "Students who passed: 60% of 40 = 24.",
+          "Of those, 75% scored above 80: 75% of 24 = ?",
+          "= 18 students."
+        ],
+        explanation: [
+          "Passed = 0.60 × 40 = 24",
+          "Above 80 = 0.75 × 24 = <strong>18</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'A population of 500 bacteria increases by 20% every hour. How many bacteria are there after 2 hours?',
+        answer: "720",
+        hints: [
+          "After 1 hour: 500 × 1.20 = 600.",
+          "After 2 hours: 600 × 1.20 = ?",
+          "= 720."
+        ],
+        explanation: [
+          "After 1 hour: 500 × 1.20 = 600",
+          "After 2 hours: 600 × 1.20 = <strong>720</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'A laptop was $800 last year. This year it costs $680. What is the percent decrease?',
+        choices: ["12%", "15%", "18%", "20%"],
+        answer: "15%",
+        hints: [
+          "Decrease = 800 − 680 = $120.",
+          "Percent decrease = (120 ÷ 800) × 100.",
+          "= 15%."
+        ],
+        explanation: [
+          "Decrease = 800 − 680 = 120",
+          "(120/800) × 100 = <strong>15%</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'After a 15% tip on a $24 meal and 7% tax on the meal, what is the total bill? (Give your answer as a decimal, no dollar sign.)',
+        answer: "29.28",
+        hints: [
+          "Tip = 15% of 24 = $3.60. Tax = 7% of 24 = $1.68.",
+          "Total = 24 + 3.60 + 1.68 = ?",
+          "= $29.28."
+        ],
+        explanation: [
+          "Tip = 0.15 × 24 = $3.60",
+          "Tax = 0.07 × 24 = $1.68",
+          "Total = 24 + 3.60 + 1.68 = <strong>29.28</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A car\'s value depreciates 15% per year. If it is worth $20,000 now, what will it be worth after 2 years?',
+        choices: ["$14,000", "$14,450", "$17,000", "$15,200"],
+        answer: "$14,450",
+        hints: [
+          "After year 1: 20000 × 0.85 = $17,000.",
+          "After year 2: 17000 × 0.85 = ?",
+          "= $14,450."
+        ],
+        explanation: [
+          "Year 1: 20000 × 0.85 = 17000",
+          "Year 2: 17000 × 0.85 = <strong>$14,450</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: '25% of a number equals 40% of 75. What is the number?',
+        answer: "120",
+        hints: [
+          "First find 40% of 75: 0.40 × 75 = 30.",
+          "So 25% of x = 30. That means 0.25x = 30.",
+          "x = 30 ÷ 0.25 = 120."
+        ],
+        explanation: [
+          "40% of 75 = 30",
+          "0.25x = 30",
+          "x = 30 ÷ 0.25 = <strong>120</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A shop buys an item for $25, marks it up by 80%, then offers a 25% discount. What is the sale price?',
+        choices: ["$30", "$33.75", "$35", "$36.25"],
+        answer: "$33.75",
+        hints: [
+          "Markup: 25 × 1.80 = $45.",
+          "Discount: 45 × 0.75 = ?",
+          "= $33.75."
+        ],
+        explanation: [
+          "Marked up price = 25 × 1.80 = $45",
+          "Sale price = 45 × 0.75 = <strong>$33.75</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'A company has 250 employees. 40% are male. If 15 more males are hired (and no one else), what percent of the total workforce is now male? (Round to one decimal place.)',
+        answer: "43.4",
+        hints: [
+          "Original males = 40% of 250 = 100.",
+          "New total = 250 + 15 = 265, new males = 100 + 15 = 115.",
+          "(115 ÷ 265) × 100 ≈ 43.4%."
+        ],
+        explanation: [
+          "Original males = 100, new males = 115, new total = 265",
+          "Percent = (115/265) × 100 ≈ 43.4%",
+          "≈ <strong>43.4</strong>%"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A price increases by 50%, then decreases by 40%. Compared to the original, the final price is:',
+        choices: ["10% less", "10% more", "The same", "5% less"],
+        answer: "10% less",
+        hints: [
+          "Start with $100. Increase 50%: $150.",
+          "Decrease 40%: 150 × 0.60 = $90.",
+          "$90 is $10 less than $100, so 10% less."
+        ],
+        explanation: [
+          "100 × 1.50 = 150",
+          "150 × 0.60 = 90",
+          "90 is <strong>10% less</strong> than 100."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'After an 18% discount, a bicycle costs $328. What was the original price?',
+        answer: "400",
+        hints: [
+          "After 18% off, you pay 82% of the original.",
+          "82% of original = $328.",
+          "Original = 328 ÷ 0.82 = $400."
+        ],
+        explanation: [
+          "82% of original = 328",
+          "Original = 328 ÷ 0.82",
+          "= <strong>400</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'A salesperson earns a base salary of $400 per week plus 5% commission on sales. If they sell $3,200 worth of goods in a week, what is their total pay?',
+        choices: ["$540", "$560", "$580", "$600"],
+        answer: "$560",
+        hints: [
+          "Commission = 5% of $3,200 = $160.",
+          "Total pay = $400 + $160.",
+          "= $560."
+        ],
+        explanation: [
+          "Commission = 0.05 × 3200 = $160",
+          "Total = 400 + 160 = <strong>$560</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'An investment of $2,000 earns 8% simple interest per year. How much total money do you have after 3 years?',
+        answer: "2480",
+        hints: [
+          "Interest per year = 8% of 2000 = $160.",
+          "Total interest for 3 years = 160 × 3 = $480.",
+          "Total money = 2000 + 480 = $2,480."
+        ],
+        explanation: [
+          "Yearly interest = 0.08 × 2000 = $160",
+          "3-year interest = 160 × 3 = $480",
+          "Total = 2000 + 480 = <strong>2480</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A town\'s population increases by 5% one year and decreases by 5% the next year. If the initial population was 10,000, what is the population after both changes?',
+        choices: ["10,000", "9,975", "9,950", "10,025"],
+        answer: "9,975",
+        hints: [
+          "After 5% increase: 10,000 × 1.05 = 10,500.",
+          "After 5% decrease: 10,500 × 0.95 = ?",
+          "= 9,975."
+        ],
+        explanation: [
+          "10,000 × 1.05 = 10,500",
+          "10,500 × 0.95 = <strong>9,975</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'A pair of shoes costs $120 before a 15% discount, then 9% tax is applied to the discounted price. What is the final price? (Give as a decimal.)',
+        answer: "111.18",
+        hints: [
+          "After 15% discount: 120 × 0.85 = $102.",
+          "Tax on $102: 102 × 0.09 = $9.18.",
+          "Final = 102 + 9.18 = $111.18."
+        ],
+        explanation: [
+          "Discounted = 120 × 0.85 = $102",
+          "Tax = 102 × 0.09 = $9.18",
+          "Final = 102 + 9.18 = <strong>111.18</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'A tank is 30% full. After adding 35 liters, it is 65% full. What is the tank\'s total capacity?',
+        choices: ["80 liters", "90 liters", "100 liters", "120 liters"],
+        answer: "100 liters",
+        hints: [
+          "35 liters filled it from 30% to 65%, which is 35% of capacity.",
+          "35% of capacity = 35 liters.",
+          "Capacity = 35 ÷ 0.35 = 100 liters."
+        ],
+        explanation: [
+          "65% − 30% = 35% of capacity = 35 liters",
+          "Capacity = 35 ÷ 0.35",
+          "= <strong>100 liters</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'A store is having a "buy 2, get 1 free" sale on $12 items. What is the effective percent discount per item? (Round to one decimal place.)',
+        answer: "33.3",
+        hints: [
+          "You pay for 2 items: 2 × $12 = $24 for 3 items.",
+          "Normal cost for 3 items = 3 × $12 = $36.",
+          "Discount = (36 − 24) / 36 × 100 = 33.3%."
+        ],
+        explanation: [
+          "Pay $24 instead of $36 for 3 items",
+          "Savings = $12 out of $36",
+          "12/36 × 100 ≈ <strong>33.3%</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'If 8 is what percent of 32?',
+        choices: ["20%", "25%", "30%", "40%"],
+        answer: "25%",
+        hints: [
+          "Percent = (part ÷ whole) × 100.",
+          "8 ÷ 32 = 0.25.",
+          "0.25 × 100 = 25%."
+        ],
+        explanation: [
+          "8/32 = 0.25",
+          "0.25 × 100 = <strong>25%</strong>"
         ]
       }
     ]
@@ -1844,6 +2453,310 @@ WORLDS[8] = {
         explanation: [
           "x² + 5 = 30 → x² = 25",
           "x = √25 = <strong>5</strong>"
+        ]
+      },
+      // ── 20 additional boss questions ──────────────────────────
+      {
+        type: "numeric", difficulty: 3,
+        question: 'Simplify <span class="math">√288</span>. If <span class="math">√288 = a√b</span> (simplified), what is a?',
+        answer: "12",
+        hints: [
+          "Factor 288: 288 = 144 × 2.",
+          "√288 = √144 × √2.",
+          "= 12√2, so a = 12."
+        ],
+        explanation: [
+          "288 = 144 × 2",
+          "√288 = √144 × √2 = 12√2",
+          "a = <strong>12</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'What is <span class="math">√7 × √7 × √7 × √7</span>?',
+        choices: ["7", "14", "49", "√2401"],
+        answer: "49",
+        hints: [
+          "√7 × √7 = 7.",
+          "So (√7)⁴ = (√7 × √7) × (√7 × √7) = 7 × 7.",
+          "= 49."
+        ],
+        explanation: [
+          "(√7)² = 7",
+          "(√7)⁴ = 7 × 7",
+          "= <strong>49</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'Solve: <span class="math">2x² = 72</span>. What is the positive value of x?',
+        answer: "6",
+        hints: [
+          "Divide both sides by 2: x² = 36.",
+          "Take the square root: x = √36.",
+          "x = 6."
+        ],
+        explanation: [
+          "2x² = 72 → x² = 36",
+          "x = √36 = <strong>6</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'Which is larger: <span class="math">3√5</span> or <span class="math">2√12</span>?',
+        choices: ["3√5 is larger", "2√12 is larger", "They are equal", "Cannot be determined"],
+        answer: "2√12 is larger",
+        hints: [
+          "3√5: square it → 9 × 5 = 45.",
+          "2√12: square it → 4 × 12 = 48.",
+          "48 > 45, so 2√12 is larger."
+        ],
+        explanation: [
+          "(3√5)² = 9 × 5 = 45",
+          "(2√12)² = 4 × 12 = 48",
+          "48 > 45, so <strong>2√12 is larger</strong>."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'Simplify <span class="math">3√8 + 2√2</span>. If the result is <span class="math">a√2</span>, what is a?',
+        answer: "8",
+        hints: [
+          "First simplify √8: √8 = 2√2.",
+          "3√8 = 3 × 2√2 = 6√2.",
+          "6√2 + 2√2 = 8√2, so a = 8."
+        ],
+        explanation: [
+          "√8 = 2√2, so 3√8 = 6√2",
+          "6√2 + 2√2 = 8√2",
+          "a = <strong>8</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'What is <span class="math">√(16 × 25)</span>?',
+        choices: ["10", "15", "20", "400"],
+        answer: "20",
+        hints: [
+          "√(16 × 25) = √16 × √25.",
+          "= 4 × 5.",
+          "= 20."
+        ],
+        explanation: [
+          "√(16 × 25) = √16 × √25",
+          "= 4 × 5 = <strong>20</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'Simplify <span class="math">√(180)</span>. If <span class="math">√180 = a√b</span> (simplified), what is a?',
+        answer: "6",
+        hints: [
+          "Factor 180: 180 = 36 × 5.",
+          "√180 = √36 × √5 = 6√5.",
+          "a = 6."
+        ],
+        explanation: [
+          "180 = 36 × 5",
+          "√180 = √36 × √5 = 6√5",
+          "a = <strong>6</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'Solve: <span class="math">3x² − 7 = 41</span>. What is the positive value of x?',
+        choices: ["3", "4", "5", "6"],
+        answer: "4",
+        hints: [
+          "Add 7 to both sides: 3x² = 48.",
+          "Divide by 3: x² = 16.",
+          "x = √16 = 4."
+        ],
+        explanation: [
+          "3x² − 7 = 41 → 3x² = 48 → x² = 16",
+          "x = √16 = <strong>4</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'What is <span class="math">√6 × √24</span>?',
+        answer: "12",
+        hints: [
+          "√6 × √24 = √(6 × 24) = √144.",
+          "√144 = 12.",
+          "Answer: 12."
+        ],
+        explanation: [
+          "√6 × √24 = √(6 × 24) = √144",
+          "= <strong>12</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'Between which two consecutive integers is <span class="math">√150</span>?',
+        choices: ["11 and 12", "12 and 13", "13 and 14", "14 and 15"],
+        answer: "12 and 13",
+        hints: [
+          "12² = 144 and 13² = 169.",
+          "144 < 150 < 169.",
+          "So √150 is between 12 and 13."
+        ],
+        explanation: [
+          "12² = 144, 13² = 169",
+          "144 < 150 < 169",
+          "√150 is between <strong>12 and 13</strong>."
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'Simplify <span class="math">5√12 − 2√27</span>. If the result is <span class="math">a√3</span>, what is a?',
+        answer: "4",
+        hints: [
+          "√12 = 2√3, so 5√12 = 10√3.",
+          "√27 = 3√3, so 2√27 = 6√3.",
+          "10√3 − 6√3 = 4√3, so a = 4."
+        ],
+        explanation: [
+          "5√12 = 5 × 2√3 = 10√3",
+          "2√27 = 2 × 3√3 = 6√3",
+          "10√3 − 6√3 = <strong>4</strong>√3"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'What is <span class="math">\\frac{√50}{√2}</span>?',
+        choices: ["5", "√25", "25", "√48"],
+        answer: "5",
+        hints: [
+          "√50 / √2 = √(50/2) = √25.",
+          "√25 = 5.",
+          "Answer: 5."
+        ],
+        explanation: [
+          "√50 / √2 = √(50 ÷ 2) = √25",
+          "= <strong>5</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'Solve: <span class="math">x² + x² = 50</span>. What is the positive value of x?',
+        answer: "5",
+        hints: [
+          "Combine like terms: 2x² = 50.",
+          "Divide by 2: x² = 25.",
+          "x = √25 = 5."
+        ],
+        explanation: [
+          "x² + x² = 2x² = 50",
+          "x² = 25",
+          "x = √25 = <strong>5</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 3,
+        question: 'Simplify <span class="math">√72</span>.',
+        choices: ["6√2", "3√8", "4√3", "2√18"],
+        answer: "6√2",
+        hints: [
+          "Factor 72: 72 = 36 × 2.",
+          "√72 = √36 × √2 = 6√2.",
+          "Check the other choices: 3√8 = 3 × 2√2 = 6√2, but 6√2 is in simplest form."
+        ],
+        explanation: [
+          "72 = 36 × 2",
+          "√72 = √36 × √2",
+          "= <strong>6√2</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'A square has an area of 338 square cm. If the side length is <span class="math">a√b</span> cm (simplified), what is a?',
+        answer: "13",
+        hints: [
+          "Side = √338.",
+          "Factor 338: 338 = 169 × 2.",
+          "√338 = √169 × √2 = 13√2, so a = 13."
+        ],
+        explanation: [
+          "Side = √338",
+          "338 = 169 × 2",
+          "√338 = 13√2, so a = <strong>13</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'What is <span class="math">(2√3)²</span>?',
+        choices: ["6", "12", "4√3", "36"],
+        answer: "12",
+        hints: [
+          "(2√3)² = 2² × (√3)².",
+          "= 4 × 3.",
+          "= 12."
+        ],
+        explanation: [
+          "(2√3)² = 2² × (√3)²",
+          "= 4 × 3",
+          "= <strong>12</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 3,
+        question: 'What is <span class="math">\\frac{√(100)}{√(4)}</span>?',
+        answer: "5",
+        hints: [
+          "√100 = 10, √4 = 2.",
+          "10 ÷ 2 = 5.",
+          "Or: √(100/4) = √25 = 5."
+        ],
+        explanation: [
+          "√100 / √4 = 10 / 2",
+          "= <strong>5</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'Solve: <span class="math">(x + 1)² = 49</span>. What is the positive value of x?',
+        choices: ["5", "6", "7", "8"],
+        answer: "6",
+        hints: [
+          "Take the square root of both sides: x + 1 = 7 (positive root).",
+          "x = 7 − 1.",
+          "x = 6."
+        ],
+        explanation: [
+          "(x + 1)² = 49 → x + 1 = 7",
+          "x = 7 − 1",
+          "x = <strong>6</strong>"
+        ]
+      },
+      {
+        type: "numeric", difficulty: 4,
+        question: 'Simplify <span class="math">4√3 + 2√48</span>. If the result is <span class="math">a√3</span>, what is a?',
+        answer: "12",
+        hints: [
+          "Simplify √48: 48 = 16 × 3, so √48 = 4√3.",
+          "2√48 = 2 × 4√3 = 8√3.",
+          "4√3 + 8√3 = 12√3, so a = 12."
+        ],
+        explanation: [
+          "√48 = 4√3, so 2√48 = 8√3",
+          "4√3 + 8√3 = 12√3",
+          "a = <strong>12</strong>"
+        ]
+      },
+      {
+        type: "mc", difficulty: 4,
+        question: 'What is <span class="math">\\frac{\\sqrt{72}}{\\sqrt{8}}</span>?',
+        choices: ["3", "4", "6", "9"],
+        answer: "3",
+        hints: [
+          "√72 / √8 = √(72/8) = √9.",
+          "√9 = 3.",
+          "Answer: 3."
+        ],
+        explanation: [
+          "√72 / √8 = √(72 ÷ 8) = √9",
+          "= <strong>3</strong>"
         ]
       }
     ]
